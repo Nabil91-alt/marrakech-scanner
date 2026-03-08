@@ -3,486 +3,296 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Silbertablett — Marrakech Immobilien</title>
+  <title>Silbertablett — Marrakech</title>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏡</text></svg>">
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.9/babel.min.js"></script>
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { background: #0c0b08; color: #e8e0d0; font-family: 'Outfit', system-ui, sans-serif; }
-    ::-webkit-scrollbar { width: 6px; }
-    ::-webkit-scrollbar-track { background: #0c0b08; }
-    ::-webkit-scrollbar-thumb { background: #2a2520; border-radius: 9px; }
-    input, textarea { font-family: inherit; }
-    a { color: #d4a24e; }
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{background:#0c0b08;color:#e8e0d0;font-family:'Outfit',system-ui,sans-serif}
+    ::-webkit-scrollbar{width:6px}::-webkit-scrollbar-track{background:#0c0b08}::-webkit-scrollbar-thumb{background:#2a2520;border-radius:9px}
+    a{color:#d4a24e}input,textarea{font-family:inherit}
+    .wrap{max-width:800px;margin:0 auto;padding:14px 16px 60px}
+    .pill{display:inline-block;padding:2px 9px;border-radius:99px;font-size:10px;font-weight:600;letter-spacing:.03em;white-space:nowrap}
+    .card{border-radius:14px;margin-bottom:10px;overflow:hidden;position:relative}
+    .card-head{padding:13px 14px;cursor:pointer;display:flex;gap:11px;align-items:center;user-select:none}
+    .ring{width:48px;height:48px;border-radius:99px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+    .ring-inner{width:36px;height:36px;border-radius:99px;background:#141210;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;font-family:monospace}
+    .tag{display:inline-block;padding:2px 8px;border-radius:99px;font-size:10px;font-weight:500;margin:0 3px 4px 0}
+    .bar-track{height:5px;background:#1f1d17;border-radius:9px}.bar-fill{height:100%;border-radius:9px;transition:width .8s cubic-bezier(.16,1,.3,1)}
+    .btn{border:none;border-radius:8px;padding:8px 14px;font-size:11px;cursor:pointer;font-family:inherit}
+    .btn-primary{background:linear-gradient(135deg,#22c55e,#16a34a);color:#0c0b08;font-size:14px;font-weight:700;padding:12px 24px;border-radius:10px;box-shadow:0 2px 24px #22c55e20}
+    .btn-ghost{background:none;border:1px solid #1f1d17;color:#6b6560}
+    .panel{background:#141210;border:1px solid #1f1d17;border-radius:10px;padding:10px 14px;margin-bottom:12px}
+    .gate-badge{font-size:9px;color:#22c55e;background:#091f12;padding:2px 8px;border-radius:99px;border:1px solid #22c55e15}
+    .detail-box{background:#1a1810;border-radius:6px;padding:4px 7px}
+    .detail-label{font-size:8px;color:#4a4540;letter-spacing:.04em}
+    .detail-val{font-size:11px;color:#ccc5b8;font-weight:500}
   </style>
 </head>
 <body>
   <div id="root"></div>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.9/babel.min.js"></script>
   <script type="text/babel">
-    const { useState, useEffect, useCallback, useRef } = React;
+    const {useState,useEffect,useCallback,useRef}=React;
 
-    // ═══════════════════════════════════════
-    // CONFIG — Passe diese URL an euer Repo an!
-    // ═══════════════════════════════════════
-    // Wird automatisch erkannt wenn auf GitHub Pages gehostet.
-    // Fallback: manuell eintragen.
-    function getDataUrl() {
-      const loc = window.location;
-      // GitHub Pages: username.github.io/marrakech-scanner/
-      if (loc.hostname.endsWith('.github.io')) {
-        const user = loc.hostname.replace('.github.io', '');
-        const repo = loc.pathname.split('/')[1] || 'marrakech-scanner';
-        return `https://raw.githubusercontent.com/${user}/${repo}/main/data/latest.json`;
+    function getAutoUrl(){
+      const h=window.location.hostname;
+      if(h.endsWith('.github.io')){
+        const u=h.replace('.github.io','');
+        const r=window.location.pathname.split('/')[1]||'marrakech-scanner';
+        return`https://raw.githubusercontent.com/${u}/${r}/main/data/latest.json`;
       }
-      // Fallback: aus localStorage
-      return localStorage.getItem('mkch-data-url') || '';
+      return localStorage.getItem('mkch-url')||'';
     }
 
-    // ═══════════════════════════════════════
-    const DEEP_PROMPT = `Du bist ein erfahrener Immobilien-Analyst für Marrakesch. Tiefenanalyse für vorgeprüfte Angebote.
+    const sc=s=>s>=80?"#22c55e":s>=70?"#6ee7a0":s>=60?"#d4a24e":s>=45?"#e08a3c":"#ef4444";
+    const viMap={"TOP-KANDIDAT":{bg:"#091f12",bd:"#22c55e",c:"#22c55e",i:"★"},"INTERESSANT":{bg:"#1f1a08",bd:"#d4a24e",c:"#d4a24e",i:"◆"},"BEDINGT GEEIGNET":{bg:"#1f1208",bd:"#e08a3c",c:"#e08a3c",i:"▲"},"NICHT GEEIGNET":{bg:"#1f0808",bd:"#ef4444",c:"#ef4444",i:"✕"}};
+    const vi=v=>viMap[v]||{bg:"#1a1a17",bd:"#555",c:"#888",i:"?"};
+    const fmt=(n,c="MAD")=>n?n.toLocaleString("de-DE")+" "+c:"—";
 
-KÄUFER: Budget 1.0M–2.3M MAD (sweet spot 1.2M–1.8M). Eigennutzung+Investment+Hauptwohnsitz. ≥3Zi, ideal ≥90m². Must-haves: Terrasse, Pool, Parkplatz, Aufzug/Neubau.
+    function Pill({children,color="#888",bg="#1f1d17"}){return<span className="pill" style={{color,background:bg,border:`1px solid ${color}30`}}>{children}</span>}
+    function Bar({value=0,label,detail}){return(<div style={{marginBottom:7}}><div style={{display:"flex",justifyContent:"space-between",fontSize:11,color:"#6b6560",marginBottom:2}}><span>{label}</span><span style={{display:"flex",gap:6,alignItems:"center"}}>{detail&&<span style={{fontSize:9,color:"#4a4540"}}>{detail}</span>}<span style={{color:sc(value),fontWeight:600,fontFamily:"monospace"}}>{value}</span></span></div><div className="bar-track"><div className="bar-fill" style={{width:`${Math.min(100,Math.max(0,value))}%`,background:sc(value)}}/></div></div>)}
+    function Tag({label,val}){const c=val===true?"#22c55e":val===false?"#ef4444":"#4a4540";const bg=val===true?"#091f12":val===false?"#1f0808":"#1a1a17";return<span className="tag" style={{color:c,background:bg,border:`1px solid ${c}20`}}>{val===true?"✓":val===false?"✕":"?"} {label}</span>}
+    function Dots({n=0}){return<span style={{display:"inline-flex",gap:2}}>{Array.from({length:5},(_,i)=><span key={i} style={{width:5,height:5,borderRadius:99,background:i<n?"#d4a24e":"#1f1d17"}}/>)}</span>}
 
-SCORING:
-BUDGET(25%): 100=1.2-1.6M, 80=1.6-1.9M/1.0-1.2M, 60=1.9-2.1M
-LAGE(25%): 100=Targa/Agdal, 90=Palmeraie/Ourika, 80=Izdihar/Massira/M'Hamid, 70=Tamansourt
-GRÖSSE(15%): 100=≥3Zi+≥100m², 80=≥3Zi+≥80m²
-AUSSTATTUNG(20%): je 25 für Terrasse, Pool, Parkplatz, Aufzug/Neubau
-INVESTMENT(15%): m²-Preis, Entwicklung, Neubau
-ABZÜGE: Eigentum "Unbekannt" -10, Zustand "Unbekannt" -5, wenig Infos -10
-
-Antworte NUR mit JSON-Array:
-[{"id","title","source","url","price_mad","price_eur","area_sqm","rooms","bedrooms","bathrooms","floor","neighborhood","property_type","price_per_sqm_mad","has_terrace","has_pool","has_parking","has_elevator","is_new_build","ownership_type","condition","highlights":["max 4"],"concerns":["max 4"],"neighborhood_outlook":"2 Sätze","investment_potential":1-5,"livability_score":1-5,"market_price_assessment":"Unter Markt/Marktgerecht/Über Markt/Nicht beurteilbar","scores":{"budget_fit","location_fit","size_fit","amenities_fit","investment_fit","info_penalty","overall"},"verdict":"TOP-KANDIDAT/INTERESSANT/BEDINGT GEEIGNET/NICHT GEEIGNET","verdict_reason":"2-3 Sätze","besichtigung_fragen":["5 Fragen"],"verhandlung_tipps":"1-2 Sätze"}]
-
-Nicht leichtfertig hohe Scores. Konservativ bei wenig Infos. Ehrliche Concerns.`;
-
-    // Storage
-    function sLoad(k) { try { return JSON.parse(localStorage.getItem(k)); } catch { return null; } }
-    function sSave(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch(e) { console.error(e); } }
-
-    // Style
-    const sc = s => s >= 80 ? "#22c55e" : s >= 70 ? "#6ee7a0" : s >= 60 ? "#d4a24e" : s >= 45 ? "#e08a3c" : "#ef4444";
-    const viMap = {
-      "TOP-KANDIDAT":     { bg: "#091f12", bd: "#22c55e", c: "#22c55e", i: "★" },
-      "INTERESSANT":      { bg: "#1f1a08", bd: "#d4a24e", c: "#d4a24e", i: "◆" },
-      "BEDINGT GEEIGNET": { bg: "#1f1208", bd: "#e08a3c", c: "#e08a3c", i: "▲" },
-      "NICHT GEEIGNET":   { bg: "#1f0808", bd: "#ef4444", c: "#ef4444", i: "✕" },
-    };
-    const vi = v => viMap[v] || { bg: "#1a1a17", bd: "#555", c: "#888", i: "?" };
-    const fmt = (n, c = "MAD") => n ? n.toLocaleString("de-DE") + " " + c : "—";
-
-    function Pill({ children, color = "#888", bg = "#1f1d17" }) {
-      return <span style={{ display: "inline-block", padding: "2px 9px", borderRadius: 99, fontSize: 10, fontWeight: 600, letterSpacing: ".03em", color, background: bg, border: `1px solid ${color}30`, whiteSpace: "nowrap" }}>{children}</span>;
-    }
-
-    function Bar({ value, label, detail }) {
-      return (
-        <div style={{ marginBottom: 7 }}>
-          <div style={{ display: "flex", justifyContent: "space-between", fontSize: 11, color: "#6b6560", marginBottom: 2 }}>
-            <span>{label}</span>
-            <span style={{ display: "flex", gap: 6, alignItems: "center" }}>
-              {detail && <span style={{ fontSize: 9, color: "#4a4540" }}>{detail}</span>}
-              <span style={{ color: sc(value), fontWeight: 600, fontFamily: "monospace", minWidth: 22, textAlign: "right" }}>{value}</span>
-            </span>
-          </div>
-          <div style={{ height: 5, background: "#1f1d17", borderRadius: 9 }}>
-            <div style={{ height: "100%", width: `${Math.min(100, Math.max(0, value))}%`, background: sc(value), borderRadius: 9, transition: "width .8s cubic-bezier(.16,1,.3,1)" }} />
-          </div>
-        </div>
-      );
-    }
-
-    function Tag({ label, val }) {
-      const c = val === true ? "#22c55e" : val === false ? "#ef4444" : "#4a4540";
-      const bg = val === true ? "#091f12" : val === false ? "#1f0808" : "#1a1a17";
-      return <span style={{ display: "inline-block", padding: "2px 8px", borderRadius: 99, fontSize: 10, fontWeight: 500, color: c, background: bg, border: `1px solid ${c}20`, margin: "0 3px 4px 0" }}>{val === true ? "✓" : val === false ? "✕" : "?"} {label}</span>;
-    }
-
-    function Dots({ n = 0 }) {
-      return <span style={{ display: "inline-flex", gap: 2 }}>{Array.from({ length: 5 }, (_, i) => <span key={i} style={{ width: 5, height: 5, borderRadius: 99, background: i < n ? "#d4a24e" : "#1f1d17" }} />)}</span>;
-    }
-
-    function Card({ d, starred, onStar, isNew }) {
-      const [open, setOpen] = useState(false);
-      const v = vi(d.verdict);
-      return (
-        <div style={{ background: "#141210", border: `1px solid ${v.bd}20`, borderRadius: 14, marginBottom: 10, overflow: "hidden", position: "relative" }}>
-          {isNew && <div style={{ position: "absolute", top: 10, right: 12, width: 8, height: 8, borderRadius: 99, background: "#22c55e", boxShadow: "0 0 8px #22c55e66" }} />}
-          <div onClick={() => setOpen(!open)} style={{ padding: "13px 14px", cursor: "pointer", display: "flex", gap: 11, alignItems: "center", userSelect: "none" }}>
-            <div style={{ width: 48, height: 48, borderRadius: 99, background: `conic-gradient(${v.c} ${(d.scores?.overall||0) * 3.6}deg, #1f1d17 0deg)`, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
-              <div style={{ width: 36, height: 36, borderRadius: 99, background: "#141210", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: 14, color: v.c, fontFamily: "monospace" }}>{d.scores?.overall}</div>
-            </div>
-            <div style={{ flex: 1, minWidth: 0 }}>
-              <div style={{ display: "flex", gap: 6, alignItems: "center", flexWrap: "wrap", marginBottom: 2 }}>
+    function Card({d,starred,onStar}){
+      const[open,setOpen]=useState(false);
+      const v=vi(d.verdict);
+      const s=d.scores||{};
+      return(
+        <div className="card" style={{background:"#141210",border:`1px solid ${v.bd}20`}}>
+          <div className="card-head" onClick={()=>setOpen(!open)}>
+            <div className="ring" style={{background:`conic-gradient(${v.c} ${(s.overall||0)*3.6}deg, #1f1d17 0deg)`}}><div className="ring-inner" style={{color:v.c}}>{s.overall||0}</div></div>
+            <div style={{flex:1,minWidth:0}}>
+              <div style={{display:"flex",gap:6,alignItems:"center",flexWrap:"wrap",marginBottom:2}}>
                 <Pill color={v.c} bg={v.bg}>{v.i} {d.verdict}</Pill>
-                {d.market_price_assessment && d.market_price_assessment !== "Nicht beurteilbar" && (
-                  <Pill color={d.market_price_assessment === "Unter Markt" ? "#22c55e" : d.market_price_assessment === "Über Markt" ? "#ef4444" : "#d4a24e"}>
-                    {d.market_price_assessment === "Unter Markt" ? "↓" : d.market_price_assessment === "Über Markt" ? "↑" : "≈"} {d.market_price_assessment}
-                  </Pill>
-                )}
-                <span style={{ color: "#d4a24e", fontWeight: 600, fontSize: 13 }}>{fmt(d.price_mad)}</span>
-                {d.price_eur && <span style={{ color: "#4a4540", fontSize: 11 }}>≈ {fmt(d.price_eur, "€")}</span>}
+                {d.market_price_assessment&&d.market_price_assessment!=="Nicht beurteilbar"&&<Pill color={d.market_price_assessment==="Unter Markt"?"#22c55e":d.market_price_assessment==="Über Markt"?"#ef4444":"#d4a24e"}>{d.market_price_assessment==="Unter Markt"?"↓":d.market_price_assessment==="Über Markt"?"↑":"≈"} {d.market_price_assessment}</Pill>}
+                <span style={{color:"#d4a24e",fontWeight:600,fontSize:13}}>{fmt(d.price_mad)}</span>
+                {d.price_eur&&<span style={{color:"#4a4540",fontSize:11}}>≈ {fmt(d.price_eur,"€")}</span>}
               </div>
-              <div style={{ fontWeight: 600, color: "#e8e0d0", fontSize: 13, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>{d.title}</div>
-              <div style={{ color: "#6b6560", fontSize: 11, display: "flex", gap: 10, flexWrap: "wrap", marginTop: 1 }}>
-                {d.neighborhood && <span>📍 {d.neighborhood}</span>}
-                {d.area_sqm && <span>{d.area_sqm}m²</span>}
-                {d.rooms && <span>{d.rooms}Zi</span>}
-                {d.price_per_sqm_mad && <span>{fmt(d.price_per_sqm_mad)}/m²</span>}
-                {d.source && <span style={{ color: "#4a4540" }}>{d.source}</span>}
+              <div style={{fontWeight:600,fontSize:13,whiteSpace:"nowrap",overflow:"hidden",textOverflow:"ellipsis"}}>{d.title}</div>
+              <div style={{color:"#6b6560",fontSize:11,display:"flex",gap:10,flexWrap:"wrap",marginTop:1}}>
+                {d.neighborhood&&<span>📍 {d.neighborhood}</span>}
+                {d.area_sqm&&<span>{d.area_sqm}m²</span>}
+                {d.rooms&&<span>{d.rooms}Zi</span>}
+                {d.price_per_sqm_mad&&<span>{fmt(d.price_per_sqm_mad)}/m²</span>}
+                {d.source&&<span style={{color:"#4a4540"}}>{d.source}</span>}
               </div>
             </div>
-            <button onClick={e => { e.stopPropagation(); onStar(d.id); }} style={{ background: "none", border: "none", fontSize: 18, cursor: "pointer", color: starred ? "#d4a24e" : "#2a2520", padding: 2, flexShrink: 0 }}>{starred ? "★" : "☆"}</button>
-            <span style={{ color: "#4a4540", fontSize: 13, transform: open ? "rotate(180deg)" : "", transition: "transform .2s", flexShrink: 0 }}>▾</span>
+            <button onClick={e=>{e.stopPropagation();onStar(d.id)}} style={{background:"none",border:"none",fontSize:18,cursor:"pointer",color:starred?"#d4a24e":"#2a2520",padding:2,flexShrink:0}}>{starred?"★":"☆"}</button>
+            <span style={{color:"#4a4540",fontSize:13,transform:open?"rotate(180deg)":"",transition:"transform .2s",flexShrink:0}}>▾</span>
           </div>
-          {open && (
-            <div style={{ borderTop: "1px solid #1f1d17", padding: "14px" }}>
-              <div style={{ display: "flex", gap: 5, marginBottom: 14, flexWrap: "wrap" }}>
-                {["Scraper ✓", "Filter-Gates ✓", "KI-Tiefenanalyse ✓"].map((g, i) => <span key={i} style={{ fontSize: 9, color: "#22c55e", background: "#091f12", padding: "2px 8px", borderRadius: 99, border: "1px solid #22c55e15" }}>{g}</span>)}
+          {open&&(
+            <div style={{borderTop:"1px solid #1f1d17",padding:14}}>
+              <div style={{display:"flex",gap:5,marginBottom:14,flexWrap:"wrap"}}>
+                {["Scraper ✓","Filter-Gates ✓","KI-Analyse ✓"].map((g,i)=><span key={i} className="gate-badge">{g}</span>)}
               </div>
-              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 14, marginBottom: 14 }}>
+              <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:14,marginBottom:14}}>
                 <div>
-                  <Bar value={d.scores?.budget_fit} label="Budget" detail="25%" />
-                  <Bar value={d.scores?.location_fit} label="Lage" detail="25%" />
-                  <Bar value={d.scores?.size_fit} label="Größe" detail="15%" />
-                  <Bar value={d.scores?.amenities_fit} label="Ausstattung" detail="20%" />
-                  <Bar value={d.scores?.investment_fit} label="Investment" detail="15%" />
-                  {(d.scores?.info_penalty || 0) < 0 && <div style={{ fontSize: 10, color: "#e08a3c", marginTop: 2 }}>⚠ Info-Abzug: {d.scores.info_penalty}</div>}
+                  <Bar value={s.budget_fit} label="Budget" detail="25%"/>
+                  <Bar value={s.location_fit} label="Lage" detail="25%"/>
+                  <Bar value={s.size_fit} label="Größe" detail="15%"/>
+                  <Bar value={s.amenities_fit} label="Ausstattung" detail="20%"/>
+                  <Bar value={s.investment_fit} label="Investment" detail="15%"/>
+                  {(s.info_penalty||0)<0&&<div style={{fontSize:10,color:"#e08a3c",marginTop:2}}>⚠ Info-Abzug: {s.info_penalty}</div>}
                 </div>
                 <div>
-                  <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 5, marginBottom: 10 }}>
-                    {[["Typ", d.property_type], ["Etage", d.floor], ["Zimmer", d.rooms], ["Betten", d.bedrooms], ["Bäder", d.bathrooms], ["Zustand", d.condition], ["Fläche", d.area_sqm ? d.area_sqm + "m²" : null], ["Eigentum", d.ownership_type]].map(([l, val], i) => (
-                      <div key={i} style={{ background: "#1a1810", borderRadius: 6, padding: "4px 7px", border: l === "Eigentum" && val === "Unbekannt" ? "1px solid #e08a3c33" : "none" }}>
-                        <div style={{ fontSize: 8, color: "#4a4540", letterSpacing: ".04em" }}>{l}</div>
-                        <div style={{ fontSize: 11, color: l === "Eigentum" && val === "Unbekannt" ? "#e08a3c" : "#ccc5b8", fontWeight: 500 }}>{val ?? "—"}</div>
+                  <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:5,marginBottom:10}}>
+                    {[["Typ",d.property_type],["Etage",d.floor],["Zimmer",d.rooms],["Betten",d.bedrooms],["Bäder",d.bathrooms],["Zustand",d.condition],["Fläche",d.area_sqm?d.area_sqm+"m²":null],["Eigentum",d.ownership_type]].map(([l,val],i)=>(
+                      <div key={i} className="detail-box" style={{border:l==="Eigentum"&&val==="Unbekannt"?"1px solid #e08a3c33":"none"}}>
+                        <div className="detail-label">{l}</div>
+                        <div className="detail-val" style={{color:l==="Eigentum"&&val==="Unbekannt"?"#e08a3c":undefined}}>{val??"—"}</div>
                       </div>
                     ))}
                   </div>
-                  <div style={{ display: "flex", flexWrap: "wrap" }}>
-                    <Tag label="Terrasse" val={d.has_terrace} /><Tag label="Pool" val={d.has_pool} /><Tag label="Parkplatz" val={d.has_parking} /><Tag label="Aufzug" val={d.has_elevator} /><Tag label="Neubau" val={d.is_new_build} />
+                  <div style={{display:"flex",flexWrap:"wrap"}}>
+                    <Tag label="Terrasse" val={d.has_terrace}/><Tag label="Pool" val={d.has_pool}/><Tag label="Parkplatz" val={d.has_parking}/><Tag label="Aufzug" val={d.has_elevator}/><Tag label="Neubau" val={d.is_new_build}/>
                   </div>
                 </div>
               </div>
-              {d.neighborhood_outlook && (
-                <div style={{ background: "#1a1810", borderLeft: "3px solid #d4a24e", borderRadius: 8, padding: 10, marginBottom: 12 }}>
-                  <div style={{ fontSize: 10, color: "#d4a24e", fontWeight: 600, marginBottom: 3 }}>LAGE — {d.neighborhood}</div>
-                  <div style={{ fontSize: 11, color: "#a8a090", lineHeight: 1.5 }}>{d.neighborhood_outlook}</div>
-                  <div style={{ display: "flex", gap: 16, marginTop: 6 }}>
-                    <span style={{ fontSize: 10, color: "#6b6560" }}>Investment <Dots n={d.investment_potential} /></span>
-                    <span style={{ fontSize: 10, color: "#6b6560" }}>Leben <Dots n={d.livability_score} /></span>
+              {d.neighborhood_outlook&&(
+                <div style={{background:"#1a1810",borderLeft:"3px solid #d4a24e",borderRadius:8,padding:10,marginBottom:12}}>
+                  <div style={{fontSize:10,color:"#d4a24e",fontWeight:600,marginBottom:3}}>LAGE — {d.neighborhood}</div>
+                  <div style={{fontSize:11,color:"#a8a090",lineHeight:1.5}}>{d.neighborhood_outlook}</div>
+                  <div style={{display:"flex",gap:16,marginTop:6}}>
+                    <span style={{fontSize:10,color:"#6b6560"}}>Investment <Dots n={d.investment_potential}/></span>
+                    <span style={{fontSize:10,color:"#6b6560"}}>Leben <Dots n={d.livability_score}/></span>
                   </div>
                 </div>
               )}
-              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12, marginBottom: 12 }}>
-                <div><div style={{ fontSize: 10, color: "#22c55e", fontWeight: 600, marginBottom: 4 }}>STÄRKEN</div>{(d.highlights || []).map((h, i) => <div key={i} style={{ fontSize: 11, color: "#a8a090", marginBottom: 2 }}>+ {h}</div>)}</div>
-                <div><div style={{ fontSize: 10, color: "#ef4444", fontWeight: 600, marginBottom: 4 }}>RISIKEN</div>{(d.concerns || []).map((c, i) => <div key={i} style={{ fontSize: 11, color: "#a8a090", marginBottom: 2 }}>– {c}</div>)}</div>
+              <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:12,marginBottom:12}}>
+                <div><div style={{fontSize:10,color:"#22c55e",fontWeight:600,marginBottom:4}}>STÄRKEN</div>{(d.highlights||[]).map((h,i)=><div key={i} style={{fontSize:11,color:"#a8a090",marginBottom:2}}>+ {h}</div>)}</div>
+                <div><div style={{fontSize:10,color:"#ef4444",fontWeight:600,marginBottom:4}}>RISIKEN</div>{(d.concerns||[]).map((c,i)=><div key={i} style={{fontSize:11,color:"#a8a090",marginBottom:2}}>– {c}</div>)}</div>
               </div>
-              <div style={{ background: v.bg, border: `1px solid ${v.bd}30`, borderRadius: 8, padding: 10, marginBottom: 12 }}>
-                <div style={{ fontSize: 11, color: v.c, fontWeight: 600 }}>{v.i} {d.verdict}</div>
-                <div style={{ fontSize: 11, color: "#a8a090", lineHeight: 1.5, marginTop: 2 }}>{d.verdict_reason}</div>
-                {d.verhandlung_tipps && <div style={{ fontSize: 11, color: "#d4a24e", marginTop: 6 }}>💡 {d.verhandlung_tipps}</div>}
+              <div style={{background:v.bg,border:`1px solid ${v.bd}30`,borderRadius:8,padding:10,marginBottom:12}}>
+                <div style={{fontSize:11,color:v.c,fontWeight:600}}>{v.i} {d.verdict}</div>
+                <div style={{fontSize:11,color:"#a8a090",lineHeight:1.5,marginTop:2}}>{d.verdict_reason}</div>
+                {d.verhandlung_tipps&&<div style={{fontSize:11,color:"#d4a24e",marginTop:6}}>💡 {d.verhandlung_tipps}</div>}
               </div>
-              {d.besichtigung_fragen?.length > 0 && (
-                <div style={{ background: "#1a1810", borderRadius: 8, padding: 10, marginBottom: 12 }}>
-                  <div style={{ fontSize: 10, color: "#6b6560", fontWeight: 600, marginBottom: 4 }}>📋 BESICHTIGUNGS-CHECKLISTE</div>
-                  {d.besichtigung_fragen.map((q, i) => <div key={i} style={{ fontSize: 11, color: "#ccc5b8", marginBottom: 3, paddingLeft: 10 }}>☐ {q}</div>)}
+              {d.besichtigung_fragen?.length>0&&(
+                <div style={{background:"#1a1810",borderRadius:8,padding:10,marginBottom:12}}>
+                  <div style={{fontSize:10,color:"#6b6560",fontWeight:600,marginBottom:4}}>📋 BESICHTIGUNGS-CHECKLISTE</div>
+                  {d.besichtigung_fragen.map((q,i)=><div key={i} style={{fontSize:11,color:"#ccc5b8",marginBottom:3,paddingLeft:10}}>☐ {q}</div>)}
                 </div>
               )}
-              {d.url && <a href={d.url} target="_blank" rel="noopener noreferrer" style={{ display: "inline-block", padding: "7px 16px", background: "#1a1810", border: "1px solid #2a2520", borderRadius: 8, color: "#d4a24e", fontSize: 11, textDecoration: "none", fontWeight: 500 }}>🔗 Original-Inserat</a>}
+              {d.url&&<a href={d.url} target="_blank" rel="noopener noreferrer" style={{display:"inline-block",padding:"7px 16px",background:"#1a1810",border:"1px solid #2a2520",borderRadius:8,fontSize:11,textDecoration:"none",fontWeight:500}}>🔗 Original-Inserat</a>}
             </div>
           )}
         </div>
       );
     }
 
-    function App() {
-      const [leads, setLeads] = useState([]);
-      const [favs, setFavs] = useState(new Set());
-      const [loading, setLoading] = useState(false);
-      const [status, setStatus] = useState("");
-      const [filter, setFilter] = useState("all");
-      const [lastSync, setLastSync] = useState(null);
-      const [lastScrape, setLastScrape] = useState(null);
-      const [newIds, setNewIds] = useState(new Set());
-      const [showManual, setShowManual] = useState(false);
-      const [manualText, setManualText] = useState("");
-      const [showSetup, setShowSetup] = useState(false);
-      const [dataUrl, setDataUrl] = useState(() => getDataUrl());
-      const [urlInput, setUrlInput] = useState(() => getDataUrl());
-      const [rejectedLog, setRejectedLog] = useState([]);
-      const [showRej, setShowRej] = useState(false);
-      const [scrapeMeta, setScrapeMeta] = useState(null);
-      const fileRef = useRef(null);
+    function App(){
+      const[leads,setLeads]=useState([]);
+      const[favs,setFavs]=useState(()=>{try{return new Set(JSON.parse(localStorage.getItem('mkch-favs'))||[])}catch{return new Set()}});
+      const[loading,setLoading]=useState(false);
+      const[status,setStatus]=useState("");
+      const[filter,setFilter]=useState("all");
+      const[meta,setMeta]=useState(null);
+      const[rejLog,setRejLog]=useState([]);
+      const[showRej,setShowRej]=useState(false);
+      const[showSetup,setShowSetup]=useState(false);
+      const[dataUrl,setDataUrl]=useState(()=>getAutoUrl());
+      const[urlInput,setUrlInput]=useState(()=>getAutoUrl());
 
-      // Load
-      useEffect(() => {
-        const d = sLoad("mkch-leads");
-        if (d?.leads) { setLeads(d.leads); setFavs(new Set(d.favs || [])); setLastSync(d.lastSync); }
-      }, []);
+      useEffect(()=>{localStorage.setItem('mkch-favs',JSON.stringify([...favs]))},[favs]);
+      const toggleFav=useCallback(id=>setFavs(p=>{const n=new Set(p);n.has(id)?n.delete(id):n.add(id);return n}),[]);
 
-      // Save
-      useEffect(() => {
-        if (leads.length || favs.size) sSave("mkch-leads", { leads, favs: [...favs], lastSync });
-      }, [leads, favs, lastSync]);
-
-      const toggleFav = useCallback(id => setFavs(p => { const n = new Set(p); n.has(id) ? n.delete(id) : n.add(id); return n; }), []);
-
-      const addLeads = useCallback((arr) => {
-        setLeads(prev => {
-          const ids = new Set(prev.map(l => l.id));
-          const fresh = arr.filter(l => l?.id && l?.scores?.overall >= 60 && !ids.has(l.id));
-          if (fresh.length) { setNewIds(p => new Set([...p, ...fresh.map(l => l.id)])); setTimeout(() => setNewIds(new Set()), 20000); }
-          return [...prev, ...fresh];
-        });
-      }, []);
-
-      const analyzeListings = async (listings) => {
-        const CHUNK = 5;
-        let all = [];
-        for (let i = 0; i < listings.length; i += CHUNK) {
-          const chunk = listings.slice(i, i + CHUNK);
-          setStatus(`KI-Analyse: ${Math.min(i + CHUNK, listings.length)}/${listings.length}…`);
-          try {
-            const r = await fetch("https://api.anthropic.com/v1/messages", {
-              method: "POST", headers: { "Content-Type": "application/json" },
-              body: JSON.stringify({ model: "claude-sonnet-4-20250514", max_tokens: 1000, system: DEEP_PROMPT,
-                messages: [{ role: "user", content: `Tiefenanalyse:\n\n${JSON.stringify(chunk)}` }] })
-            });
-            if (!r.ok) continue;
-            const d = await r.json();
-            const txt = (d.content || []).map(b => b.text || "").filter(Boolean).join("");
-            const parsed = JSON.parse(txt.replace(/```json|```/g, "").trim());
-            all.push(...(Array.isArray(parsed) ? parsed : [parsed]));
-          } catch (e) { console.error(e); }
-        }
-        return all.filter(a => a?.scores?.overall >= 60);
-      };
-
-      const fetchData = useCallback(async () => {
-        const url = dataUrl;
-        if (!url) { setShowSetup(true); return; }
-        setLoading(true); setStatus("Lade Daten von GitHub…");
-        try {
-          const r = await fetch(url);
-          if (!r.ok) throw new Error(`HTTP ${r.status}`);
-          const data = await r.json();
-          const listings = data.listings || [];
-          if (data.meta) setScrapeMeta(data.meta);
-          if (data.rejected_log) setRejectedLog(data.rejected_log);
-
-          if (!listings.length) { setStatus("Keine Inserate in der Datei."); setLoading(false); return; }
-
-          const existingIds = new Set(leads.map(l => l.id));
-          const newListings = listings.filter(l => l.id && !existingIds.has(l.id));
-
-          if (!newListings.length) {
-            setStatus("✅ Alles aktuell — keine neuen Inserate.");
-            setLastSync(new Date().toISOString());
-            setLoading(false); return;
-          }
-
-          setStatus(`${newListings.length} neue Inserate → KI-Tiefenanalyse…`);
-          const qualified = await analyzeListings(newListings);
-          addLeads(qualified);
-          setLastSync(new Date().toISOString());
-          if (data.meta?.scraped_at) setLastScrape(data.meta.scraped_at);
-          setStatus(`✅ ${qualified.length} neue Leads qualifiziert!`);
-          setTimeout(() => setStatus(""), 5000);
-        } catch (e) {
+      const fetchData=useCallback(async()=>{
+        const url=dataUrl;
+        if(!url){setShowSetup(true);setStatus("❌ Keine Daten-URL konfiguriert.");return}
+        setLoading(true);setStatus("Lade Daten…");
+        try{
+          const r=await fetch(url+"?t="+Date.now());
+          if(!r.ok)throw new Error(`HTTP ${r.status}`);
+          const data=await r.json();
+          setLeads(data.listings||[]);
+          setMeta(data.meta||null);
+          setRejLog(data.rejected_log||[]);
+          const n=data.listings?.length||0;
+          const t=data.meta?.top_count||0;
+          setStatus(`✅ ${n} Leads geladen (${t} Top-Kandidaten)`);
+          setTimeout(()=>setStatus(""),5000);
+        }catch(e){
           console.error(e);
-          setStatus(`❌ Fehler: ${e.message}`);
+          setStatus(`❌ Fehler: ${e.message}. Prüfe URL in Einstellungen.`);
         }
         setLoading(false);
-      }, [dataUrl, leads, addLeads]);
+      },[dataUrl]);
 
-      // Auto-fetch on load if URL available
-      useEffect(() => {
-        if (dataUrl && !leads.length) {
-          const t = setTimeout(() => fetchData(), 800);
-          return () => clearTimeout(t);
-        }
-      }, [dataUrl]);
+      useEffect(()=>{if(dataUrl){fetchData()}},[]);
 
-      const handleImport = async (e) => {
-        const file = e.target.files?.[0]; if (!file) return;
-        setLoading(true); setStatus("Lese JSON…");
-        try {
-          const text = await file.text(); const data = JSON.parse(text);
-          const listings = data.listings || data; const arr = Array.isArray(listings) ? listings : [];
-          if (!arr.length) { setStatus("Keine Inserate."); setLoading(false); return; }
-          if (data.meta) setScrapeMeta(data.meta);
-          if (data.rejected_log) setRejectedLog(data.rejected_log);
-          const qualified = await analyzeListings(arr);
-          addLeads(qualified); setLastSync(new Date().toISOString());
-          setStatus(`✅ ${qualified.length} qualifiziert!`);
-          setTimeout(() => setStatus(""), 5000);
-        } catch (e) { setStatus("❌ Fehler beim Import."); }
-        setLoading(false); if (fileRef.current) fileRef.current.value = "";
-      };
+      const saveUrl=()=>{const u=urlInput.trim();setDataUrl(u);localStorage.setItem('mkch-url',u);setShowSetup(false)};
 
-      const analyzeManual = async () => {
-        if (!manualText.trim()) return;
-        setLoading(true); setStatus("Analyse…");
-        try {
-          const r = await fetch("https://api.anthropic.com/v1/messages", { method: "POST", headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ model: "claude-sonnet-4-20250514", max_tokens: 1000, system: DEEP_PROMPT,
-              messages: [{ role: "user", content: `Tiefenanalyse:\n\n${manualText.trim()}` }] }) });
-          const txt = ((await r.json()).content || []).map(b => b.text || "").filter(Boolean).join("");
-          const p = JSON.parse(txt.replace(/```json|```/g, "").trim());
-          addLeads(Array.isArray(p) ? p : [p]); setManualText(""); setShowManual(false); setStatus("");
-        } catch (e) { setStatus("❌ Fehler"); }
-        setLoading(false);
-      };
-
-      const saveUrl = () => { setDataUrl(urlInput.trim()); localStorage.setItem('mkch-data-url', urlInput.trim()); setShowSetup(false); };
-      const clearAll = () => { setLeads([]); setFavs(new Set()); setLastSync(null); setRejectedLog([]); setScrapeMeta(null); localStorage.removeItem("mkch-leads"); };
-
-      const filtered = leads.filter(l => {
-        if (filter === "top") return l.verdict === "TOP-KANDIDAT";
-        if (filter === "starred") return favs.has(l.id);
+      const filtered=leads.filter(l=>{
+        if(filter==="top")return l.verdict==="TOP-KANDIDAT";
+        if(filter==="starred")return favs.has(l.id);
         return true;
-      }).sort((a, b) => {
-        if (favs.has(a.id) !== favs.has(b.id)) return favs.has(a.id) ? -1 : 1;
-        return (b.scores?.overall || 0) - (a.scores?.overall || 0);
+      }).sort((a,b)=>{
+        if(favs.has(a.id)!==favs.has(b.id))return favs.has(a.id)?-1:1;
+        return(b.scores?.overall||0)-(a.scores?.overall||0);
       });
 
-      const topN = leads.filter(l => l.verdict === "TOP-KANDIDAT").length;
-      const intN = leads.filter(l => l.verdict === "INTERESSANT").length;
-      const starN = leads.filter(l => favs.has(l.id)).length;
+      const topN=leads.filter(l=>l.verdict==="TOP-KANDIDAT").length;
+      const intN=leads.filter(l=>l.verdict==="INTERESSANT").length;
+      const starN=leads.filter(l=>favs.has(l.id)).length;
 
-      return (
-        <div style={{ minHeight: "100vh" }}>
-          {/* HEADER */}
-          <div style={{ borderBottom: "1px solid #1f1d17", padding: "18px 16px 14px" }}>
-            <div style={{ maxWidth: 800, margin: "0 auto", display: "flex", justifyContent: "space-between", alignItems: "flex-end", flexWrap: "wrap", gap: 8 }}>
+      return(
+        <div>
+          <div style={{borderBottom:"1px solid #1f1d17",padding:"18px 16px 14px"}}>
+            <div style={{maxWidth:800,margin:"0 auto",display:"flex",justifyContent:"space-between",alignItems:"flex-end",flexWrap:"wrap",gap:8}}>
               <div>
-                <div style={{ fontSize: 10, fontWeight: 700, color: "#d4a24e", letterSpacing: ".14em" }}>MARRAKECH</div>
-                <h1 style={{ margin: 0, fontSize: 22, fontWeight: 800, letterSpacing: "-.03em" }}>Silbertablett</h1>
-                <p style={{ margin: "2px 0 0", fontSize: 11, color: "#6b6560" }}>Automatisch gescrapt · Streng gefiltert · KI-analysiert</p>
+                <div style={{fontSize:10,fontWeight:700,color:"#d4a24e",letterSpacing:".14em"}}>MARRAKECH</div>
+                <h1 style={{fontSize:22,fontWeight:800,letterSpacing:"-.03em"}}>Silbertablett</h1>
+                <p style={{marginTop:2,fontSize:11,color:"#6b6560"}}>Automatisch gescrapt · Streng gefiltert · KI-analysiert</p>
               </div>
-              <div style={{ textAlign: "right", fontSize: 10, color: "#4a4540" }}>
-                {lastScrape && <div>Scraper: {new Date(lastScrape).toLocaleString("de-DE", { day: "2-digit", month: "2-digit", hour: "2-digit", minute: "2-digit" })}</div>}
-                {lastSync && <div>Sync: {new Date(lastSync).toLocaleString("de-DE", { day: "2-digit", month: "2-digit", hour: "2-digit", minute: "2-digit" })}</div>}
+              <div style={{textAlign:"right",fontSize:10,color:"#4a4540"}}>
+                {meta?.analyzed_at&&<div>Analyse: {new Date(meta.analyzed_at).toLocaleString("de-DE",{day:"2-digit",month:"2-digit",hour:"2-digit",minute:"2-digit"})}</div>}
                 <div>{leads.length} Leads · {topN} top · {intN} interessant</div>
               </div>
             </div>
           </div>
 
-          <div style={{ maxWidth: 800, margin: "0 auto", padding: "14px 16px 60px" }}>
-            {/* Pipeline */}
-            <div style={{ background: "#141210", border: "1px solid #1f1d17", borderRadius: 10, padding: "10px 14px", marginBottom: 12, display: "flex", gap: 5, alignItems: "center", flexWrap: "wrap" }}>
-              {["⏰ Täglich 8:00", "🐍 Scraper", "🚧 Filter", "☁️ GitHub", "🔬 KI-Analyse", "✅ Silbertablett"].map((s, i) => (
-                <span key={i} style={{ display: "flex", alignItems: "center", gap: 4 }}>
-                  <span style={{ fontSize: 10, color: "#d4a24e", background: "#1f1a08", padding: "2px 7px", borderRadius: 99, border: "1px solid #d4a24e15" }}>{s}</span>
-                  {i < 5 && <span style={{ color: "#2a2520", fontSize: 8 }}>→</span>}
+          <div className="wrap">
+            <div className="panel" style={{display:"flex",gap:5,alignItems:"center",flexWrap:"wrap"}}>
+              {["⏰ Täglich 8:00","🐍 Scraper","🚧 Filter","🔬 Claude KI","☁️ GitHub","📊 Dashboard"].map((s,i)=>(
+                <span key={i} style={{display:"flex",alignItems:"center",gap:4}}>
+                  <span style={{fontSize:10,color:"#d4a24e",background:"#1f1a08",padding:"2px 7px",borderRadius:99,border:"1px solid #d4a24e15"}}>{s}</span>
+                  {i<5&&<span style={{color:"#2a2520",fontSize:8}}>→</span>}
                 </span>
               ))}
             </div>
 
-            {/* Connection */}
-            <div style={{ background: "#141210", border: "1px solid #1f1d17", borderRadius: 10, padding: "10px 14px", marginBottom: 12, display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 8 }}>
-              <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
-                <span style={{ width: 8, height: 8, borderRadius: 99, background: dataUrl ? "#22c55e" : "#ef4444" }} />
-                <span style={{ fontSize: 11, color: dataUrl ? "#a8a090" : "#6b6560" }}>{dataUrl ? "GitHub verbunden" : "GitHub nicht verbunden"}</span>
-                {scrapeMeta && <span style={{ fontSize: 10, color: "#4a4540" }}>· {scrapeMeta.passed_gates} Leads · {scrapeMeta.rejected} abgelehnt</span>}
+            <div className="panel" style={{display:"flex",justifyContent:"space-between",alignItems:"center",flexWrap:"wrap",gap:8}}>
+              <div style={{display:"flex",alignItems:"center",gap:8}}>
+                <span style={{width:8,height:8,borderRadius:99,background:dataUrl?"#22c55e":"#ef4444"}}/>
+                <span style={{fontSize:11,color:dataUrl?"#a8a090":"#6b6560"}}>{dataUrl?"Datenquelle verbunden":"Nicht verbunden"}</span>
+                {meta&&<span style={{fontSize:10,color:"#4a4540"}}>· {meta.analyzed_count||0} analysiert · {meta.qualified_count||0} qualifiziert</span>}
               </div>
-              <button onClick={() => setShowSetup(!showSetup)} style={{ background: "none", border: "1px solid #1f1d17", color: "#6b6560", borderRadius: 8, padding: "4px 12px", fontSize: 10, cursor: "pointer" }}>⚙ Einstellungen</button>
+              <button className="btn btn-ghost" style={{fontSize:10,padding:"4px 12px"}} onClick={()=>setShowSetup(!showSetup)}>⚙</button>
             </div>
 
-            {showSetup && (
-              <div style={{ background: "#141210", border: "1px solid #d4a24e25", borderRadius: 10, padding: 16, marginBottom: 12 }}>
-                <div style={{ fontSize: 12, color: "#d4a24e", fontWeight: 600, marginBottom: 10 }}>⚙ Daten-URL</div>
-                <div style={{ fontSize: 11, color: "#6b6560", marginBottom: 10, lineHeight: 1.6 }}>
-                  Wenn das Dashboard auf GitHub Pages läuft, wird die URL automatisch erkannt. Sonst: Raw-URL eintragen.
-                </div>
-                <input value={urlInput} onChange={e => setUrlInput(e.target.value)}
-                  placeholder="https://raw.githubusercontent.com/user/marrakech-scanner/main/data/latest.json"
-                  style={{ width: "100%", background: "#1a1810", color: "#e8e0d0", border: "1px solid #1f1d17", borderRadius: 8, padding: "8px 10px", fontSize: 12, outline: "none", boxSizing: "border-box", marginBottom: 10 }} />
-                <button onClick={saveUrl} style={{ background: "#d4a24e", color: "#0c0b08", border: "none", borderRadius: 8, padding: "8px 20px", fontSize: 12, fontWeight: 600, cursor: "pointer" }}>Speichern</button>
+            {showSetup&&(
+              <div className="panel" style={{borderColor:"#d4a24e25",padding:16}}>
+                <div style={{fontSize:12,color:"#d4a24e",fontWeight:600,marginBottom:10}}>⚙ Daten-URL</div>
+                <div style={{fontSize:11,color:"#6b6560",marginBottom:10}}>Wird auf GitHub Pages automatisch erkannt. Sonst Raw-URL eintragen.</div>
+                <input value={urlInput} onChange={e=>setUrlInput(e.target.value)} placeholder="https://raw.githubusercontent.com/..." style={{width:"100%",background:"#1a1810",color:"#e8e0d0",border:"1px solid #1f1d17",borderRadius:8,padding:"8px 10px",fontSize:12,outline:"none",boxSizing:"border-box",marginBottom:10}}/>
+                <button className="btn" style={{background:"#d4a24e",color:"#0c0b08",fontWeight:600,padding:"8px 20px"}} onClick={saveUrl}>Speichern</button>
               </div>
             )}
 
-            {/* Actions */}
-            <div style={{ display: "flex", gap: 8, marginBottom: 10, flexWrap: "wrap", alignItems: "center" }}>
-              <button onClick={fetchData} disabled={loading} style={{
-                background: loading ? "#1f1d17" : "linear-gradient(135deg,#22c55e,#16a34a)",
-                color: loading ? "#6b6560" : "#0c0b08", border: "none", borderRadius: 10, padding: "12px 24px",
-                fontSize: 14, fontWeight: 700, cursor: loading ? "wait" : "pointer",
-                boxShadow: loading ? "none" : "0 2px 24px #22c55e20"
-              }}>{loading ? "⏳ Läuft…" : "🔄 Neue Leads laden"}</button>
-              <input ref={fileRef} type="file" accept=".json" onChange={handleImport} style={{ display: "none" }} />
-              <button onClick={() => fileRef.current?.click()} disabled={loading} style={{ background: "none", border: "1px solid #1f1d17", color: "#6b6560", borderRadius: 8, padding: "8px 14px", fontSize: 11, cursor: "pointer" }}>📂 JSON</button>
-              <button onClick={() => setShowManual(!showManual)} style={{ background: "none", border: "1px solid #1f1d17", color: "#6b6560", borderRadius: 8, padding: "8px 14px", fontSize: 11, cursor: "pointer" }}>+ Manuell</button>
-              {leads.length > 0 && <button onClick={clearAll} style={{ background: "none", border: "1px solid #2e1515", color: "#4a2020", borderRadius: 8, padding: "8px 14px", fontSize: 11, cursor: "pointer", marginLeft: "auto" }}>Reset</button>}
+            <div style={{display:"flex",gap:8,marginBottom:10,flexWrap:"wrap",alignItems:"center"}}>
+              <button className="btn btn-primary" disabled={loading} onClick={fetchData} style={{opacity:loading?.6:1,cursor:loading?"wait":"pointer"}}>{loading?"⏳ Läuft…":"🔄 Daten aktualisieren"}</button>
+              {leads.length>0&&<button className="btn" style={{background:"none",border:"1px solid #2e1515",color:"#4a2020",marginLeft:"auto"}} onClick={()=>{setLeads([]);setMeta(null);setRejLog([])}}>Reset</button>}
             </div>
 
-            {status && <div style={{ background: "#141210", border: "1px solid #1f1d17", borderRadius: 8, padding: "8px 14px", marginBottom: 10, fontSize: 11, color: status.startsWith("✅") ? "#22c55e" : status.startsWith("❌") ? "#ef4444" : "#d4a24e" }}>{status}</div>}
+            {status&&<div className="panel" style={{fontSize:11,color:status.startsWith("✅")?"#22c55e":status.startsWith("❌")?"#ef4444":"#d4a24e"}}>{status}</div>}
 
-            {rejectedLog.length > 0 && (
-              <div style={{ marginBottom: 12 }}>
-                <button onClick={() => setShowRej(!showRej)} style={{ background: "none", border: "none", color: "#4a4540", fontSize: 10, cursor: "pointer", padding: 0 }}>
-                  {showRej ? "▾" : "▸"} {rejectedLog.length} vom Scraper abgelehnt
-                </button>
-                {showRej && <div style={{ background: "#141210", border: "1px solid #1f1d17", borderRadius: 8, padding: 10, marginTop: 6, maxHeight: 200, overflowY: "auto" }}>
-                  {rejectedLog.map((r, i) => <div key={i} style={{ fontSize: 10, color: "#6b6560", marginBottom: 3 }}><span style={{ color: "#ef4444" }}>✕ </span><span style={{ color: "#8a8070" }}>{r.title}</span> — <span style={{ color: "#4a4540" }}>{r.reason}</span></div>)}
+            {rejLog.length>0&&(
+              <div style={{marginBottom:12}}>
+                <button style={{background:"none",border:"none",color:"#4a4540",fontSize:10,cursor:"pointer",padding:0}} onClick={()=>setShowRej(!showRej)}>{showRej?"▾":"▸"} {rejLog.length} vom Scraper abgelehnt</button>
+                {showRej&&<div className="panel" style={{marginTop:6,maxHeight:200,overflowY:"auto"}}>
+                  {rejLog.map((r,i)=><div key={i} style={{fontSize:10,color:"#6b6560",marginBottom:3}}><span style={{color:"#ef4444"}}>✕ </span><span style={{color:"#8a8070"}}>{r.title}</span> — <span style={{color:"#4a4540"}}>{r.reason}</span></div>)}
                 </div>}
               </div>
             )}
 
-            {showManual && (
-              <div style={{ background: "#141210", border: "1px solid #1f1d17", borderRadius: 10, padding: 14, marginBottom: 14 }}>
-                <textarea value={manualText} onChange={e => setManualText(e.target.value)} placeholder="Inserat von Makler/WhatsApp…" style={{ width: "100%", minHeight: 80, background: "#1a1810", color: "#e8e0d0", border: "1px solid #1f1d17", borderRadius: 8, padding: 10, fontSize: 12, resize: "vertical", outline: "none", boxSizing: "border-box" }} />
-                <button onClick={analyzeManual} disabled={loading || !manualText.trim()} style={{ marginTop: 8, background: "#d4a24e", color: "#0c0b08", border: "none", borderRadius: 8, padding: "8px 20px", fontSize: 12, fontWeight: 600, cursor: "pointer", opacity: loading ? .5 : 1 }}>Analysieren</button>
-              </div>
-            )}
-
-            {leads.length > 0 && (
-              <div style={{ display: "flex", gap: 5, marginBottom: 14, borderBottom: "1px solid #1f1d17", paddingBottom: 10 }}>
-                {[{ k: "all", l: `Alle (${leads.length})` }, { k: "top", l: `★ Top (${topN})` }, { k: "starred", l: `⭐ Gemerkt (${starN})` }].map(t => (
-                  <button key={t.k} onClick={() => setFilter(t.k)} style={{ background: filter === t.k ? "#1f1d17" : "transparent", color: filter === t.k ? "#d4a24e" : "#4a4540", border: `1px solid ${filter === t.k ? "#d4a24e25" : "transparent"}`, borderRadius: 8, padding: "5px 12px", fontSize: 11, fontWeight: 500, cursor: "pointer" }}>{t.l}</button>
+            {leads.length>0&&(
+              <div style={{display:"flex",gap:5,marginBottom:14,borderBottom:"1px solid #1f1d17",paddingBottom:10}}>
+                {[{k:"all",l:`Alle (${leads.length})`},{k:"top",l:`★ Top (${topN})`},{k:"starred",l:`⭐ Gemerkt (${starN})`}].map(t=>(
+                  <button key={t.k} className="btn" style={{background:filter===t.k?"#1f1d17":"transparent",color:filter===t.k?"#d4a24e":"#4a4540",border:`1px solid ${filter===t.k?"#d4a24e25":"transparent"}`,fontSize:11,fontWeight:500,padding:"5px 12px"}} onClick={()=>setFilter(t.k)}>{t.l}</button>
                 ))}
               </div>
             )}
 
-            {filtered.length > 0 ? filtered.map(l => <Card key={l.id} d={l} starred={favs.has(l.id)} onStar={toggleFav} isNew={newIds.has(l.id)} />) : leads.length > 0 ? <div style={{ textAlign: "center", padding: "30px", color: "#4a4540", fontSize: 12 }}>Keine Inserate in diesem Filter.</div> : !loading ? (
-              <div style={{ textAlign: "center", padding: "60px 20px" }}>
-                <div style={{ fontSize: 48, marginBottom: 14, opacity: .25 }}>🏡</div>
-                <div style={{ color: "#6b6560", fontSize: 14, marginBottom: 8 }}>Euer Silbertablett ist bereit.</div>
-                {!dataUrl ? (
-                  <div style={{ color: "#4a4540", fontSize: 12, lineHeight: 1.7 }}>
-                    Klickt oben auf <strong style={{ color: "#d4a24e" }}>⚙ Einstellungen</strong> und tragt die GitHub-URL ein.
-                  </div>
-                ) : (
-                  <div style={{ color: "#4a4540", fontSize: 12 }}>
-                    Klicke <strong style={{ color: "#22c55e" }}>Neue Leads laden</strong> für die neuesten Ergebnisse.
-                  </div>
-                )}
-              </div>
-            ) : null}
+            {filtered.length>0?filtered.map(l=><Card key={l.id} d={l} starred={favs.has(l.id)} onStar={toggleFav}/>)
+            :leads.length>0?<div style={{textAlign:"center",padding:30,color:"#4a4540",fontSize:12}}>Keine Inserate in diesem Filter.</div>
+            :!loading&&<div style={{textAlign:"center",padding:"60px 20px"}}>
+              <div style={{fontSize:48,marginBottom:14,opacity:.25}}>🏡</div>
+              <div style={{color:"#6b6560",fontSize:14,marginBottom:8}}>Euer Silbertablett ist bereit.</div>
+              <div style={{color:"#4a4540",fontSize:12}}>{dataUrl?"Klickt oben auf Daten aktualisieren.":"Klickt ⚙ und tragt die GitHub-URL ein."}</div>
+            </div>}
 
-            {filtered.length >= 2 && (
-              <div style={{ background: "#141210", border: "1px solid #1f1d17", borderRadius: 12, padding: 14, marginTop: 10, overflowX: "auto" }}>
-                <div style={{ fontSize: 10, color: "#d4a24e", fontWeight: 600, letterSpacing: ".08em", marginBottom: 8 }}>VERGLEICH</div>
-                <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 11 }}>
-                  <thead><tr>{["", "Objekt", "Score", "Preis", "m²", "/m²", "Lage", ""].map((h, i) => (
-                    <th key={i} style={{ textAlign: i > 1 && i < 6 ? "right" : "left", padding: "4px 5px", color: "#4a4540", fontWeight: 500, borderBottom: "1px solid #1f1d17", fontSize: 10 }}>{h}</th>
+            {filtered.length>=2&&(
+              <div className="panel" style={{marginTop:10,overflowX:"auto",borderRadius:12,padding:14}}>
+                <div style={{fontSize:10,color:"#d4a24e",fontWeight:600,letterSpacing:".08em",marginBottom:8}}>VERGLEICH</div>
+                <table style={{width:"100%",borderCollapse:"collapse",fontSize:11}}>
+                  <thead><tr>{["","Objekt","Score","Preis","m²","/m²","Lage",""].map((h,i)=>(
+                    <th key={i} style={{textAlign:i>1&&i<6?"right":"left",padding:"4px 5px",color:"#4a4540",fontWeight:500,borderBottom:"1px solid #1f1d17",fontSize:10}}>{h}</th>
                   ))}</tr></thead>
-                  <tbody>{filtered.map((l, i) => { const v2 = vi(l.verdict); return (
+                  <tbody>{filtered.map((l,i)=>{const v2=vi(l.verdict);return(
                     <tr key={i}>
-                      <td style={{ padding: "5px 3px", color: favs.has(l.id) ? "#d4a24e" : "#1f1d17", fontSize: 13 }}>{favs.has(l.id) ? "★" : "·"}</td>
-                      <td style={{ padding: "5px", color: "#a8a090", maxWidth: 130, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{l.title}</td>
-                      <td style={{ padding: "5px", textAlign: "right", fontWeight: 700, color: sc(l.scores?.overall), fontFamily: "monospace" }}>{l.scores?.overall}</td>
-                      <td style={{ padding: "5px", textAlign: "right", color: "#8a8070" }}>{l.price_mad ? (l.price_mad / 1000).toFixed(0) + "k" : "—"}</td>
-                      <td style={{ padding: "5px", textAlign: "right", color: "#8a8070" }}>{l.area_sqm || "—"}</td>
-                      <td style={{ padding: "5px", textAlign: "right", color: "#8a8070" }}>{l.price_per_sqm_mad ? (l.price_per_sqm_mad / 1000).toFixed(1) + "k" : "—"}</td>
-                      <td style={{ padding: "5px", color: "#8a8070" }}>{l.neighborhood || "—"}</td>
-                      <td style={{ padding: "5px" }}><Pill color={v2.c} bg={v2.bg}>{v2.i}</Pill></td>
-                    </tr>
-                  ); })}</tbody>
+                      <td style={{padding:"5px 3px",color:favs.has(l.id)?"#d4a24e":"#1f1d17",fontSize:13}}>{favs.has(l.id)?"★":"·"}</td>
+                      <td style={{padding:5,color:"#a8a090",maxWidth:130,overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{l.title}</td>
+                      <td style={{padding:5,textAlign:"right",fontWeight:700,color:sc(l.scores?.overall),fontFamily:"monospace"}}>{l.scores?.overall}</td>
+                      <td style={{padding:5,textAlign:"right",color:"#8a8070"}}>{l.price_mad?(l.price_mad/1000).toFixed(0)+"k":"—"}</td>
+                      <td style={{padding:5,textAlign:"right",color:"#8a8070"}}>{l.area_sqm||"—"}</td>
+                      <td style={{padding:5,textAlign:"right",color:"#8a8070"}}>{l.price_per_sqm_mad?(l.price_per_sqm_mad/1000).toFixed(1)+"k":"—"}</td>
+                      <td style={{padding:5,color:"#8a8070"}}>{l.neighborhood||"—"}</td>
+                      <td style={{padding:5}}><Pill color={v2.c} bg={v2.bg}>{v2.i}</Pill></td>
+                    </tr>)})}</tbody>
                 </table>
               </div>
             )}
@@ -491,7 +301,7 @@ Nicht leichtfertig hohe Scores. Konservativ bei wenig Infos. Ehrliche Concerns.`
       );
     }
 
-    ReactDOM.render(<App />, document.getElementById("root"));
+    ReactDOM.render(<App/>,document.getElementById("root"));
   </script>
 </body>
 </html>
