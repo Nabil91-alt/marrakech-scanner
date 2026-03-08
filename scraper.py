@@ -1,10 +1,8 @@
 #!/usr/bin/env python3
 """
 MARRAKECH IMMOBILIEN-SCRAPER v2
-================================
-Robust scraping mit mehreren Fallback-Strategien.
 pip install requests beautifulsoup4
-python scraper.py --output data/latest_raw.json --pages 5
+python scraper.py --output data/latest_raw.json --pages 3
 """
 
 import requests
@@ -35,7 +33,7 @@ TITRE_FONCIER_KEYWORDS = ["titre foncier", "tf", "titre"]
 
 MIN_DELAY = 1.0
 MAX_DELAY = 2.0
-MAX_PAGES = 5
+MAX_PAGES = 3
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
@@ -109,7 +107,7 @@ def fetch(url, session):
 def parse_price(text):
     if not text:
         return None
-    text = re.sub(r'[MADHsDh€\s\.\,\xa0]', '', text)
+    text = re.sub(r'[MADHsDh\u20ac\s\.\,\xa0]', '', text)
     m = re.search(r'(\d{6,8})', text)
     if m:
         val = int(m.group(1))
@@ -132,7 +130,7 @@ def detect_from_text(text):
     if m:
         v = int(m.group(1))
         if 20 < v < 1000: r['area_sqm'] = v
-    m = re.search(r'(\d)\s*(?:pi[eè]ces?|pcs?)\b', t)
+    m = re.search(r'(\d)\s*(?:pi[e\u00e8]ces?|pcs?)\b', t)
     if m: r['rooms'] = int(m.group(1))
     m = re.search(r'(\d)\s*(?:chambres?|chbr?|ch\.)\b', t)
     if m: r['bedrooms'] = int(m.group(1))
@@ -141,7 +139,7 @@ def detect_from_text(text):
     if any(w in t for w in ["rez-de-chauss", "rdc"]):
         r['floor'] = "RDC"; r['is_ground_floor'] = True
     else:
-        m = re.search(r'(\d+)\s*(?:[eè]me|er|e)?\s*[eé]tage', t)
+        m = re.search(r'(\d+)\s*(?:[e\u00e8]me|er|e)?\s*[e\u00e9]tage', t)
         if m: r['floor'] = f"{m.group(1)}. Etage"; r['is_ground_floor'] = False
     r['has_terrace'] = any(w in t for w in ["terrasse", "balcon", "rooftop", "toit terrasse"])
     r['has_pool'] = any(w in t for w in ["piscine", "pool"])
@@ -203,7 +201,6 @@ def scrape_mubawab(session, max_pages=MAX_PAGES):
             except Exception as e: print(f"    Fehler: {e}")
         if not cards: break
         delay()
-
     seen = set()
     unique = [l for l in listings if l.url and l.url not in seen and not seen.add(l.url)]
     listings = unique
@@ -235,7 +232,7 @@ def _mubawab_detail(listing, session):
         if "pi" in tl and "ce" in tl and not listing.rooms: listing.rooms = extract_number(t, 1, 20)
         elif "chambre" in tl and not listing.bedrooms: listing.bedrooms = extract_number(t, 1, 10)
         elif ("salle" in tl or "sdb" in tl) and not listing.bathrooms: listing.bathrooms = extract_number(t, 1, 10)
-        elif "m" in tl and ("2" in tl or "²" in tl) and not listing.area_sqm:
+        elif "m" in tl and ("2" in tl or "\u00b2" in tl) and not listing.area_sqm:
             v = extract_number(t, 20, 1000)
             if v: listing.area_sqm = v
     for script in soup.find_all("script", type="application/ld+json"):
@@ -301,7 +298,6 @@ def scrape_avito(session, max_pages=MAX_PAGES):
             if l.title and len(l.title) > 5: listings.append(l)
         print(f"    {len(listings)} Listings bisher")
         delay()
-
     seen = set()
     unique = [l for l in listings if (l.url or l.title) and (l.url or l.title) not in seen and not seen.add(l.url or l.title)]
     listings = unique
@@ -387,7 +383,6 @@ def scrape_sarouty(session, max_pages=MAX_PAGES):
         print(f"\n  Seite {page}/{max_pages}")
         resp = fetch(url, session)
         if not resp:
-            # Fallback: .html Version
             url2 = f"https://www.sarouty.ma/acheter/marrakech/appartements-a-vendre.html?page={page}"
             resp = fetch(url2, session)
             if not resp: continue
@@ -416,7 +411,6 @@ def scrape_sarouty(session, max_pages=MAX_PAGES):
             except: pass
         if not cards: break
         delay()
-
     seen = set()
     unique = [l for l in listings if (l.url or l.title) and (l.url or l.title) not in seen and not seen.add(l.url or l.title)]
     listings = unique
@@ -428,6 +422,8 @@ def scrape_sarouty(session, max_pages=MAX_PAGES):
         delay()
     print(f"\n  Sarouty: {len(listings)} Inserate")
     return listings
+
+def _sarouty_detail(listing, session):
     resp = fetch(listing.url, session)
     if not resp: return
     soup = BeautifulSoup(resp.text, "html.parser")
