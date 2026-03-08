@@ -33,8 +33,8 @@ NO_GO_KEYWORDS = ["riad", "riyad", "rez-de-chaussee", "rez de chaussee"]
 MELKIA_KEYWORDS = ["melkia", "melk"]
 TITRE_FONCIER_KEYWORDS = ["titre foncier", "tf", "titre"]
 
-MIN_DELAY = 2.0
-MAX_DELAY = 4.0
+MIN_DELAY = 1.0
+MAX_DELAY = 2.0
 MAX_PAGES = 5
 
 HEADERS = {
