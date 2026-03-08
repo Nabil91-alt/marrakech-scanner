@@ -1,14 +1,14 @@
 {
   "meta": {
-    "scraped_at": "2026-03-08T21:12:07.140257",
+    "scraped_at": "2026-03-08T22:00:04.068247",
     "total_found": 217,
     "passed_gates": 86,
     "rejected": 131,
-    "analyzed_at": "2026-03-08T21:25:33.849937",
+    "analyzed_at": "2026-03-08T22:12:57.337745",
     "analyzed_count": 86,
-    "qualified_count": 44,
-    "top_count": 6,
-    "interesting_count": 25
+    "qualified_count": 38,
+    "top_count": 4,
+    "interesting_count": 20
   },
   "listings": [
     {
@@ -16,8 +16,10 @@
       "title": "Nour Confort Targa",
       "source": "Avito",
       "url": "",
-      "price_mad": 1427900,
-      "price_eur": 119000,
+      "contact_phone": "",
+      "contact_name": "",
+      "price_mad": 1209900,
+      "price_eur": 100825,
       "area_sqm": 85,
       "rooms": 3,
       "bedrooms": 2,
@@ -25,7 +27,7 @@
       "floor": "Unbekannt",
       "neighborhood": "Targa",
       "property_type": "Apartment",
-      "price_per_sqm_mad": 16799,
+      "price_per_sqm_mad": 14234,
       "has_terrace": true,
       "has_pool": true,
       "has_parking": true,
@@ -35,14 +37,16 @@
       "condition": "Neubau",
       "highlights": [
         "TOP-Lage Targa",
-        "Neubau-Komplex",
-        "Vollausstattung",
-        "Perfektes Budget"
+        "Perfektes Budget",
+        "Neubau-Projekt",
+        "Vollausstattung vermutet"
       ],
       "concerns": [
-        "Wenig Details verfügbar"
+        "Minimale Projektdetails",
+        "Baufortschritt unklar",
+        "Fertigstellungstermin?"
       ],
-      "neighborhood_outlook": "Targa ist eine der besten Speckgürtel-Lagen mit moderner Entwicklung und guter Infrastruktur. Ideal für Investment und Eigennutzung.",
+      "neighborhood_outlook": "Targa ist eine der TOP-Lagen im Speckgürtel mit starkem Wachstum und Wertsteigerungspotenzial. Moderne Infrastruktur und gehobene Entwicklung.",
       "investment_potential": 5,
       "livability_score": 5,
       "market_price_assessment": "Unter Markt",
@@ -56,77 +60,23 @@
         "overall": 92
       },
       "verdict": "TOP-KANDIDAT",
-      "verdict_reason": "Perfekte Kombination aus TOP-Lage Targa, Neubau-Qualität, vollständiger Ausstattung und attraktivem Preis. Erfüllt alle Hauptkriterien und liegt im Sweet Spot des Budgets.",
+      "verdict_reason": "Perfekte Kombination aus TOP-Lage Targa, idealem Budget und Neubau-Ausstattung. Trotz wenig Details deutet alles auf exzellente Gelegenheit hin.",
       "besichtigung_fragen": [
-        "Welche Etage und Ausrichtung?",
-        "Größe der Terrasse?",
-        "Zugang zum Pool und Parkplatz?",
-        "Baufortschritt und Bezugstermin?",
-        "Zusätzliche Nebenkosten?"
+        "Wann ist die Fertigstellung geplant?",
+        "Welche genauen Ausstattungsmerkmale?",
+        "Musterwohnung besichtigbar?",
+        "Zahlungsplan und Konditionen?",
+        "Garantien und Gewährleistung?"
       ],
-      "verhandlung_tipps": "Preis ist bereits sehr attraktiv für Targa. Fokus auf Zusatzleistungen oder frühen Bezugstermin."
-    },
-    {
-      "id": "",
-      "title": "Appartement neuf à vendre Targa",
-      "source": "Avito",
-      "url": "",
-      "price_mad": 1040000,
-      "price_eur": 86667,
-      "area_sqm": 75,
-      "rooms": 3,
-      "bedrooms": 2,
-      "bathrooms": 2,
-      "floor": "Unbekannt",
-      "neighborhood": "Targa",
-      "property_type": "Apartment",
-      "price_per_sqm_mad": 13867,
-      "has_terrace": true,
-      "has_pool": false,
-      "has_parking": true,
-      "has_elevator": true,
-      "is_new_build": true,
-      "ownership_type": "Unbekannt",
-      "condition": "Neubau",
-      "highlights": [
-        "Neubau",
-        "Top-Lage Targa",
-        "Aufzug vorhanden",
-        "Guter Preis für Neubau"
-      ],
-      "concerns": [
-        "Etwas kleine Fläche",
-        "Pool-Situation unklar"
-      ],
-      "neighborhood_outlook": "Targa ist eine der besten Wohnlagen Marrakesch - ruhig, gut entwickelt mit steigenden Immobilienpreisen. Sehr gefragt bei Käufern.",
-      "investment_potential": 4,
-      "livability_score": 4,
-      "market_price_assessment": "Unter Markt",
-      "scores": {
-        "budget_fit": 100,
-        "location_fit": 100,
-        "size_fit": 80,
-        "amenities_fit": 75,
-        "investment_fit": 85,
-        "info_penalty": 10,
-        "overall": 88
-      },
-      "verdict": "TOP-KANDIDAT",
-      "verdict_reason": "Neubau in Top-Lage Targa zu attraktivem Preis. Gute Ausstattung mit Aufzug, nur etwas knapp bemessen.",
-      "besichtigung_fragen": [
-        "Gibt es einen Pool in der Anlage?",
-        "Genaue Raumaufteilung der 75m²?",
-        "Größe und Ausrichtung der Terrasse?",
-        "Welche Gemeinschaftseinrichtungen?",
-        "Wann ist die Fertigstellung?"
-      ],
-      "verhandlung_tipps": "Bei Neubau wenig Verhandlungsspielraum, aber früher Kauf kann Vorteil bei Ausstattungsdetails bringen."
+      "verhandlung_tipps": "Bei Neubauprojekten sind Preise oft fix, aber Zahlungskonditionen und Extras verhandelbar."
     },
     {
       "id": "cb8e55a09edf",
-      "title": "Wohnung zu verkaufen - Targa, Residenz Les Palmiers",
+      "title": "Wohnung in Targa - Résidence Les Palmiers",
       "source": "Mubawab",
       "url": "https://www.mubawab.ma/fr/a/8257480/appartement-%C3%A0-vendre-%E2%80%93-targa-r%C3%A9sidence-les-palmiers-de-targa",
+      "contact_phone": "",
+      "contact_name": "",
       "price_mad": 1200000,
       "price_eur": 111111,
       "area_sqm": 75,
@@ -145,103 +95,108 @@
       "ownership_type": "Unbekannt",
       "condition": "Neu",
       "highlights": [
-        "Top-Lage Targa - beste Gegend",
-        "Perfekter Preis im Sweet-Spot",
-        "Terrasse, Pool und Aufzug vorhanden",
-        "Sichere, grüne Residenz"
+        "TOP-Lage Targa (Speckgürtel)",
+        "Perfekter Budget-Sweet Spot",
+        "Terrasse und Pool vorhanden",
+        "Sichere Wohnanlage"
       ],
       "concerns": [
-        "Nur 75m² - relativ klein",
         "Kein Parkplatz verfügbar",
-        "Syndic-Gebühren 3.600 DH/Jahr",
-        "Agentenprovision 2,5%"
+        "Nur 75m² etwas knapp",
+        "Eigentum unbekannt",
+        "Hohe Nebenkosten möglich"
       ],
-      "neighborhood_outlook": "Targa ist eine der besten Wohngegenden Marrakeschs mit hoher Wertstabilität und guter Infrastruktur. Sehr begehrte Lage für Eigennutzung und Investment.",
-      "investment_potential": 5,
+      "neighborhood_outlook": "Targa ist eine der besten Speckgürtel-Lagen mit excellenter Infrastruktur und Wertsteigerungspotenzial. Beliebte Wohngegend für Expats und gehobene Mittelschicht.",
+      "investment_potential": 4,
       "livability_score": 4,
-      "market_price_assessment": "Unter Markt",
+      "market_price_assessment": "Marktgerecht",
       "scores": {
         "budget_fit": 100,
         "location_fit": 100,
         "size_fit": 60,
         "amenities_fit": 75,
-        "investment_fit": 90,
+        "investment_fit": 85,
         "info_penalty": 10,
-        "overall": 83
+        "overall": 84
       },
-      "verdict": "TOP-KANDIDAT",
-      "verdict_reason": "Ausgezeichnete Kombination aus Top-Lage Targa, attraktivem Preis und guter Ausstattung. Trotz kleinerer Fläche bietet die Wohnung Terrasse, Pool und Aufzug in sicherer Residenz.",
+      "verdict": "INTERESSANT",
+      "verdict_reason": "Excellente Lage in Targa mit perfektem Budget-Fit und guter Ausstattung. Der fehlende Parkplatz und die kompakte Größe sind die hauptsächlichen Schwächen, aber für die Lage sehr attraktiv.",
       "besichtigung_fragen": [
-        "Wie groß ist die Terrasse genau?",
-        "Warum ist kein Parkplatz verfügbar?",
-        "Sind externe Parkplätze in der Nähe vorhanden?",
-        "Wie ist der Zustand der Gemeinschaftsanlagen?",
-        "Welche Aussicht bietet die Wohnung?"
+        "Gibt es Parkmöglichkeiten in der Nähe?",
+        "Wie hoch sind die jährlichen Nebenkosten?",
+        "Ist VNA (Verkauf an Nichtansässige) bestätigt?",
+        "Welche Geschäfte sind fußläufig erreichbar?",
+        "Gibt es Lärmbelästigung durch den Verkehr?"
       ],
-      "verhandlung_tipps": "Preis ist bereits sehr attraktiv für Targa. Maximal 2-3% Nachlass wegen fehlendem Parkplatz verhandelbar."
+      "verhandlung_tipps": "Bei der TOP-Lage Targa ist der Preis fair. Eventuelle Verhandlung über Nebenkosten oder kleinere Mängel möglich."
     },
     {
       "id": "",
       "title": "Luxus-Duplex mit Pool zu verkaufen",
       "source": "Avito",
       "url": "",
+      "contact_phone": "",
+      "contact_name": "",
       "price_mad": 1100000,
-      "price_eur": 92000,
-      "area_sqm": 90,
-      "rooms": 3,
-      "bedrooms": 2,
+      "price_eur": 91667,
+      "area_sqm": 120,
+      "rooms": 4,
+      "bedrooms": 3,
       "bathrooms": 2,
       "floor": "Duplex",
       "neighborhood": "Route de Casablanca",
       "property_type": "Duplex",
-      "price_per_sqm_mad": 12222,
+      "price_per_sqm_mad": 9167,
       "has_terrace": true,
       "has_pool": true,
       "has_parking": true,
       "has_elevator": false,
       "is_new_build": false,
       "ownership_type": "Unbekannt",
-      "condition": "Luxus",
+      "condition": "Unbekannt",
       "highlights": [
-        "Sehr günstiger Preis",
+        "Excellent Preis-Leistung",
         "Pool vorhanden",
-        "Duplex mit Terrasse",
-        "Parkplatz verfügbar"
+        "Route de Casablanca - Speckgürtel",
+        "Duplex mit viel Platz",
+        "Terrasse vorhanden"
       ],
       "concerns": [
-        "Route Casa nicht Top-Lage",
-        "Eventuell zu günstig - Haken?",
-        "Unbekannte Details"
+        "Sehr wenig Details trotz 'Luxus'",
+        "Ownership unbekannt",
+        "Zustand unklar"
       ],
-      "neighborhood_outlook": "Route de Casablanca ist eine der bevorzugten Speckgürtel-Lagen mit guter Entwicklung und Anbindung.",
+      "neighborhood_outlook": "Route de Casablanca ist eine der akzeptierten Speckgürtel-Lagen. Gute Anbindung und Entwicklungspotenzial vorhanden.",
       "investment_potential": 4,
       "livability_score": 4,
       "market_price_assessment": "Unter Markt",
       "scores": {
         "budget_fit": 100,
         "location_fit": 70,
-        "size_fit": 80,
+        "size_fit": 100,
         "amenities_fit": 75,
         "investment_fit": 85,
-        "info_penalty": 10,
-        "overall": 82
+        "info_penalty": 15,
+        "overall": 83
       },
       "verdict": "TOP-KANDIDAT",
-      "verdict_reason": "Ausgezeichnetes Preis-Leistungs-Verhältnis mit Pool, Terrasse und Parkplatz in bevorzugter Lage. Duplex bietet zusätzlichen Wohnkomfort.",
+      "verdict_reason": "Hervorragender Preis für einen Duplex mit Pool in akzeptabler Speckgürtel-Lage. Sehr guter m²-Preis und wichtige Ausstattung vorhanden.",
       "besichtigung_fragen": [
-        "Warum so günstiger Preis?",
-        "Zustand des Pools und der Terrasse?",
-        "Größe des Parkplatzes?",
-        "Nebenkosten und Gebühren?",
-        "Rechtliche Situation geklärt?"
+        "Welche Luxus-Ausstattung ist konkret vorhanden?",
+        "Zustand von Pool und Terrasse?",
+        "Wie viele Parkplätze?",
+        "Baujahr und Renovierungszustand?",
+        "Welche Nebenkosten fallen an?"
       ],
-      "verhandlung_tipps": "Preis ist bereits sehr attraktiv - sorgfältig prüfen ob alles rechtlich in Ordnung ist."
+      "verhandlung_tipps": "Trotz attraktivem Preis Details zum Zustand klären bevor finale Verhandlung."
     },
     {
       "id": "549d1acac988",
-      "title": "Prix très compétitif",
+      "title": "Route Casablanca 95m² Kompaktwohnung",
       "source": "Mubawab",
       "url": "https://www.mubawab.ma/fr/a/8313593/prix-tr%C3%A8s-comp%C3%A9titif",
+      "contact_phone": "",
+      "contact_name": "",
       "price_mad": 1300000,
       "price_eur": 120370,
       "area_sqm": 95,
@@ -261,45 +216,47 @@
       "condition": "Neu",
       "highlights": [
         "Sehr guter Preis",
-        "95m² Fläche",
-        "Vollausstattung",
-        "Entwickelnde Lage"
+        "Gute Größe 95m2",
+        "Pool und Parkplatz",
+        "Route Casablanca"
       ],
       "concerns": [
         "Keine Terrasse",
-        "Route Casablanca noch entwickelnd",
-        "Zustand unklar",
-        "Etage unbekannt"
+        "Lage nicht optimal",
+        "Eigentumsstatus unklar",
+        "Wenig Details"
       ],
-      "neighborhood_outlook": "Route de Casablanca entwickelt sich rasant mit vielen neuen Projekten. Sehr gutes Investment-Potenzial langfristig.",
+      "neighborhood_outlook": "Route de Casablanca entwickelt sich stetig. Gute Verkehrsanbindung aber weniger Wohncharakter.",
       "investment_potential": 4,
-      "livability_score": 4,
+      "livability_score": 3,
       "market_price_assessment": "Unter Markt",
       "scores": {
         "budget_fit": 100,
         "location_fit": 70,
         "size_fit": 80,
         "amenities_fit": 75,
-        "investment_fit": 80,
-        "info_penalty": 15,
-        "overall": 82
+        "investment_fit": 85,
+        "info_penalty": 5,
+        "overall": 83
       },
       "verdict": "TOP-KANDIDAT",
-      "verdict_reason": "Hervorragender Preis für gute Größe und Ausstattung in entwickelnder Top-Lage. Nur Terrasse fehlt, sonst sehr attraktiv.",
+      "verdict_reason": "Ausgezeichnetes Preis-Leistungs-Verhältnis für 95m2 mit Pool und Parking. Fehlende Terrasse ist verschmerzbar.",
       "besichtigung_fragen": [
-        "Warum ist der Preis so kompetitiv?",
-        "In welcher Etage liegt die Wohnung?",
-        "Gibt es Balkone oder Außenflächen?",
-        "Wie ist der genaue Zustand?",
-        "Welche Nebenkosten fallen an?"
+        "Warum kein Balkon/Terrasse?",
+        "Welche Etage?",
+        "Zustand der Residenz?",
+        "Genaue Lage Route Casablanca?",
+        "Sofort bezugsfertig?"
       ],
-      "verhandlung_tipps": "Preis ist bereits sehr attraktiv. Fokus auf Nebenkosten und versteckte Kosten. Wenig Verhandlungsspielraum erwartet."
+      "verhandlung_tipps": "Preis ist bereits sehr gut - kleine Verhandlung um 50-100k MAD möglich."
     },
     {
-      "id": "1e8777d84932",
-      "title": "Neubau-Appartement Route Casablanca - Projekt Le Vizir",
+      "id": "c3bec154e26c",
+      "title": "Le Vizir Projekt Route Casablanca 137m²",
       "source": "Mubawab",
-      "url": "https://www.mubawab.ma/fr/pa/8140935/vente-d-un-bel-appartement-%C3%A0-marrakech-surface-totale-137-m%C2%B2",
+      "url": "https://www.mubawab.ma/fr/pa/8140933/appartement-%C3%A0-vendre-%C3%A0-marrakech-surface-de-137-m%C2%B2",
+      "contact_phone": "",
+      "contact_name": "",
       "price_mad": 1515000,
       "price_eur": 140277,
       "area_sqm": 137,
@@ -318,18 +275,18 @@
       "ownership_type": "Unbekannt",
       "condition": "Neu",
       "highlights": [
-        "Sehr guter m2-Preis von 11.058 MAD",
-        "Große Wohnfläche von 137m2",
-        "Neubau-Projekt mit hochwertigen Finishes",
-        "12 Min zum Stadtzentrum, strategische Lage"
+        "Perfekte Größe 137m2",
+        "Guter m2-Preis",
+        "Pool und Terrasse",
+        "Neubau-Qualität"
       ],
       "concerns": [
-        "Kein Aufzug im Neubau-Projekt",
-        "Kein Parkplatz vorhanden",
-        "Nur 1 Badezimmer für 3 Zimmer",
-        "Ownership-Status unklar"
+        "Kein Parkplatz",
+        "Kein Aufzug",
+        "Eigentumsstatus unklar",
+        "12 Min zum Zentrum"
       ],
-      "neighborhood_outlook": "Route de Casablanca ist ein entwicklungsstarker Korridor mit guter Anbindung zum Zentrum. Die Nähe zum Flughafen und neue Projekte fördern die Wertsteigerung.",
+      "neighborhood_outlook": "Route de Casablanca entwickelt sich gut mit neuen Projekten. Gute Anbindung zum Zentrum und Flughafen.",
       "investment_potential": 4,
       "livability_score": 4,
       "market_price_assessment": "Unter Markt",
@@ -338,260 +295,90 @@
         "location_fit": 70,
         "size_fit": 100,
         "amenities_fit": 50,
-        "investment_fit": 90,
+        "investment_fit": 80,
         "info_penalty": 10,
         "overall": 82
       },
-      "verdict": "INTERESSANT",
-      "verdict_reason": "Sehr attraktiver Preis pro m2 und großzügige Fläche kompensieren fehlende Ausstattung. Neubau-Projekt mit Potenzial, aber Parkplatz und Aufzug fehlen.",
+      "verdict": "TOP-KANDIDAT",
+      "verdict_reason": "Ausgezeichnetes Preis-Leistungs-Verhältnis mit perfekter Größe und guter Ausstattung. Neubau-Projekt mit Pool kompensiert fehlenden Aufzug.",
       "besichtigung_fragen": [
-        "Warum ist kein Aufzug im Neubau-Projekt vorgesehen?",
-        "Gibt es Möglichkeit für Parkplatz in der Nähe?",
-        "Welche Etage ist verfügbar?",
-        "Wie ist der Baufortschritt und genaue Übergabe?",
-        "Sind die beworbenen Finishes im Preis enthalten?"
+        "Wann ist die Fertigstellung?",
+        "Sind Parkplätze optional buchbar?",
+        "Welche Etage verfügbar?",
+        "Genaue Lage des Projekts?",
+        "Finanzierungsoptionen?"
       ],
-      "verhandlung_tipps": "Bei Neubau wenig Verhandlungsspielraum, aber nach Inklusiv-Ausstattung und Zahlungskonditionen fragen."
+      "verhandlung_tipps": "Guter Preis, aber nach Parkplatz-Inclusion oder Preisnachlass fragen."
     },
     {
-      "id": "8de241f1b503",
-      "title": "Neubau-Wohnung in Ain Mezouar Gueliz - 101m²",
-      "source": "Mubawab",
-      "url": "https://www.mubawab.ma/fr/pa/8154991/appartement-%C3%A0-vendre-%C3%A0-ain-mezouar-gueliz-surface-de-101-m%C2%B2",
-      "price_mad": 1393800,
-      "price_eur": 129055,
-      "area_sqm": 101,
-      "rooms": 4,
-      "bedrooms": 3,
-      "bathrooms": 3,
+      "id": "",
+      "title": "Neue Wohnung zu verkaufen Targa",
+      "source": "Avito",
+      "url": "",
+      "contact_phone": "",
+      "contact_name": "",
+      "price_mad": 1040000,
+      "price_eur": 86667,
+      "area_sqm": 75,
+      "rooms": 3,
+      "bedrooms": 2,
+      "bathrooms": 2,
       "floor": "Unbekannt",
-      "neighborhood": "Gueliz",
+      "neighborhood": "Targa",
       "property_type": "Apartment",
-      "price_per_sqm_mad": 13800,
-      "has_terrace": false,
-      "has_pool": true,
+      "price_per_sqm_mad": 13867,
+      "has_terrace": true,
+      "has_pool": false,
       "has_parking": true,
       "has_elevator": true,
       "is_new_build": true,
       "ownership_type": "Unbekannt",
       "condition": "Neu",
       "highlights": [
-        "Exzellenter Preis von nur 13.800 MAD/m²",
-        "Neubau-Projekt mit Lieferung 2027",
-        "Top-Ausstattung: Pool, Parking, Aufzug",
-        "Renommierter Entwickler (Domaine Tagana)"
+        "Neubau in Targa",
+        "Top-Lage",
+        "Moderner Standard",
+        "Günstiger Preis"
       ],
       "concerns": [
-        "Lage Gueliz nicht optimal für Käuferprofil",
-        "Keine Terrasse vorhanden",
-        "Eigentum ungeklärt",
-        "Fertigstellung erst 2027"
+        "Nur 2 Schlafzimmer",
+        "Kleiner als gewünscht",
+        "Keine Pool-Info",
+        "Wenig Details"
       ],
-      "neighborhood_outlook": "Gueliz ist zentral gelegen aber nicht die bevorzugte Speckgürtel-Lage. Dennoch gute Infrastruktur und Nähe zu allen Annehmlichkeiten mit solidem Wertsteigerungspotential.",
+      "neighborhood_outlook": "Targa ist eine der begehrtesten Wohnlagen in Marrakech mit exzellenter Infrastruktur. Neubau in dieser Lage ist besonders wertvoll.",
       "investment_potential": 4,
       "livability_score": 4,
       "market_price_assessment": "Unter Markt",
       "scores": {
         "budget_fit": 100,
-        "location_fit": 50,
-        "size_fit": 100,
+        "location_fit": 100,
+        "size_fit": 60,
         "amenities_fit": 75,
         "investment_fit": 85,
-        "info_penalty": 10,
-        "overall": 82
-      },
-      "verdict": "INTERESSANT",
-      "verdict_reason": "Hervorragender Preis und gute Größe kompensieren die suboptimale Lage. Neubau-Qualität und renommierter Entwickler machen es zu einer soliden Investition, auch wenn Gueliz nicht die Wunschlage ist.",
-      "besichtigung_fragen": [
-        "Wie ist der genaue Baufortschritt und Liefertermin?",
-        "Welche Garantien gibt es bei Bauverzögerungen?",
-        "Sind Änderungen an der Ausstattung noch möglich?",
-        "Wie hoch sind die monatlichen Nebenkosten?",
-        "Gibt es Möglichkeiten für eine Terrasse/Balkon?"
-      ],
-      "verhandlung_tipps": "Bei Neubau wenig Verhandlungsspielraum, aber frühe Reservierung könnte Rabatte bringen. Zahlungsplan und Garantien prüfen."
-    },
-    {
-      "id": "8de177851c49",
-      "title": "Großzügige Wohnung Le Vizir Route de Casablanca - 137m²",
-      "source": "Mubawab",
-      "url": "https://www.mubawab.ma/fr/pa/8140936/superbe-appartement-%C3%A0-vendre-%C3%A0-marrakech",
-      "price_mad": 1567000,
-      "price_eur": 145092,
-      "area_sqm": 137,
-      "rooms": 3,
-      "bedrooms": 2,
-      "bathrooms": 1,
-      "floor": "Unbekannt",
-      "neighborhood": "Route Casablanca",
-      "property_type": "Apartment",
-      "price_per_sqm_mad": 11437,
-      "has_terrace": true,
-      "has_pool": true,
-      "has_parking": false,
-      "has_elevator": false,
-      "is_new_build": false,
-      "ownership_type": "Unbekannt",
-      "condition": "Neu",
-      "highlights": [
-        "Hervorragender Preis von nur 11.437 MAD/m²",
-        "Großzügige 137m² Fläche",
-        "Terrasse und Pool vorhanden",
-        "Route Casablanca - akzeptable Speckgürtel-Lage"
-      ],
-      "concerns": [
-        "Kein Parkplatz und Aufzug",
-        "Nur 1 Badezimmer für 3 Zimmer",
-        "12 Minuten bis Stadtzentrum",
-        "Projekt-Status unklar (Le Vizir)"
-      ],
-      "neighborhood_outlook": "Route de Casablanca entwickelt sich gut als Speckgürtel-Lage mit guter Verkehrsanbindung. Das Gebiet gewinnt an Attraktivität durch neue Projekte.",
-      "investment_potential": 4,
-      "livability_score": 3,
-      "market_price_assessment": "Unter Markt",
-      "scores": {
-        "budget_fit": 100,
-        "location_fit": 70,
-        "size_fit": 100,
-        "amenities_fit": 50,
-        "investment_fit": 85,
-        "info_penalty": 10,
+        "info_penalty": 15,
         "overall": 81
       },
       "verdict": "INTERESSANT",
-      "verdict_reason": "Exzellentes Preis-Leistungs-Verhältnis mit großzügiger Fläche. Trotz fehlender Ausstattung (Aufzug, Parking) ist der Preis so attraktiv, dass es eine Überlegung wert ist.",
+      "verdict_reason": "Neubau in Top-Lage Targa zu sehr attraktivem Preis. Obwohl etwas kleiner als gewünscht, bietet die Kombination aus Lage und Preis gute Investmentchancen.",
       "besichtigung_fragen": [
-        "Ist Le Vizir ein Neubau-Projekt oder bestehend?",
-        "Können Parkplätze separat erworben werden?",
-        "Ist nachträglicher Aufzug-Einbau geplant?",
+        "Welche moderne Ausstattung ist vorhanden?",
+        "Gibt es einen Gemeinschaftspool?",
         "Wie groß ist die Terrasse genau?",
-        "Welche Nebenkosten fallen an?"
+        "Welche Garantien gibt es als Neubau?",
+        "Ist eine Klimaanlage installiert?"
       ],
-      "verhandlung_tipps": "Preis bereits sehr attraktiv. Focus auf Zusatzleistungen wie Parkplatz-Lösung oder Ausstattung legen."
+      "verhandlung_tipps": "Preis bereits sehr attraktiv für Neubau in Targa. Fokus auf Zusatzleistungen oder Ausstattungsverbesserungen statt Preisreduzierung."
     },
     {
-      "id": "9e602a5da9bc",
-      "title": "Moderne Wohnung in Gueliz - 83m²",
+      "id": "9bf36033af6d",
+      "title": "Neuwohnung Route Casablanca - 134m² mit Terrasse & Pool",
       "source": "Mubawab",
-      "url": "https://www.mubawab.ma/fr/pa/8058860/appartement-%C3%A0-vendre-%C3%A0-gu%C3%A9liz-superficie-83-m%C2%B2",
-      "price_mad": 1452500,
-      "price_eur": 134490,
-      "area_sqm": 83,
-      "rooms": 3,
-      "bedrooms": 2,
-      "bathrooms": 2,
-      "floor": "Unbekannt",
-      "neighborhood": "Gueliz",
-      "property_type": "Apartment",
-      "price_per_sqm_mad": 17500,
-      "has_terrace": true,
-      "has_pool": true,
-      "has_parking": true,
-      "has_elevator": true,
-      "is_new_build": false,
-      "ownership_type": "Unbekannt",
-      "condition": "Neu",
-      "highlights": [
-        "Vollausstattung: Terrasse, Pool, Parking, Aufzug",
-        "Sicherheitsresidenz mit Klimaanlage",
-        "Privatgarten zusätzlich zur Terrasse",
-        "Neuzustand mit 2 Bädern"
-      ],
-      "concerns": [
-        "Gueliz nicht in bevorzugter Speckgürtel-Lage",
-        "Relativ kleiner mit 83m²",
-        "Höherer Quadratmeterpreis von 17.500 MAD",
-        "Eigentumsverhältnisse ungeklärt"
-      ],
-      "neighborhood_outlook": "Gueliz bietet urbanes Leben mit guter Infrastruktur, entspricht aber nicht der gewünschten Speckgürtel-Lage. Dennoch stabile Wertsteigerung durch zentrale Lage.",
-      "investment_potential": 3,
-      "livability_score": 4,
-      "market_price_assessment": "Marktgerecht",
-      "scores": {
-        "budget_fit": 100,
-        "location_fit": 50,
-        "size_fit": 80,
-        "amenities_fit": 100,
-        "investment_fit": 70,
-        "info_penalty": 10,
-        "overall": 80
-      },
-      "verdict": "BEDINGT GEEIGNET",
-      "verdict_reason": "Perfekte Ausstattung und guter Zustand, aber Lage entspricht nicht den Präferenzen. Für Gueliz angemessener Preis, jedoch nicht die gewünschte Speckgürtel-Atmosphäre.",
-      "besichtigung_fragen": [
-        "Wie groß ist der Privatgarten genau?",
-        "In welchem Stockwerk liegt die Wohnung?",
-        "Wie sind die Nebenkosten der Residenz?",
-        "Gibt es Lärmbelästigung durch die zentrale Lage?",
-        "Welche Sicherheitsmaßnahmen hat die Residenz?"
-      ],
-      "verhandlung_tipps": "Preis liegt im Marktbereich für Gueliz. Auf Nebenkosten und Sicherheitsservices fokussieren bei Verhandlungen."
-    },
-    {
-      "id": "9ce219e3e46d",
-      "title": "3-Zimmer Neubau RITAJ Residence - Lieferung 2027",
-      "source": "Mubawab",
-      "url": "https://www.mubawab.ma/fr/pa/8154992/vente-d-un-bel-appartement-3-chambres-agr%C3%A9ables",
-      "price_mad": 1395200,
-      "price_eur": 129185,
-      "area_sqm": 109,
-      "rooms": 4,
-      "bedrooms": 3,
-      "bathrooms": 3,
-      "floor": "Unbekannt",
-      "neighborhood": "Nähe Bahnhof/Guéliz",
-      "property_type": "Apartment",
-      "price_per_sqm_mad": 12800,
-      "has_terrace": false,
-      "has_pool": true,
-      "has_parking": true,
-      "has_elevator": true,
-      "is_new_build": false,
-      "ownership_type": "Unbekannt",
-      "condition": "Neu",
-      "highlights": [
-        "Sehr guter m2-Preis von 12.800 MAD",
-        "Großzügige 109m2 mit 3 Schlafzimmern",
-        "Hochwertige Residenz mit allen Annehmlichkeiten",
-        "Nähe zu Bahnhof und Guéliz"
-      ],
-      "concerns": [
-        "Lieferung erst 2027 (Baurisiko)",
-        "Keine Terrasse erwähnt",
-        "Lage nicht in Speckgürtel-Zonen",
-        "Noch im Bau befindlich"
-      ],
-      "neighborhood_outlook": "Die Lage nahe Bahnhof und Guéliz ist zentral, aber nicht die bevorzugte ruhige Speckgürtel-Lage. Gute Entwicklung durch Infrastruktur.",
-      "investment_potential": 4,
-      "livability_score": 4,
-      "market_price_assessment": "Unter Markt",
-      "scores": {
-        "budget_fit": 100,
-        "location_fit": 50,
-        "size_fit": 100,
-        "amenities_fit": 75,
-        "investment_fit": 70,
-        "info_penalty": 10,
-        "overall": 79
-      },
-      "verdict": "INTERESSANT",
-      "verdict_reason": "Ausgezeichnetes Preis-Leistungs-Verhältnis für Neubau, aber Baurisiko bis 2027 und zentrale statt Speckgürtel-Lage. Für geduldige Käufer interessant.",
-      "besichtigung_fragen": [
-        "Welche Garantien gibt es für Fertigstellung 2027?",
-        "Ist der beworbene Preis der Endpreis?",
-        "Welche Zahlungsmodalitäten sind möglich?",
-        "Gibt es Musterwohnung zu besichtigen?",
-        "Welche Rooftop- und Terrassenflächen sind verfügbar?"
-      ],
-      "verhandlung_tipps": "Bei Neubau-Projekt Zahlungsplan verhandeln und nach Preisstabilität bis Fertigstellung fragen."
-    },
-    {
-      "id": "292e49022970",
-      "title": "Vente d'un bel appartement à Marrakech. Surface de 134 m²",
-      "source": "Mubawab",
-      "url": "https://www.mubawab.ma/fr/pa/8140934/vente-d-un-bel-appartement-%C3%A0-marrakech-surface-de-134-m%C2%B2",
-      "price_mad": 1515000,
-      "price_eur": 140277,
+      "url": "https://www.mubawab.ma/fr/pa/8140939/appartement-%C3%A0-vendre-%C3%A0-marrakech-surface-de-134-m%C2%B2",
+      "contact_phone": "",
+      "contact_name": "",
+      "price_mad": 1546000,
+      "price_eur": 143148,
       "area_sqm": 134,
       "rooms": 3,
       "bedrooms": 2,
@@ -599,180 +386,66 @@
       "floor": "Unbekannt",
       "neighborhood": "Route Casablanca",
       "property_type": "Apartment",
-      "price_per_sqm_mad": 11305,
+      "price_per_sqm_mad": 11537,
       "has_terrace": true,
       "has_pool": true,
       "has_parking": false,
       "has_elevator": false,
-      "is_new_build": false,
+      "is_new_build": true,
       "ownership_type": "Unbekannt",
       "condition": "Neu",
       "highlights": [
-        "Große Fläche 134m²",
-        "Sehr guter m2-Preis",
-        "Terrasse/Garten",
-        "Neubau-Projekt"
+        "Neubau-Projekt Le Vizir",
+        "Großzügige 134m² mit Terrasse",
+        "Pool und Sicherheitsdienst 24/7",
+        "Nur 12 Min. zum Stadtzentrum"
       ],
       "concerns": [
-        "Kein Parkplatz",
+        "Kein Parkplatz enthalten",
         "Kein Aufzug",
-        "Nur 1 Bad",
-        "Projekt noch im Bau"
+        "Nur 1 Badezimmer für 3 Zimmer",
+        "Eigentum unklar"
       ],
-      "neighborhood_outlook": "Route de Casablanca entwickelt sich sehr gut mit vielen neuen Projekten. Gutes Langzeit-Investment-Potenzial.",
+      "neighborhood_outlook": "Route Casablanca bietet gute Verkehrsanbindung und liegt strategisch günstig. Das Projekt Le Vizir verspricht modernes Wohnen mit traditionellen Elementen.",
       "investment_potential": 4,
-      "livability_score": 3,
-      "market_price_assessment": "Unter Markt",
-      "scores": {
-        "budget_fit": 80,
-        "location_fit": 70,
-        "size_fit": 100,
-        "amenities_fit": 50,
-        "investment_fit": 85,
-        "info_penalty": 10,
-        "overall": 77
-      },
-      "verdict": "TOP-KANDIDAT",
-      "verdict_reason": "Hervorragendes Preis-Leistungs-Verhältnis mit großer Fläche in entwickelnder Lage. Trotz fehlender Parkplätze sehr attraktives Investment.",
-      "besichtigung_fragen": [
-        "Wann ist die Fertigstellung geplant?",
-        "Sind Parkplätze später buchbar?",
-        "Wie groß sind Terrasse und Garten?",
-        "Welche Garantien gibt es?",
-        "Kann ein zweites Bad eingebaut werden?"
-      ],
-      "verhandlung_tipps": "Preis ist bereits sehr fair. Bei Frühkauf eventuell kleine Nachlässe oder Ausstattungsupgrades verhandelbar."
-    },
-    {
-      "id": "ce873044d625",
-      "title": "Appartement en vente à Guéliz. Superficie 77 m²",
-      "source": "Mubawab",
-      "url": "https://www.mubawab.ma/fr/pa/8058858/appartement-en-vente-%C3%A0-gu%C3%A9liz-superficie-77-m%C2%B2",
-      "price_mad": 1347500,
-      "price_eur": 124768,
-      "area_sqm": 77,
-      "rooms": 3,
-      "bedrooms": 2,
-      "bathrooms": 2,
-      "floor": "Unbekannt",
-      "neighborhood": "Guéliz",
-      "property_type": "Apartment",
-      "price_per_sqm_mad": 17500,
-      "has_terrace": true,
-      "has_pool": true,
-      "has_parking": true,
-      "has_elevator": true,
-      "is_new_build": false,
-      "ownership_type": "Unbekannt",
-      "condition": "Neu",
-      "highlights": [
-        "Vollausstattung",
-        "Großer Balkon",
-        "Guter Preis",
-        "3 Zimmer"
-      ],
-      "concerns": [
-        "Guéliz-Lage",
-        "Etwas klein",
-        "Keine Etage bekannt",
-        "Renoviert vs. Neubau"
-      ],
-      "neighborhood_outlook": "Guéliz ist zentral aber touristisch geprägt. Für Eigennutzung ok, Investment mittelmäßig.",
-      "investment_potential": 3,
       "livability_score": 4,
       "market_price_assessment": "Marktgerecht",
       "scores": {
         "budget_fit": 100,
-        "location_fit": 50,
-        "size_fit": 60,
-        "amenities_fit": 100,
-        "investment_fit": 70,
-        "info_penalty": 10,
-        "overall": 76
-      },
-      "verdict": "INTERESSANT",
-      "verdict_reason": "Gute Vollausstattung und akzeptable Größe zu fairem Preis. Guéliz-Lage für Eigennutzung ok, Investment mittelmäßig.",
-      "besichtigung_fragen": [
-        "In welcher Etage liegt die Wohnung?",
-        "Ist es Neubau oder renoviert?",
-        "Wie groß ist der Balkon?",
-        "Welche Qualität haben die Ausstattungen?",
-        "Wie sind die Nebenkosten der Residenz?"
-      ],
-      "verhandlung_tipps": "Preis ist marktgerecht. Bei gutem Zustand wenig Verhandlungsspielraum, bei Renovierungsbedarf durchaus."
-    },
-    {
-      "id": "f814a284aeeb",
-      "title": "Premium-Appartement nähe Jardin Majorelle",
-      "source": "Mubawab",
-      "url": "https://www.mubawab.ma/fr/a/6892492/appartement-id%C3%A9al-se-vend-1-800-000-mad-net-vendeur",
-      "price_mad": 1800000,
-      "price_eur": 166666,
-      "area_sqm": 100,
-      "rooms": 4,
-      "bedrooms": 2,
-      "bathrooms": 2,
-      "floor": "Unbekannt",
-      "neighborhood": "Nähe Jardin Majorelle",
-      "property_type": "Apartment",
-      "price_per_sqm_mad": 18000,
-      "has_terrace": true,
-      "has_pool": true,
-      "has_parking": true,
-      "has_elevator": true,
-      "is_new_build": false,
-      "ownership_type": "Unbekannt",
-      "condition": "Neu",
-      "highlights": [
-        "Traumlage nahe Jardin Majorelle",
-        "Hochwertige Vollausstattung",
-        "Perfekte Größe mit 100m2",
-        "Zentrale Klimaanlage und WLAN"
-      ],
-      "concerns": [
-        "Obere Budgetgrenze erreicht",
-        "Guéliz/Hivernage nicht Speckgürtel",
-        "Zusätzliche Nebenkosten von 10%",
-        "Touristische Lage"
-      ],
-      "neighborhood_outlook": "Die Nähe zum Jardin Majorelle ist prestigeträchtig und wertstabil, aber sehr touristisch. Nicht die ruhige Speckgürtel-Lage.",
-      "investment_potential": 4,
-      "livability_score": 4,
-      "market_price_assessment": "Marktgerecht",
-      "scores": {
-        "budget_fit": 80,
-        "location_fit": 50,
+        "location_fit": 70,
         "size_fit": 100,
-        "amenities_fit": 100,
-        "investment_fit": 70,
+        "amenities_fit": 50,
+        "investment_fit": 75,
         "info_penalty": 10,
-        "overall": 76
+        "overall": 81
       },
       "verdict": "INTERESSANT",
-      "verdict_reason": "Exzellente Ausstattung und perfekte Größe in prestigeträchtiger Lage, aber an oberer Budgetgrenze und nicht die bevorzugte Speckgürtel-Zone.",
+      "verdict_reason": "Solide Wohnung in akzeptabler Lage mit gutem Preis-Leistungs-Verhältnis. Neubau-Qualität überzeugt, aber fehlender Parkplatz und Aufzug sind Schwachstellen. Für Familien mit Auto weniger optimal.",
       "besichtigung_fragen": [
-        "Welche genaue Lage zu Majorelle?",
-        "Ist Verhandlung bei Nettopreis möglich?",
-        "Wie hoch sind die laufenden Kosten?",
-        "Gibt es Lärmprobleme durch Touristen?",
-        "Welche Etage und Ausrichtung?"
+        "Ist ein Parkplatz separat erwerbbar?",
+        "Wie ist der Baufortschritt des Projekts?",
+        "Welche Garantien gibt es für Neubau-Qualität?",
+        "Sind weitere Gemeinschaftskosten zu erwarten?",
+        "Wie sieht die langfristige Nachbarschaftsentwicklung aus?"
       ],
-      "verhandlung_tipps": "Bei 'Nettopreis' schwierig, aber nach Inklusivleistungen und Kostenübernahme fragen. 5% Nachlass versuchen."
+      "verhandlung_tipps": "Fehlender Parkplatz kann Verhandlungsspielraum schaffen. Neubau-Bonus rechtfertigt aber den Preis weitgehend."
     },
     {
       "id": "",
-      "title": "Duplex à vendre 109 m² Hay targa",
+      "title": "Duplex zu verkaufen 109 m² Hay Targa",
       "source": "Avito",
       "url": "",
+      "contact_phone": "",
+      "contact_name": "",
       "price_mad": 1400000,
       "price_eur": 116667,
       "area_sqm": 109,
-      "rooms": 3,
-      "bedrooms": 2,
+      "rooms": 4,
+      "bedrooms": 3,
       "bathrooms": 2,
-      "floor": "Unbekannt",
+      "floor": "Mehrere Etagen",
       "neighborhood": "Targa",
-      "property_type": "Apartment",
+      "property_type": "Duplex",
       "price_per_sqm_mad": 12844,
       "has_terrace": true,
       "has_pool": false,
@@ -783,341 +456,117 @@
       "condition": "Unbekannt",
       "highlights": [
         "Top-Lage Targa",
-        "Gute Größe 109m²",
-        "Duplex-Format",
-        "Fairer m²-Preis"
+        "109m² Wohnfläche",
+        "Duplex-Charakter",
+        "Guter m²-Preis"
       ],
       "concerns": [
-        "Wenig Details zur Ausstattung",
-        "Zustand unklar"
+        "Keine Pool-Info",
+        "Unbekannter Zustand",
+        "Wenig Details",
+        "Kein Aufzug"
       ],
-      "neighborhood_outlook": "Targa ist eine der besten Wohnlagen Marrakesch - ruhig, gut entwickelt mit steigenden Immobilienpreisen. Sehr gefragt bei Käufern.",
+      "neighborhood_outlook": "Targa ist eine der begehrtesten Wohnlagen in Marrakech mit moderner Infrastruktur und hoher Lebensqualität. Ausgezeichnete Investmentaussichten.",
       "investment_potential": 4,
       "livability_score": 4,
       "market_price_assessment": "Marktgerecht",
       "scores": {
         "budget_fit": 80,
         "location_fit": 100,
-        "size_fit": 100,
-        "amenities_fit": 25,
-        "investment_fit": 80,
-        "info_penalty": 15,
-        "overall": 74
-      },
-      "verdict": "INTERESSANT",
-      "verdict_reason": "Attraktives Duplex in Top-Lage mit guter Größe. Preis im Rahmen, aber mehr Details nötig.",
-      "besichtigung_fragen": [
-        "Aufteilung des Duplex über welche Etagen?",
-        "Gibt es Terrasse oder Dachterrasse?",
-        "Welche Gemeinschaftseinrichtungen?",
-        "Pool in der Anlage?",
-        "Renovierungszustand und -bedarf?"
-      ],
-      "verhandlung_tipps": "Targa-Lage ist Verkaufsargument, aber fehlende Ausstattungsdetails für Preisreduktion nutzen."
-    },
-    {
-      "id": "53c7cbd610f0",
-      "title": "Golf-Wohnung in Argan Golf - 86m²",
-      "source": "Mubawab",
-      "url": "https://www.mubawab.ma/fr/a/8238336/appartement-%C3%A0-vendre",
-      "price_mad": 1900000,
-      "price_eur": 175925,
-      "area_sqm": 86,
-      "rooms": 3,
-      "bedrooms": 3,
-      "bathrooms": 1,
-      "floor": "Unbekannt",
-      "neighborhood": "Golf-Resort",
-      "property_type": "Apartment",
-      "price_per_sqm_mad": 22093,
-      "has_terrace": false,
-      "has_pool": true,
-      "has_parking": true,
-      "has_elevator": false,
-      "is_new_build": false,
-      "ownership_type": "Unbekannt",
-      "condition": "Neu",
-      "highlights": [
-        "Exzellente Golf-Resort-Lage",
-        "3 Zimmer entsprechen Wunsch",
-        "Pool und Parkplatz vorhanden",
-        "Ruhige, grüne Umgebung"
-      ],
-      "concerns": [
-        "Über Budget bei 1,9M MAD",
-        "Keine Terrasse vorhanden",
-        "Nur 1 Badezimmer für 3 Schlafzimmer",
-        "Kein Aufzug verfügbar"
-      ],
-      "neighborhood_outlook": "Golf-Resorts bieten Premium-Lifestyle mit sehr gutem Wertsteigerungspotential. Argan Golf ist etabliert und bei internationalen Käufern sehr gefragt.",
-      "investment_potential": 4,
-      "livability_score": 4,
-      "market_price_assessment": "Marktgerecht",
-      "scores": {
-        "budget_fit": 60,
-        "location_fit": 85,
         "size_fit": 100,
         "amenities_fit": 50,
-        "investment_fit": 85,
-        "info_penalty": 10,
-        "overall": 74
+        "investment_fit": 80,
+        "info_penalty": 20,
+        "overall": 78
       },
       "verdict": "INTERESSANT",
-      "verdict_reason": "Gute Golf-Lage mit 3 Zimmern, aber leicht über Budget. Für Golf-Liebhaber attraktiv, though fehlende Terrasse und nur ein Bad sind Nachteile.",
+      "verdict_reason": "Sehr gute Kombination aus Top-Lage Targa, angemessener Größe und fairem Preis. Duplex in Targa ist selten und attraktiv für Investoren.",
       "besichtigung_fragen": [
-        "Ist Preisverhandlung bei schneller Entscheidung möglich?",
-        "Können zusätzliche Badezimmer eingebaut werden?",
-        "Welche Golf-Privilegien sind inklusive?",
-        "Wie hoch sind die monatlichen Resort-Gebühren?",
-        "Gibt es Möglichkeit für Balkon/Terrasse?"
+        "Ist eine Gemeinschaftspool-Anlage vorhanden?",
+        "Wie groß ist die Terrasse/Dachterrasse?",
+        "Welche Ausstattung hat die Küche?",
+        "Ist ein Aufzug im Gebäude vorhanden?",
+        "Wie ist der allgemeine Zustand der Wohnung?"
       ],
-      "verhandlung_tipps": "Auf 1,6-1,7M MAD verhandeln. Golf-Lage rechtfertigt Premium, aber aktueller Preis etwas zu hoch."
+      "verhandlung_tipps": "Preis ist marktgerecht für Targa. Bei fehlenden Ausstattungsmerkmalen Nachlass von 50.000-100.000 MAD anstreben."
     },
     {
-      "id": "",
-      "title": "Residenz Lina - Duplex & Apartments",
-      "source": "Avito",
-      "url": "",
-      "price_mad": 1533000,
-      "price_eur": 127750,
-      "area_sqm": 90,
+      "id": "045b81fc2dbd",
+      "title": "Neubau-Wohnung Route Casablanca - Le Vizir",
+      "source": "Mubawab",
+      "url": "https://www.mubawab.ma/fr/pa/8140937/appartement-%C3%A0-vendre-%C3%A0-marrakech",
+      "contact_phone": "",
+      "contact_name": "",
+      "price_mad": 1546000,
+      "price_eur": 143148,
+      "area_sqm": 137,
       "rooms": 3,
       "bedrooms": 2,
-      "bathrooms": 2,
+      "bathrooms": 1,
       "floor": "Unbekannt",
-      "neighborhood": "Marrakesch",
-      "property_type": "Apartment",
-      "price_per_sqm_mad": 17033,
-      "has_terrace": null,
-      "has_pool": true,
-      "has_parking": true,
-      "has_elevator": true,
-      "is_new_build": true,
-      "ownership_type": "Unbekannt",
-      "condition": "Unbekannt",
-      "highlights": [
-        "Neubau-Residenz",
-        "Pool vorhanden",
-        "Parkplatz und Aufzug",
-        "Duplex-Optionen"
-      ],
-      "concerns": [
-        "Lage unklar",
-        "Keine genaue Adresse",
-        "Wenig Details trotz Neubau"
-      ],
-      "neighborhood_outlook": "Ohne genaue Lage schwer beurteilbar. Neubau-Residenzen befinden sich oft in aufstrebenden Gebieten mit guter Infrastruktur.",
-      "investment_potential": 3,
-      "livability_score": 4,
-      "market_price_assessment": "Marktgerecht",
-      "scores": {
-        "budget_fit": 80,
-        "location_fit": 60,
-        "size_fit": 80,
-        "amenities_fit": 100,
-        "investment_fit": 60,
-        "info_penalty": -15,
-        "overall": 73
-      },
-      "verdict": "INTERESSANT",
-      "verdict_reason": "Gute Ausstattung als Neubau mit allen gewünschten Annehmlichkeiten, aber ungenaue Lageangabe ist problematisch. Könnte je nach genauer Lage sehr interessant sein.",
-      "besichtigung_fragen": [
-        "Wo genau befindet sich die Residenz Lina?",
-        "Welche Wohnungsgrößen sind verfügbar?",
-        "Gibt es Duplex-Wohnungen mit Terrasse?",
-        "Wie ist die Bauqualität und Ausstattung?",
-        "Wann ist die Fertigstellung geplant?"
-      ],
-      "verhandlung_tipps": "Bei Neubau-Projekten oft Frühkäufer-Rabatte möglich. Genaue Lage muss vor Verhandlung geklärt werden."
-    },
-    {
-      "id": "e68aaed39dde",
-      "title": "Golf-Wohnung in Agdal - 86m²",
-      "source": "Mubawab",
-      "url": "https://www.mubawab.ma/fr/a/8304090/appartement-sur-golf-%C3%A0-vendre-agdal",
-      "price_mad": 2200000,
-      "price_eur": 203703,
-      "area_sqm": 86,
-      "rooms": 2,
-      "bedrooms": 2,
-      "bathrooms": 2,
-      "floor": "1. Etage",
-      "neighborhood": "Agdal",
-      "property_type": "Apartment",
-      "price_per_sqm_mad": 25581,
+      "neighborhood": "Route Casablanca",
+      "property_type": "Wohnung",
+      "price_per_sqm_mad": 11284,
       "has_terrace": true,
       "has_pool": true,
-      "has_parking": true,
+      "has_parking": false,
       "has_elevator": false,
       "is_new_build": false,
       "ownership_type": "Unbekannt",
       "condition": "Neu",
       "highlights": [
-        "Premium-Lage Agdal - Top-Speckgürtel",
-        "Direkter Golfplatz-Blick und Atlasblick",
-        "Luxusausstattung mit Kamin und Suite",
-        "Sicherheitsresidenz mit Gärten"
+        "Sehr guter m2-Preis von 11.284 MAD",
+        "137m2 Wohnfläche",
+        "Neubau-Projekt mit Pool",
+        "Privatgärten bei einigen Einheiten"
       ],
       "concerns": [
-        "Deutlich über Budget bei 2,2M MAD",
-        "Nur 2 Zimmer statt gewünschte 3",
-        "Sehr hoher Quadratmeterpreis (25.581 MAD)",
-        "Kein Aufzug vorhanden"
+        "Kein Parkplatz erwähnt",
+        "Kein Aufzug im Gebäude",
+        "Route Casablanca weniger premium",
+        "12 Min zum Stadtzentrum"
       ],
-      "neighborhood_outlook": "Agdal ist eine der besten Lagen im Speckgürtel mit exzellenter Wertsteigerung. Golf-Residenzen haben besonders hohes Prestige und Investmentpotential.",
-      "investment_potential": 5,
-      "livability_score": 5,
-      "market_price_assessment": "Über Markt",
-      "scores": {
-        "budget_fit": 40,
-        "location_fit": 100,
-        "size_fit": 60,
-        "amenities_fit": 75,
-        "investment_fit": 90,
-        "info_penalty": 10,
-        "overall": 73
-      },
-      "verdict": "BEDINGT GEEIGNET",
-      "verdict_reason": "Traumlage und luxuriöse Golf-Residenz, aber deutlich über Budget und nur 2 Zimmer. Für langfristige Investition interessant, aber aktuelle Bedürfnisse nicht optimal erfüllt.",
-      "besichtigung_fragen": [
-        "Ist der Preis verhandelbar bei Barzahlung?",
-        "Welche Nebenkosten fallen monatlich an?",
-        "Gibt es Aufzug-Pläne für das Gebäude?",
-        "Wie sind die Golf-Nutzungsrechte geregelt?",
-        "Sind andere Wohnungen mit 3 Zimmern verfügbar?"
-      ],
-      "verhandlung_tipps": "Preisreduktion von mindestens 200.000 MAD anstreben. Golf-Lage rechtfertigt Premium, aber aktueller Preis übertrieben."
-    },
-    {
-      "id": "3b36a8e3a1ae",
-      "title": "Schöne Wohnung zu verkaufen, 2 Schlafzimmer mit Pool",
-      "source": "Mubawab",
-      "url": "https://www.mubawab.ma/fr/a/8301828/bel-appartement-%C3%A0-vendre-2-chambres-piscine",
-      "price_mad": 1207500,
-      "price_eur": 111805,
-      "area_sqm": 83,
-      "rooms": 3,
-      "bedrooms": 2,
-      "bathrooms": 2,
-      "floor": "1. Etage",
-      "neighborhood": "Jnane Ali",
-      "property_type": "Apartment",
-      "price_per_sqm_mad": 14548,
-      "has_terrace": false,
-      "has_pool": true,
-      "has_parking": true,
-      "has_elevator": true,
-      "is_new_build": false,
-      "ownership_type": "Unbekannt",
-      "condition": "Neu",
-      "highlights": [
-        "Perfekter Preis im Budget-Sweet-Spot",
-        "Exzellente Ausstattung (Pool, Parkplatz, Aufzug)",
-        "Zwei Piscinen plus Fitnessstudio",
-        "Klimaanlage und moderne Ausstattung"
-      ],
-      "concerns": [
-        "Keine Terrasse vorhanden",
-        "Nur 83m² - etwas klein",
-        "Lage Jnane Ali nicht optimal",
-        "Balkon statt Terrasse"
-      ],
-      "neighborhood_outlook": "Jnane Ali ist ein etabliertes Wohnviertel mit guter Infrastruktur. Nicht in der Top-Lage, aber solide mittlere Kategorie.",
+      "neighborhood_outlook": "Route Casablanca ist aufstrebend aber noch nicht etabliert. Gute Verkehrsanbindung und Entwicklungspotential, jedoch nicht Top-Lage.",
       "investment_potential": 4,
-      "livability_score": 4,
-      "market_price_assessment": "Marktgerecht",
-      "scores": {
-        "budget_fit": 100,
-        "location_fit": 60,
-        "size_fit": 60,
-        "amenities_fit": 75,
-        "investment_fit": 70,
-        "info_penalty": 10,
-        "overall": 73
-      },
-      "verdict": "INTERESSANT",
-      "verdict_reason": "Sehr guter Preis mit starker Ausstattung im Budget-Sweet-Spot. Trotz kleinerer Fläche bietet die Wohnung Pool, Parkplatz und Aufzug. Lage ist akzeptabel, wenn auch nicht Top-Kategorie.",
-      "besichtigung_fragen": [
-        "Wie groß ist der Balkon als Terrassen-Alternative?",
-        "Welche Aussicht bietet die Wohnung?",
-        "Wie sind die Nebenkosten der Residenz?",
-        "Ist die Suite parentale gut geschnitten?",
-        "Wie ist die Verkehrsanbindung zu wichtigen Punkten?"
-      ],
-      "verhandlung_tipps": "Preis ist fair, aber wegen kleinerer Fläche und fehlender Terrasse 5-8% Nachlass möglich."
-    },
-    {
-      "id": "",
-      "title": "Wohnung 4 Schlafzimmer in Allal El Fassi Nfis 3",
-      "source": "Avito",
-      "url": "",
-      "price_mad": 1200000,
-      "price_eur": 100000,
-      "area_sqm": 110,
-      "rooms": 5,
-      "bedrooms": 4,
-      "bathrooms": 2,
-      "floor": "Unbekannt",
-      "neighborhood": "Allal El Fassi",
-      "property_type": "Apartment",
-      "price_per_sqm_mad": 10909,
-      "has_terrace": null,
-      "has_pool": null,
-      "has_parking": null,
-      "has_elevator": null,
-      "is_new_build": null,
-      "ownership_type": "Unbekannt",
-      "condition": "Unbekannt",
-      "highlights": [
-        "Sehr günstiger Preis",
-        "4 Schlafzimmer - sehr groß",
-        "Niedriger m²-Preis",
-        "Großzügige Wohnung"
-      ],
-      "concerns": [
-        "Allal El Fassi - nicht Top-Lage",
-        "Wenig Informationen",
-        "Möglicherweise ältere Wohnung"
-      ],
-      "neighborhood_outlook": "Allal El Fassi ist ein etabliertes Wohngebiet, nicht ganz zentral aber mit guter Infrastruktur. Solide Wohngegend für Familien.",
-      "investment_potential": 4,
-      "livability_score": 4,
+      "livability_score": 3,
       "market_price_assessment": "Unter Markt",
       "scores": {
         "budget_fit": 100,
         "location_fit": 70,
         "size_fit": 100,
-        "amenities_fit": 0,
+        "amenities_fit": 50,
         "investment_fit": 80,
-        "info_penalty": -20,
-        "overall": 72
+        "info_penalty": -10,
+        "overall": 78
       },
       "verdict": "INTERESSANT",
-      "verdict_reason": "Sehr attraktiver Preis für eine große 4-Schlafzimmer Wohnung in solider Lage. Trotz fehlender Informationen sehr gutes Preis-Leistungs-Verhältnis möglich.",
+      "verdict_reason": "Sehr attraktiver Preis für 137m2 Neubau, aber fehlende Parkplatz- und Aufzug-Informationen sind problematisch. Route Casablanca ist akzeptabel.",
       "besichtigung_fragen": [
-        "Wie ist der genaue Zustand der Wohnung?",
-        "Gibt es eine Terrasse oder große Balkone?",
-        "Welche Ausstattung ist vorhanden?",
-        "Sind Renovierungen notwendig?",
-        "Wie sind die Parkmöglichkeiten?"
+        "Ist definitiv kein Parkplatz verfügbar?",
+        "Warum gibt es keinen Aufzug bei Neubau?",
+        "In welcher Etage liegt die Wohnung?",
+        "Wann ist die Fertigstellung geplant?",
+        "Sind Privatgärten bei dieser Einheit enthalten?"
       ],
-      "verhandlung_tipps": "Bereits sehr günstiger Preis - Fokus auf Zustand und eventuelle Renovierungskosten. Bei gutem Zustand wenig Verhandlungsspielraum."
+      "verhandlung_tipps": "Guter Preis, aber bestehen Sie auf Parkplatz oder Preisreduktion. Klären Sie alle fehlenden Ausstattungsmerkmale."
     },
     {
-      "id": "dfd9a8155647",
-      "title": "Appartement Guéliz 77m² mit Pool",
+      "id": "f814a284aeeb",
+      "title": "IDEALE Wohnung zu verkaufen - Nähe Jardin Majorelle",
       "source": "Mubawab",
-      "url": "https://www.mubawab.ma/fr/pa/8059954/appartement-%C3%A0-l-achat-%C3%A0-gu%C3%A9liz-surface-totale-77-m%C2%B2",
-      "price_mad": 1347500,
-      "price_eur": 124768,
-      "area_sqm": 77,
-      "rooms": 3,
+      "url": "https://www.mubawab.ma/fr/a/6892492/appartement-id%C3%A9al-se-vend-1-800-000-mad-net-vendeur",
+      "contact_phone": "",
+      "contact_name": "",
+      "price_mad": 1800000,
+      "price_eur": 166666,
+      "area_sqm": 100,
+      "rooms": 4,
       "bedrooms": 2,
       "bathrooms": 2,
       "floor": "Unbekannt",
-      "neighborhood": "Gueliz",
+      "neighborhood": "Majorelle",
       "property_type": "Apartment",
-      "price_per_sqm_mad": 17500,
+      "price_per_sqm_mad": 18000,
       "has_terrace": true,
       "has_pool": true,
       "has_parking": true,
@@ -1126,334 +575,108 @@
       "ownership_type": "Unbekannt",
       "condition": "Neu",
       "highlights": [
-        "Perfekte Budgetlage",
-        "Vollausstattung mit Pool",
-        "Neubauqualität",
-        "Gute Raumaufteilung"
+        "Perfekte 100m² Größe",
+        "Vollausstattung mit allen Amenities",
+        "Nähe zu Jardin Majorelle",
+        "Klimaanlage und WIFI inklusive"
       ],
       "concerns": [
-        "Kleine Fläche",
-        "Gueliz nicht Top-Lage",
-        "Hoher m2-Preis",
-        "Wenig Details verfügbar"
+        "Obere Budgetgrenze erreicht",
+        "Majorelle sehr touristisch geprägt",
+        "Zusätzliche 10% Nebenkosten",
+        "Alte Anzeige aus 2024 - evtl. nicht mehr aktuell"
       ],
-      "neighborhood_outlook": "Gueliz bietet zentrale Lage mit guter Infrastruktur, ist aber nicht die bevorzugte Wohnlage. Für das Budget aber eine solide Wahl mit stabiler Wertentwicklung.",
-      "investment_potential": 3,
+      "neighborhood_outlook": "Majorelle ist prestigeträchtig durch den berühmten Garten, aber sehr touristisch. Gute Vermietbarkeit an Touristen, für dauerhaftes Wohnen weniger ruhig.",
+      "investment_potential": 4,
       "livability_score": 3,
       "market_price_assessment": "Marktgerecht",
       "scores": {
-        "budget_fit": 100,
-        "location_fit": 50,
-        "size_fit": 70,
-        "amenities_fit": 100,
-        "investment_fit": 65,
-        "info_penalty": -10,
-        "overall": 72
-      },
-      "verdict": "INTERESSANT",
-      "verdict_reason": "Liegt perfekt im Budget und bietet vollständige Ausstattung. Die Fläche ist zwar knapp, aber für den Preis akzeptabel. Gueliz ist nicht die Traumlage, aber eine solide Wahl.",
-      "besichtigung_fragen": [
-        "Wie ist die tatsächliche Raumaufteilung?",
-        "Welche Etage und wie ist die Aussicht?",
-        "Gibt es Lärm- oder andere Probleme?",
-        "Wie ist der Zustand der Gemeinschaftsanlagen?",
-        "Sind Nebenkosten angemessen?"
-      ],
-      "verhandlung_tipps": "Preis liegt im Rahmen, aber bei der kleinen Fläche könnte noch etwas Verhandlungsspielraum bestehen."
-    },
-    {
-      "id": "70ae691e446a",
-      "title": "Neubau-Appartement Guéliz - hochwertige Ausstattung",
-      "source": "Mubawab",
-      "url": "https://www.mubawab.ma/fr/a/8116140/appartements-neufs-%C3%A0-vendre-gu%C3%A9liz",
-      "price_mad": 1650000,
-      "price_eur": 152777,
-      "area_sqm": 83,
-      "rooms": 3,
-      "bedrooms": 2,
-      "bathrooms": 2,
-      "floor": "Unbekannt",
-      "neighborhood": "Guéliz",
-      "property_type": "Apartment",
-      "price_per_sqm_mad": 19879,
-      "has_terrace": true,
-      "has_pool": true,
-      "has_parking": true,
-      "has_elevator": true,
-      "is_new_build": true,
-      "ownership_type": "Unbekannt",
-      "condition": "Neu",
-      "highlights": [
-        "Top-Lage Guéliz mit allen Annehmlichkeiten",
-        "Neubau mit sofortiger Verfügbarkeit",
-        "Hochwertige Ausstattung und Finishes",
-        "Komplettpaket mit Pool, Parking, Fitnessstudio"
-      ],
-      "concerns": [
-        "Höherer m2-Preis von 19.879 MAD",
-        "Etwas über dem Budget-Sweet-Spot",
-        "Guéliz nicht primäre Zielregion",
-        "Kleinere Wohnfläche"
-      ],
-      "neighborhood_outlook": "Guéliz ist das pulsierende Herz von Marrakech mit allen Annehmlichkeiten, aber auch touristischer und weniger ruhig als die Speckgürtel-Lagen.",
-      "investment_potential": 4,
-      "livability_score": 5,
-      "market_price_assessment": "Marktgerecht",
-      "scores": {
         "budget_fit": 80,
-        "location_fit": 50,
-        "size_fit": 60,
-        "amenities_fit": 100,
-        "investment_fit": 80,
-        "info_penalty": 10,
-        "overall": 72
-      },
-      "verdict": "INTERESSANT",
-      "verdict_reason": "Hochwertige Neubau-Qualität in zentraler Lage, aber Guéliz ist nicht die bevorzugte Wohngegend. Gute Ausstattung rechtfertigt den Preis.",
-      "besichtigung_fragen": [
-        "Welche Etage und Ausrichtung ist verfügbar?",
-        "Ist das Parking im Untergeschoss sicher?",
-        "Wie sind die Hauskosten und Nebenkosten?",
-        "Gibt es Lärmprobleme durch die zentrale Lage?",
-        "Welche Garantien gibt es auf die Bauqualität?"
-      ],
-      "verhandlung_tipps": "Bei Neubau-Projekten nach Inklusivleistungen und Ausstattung fragen, 5-8% Nachlass möglich."
-    },
-    {
-      "id": "",
-      "title": "Duplex modern 2 Schlafzimmer Victor Hugo",
-      "source": "Avito",
-      "url": "",
-      "price_mad": 1600000,
-      "price_eur": 133333,
-      "area_sqm": 80,
-      "rooms": 3,
-      "bedrooms": 2,
-      "bathrooms": 2,
-      "floor": "Duplex",
-      "neighborhood": "Victor Hugo",
-      "property_type": "Apartment",
-      "price_per_sqm_mad": 20000,
-      "has_terrace": true,
-      "has_pool": false,
-      "has_parking": false,
-      "has_elevator": false,
-      "is_new_build": true,
-      "ownership_type": "Unbekannt",
-      "condition": "Neubau",
-      "highlights": [
-        "Moderner Neubau",
-        "Duplex-Charakter",
-        "Budget-kompatibel",
-        "Zentrale Lage"
-      ],
-      "concerns": [
-        "Etwas klein mit 80m²",
-        "Hoher m²-Preis",
-        "Nur 2 Schlafzimmer"
-      ],
-      "neighborhood_outlook": "Victor Hugo ist eine etablierte, zentrale Lage mit guter Infrastruktur. Für Neubau-Duplex interessant, aber nicht Speckgürtel-Lage.",
-      "investment_potential": 4,
-      "livability_score": 4,
-      "market_price_assessment": "Marktgerecht",
-      "scores": {
-        "budget_fit": 100,
-        "location_fit": 50,
-        "size_fit": 80,
-        "amenities_fit": 50,
-        "investment_fit": 75,
-        "info_penalty": 10,
-        "overall": 71
-      },
-      "verdict": "INTERESSANT",
-      "verdict_reason": "Moderner Duplex im Budget mit guter Größe und Neubau-Qualität. Victor Hugo ist zwar zentral, aber nicht die bevorzugte Speckgürtel-Lage. Duplex-Charakter kompensiert kleinere Fläche.",
-      "besichtigung_fragen": [
-        "Gibt es eine Dachterrasse?",
-        "Ist ein Parkplatz im Komplex verfügbar?",
-        "Welche Gemeinschaftsausstattung gibt es?",
-        "Wie ist die Bauqualität?",
-        "Gibt es einen Aufzug?"
-      ],
-      "verhandlung_tipps": "Als Neubau wenig Verhandlungsspielraum beim Preis. Fokus auf Inklusivleistungen und Ausstattung."
-    },
-    {
-      "id": "",
-      "title": "Luxus-Duplex zu verkaufen, bezugsfertig",
-      "source": "Avito",
-      "url": "",
-      "price_mad": 1300000,
-      "price_eur": 108333,
-      "area_sqm": 100,
-      "rooms": 4,
-      "bedrooms": 3,
-      "bathrooms": 2,
-      "floor": "Duplex",
-      "neighborhood": "Hay Charaf",
-      "property_type": "Duplex",
-      "price_per_sqm_mad": 13000,
-      "has_terrace": true,
-      "has_pool": false,
-      "has_parking": false,
-      "has_elevator": false,
-      "is_new_build": true,
-      "ownership_type": "Unbekannt",
-      "condition": "Bezugsfertig",
-      "highlights": [
-        "Luxus-Duplex",
-        "Bezugsfertig",
-        "4 Zimmer",
-        "Neubau-Qualität"
-      ],
-      "concerns": [
-        "Hay Charaf nicht bekannte Lage",
-        "Keine Pool/Parking-Info",
-        "Lage ungewiss"
-      ],
-      "neighborhood_outlook": "Hay Charaf ist weniger bekannt, könnte Entwicklungsgebiet sein. Lage außerhalb der bevorzugten Speckgürtel-Zonen.",
-      "investment_potential": 3,
-      "livability_score": 4,
-      "market_price_assessment": "Unter Markt",
-      "scores": {
-        "budget_fit": 100,
-        "location_fit": 40,
-        "size_fit": 100,
-        "amenities_fit": 50,
-        "investment_fit": 70,
-        "info_penalty": 15,
-        "overall": 71
-      },
-      "verdict": "INTERESSANT",
-      "verdict_reason": "Attraktiver Duplex mit guter Ausstattung und fairem Preis, aber die Lage Hay Charaf ist nicht in den bevorzugten Gebieten.",
-      "besichtigung_fragen": [
-        "Genaue Lage von Hay Charaf und Infrastruktur?",
-        "Ist ein Parkplatz vorhanden?",
-        "Größe und Ausstattung der Terrasse?",
-        "Entwicklungspläne für das Viertel?",
-        "Nebenkosten und Gemeinschaftskosten?"
-      ],
-      "verhandlung_tipps": "Unbekannte Lage als Risiko ansprechen, aber Duplex-Qualität anerkennen."
-    },
-    {
-      "id": "35dd4353a379",
-      "title": "Appartement Neuf 84 m² à Guéliz",
-      "source": "Mubawab",
-      "url": "https://www.mubawab.ma/fr/a/8129379/appartement-neuf-84-m%C2%B2-%C3%A0-gu%C3%A9liz",
-      "price_mad": 1650000,
-      "price_eur": 152777,
-      "area_sqm": 84,
-      "rooms": 3,
-      "bedrooms": 2,
-      "bathrooms": 2,
-      "floor": "Unbekannt",
-      "neighborhood": "Semlalia",
-      "property_type": "Apartment",
-      "price_per_sqm_mad": 19642,
-      "has_terrace": true,
-      "has_pool": true,
-      "has_parking": true,
-      "has_elevator": true,
-      "is_new_build": true,
-      "ownership_type": "Unbekannt",
-      "condition": "Neu",
-      "highlights": [
-        "Neubau premium",
-        "Vollausstattung",
-        "2 Balkone",
-        "Klimaanlage zentral"
-      ],
-      "concerns": [
-        "Hoher Preis",
-        "Guéliz-Lage",
-        "Etwas klein",
-        "Über Budget"
-      ],
-      "neighborhood_outlook": "Semlalia in Guéliz ist gut erschlossen mit Infrastruktur. Zentral aber touristisch geprägt.",
-      "investment_potential": 3,
-      "livability_score": 4,
-      "market_price_assessment": "Marktgerecht",
-      "scores": {
-        "budget_fit": 80,
-        "location_fit": 50,
-        "size_fit": 60,
-        "amenities_fit": 100,
-        "investment_fit": 75,
-        "info_penalty": 10,
-        "overall": 71
-      },
-      "verdict": "INTERESSANT",
-      "verdict_reason": "Hochwertiger Neubau mit kompletter Premium-Ausstattung. Preis am oberen Ende aber gerechtfertigt durch Qualität. Lage für Eigennutzung gut.",
-      "besichtigung_fragen": [
-        "Kann man die Musterwohnung besichtigen?",
-        "Welche Etagen sind noch verfügbar?",
-        "Wie groß sind die Balkone?",
-        "Wann ist die finale Übergabe?",
-        "Gibt es Garantien auf die Ausstattung?"
-      ],
-      "verhandlung_tipps": "Neubau-Preise sind meist weniger verhandelbar. Bei Frühkauf eventuell Rabatte möglich."
-    },
-    {
-      "id": "dac0d021bf10",
-      "title": "Duplex Apartment Centre Ville Gueliz",
-      "source": "Mubawab",
-      "url": "https://www.mubawab.ma/fr/a/8275899/a-vendre-appartement-duplex-centre-ville-gueliz",
-      "price_mad": 1740000,
-      "price_eur": 161111,
-      "area_sqm": 120,
-      "rooms": 5,
-      "bedrooms": 2,
-      "bathrooms": 2,
-      "floor": "1. Etage",
-      "neighborhood": "Gueliz",
-      "property_type": "Apartment",
-      "price_per_sqm_mad": 14500,
-      "has_terrace": true,
-      "has_pool": true,
-      "has_parking": true,
-      "has_elevator": true,
-      "is_new_build": false,
-      "ownership_type": "Unbekannt",
-      "condition": "Neu",
-      "highlights": [
-        "Duplex mit großer Terrasse (32m2)",
-        "Komplett möbliert und ausgestattet",
-        "Jacuzzi auf der Terrasse",
-        "Pool und Fitness in der Residenz"
-      ],
-      "concerns": [
-        "Budget leicht überschritten",
-        "Gueliz nicht Top-Lage",
-        "Gebrauchte Immobilie",
-        "Kleinere Zimmeranzahl"
-      ],
-      "neighborhood_outlook": "Zentral in Gueliz gelegen, nur 600m von Jardin Majorelle. Gute Infrastruktur und Anbindung, aber belebte Gegend mit möglichen Lärmbelastungen. Wertstabilität gegeben.",
-      "investment_potential": 4,
-      "livability_score": 4,
-      "market_price_assessment": "Marktgerecht",
-      "scores": {
-        "budget_fit": 70,
-        "location_fit": 50,
+        "location_fit": 55,
         "size_fit": 90,
         "amenities_fit": 100,
         "investment_fit": 75,
-        "info_penalty": -10,
-        "overall": 71
+        "info_penalty": 5,
+        "overall": 76
       },
       "verdict": "INTERESSANT",
-      "verdict_reason": "Attraktive Duplex-Wohnung mit hervorragender Ausstattung und großer Terrasse. Budget nur leicht überschritten, komplett möbliert verkauft. Die Lage in Gueliz ist akzeptabel, wenn auch nicht optimal.",
+      "verdict_reason": "Sehr gute Ausstattung und ideale Größe, liegt aber am oberen Budgetrand. Lage für Touristen attraktiv, aber für ruhiges Wohnen suboptimal.",
       "besichtigung_fragen": [
-        "Wie ist die Qualität der Möbel und Ausstattung?",
-        "Gibt es Lärmprobleme durch die zentrale Lage?",
-        "Wie sind die Nebenkosten der Residenz?",
-        "Ist die Terrasse wirklich privat und windgeschützt?",
-        "Welche Garantien gibt es auf Jacuzzi und Ausstattung?"
+        "Ist das Angebot noch aktuell verfügbar?",
+        "Wie ist die konkrete Lärmbelastung?",
+        "Welche Möbel/Ausstattung ist enthalten?",
+        "Gibt es Kurzzeitmiete-Potential?",
+        "Wie sind die Verwaltungskosten der Residence?"
       ],
-      "verhandlung_tipps": "Als 'Direct Propriétaire' ist Verhandlungsspielraum vorhanden. Die komplette Möblierung rechtfertigt einen Teil des Preises."
+      "verhandlung_tipps": "Touristische Lage und mögliche Lärmbelastung als Verhandlungsargumente. Bei alter Anzeige eventuell Preisanpassung möglich."
+    },
+    {
+      "id": "8de241f1b503",
+      "title": "3-Zimmer Neubau-Wohnung Ain Mezouar - Ritaj Residence",
+      "source": "Mubawab",
+      "url": "https://www.mubawab.ma/fr/pa/8154991/appartement-%C3%A0-vendre-%C3%A0-ain-mezouar-gueliz-surface-de-101-m%C2%B2",
+      "contact_phone": "",
+      "contact_name": "",
+      "price_mad": 1393800,
+      "price_eur": 129055,
+      "area_sqm": 101,
+      "rooms": 4,
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "floor": "Unbekannt",
+      "neighborhood": "Ain Mezouar",
+      "property_type": "Apartment",
+      "price_per_sqm_mad": 13800,
+      "has_terrace": false,
+      "has_pool": true,
+      "has_parking": true,
+      "has_elevator": true,
+      "is_new_build": true,
+      "ownership_type": "Unbekannt",
+      "condition": "Neu",
+      "highlights": [
+        "Neubau-Projekt mit Qualitätsgarantie",
+        "Optimale Größe 101m² mit 3 Zimmern",
+        "Komplette Ausstattung vorhanden",
+        "Guter m²-Preis für Neubau"
+      ],
+      "concerns": [
+        "Lage nicht in Ziel-Speckgürtel",
+        "Lieferung erst 2027",
+        "Keine Terrasse erkennbar",
+        "Eigentum unbekannt"
+      ],
+      "neighborhood_outlook": "Ain Mezouar liegt zentrumsnah mit guter Anbindung, aber nicht in den bevorzugten Speckgürtel-Lagen. Entwicklungsgebiet mit Potenzial durch Nähe zum Bahnhof.",
+      "investment_potential": 4,
+      "livability_score": 4,
+      "market_price_assessment": "Unter Markt",
+      "scores": {
+        "budget_fit": 80,
+        "location_fit": 50,
+        "size_fit": 100,
+        "amenities_fit": 75,
+        "investment_fit": 85,
+        "info_penalty": 10,
+        "overall": 76
+      },
+      "verdict": "INTERESSANT",
+      "verdict_reason": "Sehr gutes Preis-Leistungs-Verhältnis für einen Neubau mit optimaler Größe und kompletter Ausstattung. Die Lage ist solid, auch wenn nicht in den Ziel-Speckgürtel-Gebieten.",
+      "besichtigung_fragen": [
+        "Sind Terrassen/Balkone bei allen Wohnungen geplant?",
+        "Welche Garantien gibt es bei Bauverzögerungen?",
+        "Ist die VNA bereits genehmigt?",
+        "Welche Ausstattungsdetails sind enthalten?",
+        "Wie hoch sind die voraussichtlichen Nebenkosten?"
+      ],
+      "verhandlung_tipps": "Als Neubau-Projekt wenig Verhandlungsspielraum beim Preis, aber Ausstattungsdetails und Zahlungskonditionen verhandelbar."
     },
     {
       "id": "42f83f8b0852",
-      "title": "Appartement Jnane Awrade - Bergblick",
+      "title": "2-Zimmer Wohnung in Jnane Awrade 75m²",
       "source": "Mubawab",
       "url": "https://www.mubawab.ma/fr/a/8284437/appartement-2-chambres-jnan-awrade-75m2",
+      "contact_phone": "",
+      "contact_name": "",
       "price_mad": 1150000,
       "price_eur": 106481,
       "area_sqm": 75,
@@ -1472,46 +695,166 @@
       "ownership_type": "Unbekannt",
       "condition": "Neu",
       "highlights": [
-        "Sehr günstiger Preis im Budget-Sweet-Spot",
+        "Sehr guter Preis-Leistung",
         "Vollmöbliert verfügbar",
-        "Bergblick von der 3. Etage",
-        "Nähe zu McDonald's und Amoud (gute Lage)"
+        "Bergblick vorhanden",
+        "Nur 5 Jahre alt, gepflegte Residence"
       ],
       "concerns": [
-        "Nur 1 Badezimmer für 4 Zimmer",
-        "Kein Pool in der Residenz",
-        "Kleinere Wohnfläche von 75m2",
-        "Jnane Awrade nicht Premiumlage"
+        "Etwas unter Mindest-m²-Wunsch",
+        "Keine Poolanlage",
+        "Jnane Awrade nicht in Top-Lagen",
+        "Nur 1 Badezimmer für 2 Schlafzimmer"
       ],
-      "neighborhood_outlook": "Jnane Awrade ist ein aufstrebendes Wohngebiet mit guter Infrastruktur und erschwinglichen Preisen. Gute Anbindung und Entwicklungspotenzial.",
+      "neighborhood_outlook": "Jnane Awrade ist ein aufstrebendes Wohngebiet mit guter Anbindung zur Route de Casa. Familienfreundlich aber noch in Entwicklung, gutes Preis-Leistungs-Verhältnis.",
       "investment_potential": 4,
-      "livability_score": 4,
+      "livability_score": 3,
       "market_price_assessment": "Unter Markt",
       "scores": {
         "budget_fit": 100,
-        "location_fit": 60,
+        "location_fit": 70,
         "size_fit": 60,
         "amenities_fit": 50,
-        "investment_fit": 80,
+        "investment_fit": 85,
         "info_penalty": 10,
-        "overall": 70
+        "overall": 74
       },
       "verdict": "INTERESSANT",
-      "verdict_reason": "Sehr gutes Preis-Leistungs-Verhältnis mit vollmöblierter Ausstattung. Kleinere Abstriche bei Fläche und Ausstattung, aber solide Investment-Option.",
+      "verdict_reason": "Sehr attraktiver Preis und gute Grundausstattung. Möbliert und sofort bezugsfertig. Trotz kleinerer Fläche gutes Investment mit Potential.",
       "besichtigung_fragen": [
-        "Welche Möbel sind genau enthalten?",
-        "Ist das Parking im Preis inbegriffen?",
-        "Wie ist die Qualität der Möblierung?",
-        "Gibt es Lärmprobleme in der 3. Etage?",
-        "Sind weitere Badezimmer-Anschlüsse vorhanden?"
+        "Sind alle Möbel hochwertig und gepflegt?",
+        "Wie ist der genaue Zustand der Residence?",
+        "Gibt es Pläne für Pool oder weitere Amenities?",
+        "Welche Nebenkosten fallen an?",
+        "Ist Kurzzeitmiete erlaubt für Touristenvermietung?"
       ],
-      "verhandlung_tipps": "Guter Preis, aber nach Qualität der Möblierung fragen und eventuell 3-5% Nachlass versuchen."
+      "verhandlung_tipps": "Preis bereits sehr attraktiv, aber möglicherweise 50-100k MAD Verhandlungsspielraum. Schnelle Entscheidung als Argument nutzen."
+    },
+    {
+      "id": "9ce219e3e46d",
+      "title": "Verkauf schöne 3-Zimmer Wohnung",
+      "source": "Mubawab",
+      "url": "https://www.mubawab.ma/fr/pa/8154992/vente-d-un-bel-appartement-3-chambres-agr%C3%A9ables",
+      "contact_phone": "",
+      "contact_name": "",
+      "price_mad": 1395200,
+      "price_eur": 129185,
+      "area_sqm": 109,
+      "rooms": 4,
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "floor": "Unbekannt",
+      "neighborhood": "Unbekannt",
+      "property_type": "Apartment",
+      "price_per_sqm_mad": 12800,
+      "has_terrace": false,
+      "has_pool": true,
+      "has_parking": true,
+      "has_elevator": true,
+      "is_new_build": false,
+      "ownership_type": "Unbekannt",
+      "condition": "Neu",
+      "highlights": [
+        "Großzügige 109m² mit 3 Schlafzimmern",
+        "Sehr guter m²-Preis",
+        "Vollausstattung mit Pool und Parking",
+        "Lieferung 2027 - Neubau-Projekt"
+      ],
+      "concerns": [
+        "Lage völlig unbekannt",
+        "Erst 2027 fertig (lange Wartezeit)",
+        "Keine Terrasse vorhanden",
+        "Ritaj Residence - unbekanntes Projekt"
+      ],
+      "neighborhood_outlook": "Lage wird als 5 Min von Gueliz und Gare beschrieben, klingt zentral aber ohne genaue Adresse schwer beurteilbar. Könnte gute Entwicklung haben.",
+      "investment_potential": 4,
+      "livability_score": 3,
+      "market_price_assessment": "Unter Markt",
+      "scores": {
+        "budget_fit": 95,
+        "location_fit": 60,
+        "size_fit": 100,
+        "amenities_fit": 75,
+        "investment_fit": 80,
+        "info_penalty": 20,
+        "overall": 73
+      },
+      "verdict": "INTERESSANT",
+      "verdict_reason": "Sehr guter Preis für große Fläche und gute Ausstattung. Risiko durch unbekannte Lage und lange Bauzeit, aber attraktives Preis-Leistungs-Verhältnis.",
+      "besichtigung_fragen": [
+        "Wo genau befindet sich das Projekt?",
+        "Wer ist der Bauträger und wie seriös?",
+        "Gibt es Garantien für Fertigstellung 2027?",
+        "Wie sehen Musterwohnungen aus?",
+        "Welche Zahlungsmodalitäten sind vorgesehen?"
+      ],
+      "verhandlung_tipps": "Lange Bauzeit und Ungewissheiten als Verhandlungsargument. Eventuell bessere Konditionen bei Früh-Buchung möglich."
+    },
+    {
+      "id": "",
+      "title": "Schöne Wohnung mit außergewöhnlichem Preis",
+      "source": "Avito",
+      "url": "",
+      "contact_phone": "",
+      "contact_name": "",
+      "price_mad": 1260000,
+      "price_eur": 105000,
+      "area_sqm": 90,
+      "rooms": 3,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "floor": "Unbekannt",
+      "neighborhood": "Targa",
+      "property_type": "Apartment",
+      "price_per_sqm_mad": 14000,
+      "has_terrace": false,
+      "has_pool": false,
+      "has_parking": false,
+      "has_elevator": false,
+      "is_new_build": false,
+      "ownership_type": "Unbekannt",
+      "condition": "Unbekannt",
+      "highlights": [
+        "Optimaler Preis",
+        "Top-Lage Targa",
+        "Gute Flächenaufteilung"
+      ],
+      "concerns": [
+        "Keine Ausstattungsdetails",
+        "Unklare Etage",
+        "Fehlende Must-haves"
+      ],
+      "neighborhood_outlook": "Targa ist eine der begehrtesten Lagen mit ausgezeichneter Infrastruktur und Wertsteigerungspotential. Sehr gute Vermietbarkeit.",
+      "investment_potential": 4,
+      "livability_score": 3,
+      "market_price_assessment": "Unter Markt",
+      "scores": {
+        "budget_fit": 100,
+        "location_fit": 100,
+        "size_fit": 100,
+        "amenities_fit": 0,
+        "investment_fit": 80,
+        "info_penalty": -20,
+        "overall": 72
+      },
+      "verdict": "INTERESSANT",
+      "verdict_reason": "Perfekte Kombination aus Budget, Lage und Größe. Der niedrige Preis für Targa ist verdächtig gut - könnte ein Schnäppchen oder versteckte Mängel bedeuten. Dringend besichtigen!",
+      "besichtigung_fragen": [
+        "Warum ist der Preis so niedrig für Targa?",
+        "Welche Etage und Aufzug vorhanden?",
+        "Gibt es Terrasse oder Balkon?",
+        "Sind Parkmöglichkeiten dabei?",
+        "Zustand und eventuelle Renovierungskosten?"
+      ],
+      "verhandlung_tipps": "Vorsichtig verhandeln - könnte bereits der Marktpreis sein. Erst nach gründlicher Besichtigung Angebot machen."
     },
     {
       "id": "9453c421d72d",
-      "title": "Appartement à vendre",
+      "title": "Menara Garden Apartment 100m² komplett möbliert",
       "source": "Mubawab",
       "url": "https://www.mubawab.ma/fr/a/8298865/appartement-%C3%A0-vendre",
+      "contact_phone": "",
+      "contact_name": "",
       "price_mad": 1800000,
       "price_eur": 166666,
       "area_sqm": 100,
@@ -1519,7 +862,7 @@
       "bedrooms": 3,
       "bathrooms": 1,
       "floor": "5",
-      "neighborhood": "Menara Garden",
+      "neighborhood": "Menara",
       "property_type": "Apartment",
       "price_per_sqm_mad": 18000,
       "has_terrace": true,
@@ -1530,56 +873,58 @@
       "ownership_type": "Unbekannt",
       "condition": "Neu",
       "highlights": [
-        "100m² Fläche",
-        "3 Schlafzimmer",
-        "Möbliert hochwertig",
-        "Dachterrasse"
+        "100m2 perfekte Größe",
+        "Vollmöbliert hochwertig",
+        "Zentrale Lage",
+        "Komplettausstattung"
       ],
       "concerns": [
-        "Über Budget",
-        "Zentrale Lage",
-        "Nur 1 Bad für 3 SZ",
-        "Hoher Preis"
+        "Budget-Obergrenze",
+        "Nur 1 Bad für 3 Zi",
+        "Hoher m2-Preis",
+        "Menara nicht Top-Lage"
       ],
-      "neighborhood_outlook": "Menara Garden ist zentral und gut erschlossen. Für Touristen attraktiv aber auch laut.",
-      "investment_potential": 3,
+      "neighborhood_outlook": "Menara bietet zentrale Lage mit guter Anbindung. Nahe Jemaa El Fna aber touristisch geprägt.",
+      "investment_potential": 4,
       "livability_score": 4,
-      "market_price_assessment": "Über Markt",
+      "market_price_assessment": "Marktgerecht",
       "scores": {
         "budget_fit": 60,
-        "location_fit": 50,
-        "size_fit": 80,
+        "location_fit": 60,
+        "size_fit": 100,
         "amenities_fit": 100,
-        "investment_fit": 65,
+        "investment_fit": 70,
         "info_penalty": 10,
-        "overall": 69
+        "overall": 72
       },
       "verdict": "INTERESSANT",
-      "verdict_reason": "Gute Größe und Vollausstattung, aber über Budget und in touristischer Lage. Hochwertige Möblierung ist Bonus. Preis zu hoch.",
+      "verdict_reason": "Gute Größe und komplett ausgestattet, aber an Budget-Obergrenze. Zentrale Lage für Eigennutzung gut.",
       "besichtigung_fragen": [
-        "Sind die hochwertigen Möbel im Preis enthalten?",
-        "Wie groß ist die Dachterrasse?",
-        "Wie ist die Lärmbelastung durch Touristen?",
-        "Warum nur 1 Bad für 3 Schlafzimmer?",
-        "Ist Verhandlung beim Preis möglich?"
+        "Sind Möbel im Preis?",
+        "Zustand der Terrasse?",
+        "Vermietungshistorie?",
+        "Nebenkosten?",
+        "Verhandlungsspielraum?"
       ],
-      "verhandlung_tipps": "Preis ist überhöht. Ohne Möbel sollte deutlich günstiger sein. Aggressive Verhandlung angebracht."
+      "verhandlung_tipps": "100-200k MAD Reduktion verhandeln, da möbliert nicht zwingend nötig."
     },
     {
-      "id": "3d2d48ee4762",
-      "title": "T3 Standig-Appartement Neuer Guéliz",
+      "id": "dac0d021bf10",
+      "title": "Duplex-Wohnung im Zentrum von Gueliz",
       "source": "Mubawab",
-      "url": "https://www.mubawab.ma/fr/pa/8158297/id%C3%A9al-pied-%C3%A0-terre-ou-location-appartement-t3-de-standing",
-      "price_mad": 1170000,
-      "price_eur": 108333,
-      "area_sqm": 67,
-      "rooms": 3,
+      "url": "https://www.mubawab.ma/fr/a/8275899/a-vendre-appartement-duplex-centre-ville-gueliz",
+      "contact_phone": "",
+      "contact_name": "",
+      "price_mad": 1740000,
+      "price_eur": 161111,
+      "area_sqm": 120,
+      "rooms": 5,
       "bedrooms": 2,
-      "bathrooms": 1,
-      "floor": "Unbekannt",
-      "neighborhood": "Neuer Guéliz",
-      "property_type": "Apartment",
-      "price_per_sqm_mad": 17462,
+      "bathrooms": 2,
+      "floor": "1. Etage",
+      "neighborhood": "Gueliz",
+      "property_type": "Duplex-Wohnung",
+      "price_per_sqm_mad": 14500,
       "has_terrace": true,
       "has_pool": true,
       "has_parking": true,
@@ -1588,627 +933,299 @@
       "ownership_type": "Unbekannt",
       "condition": "Neu",
       "highlights": [
-        "Sehr günstiger Preis im Budget",
-        "Komplette Ausstattung vorhanden",
-        "Neuer Guéliz - begehrte Wohnlage",
-        "Gute Investment-Rendite möglich"
+        "Möbliert und schlüsselfertig",
+        "32m2 Innenhof mit Jacuzzi",
+        "Duplex-Design mit 120m2",
+        "Neue Residenz mit Pool und Fitness"
       ],
       "concerns": [
-        "Kleine Wohnfläche von nur 67m2",
-        "Nur 1 Badezimmer für 3 Zimmer",
-        "Guéliz nicht prioritäre Zielregion",
-        "Wenig Details in Beschreibung"
+        "Gueliz ist nicht Zielgebiet",
+        "Alter der Residenz unklar",
+        "Hoher Preis für Gueliz",
+        "Überdurchschnittliche Betriebskosten"
       ],
-      "neighborhood_outlook": "Neuer Guéliz kombiniert zentrale Lage mit modernerem Ambiente. Gute Wertsteigerung, aber touristischer als Speckgürtel-Lagen.",
-      "investment_potential": 4,
+      "neighborhood_outlook": "Gueliz ist das moderne Stadtzentrum mit guter Infrastruktur und Nähe zu Majorelle-Gärten. Für Eigennutzung attraktiv, aber nicht die bevorzugte Investmentlage der Zielgruppe.",
+      "investment_potential": 3,
       "livability_score": 4,
-      "market_price_assessment": "Unter Markt",
+      "market_price_assessment": "Marktgerecht",
       "scores": {
-        "budget_fit": 100,
+        "budget_fit": 60,
         "location_fit": 50,
-        "size_fit": 40,
-        "amenities_fit": 75,
-        "investment_fit": 80,
-        "info_penalty": 10,
-        "overall": 69
+        "size_fit": 100,
+        "amenities_fit": 100,
+        "investment_fit": 60,
+        "info_penalty": -10,
+        "overall": 72
       },
-      "verdict": "BEDINGT GEEIGNET",
-      "verdict_reason": "Sehr guter Preis und komplette Ausstattung, aber die kleine Fläche von 67m2 ist für Hauptwohnsitz grenzwertig. Eher für Pied-à-terre geeignet.",
+      "verdict": "INTERESSANT",
+      "verdict_reason": "Sehr gut ausgestattete Duplex-Wohnung mit allen Must-haves, aber in nicht-präferierter Lage Gueliz. Preis ist grenzwertig für das Budget.",
       "besichtigung_fragen": [
-        "Wie ist die genaue Raumaufteilung bei 67m2?",
-        "Ist die Wohnung wirklich praktikabel als Hauptwohnsitz?",
-        "Welche Etage und Ausrichtung?",
-        "Gibt es Erweiterungsmöglichkeiten?",
-        "Wie sind die Hauskosten?"
+        "Wie alt ist die Residenz genau?",
+        "Welche monatlichen Nebenkosten fallen an?",
+        "Ist der Jacuzzi bereits installiert?",
+        "Gibt es Mieterpotential in dieser Lage?",
+        "Sind alle Möbel im Preis enthalten?"
       ],
-      "verhandlung_tipps": "Trotz günstiger Preis nach weiteren Inklusivleistungen fragen und Raumaufteilung genau prüfen."
+      "verhandlung_tipps": "Bei 1,6M MAD liegt ein guter Verhandlungsbereich vor. Betonen Sie, dass Gueliz nicht Ihre erste Wahl ist."
     },
     {
-      "id": "",
-      "title": "Außergewöhnliche Wohnung in Agdal Marrakesch zum Investieren",
-      "source": "Avito",
-      "url": "",
-      "price_mad": 1900000,
-      "price_eur": 158333,
-      "area_sqm": 100,
+      "id": "dfd9a8155647",
+      "title": "Neubau-Wohnung in Gueliz - 77m2",
+      "source": "Mubawab",
+      "url": "https://www.mubawab.ma/fr/pa/8059954/appartement-%C3%A0-l-achat-%C3%A0-gu%C3%A9liz-surface-totale-77-m%C2%B2",
+      "contact_phone": "",
+      "contact_name": "",
+      "price_mad": 1347500,
+      "price_eur": 124768,
+      "area_sqm": 77,
       "rooms": 3,
       "bedrooms": 2,
       "bathrooms": 2,
       "floor": "Unbekannt",
-      "neighborhood": "Agdal",
+      "neighborhood": "Gueliz",
       "property_type": "Wohnung",
-      "price_per_sqm_mad": 19000,
+      "price_per_sqm_mad": 17500,
+      "has_terrace": true,
+      "has_pool": true,
+      "has_parking": true,
+      "has_elevator": true,
+      "is_new_build": false,
+      "ownership_type": "Unbekannt",
+      "condition": "Neu",
+      "highlights": [
+        "Alle Must-haves erfüllt",
+        "Neubau mit moderner Ausstattung",
+        "Gute Sicherheit der Residenz",
+        "Faire Preis-Leistung"
+      ],
+      "concerns": [
+        "Nur 77m2 Wohnfläche",
+        "Gueliz nicht Zielgebiet",
+        "Relativ hoher m2-Preis",
+        "Kleine Wohnfläche für Familiennutzung"
+      ],
+      "neighborhood_outlook": "Gueliz bietet urbanen Komfort und gute Infrastruktur, ist aber nicht das bevorzugte Investmentgebiet. Für Eigennutzung durchaus attraktiv.",
+      "investment_potential": 3,
+      "livability_score": 4,
+      "market_price_assessment": "Marktgerecht",
+      "scores": {
+        "budget_fit": 100,
+        "location_fit": 50,
+        "size_fit": 60,
+        "amenities_fit": 100,
+        "investment_fit": 60,
+        "info_penalty": -10,
+        "overall": 72
+      },
+      "verdict": "INTERESSANT",
+      "verdict_reason": "Alle Ausstattungsmerkmale erfüllt und im Budget, aber die 77m2 sind knapp bemessen und Gueliz nicht optimal. Guter Kompromiss.",
+      "besichtigung_fragen": [
+        "Ist die Wohnung wirklich so klein wie angegeben?",
+        "Welche Etage und gibt es Lärm?",
+        "Sind die 77m2 netto oder brutto?",
+        "Wie hoch sind die monatlichen Nebenkosten?",
+        "Ist die Residenz bereits bezugsfertig?"
+      ],
+      "verhandlung_tipps": "Preis ist fair aber wegen der kleinen Fläche können Sie noch 5-10% verhandeln."
+    },
+    {
+      "id": "53c7cbd610f0",
+      "title": "Argan Golf Wohnung - 86m² mit 3 Schlafzimmern",
+      "source": "Mubawab",
+      "url": "https://www.mubawab.ma/fr/a/8238336/appartement-%C3%A0-vendre",
+      "contact_phone": "",
+      "contact_name": "",
+      "price_mad": 1900000,
+      "price_eur": 175925,
+      "area_sqm": 86,
+      "rooms": 3,
+      "bedrooms": 3,
+      "bathrooms": 1,
+      "floor": "Unbekannt",
+      "neighborhood": "Argan Golf",
+      "property_type": "Apartment",
+      "price_per_sqm_mad": 22093,
       "has_terrace": false,
-      "has_pool": false,
-      "has_parking": false,
+      "has_pool": true,
+      "has_parking": true,
       "has_elevator": false,
       "is_new_build": false,
       "ownership_type": "Unbekannt",
-      "condition": "Unbekannt",
+      "condition": "Neu",
       "highlights": [
-        "Top-Lage Agdal",
-        "Investment erwähnt",
-        "Gute Größe"
+        "3 Schlafzimmer auf 86m²",
+        "Golf-Residenz mit Grünflächen",
+        "Pool und Parkplatz inklusive",
+        "Ruhige, sichere Lage"
       ],
       "concerns": [
-        "Obere Budgetgrenze",
-        "Keine Details zur Ausstattung",
-        "Sehr wenige Informationen"
+        "Leicht über Budget-Sweet-Spot",
+        "Nur 1 Badezimmer für 3 Zimmer",
+        "Keine Terrasse erwähnt",
+        "Kein Aufzug"
       ],
-      "neighborhood_outlook": "Agdal ist eine der besten Lagen im Speckgürtel mit hohem Investment-Potenzial. Etabliertes, gehobenes Viertel.",
+      "neighborhood_outlook": "Argan Golf bietet ruhiges Wohnen in gepflegter Umgebung. Golf-Nähe wertet die Lage auf, liegt aber etwas außerhalb des Zentrums.",
       "investment_potential": 4,
       "livability_score": 4,
-      "market_price_assessment": "Marktgerecht",
+      "market_price_assessment": "Über Markt",
       "scores": {
         "budget_fit": 80,
-        "location_fit": 100,
-        "size_fit": 100,
-        "amenities_fit": 0,
-        "investment_fit": 80,
-        "info_penalty": 20,
-        "overall": 68
-      },
-      "verdict": "INTERESSANT",
-      "verdict_reason": "Perfekte Lage in Agdal mit gutem Investment-Potenzial, aber an der oberen Budgetgrenze und wenige Details verfügbar.",
-      "besichtigung_fragen": [
-        "Was macht die Wohnung 'außergewöhnlich'?",
-        "Welche Ausstattung (Terrasse, Pool, Parkplatz, Aufzug)?",
-        "Genaue Lage in Agdal?",
-        "Zustand und Baujahr?",
-        "Verhandlungsspielraum beim Preis?"
-      ],
-      "verhandlung_tipps": "In Agdal sind die Preise hoch, aber Lage rechtfertigt Investment. Ausstattung als Verhandlungspunkt nutzen."
-    },
-    {
-      "id": "07b3fe9d1c6d",
-      "title": "Erdgeschoss-Appartement Jnane Awrade mit Pool",
-      "source": "Mubawab",
-      "url": "https://www.mubawab.ma/fr/a/8313773/belle-appartement-a-jnane-awerade-meubl%C3%A9e",
-      "price_mad": 1500000,
-      "price_eur": 138888,
-      "area_sqm": 85,
-      "rooms": 4,
-      "bedrooms": 2,
-      "bathrooms": 2,
-      "floor": "Erdgeschoss",
-      "neighborhood": "Jnane Awrade",
-      "property_type": "Apartment",
-      "price_per_sqm_mad": 17647,
-      "has_terrace": false,
-      "has_pool": true,
-      "has_parking": false,
-      "has_elevator": true,
-      "is_new_build": false,
-      "ownership_type": "Unbekannt",
-      "condition": "Neu",
-      "highlights": [
-        "Poolblick und direkter Zugang",
-        "Zwei Fassaden für mehr Licht",
-        "85m2 Wohnfläche",
-        "Voll ausgestattete Küche"
-      ],
-      "concerns": [
-        "Erdgeschoss (No-Go laut Profil)",
-        "Kein Parkplatz vorhanden",
-        "Keine Terrasse trotz EG",
-        "Höherer Preis ohne bessere Lage"
-      ],
-      "neighborhood_outlook": "Jnane Awrade entwickelt sich gut, aber Erdgeschoss-Lage reduziert Privatsphäre und Sicherheit. Poolzugang ist Vorteil.",
-      "investment_potential": 3,
-      "livability_score": 2,
-      "market_price_assessment": "Marktgerecht",
-      "scores": {
-        "budget_fit": 100,
-        "location_fit": 60,
-        "size_fit": 80,
-        "amenities_fit": 50,
-        "investment_fit": 60,
-        "info_penalty": 10,
-        "overall": 68
-      },
-      "verdict": "NICHT GEEIGNET",
-      "verdict_reason": "Erdgeschoss ist explizites No-Go. Trotz Poolzugang und guter Ausstattung entspricht es nicht den Sicherheits- und Privatsphäre-Anforderungen.",
-      "besichtigung_fragen": [
-        "Ist die EG-Lage wirklich sicher und privat?",
-        "Welche Sicherheitsmaßnahmen gibt es?",
-        "Gibt es Parkmöglichkeiten in der Nähe?",
-        "Wie ist der Lärmschutz zum Pool?",
-        "Ist eine höhere Etage verfügbar?"
-      ],
-      "verhandlung_tipps": "Aufgrund EG-Lage deutlicher Preisnachlass möglich, aber grundsätzlich nicht empfehlenswert."
-    },
-    {
-      "id": "425225d5e1cb",
-      "title": "Exklusive Wohnung in Prestigia Golf - 76m²",
-      "source": "Mubawab",
-      "url": "https://www.mubawab.ma/fr/a/8242899/bel-appartement-%C3%A0-prestigia",
-      "price_mad": 2100000,
-      "price_eur": 194444,
-      "area_sqm": 76,
-      "rooms": 3,
-      "bedrooms": 2,
-      "bathrooms": 2,
-      "floor": "2. Etage",
-      "neighborhood": "Prestigia Golf",
-      "property_type": "Apartment",
-      "price_per_sqm_mad": 27631,
-      "has_terrace": true,
-      "has_pool": true,
-      "has_parking": false,
-      "has_elevator": false,
-      "is_new_build": false,
-      "ownership_type": "Unbekannt",
-      "condition": "Neu",
-      "highlights": [
-        "Premium Golf-Resort Prestigia",
-        "Ruhige Lage ohne Vis-à-vis",
-        "Terrasse und Pool vorhanden",
-        "Sicherheitsdienst inklusive"
-      ],
-      "concerns": [
-        "Deutlich über Budget bei 2,1M MAD",
-        "Sehr hoher m²-Preis (27.631 MAD)",
-        "Nur 76m² - eher klein",
-        "Kein Parkplatz und Aufzug"
-      ],
-      "neighborhood_outlook": "Prestigia Golf ist eine der exklusivsten Adressen mit höchstem Prestige. Wertsteigerungspotential sehr hoch, aber Premium-Preissegment.",
-      "investment_potential": 5,
-      "livability_score": 4,
-      "market_price_assessment": "Über Markt",
-      "scores": {
-        "budget_fit": 40,
-        "location_fit": 95,
-        "size_fit": 60,
-        "amenities_fit": 50,
-        "investment_fit": 90,
-        "info_penalty": 10,
-        "overall": 67
-      },
-      "verdict": "BEDINGT GEEIGNET",
-      "verdict_reason": "Top-Adresse mit exzellentem Investment-Potential, aber deutlich über Budget und relativ klein. Für langfristige Wertsteigerung interessant, kurzfristig aber zu teuer.",
-      "besichtigung_fragen": [
-        "Welche Verhandlungsmöglichkeiten gibt es beim Preis?",
-        "Sind Parkplätze separat verfügbar?",
-        "Welche Golf-Privilegien sind enthalten?",
-        "Wie hoch sind die monatlichen Service-Gebühren?",
-        "Gibt es ähnliche Objekte in größerer Ausführung?"
-      ],
-      "verhandlung_tipps": "Mindestens 300.000 MAD Nachlass anstreben. Prestigia-Premium rechtfertigt nicht diesen extremen Aufschlag."
-    },
-    {
-      "id": "",
-      "title": "Wohnung zu verkaufen 95 m² in Marrakesch Palmeraie",
-      "source": "Avito",
-      "url": "",
-      "price_mad": 1500000,
-      "price_eur": 125000,
-      "area_sqm": 95,
-      "rooms": 3,
-      "bedrooms": 2,
-      "bathrooms": 2,
-      "floor": "Unbekannt",
-      "neighborhood": "Palmeraie",
-      "property_type": "Wohnung",
-      "price_per_sqm_mad": 15789,
-      "has_terrace": false,
-      "has_pool": false,
-      "has_parking": false,
-      "has_elevator": false,
-      "is_new_build": false,
-      "ownership_type": "Unbekannt",
-      "condition": "Unbekannt",
-      "highlights": [
-        "Top-Lage Palmeraie",
-        "Gute Größe 95m²",
-        "Budget-konform",
-        "Attraktiver m²-Preis"
-      ],
-      "concerns": [
-        "Keine Details zur Ausstattung",
-        "Unbekannte Terrasse/Pool",
-        "Kein Parkplatz erwähnt",
-        "Zustand unbekannt"
-      ],
-      "neighborhood_outlook": "Palmeraie ist eine der besten Lagen - ruhig, grün und mit Entwicklungspotential. Ideal für Feriendomizil und Investment.",
-      "investment_potential": 4,
-      "livability_score": 4,
-      "market_price_assessment": "Marktgerecht",
-      "scores": {
-        "budget_fit": 100,
-        "location_fit": 90,
-        "size_fit": 80,
-        "amenities_fit": 0,
-        "investment_fit": 80,
-        "info_penalty": 20,
-        "overall": 66
-      },
-      "verdict": "INTERESSANT",
-      "verdict_reason": "Sehr gute Lage in Palmeraie mit angemessener Größe und Budget. Fehlende Informationen zur Ausstattung sind das Hauptmanko.",
-      "besichtigung_fragen": [
-        "Hat die Wohnung eine Terrasse?",
-        "Gibt es einen Pool in der Anlage?",
-        "Ist ein Parkplatz vorhanden?",
-        "Welcher Zustand und welche Etage?",
-        "Aufzug verfügbar?"
-      ],
-      "verhandlung_tipps": "Gute Basis für Verhandlung, da Lage stimmt - Details zur Ausstattung klären und entsprechend verhandeln."
-    },
-    {
-      "id": "",
-      "title": "Appartement 80m² mit Pool Gueliz",
-      "source": "Avito",
-      "url": "",
-      "price_mad": 1080000,
-      "price_eur": 90000,
-      "area_sqm": 80,
-      "rooms": 3,
-      "bedrooms": 2,
-      "bathrooms": 1,
-      "floor": "Unbekannt",
-      "neighborhood": "Gueliz",
-      "property_type": "Apartment",
-      "price_per_sqm_mad": 13500,
-      "has_terrace": false,
-      "has_pool": true,
-      "has_parking": false,
-      "has_elevator": false,
-      "is_new_build": false,
-      "ownership_type": "Unbekannt",
-      "condition": "Unbekannt",
-      "highlights": [
-        "Sehr günstiger Preis",
-        "Pool vorhanden",
-        "Gute Größe 80m²"
-      ],
-      "concerns": [
-        "Lage nicht optimal",
-        "Möglicherweise renovierungsbedürftig",
-        "Wenig Ausstattung"
-      ],
-      "neighborhood_outlook": "Gueliz ist zentral, aber nicht die bevorzugte Speckgürtel-Lage. Der sehr niedrige Preis könnte auf Renovierungsbedarf hindeuten.",
-      "investment_potential": 4,
-      "livability_score": 3,
-      "market_price_assessment": "Unter Markt",
-      "scores": {
-        "budget_fit": 100,
-        "location_fit": 50,
-        "size_fit": 80,
-        "amenities_fit": 25,
-        "investment_fit": 80,
-        "info_penalty": 15,
-        "overall": 64
-      },
-      "verdict": "INTERESSANT",
-      "verdict_reason": "Sehr attraktiver Preis für 80m² mit Pool, aber in nicht optimaler Lage. Könnte ein Schnäppchen sein, aber Vorsicht vor versteckten Renovierungskosten. Als Investment interessant.",
-      "besichtigung_fragen": [
-        "Warum der sehr niedrige Preis?",
-        "Welche Renovierungen sind nötig?",
-        "Zustand der Wohnung und des Pools?",
-        "Gibt es rechtliche Probleme?",
-        "Nebenkosten und Verwaltung?"
-      ],
-      "verhandlung_tipps": "Preis bereits sehr niedrig. Fokus auf Zustandsanalyse und versteckte Kosten. Eventuell weitere 50.000-100.000 MAD verhandelbar."
-    },
-    {
-      "id": "",
-      "title": "Schöne Wohnung mit außergewöhnlichem Preis",
-      "source": "Avito",
-      "url": "",
-      "price_mad": 1260000,
-      "price_eur": 105000,
-      "area_sqm": 85,
-      "rooms": 3,
-      "bedrooms": 2,
-      "bathrooms": 2,
-      "floor": "Unbekannt",
-      "neighborhood": "Targa",
-      "property_type": "Apartment",
-      "price_per_sqm_mad": 14824,
-      "has_terrace": null,
-      "has_pool": null,
-      "has_parking": null,
-      "has_elevator": null,
-      "is_new_build": null,
-      "ownership_type": "Unbekannt",
-      "condition": "Unbekannt",
-      "highlights": [
-        "Top-Lage Targa",
-        "Budgetfreundlicher Preis",
-        "Gutes Preis-Leistungs-Verhältnis"
-      ],
-      "concerns": [
-        "Keine Details zu Ausstattung",
-        "Zustand unbekannt",
-        "Keine Bilder oder Beschreibung"
-      ],
-      "neighborhood_outlook": "Targa ist eine der begehrtesten Neubaugebiete von Marrakesch mit moderner Infrastruktur. Das Viertel entwickelt sich rasant und bietet gute Wertsteigerungspotentiale.",
-      "investment_potential": 4,
-      "livability_score": 4,
-      "market_price_assessment": "Unter Markt",
-      "scores": {
-        "budget_fit": 100,
-        "location_fit": 100,
-        "size_fit": 60,
-        "amenities_fit": 0,
-        "investment_fit": 75,
-        "info_penalty": -20,
-        "overall": 64
-      },
-      "verdict": "INTERESSANT",
-      "verdict_reason": "Ausgezeichnete Lage in Targa zu attraktivem Preis, aber völlig unklare Ausstattung und Zustand. Könnte ein Schnäppchen sein, erfordert aber intensive Prüfung vor Ort.",
-      "besichtigung_fragen": [
-        "Welche Etage und gibt es einen Aufzug?",
-        "Ist eine Terrasse oder Balkon vorhanden?",
-        "Gibt es Parkplätze und Pool in der Residenz?",
-        "Wie ist der genaue Zustand und Baujahr?",
-        "Warum ist der Preis so attraktiv - gibt es versteckte Mängel?"
-      ],
-      "verhandlung_tipps": "Bei diesem Preis in Targa besteht Verhandlungsspielraum nach unten, falls Mängel entdeckt werden. Gründliche Inspektion ist entscheidend."
-    },
-    {
-      "id": "",
-      "title": "Duplex à vendre à Marrakech",
-      "source": "Avito",
-      "url": "",
-      "price_mad": 1100000,
-      "price_eur": 91667,
-      "area_sqm": 85,
-      "rooms": 3,
-      "bedrooms": 2,
-      "bathrooms": 2,
-      "floor": "Unbekannt",
-      "neighborhood": "Route de Casablanca",
-      "property_type": "Apartment",
-      "price_per_sqm_mad": 12941,
-      "has_terrace": true,
-      "has_pool": false,
-      "has_parking": true,
-      "has_elevator": false,
-      "is_new_build": false,
-      "ownership_type": "Unbekannt",
-      "condition": "Unbekannt",
-      "highlights": [
-        "Duplex-Format",
-        "Route de Casablanca - gute Anbindung",
-        "Preis im Budget"
-      ],
-      "concerns": [
-        "Wenig Details",
-        "Ausstattung unklar",
-        "Zustand unbekannt"
-      ],
-      "neighborhood_outlook": "Route de Casablanca bietet gute Anbindung und Infrastruktur. Entwicklungsgebiet mit moderaten Preissteigerungen.",
-      "investment_potential": 3,
-      "livability_score": 3,
-      "market_price_assessment": "Marktgerecht",
-      "scores": {
-        "budget_fit": 100,
         "location_fit": 70,
         "size_fit": 80,
-        "amenities_fit": 25,
-        "investment_fit": 60,
-        "info_penalty": 15,
-        "overall": 64
+        "amenities_fit": 50,
+        "investment_fit": 70,
+        "info_penalty": 10,
+        "overall": 72
       },
-      "verdict": "BEDINGT GEEIGNET",
-      "verdict_reason": "Duplex in akzeptabler Lage zu fairem Preis, aber zu wenige Details für fundierte Entscheidung.",
+      "verdict": "INTERESSANT",
+      "verdict_reason": "Gute Wahl mit 3 Zimmern und wichtigen Annehmlichkeiten. Preis etwas hoch, aber Golf-Lage und Ausstattung rechtfertigen dies teilweise. Nur 1 Bad für 3 Zimmer ist der Hauptnachteil.",
       "besichtigung_fragen": [
-        "Genaue Quadratmeterzahl des Duplex?",
-        "Welche Etagen umfasst das Duplex?",
-        "Gibt es eine Terrasse oder Dachterrasse?",
-        "Parkplatzsituation?",
-        "Zustand und Renovierungsbedarf?"
+        "Wie groß sind die 3 Schlafzimmer jeweils?",
+        "Ist ein zweites Bad nachrüstbar?",
+        "Welche Kosten für Golf-Mitgliedschaft?",
+        "Gibt es eine Terrasse oder Balkon?",
+        "Wie hoch sind die Gemeinschaftskosten?"
       ],
-      "verhandlung_tipps": "Duplex-Charakter als Verkaufsargument nutzen, aber fehlende Details als Preisargument."
+      "verhandlung_tipps": "Ein Badezimmer für 3 Zimmer als Verhandlungsargument nutzen. Golf-Lage ist aber wertsteigernd, daher moderater Spielraum."
     },
     {
-      "id": "",
-      "title": "Wohnung 3 Schlafz. Salon 2 Bäder 133m2 in Semlalia",
-      "source": "Avito",
-      "url": "",
-      "price_mad": 1350000,
-      "price_eur": 113000,
-      "area_sqm": 133,
-      "rooms": 4,
-      "bedrooms": 3,
-      "bathrooms": 2,
-      "floor": "Unbekannt",
-      "neighborhood": "Semlalia",
-      "property_type": "Wohnung",
-      "price_per_sqm_mad": 10150,
-      "has_terrace": false,
-      "has_pool": false,
-      "has_parking": false,
-      "has_elevator": false,
-      "is_new_build": false,
-      "ownership_type": "Unbekannt",
-      "condition": "Unbekannt",
-      "highlights": [
-        "Großzügige 133m²",
-        "3 Schlafzimmer",
-        "Günstiger m²-Preis",
-        "Budget-optimal"
-      ],
-      "concerns": [
-        "Semlalia nicht Top-Lage",
-        "Keine Terrasse/Pool",
-        "Kein Parkplatz/Aufzug",
-        "Wenig Details"
-      ],
-      "neighborhood_outlook": "Semlalia ist eine aufstrebende Gegend, aber nicht in den bevorzugten Speckgürtel-Lagen. Entwicklungspotential vorhanden.",
-      "investment_potential": 3,
-      "livability_score": 3,
-      "market_price_assessment": "Unter Markt",
-      "scores": {
-        "budget_fit": 100,
-        "location_fit": 60,
-        "size_fit": 100,
-        "amenities_fit": 0,
-        "investment_fit": 75,
-        "info_penalty": 15,
-        "overall": 64
-      },
-      "verdict": "BEDINGT GEEIGNET",
-      "verdict_reason": "Sehr guter Preis für 133m² mit 3 Schlafzimmern, aber keine Premium-Ausstattung und Lage nicht optimal. Gutes Preis-Leistungs-Verhältnis.",
-      "besichtigung_fragen": [
-        "Gibt es eine Terrasse?",
-        "Pool in der Anlage?",
-        "Parkplatz verfügbar?",
-        "Zustand der Immobilie?",
-        "Aufzug vorhanden?"
-      ],
-      "verhandlung_tipps": "Preis ist bereits sehr attraktiv, aber fehlende Ausstattung als Verhandlungsargument nutzen."
-    },
-    {
-      "id": "",
-      "title": "Appartement große Räume Hay Izdihar",
-      "source": "Avito",
-      "url": "",
-      "price_mad": 1250000,
-      "price_eur": 104167,
-      "area_sqm": 90,
+      "id": "3b36a8e3a1ae",
+      "title": "Schöne 2-Zimmer-Wohnung mit Pool in Jnane Ali",
+      "source": "Mubawab",
+      "url": "https://www.mubawab.ma/fr/a/8301828/bel-appartement-%C3%A0-vendre-2-chambres-piscine",
+      "contact_phone": "",
+      "contact_name": "",
+      "price_mad": 1207500,
+      "price_eur": 111805,
+      "area_sqm": 83,
       "rooms": 3,
       "bedrooms": 2,
       "bathrooms": 2,
-      "floor": "Unbekannt",
-      "neighborhood": "Hay Izdihar",
+      "floor": "1. Etage",
+      "neighborhood": "Jnane Ali",
       "property_type": "Apartment",
-      "price_per_sqm_mad": 13889,
+      "price_per_sqm_mad": 14548,
       "has_terrace": false,
-      "has_pool": false,
-      "has_parking": false,
-      "has_elevator": false,
-      "is_new_build": false,
-      "ownership_type": "Unbekannt",
-      "condition": "Unbekannt",
-      "highlights": [
-        "Perfektes Budget",
-        "Gute Lage Izdihar",
-        "Große Räume",
-        "Fairer m²-Preis"
-      ],
-      "concerns": [
-        "Keine Ausstattungsinfos",
-        "Unbekannter Zustand"
-      ],
-      "neighborhood_outlook": "Hay Izdihar ist eine aufstrebende Speckgürtel-Lage mit guter Entwicklung und moderater Preislage. Gutes Potential für Investment und Wohnen.",
-      "investment_potential": 4,
-      "livability_score": 4,
-      "market_price_assessment": "Marktgerecht",
-      "scores": {
-        "budget_fit": 100,
-        "location_fit": 80,
-        "size_fit": 80,
-        "amenities_fit": 0,
-        "investment_fit": 70,
-        "info_penalty": 15,
-        "overall": 63
-      },
-      "verdict": "INTERESSANT",
-      "verdict_reason": "Gute Kombination aus attraktivem Preis, bevorzugter Speckgürtel-Lage und angemessener Größe. Fehlen der Ausstattungsinfos macht Bewertung schwierig, aber Grundlage ist vielversprechend.",
-      "besichtigung_fragen": [
-        "Welche Ausstattung ist vorhanden?",
-        "Gibt es Terrasse, Pool oder Parkplatz?",
-        "In welcher Etage liegt die Wohnung?",
-        "Zustand und Renovierungsbedarf?",
-        "Zusätzliche Gemeinschaftseinrichtungen?"
-      ],
-      "verhandlung_tipps": "Fairer Preis lässt wenig Spielraum. Fokus auf Ausstattung und eventuelle Zusatzleistungen bei der Verhandlung."
-    },
-    {
-      "id": "a326f80f0586",
-      "title": "Appartement meublé große Terrasse Gueliz",
-      "source": "Mubawab",
-      "url": "https://www.mubawab.ma/fr/a/8207025/appartement-meubl%C3%A9-grande-terrasse-%C3%A0-gueliz",
-      "price_mad": 1800000,
-      "price_eur": 166666,
-      "area_sqm": 90,
-      "rooms": 4,
-      "bedrooms": 2,
-      "bathrooms": 1,
-      "floor": "Unbekannt",
-      "neighborhood": "Gueliz",
-      "property_type": "Apartment",
-      "price_per_sqm_mad": 20000,
-      "has_terrace": true,
-      "has_pool": false,
+      "has_pool": true,
       "has_parking": true,
       "has_elevator": true,
       "is_new_build": false,
       "ownership_type": "Unbekannt",
       "condition": "Neu",
       "highlights": [
-        "Große Terrasse (30m2) im Zentrum",
-        "Komplett renoviert und möbliert",
-        "2 Min zur Bahnstation",
-        "Hochwertige Materialien"
+        "Budget-optimal im Sweet Spot",
+        "Pool und Garage vorhanden",
+        "Aufzug im Gebäude",
+        "Guter m²-Preis"
       ],
       "concerns": [
-        "Budget überschritten",
-        "Hoher m2-Preis",
-        "Keine Poolanlage",
-        "Nur 1 Badezimmer"
+        "Lage außerhalb Zielgebiete",
+        "Keine Terrasse",
+        "Eigentum unbekannt",
+        "Nur 83m² relativ klein"
       ],
-      "neighborhood_outlook": "Sehr zentrale Lage in Gueliz mit perfekter Infrastruktur und Anbindung. Die Nähe zur Bahnstation und zu Plaza ist optimal, aber die Lage kann laut sein.",
+      "neighborhood_outlook": "Jnane Ali ist ein zentrales Viertel mit guter Infrastruktur, aber nicht in den bevorzugten Speckgürtel-Lagen. Solide Wohngegend mit Entwicklungspotenzial.",
       "investment_potential": 3,
       "livability_score": 4,
-      "market_price_assessment": "Über Markt",
+      "market_price_assessment": "Marktgerecht",
       "scores": {
-        "budget_fit": 60,
-        "location_fit": 50,
-        "size_fit": 80,
+        "budget_fit": 100,
+        "location_fit": 45,
+        "size_fit": 60,
         "amenities_fit": 75,
-        "investment_fit": 65,
-        "info_penalty": -10,
-        "overall": 63
+        "investment_fit": 75,
+        "info_penalty": 10,
+        "overall": 71
       },
       "verdict": "BEDINGT GEEIGNET",
-      "verdict_reason": "Interessante Immobilie mit großer Terrasse im Zentrum, aber der Preis ist für die Lage und Größe zu hoch. Die komplette Ausstattung rechtfertigt nur teilweise den Aufpreis.",
+      "verdict_reason": "Sehr gutes Preis-Leistungs-Verhältnis mit allen wichtigen Ausstattungsmerkmalen, aber die Lage entspricht nicht den Präferenzen für Speckgürtel-Gebiete. Für preisbewusste Käufer dennoch interessant.",
       "besichtigung_fragen": [
-        "Wie ist die Lärmbelastung durch die zentrale Lage?",
-        "Ist die Terrasse wirklich privat und nutzbar?",
-        "Welche Qualität haben die verbauten Materialien?",
-        "Gibt es Probleme mit der Klimaanlage?",
-        "Wie sicher ist das Gebäude und der Parkplatz?"
+        "Welche Nebenkosten fallen monatlich an?",
+        "Ist die Garage im Preis enthalten?",
+        "Wie ist die Verkehrsanbindung zu anderen Stadtteilen?",
+        "Gibt es Erweiterungsmöglichkeiten (Balkon nachrüsten)?",
+        "Welche Geschäfte und Services sind fußläufig erreichbar?"
       ],
-      "verhandlung_tipps": "Preis ist verhandelbar laut Anzeige. Für diese Lage und Größe sollte eine Reduzierung um 150-200k MAD angestrebt werden."
+      "verhandlung_tipps": "Bei der guten Ausstattung und dem fairen Preis ist Verhandlungsspielraum begrenzt. Fokus auf Nebenkosten und Garage-Details legen."
     },
     {
-      "id": "717f0dfffbe9",
-      "title": "Neubau 2 Zimmer Gueliz Plaza",
+      "id": "ce873044d625",
+      "title": "Guéliz Apartment 77m² mit Vollausstattung",
       "source": "Mubawab",
-      "url": "https://www.mubawab.ma/fr/a/8312588/appt-2-chambres-neuf-c%C5%93ur-de-gu%C3%A9liz-plaza",
-      "price_mad": 1500000,
-      "price_eur": 138888,
-      "area_sqm": 55,
+      "url": "https://www.mubawab.ma/fr/pa/8058858/appartement-en-vente-%C3%A0-gu%C3%A9liz-superficie-77-m%C2%B2",
+      "contact_phone": "",
+      "contact_name": "",
+      "price_mad": 1347500,
+      "price_eur": 124768,
+      "area_sqm": 77,
       "rooms": 3,
       "bedrooms": 2,
-      "bathrooms": 1,
-      "floor": "4. Etage",
+      "bathrooms": 2,
+      "floor": "Unbekannt",
+      "neighborhood": "Guéliz",
+      "property_type": "Apartment",
+      "price_per_sqm_mad": 17500,
+      "has_terrace": true,
+      "has_pool": true,
+      "has_parking": true,
+      "has_elevator": true,
+      "is_new_build": false,
+      "ownership_type": "Unbekannt",
+      "condition": "Neu",
+      "highlights": [
+        "Komplette Ausstattung",
+        "Guéliz Lage",
+        "Guter Preis",
+        "Neuzustand"
+      ],
+      "concerns": [
+        "Nur 77m2",
+        "Hoher m2-Preis",
+        "Guéliz nicht ideale Lage",
+        "Eigentumsstatus unklar"
+      ],
+      "neighborhood_outlook": "Guéliz ist etabliert aber touristisch überlaufen. Gute Infrastruktur aber nicht die bevorzugte Wohnlage.",
+      "investment_potential": 3,
+      "livability_score": 3,
+      "market_price_assessment": "Marktgerecht",
+      "scores": {
+        "budget_fit": 100,
+        "location_fit": 50,
+        "size_fit": 60,
+        "amenities_fit": 100,
+        "investment_fit": 60,
+        "info_penalty": 10,
+        "overall": 70
+      },
+      "verdict": "INTERESSANT",
+      "verdict_reason": "Vollausstattung kompensiert kleinere Fläche, aber Guéliz ist nicht optimal. Für Tourismus-Investment interessant.",
+      "besichtigung_fragen": [
+        "Genaue Lage in Guéliz?",
+        "Welche Etage?",
+        "Terrassen-Größe?",
+        "Vermietungspotential?",
+        "Nebenkosten?"
+      ],
+      "verhandlung_tipps": "Bei 77m2 um 100-150k MAD Reduktion verhandeln."
+    },
+    {
+      "id": "70ae691e446a",
+      "title": "Neuwohnung in Gueliz zu verkaufen",
+      "source": "Mubawab",
+      "url": "https://www.mubawab.ma/fr/a/8116140/appartements-neufs-%C3%A0-vendre-gu%C3%A9liz",
+      "contact_phone": "",
+      "contact_name": "",
+      "price_mad": 1650000,
+      "price_eur": 152777,
+      "area_sqm": 83,
+      "rooms": 3,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "floor": "Unbekannt",
       "neighborhood": "Gueliz",
       "property_type": "Apartment",
-      "price_per_sqm_mad": 27272,
-      "has_terrace": false,
+      "price_per_sqm_mad": 19879,
+      "has_terrace": true,
       "has_pool": true,
       "has_parking": true,
       "has_elevator": true,
@@ -2216,218 +1233,348 @@
       "ownership_type": "Unbekannt",
       "condition": "Neu",
       "highlights": [
-        "Neubau im Herzen von Gueliz",
-        "Rooftop-Pool geplant",
-        "Parkplatz inklusive",
-        "Zentrale Toplage"
+        "Neubau mit sofortiger Lieferung",
+        "Gueliz - zentrale Toplage",
+        "Komplette Ausstattung inklusive",
+        "Hochwertige Finishings mit Marmor"
       ],
       "concerns": [
-        "Sehr kleine Fläche",
-        "Extrem hoher m2-Preis",
-        "Keine Terrasse",
-        "Nur 1 Badezimmer"
+        "Über dem Budget sweet spot",
+        "Gueliz nicht in bevorzugten Lagen",
+        "Nur 83m² Wohnfläche",
+        "Wenig Details zur Residence"
       ],
-      "neighborhood_outlook": "Absolute Toplage hinter Plaza im Zentrum von Gueliz. Perfekte Infrastruktur und Anbindung, aber sehr belebt. Für Investment interessant, für Wohnen beengt.",
+      "neighborhood_outlook": "Gueliz ist das moderne Zentrum Marrakesch mit ausgezeichneter Infrastruktur. Stabile Nachfrage aber höhere Preise und mehr Verkehr als Speckgürtel-Lagen.",
       "investment_potential": 4,
-      "livability_score": 2,
-      "market_price_assessment": "Über Markt",
+      "livability_score": 4,
+      "market_price_assessment": "Marktgerecht",
       "scores": {
-        "budget_fit": 80,
+        "budget_fit": 70,
         "location_fit": 50,
-        "size_fit": 40,
-        "amenities_fit": 75,
-        "investment_fit": 70,
-        "info_penalty": -10,
-        "overall": 62
+        "size_fit": 70,
+        "amenities_fit": 100,
+        "investment_fit": 80,
+        "info_penalty": 10,
+        "overall": 69
       },
-      "verdict": "BEDINGT GEEIGNET",
-      "verdict_reason": "Neubau in sehr zentraler Lage, aber die Fläche ist für die Anforderungen zu klein. Der m2-Preis ist extrem hoch, auch für die Lage nicht gerechtfertigt.",
+      "verdict": "INTERESSANT",
+      "verdict_reason": "Neubau in zentraler Lage mit kompletter Ausstattung. Liegt am oberen Budgetrand, aber für Gueliz noch angemessen. Gute Investmentoption trotz weniger idealer Lage.",
       "besichtigung_fragen": [
-        "Wie ist die Raumaufteilung bei nur 55m²?",
-        "Wann wird der Rooftop-Pool fertig?",
-        "Gibt es Lärmprobleme durch die zentrale Lage?",
-        "Wie sind die zu erwartenden Nebenkosten?",
-        "Ist eine Erweiterung der Wohnfläche möglich?"
+        "Welche Etage ist verfügbar?",
+        "Gibt es verschiedene Grundrisse zur Auswahl?",
+        "Wie groß sind die Balkone genau?",
+        "Sind alle Geräte bereits installiert?",
+        "Welche Garantien gibt es auf Neubau?"
       ],
-      "verhandlung_tipps": "Der m2-Preis ist völlig überzogen. Eine deutliche Preisreduzierung wäre für eine Überlegung nötig."
+      "verhandlung_tipps": "Wenig Verhandlungsspielraum bei Neubau, aber eventuell Rabatt bei schneller Entscheidung oder Barzahlung möglich."
     },
     {
-      "id": "e31ba22a0e84",
-      "title": "Luxus-Appartement Noria Golf - Route Amizmiz",
+      "id": "",
+      "title": "Beste Apartments in Chrifia 72-110m², T3-T4",
+      "source": "Avito",
+      "url": "",
+      "contact_phone": "",
+      "contact_name": "",
+      "price_mad": 1130000,
+      "price_eur": 94167,
+      "area_sqm": 90,
+      "rooms": 3,
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "floor": "Unbekannt",
+      "neighborhood": "Route d'Amezmiz",
+      "property_type": "Apartment",
+      "price_per_sqm_mad": 12556,
+      "has_terrace": false,
+      "has_pool": false,
+      "has_parking": false,
+      "has_elevator": false,
+      "is_new_build": true,
+      "ownership_type": "Unbekannt",
+      "condition": "Neubau",
+      "highlights": [
+        "Sehr guter Preis",
+        "Neubau-Projekt",
+        "Gute Größe",
+        "3-4 Zimmer Optionen"
+      ],
+      "concerns": [
+        "Periphere Lage",
+        "Keine Details zur Ausstattung",
+        "Route d'Amezmiz weniger begehrt"
+      ],
+      "neighborhood_outlook": "Route d'Amezmiz ist eine sich entwickelnde Gegend mit Potential, aber noch nicht etabliert. Preisgünstig mit Zukunftschancen.",
+      "investment_potential": 3,
+      "livability_score": 3,
+      "market_price_assessment": "Unter Markt",
+      "scores": {
+        "budget_fit": 100,
+        "location_fit": 60,
+        "size_fit": 100,
+        "amenities_fit": 25,
+        "investment_fit": 70,
+        "info_penalty": -15,
+        "overall": 68
+      },
+      "verdict": "INTERESSANT",
+      "verdict_reason": "Sehr attraktiver Preis für Neubau mit guter Größe. Lage ist nicht optimal aber akzeptabel. Als Neubau sollte Aufzug vorhanden sein - Details erfragen.",
+      "besichtigung_fragen": [
+        "Welche Ausstattung ist inklusive?",
+        "Sind Terrassen/Balkone geplant?",
+        "Gibt es Parkplätze und Pool?",
+        "Wann ist Fertigstellung?",
+        "Wie ist die genaue Lage und Anbindung?"
+      ],
+      "verhandlung_tipps": "Neubau-Preise sind meist weniger verhandelbar, aber Zusatzleistungen erfragen."
+    },
+    {
+      "id": "35dd4353a379",
+      "title": "Neubau Guéliz Semlalia 84m²",
       "source": "Mubawab",
-      "url": "https://www.mubawab.ma/fr/a/8161763/tr%C3%A8s-bon-affaire-%C3%A0-nous-pas-rater-sur-marrakech",
-      "price_mad": 2300000,
-      "price_eur": 212962,
+      "url": "https://www.mubawab.ma/fr/a/8129379/appartement-neuf-84-m%C2%B2-%C3%A0-gu%C3%A9liz",
+      "contact_phone": "",
+      "contact_name": "",
+      "price_mad": 1650000,
+      "price_eur": 152777,
       "area_sqm": 84,
       "rooms": 3,
       "bedrooms": 2,
       "bathrooms": 2,
       "floor": "Unbekannt",
-      "neighborhood": "Route Amizmiz",
+      "neighborhood": "Semlalia",
       "property_type": "Apartment",
-      "price_per_sqm_mad": 27380,
+      "price_per_sqm_mad": 19642,
       "has_terrace": true,
-      "has_pool": true,
-      "has_parking": true,
-      "has_elevator": true,
-      "is_new_build": false,
-      "ownership_type": "Unbekannt",
-      "condition": "Neu",
-      "highlights": [
-        "Prestigestandort Noria Golf",
-        "Vollmöbliert und sofort bezugsfertig",
-        "Komplette Ausstattung vorhanden",
-        "Hochwertige Golf-Residenz"
-      ],
-      "concerns": [
-        "Sehr hoher m2-Preis von 27.380 MAD",
-        "Budget deutlich überschritten",
-        "Kleine Wohnfläche für den Preis",
-        "Route Amizmiz etwas abgelegen"
-      ],
-      "neighborhood_outlook": "Noria Golf ist eine der prestigeträchtigsten Adressen in Marrakech mit exklusivem Ambiente. Die Lage ist jedoch etwas abgelegen vom Zentrum.",
-      "investment_potential": 3,
-      "livability_score": 5,
-      "market_price_assessment": "Ueber Markt",
-      "scores": {
-        "budget_fit": 40,
-        "location_fit": 60,
-        "size_fit": 60,
-        "amenities_fit": 100,
-        "investment_fit": 50,
-        "info_penalty": 10,
-        "overall": 62
-      },
-      "verdict": "BEDINGT GEEIGNET",
-      "verdict_reason": "Luxuriöse Ausstattung und Prestigelage, aber Preis deutlich über Budget. Nur bei sehr hohen Ansprüchen und flexiblem Budget geeignet.",
-      "besichtigung_fragen": [
-        "Ist der Preis verhandelbar?",
-        "Welche Möbel sind genau enthalten?",
-        "Wie sind die Nebenkosten und HOA-Gebühren?",
-        "Gibt es Vermietungspotenzial in der Anlage?",
-        "Welche Golf-Privilegien sind inkludiert?"
-      ],
-      "verhandlung_tipps": "Bei Luxusobjekten oft überteuert - mindestens 10-15% Nachlass anstreben und Inklusivleistungen erfragen."
-    },
-    {
-      "id": "",
-      "title": "MAEVA Residency",
-      "source": "Avito",
-      "url": "",
-      "price_mad": 1408000,
-      "price_eur": 117333,
-      "area_sqm": 80,
-      "rooms": 3,
-      "bedrooms": 2,
-      "bathrooms": 2,
-      "floor": "Unbekannt",
-      "neighborhood": "Marrakesch",
-      "property_type": "Apartment",
-      "price_per_sqm_mad": 17600,
-      "has_terrace": null,
       "has_pool": true,
       "has_parking": true,
       "has_elevator": true,
       "is_new_build": true,
       "ownership_type": "Unbekannt",
-      "condition": "Unbekannt",
+      "condition": "Neu",
       "highlights": [
-        "Neubau-Residenz",
-        "Pool und Parkplatz",
-        "Moderne Ausstattung vermutet"
+        "Neubau mit Vollausstattung",
+        "Premium-Residenz",
+        "Semlalia bessere Lage",
+        "Alle Annehmlichkeiten"
       ],
       "concerns": [
-        "Lage völlig unklar",
-        "Keine genauen Informationen",
-        "Residenz-Name unbekannt"
+        "Nur 84m2 für 1.65M MAD",
+        "Sehr hoher m2-Preis",
+        "Budget-Obergrenze",
+        "Semlalia nicht Top-Lage"
       ],
-      "neighborhood_outlook": "Ohne Lageangabe nicht beurteilbar. Neubau-Residenzen befinden sich meist in entwickelten Gebieten.",
+      "neighborhood_outlook": "Semlalia ist ruhiger als Zentral-Guéliz mit guter Infrastruktur. Mittlere Wohnlage für Marrakech.",
       "investment_potential": 3,
-      "livability_score": 3,
-      "market_price_assessment": "Nicht beurteilbar",
+      "livability_score": 4,
+      "market_price_assessment": "Über Markt",
       "scores": {
         "budget_fit": 80,
-        "location_fit": 60,
+        "location_fit": 50,
         "size_fit": 60,
-        "amenities_fit": 75,
+        "amenities_fit": 100,
         "investment_fit": 50,
-        "info_penalty": -20,
-        "overall": 61
+        "info_penalty": 10,
+        "overall": 68
       },
       "verdict": "BEDINGT GEEIGNET",
-      "verdict_reason": "Gute Ausstattung als Neubau vermutet, aber völlig unklare Lage macht Bewertung unmöglich. Erst nach Lage-Klärung beurteilbar.",
+      "verdict_reason": "Hochwertige Ausstattung aber teuer für kleine Fläche. Budget-Obergrenze für mittelmäßige Lage nicht optimal.",
       "besichtigung_fragen": [
-        "Wo genau befindet sich die MAEVA Residency?",
-        "Welche Wohnungsgrößen sind verfügbar?",
-        "Wie ist die Ausstattung und Qualität?",
-        "Gibt es Terrassen in den Wohnungen?",
-        "Wann ist die Fertigstellung?"
+        "Genaue Lage in Semlalia?",
+        "Fertigstellungstermin?",
+        "Sicht/Ausrichtung?",
+        "Vermietungsrendite?",
+        "Finanzierung möglich?"
       ],
-      "verhandlung_tipps": "Genaue Lage muss vor Verhandlung geklärt werden. Je nach Lage kann Preis angemessen oder zu hoch sein."
+      "verhandlung_tipps": "Mindestens 200k MAD Reduktion anstreben oder Extras einfordern."
     },
     {
-      "id": "53fb7ac227e3",
-      "title": "Investmentwohnung im Herzen von Gueliz - 86m²",
+      "id": "9e602a5da9bc",
+      "title": "Guéliz Wohnung - 83m² mit Garten & Garage",
       "source": "Mubawab",
-      "url": "https://www.mubawab.ma/fr/a/8308053/super-appartement-%C3%A0-vendre-%E2%80%93-plein-gu%C3%A9liz",
-      "price_mad": 2200000,
-      "price_eur": 203703,
-      "area_sqm": 86,
+      "url": "https://www.mubawab.ma/fr/pa/8058860/appartement-%C3%A0-vendre-%C3%A0-gu%C3%A9liz-superficie-83-m%C2%B2",
+      "contact_phone": "",
+      "contact_name": "",
+      "price_mad": 1452500,
+      "price_eur": 134490,
+      "area_sqm": 83,
       "rooms": 3,
       "bedrooms": 2,
-      "bathrooms": 1,
+      "bathrooms": 2,
       "floor": "Unbekannt",
-      "neighborhood": "Gueliz",
+      "neighborhood": "Guéliz",
       "property_type": "Apartment",
-      "price_per_sqm_mad": 25581,
+      "price_per_sqm_mad": 17500,
       "has_terrace": true,
-      "has_pool": false,
-      "has_parking": false,
+      "has_pool": true,
+      "has_parking": true,
       "has_elevator": true,
       "is_new_build": false,
       "ownership_type": "Unbekannt",
       "condition": "Neu",
       "highlights": [
-        "Bereits laufende Airbnb-Vermietung (120€/Nacht)",
-        "Große 50m² Terrasse mit Titel",
-        "Möbliert und vollausgestattet verkauft",
-        "Zentrale Gueliz-Lage mit allen Annehmlichkeiten"
+        "Top-Lage Guéliz mit allen Annehmlichkeiten",
+        "Privatgarten und Terrasse",
+        "Garage und Aufzug vorhanden",
+        "Sicherheitsresidenz mit Pool"
       ],
       "concerns": [
-        "Deutlich über Budget bei 2,2M MAD",
-        "Gueliz nicht gewünschte Speckgürtel-Lage",
-        "Kein Pool und Parkplatz",
-        "Nur 1 Badezimmer für 2 Schlafzimmer"
+        "Relativ kleiner mit 83m²",
+        "Hoher m²-Preis von 17.500 MAD",
+        "Eigentum und Etage unklar",
+        "Wenig Details zur Wohnung"
       ],
-      "neighborhood_outlook": "Zentral-Gueliz ist für Kurzzeitvermietung ideal gelegen, entspricht aber nicht der gewünschten ruhigen Speckgürtel-Atmosphäre. Hohe Touristenfrequenz garantiert.",
-      "investment_potential": 4,
-      "livability_score": 3,
+      "neighborhood_outlook": "Guéliz ist das moderne Zentrum Marrakesch mit exzellenter Infrastruktur. Sehr begehrte Lage mit Wertstabilität, aber entsprechend teuer.",
+      "investment_potential": 3,
+      "livability_score": 4,
       "market_price_assessment": "Über Markt",
       "scores": {
-        "budget_fit": 40,
+        "budget_fit": 100,
         "location_fit": 50,
-        "size_fit": 80,
-        "amenities_fit": 50,
-        "investment_fit": 85,
-        "info_penalty": 10,
-        "overall": 61
+        "size_fit": 60,
+        "amenities_fit": 100,
+        "investment_fit": 60,
+        "info_penalty": 15,
+        "overall": 68
       },
       "verdict": "BEDINGT GEEIGNET",
-      "verdict_reason": "Interessantes Renditeobjekt mit laufender Vermietung, aber über Budget und nicht die gewünschte Lage. Für reine Investitionszwecke attraktiv, für Eigennutzung weniger geeignet.",
+      "verdict_reason": "Komplette Ausstattung und gute Lage sprechen dafür, aber der hohe Preis und die geringe Größe für eine 3-Zimmer-Wohnung sind problematisch. Nur bei entsprechendem Budget interessant.",
       "besichtigung_fragen": [
-        "Können Sie die Airbnb-Einnahmen belegen?",
-        "Wie hoch ist die Auslastungsrate wirklich?",
-        "Welche laufenden Kosten hat die Kurzzeitvermietung?",
-        "Ist die 50m² Terrasse wirklich voll nutzbar?",
-        "Gibt es Parkplatz-Möglichkeiten in der Nähe?"
+        "Wie groß sind die einzelnen Zimmer tatsächlich?",
+        "In welcher Etage liegt die Wohnung?",
+        "Ist der Privatgarten wirklich privat oder gemeinschaftlich?",
+        "Welche Nebenkosten fallen an?",
+        "Gibt es eine Eigentümergemeinschaft?"
       ],
-      "verhandlung_tipps": "Renditenachweis als Verhandlungsgrundlage nutzen. Preis um mindestens 300.000 MAD reduzieren, da ohne Pool/Parking überbewertet."
+      "verhandlung_tipps": "Hoher m²-Preis lässt Verhandlungsspielraum vermuten. Größe der Räume genau prüfen und entsprechend argumentieren."
     },
     {
       "id": "",
-      "title": "Apartment zu verkaufen 136 m² in Marrakesch",
+      "title": "Luxus-Duplex zum Wohnen bereit",
       "source": "Avito",
       "url": "",
+      "contact_phone": "",
+      "contact_name": "",
+      "price_mad": 1300000,
+      "price_eur": 130000,
+      "area_sqm": 110,
+      "rooms": 4,
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "floor": "Duplex",
+      "neighborhood": "Hay Charaf",
+      "property_type": "Duplex",
+      "price_per_sqm_mad": 11818,
+      "has_terrace": true,
+      "has_pool": false,
+      "has_parking": true,
+      "has_elevator": false,
+      "is_new_build": true,
+      "ownership_type": "Unbekannt",
+      "condition": "Neuzustand",
+      "highlights": [
+        "Duplex-Charakter",
+        "Neuzustand - bezugsfertig",
+        "Terrasse vorhanden",
+        "Parkplatz inklusive",
+        "4 Zimmer, 110m²",
+        "Attraktiver Preis"
+      ],
+      "concerns": [
+        "Lage Hay Charaf unbekannt",
+        "Kein Pool",
+        "Kein Aufzug bei Duplex"
+      ],
+      "neighborhood_outlook": "Hay Charaf ist eine weniger bekannte Gegend. Entwicklungspotential schwer einschätzbar, aber günstige Preise deuten auf Aufwärtstrend hin.",
+      "investment_potential": 3,
+      "livability_score": 4,
+      "market_price_assessment": "Unter Markt",
+      "scores": {
+        "budget_fit": 100,
+        "location_fit": 40,
+        "size_fit": 100,
+        "amenities_fit": 50,
+        "investment_fit": 60,
+        "info_penalty": 10,
+        "overall": 65
+      },
+      "verdict": "INTERESSANT",
+      "verdict_reason": "Sehr guter Preis für einen neuen Duplex mit Terrasse und Parkplatz. Lage unbekannt aber Ausstattung und Zustand sprechen dafür - Besichtigung lohnt sich.",
+      "besichtigung_fragen": [
+        "Wie ist die genaue Lage und Anbindung?",
+        "Gibt es Gemeinschaftspool in der Anlage?",
+        "Wie ist die Duplex-Aufteilung gestaltet?",
+        "Welche Terrassen-Größe und Ausrichtung?",
+        "Wie ist die Nachbarschaft entwickelt?"
+      ],
+      "verhandlung_tipps": "Preis ist bereits attraktiv, geringer Verhandlungsspielraum aber Nachlass bei schneller Entscheidung möglich."
+    },
+    {
+      "id": "44a28ce290ea",
+      "title": "Möblierte Wohnung in Agdal - Prestigia Agate",
+      "source": "Mubawab",
+      "url": "https://www.mubawab.ma/fr/a/8291418/appartement-en-vente-%C3%A0-agdal-2-belles-chambres-meubl%C3%A9",
+      "contact_phone": "",
+      "contact_name": "",
+      "price_mad": 2300000,
+      "price_eur": 212962,
+      "area_sqm": 80,
+      "rooms": 3,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "floor": "1. Etage",
+      "neighborhood": "Agdal",
+      "property_type": "Apartment",
+      "price_per_sqm_mad": 28750,
+      "has_terrace": true,
+      "has_pool": true,
+      "has_parking": false,
+      "has_elevator": false,
+      "is_new_build": false,
+      "ownership_type": "Unbekannt",
+      "condition": "Neu",
+      "highlights": [
+        "TOP-Lage Agdal (Speckgürtel)",
+        "Sichere Prestigia-Wohnanlage",
+        "Pool und Terrasse vorhanden",
+        "Möbliert verfügbar"
+      ],
+      "concerns": [
+        "Deutlich über Budget-Limit",
+        "Kein Parkplatz verfügbar",
+        "Kein Aufzug vorhanden",
+        "Sehr hoher m²-Preis"
+      ],
+      "neighborhood_outlook": "Agdal ist eine der besten Speckgürtel-Lagen mit excellenter Infrastruktur und hohem Wertsteigerungspotenzial. Sehr beliebte Wohngegend für gehobene Ansprüche.",
+      "investment_potential": 4,
+      "livability_score": 4,
+      "market_price_assessment": "Über Markt",
+      "scores": {
+        "budget_fit": 40,
+        "location_fit": 100,
+        "size_fit": 60,
+        "amenities_fit": 50,
+        "investment_fit": 75,
+        "info_penalty": 10,
+        "overall": 65
+      },
+      "verdict": "BEDINGT GEEIGNET",
+      "verdict_reason": "Excellente Lage in Agdal, aber der Preis liegt deutlich über dem Budget. Nur bei erheblichen Verhandlungen oder wenn Budget-Flexibilität besteht interessant.",
+      "besichtigung_fragen": [
+        "Ist starke Preisverhandlung möglich?",
+        "Gibt es Parkalternativen in der Nähe?",
+        "Welche Nebenkosten fallen an?",
+        "Sind die Möbel im Preis enthalten?",
+        "Wie ist die Verkehrsanbindung?"
+      ],
+      "verhandlung_tipps": "Trotz TOP-Lage ist der Preis sehr hoch. Verhandlung um mindestens 400-500k MAD nötig, um in Budget-Rahmen zu kommen."
+    },
+    {
+      "id": "",
+      "title": "136m² Apartment zu verkaufen",
+      "source": "Avito",
+      "url": "",
+      "contact_phone": "",
+      "contact_name": "",
       "price_mad": 1500000,
       "price_eur": 125000,
       "area_sqm": 136,
@@ -2446,17 +1593,19 @@
       "ownership_type": "Unbekannt",
       "condition": "Unbekannt",
       "highlights": [
+        "Exzellenter m²-Preis",
         "Großzügige 136m²",
         "4 Zimmer",
-        "Sehr guter m²-Preis"
+        "Budget-sweet-spot"
       ],
       "concerns": [
-        "Victor Hugo nicht in Zielgebieten",
-        "Keine Ausstattungsdetails",
-        "Unbekannte Qualität"
+        "Victor Hugo nicht Zielgebiet",
+        "Keine Ausstattung bekannt",
+        "Zustand unbekannt",
+        "Minimale Informationen"
       ],
-      "neighborhood_outlook": "Victor Hugo in Guéliz ist zentral gelegen mit guter Infrastruktur. Für Investment jedoch nicht in den bevorzugten Speckgürtel-Lagen.",
-      "investment_potential": 3,
+      "neighborhood_outlook": "Victor Hugo in Gueliz bietet etablierte Infrastruktur aber liegt außerhalb der dynamischen Speckgürtel-Entwicklung. Solide aber nicht spektakuläre Aussichten.",
+      "investment_potential": 4,
       "livability_score": 4,
       "market_price_assessment": "Unter Markt",
       "scores": {
@@ -2464,37 +1613,158 @@
         "location_fit": 50,
         "size_fit": 100,
         "amenities_fit": 0,
-        "investment_fit": 70,
-        "info_penalty": 20,
-        "overall": 60
+        "investment_fit": 80,
+        "info_penalty": 10,
+        "overall": 64
       },
       "verdict": "INTERESSANT",
-      "verdict_reason": "Erfüllt Größenkriterien sehr gut und hat attraktiven m²-Preis. Lage nicht optimal, aber dennoch prüfenswert.",
+      "verdict_reason": "Hervorragender m²-Preis und großzügige Fläche bei 4 Zimmern. Victor Hugo zwar nicht Zielgebiet, aber der Preis kompensiert vieles. Besichtigung lohnt sich.",
       "besichtigung_fragen": [
-        "Genaue Zimmeraufteilung?",
-        "Terrasse oder große Balkone?",
-        "Parkplätze verfügbar?",
         "Zustand und Renovierungsbedarf?",
-        "Aufzug im Gebäude?"
+        "Terrasse oder Balkone vorhanden?",
+        "Parkplatzmöglichkeiten?",
+        "Aufzug im Gebäude?",
+        "Grund für den niedrigen Preis?"
       ],
-      "verhandlung_tipps": "Sehr guter m²-Preis deutet auf Verhandlungsspielraum hin, bei guter Besichtigung interessant."
+      "verhandlung_tipps": "Der bereits sehr niedrige m²-Preis lässt wenig Spielraum. Fokus auf Zustand und versteckte Mängel als Verhandlungsbasis."
     },
     {
-      "id": "",
-      "title": "Joli appartement ensoleillé",
-      "source": "Avito",
-      "url": "",
-      "price_mad": 1100000,
-      "price_eur": 91667,
-      "area_sqm": 80,
+      "id": "3d2d48ee4762",
+      "title": "Ideal als Zweitwohnsitz - T3 Wohnung mit Stil",
+      "source": "Mubawab",
+      "url": "https://www.mubawab.ma/fr/pa/8158297/id%C3%A9al-pied-%C3%A0-terre-ou-location-appartement-t3-de-standing",
+      "contact_phone": "",
+      "contact_name": "",
+      "price_mad": 1170000,
+      "price_eur": 108333,
+      "area_sqm": 67,
       "rooms": 3,
       "bedrooms": 2,
       "bathrooms": 1,
       "floor": "Unbekannt",
-      "neighborhood": "Guéliz",
+      "neighborhood": "Neuer Gueliz",
       "property_type": "Apartment",
-      "price_per_sqm_mad": 13750,
+      "price_per_sqm_mad": 17462,
       "has_terrace": true,
+      "has_pool": true,
+      "has_parking": true,
+      "has_elevator": true,
+      "is_new_build": false,
+      "ownership_type": "Unbekannt",
+      "condition": "Neu",
+      "highlights": [
+        "Sehr guter Preis im Budget",
+        "Neuer Gueliz - gute Lage",
+        "Alle wichtigen Amenities vorhanden",
+        "Ideal für Investment beschrieben"
+      ],
+      "concerns": [
+        "Nur 67m² - deutlich unter Wunschgröße",
+        "Nur 1 Badezimmer für 2 Schlafzimmer",
+        "Gueliz nicht in bevorzugten Lagen",
+        "Sehr wenig Details verfügbar"
+      ],
+      "neighborhood_outlook": "Neuer Gueliz kombiniert zentrale Lage mit modernerer Infrastruktur. Gute Vermietbarkeit und stabile Wertentwicklung, aber nicht die ruhigste Wohnlage.",
+      "investment_potential": 4,
+      "livability_score": 3,
+      "market_price_assessment": "Marktgerecht",
+      "scores": {
+        "budget_fit": 100,
+        "location_fit": 50,
+        "size_fit": 40,
+        "amenities_fit": 75,
+        "investment_fit": 80,
+        "info_penalty": 15,
+        "overall": 64
+      },
+      "verdict": "BEDINGT GEEIGNET",
+      "verdict_reason": "Sehr attraktiver Preis und gute Grundausstattung, aber deutlich zu klein für die Anforderungen. Nur als Investment interessant, nicht als Hauptwohnsitz.",
+      "besichtigung_fragen": [
+        "Wie ist die genaue Raumaufteilung?",
+        "Welche Etage und Ausrichtung?",
+        "Wie groß ist die Terrasse genau?",
+        "Gibt es Möglichkeit der Flächenerweiterung?",
+        "Wie ist das Mietpotential in der Gegend?"
+      ],
+      "verhandlung_tipps": "Kleine Fläche als Hauptargument für Preisreduktion. Vergleich mit größeren Objekten in ähnlicher Preisklasse."
+    },
+    {
+      "id": "425225d5e1cb",
+      "title": "Prestigia Golf-Wohnung - 76m² im 2. Stock",
+      "source": "Mubawab",
+      "url": "https://www.mubawab.ma/fr/a/8242899/bel-appartement-%C3%A0-prestigia",
+      "contact_phone": "",
+      "contact_name": "",
+      "price_mad": 2100000,
+      "price_eur": 194444,
+      "area_sqm": 76,
+      "rooms": 3,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "floor": "2. Etage",
+      "neighborhood": "Prestigia",
+      "property_type": "Apartment",
+      "price_per_sqm_mad": 27631,
+      "has_terrace": true,
+      "has_pool": true,
+      "has_elevator": false,
+      "is_new_build": false,
+      "ownership_type": "Unbekannt",
+      "condition": "Neu",
+      "highlights": [
+        "Premium Prestigia Golf-Lage",
+        "Terrasse ohne Vis-à-vis",
+        "Pool und Sicherheitsdienst",
+        "2 Badezimmer für 2 Schlafzimmer"
+      ],
+      "concerns": [
+        "Deutlich über Budget",
+        "Sehr hoher m²-Preis",
+        "Nur 76m² Wohnfläche",
+        "Kein Parkplatz erwähnt"
+      ],
+      "neighborhood_outlook": "Prestigia ist eine der exklusivsten Golf-Adressen in Marrakesch. Hervorragende Wertentwicklung, aber entsprechend teuer.",
+      "investment_potential": 5,
+      "livability_score": 4,
+      "market_price_assessment": "Über Markt",
+      "scores": {
+        "budget_fit": 40,
+        "location_fit": 80,
+        "size_fit": 40,
+        "amenities_fit": 75,
+        "investment_fit": 85,
+        "info_penalty": 10,
+        "overall": 63
+      },
+      "verdict": "NICHT GEEIGNET",
+      "verdict_reason": "Exzellente Lage und Ausstattung, aber deutlich über Budget und zu klein. Prestigia ist Premium-Segment, passt nicht zum Budget-Profil des Käufers.",
+      "besichtigung_fragen": [
+        "Ist ein Parkplatz verfügbar oder zusätzlich buchbar?",
+        "Welche jährlichen Golf-Gebühren fallen an?",
+        "Wie entwickeln sich die Preise in Prestigia?",
+        "Sind die Gemeinschaftskosten sehr hoch?",
+        "Gibt es Aufzugspläne für das Gebäude?"
+      ],
+      "verhandlung_tipps": "In Prestigia wenig Verhandlungsspielraum. Eventuell über Extras wie Parkplatz oder Möblierung verhandeln."
+    },
+    {
+      "id": "",
+      "title": "Appartement mit schönen Raumaufteilungen",
+      "source": "Avito",
+      "url": "",
+      "contact_phone": "",
+      "contact_name": "",
+      "price_mad": 1250000,
+      "price_eur": 104167,
+      "area_sqm": 85,
+      "rooms": 3,
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "floor": "Unbekannt",
+      "neighborhood": "Hay Izdihar",
+      "property_type": "Apartment",
+      "price_per_sqm_mad": 14706,
+      "has_terrace": false,
       "has_pool": false,
       "has_parking": false,
       "has_elevator": false,
@@ -2502,19 +1772,316 @@
       "ownership_type": "Unbekannt",
       "condition": "Unbekannt",
       "highlights": [
-        "Zentrale Lage Gueliz",
-        "Sonnige Ausrichtung",
-        "Fairer Preis"
+        "Top Budget-fit",
+        "Gute Lage Izdihar",
+        "Faire Preisgestaltung"
       ],
       "concerns": [
-        "Gueliz nicht Wunschlage",
-        "Wenig Ausstattung",
-        "Details fehlen"
+        "Keine Details zu Ausstattung",
+        "Unbekannte Etage",
+        "Minimale Informationen"
       ],
-      "neighborhood_outlook": "Gueliz ist zentral und belebt, aber nicht die ruhige Wohnlage die gesucht wird. Höhere Verkehrsdichte und Lärm.",
+      "neighborhood_outlook": "Hay Izdihar ist ein aufstrebendes Wohngebiet mit guter Infrastruktur. Solide Wertstabilität und Vermietungspotential.",
       "investment_potential": 3,
       "livability_score": 3,
       "market_price_assessment": "Marktgerecht",
+      "scores": {
+        "budget_fit": 100,
+        "location_fit": 80,
+        "size_fit": 80,
+        "amenities_fit": 0,
+        "investment_fit": 70,
+        "info_penalty": -20,
+        "overall": 62
+      },
+      "verdict": "BEDINGT GEEIGNET",
+      "verdict_reason": "Preis und Lage passen gut zum Profil, aber die fehlenden Informationen zur Ausstattung sind kritisch. Ohne Terrasse, Pool und Parkplatz erfüllt es nicht die Must-haves.",
+      "besichtigung_fragen": [
+        "Welche Etage und gibt es einen Aufzug?",
+        "Ist eine Terrasse oder Balkon vorhanden?",
+        "Gibt es Parkmöglichkeiten?",
+        "Wie ist der genaue Zustand der Wohnung?",
+        "Sind Gemeinschaftseinrichtungen wie Pool geplant?"
+      ],
+      "verhandlung_tipps": "Bei minimalen Informationen deutlich unter Angebotspreis starten. Auf fehlende Ausstattung als Verhandlungsargument setzen."
+    },
+    {
+      "id": "bc9223d6a488",
+      "title": "Le Vizir Neubau-Projekt Route Casablanca",
+      "source": "Mubawab",
+      "url": "https://www.mubawab.ma/fr/p/4159/le-vizir-appartements-de-standing-%C3%A0-marrakech",
+      "contact_phone": "+212 6 65 98 70 89",
+      "contact_name": "",
+      "price_mad": 1515000,
+      "price_eur": 140277,
+      "area_sqm": 212,
+      "rooms": null,
+      "bedrooms": null,
+      "bathrooms": 1,
+      "floor": "Unbekannt",
+      "neighborhood": "Route Casablanca",
+      "property_type": "Wohnung",
+      "price_per_sqm_mad": 7146,
+      "has_terrace": false,
+      "has_pool": false,
+      "has_parking": false,
+      "has_elevator": false,
+      "is_new_build": true,
+      "ownership_type": "Unbekannt",
+      "condition": "Neu",
+      "highlights": [
+        "Sehr großzügige 212m2",
+        "Extrem günstiger m2-Preis",
+        "Neubau-Projekt",
+        "Potentiell gute Rendite"
+      ],
+      "concerns": [
+        "Fast keine Informationen verfügbar",
+        "Keine Ausstattungsdetails",
+        "Zimmeranzahl unbekannt",
+        "Verdächtig günstiger Preis"
+      ],
+      "neighborhood_outlook": "Route Casablanca ist aufstrebend mit Entwicklungspotential, aber noch nicht etabliert. Verkehrsanbindung ist gut, aber nicht Premium-Lage.",
+      "investment_potential": 3,
+      "livability_score": 2,
+      "market_price_assessment": "Nicht beurteilbar",
+      "scores": {
+        "budget_fit": 100,
+        "location_fit": 70,
+        "size_fit": 100,
+        "amenities_fit": 0,
+        "investment_fit": 60,
+        "info_penalty": -20,
+        "overall": 62
+      },
+      "verdict": "BEDINGT GEEIGNET",
+      "verdict_reason": "Extrem wenig Informationen verfügbar. Der niedrige Preis könnte ein Schnäppchen oder ein Problem signalisieren. Besichtigung zwingend erforderlich.",
+      "besichtigung_fragen": [
+        "Wie viele Zimmer hat die Wohnung wirklich?",
+        "Welche Ausstattung ist enthalten?",
+        "Warum ist der Preis so niedrig?",
+        "Wann ist die Fertigstellung?",
+        "Sind Pool, Parkplatz, Aufzug geplant?"
+      ],
+      "verhandlung_tipps": "Erst nach ausführlicher Besichtigung verhandeln. Preis scheint bereits sehr niedrig zu sein."
+    },
+    {
+      "id": "e68aaed39dde",
+      "title": "Golf-Appartement Agdal - 86m² mit Atlas-Blick",
+      "source": "Mubawab",
+      "url": "https://www.mubawab.ma/fr/a/8304090/appartement-sur-golf-%C3%A0-vendre-agdal",
+      "contact_phone": "",
+      "contact_name": "",
+      "price_mad": 2200000,
+      "price_eur": 203703,
+      "area_sqm": 86,
+      "rooms": 2,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "floor": "1. Etage",
+      "neighborhood": "Agdal",
+      "property_type": "Apartment",
+      "price_per_sqm_mad": 25581,
+      "has_terrace": true,
+      "has_pool": true,
+      "has_parking": true,
+      "has_elevator": false,
+      "is_new_build": false,
+      "ownership_type": "Unbekannt",
+      "condition": "Neu",
+      "highlights": [
+        "Premium-Lage auf Golf in Agdal",
+        "Traumhafter Atlas-Blick",
+        "Cheminée und Suite parentale",
+        "Gepflegte Anlage mit Pool"
+      ],
+      "concerns": [
+        "Deutlich über Budget (>200k EUR)",
+        "Sehr hoher m²-Preis",
+        "Nur 2 Zimmer statt gewünschter 3",
+        "Kein Aufzug im 1. Stock"
+      ],
+      "neighborhood_outlook": "Agdal gehört zu den prestigeträchtigsten Lagen Marrakesch. Golf-Residenz bietet exklusives Wohnen mit Wertsteigerungspotential.",
+      "investment_potential": 5,
+      "livability_score": 5,
+      "market_price_assessment": "Über Markt",
+      "scores": {
+        "budget_fit": 40,
+        "location_fit": 100,
+        "size_fit": 40,
+        "amenities_fit": 75,
+        "investment_fit": 80,
+        "info_penalty": 10,
+        "overall": 62
+      },
+      "verdict": "NICHT GEEIGNET",
+      "verdict_reason": "Traumhafte Lage und Ausstattung, aber deutlich über Budget und nur 2 statt 3 Zimmer. Für das Käuferprofil zu teuer und zu klein, obwohl qualitativ hochwertig.",
+      "besichtigung_fragen": [
+        "Sind die Gemeinschaftskosten der Golf-Anlage hoch?",
+        "Gibt es Aufzugspläne für das Gebäude?",
+        "Welche Nutzungsrechte bestehen für den Golfplatz?",
+        "Ist der Parkplatz gedeckt oder offen?",
+        "Wie entwickeln sich die Immobilienpreise in der Anlage?"
+      ],
+      "verhandlung_tipps": "Aufgrund der Premium-Lage wenig Verhandlungsspielraum. Eventuell über Nebenkosten oder Ausstattung verhandeln."
+    },
+    {
+      "id": "",
+      "title": "95m² Wohnung zu verkaufen in Marrakesch Palmeraie",
+      "source": "Avito",
+      "url": "",
+      "contact_phone": "",
+      "contact_name": "",
+      "price_mad": 1500000,
+      "price_eur": 125000,
+      "area_sqm": 95,
+      "rooms": 3,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "floor": "Unbekannt",
+      "neighborhood": "Palmeraie",
+      "property_type": "Wohnung",
+      "price_per_sqm_mad": 15789,
+      "has_terrace": false,
+      "has_pool": false,
+      "has_parking": false,
+      "has_elevator": false,
+      "is_new_build": false,
+      "ownership_type": "Unbekannt",
+      "condition": "Unbekannt",
+      "highlights": [
+        "Palmeraie - Top-Speckgürtel",
+        "Gute Größe 95m²",
+        "Fairer m²-Preis"
+      ],
+      "concerns": [
+        "Keine Details zu Ausstattung",
+        "Pool/Terrasse unbekannt",
+        "Ownership unklar",
+        "Minimal Informationen"
+      ],
+      "neighborhood_outlook": "Palmeraie ist eine der top Speckgürtel-Lagen mit sehr gutem Entwicklungspotenzial. Prestigeträchtige und ruhige Lage.",
+      "investment_potential": 4,
+      "livability_score": 4,
+      "market_price_assessment": "Marktgerecht",
+      "scores": {
+        "budget_fit": 80,
+        "location_fit": 90,
+        "size_fit": 80,
+        "amenities_fit": 0,
+        "investment_fit": 75,
+        "info_penalty": 20,
+        "overall": 61
+      },
+      "verdict": "INTERESSANT",
+      "verdict_reason": "Sehr gute Lage in der Palmeraie und angemessene Größe, aber völlig unbekannte Ausstattung. Potenzial vorhanden wenn die Must-haves erfüllt sind.",
+      "besichtigung_fragen": [
+        "Welche Ausstattung hat die Residenz?",
+        "Gibt es Pool und Terrasse?",
+        "Ist Parkplatz verfügbar?",
+        "Welcher Stock und Aufzug vorhanden?",
+        "Zustand der Immobilie?"
+      ],
+      "verhandlung_tipps": "In Top-Lage wie Palmeraie bei fehlenden Details vorsichtig verhandeln."
+    },
+    {
+      "id": "a326f80f0586",
+      "title": "Möblierte Wohnung mit großer Terrasse in Gueliz",
+      "source": "Mubawab",
+      "url": "https://www.mubawab.ma/fr/a/8207025/appartement-meubl%C3%A9-grande-terrasse-%C3%A0-gueliz",
+      "contact_phone": "",
+      "contact_name": "",
+      "price_mad": 1800000,
+      "price_eur": 166666,
+      "area_sqm": 90,
+      "rooms": 4,
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "floor": "Unbekannt",
+      "neighborhood": "Gueliz",
+      "property_type": "Wohnung",
+      "price_per_sqm_mad": 20000,
+      "has_terrace": true,
+      "has_pool": false,
+      "has_parking": true,
+      "has_elevator": true,
+      "is_new_build": false,
+      "ownership_type": "Unbekannt",
+      "condition": "Neu",
+      "highlights": [
+        "30m2 Terrasse im Stadtzentrum",
+        "Komplett renoviert und möbliert",
+        "Nähe zu Bahnhof und Plaza",
+        "Tiefgaragenplatz vorhanden"
+      ],
+      "concerns": [
+        "Hoher m2-Preis von 20.000 MAD",
+        "Gueliz nicht Zielgebiet",
+        "Nur 90m2 Wohnfläche",
+        "Kein Pool in der Residenz"
+      ],
+      "neighborhood_outlook": "Zentrale Lage in Gueliz mit exzellenter Infrastruktur, aber nicht die bevorzugte Investmentzone. Für Eigennutzung sehr praktisch.",
+      "investment_potential": 3,
+      "livability_score": 4,
+      "market_price_assessment": "Über Markt",
+      "scores": {
+        "budget_fit": 60,
+        "location_fit": 50,
+        "size_fit": 80,
+        "amenities_fit": 75,
+        "investment_fit": 50,
+        "info_penalty": -10,
+        "overall": 61
+      },
+      "verdict": "BEDINGT GEEIGNET",
+      "verdict_reason": "Sehr teuer für 90m2, auch wenn die Terrasse und Ausstattung hochwertig sind. Gueliz passt nicht optimal zum Suchprofil.",
+      "besichtigung_fragen": [
+        "Warum ist der m2-Preis so hoch?",
+        "Welche Nebenkosten fallen monatlich an?",
+        "Ist Verhandlungsspielraum vorhanden?",
+        "Gibt es Lärmbelastung durch zentrale Lage?",
+        "Sind alle Möbel wirklich im Preis enthalten?"
+      ],
+      "verhandlung_tipps": "Preis ist deutlich überhöht - verhandeln Sie aggressiv auf unter 1,6M MAD oder suchen Sie weiter."
+    },
+    {
+      "id": "",
+      "title": "Moderner Duplex zu verkaufen – 2 Schlafzimmer Victor Hugo",
+      "source": "Avito",
+      "url": "",
+      "contact_phone": "",
+      "contact_name": "",
+      "price_mad": 1600000,
+      "price_eur": 133333,
+      "area_sqm": null,
+      "rooms": 3,
+      "bedrooms": 2,
+      "bathrooms": null,
+      "floor": null,
+      "neighborhood": "Victor Hugo",
+      "property_type": "Duplex",
+      "price_per_sqm_mad": null,
+      "has_terrace": null,
+      "has_pool": null,
+      "has_parking": null,
+      "has_elevator": null,
+      "is_new_build": null,
+      "ownership_type": "Unbekannt",
+      "condition": "Modern",
+      "highlights": [
+        "Perfekt im Budget",
+        "Moderne Ausstattung",
+        "Duplex-Charakter"
+      ],
+      "concerns": [
+        "Lage nicht in Speckgürtel",
+        "Keine Größenangabe",
+        "Fehlende Ausstattungsdetails"
+      ],
+      "neighborhood_outlook": "Victor Hugo ist eine etablierte Lage in Guéliz mit guter Anbindung. Für Stadtleben geeignet, aber nicht die gewünschten Speckgürtel-Qualitäten.",
+      "investment_potential": 4,
+      "livability_score": 4,
+      "market_price_assessment": "Nicht beurteilbar",
       "scores": {
         "budget_fit": 100,
         "location_fit": 50,
@@ -2525,32 +2092,220 @@
         "overall": 60
       },
       "verdict": "BEDINGT GEEIGNET",
-      "verdict_reason": "Zentrale Lage in Gueliz entspricht nicht den Präferenzen für ruhigere Speckgürtel-Lagen.",
+      "verdict_reason": "Budget passt perfekt und 2 Schlafzimmer erfüllen Mindestanforderungen. Duplex bietet oft Terrasse. Aber Lage nicht optimal und wichtige Details fehlen.",
       "besichtigung_fragen": [
-        "Genaue Lage in Gueliz?",
-        "Lärmbelastung durch Verkehr?",
-        "Parkplatzmöglichkeiten?",
-        "Zustand der Wohnung?",
-        "Gibt es Balkon oder Terrasse?"
+        "Welche Gesamtgröße hat der Duplex?",
+        "Hat der Duplex eine Terrasse oder Dachterrasse?",
+        "Ist ein Parkplatz dabei?",
+        "Gibt es Pool in der Anlage?",
+        "Wie ist die Aufteilung der beiden Ebenen?"
       ],
-      "verhandlung_tipps": "Zentrale Lage als Vorteil, aber Lärm als Nachteil für Preisverhandlung nutzen."
+      "verhandlung_tipps": "Als Duplex eventuell auf 1.5M verhandelbar. Terrasse und moderne Ausstattung als Argumente nutzen."
+    },
+    {
+      "id": "",
+      "title": "Apartment 80 m² mit Pool in Guéliz",
+      "source": "Avito",
+      "url": "",
+      "contact_phone": "",
+      "contact_name": "",
+      "price_mad": 1080000,
+      "price_eur": 90000,
+      "area_sqm": 80,
+      "rooms": null,
+      "bedrooms": null,
+      "bathrooms": null,
+      "floor": null,
+      "neighborhood": "Guéliz",
+      "property_type": "Apartment",
+      "price_per_sqm_mad": 13500,
+      "has_terrace": null,
+      "has_pool": true,
+      "has_parking": null,
+      "has_elevator": null,
+      "is_new_build": null,
+      "ownership_type": "Unbekannt",
+      "condition": "Unbekannt",
+      "highlights": [
+        "Sehr günstiger Preis",
+        "Pool vorhanden",
+        "Solide Größe"
+      ],
+      "concerns": [
+        "Unter Mindestgröße 90m²",
+        "Zimmerzahl unbekannt",
+        "Lage nicht optimal"
+      ],
+      "neighborhood_outlook": "Guéliz bietet urbanes Leben mit guter Infrastruktur. Mit Pool könnte es für Tourismus interessant sein, aber nicht in den bevorzugten Speckgürtel-Lagen.",
+      "investment_potential": 4,
+      "livability_score": 3,
+      "market_price_assessment": "Unter Markt",
+      "scores": {
+        "budget_fit": 100,
+        "location_fit": 50,
+        "size_fit": 60,
+        "amenities_fit": 25,
+        "investment_fit": 80,
+        "info_penalty": 15,
+        "overall": 60
+      },
+      "verdict": "BEDINGT GEEIGNET",
+      "verdict_reason": "Sehr attraktiver Preis und Pool vorhanden. Größe ist knapp unter dem Ideal, aber wenn es 3 Zimmer hat, könnte es interessant sein für Investment.",
+      "besichtigung_fragen": [
+        "Wie viele Zimmer hat die Wohnung?",
+        "Gibt es eine Terrasse oder Balkon?",
+        "Ist ein Parkplatz dabei?",
+        "In welchem Stock liegt sie?",
+        "Wie ist der Pool-Bereich gestaltet?"
+      ],
+      "verhandlung_tipps": "Der sehr günstige Preis lässt wenig Verhandlungsspielraum. Fokus auf Zusatzleistungen wie Parkplatz."
+    },
+    {
+      "id": "",
+      "title": "Ausnahme-Wohnung in Agdal für Investment",
+      "source": "Avito",
+      "url": "",
+      "contact_phone": "",
+      "contact_name": "",
+      "price_mad": 1900000,
+      "price_eur": 190000,
+      "area_sqm": 120,
+      "rooms": 4,
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "floor": "Unbekannt",
+      "neighborhood": "Agdal",
+      "property_type": "Wohnung",
+      "price_per_sqm_mad": 15833,
+      "has_terrace": false,
+      "has_pool": false,
+      "has_parking": false,
+      "has_elevator": false,
+      "is_new_build": false,
+      "ownership_type": "Unbekannt",
+      "condition": "Unbekannt",
+      "highlights": [
+        "Top-Lage Agdal",
+        "Investment-fokussiert",
+        "Gute Größe 120m²",
+        "4 Zimmer"
+      ],
+      "concerns": [
+        "Preis über Budget-Sweet-Spot",
+        "Keine Ausstattungsdetails",
+        "Zustand unbekannt",
+        "Keine konkreten Infos"
+      ],
+      "neighborhood_outlook": "Agdal ist eine der Top-Ziellagen mit exzellentem Investment- und Wohnpotential. Sehr gefragte Gegend mit stabiler Wertentwicklung.",
+      "investment_potential": 5,
+      "livability_score": 4,
+      "market_price_assessment": "Nicht beurteilbar",
+      "scores": {
+        "budget_fit": 60,
+        "location_fit": 100,
+        "size_fit": 100,
+        "amenities_fit": 0,
+        "investment_fit": 80,
+        "info_penalty": 20,
+        "overall": 60
+      },
+      "verdict": "BEDINGT GEEIGNET",
+      "verdict_reason": "Perfekte Lage und Größe, aber Preis über Budget-Sweet-Spot. Als langfristiges Investment in Top-Lage durchaus interessant, Details fehlen aber komplett.",
+      "besichtigung_fragen": [
+        "Welche konkrete Ausstattung ist vorhanden?",
+        "Gibt es Pool, Terrasse, Parkplatz, Aufzug?",
+        "Wie ist der genaue Zustand?",
+        "Welche Etage und Ausrichtung?",
+        "Was macht die Wohnung zur 'Ausnahme'?"
+      ],
+      "verhandlung_tipps": "Bei Top-Lage wenig Verhandlungsspielraum, aber mangelnde Details rechtfertigen Preisreduktion."
+    },
+    {
+      "id": "07b3fe9d1c6d",
+      "title": "Schöne möblierte Wohnung in Jnane Awrade",
+      "source": "Mubawab",
+      "url": "https://www.mubawab.ma/fr/a/8313773/belle-appartement-a-jnane-awerade-meubl%C3%A9e",
+      "contact_phone": "",
+      "contact_name": "",
+      "price_mad": 1500000,
+      "price_eur": 138888,
+      "area_sqm": 85,
+      "rooms": 4,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "floor": "Erdgeschoss",
+      "neighborhood": "Jnane Awrade",
+      "property_type": "Apartment",
+      "price_per_sqm_mad": 17647,
+      "has_terrace": false,
+      "has_pool": true,
+      "has_parking": false,
+      "has_elevator": true,
+      "is_new_build": false,
+      "ownership_type": "Unbekannt",
+      "condition": "Neu",
+      "highlights": [
+        "Poolblick und Poolzugang",
+        "Vollmöbliert und bezugsfertig",
+        "Zwei Badezimmer verfügbar",
+        "Residence mit Familiencharakter"
+      ],
+      "concerns": [
+        "Erdgeschoss (No-Go Kriterium)",
+        "Kein eigener Parkplatz",
+        "Höhere Preisklasse für Jnane Awrade",
+        "Keine Terrasse vorhanden"
+      ],
+      "neighborhood_outlook": "Jnane Awrade entwickelt sich positiv mit neuen Residencen und Infrastruktur. Gute Anbindung aber noch nicht vollständig etabliert als Premium-Lage.",
+      "investment_potential": 3,
+      "livability_score": 2,
+      "market_price_assessment": "Marktgerecht",
+      "scores": {
+        "budget_fit": 85,
+        "location_fit": 70,
+        "size_fit": 75,
+        "amenities_fit": 50,
+        "investment_fit": 70,
+        "info_penalty": 10,
+        "overall": 60
+      },
+      "verdict": "NICHT GEEIGNET",
+      "verdict_reason": "Erdgeschoss entspricht nicht den Anforderungen. Trotz Pool und guter Ausstattung fällt das Objekt durch das No-Go Kriterium durch.",
+      "besichtigung_fragen": [
+        "Wie ist die Sicherheit im Erdgeschoss gewährleistet?",
+        "Gibt es Möglichkeit für zusätzlichen Parkplatz?",
+        "Welche Möbel sind genau enthalten?",
+        "Wie sind die Poolzeiten und -regeln?",
+        "Ist die Wohnung vor Einbruch geschützt?"
+      ],
+      "verhandlung_tipps": "Aufgrund Erdgeschoss-Problematik deutlicher Preisabschlag möglich, aber grundsätzlich nicht empfehlenswert für die Anforderungen."
     }
   ],
   "rejected_log": [
     {
-      "title": "Appartement à vendre 60 m² à Marrakech",
+      "title": "Appartement à vendre 46 m² à Marrakech",
       "url": "",
-      "reason": "Kein Preis"
+      "reason": "Preis zu niedrig: 874,000"
     },
     {
-      "title": "Appartement à vendre 39 m² à Marrakech",
+      "title": "Appartement à vendre 40 m² à Marrakech",
       "url": "",
-      "reason": "Preis zu niedrig: 698,500"
+      "reason": "Preis zu niedrig: 900,000"
+    },
+    {
+      "title": "Appartement neuf parking hay izdihar",
+      "url": "",
+      "reason": "Preis zu niedrig: 880,000"
     },
     {
       "title": "Appart à vendre prestigia meublé",
       "url": "",
       "reason": "Preis zu hoch: 2,540,000"
+    },
+    {
+      "title": "AL MAMOUN",
+      "url": "",
+      "reason": "Kein Preis"
     },
     {
       "title": "Appartement à vendre 65 m² à Marrakech",
@@ -2563,14 +2318,14 @@
       "reason": "Preis zu niedrig: 790,000"
     },
     {
-      "title": "Hadaïq Al Yassamine Tranche 1 ",
-      "url": "",
-      "reason": "Preis zu niedrig: 690,000"
-    },
-    {
       "title": "Studio Rt Casablanca – Projet Hermes 25",
       "url": "",
       "reason": "Preis zu niedrig: 670,000"
+    },
+    {
+      "title": "RESIDENCE ASSAFAA MAJORELLE",
+      "url": "",
+      "reason": "Preis zu niedrig: 560,000"
     },
     {
       "title": "HERMÈS 25 – 2 Chambres, Piscine & Salle Sport",
@@ -2583,19 +2338,14 @@
       "reason": "Preis zu hoch: 2,500,000"
     },
     {
-      "title": "RESIDENCE LARIOS II",
-      "url": "",
-      "reason": "Preis zu niedrig: 770,000"
-    },
-    {
       "title": "Studio à vendre avec piscine",
       "url": "",
       "reason": "Preis zu niedrig: 630,000"
     },
     {
-      "title": "RESIDENCE ASSAFAA MAJORELLE",
+      "title": "RESIDENCE LA SOURCE",
       "url": "",
-      "reason": "Preis zu niedrig: 985,000"
+      "reason": "Preis zu niedrig: 857,500"
     },
     {
       "title": "Appartement 58 m2 avec piscine à gueliz",
@@ -2613,6 +2363,11 @@
       "reason": "Preis zu niedrig: 320,000"
     },
     {
+      "title": "Les jardins d’Azzouzia",
+      "url": "",
+      "reason": "Preis zu niedrig: 350,000"
+    },
+    {
       "title": "Appartement à vendre 67 m² à Marrakech",
       "url": "",
       "reason": "Preis zu niedrig: 950,000"
@@ -2623,9 +2378,9 @@
       "reason": "Preis zu niedrig: 580,000"
     },
     {
-      "title": "Résidence AL BARAKA",
+      "title": "Résidence MM3",
       "url": "",
-      "reason": "Preis zu niedrig: 250,000"
+      "reason": "Preis zu niedrig: 844,600"
     },
     {
       "title": "Appartement meublé à vendre",
@@ -2636,11 +2391,6 @@
       "title": "2ᵉ Tranche Riad Garden, Appartements de 84 à 116m²",
       "url": "",
       "reason": "No-Go: riad"
-    },
-    {
-      "title": "Hadaïq Al Yassamine Tranche 2",
-      "url": "",
-      "reason": "Preis zu niedrig: 690,000"
     },
     {
       "title": "Appartement à vendre 64 m² à Guéliz Marrakech",
@@ -2658,29 +2408,29 @@
       "reason": "Preis zu niedrig: 700,000"
     },
     {
+      "title": "Magnifique appartement à vendre à l'Azhar",
+      "url": "",
+      "reason": "Kein Preis"
+    },
+    {
+      "title": "Appartement à vendre 60 m² à Marrakech",
+      "url": "",
+      "reason": "Kein Preis"
+    },
+    {
       "title": "Appartement à vendre 73 m² à Marrakech",
       "url": "",
       "reason": "Kein Preis"
     },
     {
-      "title": "Studio proche bd Abdelkrim Al Khattabi (Marrakech)",
-      "url": "",
-      "reason": "Preis zu niedrig: 900,000"
-    },
-    {
-      "title": "Appartement à vendre 134 m² Tafraoute à Marrakech",
-      "url": "",
-      "reason": "Preis zu hoch: 2,747,000"
-    },
-    {
-      "title": "Appartement à vendre 46 m² à Marrakech",
-      "url": "",
-      "reason": "Preis zu niedrig: 874,000"
-    },
-    {
       "title": "Appartement de 57 à 122m² à M'hamid Marrakech",
       "url": "",
       "reason": "Preis zu niedrig: 505,000"
+    },
+    {
+      "title": "Résidence Lina - Duplex & Appartements ",
+      "url": "",
+      "reason": "Preis zu niedrig: 651,000"
     },
     {
       "title": "Appartement à vendre Azzouzia Marrakech",
@@ -2693,14 +2443,9 @@
       "reason": "Preis zu niedrig: 690,000"
     },
     {
-      "title": "KSOUR JACARANDA 1 TRANCH",
+      "title": "Studio 51m² près café Malizia et Marjane",
       "url": "",
-      "reason": "Preis zu niedrig: 222,000"
-    },
-    {
-      "title": "ATHENA 25 – Investissement Haut Standing",
-      "url": "",
-      "reason": "Preis zu niedrig: 780,000"
+      "reason": "Preis zu niedrig: 600,000"
     },
     {
       "title": "Appartements Haut Standing – Piscines & Parking",
@@ -2708,9 +2453,9 @@
       "reason": "Preis zu niedrig: 778,000"
     },
     {
-      "title": "Studio 51m² près café Malizia et Marjane",
+      "title": "ATHENA 25 – Investissement Haut Standing",
       "url": "",
-      "reason": "Preis zu niedrig: 600,000"
+      "reason": "Preis zu niedrig: 780,000"
     },
     {
       "title": "Appartement à vendre 45 m² à Marrakech",
@@ -2728,14 +2473,19 @@
       "reason": "Preis zu niedrig: 810,000"
     },
     {
-      "title": "Résidence Haut Standing Al IRFANE",
+      "title": "Hadaïq Al Yassamine Tranche 1 ",
       "url": "",
-      "reason": "Preis zu niedrig: 908,500"
+      "reason": "Preis zu niedrig: 690,000"
     },
     {
       "title": "Appartement",
       "url": "",
       "reason": "Preis zu niedrig: 850,000"
+    },
+    {
+      "title": "EDEN DE GUELIZ",
+      "url": "",
+      "reason": "Preis zu niedrig: 610,000"
     },
     {
       "title": "Appartement meublé à vendre proche geuliz",
@@ -2748,19 +2498,19 @@
       "reason": "Kein Preis"
     },
     {
+      "title": "Appart 114m2 de 3 ch salon à Rouidate",
+      "url": "",
+      "reason": "Preis zu niedrig: 970,000"
+    },
+    {
       "title": "Appart 76m2 près Mc Do et Marjane allal fassi",
       "url": "",
       "reason": "Preis zu niedrig: 980,000"
     },
     {
-      "title": "LE PAVILLON Gueliz",
+      "title": "TARGA PLACE RESIDENCY ",
       "url": "",
-      "reason": "Preis zu niedrig: 943,000"
-    },
-    {
-      "title": "Appart 114m2 de 3 ch salon à Rouidate",
-      "url": "",
-      "reason": "Preis zu niedrig: 970,000"
+      "reason": "Kein Preis"
     },
     {
       "title": "Appartement à vendre 108 m² à Marrakech",
@@ -2768,9 +2518,19 @@
       "reason": "Preis zu hoch: 2,500,000"
     },
     {
+      "title": "Studio proche bd Abdelkrim Al Khattabi (Marrakech)",
+      "url": "",
+      "reason": "Preis zu niedrig: 900,000"
+    },
+    {
       "title": "🏠 Appartement à vendre dans le quartier de Charef – Marrakec",
       "url": "",
       "reason": "Preis zu niedrig: 560,000"
+    },
+    {
+      "title": "LE PAVILLON Gueliz",
+      "url": "",
+      "reason": "Preis zu niedrig: 943,000"
     },
     {
       "title": "Appart 78m2 avec terrasse en haut près Atacadao",
@@ -2798,6 +2558,11 @@
       "reason": "Preis zu niedrig: 600,000"
     },
     {
+      "title": "Résidence Haut Standing Al IRFANE",
+      "url": "",
+      "reason": "Preis zu niedrig: 560,000"
+    },
+    {
       "title": "Appartement neuf- Résidence premium, piscines, spa",
       "url": "",
       "reason": "Preis zu hoch: 2,370,000"
@@ -2808,11 +2573,6 @@
       "reason": "Preis zu niedrig: 440,000"
     },
     {
-      "title": "DYOUR AL MASJID",
-      "url": "",
-      "reason": "Preis zu niedrig: 400,000"
-    },
-    {
       "title": "Appart sans vis-à-vis à Allal El Fassi près Marjane",
       "url": "",
       "reason": "Preis zu niedrig: 850,000"
@@ -2821,6 +2581,11 @@
       "title": "Appart neuf 72,77,87m Sanaobar près Izdihar Charaf",
       "url": "",
       "reason": "Preis zu niedrig: 936,000"
+    },
+    {
+      "title": "LES JARDINS MEDINA",
+      "url": "",
+      "reason": "Preis zu niedrig: 390,000"
     },
     {
       "title": "DaVinci l’adresse premium à Marrakech \\ promoteur",
@@ -2853,19 +2618,14 @@
       "reason": "Preis zu niedrig: 710,000"
     },
     {
+      "title": "Al Bahja - Marrakech",
+      "url": "",
+      "reason": "Preis zu niedrig: 370,000"
+    },
+    {
       "title": "Un Projet Unique Dans Le Quartier Semlalia",
       "url": "",
       "reason": "Preis zu niedrig: 720,000"
-    },
-    {
-      "title": "TARGA PLACE RESIDENCY ",
-      "url": "",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Magnifique appartement à vendre à l'Azhar",
-      "url": "",
-      "reason": "Kein Preis"
     },
     {
       "title": "Appart 3ch salon 87m2 près Sup de co",
@@ -2873,19 +2633,9 @@
       "reason": "Preis zu niedrig: 920,000"
     },
     {
-      "title": "Appartement 112 mètres, 3 façades avec soutien",
-      "url": "",
-      "reason": "Preis zu niedrig: 800,000"
-    },
-    {
       "title": "Vend appartement à Guéliz. Surface de 47 m²",
       "url": "https://www.mubawab.ma/fr/pa/8059937/vend-appartement-%C3%A0-gu%C3%A9liz-surface-de-47-m%C2%B2",
       "reason": "Zu wenig Zimmer: 2Zi/1Bed"
-    },
-    {
-      "title": "Studio à vendre à Guéliz. Surface de 32 m²",
-      "url": "https://www.mubawab.ma/fr/pa/8244691/studio-%C3%A0-vendre-%C3%A0-gu%C3%A9liz-surface-de-32-m%C2%B2",
-      "reason": "Preis zu niedrig: 960,000"
     },
     {
       "title": "Penthouse Prestige avec Piscine et Spa Privés",
@@ -2908,9 +2658,19 @@
       "reason": "Preis zu niedrig: 890,000"
     },
     {
-      "title": "Appartement à vendre à Guéliz. 1 belle chambre",
-      "url": "https://www.mubawab.ma/fr/pa/7921913/appartement-%C3%A0-vendre-%C3%A0-gu%C3%A9liz-1-belle-chambre",
-      "reason": "Preis zu niedrig: 874,000"
+      "title": "Appartement à l'achat à Guéliz. 1 belle chambre",
+      "url": "https://www.mubawab.ma/fr/pa/8257819/appartement-%C3%A0-l-achat-%C3%A0-gu%C3%A9liz-1-belle-chambre",
+      "reason": "Preis zu niedrig: 998,000"
+    },
+    {
+      "title": "Bel appartement à vendre à El Hara. 1 belle chambre",
+      "url": "https://www.mubawab.ma/fr/pa/8109859/bel-appartement-%C3%A0-vendre-%C3%A0-el-hara-1-belle-chambre",
+      "reason": "Preis zu niedrig: 908,500"
+    },
+    {
+      "title": "Magnifique studio T2",
+      "url": "https://www.mubawab.ma/fr/pa/8022550/magnifique-studio-t2",
+      "reason": "Preis zu niedrig: 807,500"
     },
     {
       "title": "Vente d'un bel appartement à Guéliz",
@@ -2918,14 +2678,9 @@
       "reason": "Zu wenig Zimmer: 2Zi/1Bed"
     },
     {
-      "title": "Appartement à l'achat à Guéliz. 1 belle chambre",
-      "url": "https://www.mubawab.ma/fr/pa/8257819/appartement-%C3%A0-l-achat-%C3%A0-gu%C3%A9liz-1-belle-chambre",
-      "reason": "Preis zu niedrig: 998,000"
-    },
-    {
-      "title": "Magnifique studio T2",
-      "url": "https://www.mubawab.ma/fr/pa/8022550/magnifique-studio-t2",
-      "reason": "Preis zu niedrig: 807,500"
+      "title": "Bel appartement à vendre à Guéliz. Surface de 47 m²",
+      "url": "https://www.mubawab.ma/fr/pa/8059938/bel-appartement-%C3%A0-vendre-%C3%A0-gu%C3%A9liz-surface-de-47-m%C2%B2",
+      "reason": "Zu wenig Zimmer: 2Zi/1Bed"
     },
     {
       "title": "Appartement 1 chambre à vendre à Route Amizmiz piscine colle",
@@ -2993,19 +2748,14 @@
       "reason": "Zu wenig Zimmer: 2Zi/1Bed"
     },
     {
-      "title": "Studio en vente à Majorelle. Superficie 52 m²",
-      "url": "https://www.mubawab.ma/fr/pa/8007263/studio-en-vente-%C3%A0-majorelle-superficie-52-m%C2%B2",
-      "reason": "Zu wenig Zimmer: 1Zi/1Bed"
+      "title": "Appartement en vente à Route Casablanca. Superficie 48 m²",
+      "url": "https://www.mubawab.ma/fr/pa/8242628/appartement-en-vente-%C3%A0-route-casablanca-superficie-48-m%C2%B2",
+      "reason": "Zu wenig Zimmer: 2Zi/1Bed"
     },
     {
       "title": "Vente d'un bel appartement à Guéliz. 1 belle chambre",
       "url": "https://www.mubawab.ma/fr/pa/8058859/vente-d-un-bel-appartement-%C3%A0-gu%C3%A9liz-1-belle-chambre",
       "reason": "Preis zu niedrig: 972,000"
-    },
-    {
-      "title": "Studio en vente à Guéliz. Superficie 45 m²",
-      "url": "https://www.mubawab.ma/fr/pa/8249308/studio-en-vente-%C3%A0-gu%C3%A9liz-superficie-45-m%C2%B2",
-      "reason": "Zu wenig Zimmer: 1Zi/1Bed"
     },
     {
       "title": "Appartement à vendre",
@@ -3023,16 +2773,6 @@
       "reason": "Preis zu hoch: 3,100,000"
     },
     {
-      "title": "Opportunité à saisir: Appartement moderne à Gueliz",
-      "url": "https://www.mubawab.ma/fr/pa/7921916/opportunit%C3%A9-%C3%A0-saisir-appartement-moderne-%C3%A0-gueliz",
-      "reason": "Zu wenig Zimmer: 2Zi/1Bed"
-    },
-    {
-      "title": "Superbe appartement à vendre à Guéliz. Surface de 65 m²",
-      "url": "https://www.mubawab.ma/fr/pa/7915633/superbe-appartement-%C3%A0-vendre-%C3%A0-gu%C3%A9liz-surface-de-65-m%C2%B2",
-      "reason": "Zu wenig Zimmer: 2Zi/1Bed"
-    },
-    {
       "title": "Bel appartement à vendre à Guéliz",
       "url": "https://www.mubawab.ma/fr/pa/8257820/bel-appartement-%C3%A0-vendre-%C3%A0-gu%C3%A9liz",
       "reason": "Preis zu niedrig: 958,000"
@@ -3041,6 +2781,16 @@
       "title": "Un Studio duplex au charme unique",
       "url": "https://www.mubawab.ma/fr/pa/8138782/un-studio-duplex-au-charme-unique",
       "reason": "Preis zu niedrig: 764,000"
+    },
+    {
+      "title": "Vente d'un bel appartement à Guéliz",
+      "url": "https://www.mubawab.ma/fr/pa/7915632/vente-d-un-bel-appartement-%C3%A0-gu%C3%A9liz",
+      "reason": "Zu wenig Zimmer: 2Zi/1Bed"
+    },
+    {
+      "title": "Vend appartement à Guéliz. Superficie 51 m²",
+      "url": "https://www.mubawab.ma/fr/pa/8059953/vend-appartement-%C3%A0-gu%C3%A9liz-superficie-51-m%C2%B2",
+      "reason": "Preis zu niedrig: 943,500"
     },
     {
       "title": "Nouveau Projet avec piscine à Marrakech",
@@ -3073,6 +2823,16 @@
       "reason": "Preis zu niedrig: 865,000"
     },
     {
+      "title": "Appartement T2 lumineux au nouveau Guéliz",
+      "url": "https://www.mubawab.ma/fr/pa/8158283/appartement-t2-lumineux-au-nouveau-gu%C3%A9liz",
+      "reason": "Preis zu niedrig: 850,000"
+    },
+    {
+      "title": "Studio en vente à Majorelle. Superficie 52 m²",
+      "url": "https://www.mubawab.ma/fr/pa/8007263/studio-en-vente-%C3%A0-majorelle-superficie-52-m%C2%B2",
+      "reason": "Zu wenig Zimmer: 1Zi/1Bed"
+    },
+    {
       "title": "Appartement premium à M’Hamid 9",
       "url": "https://www.mubawab.ma/fr/pa/8272229/appartement-premium-%C3%A0-m%E2%80%99hamid-9",
       "reason": "Preis zu niedrig: 520,000"
@@ -3088,24 +2848,9 @@
       "reason": "Preis zu niedrig: 818,100"
     },
     {
-      "title": "Appartement Plein Soleil \n ***-****** Dhs",
-      "url": "https://www.mubawab.ma/fr/a/8035194/appartement-plein-soleil-2-800-000-dhs",
-      "reason": "Preis zu hoch: 2,800,000"
-    },
-    {
-      "title": "Magnifique Studio en vente à route de Casablanca",
-      "url": "https://www.mubawab.ma/fr/pa/8181697/magnifique-studio-en-vente-%C3%A0-route-de-casablanca",
-      "reason": "Preis zu niedrig: 645,000"
-    },
-    {
       "title": "Duplex à l'achat à Guéliz. Surface 44 m² au RDC et 30 à la M",
       "url": "https://www.mubawab.ma/fr/pa/8059956/duplex-%C3%A0-l-achat-%C3%A0-gu%C3%A9liz-surface-44-m%C2%B2-au-rdc-et-30-%C3%A0-la-mez",
       "reason": "Zu wenig Zimmer: 2Zi/1Bed"
-    },
-    {
-      "title": "Magnifique Studio de 51 m² à Guéliz",
-      "url": "https://www.mubawab.ma/fr/pa/8249309/magnifique-studio-de-51-m%C2%B2-%C3%A0-gu%C3%A9liz",
-      "reason": "Zu wenig Zimmer: 1Zi/1Bed"
     },
     {
       "title": "Appartement à vendre – Hay Charaf – Marrakech – RDC",
@@ -3113,24 +2858,29 @@
       "reason": "Erdgeschoss"
     },
     {
-      "title": "Opportunité à saisir: Appartement 1 chambre à Gueliz",
-      "url": "https://www.mubawab.ma/fr/pa/7921920/opportunit%C3%A9-%C3%A0-saisir-appartement-1-chambre-%C3%A0-gueliz",
-      "reason": "Zu wenig Zimmer: 2Zi/1Bed"
-    },
-    {
-      "title": "Vente d'un bel appartement à Guéliz. 1 chambre",
-      "url": "https://www.mubawab.ma/fr/pa/7915634/vente-d-un-bel-appartement-%C3%A0-gu%C3%A9liz-1-chambre",
-      "reason": "Zu wenig Zimmer: 2Zi/1Bed"
-    },
-    {
       "title": "Vend appartement à Guéliz. Superficie 51 m²",
       "url": "https://www.mubawab.ma/fr/pa/8257821/vend-appartement-%C3%A0-gu%C3%A9liz-superficie-51-m%C2%B2",
       "reason": "Preis zu niedrig: 911,000"
     },
     {
+      "title": "Bel appartement à vendre à El Hara. 1 chambre",
+      "url": "https://www.mubawab.ma/fr/pa/8109862/bel-appartement-%C3%A0-vendre-%C3%A0-el-hara-1-chambre",
+      "reason": "Preis zu niedrig: 768,000"
+    },
+    {
       "title": "Studio élégant au coeur de la ville",
       "url": "https://www.mubawab.ma/fr/pa/8138791/studio-%C3%A9l%C3%A9gant-au-coeur-de-la-ville",
       "reason": "Preis zu niedrig: 793,000"
+    },
+    {
+      "title": "Superbe appartement à vendre à Guéliz. Surface de 65 m²",
+      "url": "https://www.mubawab.ma/fr/pa/7915633/superbe-appartement-%C3%A0-vendre-%C3%A0-gu%C3%A9liz-surface-de-65-m%C2%B2",
+      "reason": "Zu wenig Zimmer: 2Zi/1Bed"
+    },
+    {
+      "title": "Bel appartement à vendre à Guéliz. 2 belles chambres",
+      "url": "https://www.mubawab.ma/fr/pa/8059955/bel-appartement-%C3%A0-vendre-%C3%A0-gu%C3%A9liz-2-belles-chambres",
+      "reason": "Erdgeschoss"
     },
     {
       "title": "Magnifique studio à vendre au Menara garden 1",
@@ -3151,6 +2901,16 @@
       "title": "Appartement moderne à vendre – Hivernage (centre)",
       "url": "https://www.mubawab.ma/fr/a/8273469/appartement-moderne-%C3%A0-vendre-%E2%80%93-hivernage-centre-",
       "reason": "Preis zu hoch: 2,600,000"
+    },
+    {
+      "title": "Appartement Plein Soleil \n ***-****** Dhs",
+      "url": "https://www.mubawab.ma/fr/a/8035194/appartement-plein-soleil-2-800-000-dhs",
+      "reason": "Preis zu hoch: 2,800,000"
+    },
+    {
+      "title": "Magnifique Studio en vente à route de Casablanca",
+      "url": "https://www.mubawab.ma/fr/pa/8181697/magnifique-studio-en-vente-%C3%A0-route-de-casablanca",
+      "reason": "Preis zu niedrig: 645,000"
     },
     {
       "title": "Charmant appartement 1 chambre à vendre Marrakech",
@@ -3176,21 +2936,6 @@
       "title": "Appartement à vendre à Route Amizmiz \njubea argan golf Marra",
       "url": "https://www.mubawab.ma/fr/a/8304888/appartement-%C3%A0-vendre-%C3%A0-route-amizmiz-jubea-argan-golf-marrakech",
       "reason": "Kein Preis"
-    },
-    {
-      "title": "Vente appartement 1 chambre argan golf Marrakech piscine",
-      "url": "https://www.mubawab.ma/fr/a/8304878/vente-appartement-1-chambre-argan-golf-marrakech-piscine",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Bel appartement à vendre à Guéliz. 2 pièces. Meublé",
-      "url": "https://www.mubawab.ma/fr/a/8256292/bel-appartement-%C3%A0-vendre-%C3%A0-gu%C3%A9liz-2-pi%C3%A8ces-meubl%C3%A9",
-      "reason": "Zu wenig Zimmer: 2Zi/1Bed"
-    },
-    {
-      "title": "Appartement à vendre à Guéliz. Superficie 51 m²",
-      "url": "https://www.mubawab.ma/fr/pa/8034203/appartement-%C3%A0-vendre-%C3%A0-gu%C3%A9liz-superficie-51-m%C2%B2",
-      "reason": "Zu wenig Zimmer: 2Zi/1Bed"
     }
   ]
 }
