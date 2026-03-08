@@ -1,131 +1,55 @@
 #!/usr/bin/env python3
 """
-MARRAKECH KI-ANALYZER
-=====================
-Nimmt die Scraper-Ergebnisse und schickt sie an Claude zur Tiefenanalyse.
-Nur qualifizierte Leads (Score ≥60) kommen ins finale JSON.
-
-Nutzung:
-    python analyzer.py --input data/latest_raw.json --output data/latest.json
+MARRAKECH KI-ANALYZER v2
+Robuster: Mehr Retries, größere Chunks, besseres Error-Handling.
 """
 
 import json, os, sys, time, argparse
+from datetime import datetime
 from pathlib import Path
 
 try:
     import requests
 except ImportError:
-    print("❌ requests nicht installiert. Bitte: pip install requests")
+    print("pip install requests")
     sys.exit(1)
 
 API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
 MODEL = "claude-sonnet-4-20250514"
 API_URL = "https://api.anthropic.com/v1/messages"
-MAX_TOKENS = 4096
-CHUNK_SIZE = 5  # Inserate pro API-Call
+MAX_TOKENS = 8000
+CHUNK_SIZE = 8
 MIN_SCORE = 60
 
-DEEP_PROMPT = """Du bist ein erfahrener Immobilien-Analyst für Marrakesch. Du erhältst vorgeprüfte Angebote die bereits harte Ausschlusskriterien bestanden haben (Budget, Zimmer, Lage, No-Gos).
+DEEP_PROMPT = """Du bist ein erfahrener Immobilien-Analyst für Marrakesch. Tiefenanalyse für vorgeprüfte Angebote.
 
 KÄUFER-PROFIL:
-- Budget sweet spot: 1.200.000–1.800.000 MAD (100.000–200.000€)
-- Nutzung: Eigennutzung/Feriendomizil + Langzeit-Investment + potentieller Hauptwohnsitz
-- Min. 3 Zimmer, idealerweise ≥90m²
-- Bevorzugte Lagen im Speckgürtel mit Wachstumspotenzial
-- Must-haves: Terrasse, Pool, Parkplatz, Aufzug/Neubau (je mehr desto besser)
+- Budget sweet spot: 1.200.000-1.800.000 MAD (100.000-200.000 EUR)
+- Nutzung: Eigennutzung/Feriendomizil + Langzeit-Investment + Hauptwohnsitz
+- Min. 3 Zimmer, ideal >= 90m2
+- Lagen: Speckgürtel - Targa, Palmeraie, Route de l'Ourika, Agdal, Tamansourt, M'Hamid, Massira, Izdihar, Amerchich, Tassoultant, Route de Casablanca, Nähe Flughafen, Sidi Ghanem
+- Must-haves: Terrasse, Pool, Parkplatz, Aufzug/Neubau
+- No-Gos: Erdgeschoss, Riad-Stil, Melkia
 
-BEWERTUNGSLOGIK:
+BEWERTUNG:
+BUDGET(25%): 100=1.2-1.6M, 80=1.6-1.9M/1.0-1.2M, 60=1.9-2.1M, 40=Rest
+LAGE(25%): 100=Targa/Agdal, 90=Palmeraie/Ourika, 80=Izdihar/Massira/M'Hamid, 70=Tamansourt/Route Casa, 60=Amerchich, 50=Gueliz/Hivernage, 40=Medina
+GROESSE(15%): 100=>=3Zi+>=100m2, 80=>=3Zi+>=80m2, 60=3Zi+60-80m2, 40=kleiner
+AUSSTATTUNG(20%): je 25 fuer Terrasse, Pool, Parkplatz, Aufzug/Neubau
+INVESTMENT(15%): m2-Preis, Entwicklung, Neubau, Qualitaet
+ABZUEGE: Eigentum "Unbekannt" -10, Zustand "Unbekannt" -5, wenig Infos -10
 
-BUDGET (25%):
-- 100 = 1.200.000–1.600.000 MAD (sweet spot)
-- 80 = 1.600.000–1.900.000 oder 1.000.000–1.200.000
-- 60 = 1.900.000–2.100.000
-- 40 = 2.100.000–2.300.000 oder unter 1.000.000
+Wenn ein Inserat wenig Details hat (kein Zimmer, keine Flaeche), schaetze konservativ basierend auf Preis und Lage. Gib trotzdem eine Bewertung ab.
 
-LAGE (25%):
-- 100 = Targa, Agdal (etabliert + wachsend)
-- 90 = Palmeraie, Route de l'Ourika (Premium-Potenzial)
-- 80 = Izdihar, Massira, M'Hamid (solide Infrastruktur)
-- 70 = Tamansourt, Route de Casablanca, Route de Fès
-- 60 = Amerchich, Tassoultant (aufstrebend)
-- 40 = Medina, Guéliz (nicht Zielgebiet)
+Antworte NUR mit JSON-Array (keine Backticks, kein Markdown):
+[{"id":"gleiche-id","title":"Titel Deutsch","source":"Portal","url":"URL","price_mad":Zahl,"price_eur":Zahl,"area_sqm":Zahl,"rooms":Zahl,"bedrooms":Zahl,"bathrooms":Zahl,"floor":"Etage","neighborhood":"Viertel","property_type":"Typ","price_per_sqm_mad":Zahl,"has_terrace":bool,"has_pool":bool,"has_parking":bool,"has_elevator":bool,"is_new_build":bool,"ownership_type":"String","condition":"String","highlights":["max 4"],"concerns":["max 4"],"neighborhood_outlook":"2 Saetze","investment_potential":1-5,"livability_score":1-5,"market_price_assessment":"Unter Markt/Marktgerecht/Ueber Markt/Nicht beurteilbar","scores":{"budget_fit":0-100,"location_fit":0-100,"size_fit":0-100,"amenities_fit":0-100,"investment_fit":0-100,"info_penalty":0,"overall":0-100},"verdict":"TOP-KANDIDAT/INTERESSANT/BEDINGT GEEIGNET/NICHT GEEIGNET","verdict_reason":"2-3 Saetze","besichtigung_fragen":["5 Fragen"],"verhandlung_tipps":"1-2 Saetze"}]
 
-GRÖSSE (15%):
-- 100 = ≥3 Zimmer UND ≥100m²
-- 80 = ≥3 Zimmer UND ≥80m²
-- 60 = 3 Zimmer UND 60-80m²
-- 40 = kleiner
-
-AUSSTATTUNG (20%) — je 25 Punkte für:
-- Terrasse/Balkon/Dachterrasse vorhanden
-- Pool (privat oder Anlage)
-- Parkplatz/Garage
-- Aufzug ODER bestätigter Neubau
-
-INVESTMENT (15%):
-- Basierend auf: m²-Preis vs. Durchschnitt, Lage-Entwicklung, Neubau-Status, Bauqualität
-
-OVERALL = gewichteter Durchschnitt, MINUS Risiko-Abzüge:
-- Eigentum "Unbekannt" (nicht bestätigt Titre Foncier): -10
-- Zustand "Unbekannt": -5
-- Wenig Infos verfügbar: -10
-
-Antworte NUR mit einem JSON-Array (keine Backticks, kein Markdown). Pro Angebot:
-[{
-  "id": "gleiche id wie im Input",
-  "title": "Titel auf Deutsch",
-  "source": "Portal-Name",
-  "url": "URL oder null",
-  "price_mad": Zahl oder null,
-  "price_eur": Zahl oder null,
-  "area_sqm": Zahl oder null,
-  "rooms": Zahl oder null,
-  "bedrooms": Zahl oder null,
-  "bathrooms": Zahl oder null,
-  "floor": "Etage oder null",
-  "neighborhood": "Viertel",
-  "property_type": "Apartment/Villa",
-  "price_per_sqm_mad": Zahl oder null,
-  "has_terrace": true/false/null,
-  "has_pool": true/false/null,
-  "has_parking": true/false/null,
-  "has_elevator": true/false/null,
-  "is_new_build": true/false/null,
-  "ownership_type": "Titre Foncier/Melkia/Unbekannt",
-  "condition": "Neu/Renoviert/Gut/Unbekannt",
-  "highlights": ["max 4 echte Stärken"],
-  "concerns": ["max 4 echte Risiken — sei ehrlich!"],
-  "neighborhood_outlook": "2 Sätze zur Lage-Entwicklung und Perspektive",
-  "investment_potential": 1-5,
-  "livability_score": 1-5,
-  "market_price_assessment": "Unter Markt/Marktgerecht/Über Markt/Nicht beurteilbar",
-  "scores": {
-    "budget_fit": 0-100,
-    "location_fit": 0-100,
-    "size_fit": 0-100,
-    "amenities_fit": 0-100,
-    "investment_fit": 0-100,
-    "info_penalty": 0 oder negativer Wert,
-    "overall": 0-100
-  },
-  "verdict": "TOP-KANDIDAT/INTERESSANT/BEDINGT GEEIGNET/NICHT GEEIGNET",
-  "verdict_reason": "2-3 Sätze ehrliche Einschätzung auf Deutsch",
-  "besichtigung_fragen": ["5 wichtige Fragen bei Besichtigung"],
-  "verhandlung_tipps": "1-2 Sätze Verhandlungsstrategie"
-}]
-
-QUALITÄTSREGELN:
-- Vergib NICHT leichtfertig hohe Scores. Ein "TOP-KANDIDAT" muss wirklich überdurchschnittlich sein.
-- Sei ehrlich bei Concerns — jedes Angebot hat Schwächen.
-- Wenn zu wenig Infos da sind, bewerte konservativ nach unten.
-- ≥80 = TOP-KANDIDAT, ≥60 = INTERESSANT, ≥40 = BEDINGT GEEIGNET, <40 = NICHT GEEIGNET
-"""
+Sei STRENG aber FAIR. Wenig Infos = konservativ bewerten, aber nicht automatisch 0."""
 
 
-def call_claude(listings_chunk):
-    """Sendet eine Gruppe von Inseraten an Claude zur Analyse."""
+def call_claude(listings_chunk, chunk_num, total_chunks):
     if not API_KEY:
-        print("  ❌ Kein ANTHROPIC_API_KEY gesetzt!")
+        print("  KEIN API KEY!")
         return []
 
     headers = {
@@ -138,87 +62,85 @@ def call_claude(listings_chunk):
         "model": MODEL,
         "max_tokens": MAX_TOKENS,
         "system": DEEP_PROMPT,
-        "messages": [
-            {
-                "role": "user",
-                "content": f"Tiefenanalyse für diese vom Scraper extrahierten Inserate:\n\n{json.dumps(listings_chunk, ensure_ascii=False)}"
-            }
-        ]
+        "messages": [{
+            "role": "user",
+            "content": f"Analysiere diese {len(listings_chunk)} Inserate (Chunk {chunk_num}/{total_chunks}):\n\n{json.dumps(listings_chunk, ensure_ascii=False)}"
+        }]
     }
 
-    for attempt in range(3):
+    for attempt in range(5):
         try:
-            resp = requests.post(API_URL, headers=headers, json=payload, timeout=60)
+            print(f"    API-Call (Versuch {attempt+1})...")
+            resp = requests.post(API_URL, headers=headers, json=payload, timeout=120)
 
             if resp.status_code == 200:
                 data = resp.json()
-                text = ""
-                for block in data.get("content", []):
-                    if block.get("type") == "text":
-                        text += block.get("text", "")
-
-                # Parse JSON
+                text = "".join(b.get("text", "") for b in data.get("content", []) if b.get("type") == "text")
                 clean = text.strip()
-                if clean.startswith("```"):
-                    clean = clean.split("\n", 1)[1] if "\n" in clean else clean[3:]
-                if clean.endswith("```"):
-                    clean = clean[:-3]
+                if clean.startswith("```"): clean = clean.split("\n", 1)[1] if "\n" in clean else clean[3:]
+                if clean.endswith("```"): clean = clean[:-3]
                 clean = clean.strip()
-
+                if not clean:
+                    print("    Leere Antwort, retry...")
+                    time.sleep(5)
+                    continue
                 parsed = json.loads(clean)
-                return parsed if isinstance(parsed, list) else [parsed]
+                result = parsed if isinstance(parsed, list) else [parsed]
+                print(f"    OK: {len(result)} Inserate analysiert")
+                return result
 
             elif resp.status_code == 429:
-                print(f"  ⏳ Rate limit, warte 30s... (Versuch {attempt + 1})")
-                time.sleep(30)
+                wait = min(60, 10 * (attempt + 1))
+                print(f"    Rate limit, warte {wait}s...")
+                time.sleep(wait)
             elif resp.status_code == 529:
-                print(f"  ⏳ API überlastet, warte 15s... (Versuch {attempt + 1})")
-                time.sleep(15)
+                print(f"    API ueberlastet, warte 20s...")
+                time.sleep(20)
             else:
-                print(f"  ⚠ API Fehler {resp.status_code}: {resp.text[:200]}")
-                return []
+                print(f"    API Fehler {resp.status_code}: {resp.text[:200]}")
+                time.sleep(10)
 
         except requests.RequestException as e:
-            print(f"  ⚠ Request-Fehler (Versuch {attempt + 1}): {e}")
-            time.sleep(5)
+            print(f"    Request-Fehler: {e}")
+            time.sleep(10)
         except json.JSONDecodeError as e:
-            print(f"  ⚠ JSON-Parse-Fehler: {e}")
-            print(f"    Response: {text[:300]}...")
-            return []
+            print(f"    JSON-Fehler: {e}")
+            print(f"    Response-Start: {text[:200] if 'text' in dir() else 'N/A'}...")
+            time.sleep(5)
 
+    print(f"    FEHLGESCHLAGEN nach 5 Versuchen")
     return []
 
 
-def analyze(input_path, output_path):
-    """Hauptfunktion: Lädt Scraper-Daten, analysiert, speichert."""
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--input", "-i", default="data/latest_raw.json")
+    parser.add_argument("--output", "-o", default="data/latest.json")
+    args = parser.parse_args()
+
+    if not API_KEY:
+        print("KEIN ANTHROPIC_API_KEY!")
+        sys.exit(1)
 
     print(f"\n{'='*55}")
-    print(f"  🔬 MARRAKECH KI-ANALYZER")
+    print(f"  KI-ANALYZER v2")
     print(f"{'='*55}")
 
-    # Laden
-    print(f"\n  📂 Lade: {input_path}")
-    with open(input_path) as f:
+    with open(args.input) as f:
         data = json.load(f)
 
     listings = data.get("listings", [])
     meta = data.get("meta", {})
     rejected_log = data.get("rejected_log", [])
 
-    if not listings:
-        print("  ⚠ Keine Inserate zum Analysieren.")
-        # Leeres Ergebnis speichern
-        result = {
-            "meta": {**meta, "analyzed_at": datetime.now().isoformat() if 'datetime' in dir() else "", "analyzed_count": 0, "qualified_count": 0},
-            "listings": [],
-            "rejected_log": rejected_log,
-        }
-        Path(output_path).parent.mkdir(parents=True, exist_ok=True)
-        Path(output_path).write_text(json.dumps(result, ensure_ascii=False, indent=2))
-        return
+    print(f"  {len(listings)} Inserate zu analysieren")
 
-    print(f"  📋 {len(listings)} Inserate gefunden")
-    print(f"  🔬 Starte KI-Tiefenanalyse in Chunks von {CHUNK_SIZE}...\n")
+    if not listings:
+        result = {"meta": {**meta, "analyzed_at": datetime.now().isoformat(), "analyzed_count": 0, "qualified_count": 0, "top_count": 0, "interesting_count": 0}, "listings": [], "rejected_log": rejected_log}
+        Path(args.output).parent.mkdir(parents=True, exist_ok=True)
+        Path(args.output).write_text(json.dumps(result, ensure_ascii=False, indent=2))
+        print("  Keine Inserate.")
+        return
 
     all_analyzed = []
     total_chunks = (len(listings) + CHUNK_SIZE - 1) // CHUNK_SIZE
@@ -226,26 +148,21 @@ def analyze(input_path, output_path):
     for i in range(0, len(listings), CHUNK_SIZE):
         chunk = listings[i:i + CHUNK_SIZE]
         chunk_num = i // CHUNK_SIZE + 1
-        print(f"  📊 Chunk {chunk_num}/{total_chunks}: {len(chunk)} Inserate analysieren...")
+        print(f"\n  Chunk {chunk_num}/{total_chunks}: {len(chunk)} Inserate")
 
-        analyzed = call_claude(chunk)
-
+        analyzed = call_claude(chunk, chunk_num, total_chunks)
         if analyzed:
             qualified = [a for a in analyzed if a.get("scores", {}).get("overall", 0) >= MIN_SCORE]
             all_analyzed.extend(qualified)
-            print(f"     → {len(analyzed)} analysiert, {len(qualified)} qualifiziert (Score ≥{MIN_SCORE})")
+            print(f"    {len(qualified)} qualifiziert (>={MIN_SCORE})")
         else:
-            print(f"     → ⚠ Keine Ergebnisse für diesen Chunk")
+            print(f"    Keine Ergebnisse fuer diesen Chunk")
 
-        # Pause zwischen Chunks
         if i + CHUNK_SIZE < len(listings):
-            time.sleep(2)
+            time.sleep(3)
 
-    # Sortieren nach Score
     all_analyzed.sort(key=lambda x: x.get("scores", {}).get("overall", 0), reverse=True)
 
-    # Ergebnis zusammenstellen
-    from datetime import datetime
     result = {
         "meta": {
             **meta,
@@ -259,45 +176,24 @@ def analyze(input_path, output_path):
         "rejected_log": rejected_log,
     }
 
-    # Speichern
-    Path(output_path).parent.mkdir(parents=True, exist_ok=True)
-    Path(output_path).write_text(json.dumps(result, ensure_ascii=False, indent=2))
+    Path(args.output).parent.mkdir(parents=True, exist_ok=True)
+    Path(args.output).write_text(json.dumps(result, ensure_ascii=False, indent=2))
 
-    # Summary
     print(f"\n{'='*55}")
-    print(f"  📊 ERGEBNIS")
+    print(f"  ERGEBNIS")
     print(f"{'='*55}")
-    print(f"  📋 Vom Scraper:    {len(listings)} Inserate")
-    print(f"  🔬 Analysiert:     {len(listings)}")
-    print(f"  ✅ Qualifiziert:   {len(all_analyzed)} (Score ≥{MIN_SCORE})")
-    print(f"  ★  Top-Kandidaten: {result['meta']['top_count']}")
-    print(f"  ◆  Interessant:    {result['meta']['interesting_count']}")
-    print(f"\n  💾 Gespeichert: {output_path}")
+    print(f"  Input:        {len(listings)}")
+    print(f"  Qualifiziert: {len(all_analyzed)}")
+    print(f"  Top:          {result['meta']['top_count']}")
+    print(f"  Interessant:  {result['meta']['interesting_count']}")
+    print(f"  Gespeichert:  {args.output}\n")
 
-    if all_analyzed:
-        print(f"\n  🏡 TOP LEADS:")
-        for i, lead in enumerate(all_analyzed[:10], 1):
-            score = lead.get("scores", {}).get("overall", "?")
-            verdict = lead.get("verdict", "?")
-            price = lead.get("price_mad")
-            price_str = f"{price:>12,} MAD" if price else "   unbekannt"
-            nb = lead.get("neighborhood", "?")[:20]
-            print(f"  {i:>3}. [{score:>3}] {verdict:<18} | {price_str} | {nb}")
-            print(f"       {lead.get('title', '?')[:65]}")
-
-
-def main():
-    parser = argparse.ArgumentParser(description="Marrakech KI-Analyzer")
-    parser.add_argument("--input", "-i", default="data/latest_raw.json")
-    parser.add_argument("--output", "-o", default="data/latest.json")
-    args = parser.parse_args()
-
-    if not API_KEY:
-        print("❌ ANTHROPIC_API_KEY Umgebungsvariable nicht gesetzt!")
-        print("   Setze sie mit: export ANTHROPIC_API_KEY=sk-ant-...")
-        sys.exit(1)
-
-    analyze(args.input, args.output)
+    for i, l in enumerate(all_analyzed[:10], 1):
+        s = l.get("scores", {}).get("overall", "?")
+        v = l.get("verdict", "?")
+        p = l.get("price_mad")
+        print(f"  {i}. [{s}] {v} | {f'{p:,} MAD' if p else '?'} | {l.get('neighborhood','?')}")
+        print(f"     {l.get('title','?')[:70]}")
 
 
 if __name__ == "__main__":
