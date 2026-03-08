@@ -1,686 +1,17 @@
 {
   "meta": {
-    "scraped_at": "2026-03-08T14:04:59.307412",
-    "total_found": 348,
-    "passed_gates": 82,
-    "rejected": 266,
-    "analyzed_at": "2026-03-08T14:18:04.892340",
-    "analyzed_count": 82,
-    "qualified_count": 8,
+    "scraped_at": "2026-03-08T19:54:23.427173",
+    "total_found": 219,
+    "passed_gates": 90,
+    "rejected": 129,
+    "analyzed_at": "2026-03-08T20:05:05.980176",
+    "analyzed_count": 90,
+    "qualified_count": 0,
     "top_count": 0,
-    "interesting_count": 8
+    "interesting_count": 0
   },
-  "listings": [
-    {
-      "id": "bc9223d6a488",
-      "title": "Le Vizir - Premium Apartments in Marrakech",
-      "source": "Mubawab",
-      "url": "https://www.mubawab.ma/fr/p/4159/le-vizir-appartements-de-standing-%C3%A0-marrakech",
-      "price_mad": 1515000,
-      "price_eur": 140277,
-      "area_sqm": 212,
-      "rooms": null,
-      "bedrooms": null,
-      "bathrooms": 1,
-      "floor": null,
-      "neighborhood": "Route De Casablanca",
-      "property_type": "Apartment",
-      "price_per_sqm_mad": 7146,
-      "has_terrace": false,
-      "has_pool": false,
-      "has_parking": false,
-      "has_elevator": false,
-      "is_new_build": true,
-      "ownership_type": "Unbekannt",
-      "condition": "Neu",
-      "highlights": [
-        "Sehr große 212m² - deutlich über Mindestanforderung",
-        "Neubau mit guter Bauqualität",
-        "Günstiger m²-Preis von 7.146 MAD",
-        "Route de Casablanca - solide Infrastruktur-Lage"
-      ],
-      "concerns": [
-        "Keine wichtigen Ausstattungsmerkmale (Pool, Terrasse, Parkplatz, Aufzug)",
-        "Nur 1 Badezimmer für 212m² erscheint wenig",
-        "Zimmeranzahl unbekannt",
-        "Eigentumsform ungeklärt"
-      ],
-      "neighborhood_outlook": "Route de Casablanca bietet solide Infrastruktur und Entwicklungspotenzial durch die Nähe zur Hauptverkehrsader. Kontinuierliche Verbesserung der Anbindung erwartet.",
-      "investment_potential": 4,
-      "livability_score": 3,
-      "market_price_assessment": "Unter Markt",
-      "scores": {
-        "budget_fit": 100,
-        "location_fit": 70,
-        "size_fit": 100,
-        "amenities_fit": 0,
-        "investment_fit": 85,
-        "info_penalty": -10,
-        "overall": 69
-      },
-      "verdict": "INTERESSANT",
-      "verdict_reason": "Sehr attraktive Kombination aus großer Fläche, Neubau-Status und günstigem m²-Preis. Die fehlenden Ausstattungsmerkmale sind bedenklich, aber bei der Größe könnten nachträgliche Verbesserungen möglich sein.",
-      "besichtigung_fragen": [
-        "Wie viele Zimmer und Schlafzimmer sind tatsächlich vorhanden?",
-        "Warum nur 1 Badezimmer bei 212m²?",
-        "Sind Terrasse oder Balkon geplant/möglich?",
-        "Kann ein Parkplatz erworben werden?",
-        "Welche Eigentumsform liegt vor?"
-      ],
-      "verhandlung_tipps": "Große Fläche ist Trumpf - aber fehlende Standard-Ausstattung als Verhandlungsargument nutzen. Bei Neubau sollten wichtige Features nachgerüstet werden können."
-    },
-    {
-      "id": "",
-      "title": "Duplex de luxe mit Pool Route Casablanca",
-      "source": "Avito",
-      "url": "",
-      "price_mad": 1100000,
-      "price_eur": 110000,
-      "area_sqm": null,
-      "rooms": null,
-      "bedrooms": null,
-      "bathrooms": null,
-      "floor": null,
-      "neighborhood": "Route de Casablanca",
-      "property_type": "Apartment",
-      "price_per_sqm_mad": null,
-      "has_terrace": null,
-      "has_pool": true,
-      "has_parking": null,
-      "has_elevator": null,
-      "is_new_build": null,
-      "ownership_type": "Unbekannt",
-      "condition": "Unbekannt",
-      "highlights": [
-        "Sehr attraktiver Preis",
-        "Pool vorhanden",
-        "Duplex = mehr Platz",
-        "Route Casablanca = gute Lage"
-      ],
-      "concerns": [
-        "Keine Größenangabe",
-        "Unbekannte Zimmeranzahl",
-        "Eigentum und Zustand unklar",
-        "Zu wenig Details für 'Luxus'-Anspruch"
-      ],
-      "neighborhood_outlook": "Route de Casablanca entwickelt sich positiv mit neuen Projekten und guter Anbindung. Solides Wachstumspotenzial für mittelfristige Investition.",
-      "investment_potential": 4,
-      "livability_score": 4,
-      "market_price_assessment": "Unter Markt",
-      "scores": {
-        "budget_fit": 100,
-        "location_fit": 70,
-        "size_fit": 60,
-        "amenities_fit": 25,
-        "investment_fit": 80,
-        "info_penalty": -20,
-        "overall": 63
-      },
-      "verdict": "INTERESSANT",
-      "verdict_reason": "Sehr attraktiver Preis für Duplex mit Pool in guter Lage. Das Preis-Leistungs-Verhältnis könnte excellent sein, aber zu wenig Details für finale Bewertung.",
-      "besichtigung_fragen": [
-        "Wie groß ist das Duplex?",
-        "Wie viele Zimmer total?",
-        "Ist der Pool privat oder gemeinschaftlich?",
-        "Parkplatz vorhanden?",
-        "Entspricht es wirklich Luxus-Standard?"
-      ],
-      "verhandlung_tipps": "Bei guter Größe und Ausstattung sehr fairer Preis. Falls Mängel vorhanden, trotzdem gutes Potenzial für Verhandlungen."
-    },
-    {
-      "id": "",
-      "title": "Appart Salon 4 chambres à Allal El Fassi Nfis 3",
-      "source": "Avito",
-      "url": "",
-      "price_mad": 1200000,
-      "price_eur": 100000,
-      "area_sqm": null,
-      "rooms": 5,
-      "bedrooms": 4,
-      "bathrooms": null,
-      "floor": null,
-      "neighborhood": "Allal El Fassi",
-      "property_type": "Apartment",
-      "price_per_sqm_mad": null,
-      "has_terrace": null,
-      "has_pool": null,
-      "has_parking": null,
-      "has_elevator": null,
-      "is_new_build": null,
-      "ownership_type": "Unbekannt",
-      "condition": "Unbekannt",
-      "highlights": [
-        "Optimal im Budget Sweet Spot",
-        "4 Schlafzimmer übertreffen Anforderung",
-        "Attraktiver Preis für die Größe",
-        "Allal El Fassi hat Entwicklungspotenzial"
-      ],
-      "concerns": [
-        "Keine Wohnflächenangabe verfügbar",
-        "Unbekannte Ausstattung und Eigentumsstatus",
-        "Lage weniger etabliert als Premium-Viertel",
-        "Zustand komplett unklar"
-      ],
-      "neighborhood_outlook": "Allal El Fassi ist ein aufstrebendes Mittelklasse-Viertel mit ordentlicher Infrastruktur und Wachstumspotenzial. Nicht Top-Lage, aber für Eigennutzung durchaus interessant.",
-      "investment_potential": 3,
-      "livability_score": 4,
-      "market_price_assessment": "Unter Markt",
-      "scores": {
-        "budget_fit": 100,
-        "location_fit": 60,
-        "size_fit": 100,
-        "amenities_fit": 0,
-        "investment_fit": 70,
-        "info_penalty": -15,
-        "overall": 63
-      },
-      "verdict": "INTERESSANT",
-      "verdict_reason": "Sehr gutes Preis-Leistungs-Verhältnis mit 4 Schlafzimmern zum Budget-Sweet-Spot. Fehlende Quadratmeter-Angabe ist kritisch, aber grundsätzlich vielversprechend.",
-      "besichtigung_fragen": [
-        "Wie groß ist die Wohnfläche insgesamt?",
-        "Sind Terrasse oder Balkon vorhanden?",
-        "Pool-Zugang oder Parkplatz verfügbar?",
-        "Eigentumsstatus (Titre Foncier)?",
-        "Baujahr und Renovierungsbedarf?"
-      ],
-      "verhandlung_tipps": "Bei 4 Schlafzimmern zu diesem Preis ist Verhandlungsspielraum begrenzt. Fokus auf Ausstattung und Eigentumsstatus legen."
-    },
-    {
-      "id": "",
-      "title": "Appartement 85m² nähe Amoud und McDonald",
-      "source": "Avito",
-      "url": "",
-      "price_mad": 1250000,
-      "price_eur": 125000,
-      "area_sqm": 85,
-      "rooms": null,
-      "bedrooms": null,
-      "bathrooms": null,
-      "floor": null,
-      "neighborhood": "Av Abdelkrim El Khattabi",
-      "property_type": "Apartment",
-      "price_per_sqm_mad": 14706,
-      "has_terrace": null,
-      "has_pool": null,
-      "has_parking": null,
-      "has_elevator": null,
-      "is_new_build": null,
-      "ownership_type": "Unbekannt",
-      "condition": "Unbekannt",
-      "highlights": [
-        "Sehr guter Preis",
-        "85m² - akzeptable Größe",
-        "Gute Lage mit Infrastruktur",
-        "Attraktiver m²-Preis"
-      ],
-      "concerns": [
-        "Unbekannte Zimmeranzahl",
-        "Keine Ausstattungsinformationen",
-        "Eigentumstitel unklar",
-        "Zustand unbekannt"
-      ],
-      "neighborhood_outlook": "Die Gegend um Av Abdelkrim El Khattabi ist gut erschlossen mit solider Infrastruktur. Mittelfristig stabiles Gebiet mit moderatem Wachstumspotenzial.",
-      "investment_potential": 4,
-      "livability_score": 4,
-      "market_price_assessment": "Unter Markt",
-      "scores": {
-        "budget_fit": 100,
-        "location_fit": 75,
-        "size_fit": 80,
-        "amenities_fit": 0,
-        "investment_fit": 75,
-        "info_penalty": -20,
-        "overall": 62
-      },
-      "verdict": "INTERESSANT",
-      "verdict_reason": "Gutes Preis-Leistungs-Verhältnis mit akzeptabler Größe und solider Lage. Der günstige m²-Preis macht es interessant, aber fehlende Detailinfos sind ein Risiko.",
-      "besichtigung_fragen": [
-        "Wie viele Zimmer und Bäder?",
-        "Gibt es Terrasse oder Balkon?",
-        "Welche Ausstattung ist vorhanden?",
-        "Parkplatz dabei?",
-        "Eigentumstitel und Zustand prüfen"
-      ],
-      "verhandlung_tipps": "Bei guter Grundausstattung fairer Preis. Falls Ausstattung fehlt, weitere 5-10% Nachlass möglich."
-    },
-    {
-      "id": "",
-      "title": "Nour Prestige Targa",
-      "source": "Avito",
-      "url": "",
-      "price_mad": 1702800,
-      "price_eur": 141900,
-      "area_sqm": null,
-      "rooms": null,
-      "bedrooms": null,
-      "bathrooms": null,
-      "floor": null,
-      "neighborhood": "Targa",
-      "property_type": "Apartment",
-      "price_per_sqm_mad": null,
-      "has_terrace": null,
-      "has_pool": null,
-      "has_parking": null,
-      "has_elevator": null,
-      "is_new_build": true,
-      "ownership_type": "Unbekannt",
-      "condition": "Unbekannt",
-      "highlights": [
-        "Targa - Top-Lage",
-        "Nour Prestige - Premium-Projekt",
-        "Budget-sweet-spot",
-        "Neubau-Standard erwartet"
-      ],
-      "concerns": [
-        "Keine Größenangabe verfügbar",
-        "Ausstattungsdetails unbekannt",
-        "Prestige-Projekt könnte kleiner ausfallen",
-        "Wenig konkrete Informationen"
-      ],
-      "neighborhood_outlook": "Targa ist eine der begehrtesten neuen Gegenden Marrakeschs mit exzellenter Infrastruktur und starkem Wachstumspotenzial. Premium-Lage mit Zukunft.",
-      "investment_potential": 5,
-      "livability_score": 4,
-      "market_price_assessment": "Nicht beurteilbar",
-      "scores": {
-        "budget_fit": 100,
-        "location_fit": 100,
-        "size_fit": 20,
-        "amenities_fit": 25,
-        "investment_fit": 90,
-        "info_penalty": -25,
-        "overall": 62
-      },
-      "verdict": "INTERESSANT",
-      "verdict_reason": "Targa ist die absolute Top-Lage und der Preis liegt im Budget, aber ohne Größenangabe ist eine fundierte Bewertung schwierig. Könnte ein Volltreffer sein.",
-      "besichtigung_fragen": [
-        "Wie groß ist die Wohnung konkret?",
-        "Wie viele Zimmer/Schlafzimmer?",
-        "Welche Premium-Ausstattung ist enthalten?",
-        "Gibt es Pool, Parkplatz, Aufzug?",
-        "Wann ist die Fertigstellung?"
-      ],
-      "verhandlung_tipps": "Bei Prestige-Projekten in Top-Lage ist Verhandlungsspielraum meist begrenzt. Fokus auf Ausstattung und Zahlungsmodalitäten."
-    },
-    {
-      "id": "",
-      "title": "Große Wohnung 121m² in Najd bei Mabrouka",
-      "source": "Avito",
-      "url": "",
-      "price_mad": 1100000,
-      "price_eur": 91667,
-      "area_sqm": 121,
-      "rooms": null,
-      "bedrooms": null,
-      "bathrooms": null,
-      "floor": null,
-      "neighborhood": "Mabrouka",
-      "property_type": "Apartment",
-      "price_per_sqm_mad": 9091,
-      "has_terrace": null,
-      "has_pool": null,
-      "has_parking": null,
-      "has_elevator": null,
-      "is_new_build": null,
-      "ownership_type": "Unbekannt",
-      "condition": "Unbekannt",
-      "highlights": [
-        "Sehr günstiger Preis",
-        "Große Fläche 121m²",
-        "Ausgezeichnetes Preis-Leistungs-Verhältnis",
-        "Najd/Mabrouka - aufstrebende Gegend"
-      ],
-      "concerns": [
-        "Sehr niedrige Preise könnten Qualitätsmängel bedeuten",
-        "Lage noch nicht voll erschlossen",
-        "Keine Ausstattungsinfos",
-        "Möglicherweise Renovierungsbedarf"
-      ],
-      "neighborhood_outlook": "Najd/Mabrouka ist eine aufstrebende Gegend mit Entwicklungspotenzial. Noch im Aufbau befindlich, aber mit guter Zukunftsperspektive durch neue Infrastrukturprojekte.",
-      "investment_potential": 4,
-      "livability_score": 3,
-      "market_price_assessment": "Unter Markt",
-      "scores": {
-        "budget_fit": 100,
-        "location_fit": 60,
-        "size_fit": 80,
-        "amenities_fit": 0,
-        "investment_fit": 80,
-        "info_penalty": -20,
-        "overall": 60
-      },
-      "verdict": "INTERESSANT",
-      "verdict_reason": "Sehr attraktives Preis-Leistungs-Verhältnis mit großer Fläche in aufstrebender Gegend. Der niedrige Preis muss aber vor Ort überprüft werden - könnte versteckte Mängel bedeuten.",
-      "besichtigung_fragen": [
-        "Warum ist der Preis so niedrig?",
-        "Welcher Renovierungsbedarf besteht?",
-        "Wie ist die genaue Zimmeraufteilung?",
-        "Gibt es Ausstattung wie Terrasse/Parkplatz?",
-        "Wie ist die Bausubstanz?"
-      ],
-      "verhandlung_tipps": "Bei diesem Preis ist der Spielraum begrenzt, aber eventuelle Mängel können als Verhandlungsargument genutzt werden."
-    },
-    {
-      "id": "",
-      "title": "Wohnung zu verkaufen 106m² nahe Majorelle",
-      "source": "Avito",
-      "url": null,
-      "price_mad": 1700000,
-      "price_eur": 170000,
-      "area_sqm": 106,
-      "rooms": null,
-      "bedrooms": null,
-      "bathrooms": null,
-      "floor": null,
-      "neighborhood": "Majorelle",
-      "property_type": "Apartment",
-      "price_per_sqm_mad": 16038,
-      "has_terrace": null,
-      "has_pool": null,
-      "has_parking": null,
-      "has_elevator": null,
-      "is_new_build": null,
-      "ownership_type": "Unbekannt",
-      "condition": "Unbekannt",
-      "highlights": [
-        "Gute Größe mit 106m²",
-        "Attraktive Lage nahe Majorelle",
-        "Vernünftiger m²-Preis",
-        "Budget noch im Rahmen"
-      ],
-      "concerns": [
-        "Keine Zimmeranzahl angegeben",
-        "Unklare Ausstattung",
-        "Majorelle touristisch aber laut",
-        "Eigentum unbestätigt"
-      ],
-      "neighborhood_outlook": "Majorelle ist eine sehr begehrte und etablierte Gegend mit hoher touristischer Attraktivität. Gute Wertstabilität, aber bereits auf hohem Preisniveau mit begrenztem Steigerungspotenzial.",
-      "investment_potential": 4,
-      "livability_score": 4,
-      "market_price_assessment": "Marktgerecht",
-      "scores": {
-        "budget_fit": 100,
-        "location_fit": 80,
-        "size_fit": 60,
-        "amenities_fit": 0,
-        "investment_fit": 70,
-        "info_penalty": -10,
-        "overall": 60
-      },
-      "verdict": "INTERESSANT",
-      "verdict_reason": "Gute Größe und attraktive Lage machen diese Wohnung interessant. Der Preis ist fair für die Gegend, aber fehlende Details zu Zimmeraufteilung und Ausstattung sind problematisch.",
-      "besichtigung_fragen": [
-        "Wie ist die Zimmeraufteilung (3+ Zimmer)?",
-        "Gibt es Terrasse oder Balkon?",
-        "Welche Ausstattung hat das Gebäude?",
-        "Ist Parkplatz vorhanden?",
-        "Titre Foncier verfügbar?"
-      ],
-      "verhandlung_tipps": "M²-Preis ist marktgerecht für Majorelle. Verhandlung um 50-100k MAD möglich, abhängig von Zustand und Ausstattung."
-    },
-    {
-      "id": "",
-      "title": "Nour Confort Targa",
-      "source": "Avito",
-      "url": "",
-      "price_mad": 1427900,
-      "price_eur": 119000,
-      "area_sqm": null,
-      "rooms": null,
-      "bedrooms": null,
-      "bathrooms": null,
-      "floor": null,
-      "neighborhood": "Targa",
-      "property_type": "Apartment",
-      "price_per_sqm_mad": null,
-      "has_terrace": null,
-      "has_pool": null,
-      "has_parking": null,
-      "has_elevator": null,
-      "is_new_build": null,
-      "ownership_type": "Unbekannt",
-      "condition": "Unbekannt",
-      "highlights": [
-        "Targa ist Top-Lage mit hohem Wachstumspotenzial",
-        "Preis im optimalen Budget-Range",
-        "Etabliertes Viertel mit guter Infrastruktur"
-      ],
-      "concerns": [
-        "Keine Informationen zu Größe oder Zimmern",
-        "Unbekannter Eigentumsstatus",
-        "Keine Details zu Ausstattung verfügbar",
-        "Zustand komplett unbekannt"
-      ],
-      "neighborhood_outlook": "Targa ist eine der besten Wachstumslagen Marrakeschs mit exzellenter Infrastruktur und steigenden Immobilienwerten. Das Viertel entwickelt sich zu einem Premium-Wohngebiet mit hoher Nachfrage.",
-      "investment_potential": 4,
-      "livability_score": 3,
-      "market_price_assessment": "Nicht beurteilbar",
-      "scores": {
-        "budget_fit": 100,
-        "location_fit": 100,
-        "size_fit": 40,
-        "amenities_fit": 0,
-        "investment_fit": 80,
-        "info_penalty": -20,
-        "overall": 60
-      },
-      "verdict": "INTERESSANT",
-      "verdict_reason": "Targa ist eine ausgezeichnete Lage und der Preis liegt im Sweet Spot. Jedoch fehlen kritische Informationen zu Größe, Zimmern und Ausstattung, was eine fundierte Bewertung unmöglich macht.",
-      "besichtigung_fragen": [
-        "Wie viele Zimmer und welche Wohnfläche?",
-        "Ist eine Terrasse oder Balkon vorhanden?",
-        "Gibt es Pool-Zugang oder Parkplatz?",
-        "Welcher Eigentumsstatus (Titre Foncier)?",
-        "Baujahr und aktueller Zustand?"
-      ],
-      "verhandlung_tipps": "Bei fehlendem Informationen defensiv verhandeln. Erst nach Besichtigung und Klärung aller Details Preis diskutieren."
-    }
-  ],
+  "listings": [],
   "rejected_log": [
-    {
-      "title": "Appartement à vendre 46 m² à Marrakech",
-      "url": "",
-      "reason": "Preis zu niedrig: 874,000"
-    },
-    {
-      "title": "😍 Appartement à vendre à Targa",
-      "url": "",
-      "reason": "Preis zu niedrig: 440,000"
-    },
-    {
-      "title": "Appart sans vis-à-vis à Allal El Fassi près Marjane",
-      "url": "",
-      "reason": "Preis zu niedrig: 850,000"
-    },
-    {
-      "title": "Appart neuf 72,77,87m Sanaobar près Izdihar Charaf",
-      "url": "",
-      "reason": "Preis zu niedrig: 936,000"
-    },
-    {
-      "title": "DaVinci l’adresse premium à Marrakech \\ promoteur",
-      "url": "",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Appartement à Vendre situé à Najd",
-      "url": "",
-      "reason": "Preis zu niedrig: 750,000"
-    },
-    {
-      "title": "APPARTEMENT MEUBLÉ HAUT STANDING",
-      "url": "",
-      "reason": "Preis zu niedrig: 940,000"
-    },
-    {
-      "title": "LE PAVILLON Gueliz",
-      "url": "",
-      "reason": "Preis zu niedrig: 943,000"
-    },
-    {
-      "title": "Appartement à vendre proche guéliz",
-      "url": "",
-      "reason": "Preis zu niedrig: 530,000"
-    },
-    {
-      "title": "Nouveau Projet Au Centre Avec Piscine",
-      "url": "",
-      "reason": "Preis zu niedrig: 710,000"
-    },
-    {
-      "title": "Appartement 2 façades 120 m² azli",
-      "url": "",
-      "reason": "Preis zu niedrig: 920,000"
-    },
-    {
-      "title": "Les Jardins de Targa - Marrakech",
-      "url": "",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Un Projet Unique Dans Le Quartier Semlalia",
-      "url": "",
-      "reason": "Preis zu niedrig: 720,000"
-    },
-    {
-      "title": "Magnifique appartement à vendre à l'Azhar",
-      "url": "",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Appart 3ch salon 87m2 près Sup de co",
-      "url": "",
-      "reason": "Preis zu niedrig: 920,000"
-    },
-    {
-      "title": "Résidence Massira",
-      "url": "",
-      "reason": "Preis zu niedrig: 840,000"
-    },
-    {
-      "title": "Appartement 112 mètres, 3 façades avec soutien",
-      "url": "",
-      "reason": "Preis zu niedrig: 800,000"
-    },
-    {
-      "title": "2ᵉ Tranche Riad Garden, Appartements de 84 à 116m²",
-      "url": "",
-      "reason": "No-Go: riad"
-    },
-    {
-      "title": "Appartement 3 chambres à vendre 117 m² à Marrakech",
-      "url": "",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Résidence MM3",
-      "url": "",
-      "reason": "Preis zu niedrig: 755,200"
-    },
-    {
-      "title": "Appartement socoma 85 m² quartier pièces",
-      "url": "",
-      "reason": "Preis zu niedrig: 750,000"
-    },
-    {
-      "title": "IZDIHAR SQUARE",
-      "url": "",
-      "reason": "Preis zu niedrig: 476,000"
-    },
-    {
-      "title": "Appartement à vendre 134 m² Tafraoute à Marrakech",
-      "url": "",
-      "reason": "Preis zu hoch: 2,747,000"
-    },
-    {
-      "title": "Studio proche bd Abdelkrim Al Khattabi (Marrakech)",
-      "url": "",
-      "reason": "Preis zu niedrig: 900,000"
-    },
-    {
-      "title": "Appartement de 57 à 122m² à M'hamid Marrakech",
-      "url": "",
-      "reason": "Preis zu niedrig: 505,000"
-    },
-    {
-      "title": "Nouveaux apparts et studios à Izdihar",
-      "url": "",
-      "reason": "Preis zu niedrig: 690,000"
-    },
-    {
-      "title": "Appartement excellent 64 mètres avec soutien financier",
-      "url": "",
-      "reason": "Preis zu niedrig: 520,000"
-    },
-    {
-      "title": "Studio 49m² à Hivernage 2 près de CTM",
-      "url": "",
-      "reason": "Preis zu niedrig: 740,000"
-    },
-    {
-      "title": "Résidence Haut Standing Al IRFANE",
-      "url": "",
-      "reason": "Preis zu niedrig: 840,500"
-    },
-    {
-      "title": "Beau studio à Madame plaza entre Mc Do et Marjane",
-      "url": "",
-      "reason": "Preis zu niedrig: 750,000"
-    },
-    {
-      "title": "Appartement à vendre Azzouzia Marrakech",
-      "url": "",
-      "reason": "Preis zu niedrig: 420,000"
-    },
-    {
-      "title": "Appartement à vendre Azzouzia cession chez une société",
-      "url": "",
-      "reason": "Preis zu niedrig: 280,000"
-    },
-    {
-      "title": "Appartement avec terrasse😍 à vendre à Hay Azdehar",
-      "url": "",
-      "reason": "Preis zu niedrig: 860,000"
-    },
-    {
-      "title": "Appart T3 CTM vers hivernage idéal pour investir",
-      "url": "",
-      "reason": "Preis zu niedrig: 850,000"
-    },
-    {
-      "title": "Appartement avec grand terrasse à Guéliz",
-      "url": "",
-      "reason": "Preis zu hoch: 2,650,000"
-    },
-    {
-      "title": "à vendre appartement Prestigia golf ⛳️",
-      "url": "",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Appartement à vendre 60 m² 1balcon",
-      "url": "",
-      "reason": "Preis zu niedrig: 470,000"
-    },
-    {
-      "title": "RESIDENCE LA SOURCE",
-      "url": "",
-      "reason": "Preis zu niedrig: 857,500"
-    },
-    {
-      "title": "Magnifique Duplex à vendre 100 m² à Marrakech",
-      "url": "",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "2 Pièces Avec Piscine Au Coeur De Marrakech",
-      "url": "",
-      "reason": "Preis zu niedrig: 780,000"
-    },
-    {
-      "title": "Appartements à vendre 137 m² à Marrakech",
-      "url": "",
-      "reason": "Preis zu hoch: 2,400,000"
-    },
     {
       "title": "Appartement à vendre 48m² à Marrakech",
       "url": "",
@@ -692,86 +23,6 @@
       "reason": "Kein Preis"
     },
     {
-      "title": "Appartement neuf 90 m² à Marrakech Résidence Lina",
-      "url": "",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Al Bahja - Marrakech",
-      "url": "",
-      "reason": "Preis zu niedrig: 250,000"
-    },
-    {
-      "title": "Appartements économiques à vendre à Marrakech",
-      "url": "",
-      "reason": "Preis zu niedrig: 400,000"
-    },
-    {
-      "title": "Appartements modernes à vendre à Marrakech",
-      "url": "",
-      "reason": "Preis zu niedrig: 740,000"
-    },
-    {
-      "title": "Magnifique Studio Meublé À La Route De Casablanca",
-      "url": "",
-      "reason": "Preis zu niedrig: 750,000"
-    },
-    {
-      "title": "Appartement à vendre Hivernage marrakech",
-      "url": "",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Joli Appartement 1er Etage Mhamid 7",
-      "url": "",
-      "reason": "Preis zu niedrig: 410,000"
-    },
-    {
-      "title": "Très Beau Studio Rez de chaussé Maniss Allal Fassi",
-      "url": "",
-      "reason": "Preis zu niedrig: 460,000"
-    },
-    {
-      "title": "Appartement studio Neuf Semlalia Gueliz Marrakech",
-      "url": "",
-      "reason": "Preis zu niedrig: 900,000"
-    },
-    {
-      "title": "Appartement à vendre 39 m² à Marrakech",
-      "url": "",
-      "reason": "Preis zu niedrig: 698,500"
-    },
-    {
-      "title": "AL MAMOUN",
-      "url": "",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Appartement à vendre 140 m² à la marina casablanca",
-      "url": "",
-      "reason": "Preis zu hoch: 3,900,000"
-    },
-    {
-      "title": "Appartement à vendre – Bassatine Targa, Marrakech",
-      "url": "",
-      "reason": "Preis zu niedrig: 470,000"
-    },
-    {
-      "title": "Studio à vendre",
-      "url": "",
-      "reason": "Preis zu niedrig: 750,000"
-    },
-    {
-      "title": "Appart à vendre prestigia meublé",
-      "url": "",
-      "reason": "Preis zu hoch: 2,540,000"
-    },
-    {
-      "title": "DYOUR AL MASJID",
-      "url": "",
-      "reason": "Preis zu niedrig: 400,000"
-    },
-    {
       "title": "Appartement à vendre 65 m² à Marrakech",
       "url": "",
       "reason": "Preis zu niedrig: 700,000"
@@ -780,6 +31,11 @@
       "title": "Duplex à vendre dans résidence sécurisée",
       "url": "",
       "reason": "Preis zu niedrig: 790,000"
+    },
+    {
+      "title": "Résidence Haut Standing Al IRFANE",
+      "url": "",
+      "reason": "Preis zu niedrig: 849,000"
     },
     {
       "title": "HERMÈS 25 – 2 Chambres, Piscine & Salle Sport",
@@ -795,11 +51,6 @@
       "title": "Appartement De Luxe à Prestigia",
       "url": "",
       "reason": "Preis zu hoch: 2,500,000"
-    },
-    {
-      "title": "RESIDENCE LARIOS II",
-      "url": "",
-      "reason": "Preis zu niedrig: 770,000"
     },
     {
       "title": "Studio à vendre avec piscine",
@@ -832,14 +83,19 @@
       "reason": "Preis zu niedrig: 580,000"
     },
     {
-      "title": "TARGA PLACE RESIDENCY ",
+      "title": "Résidence MM3",
       "url": "",
-      "reason": "Kein Preis"
+      "reason": "Preis zu niedrig: 798,000"
     },
     {
       "title": "Appartement meublé à vendre",
       "url": "",
       "reason": "Preis zu niedrig: 530,000"
+    },
+    {
+      "title": "2ᵉ Tranche Riad Garden, Appartements de 84 à 116m²",
+      "url": "",
+      "reason": "No-Go: riad"
     },
     {
       "title": "Appartement à vendre à Saada près Marjane",
@@ -852,24 +108,34 @@
       "reason": "Preis zu niedrig: 680,000"
     },
     {
+      "title": "Appart à JNANE AWARAD A COTÉ MACDO ROUTE DE CASA",
+      "url": "",
+      "reason": "Preis zu niedrig: 700,000"
+    },
+    {
+      "title": "Appartement à vendre 73 m² à Marrakech",
+      "url": "",
+      "reason": "Kein Preis"
+    },
+    {
+      "title": "Appartement de 57 à 122m² à M'hamid Marrakech",
+      "url": "",
+      "reason": "Preis zu niedrig: 505,000"
+    },
+    {
+      "title": "Appartement à vendre Azzouzia Marrakech",
+      "url": "",
+      "reason": "Preis zu niedrig: 420,000"
+    },
+    {
       "title": "Appartement A vendre abwab-guillez",
       "url": "",
       "reason": "Preis zu niedrig: 690,000"
     },
     {
-      "title": "Hadaïq Al Yassamine Tranche 2",
+      "title": "Appartement à vendre 60 m² à Marrakech",
       "url": "",
-      "reason": "Preis zu niedrig: 690,000"
-    },
-    {
-      "title": "ATHENA 25 – Investissement Haut Standing",
-      "url": "",
-      "reason": "Preis zu niedrig: 780,000"
-    },
-    {
-      "title": "Studio 51m² près café Malizia et Marjane",
-      "url": "",
-      "reason": "Preis zu niedrig: 600,000"
+      "reason": "Kein Preis"
     },
     {
       "title": "Appartements Haut Standing – Piscines & Parking",
@@ -877,9 +143,19 @@
       "reason": "Preis zu niedrig: 778,000"
     },
     {
-      "title": "Appartement à vendre à Madame Plaza",
+      "title": "Studio 51m² près café Malizia et Marjane",
       "url": "",
-      "reason": "Preis zu niedrig: 980,000"
+      "reason": "Preis zu niedrig: 600,000"
+    },
+    {
+      "title": "ATHENA 25 – Investissement Haut Standing",
+      "url": "",
+      "reason": "Preis zu niedrig: 780,000"
+    },
+    {
+      "title": "Appartement à vendre",
+      "url": "",
+      "reason": "Preis zu niedrig: 940,000"
     },
     {
       "title": "Appartement à vendre 45 m² à Marrakech",
@@ -887,19 +163,19 @@
       "reason": "Preis zu niedrig: 880,000"
     },
     {
+      "title": "RESIDENCE LARIOS II",
+      "url": "",
+      "reason": "Preis zu niedrig: 770,000"
+    },
+    {
       "title": "Appartement à vendre à Marrakech",
       "url": "",
       "reason": "Preis zu niedrig: 810,000"
     },
     {
-      "title": "Appartement à vendre Saada",
+      "title": "AL MAMOUN",
       "url": "",
-      "reason": "Preis zu niedrig: 420,000"
-    },
-    {
-      "title": "Dream Land",
-      "url": "",
-      "reason": "Preis zu niedrig: 455,000"
+      "reason": "Kein Preis"
     },
     {
       "title": "Appartement",
@@ -907,24 +183,24 @@
       "reason": "Preis zu niedrig: 850,000"
     },
     {
-      "title": "Duplex à vendre à Mohammedia Marrakech 4 chambres et salon",
-      "url": "",
-      "reason": "Preis zu niedrig: 710,000"
-    },
-    {
-      "title": "Étoile D'or Marrakech",
-      "url": "",
-      "reason": "Preis zu niedrig: 864,000"
-    },
-    {
-      "title": "appartement à vendre à Hay Charaf",
-      "url": "",
-      "reason": "Preis zu niedrig: 940,000"
-    },
-    {
       "title": "Appartement meublé à vendre proche geuliz",
       "url": "",
       "reason": "Preis zu niedrig: 530,000"
+    },
+    {
+      "title": "Magnifique Duplex à vendre 100 m² à Marrakech",
+      "url": "",
+      "reason": "Kein Preis"
+    },
+    {
+      "title": "Appart 114m2 de 3 ch salon à Rouidate",
+      "url": "",
+      "reason": "Preis zu niedrig: 970,000"
+    },
+    {
+      "title": "IZDIHAR SQUARE",
+      "url": "",
+      "reason": "Preis zu niedrig: 476,000"
     },
     {
       "title": "Appart 76m2 près Mc Do et Marjane allal fassi",
@@ -932,9 +208,19 @@
       "reason": "Preis zu niedrig: 980,000"
     },
     {
-      "title": "Appart 114m2 de 3 ch salon à Rouidate",
+      "title": "Al Bahja - Marrakech",
       "url": "",
-      "reason": "Preis zu niedrig: 970,000"
+      "reason": "Preis zu niedrig: 370,000"
+    },
+    {
+      "title": "Studio proche bd Abdelkrim Al Khattabi (Marrakech)",
+      "url": "",
+      "reason": "Preis zu niedrig: 900,000"
+    },
+    {
+      "title": "Appartement à vendre 108 m² à Marrakech",
+      "url": "",
+      "reason": "Preis zu hoch: 2,500,000"
     },
     {
       "title": "🏠 Appartement à vendre dans le quartier de Charef – Marrakec",
@@ -947,14 +233,14 @@
       "reason": "Preis zu niedrig: 750,000"
     },
     {
-      "title": "Les jardins d’Azzouzia",
-      "url": "",
-      "reason": "Preis zu niedrig: 350,000"
-    },
-    {
       "title": "Appartement meublé à vendre 2ème étage Mabrouka",
       "url": "",
       "reason": "Preis zu niedrig: 440,000"
+    },
+    {
+      "title": "LE PAVILLON Gueliz",
+      "url": "",
+      "reason": "Preis zu niedrig: 943,000"
     },
     {
       "title": "Appart lux 188m2 de 3ch 3sb à Gueliz",
@@ -972,19 +258,44 @@
       "reason": "Preis zu niedrig: 600,000"
     },
     {
+      "title": "Appartement à vendre 46 m² à Marrakech",
+      "url": "",
+      "reason": "Preis zu niedrig: 874,000"
+    },
+    {
       "title": "Appartement neuf- Résidence premium, piscines, spa",
       "url": "",
       "reason": "Preis zu hoch: 2,370,000"
     },
     {
-      "title": "Appartement à Vendre situé à Ain Mezzouar",
+      "title": "😍 Appartement à vendre à Targa",
       "url": "",
-      "reason": "Preis zu niedrig: 540,000"
+      "reason": "Preis zu niedrig: 440,000"
     },
     {
-      "title": "Résidence AL BARAKA",
+      "title": "Appart sans vis-à-vis à Allal El Fassi près Marjane",
       "url": "",
-      "reason": "Preis zu niedrig: 250,000"
+      "reason": "Preis zu niedrig: 850,000"
+    },
+    {
+      "title": "Appart neuf 72,77,87m Sanaobar près Izdihar Charaf",
+      "url": "",
+      "reason": "Preis zu niedrig: 936,000"
+    },
+    {
+      "title": "DaVinci l’adresse premium à Marrakech \\ promoteur",
+      "url": "",
+      "reason": "Kein Preis"
+    },
+    {
+      "title": "Appartement à Vendre situé à Najd",
+      "url": "",
+      "reason": "Preis zu niedrig: 750,000"
+    },
+    {
+      "title": "APPARTEMENT MEUBLÉ HAUT STANDING",
+      "url": "",
+      "reason": "Preis zu niedrig: 940,000"
     },
     {
       "title": "Appartement à vendre 86 m² à Marrakech",
@@ -992,59 +303,179 @@
       "reason": "Kein Preis"
     },
     {
-      "title": "Appartement à Vendre 2 chambres à jenan awrad",
+      "title": "Appartement à vendre proche guéliz",
       "url": "",
-      "reason": "Preis zu niedrig: 750,000"
+      "reason": "Preis zu niedrig: 530,000"
     },
     {
-      "title": "Appartement à Vendre meublé à coté de Marjan",
+      "title": "Appartement 2 façades 120 m² azli",
       "url": "",
-      "reason": "Preis zu niedrig: 600,000"
+      "reason": "Preis zu niedrig: 920,000"
     },
     {
-      "title": "Appartement à vendre à socoma",
+      "title": "Nouveau Projet Au Centre Avec Piscine",
       "url": "",
-      "reason": "Preis zu niedrig: 460,000"
+      "reason": "Preis zu niedrig: 710,000"
     },
     {
-      "title": "Appartement à Izdihar",
+      "title": "Étoile D'or Marrakech",
       "url": "",
-      "reason": "Preis zu niedrig: 650,000"
+      "reason": "Preis zu niedrig: 864,000"
     },
     {
-      "title": "Vend appartement à Guéliz. Surface de 47 m²",
-      "url": "https://www.mubawab.ma/fr/pa/8059937/vend-appartement-%C3%A0-gu%C3%A9liz-surface-de-47-m%C2%B2",
+      "title": "Un Projet Unique Dans Le Quartier Semlalia",
+      "url": "",
+      "reason": "Preis zu niedrig: 720,000"
+    },
+    {
+      "title": "Magnifique appartement à vendre à l'Azhar",
+      "url": "",
       "reason": "Kein Preis"
     },
     {
-      "title": "Vente d'un bel appartement à Guéliz",
-      "url": "https://www.mubawab.ma/fr/pa/8257822/vente-d-un-bel-appartement-%C3%A0-gu%C3%A9liz",
-      "reason": "Kein Preis"
+      "title": "Appart 3ch salon 87m2 près Sup de co",
+      "url": "",
+      "reason": "Preis zu niedrig: 920,000"
     },
     {
-      "title": "Appartement en vente à Guéliz. Superficie 77 m²",
-      "url": "https://www.mubawab.ma/fr/pa/8058858/appartement-en-vente-%C3%A0-gu%C3%A9liz-superficie-77-m%C2%B2",
-      "reason": "Kein Preis"
+      "title": "Chwiter Jdid",
+      "url": "",
+      "reason": "Preis zu niedrig: 140,000"
+    },
+    {
+      "title": "Appartement 112 mètres, 3 façades avec soutien",
+      "url": "",
+      "reason": "Preis zu niedrig: 800,000"
+    },
+    {
+      "title": "Riad Garden",
+      "url": "",
+      "reason": "No-Go: riad"
+    },
+    {
+      "title": "Résidence Massira",
+      "url": "",
+      "reason": "Preis zu niedrig: 840,000"
+    },
+    {
+      "title": "Penthouse Prestige avec Piscine et Spa Privés",
+      "url": "https://www.mubawab.ma/fr/a/7581427/penthouse-prestige-avec-piscine-et-spa-priv%C3%A9s",
+      "reason": "Preis zu hoch: 6,690,000"
+    },
+    {
+      "title": "Appartement de 52m² en vente Dyour Al Masjid",
+      "url": "https://www.mubawab.ma/fr/pa/7115908/appartement-de-52m%C2%B2-en-vente-dyour-al-masjid",
+      "reason": "Preis zu niedrig: 400,000"
     },
     {
       "title": "Appartement 3 chambres avec piscine et parking à vendre à Ma",
       "url": "https://www.mubawab.ma/fr/a/8299589/appartement-3-chambres-avec-piscine-et-parking-%C3%A0-vendre-%C3%A0-marrakech-%E2%80%93-proche-jamaa-el-fna",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Appartement Neuf 84 m² à Guéliz",
-      "url": "https://www.mubawab.ma/fr/a/8129379/appartement-neuf-84-m%C2%B2-%C3%A0-gu%C3%A9liz",
-      "reason": "Kein Preis"
+      "reason": "Preis zu hoch: 3,600,000"
     },
     {
       "title": "Superbe Appartement meublé vue piscine à Noria",
       "url": "https://www.mubawab.ma/fr/a/8300994/superbe-appartement-meubl%C3%A9-vue-piscine-%C3%A0-noria",
-      "reason": "Kein Preis"
+      "reason": "Preis zu niedrig: 250,000"
+    },
+    {
+      "title": "Magnifique studio T2",
+      "url": "https://www.mubawab.ma/fr/pa/8022550/magnifique-studio-t2",
+      "reason": "Preis zu niedrig: 807,500"
+    },
+    {
+      "title": "Vente d'un bel appartement à Guéliz",
+      "url": "https://www.mubawab.ma/fr/pa/7915631/vente-d-un-bel-appartement-%C3%A0-gu%C3%A9liz",
+      "reason": "Zu wenig Zimmer: 2Zi/1Bed"
+    },
+    {
+      "title": "Bel appartement à vendre à Guéliz. Surface de 47 m²",
+      "url": "https://www.mubawab.ma/fr/pa/8059938/bel-appartement-%C3%A0-vendre-%C3%A0-gu%C3%A9liz-surface-de-47-m%C2%B2",
+      "reason": "Zu wenig Zimmer: 2Zi/1Bed"
+    },
+    {
+      "title": "Appartement 1 chambre à vendre à Route Amizmiz piscine colle",
+      "url": "https://www.mubawab.ma/fr/a/8136891/appartement-1-chambre-%C3%A0-vendre-%C3%A0-route-amizmiz-piscine-collective",
+      "reason": "Zu wenig Zimmer: 2Zi/1Bed"
+    },
+    {
+      "title": "Superbe duplex de prestige en résidence fermée",
+      "url": "https://www.mubawab.ma/fr/a/8252220/superbe-duplex-de-prestige-en-r%C3%A9sidence-ferm%C3%A9e",
+      "reason": "Preis zu hoch: 3,750,000"
+    },
+    {
+      "title": "Magnifique appartement à vendre \nGueliz",
+      "url": "https://www.mubawab.ma/fr/a/8310900/magnifique-appartement-%C3%A0-vendre-gueliz",
+      "reason": "Preis zu hoch: 3,250,000"
+    },
+    {
+      "title": "Appartement rénové à vendre au Riad Ourika",
+      "url": "https://www.mubawab.ma/fr/a/8176305/appartement-r%C3%A9nov%C3%A9-%C3%A0-vendre-au-riad-ourika",
+      "reason": "Preis zu niedrig: 650,000"
+    },
+    {
+      "title": "Studios neufs modernes à vendre \nIdéal pour Invest locatif",
+      "url": "https://www.mubawab.ma/fr/a/8231190/studios-neufs-modernes-%C3%A0-vendre-id%C3%A9al-pour-invest-locatif",
+      "reason": "Preis zu niedrig: 590,000"
+    },
+    {
+      "title": "Luxe App proche Carré Eden",
+      "url": "https://www.mubawab.ma/fr/a/8011328/luxe-app-proche-carr%C3%A9-eden",
+      "reason": "Zu wenig Zimmer: 2Zi/1Bed"
+    },
+    {
+      "title": "Studio ou bureau a renover",
+      "url": "https://www.mubawab.ma/fr/a/8293101/studio-ou-bureau-a-renover",
+      "reason": "Preis zu niedrig: 680,000"
+    },
+    {
+      "title": "4 studio en 1",
+      "url": "https://www.mubawab.ma/fr/a/8303682/4-studio-en-1",
+      "reason": "Preis zu hoch: 4,500,000"
+    },
+    {
+      "title": "Appartement Plein Soleil \n ***-****** Dhs",
+      "url": "https://www.mubawab.ma/fr/a/8035194/appartement-plein-soleil-2-800-000-dhs",
+      "reason": "Preis zu hoch: 2,800,000"
+    },
+    {
+      "title": "Appartement avec vue spectaculaire",
+      "url": "https://www.mubawab.ma/fr/a/8314112/appartement-avec-vue-spectaculaire",
+      "reason": "Preis zu hoch: 2,700,000"
+    },
+    {
+      "title": "Gueliz Appartement Terrasse",
+      "url": "https://www.mubawab.ma/fr/a/8306860/gueliz-appartement-terrasse",
+      "reason": "Zu wenig Zimmer: 2Zi/1Bed"
+    },
+    {
+      "title": "Appartements neufs Miraya Residence",
+      "url": "https://www.mubawab.ma/fr/a/8303226/appartements-neufs-miraya-residence",
+      "reason": "Preis zu niedrig: 698,500"
+    },
+    {
+      "title": "Lot 4 studios avec jardins privés clé en main",
+      "url": "https://www.mubawab.ma/fr/a/8298407/lot-4-studios-avec-jardins-priv%C3%A9s-cl%C3%A9-en-main",
+      "reason": "Preis zu hoch: 4,900,000"
+    },
+    {
+      "title": "Appartement de 64m ² en vente Dyour Al Masjid",
+      "url": "https://www.mubawab.ma/fr/pa/7127717/appartement-de-64m-%C2%B2-en-vente-dyour-al-masjid",
+      "reason": "Preis zu niedrig: 430,000"
+    },
+    {
+      "title": "Vente d'un bel appartement à Guéliz. 1 belle chambre",
+      "url": "https://www.mubawab.ma/fr/pa/8058859/vente-d-un-bel-appartement-%C3%A0-gu%C3%A9liz-1-belle-chambre",
+      "reason": "Preis zu niedrig: 972,000"
     },
     {
       "title": "Appartement à vendre",
-      "url": "https://www.mubawab.ma/fr/a/8298865/appartement-%C3%A0-vendre",
-      "reason": "Kein Preis"
+      "url": "https://www.mubawab.ma/fr/a/8298802/appartement-%C3%A0-vendre",
+      "reason": "Zu wenig Zimmer: 1Zi/1Bed"
+    },
+    {
+      "title": "Appartement Neuf de 154 m² à Guéliz",
+      "url": "https://www.mubawab.ma/fr/a/8117095/appartement-neuf-de-154-m%C2%B2-%C3%A0-gu%C3%A9liz",
+      "reason": "Preis zu hoch: 2,610,000"
     },
     {
       "title": "Ouidane Marrakech – Pavillons R+1",
@@ -1052,759 +483,179 @@
       "reason": "Preis zu niedrig: 890,000"
     },
     {
-      "title": "Appt 2 chambres neuf cœur de Guéliz plaza",
-      "url": "https://www.mubawab.ma/fr/a/8312588/appt-2-chambres-neuf-c%C5%93ur-de-gu%C3%A9liz-plaza",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Superbe appartement à vendre à Hay Targa. Surface totale 66.",
-      "url": "https://www.mubawab.ma/fr/pa/8276950/superbe-appartement-%C3%A0-vendre-%C3%A0-hay-targa-surface-totale-66-m%C2%B2",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Vente d'un bel appartement à Guéliz",
-      "url": "https://www.mubawab.ma/fr/pa/7915631/vente-d-un-bel-appartement-%C3%A0-gu%C3%A9liz",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Studio à vendre à Guéliz Surface totale 38 m²",
-      "url": "https://www.mubawab.ma/fr/pa/8249306/studio-%C3%A0-vendre-%C3%A0-gu%C3%A9liz-surface-totale-38-m%C2%B2",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Bel appartement à vendre à Guéliz. Surface de 47 m²",
-      "url": "https://www.mubawab.ma/fr/pa/8059938/bel-appartement-%C3%A0-vendre-%C3%A0-gu%C3%A9liz-surface-de-47-m%C2%B2",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Bel appartement à vendre à Route Casablanca. 1 belle chambre",
-      "url": "https://www.mubawab.ma/fr/pa/8242540/bel-appartement-%C3%A0-vendre-%C3%A0-route-casablanca-1-belle-chambre",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Superbe duplex de prestige en résidence fermée",
-      "url": "https://www.mubawab.ma/fr/a/8252220/superbe-duplex-de-prestige-en-r%C3%A9sidence-ferm%C3%A9e",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Magnifique appartement à vendre \nGueliz",
-      "url": "https://www.mubawab.ma/fr/a/8310900/magnifique-appartement-%C3%A0-vendre-gueliz",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Appartement rénové à vendre au Riad Ourika",
-      "url": "https://www.mubawab.ma/fr/a/8176305/appartement-r%C3%A9nov%C3%A9-%C3%A0-vendre-au-riad-ourika",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Studios neufs modernes à vendre \nIdéal pour Invest locatif",
-      "url": "https://www.mubawab.ma/fr/a/8231190/studios-neufs-modernes-%C3%A0-vendre-id%C3%A9al-pour-invest-locatif",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Luxe App proche Carré Eden",
-      "url": "https://www.mubawab.ma/fr/a/8011328/luxe-app-proche-carr%C3%A9-eden",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Prix très compétitif",
-      "url": "https://www.mubawab.ma/fr/a/8313593/prix-tr%C3%A8s-comp%C3%A9titif",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Studio ou bureau a renover",
-      "url": "https://www.mubawab.ma/fr/a/8293101/studio-ou-bureau-a-renover",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "4 studio en 1",
-      "url": "https://www.mubawab.ma/fr/a/8303682/4-studio-en-1",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Très bon affaire à nous pas rater sur Marrakech",
-      "url": "https://www.mubawab.ma/fr/a/8161763/tr%C3%A8s-bon-affaire-%C3%A0-nous-pas-rater-sur-marrakech",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Nouveau Projet avec piscine à Marrakech",
-      "url": "https://www.mubawab.ma/fr/a/8213884/nouveau-projet-avec-piscine-%C3%A0-marrakech",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Gueliz Appartement Terrasse",
-      "url": "https://www.mubawab.ma/fr/a/8306860/gueliz-appartement-terrasse",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Appartement à vendre à Victor Hugo 4 pièces. Ascenseur et pa",
-      "url": "https://www.mubawab.ma/fr/a/8306713/appartement-%C3%A0-vendre-%C3%A0-victor-hugo-4-pi%C3%A8ces-ascenseur-et-parking",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Appartements neufs Miraya Residence",
-      "url": "https://www.mubawab.ma/fr/a/8303226/appartements-neufs-miraya-residence",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Lot 4 studios avec jardins privés clé en main",
-      "url": "https://www.mubawab.ma/fr/a/8298407/lot-4-studios-avec-jardins-priv%C3%A9s-cl%C3%A9-en-main",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "A Vendre Appartement Duplex Centre Ville Gueliz",
-      "url": "https://www.mubawab.ma/fr/a/8275899/a-vendre-appartement-duplex-centre-ville-gueliz",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Appartement meublé, grande terrasse à Gueliz",
-      "url": "https://www.mubawab.ma/fr/a/8207025/appartement-meubl%C3%A9-grande-terrasse-%C3%A0-gueliz",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Studio et duplex à L'hivernage avec piscine",
-      "url": "https://www.mubawab.ma/fr/a/8203192/studio-et-duplex-%C3%A0-l-hivernage-avec-piscine",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Appartement de 58 m² en vente",
-      "url": "https://www.mubawab.ma/fr/pa/8181699/appartement-de-58-m%C2%B2-en-vente",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Appartement à Vendre 2 chambres situé à Najd",
-      "url": "https://www.mubawab.ma/fr/a/8295705/appartement-%C3%A0-vendre-2-chambres-situ%C3%A9-%C3%A0-najd",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Appartement à l'achat à Guéliz. Surface totale 77 m²",
-      "url": "https://www.mubawab.ma/fr/pa/8059954/appartement-%C3%A0-l-achat-%C3%A0-gu%C3%A9liz-surface-totale-77-m%C2%B2",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Superbe appartement à vendre à Guéliz",
-      "url": "https://www.mubawab.ma/fr/pa/8257823/superbe-appartement-%C3%A0-vendre-%C3%A0-gu%C3%A9liz",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Vente d'un bel appartement à Guéliz. 1 belle chambre",
-      "url": "https://www.mubawab.ma/fr/pa/8058859/vente-d-un-bel-appartement-%C3%A0-gu%C3%A9liz-1-belle-chambre",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Appartement à vendre",
-      "url": "https://www.mubawab.ma/fr/a/8298802/appartement-%C3%A0-vendre",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Jolie appartement à vendre",
-      "url": "https://www.mubawab.ma/fr/a/8294761/jolie-appartement-%C3%A0-vendre",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Appartement Neuf de 154 m² à Guéliz",
-      "url": "https://www.mubawab.ma/fr/a/8117095/appartement-neuf-de-154-m%C2%B2-%C3%A0-gu%C3%A9liz",
-      "reason": "Kein Preis"
-    },
-    {
       "title": "Vend appartement à Agdal. Surface totale 115 m². Environneme",
       "url": "https://www.mubawab.ma/fr/a/7677271/vend-appartement-%C3%A0-agdal-surface-totale-115-m%C2%B2-environnement-calme-avec-vue-sur-la-montagne-porte-blind%C3%A9e",
-      "reason": "Kein Preis"
+      "reason": "Preis zu hoch: 3,100,000"
     },
     {
-      "title": "Appartement à vendre – Hay Charaf – Marrakech – RDC",
-      "url": "https://www.mubawab.ma/fr/a/8250297/appartement-%C3%A0-vendre-%E2%80%93-hay-charaf-%E2%80%93-marrakech-%E2%80%93-rdc",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Vente d'un bel appartement à Hay Targa 2 chambres agréables",
-      "url": "https://www.mubawab.ma/fr/pa/8276951/vente-d-un-bel-appartement-%C3%A0-hay-targa-2-chambres-agr%C3%A9ables",
-      "reason": "Kein Preis"
+      "title": "Un Studio duplex au charme unique",
+      "url": "https://www.mubawab.ma/fr/pa/8138782/un-studio-duplex-au-charme-unique",
+      "reason": "Preis zu niedrig: 764,000"
     },
     {
       "title": "Superbe appartement à vendre à Guéliz. Surface de 65 m²",
       "url": "https://www.mubawab.ma/fr/pa/7915633/superbe-appartement-%C3%A0-vendre-%C3%A0-gu%C3%A9liz-surface-de-65-m%C2%B2",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Studio en vente à Guéliz. Superficie 43 m²",
-      "url": "https://www.mubawab.ma/fr/pa/8249307/studio-en-vente-%C3%A0-gu%C3%A9liz-superficie-43-m%C2%B2",
-      "reason": "Kein Preis"
+      "reason": "Zu wenig Zimmer: 2Zi/1Bed"
     },
     {
       "title": "Vend appartement à Guéliz. Superficie 51 m²",
       "url": "https://www.mubawab.ma/fr/pa/8059953/vend-appartement-%C3%A0-gu%C3%A9liz-superficie-51-m%C2%B2",
-      "reason": "Kein Preis"
+      "reason": "Preis zu niedrig: 943,500"
     },
     {
-      "title": "Vente d'un bel appartement à Route Casablanca. Superficie 42",
-      "url": "https://www.mubawab.ma/fr/pa/8242542/vente-d-un-bel-appartement-%C3%A0-route-casablanca-superficie-42-m%C2%B2",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Appartements neufs à vendre, Guéliz",
-      "url": "https://www.mubawab.ma/fr/a/8116140/appartements-neufs-%C3%A0-vendre-gu%C3%A9liz",
-      "reason": "Kein Preis"
+      "title": "Nouveau Projet avec piscine à Marrakech",
+      "url": "https://www.mubawab.ma/fr/a/8213884/nouveau-projet-avec-piscine-%C3%A0-marrakech",
+      "reason": "Preis zu niedrig: 624,000"
     },
     {
       "title": "Élégant F2 meublé vue Atlas à Noria",
       "url": "https://www.mubawab.ma/fr/a/8072808/%C3%A9l%C3%A9gant-f2-meubl%C3%A9-vue-atlas-%C3%A0-noria",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Appartement 2 chambres jnan awrade 75m2",
-      "url": "https://www.mubawab.ma/fr/a/8284437/appartement-2-chambres-jnan-awrade-75m2",
-      "reason": "Kein Preis"
+      "reason": "Zu wenig Zimmer: 2Zi/1Bed"
     },
     {
       "title": "Superbe studio F2 meublé en plein centre",
       "url": "https://www.mubawab.ma/fr/a/8223786/superbe-studio-f2-meubl%C3%A9-en-plein-centre",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Belle Appartement a Jnane Awerade Meublée",
-      "url": "https://www.mubawab.ma/fr/a/8313773/belle-appartement-a-jnane-awerade-meubl%C3%A9e",
-      "reason": "Kein Preis"
+      "reason": "Zu wenig Zimmer: 2Zi/1Bed"
     },
     {
       "title": "Appartement à vendre",
       "url": "https://www.mubawab.ma/fr/a/8271984/appartement-%C3%A0-vendre",
-      "reason": "Kein Preis"
+      "reason": "Preis zu hoch: 3,100,000"
     },
     {
       "title": "Duplex à vendre sur l'Hivernage",
       "url": "https://www.mubawab.ma/fr/a/8074802/duplex-%C3%A0-vendre-sur-l-hivernage",
-      "reason": "Kein Preis"
+      "reason": "Preis zu hoch: 9,000,000"
     },
     {
       "title": "Appartement à l'achat à Samlalia. \n2 grandes pièces. \nParkin",
       "url": "https://www.mubawab.ma/fr/a/8308119/appartement-%C3%A0-l-achat-%C3%A0-samlalia-2-grandes-pi%C3%A8ces-parking-et-ascenseur",
-      "reason": "Kein Preis"
+      "reason": "Preis zu niedrig: 865,000"
     },
     {
-      "title": "Magnifique studio à vendre au Menara garden 1",
-      "url": "https://www.mubawab.ma/fr/a/8277544/magnifique-studio-%C3%A0-vendre-au-menara-garden-1",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Bel appartement à Prestigia",
-      "url": "https://www.mubawab.ma/fr/a/8242899/bel-appartement-%C3%A0-prestigia",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Appartement en vente à Majorelle. Surface de 57 m²",
-      "url": "https://www.mubawab.ma/fr/pa/8268253/appartement-en-vente-%C3%A0-majorelle-surface-de-57-m%C2%B2",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Appartement studio à vendre",
-      "url": "https://www.mubawab.ma/fr/a/8314047/appartement-studio-%C3%A0-vendre",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Immeuble R3 quartier Dar El Bacha",
-      "url": "https://www.mubawab.ma/fr/a/8314037/immeuble-r3-quartier-dar-el-bacha",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Appartement à vendre à Hay Mabrouka",
-      "url": "https://www.mubawab.ma/fr/a/8221063/appartement-%C3%A0-vendre-%C3%A0-hay-mabrouka",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Appartement à vendre agdal",
-      "url": "https://www.mubawab.ma/fr/a/8314038/appartement-%C3%A0-vendre-agdal",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Penthouse Parc 1 Vue Montagnes à Vendre – Guéliz",
-      "url": "https://www.mubawab.ma/fr/a/8306711/penthouse-parc-1-vue-montagnes-%C3%A0-vendre-%E2%80%93-gu%C3%A9liz",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Appartement jardin – Route de Casa,\nMarrakech",
-      "url": "https://www.mubawab.ma/fr/a/8249004/appartement-jardin-%E2%80%93-route-de-casa-marrakech",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Duplex Rez de Jardin Vue Parc 2 à Vendre – Guéliz",
-      "url": "https://www.mubawab.ma/fr/a/8306708/duplex-rez-de-jardin-vue-parc-2-%C3%A0-vendre-%E2%80%93-gu%C3%A9liz",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Palais Riad Luxe 1600m2 \nMédina Marrakech",
-      "url": "https://www.mubawab.ma/fr/a/8306185/palais-riad-luxe-1600m2-m%C3%A9dina-marrakech",
-      "reason": "Preis zu hoch: 5,000,000"
-    },
-    {
-      "title": "Duplex à l'achat à Guéliz. Surface 44 m² au RDC et 30 à la M",
-      "url": "https://www.mubawab.ma/fr/pa/8059956/duplex-%C3%A0-l-achat-%C3%A0-gu%C3%A9liz-surface-44-m%C2%B2-au-rdc-et-30-%C3%A0-la-mez",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Superbe appartement à vendre à Guéliz",
-      "url": "https://www.mubawab.ma/fr/pa/8257824/superbe-appartement-%C3%A0-vendre-%C3%A0-gu%C3%A9liz",
+      "title": "Studio et duplex à L'hivernage avec piscine",
+      "url": "https://www.mubawab.ma/fr/a/8203192/studio-et-duplex-%C3%A0-l-hivernage-avec-piscine",
       "reason": "Zu wenig Zimmer: 2Zi/1Bed"
     },
     {
-      "title": "Appartement à vendre à Guéliz. Superficie 83 m²",
-      "url": "https://www.mubawab.ma/fr/pa/8058860/appartement-%C3%A0-vendre-%C3%A0-gu%C3%A9liz-superficie-83-m%C2%B2",
+      "title": "Magnifique Studio en vente à route de Casablanca",
+      "url": "https://www.mubawab.ma/fr/pa/8181697/magnifique-studio-en-vente-%C3%A0-route-de-casablanca",
+      "reason": "Preis zu niedrig: 645,000"
+    },
+    {
+      "title": "Charmant appartement 1 chambre à vendre Marrakech",
+      "url": "https://www.mubawab.ma/fr/pa/8158286/charmant-appartement-1-chambre-%C3%A0-vendre-marrakech",
+      "reason": "Preis zu niedrig: 818,100"
+    },
+    {
+      "title": "Appartement de 72m² en vente Dyour Al Masjid",
+      "url": "https://www.mubawab.ma/fr/pa/7461637/appartement-de-72m%C2%B2-en-vente-dyour-al-masjid",
+      "reason": "Preis zu niedrig: 460,000"
+    },
+    {
+      "title": "Vend appartement à Ain mezouar gueliz. 1 chambre",
+      "url": "https://www.mubawab.ma/fr/pa/8154983/vend-appartement-%C3%A0-ain-mezouar-gueliz-1-chambre",
+      "reason": "Preis zu niedrig: 828,000"
+    },
+    {
+      "title": "Studio à l'achat à Majorelle. 1 chambre",
+      "url": "https://www.mubawab.ma/fr/pa/8275944/studio-%C3%A0-l-achat-%C3%A0-majorelle-1-chambre",
+      "reason": "Preis zu niedrig: 760,000"
+    },
+    {
+      "title": "Appartement à vendre à Route Amizmiz \njubea argan golf Marra",
+      "url": "https://www.mubawab.ma/fr/a/8304888/appartement-%C3%A0-vendre-%C3%A0-route-amizmiz-jubea-argan-golf-marrakech",
       "reason": "Kein Preis"
     },
     {
-      "title": "Appartement sur golf à vendre \nAgdal",
-      "url": "https://www.mubawab.ma/fr/a/8304090/appartement-sur-golf-%C3%A0-vendre-agdal",
-      "reason": "Kein Preis"
+      "title": "Bel appartement à vendre à Route Casablanca. Superficie 134.",
+      "url": "https://www.mubawab.ma/fr/pa/8293051/bel-appartement-%C3%A0-vendre-%C3%A0-route-casablanca-superficie-134-m%C2%B2",
+      "reason": "Preis zu hoch: 2,680,000"
     },
     {
-      "title": "Super appartement à vendre – Plein Guéliz",
-      "url": "https://www.mubawab.ma/fr/a/8308053/super-appartement-%C3%A0-vendre-%E2%80%93-plein-gu%C3%A9liz",
-      "reason": "Kein Preis"
+      "title": "Superbe appartement à vendre à Izdihar 2 chambres",
+      "url": "https://www.mubawab.ma/fr/pa/8181698/superbe-appartement-%C3%A0-vendre-%C3%A0-izdihar-2-chambres",
+      "reason": "Preis zu niedrig: 798,000"
     },
     {
-      "title": "Appartement à vendre",
-      "url": "https://www.mubawab.ma/fr/a/8294569/appartement-%C3%A0-vendre",
-      "reason": "Kein Preis"
+      "title": "Appartement à vendre – Hay Charaf – Marrakech – RDC",
+      "url": "https://www.mubawab.ma/fr/a/8250297/appartement-%C3%A0-vendre-%E2%80%93-hay-charaf-%E2%80%93-marrakech-%E2%80%93-rdc",
+      "reason": "Erdgeschoss"
     },
     {
-      "title": "Appartement à vendre",
-      "url": "https://www.mubawab.ma/fr/a/8238336/appartement-%C3%A0-vendre",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Appartement à vendre à Guéliz. 1 chambre. Double vitrage et.",
-      "url": "https://www.mubawab.ma/fr/a/8312656/appartement-%C3%A0-vendre-%C3%A0-gu%C3%A9liz-1-chambre-double-vitrage-et-porte-blind%C3%A9e",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Appartement à vendre à Hay Targa 3 chambres agréables",
-      "url": "https://www.mubawab.ma/fr/pa/8276952/appartement-%C3%A0-vendre-%C3%A0-hay-targa-3-chambres-agr%C3%A9ables",
-      "reason": "Kein Preis"
+      "title": "Studio élégant au coeur de la ville",
+      "url": "https://www.mubawab.ma/fr/pa/8138791/studio-%C3%A9l%C3%A9gant-au-coeur-de-la-ville",
+      "reason": "Preis zu niedrig: 793,000"
     },
     {
       "title": "Vente d'un bel appartement à Guéliz. 1 chambre",
       "url": "https://www.mubawab.ma/fr/pa/7915634/vente-d-un-bel-appartement-%C3%A0-gu%C3%A9liz-1-chambre",
-      "reason": "Kein Preis"
+      "reason": "Zu wenig Zimmer: 2Zi/1Bed"
     },
     {
       "title": "Bel appartement à vendre à Guéliz. 2 belles chambres",
       "url": "https://www.mubawab.ma/fr/pa/8059955/bel-appartement-%C3%A0-vendre-%C3%A0-gu%C3%A9liz-2-belles-chambres",
-      "reason": "Kein Preis"
+      "reason": "Erdgeschoss"
     },
     {
-      "title": "Appartement à vendre à Route Casablanca. 1 belle chambre",
-      "url": "https://www.mubawab.ma/fr/pa/8242624/appartement-%C3%A0-vendre-%C3%A0-route-casablanca-1-belle-chambre",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Appartement à l'achat à Guéliz. 2 chambres",
-      "url": "https://www.mubawab.ma/fr/pa/8058857/appartement-%C3%A0-l-achat-%C3%A0-gu%C3%A9liz-2-chambres",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Bel appartement à vendre 3 chambres",
-      "url": "https://www.mubawab.ma/fr/a/8286946/bel-appartement-%C3%A0-vendre-3-chambres",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Bel appartement à vendre 2 chambres piscine",
-      "url": "https://www.mubawab.ma/fr/a/8301828/bel-appartement-%C3%A0-vendre-2-chambres-piscine",
-      "reason": "Kein Preis"
+      "title": "Magnifique studio à vendre au Menara garden 1",
+      "url": "https://www.mubawab.ma/fr/a/8277544/magnifique-studio-%C3%A0-vendre-au-menara-garden-1",
+      "reason": "Zu wenig Zimmer: 2Zi/1Bed"
     },
     {
       "title": "À VENDRE – Studio Neuf avec Vue Piscine – Semlaliya, Marrake",
       "url": "https://www.mubawab.ma/fr/a/8312222/%C3%A0-vendre-%E2%80%93-studio-neuf-avec-vue-piscine-%E2%80%93-semlaliya-marrakech",
-      "reason": "Kein Preis"
+      "reason": "Zu wenig Zimmer: 2Zi/1Bed"
     },
     {
       "title": "À VENDRE – Appartement Neuf Haut Standing Avenue Mohammed V.",
       "url": "https://www.mubawab.ma/fr/a/8275783/%C3%A0-vendre-%E2%80%93-appartement-neuf-haut-standing-avenue-mohammed-v-%E2%80%93-gu%C3%A9liz-sans-vis-%C3%A0-vis",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Appartement à vendre – Targa, Résidence Les Palmiers de Targ",
-      "url": "https://www.mubawab.ma/fr/a/8257480/appartement-%C3%A0-vendre-%E2%80%93-targa-r%C3%A9sidence-les-palmiers-de-targa",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Appartement meublé moderne à vendre – Prestigia",
-      "url": "https://www.mubawab.ma/fr/a/8279470/appartement-meubl%C3%A9-moderne-%C3%A0-vendre-%E2%80%93-prestigia",
-      "reason": "Kein Preis"
+      "reason": "Preis zu hoch: 3,016,000"
     },
     {
       "title": "Appartement moderne à vendre – Hivernage (centre)",
       "url": "https://www.mubawab.ma/fr/a/8273469/appartement-moderne-%C3%A0-vendre-%E2%80%93-hivernage-centre-",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Appartement en vente à Agdal. 2 belles chambres. Meublé",
-      "url": "https://www.mubawab.ma/fr/a/8291418/appartement-en-vente-%C3%A0-agdal-2-belles-chambres-meubl%C3%A9",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Bel appartement à vendre à Guéliz. \n1 belle chambre. \nMeublé",
-      "url": "https://www.mubawab.ma/fr/a/8313132/bel-appartement-%C3%A0-vendre-%C3%A0-gu%C3%A9liz-1-belle-chambre-meubl%C3%A9",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Vend appartement à Route Casablanca. \n3 chambres agréables",
-      "url": "https://www.mubawab.ma/fr/a/8313537/vend-appartement-%C3%A0-route-casablanca-3-chambres-agr%C3%A9ables",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Luxury apartment for sale in jardin Harti Marrakec",
-      "url": "https://www.mubawab.ma/fr/a/8306649/luxury-apartment-for-sale-in-jardin-harti-marrakec",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Très bon affaire à nous pas rater sur Marrakech",
-      "url": "https://www.mubawab.ma/fr/a/8254174/tr%C3%A8s-bon-affaire-%C3%A0-nous-pas-rater-sur-marrakech",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Vend appartement à Majorelle. Superficie 86 m²",
-      "url": "https://www.mubawab.ma/fr/pa/8268251/vend-appartement-%C3%A0-majorelle-superficie-86-m%C2%B2",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Appartement à l'achat à Amerchich. 2 belles chambres",
-      "url": "https://www.mubawab.ma/fr/pa/8153581/appartement-%C3%A0-l-achat-%C3%A0-amerchich-2-belles-chambres",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Amelkis: Villa à vendre, 5 Ch, Piscine chauffée",
-      "url": "https://www.mubawab.ma/fr/a/8302773/amelkis-villa-%C3%A0-vendre-5-ch-piscine-chauff%C3%A9e",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Amelkis 1: Villa neuve à vendre en 5 Chs, Piscine",
-      "url": "https://www.mubawab.ma/fr/a/8220823/amelkis-1-villa-neuve-%C3%A0-vendre-en-5-chs-piscine",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Superbe Duplex à vendre à Majorelle",
-      "url": "https://www.mubawab.ma/fr/pa/8275943/superbe-duplex-%C3%A0-vendre-%C3%A0-majorelle",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Appartement de 72m² en vente Dyour Al Masjid",
-      "url": "https://www.mubawab.ma/fr/pa/7115909/appartement-de-72m%C2%B2-en-vente-dyour-al-masjid",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Spacieux appartement 3 chambres 110m²",
-      "url": "https://www.mubawab.ma/fr/pa/8158285/spacieux-appartement-3-chambres-110m%C2%B2",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Duplex en vente GUELIZ Surface de 72 m² RDC et 35 MEZ",
-      "url": "https://www.mubawab.ma/fr/pa/8059959/duplex-en-vente-gueliz-surface-de-72-m%C2%B2-rdc-et-35-mez",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Appartement à l'achat à Guéliz",
-      "url": "https://www.mubawab.ma/fr/pa/8257828/appartement-%C3%A0-l-achat-%C3%A0-gu%C3%A9liz",
-      "reason": "Preis zu niedrig: 962,000"
-    },
-    {
-      "title": "Offre exceptionnelle à Gueliz, Marrakech",
-      "url": "https://www.mubawab.ma/fr/pa/8058862/offre-exceptionnelle-%C3%A0-gueliz-marrakech",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Appartement en vente el Massira 1",
-      "url": "https://www.mubawab.ma/fr/a/8226809/appartement-en-vente-el-massira-1",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Vend appartement à Hivernage. 3 chambres agréables. Bien meu",
-      "url": "https://www.mubawab.ma/fr/a/8258889/vend-appartement-%C3%A0-hivernage-3-chambres-agr%C3%A9ables-bien-meubl%C3%A9",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Vend appartement à Gueliz. Surface totale 57 m². Terrasse et",
-      "url": "https://www.mubawab.ma/fr/a/8310876/vend-appartement-%C3%A0-gueliz-surface-totale-57-m%C2%B2-terrasse-et-ascenseur",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Appartement à vendre",
-      "url": "https://www.mubawab.ma/fr/a/8306893/appartement-%C3%A0-vendre",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Superbe studio a vendre a marrakech",
-      "url": "https://www.mubawab.ma/fr/a/8256820/superbe-studio-a-vendre-a-marrakech",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Bel appartement à vendre à Hay Targa 2 chambres agréables",
-      "url": "https://www.mubawab.ma/fr/pa/8276953/bel-appartement-%C3%A0-vendre-%C3%A0-hay-targa-2-chambres-agr%C3%A9ables",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Appartement à vendre à Guéliz. 1 chambre",
-      "url": "https://www.mubawab.ma/fr/pa/7915638/appartement-%C3%A0-vendre-%C3%A0-gu%C3%A9liz-1-chambre",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Vente d'un bel appartement à Guéliz. Superficie 83 m²",
-      "url": "https://www.mubawab.ma/fr/pa/8059957/vente-d-un-bel-appartement-%C3%A0-gu%C3%A9liz-superficie-83-m%C2%B2",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Appartement en vente à Route Casablanca. Surface totale 46 m",
-      "url": "https://www.mubawab.ma/fr/pa/8242626/appartement-en-vente-%C3%A0-route-casablanca-surface-totale-46-m%C2%B2",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Vend appartement à Guéliz. 2 belles chambres",
-      "url": "https://www.mubawab.ma/fr/pa/8058861/vend-appartement-%C3%A0-gu%C3%A9liz-2-belles-chambres",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Bel appartement jamais habité",
-      "url": "https://www.mubawab.ma/fr/a/8313539/bel-appartement-jamais-habit%C3%A9",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Bel studio à vendre à Hivernage.\nSurface de 69 m².\nMeublé",
-      "url": "https://www.mubawab.ma/fr/a/8310901/bel-studio-%C3%A0-vendre-%C3%A0-hivernage-surface-de-69-m%C2%B2-meubl%C3%A9",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Appartement Neuf 83 m² à Guéliz avec Salle de Sport",
-      "url": "https://www.mubawab.ma/fr/a/8129785/appartement-neuf-83-m%C2%B2-%C3%A0-gu%C3%A9liz-avec-salle-de-sport",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Appartement Neuf 83 m² à Guéliz avec Salle de Sport",
-      "url": "https://www.mubawab.ma/fr/a/8115280/appartement-neuf-83-m%C2%B2-%C3%A0-gu%C3%A9liz-avec-salle-de-sport",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Magnifique appartement meublé en rez de jardin – Exposition.",
-      "url": "https://www.mubawab.ma/fr/a/8313415/magnifique-appartement-meubl%C3%A9-en-rez-de-jardin-%E2%80%93-exposition-plein-sud-%E2%80%93-vue-piscine",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Vend appartement à Agdal. \nSurface totale 88 m². \nBien meubl",
-      "url": "https://www.mubawab.ma/fr/a/8310295/vend-appartement-%C3%A0-agdal-surface-totale-88-m%C2%B2-bien-meubl%C3%A9",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Joli appartement à vendre meublé à Noria",
-      "url": "https://www.mubawab.ma/fr/a/8308905/joli-appartement-%C3%A0-vendre-meubl%C3%A9-%C3%A0-noria",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Un nouveau projet au cœur de quartier Géulize à Marrakech",
-      "url": "https://www.mubawab.ma/fr/a/8306707/un-nouveau-projet-au-c%C5%93ur-de-quartier-g%C3%A9ulize-%C3%A0-marrakech",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Un nouveau projet au cœur de quartier Géulize \na Marrakech",
-      "url": "https://www.mubawab.ma/fr/a/8306927/un-nouveau-projet-au-c%C5%93ur-de-quartier-g%C3%A9ulize-a-marrakech",
-      "reason": "Kein Preis"
+      "reason": "Preis zu hoch: 2,600,000"
     },
     {
-      "title": "Des appartements neufs a Bouaakaz Chrifia \nSUP de 67 m² a 87",
-      "url": "https://www.mubawab.ma/fr/a/8154030/des-appartements-neufs-a-bouaakaz-chrifia-sup-de-67-m%C2%B2-a-87-m%C2%B2",
+      "title": "Vente appartement 1 chambre argan golf Marrakech piscine",
+      "url": "https://www.mubawab.ma/fr/a/8304878/vente-appartement-1-chambre-argan-golf-marrakech-piscine",
       "reason": "Kein Preis"
     },
     {
-      "title": "Jolie studio à vendre",
-      "url": "https://www.mubawab.ma/fr/a/8312906/jolie-studio-%C3%A0-vendre",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Appartement de 52m² en vente Dyour Al Masjid",
-      "url": "https://www.mubawab.ma/fr/pa/7115907/appartement-de-52m%C2%B2-en-vente-dyour-al-masjid",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Vente d'un bel appartement à Bouaakkaz. Surface totale 80 m²",
-      "url": "https://www.mubawab.ma/fr/pa/8227902/vente-d-un-bel-appartement-%C3%A0-bouaakkaz-surface-totale-80-m%C2%B2",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Appartement à vendre à Majorelle. Surface totale 61 m²",
-      "url": "https://www.mubawab.ma/fr/pa/8268261/appartement-%C3%A0-vendre-%C3%A0-majorelle-surface-totale-61-m%C2%B2",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Investissement sûr: T2 moderne au nouveau Guéliz",
-      "url": "https://www.mubawab.ma/fr/pa/8158292/investissement-s%C3%BBr-t2-moderne-au-nouveau-gu%C3%A9liz",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Bel appartement à vendre à Agdal.\nSurface de 107 m².\nPlaces.",
-      "url": "https://www.mubawab.ma/fr/a/8280305/bel-appartement-%C3%A0-vendre-%C3%A0-agdal-surface-de-107-m%C2%B2-places-de-parking-et-terrasse",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Appartement de 72m² en vente Dyour Al Masjid",
-      "url": "https://www.mubawab.ma/fr/pa/7461643/appartement-de-72m%C2%B2-en-vente-dyour-al-masjid",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Vente d'un bel appartement à Route Casablanca. 1 chambre",
-      "url": "https://www.mubawab.ma/fr/pa/8242537/vente-d-un-bel-appartement-%C3%A0-route-casablanca-1-chambre",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Appartement en vente à Majorelle. Surface totale 53 m²",
-      "url": "https://www.mubawab.ma/fr/pa/8268256/appartement-en-vente-%C3%A0-majorelle-surface-totale-53-m%C2%B2",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Appartement en vente à Guéliz 1 belle chambre",
-      "url": "https://www.mubawab.ma/fr/pa/8059961/appartement-en-vente-%C3%A0-gu%C3%A9liz-1-belle-chambre",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Vend appartement à Guéliz",
-      "url": "https://www.mubawab.ma/fr/pa/8058865/vend-appartement-%C3%A0-gu%C3%A9liz",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Affaire à saisir: Appartement 1 chambre à Guéliz",
-      "url": "https://www.mubawab.ma/fr/pa/7921912/affaire-%C3%A0-saisir-appartement-1-chambre-%C3%A0-gu%C3%A9liz",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Studio à vendre à Guéliz. Surface de 32 m²",
-      "url": "https://www.mubawab.ma/fr/pa/8244691/studio-%C3%A0-vendre-%C3%A0-gu%C3%A9liz-surface-de-32-m%C2%B2",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Nouveaux appartements à vendre au centre de Guéliz bureau de",
-      "url": "https://www.mubawab.ma/fr/a/7741111/nouveaux-appartements-%C3%A0-vendre-au-centre-de-gu%C3%A9liz-bureau-de-vente",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Appartement d'Exception à l'Hivernage \nVue Atlas",
-      "url": "https://www.mubawab.ma/fr/a/8304485/appartement-d-exception-%C3%A0-l-hivernage-vue-atlas",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Appartement d'Exception à l'Hivernage \nVue Atlas",
-      "url": "https://www.mubawab.ma/fr/a/8304436/appartement-d-exception-%C3%A0-l-hivernage-vue-atlas",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Magnifique appartement vue piscine à Targa",
-      "url": "https://www.mubawab.ma/fr/pa/8276954/magnifique-appartement-vue-piscine-%C3%A0-targa",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Superbe appartement à vendre à Guéliz. Superficie 64 m²",
-      "url": "https://www.mubawab.ma/fr/pa/7915641/superbe-appartement-%C3%A0-vendre-%C3%A0-gu%C3%A9liz-superficie-64-m%C2%B2",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Superbe appartement à vendre à Gueliz 83 m²",
-      "url": "https://www.mubawab.ma/fr/pa/8059958/superbe-appartement-%C3%A0-vendre-%C3%A0-gueliz-83-m%C2%B2",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Vente d'un bel appartement à Route Casablanca. Surface de 75",
-      "url": "https://www.mubawab.ma/fr/pa/8242631/vente-d-un-bel-appartement-%C3%A0-route-casablanca-surface-de-75-m%C2%B2",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Vente d'un bel appartement à Guéliz. 2 chambres agréables",
-      "url": "https://www.mubawab.ma/fr/pa/8058863/vente-d-un-bel-appartement-%C3%A0-gu%C3%A9liz-2-chambres-agr%C3%A9ables",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Magnifique Appartement à Vendre à Camp El Ghoul",
-      "url": "https://www.mubawab.ma/fr/a/8310107/magnifique-appartement-%C3%A0-vendre-%C3%A0-camp-el-ghoul",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Appartement à vendre – Madame Plaza, Marrakech",
-      "url": "https://www.mubawab.ma/fr/a/8311422/appartement-%C3%A0-vendre-%E2%80%93-madame-plaza-marrakech",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Appartement 3 chambres avec vaste terrasse VE21031",
-      "url": "https://www.mubawab.ma/fr/a/8255096/appartement-3-chambres-avec-vaste-terrasse-ve21031",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Appartement à vendre",
-      "url": "https://www.mubawab.ma/fr/a/8307214/appartement-%C3%A0-vendre",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Appartement 3 ch à rénover Guéliz",
-      "url": "https://www.mubawab.ma/fr/a/8268043/appartement-3-ch-%C3%A0-r%C3%A9nover-gu%C3%A9liz",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Appartement moderne à vendre à l’hivernage",
-      "url": "https://www.mubawab.ma/fr/a/8284860/appartement-moderne-%C3%A0-vendre-%C3%A0-l%E2%80%99hivernage",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Appartement à vendre",
-      "url": "https://www.mubawab.ma/fr/a/8298086/appartement-%C3%A0-vendre",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Appartement à vendre",
-      "url": "https://www.mubawab.ma/fr/a/8132610/appartement-%C3%A0-vendre",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Appartement à vendre",
-      "url": "https://www.mubawab.ma/fr/a/8257866/appartement-%C3%A0-vendre",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Superbe appartement à vendre. 3 belles chambres",
-      "url": "https://www.mubawab.ma/fr/pa/8156340/superbe-appartement-%C3%A0-vendre-3-belles-chambres",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Bel studios de 45 m² à vendre au Nouveau Guéliz",
-      "url": "https://www.mubawab.ma/fr/pa/8158298/bel-studios-de-45-m%C2%B2-%C3%A0-vendre-au-nouveau-gu%C3%A9liz",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Bel appartement à vendre à Ain mezouar Gueliz. Superficie 82",
-      "url": "https://www.mubawab.ma/fr/pa/8154986/bel-appartement-%C3%A0-vendre-%C3%A0-ain-mezouar-gueliz-superficie-82-m%C2%B2",
-      "reason": "Kein Preis"
+      "title": "Bel appartement à vendre à Guéliz. 2 pièces. Meublé",
+      "url": "https://www.mubawab.ma/fr/a/8256292/bel-appartement-%C3%A0-vendre-%C3%A0-gu%C3%A9liz-2-pi%C3%A8ces-meubl%C3%A9",
+      "reason": "Zu wenig Zimmer: 2Zi/1Bed"
     },
     {
-      "title": "Appartement à Vendre 2 chambres à Ain Mezzouar",
-      "url": "https://www.mubawab.ma/fr/a/8299533/appartement-%C3%A0-vendre-2-chambres-%C3%A0-ain-mezzouar",
-      "reason": "Kein Preis"
+      "title": "Appartement à vendre à Guéliz. Superficie 51 m²",
+      "url": "https://www.mubawab.ma/fr/pa/8034203/appartement-%C3%A0-vendre-%C3%A0-gu%C3%A9liz-superficie-51-m%C2%B2",
+      "reason": "Zu wenig Zimmer: 2Zi/1Bed"
     },
     {
-      "title": "Un coup de coeur ou rien",
-      "url": "https://www.mubawab.ma/fr/a/8164976/un-coup-de-coeur-ou-rien",
-      "reason": "Kein Preis"
+      "title": "Affaire appartement tout neuf",
+      "url": "https://www.mubawab.ma/fr/a/8314135/affaire-appartement-tout-neuf",
+      "reason": "Preis zu niedrig: 400,000"
     },
     {
-      "title": "Bel appartement à vendre avec un toit",
-      "url": "https://www.mubawab.ma/fr/a/8313960/bel-appartement-%C3%A0-vendre-avec-un-toit",
-      "reason": "Kein Preis"
+      "title": "Idéal pied à terre ou location Votre futur T2 à Guéliz",
+      "url": "https://www.mubawab.ma/fr/pa/8158288/id%C3%A9al-pied-%C3%A0-terre-ou-location-votre-futur-t2-%C3%A0-gu%C3%A9liz",
+      "reason": "Preis zu niedrig: 850,000"
     },
     {
-      "title": "Studio a vendre",
-      "url": "https://www.mubawab.ma/fr/a/8286762/studio-a-vendre",
-      "reason": "Kein Preis"
+      "title": "Appartement de 67m² en vente Dyour Al Masjid",
+      "url": "https://www.mubawab.ma/fr/pa/7461645/appartement-de-67m%C2%B2-en-vente-dyour-al-masjid",
+      "reason": "Preis zu niedrig: 430,000"
     },
     {
-      "title": "Opportunité rare: T2 fonctionnel au nouveau Guéliz",
-      "url": "https://www.mubawab.ma/fr/pa/8158289/opportunit%C3%A9-rare-t2-fonctionnel-au-nouveau-gu%C3%A9liz",
-      "reason": "Kein Preis"
+      "title": "Duplex moderne de 60 m² Charme & Fonctionnalité",
+      "url": "https://www.mubawab.ma/fr/pa/8158282/duplex-moderne-de-60-m%C2%B2-charme-fonctionnalit%C3%A9",
+      "reason": "Zu wenig Zimmer: 2Zi/1Bed"
     },
     {
-      "title": "Superbe appartement à vendre 2 chambres 105 m2",
-      "url": "https://www.mubawab.ma/fr/pa/8007393/superbe-appartement-%C3%A0-vendre-2-chambres-105-m2",
-      "reason": "Kein Preis"
+      "title": "Studios neufs avec piscine ROOFTOP à Guéliz",
+      "url": "https://www.mubawab.ma/fr/pa/8239967/studios-neufs-avec-piscine-rooftop-%C3%A0-gu%C3%A9liz",
+      "reason": "Preis zu niedrig: 844,000"
     }
   ]
 }
