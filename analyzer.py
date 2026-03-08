@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 """
-MARRAKECH KI-ANALYZER v2
-Robuster: Mehr Retries, groessere Chunks, besseres Error-Handling.
-Bewahrt URLs und Kontaktdaten aus Scraper-Daten.
+MARRAKECH KI-ANALYZER v3
+Bewahrt URLs und Kontaktdaten zuverlaessig.
 """
 
 import json, os, sys, time, argparse
@@ -38,16 +37,14 @@ LAGE(25%): 100=Targa/Agdal, 90=Palmeraie/Ourika, 80=Izdihar/Massira/M'Hamid, 70=
 GROESSE(15%): 100=>=3Zi+>=100m2, 80=>=3Zi+>=80m2, 60=3Zi+60-80m2, 40=kleiner
 AUSSTATTUNG(20%): je 25 fuer Terrasse, Pool, Parkplatz, Aufzug/Neubau
 INVESTMENT(15%): m2-Preis, Entwicklung, Neubau, Qualitaet
-ABZUEGE: Eigentum "Unbekannt" -10, Zustand "Unbekannt" -5, wenig Infos -10
+ABZUEGE: Eigentum Unbekannt -10, Zustand Unbekannt -5, wenig Infos -10
 
-Wenn ein Inserat wenig Details hat, schaetze konservativ basierend auf Preis und Lage. Gib trotzdem eine Bewertung ab.
+Wenn ein Inserat wenig Details hat, schaetze konservativ. Gib trotzdem eine Bewertung ab.
 
-WICHTIG: Behalte die "id", "url", "source", "contact_phone" und "contact_name" Felder EXAKT wie im Input bei. Aendere diese Werte NICHT.
+WICHTIG: Kopiere id, url, source, contact_phone und contact_name EXAKT aus dem Input. Aendere diese NICHT.
 
 Antworte NUR mit JSON-Array (keine Backticks, kein Markdown):
-[{"id":"gleiche-id-wie-input","title":"Titel Deutsch","source":"Portal-wie-input","url":"URL-wie-input","contact_phone":"wie-input","contact_name":"wie-input","price_mad":Zahl,"price_eur":Zahl,"area_sqm":Zahl,"rooms":Zahl,"bedrooms":Zahl,"bathrooms":Zahl,"floor":"Etage","neighborhood":"Viertel","property_type":"Typ","price_per_sqm_mad":Zahl,"has_terrace":bool,"has_pool":bool,"has_parking":bool,"has_elevator":bool,"is_new_build":bool,"ownership_type":"String","condition":"String","highlights":["max 4"],"concerns":["max 4"],"neighborhood_outlook":"2 Saetze","investment_potential":1-5,"livability_score":1-5,"market_price_assessment":"Unter Markt/Marktgerecht/Ueber Markt/Nicht beurteilbar","scores":{"budget_fit":0-100,"location_fit":0-100,"size_fit":0-100,"amenities_fit":0-100,"investment_fit":0-100,"info_penalty":0,"overall":0-100},"verdict":"TOP-KANDIDAT/INTERESSANT/BEDINGT GEEIGNET/NICHT GEEIGNET","verdict_reason":"2-3 Saetze","besichtigung_fragen":["5 Fragen"],"verhandlung_tipps":"1-2 Saetze"}]
-
-Sei STRENG aber FAIR. Wenig Infos = konservativ bewerten, aber nicht automatisch 0."""
+[{"id":"EXAKT-WIE-INPUT","title":"Titel Deutsch","source":"EXAKT-WIE-INPUT","url":"EXAKT-WIE-INPUT","contact_phone":"EXAKT-WIE-INPUT","contact_name":"EXAKT-WIE-INPUT","price_mad":Zahl,"price_eur":Zahl,"area_sqm":Zahl,"rooms":Zahl,"bedrooms":Zahl,"bathrooms":Zahl,"floor":"Etage","neighborhood":"Viertel","property_type":"Typ","price_per_sqm_mad":Zahl,"has_terrace":bool,"has_pool":bool,"has_parking":bool,"has_elevator":bool,"is_new_build":bool,"ownership_type":"String","condition":"String","highlights":["max 4"],"concerns":["max 4"],"neighborhood_outlook":"2 Saetze","investment_potential":1-5,"livability_score":1-5,"market_price_assessment":"Unter Markt/Marktgerecht/Ueber Markt/Nicht beurteilbar","scores":{"budget_fit":0-100,"location_fit":0-100,"size_fit":0-100,"amenities_fit":0-100,"investment_fit":0-100,"info_penalty":0,"overall":0-100},"verdict":"TOP-KANDIDAT/INTERESSANT/BEDINGT GEEIGNET/NICHT GEEIGNET","verdict_reason":"2-3 Saetze","besichtigung_fragen":["5 Fragen"],"verhandlung_tipps":"1-2 Saetze"}]"""
 
 
 def call_claude(listings_chunk, chunk_num, total_chunks):
@@ -89,7 +86,7 @@ def call_claude(listings_chunk, chunk_num, total_chunks):
                     continue
                 parsed = json.loads(clean)
                 result = parsed if isinstance(parsed, list) else [parsed]
-                print(f"    OK: {len(result)} Inserate analysiert")
+                print(f"    OK: {len(result)} analysiert")
                 return result
 
             elif resp.status_code == 429:
@@ -114,6 +111,23 @@ def call_claude(listings_chunk, chunk_num, total_chunks):
     return []
 
 
+def restore_scraper_data(analyzed_list, raw_listings):
+    """Stellt sicher dass URLs und Kontaktdaten IMMER aus den Scraper-Daten kommen."""
+    raw_by_id = {l.get("id"): l for l in raw_listings if l.get("id")}
+
+    for a in analyzed_list:
+        raw = raw_by_id.get(a.get("id"))
+        if raw:
+            # URL IMMER aus Scraper-Daten nehmen (KI vergisst sie oft)
+            a["url"] = raw.get("url") or a.get("url", "")
+            a["contact_phone"] = raw.get("contact_phone") or a.get("contact_phone", "")
+            a["contact_name"] = raw.get("contact_name") or a.get("contact_name", "")
+            a["source"] = raw.get("source") or a.get("source", "")
+            # Auch Bilder uebernehmen falls vorhanden
+            if raw.get("images") and not a.get("images"):
+                a["images"] = raw["images"]
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--input", "-i", default="data/latest_raw.json")
@@ -125,7 +139,7 @@ def main():
         sys.exit(1)
 
     print(f"\n{'='*55}")
-    print(f"  KI-ANALYZER v2")
+    print(f"  KI-ANALYZER v3")
     print(f"{'='*55}")
 
     with open(args.input) as f:
@@ -158,20 +172,13 @@ def main():
             all_analyzed.extend(qualified)
             print(f"    {len(qualified)} qualifiziert (>={MIN_SCORE})")
         else:
-            print(f"    Keine Ergebnisse fuer diesen Chunk")
+            print(f"    Keine Ergebnisse")
 
         if i + CHUNK_SIZE < len(listings):
             time.sleep(3)
 
-    # URLs und Kontaktdaten aus Scraper-Daten zurueckfuehren
-    raw_by_id = {l.get("id"): l for l in listings if l.get("id")}
-    for a in all_analyzed:
-        raw = raw_by_id.get(a.get("id"))
-        if raw:
-            if not a.get("url"): a["url"] = raw.get("url", "")
-            if not a.get("contact_phone"): a["contact_phone"] = raw.get("contact_phone", "")
-            if not a.get("contact_name"): a["contact_name"] = raw.get("contact_name", "")
-            if not a.get("source"): a["source"] = raw.get("source", "")
+    # WICHTIG: URLs und Kontakte aus Scraper-Daten zurueckfuehren
+    restore_scraper_data(all_analyzed, listings)
 
     all_analyzed.sort(key=lambda x: x.get("scores", {}).get("overall", 0), reverse=True)
 
@@ -191,23 +198,20 @@ def main():
     Path(args.output).parent.mkdir(parents=True, exist_ok=True)
     Path(args.output).write_text(json.dumps(result, ensure_ascii=False, indent=2))
 
+    # Verify URLs
+    with_url = len([a for a in all_analyzed if a.get("url")])
+    with_phone = len([a for a in all_analyzed if a.get("contact_phone")])
+
     print(f"\n{'='*55}")
     print(f"  ERGEBNIS")
     print(f"{'='*55}")
     print(f"  Input:        {len(listings)}")
     print(f"  Qualifiziert: {len(all_analyzed)}")
+    print(f"  Mit URL:      {with_url}/{len(all_analyzed)}")
+    print(f"  Mit Telefon:  {with_phone}/{len(all_analyzed)}")
     print(f"  Top:          {result['meta']['top_count']}")
     print(f"  Interessant:  {result['meta']['interesting_count']}")
     print(f"  Gespeichert:  {args.output}\n")
-
-    for i, l in enumerate(all_analyzed[:10], 1):
-        s = l.get("scores", {}).get("overall", "?")
-        v = l.get("verdict", "?")
-        p = l.get("price_mad")
-        ph = f" Tel:{l.get('contact_phone')}" if l.get("contact_phone") else ""
-        print(f"  {i}. [{s}] {v} | {f'{p:,} MAD' if p else '?'} | {l.get('neighborhood','?')}{ph}")
-        print(f"     {l.get('title','?')[:70]}")
-        print(f"     {l.get('url','')[:80]}")
 
 
 if __name__ == "__main__":
