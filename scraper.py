@@ -1,41 +1,24 @@
 #!/usr/bin/env python3
 """
-MARRAKECH IMMOBILIEN-SCRAPER
-=============================
-Lean & robust. Scrapt Avito, Mubawab, Sarouty.
-Filtert hart. Gibt sauberes JSON aus.
-
-Nutzung:
-    python scraper.py                  # Alle Portale, Standard-Filter
-    python scraper.py --portal avito   # Nur Avito
-    python scraper.py --output leads.json
-    python scraper.py --raw            # Ohne Filter (alle Ergebnisse)
-
-Abhängigkeiten:
-    pip install requests beautifulsoup4
+MARRAKECH IMMOBILIEN-SCRAPER v2
+================================
+Robust scraping mit mehreren Fallback-Strategien.
+pip install requests beautifulsoup4
+python scraper.py --output data/latest_raw.json --pages 5
 """
 
 import requests
 from bs4 import BeautifulSoup
-import json
-import time
-import random
-import re
-import argparse
-import hashlib
+import json, time, random, re, argparse, hashlib
 from datetime import datetime
 from dataclasses import dataclass, field, asdict
 from typing import Optional
 from pathlib import Path
 
-# ═══════════════════════════════════════════════════════════
-# CONFIG — Hier eure Kriterien anpassen
-# ═══════════════════════════════════════════════════════════
-
 BUDGET_MIN_MAD = 1_000_000
 BUDGET_MAX_MAD = 2_300_000
 MIN_ROOMS = 3
-MIN_BEDROOMS = 2  # Alternative: 2 Schlafzimmer reicht auch
+MIN_BEDROOMS = 2
 
 PREFERRED_NEIGHBORHOODS = [
     "targa", "palmeraie", "agdal", "tamansourt", "massira",
@@ -46,27 +29,19 @@ PREFERRED_NEIGHBORHOODS = [
     "hay mohammadi", "marjane", "annakhil", "tamesna",
 ]
 
-NO_GO_KEYWORDS = ["riad", "riyad", "rez-de-chaussée", "rez de chaussée", "rdc"]
+NO_GO_KEYWORDS = ["riad", "riyad", "rez-de-chaussee", "rez de chaussee"]
 MELKIA_KEYWORDS = ["melkia", "melk"]
-TITRE_FONCIER_KEYWORDS = ["titre foncier", "tf", "titré"]
+TITRE_FONCIER_KEYWORDS = ["titre foncier", "tf", "titre"]
 
-# Delays (Sekunden) — respektvoll gegenüber den Servern
-MIN_DELAY = 1.5
-MAX_DELAY = 3.0
-MAX_PAGES = 5  # Seiten pro Portal
+MIN_DELAY = 2.0
+MAX_DELAY = 4.0
+MAX_PAGES = 5
 
 HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
-                  "AppleWebKit/537.36 (KHTML, like Gecko) "
-                  "Chrome/120.0.0.0 Safari/537.36",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
     "Accept-Language": "fr-FR,fr;q=0.9,en;q=0.8",
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
 }
-
-
-# ═══════════════════════════════════════════════════════════
-# DATA MODEL
-# ═══════════════════════════════════════════════════════════
 
 @dataclass
 class Listing:
@@ -97,9 +72,8 @@ class Listing:
     description: str = ""
     images: list = field(default_factory=list)
     scraped_at: str = ""
-    raw_attributes: dict = field(default_factory=dict)
 
-    def __post_init__(self):
+    def finalize(self):
         if not self.id and self.url:
             self.id = hashlib.md5(self.url.encode()).hexdigest()[:12]
         if not self.scraped_at:
@@ -108,756 +82,451 @@ class Listing:
             self.price_per_sqm_mad = int(self.price_mad / self.area_sqm)
         if self.price_mad and not self.price_eur:
             self.price_eur = int(self.price_mad / 10.8)
+        return self
 
-
-# ═══════════════════════════════════════════════════════════
-# UTILS
-# ═══════════════════════════════════════════════════════════
-
-def polite_delay():
-    """Respektvolle Pause zwischen Requests."""
+def delay():
     time.sleep(random.uniform(MIN_DELAY, MAX_DELAY))
 
-
 def fetch(url, session):
-    """Robuster GET mit Retries."""
     for attempt in range(3):
         try:
-            resp = session.get(url, headers=HEADERS, timeout=15)
+            resp = session.get(url, headers=HEADERS, timeout=20)
             if resp.status_code == 200:
                 return resp
             if resp.status_code == 429:
-                print(f"  ⏳ Rate limit, warte 10s...")
-                time.sleep(10)
-            elif resp.status_code == 403:
-                print(f"  ⛔ Zugriff verweigert: {url}")
+                print(f"    Rate limit, warte 15s...")
+                time.sleep(15)
+            elif resp.status_code in (403, 406):
+                print(f"    Blockiert ({resp.status_code}): {url[:80]}")
                 return None
             else:
-                print(f"  ⚠ Status {resp.status_code}: {url}")
+                print(f"    HTTP {resp.status_code}: {url[:80]}")
         except requests.RequestException as e:
-            print(f"  ⚠ Fehler (Versuch {attempt+1}): {e}")
-            time.sleep(3)
+            print(f"    Fehler ({attempt+1}/3): {e}")
+            time.sleep(5)
     return None
 
-
 def parse_price(text):
-    """Extrahiert Preis in MAD aus Text."""
     if not text:
         return None
-    text = text.strip().replace("\xa0", " ").replace(" ", "")
-    # "1 450 000 DH" / "1.450.000" / "1,450,000"
-    text = text.replace(".", "").replace(",", "").replace(" ", "")
-    nums = re.findall(r'\d+', text)
-    if nums:
-        val = int(nums[0])
-        # Plausibilitäts-Check: Preise in MAD sind typisch 100k-10M
-        if val < 1000:
-            val *= 10000  # z.B. "145" → 1.450.000? Nein, zu unsicher
-            return None
+    text = re.sub(r'[MADHsDh€\s\.\,\xa0]', '', text)
+    m = re.search(r'(\d{6,8})', text)
+    if m:
+        val = int(m.group(1))
         if 100_000 <= val <= 50_000_000:
             return val
     return None
 
-
-def parse_number(text):
-    """Extrahiert eine Zahl aus Text."""
-    if not text:
-        return None
-    nums = re.findall(r'\d+', str(text))
-    return int(nums[0]) if nums else None
-
-
-def detect_amenities(text):
-    """Erkennt Ausstattung aus Beschreibung."""
-    t = text.lower()
-    return {
-        "has_terrace": any(w in t for w in ["terrasse", "balcon", "rooftop", "toit"]),
-        "has_pool": any(w in t for w in ["piscine", "pool"]),
-        "has_parking": any(w in t for w in ["parking", "garage", "sous-sol", "stationnement"]),
-        "has_elevator": any(w in t for w in ["ascenseur", "elevator"]),
-        "is_new_build": any(w in t for w in ["neuf", "nouvelle construction", "livraison 2024",
-                                              "livraison 2025", "livraison 2026"]),
-    }
-
-
-def detect_floor(text):
-    """Erkennt Etage."""
-    t = text.lower()
-    if any(w in t for w in ["rez-de-chaussée", "rez de chaussée", "rdc"]):
-        return "RDC"
-    m = re.search(r'(\d+)\s*(?:ème|er|e)?\s*(?:étage|etage)', t)
+def extract_number(text, mn=0, mx=9999):
+    if not text: return None
+    m = re.search(r'(\d+)', str(text))
     if m:
-        return f"{m.group(1)}. Etage"
+        v = int(m.group(1))
+        return v if mn <= v <= mx else None
     return None
 
-
-def detect_ownership(text):
-    """Erkennt Eigentumslage."""
+def detect_from_text(text):
     t = text.lower()
-    if any(w in t for w in TITRE_FONCIER_KEYWORDS):
-        return "Titre Foncier"
-    if any(w in t for w in MELKIA_KEYWORDS):
-        return "Melkia"
-    return "Unbekannt"
+    r = {}
+    m = re.search(r'(\d{2,4})\s*m[^a-z]', t)
+    if m:
+        v = int(m.group(1))
+        if 20 < v < 1000: r['area_sqm'] = v
+    m = re.search(r'(\d)\s*(?:pi[eè]ces?|pcs?)\b', t)
+    if m: r['rooms'] = int(m.group(1))
+    m = re.search(r'(\d)\s*(?:chambres?|chbr?|ch\.)\b', t)
+    if m: r['bedrooms'] = int(m.group(1))
+    m = re.search(r'(\d)\s*(?:salles?\s*de\s*bain|sdb)', t)
+    if m: r['bathrooms'] = int(m.group(1))
+    if any(w in t for w in ["rez-de-chauss", "rdc"]):
+        r['floor'] = "RDC"; r['is_ground_floor'] = True
+    else:
+        m = re.search(r'(\d+)\s*(?:[eè]me|er|e)?\s*[eé]tage', t)
+        if m: r['floor'] = f"{m.group(1)}. Etage"; r['is_ground_floor'] = False
+    r['has_terrace'] = any(w in t for w in ["terrasse", "balcon", "rooftop", "toit terrasse"])
+    r['has_pool'] = any(w in t for w in ["piscine", "pool"])
+    r['has_parking'] = any(w in t for w in ["parking", "garage", "sous-sol", "stationnement"])
+    r['has_elevator'] = any(w in t for w in ["ascenseur"])
+    r['is_new_build'] = any(w in t for w in ["neuf", "nouvelle construction", "livraison 202", "jamais habit"])
+    if any(w in t for w in TITRE_FONCIER_KEYWORDS): r['ownership_type'] = "Titre Foncier"
+    elif any(w in t for w in MELKIA_KEYWORDS): r['ownership_type'] = "Melkia"
+    if any(w in t for w in ["neuf", "jamais habit"]): r['condition'] = "Neu"
+    elif any(w in t for w in ["rnov", "renov", "refait"]): r['condition'] = "Renoviert"
+    elif "bon tat" in t: r['condition'] = "Gut"
+    r['is_riad'] = any(w in t for w in ["riad", "riyad"])
+    for nb in PREFERRED_NEIGHBORHOODS:
+        if nb in t: r['neighborhood'] = nb.title(); break
+    return r
 
+def apply_detected(listing, detected):
+    for key, val in detected.items():
+        current = getattr(listing, key, None)
+        if current is None or current == "" or current == "Unbekannt":
+            setattr(listing, key, val)
 
-# ═══════════════════════════════════════════════════════════
-# SCRAPER: AVITO
-# ═══════════════════════════════════════════════════════════
-
-def scrape_avito(session, max_pages=MAX_PAGES):
-    """Scrapt Avito.ma Immobilien-Listings in Marrakesch."""
-    listings = []
-    base = "https://www.avito.ma/fr/marrakech/appartements-%C3%A0_vendre"
-
-    print(f"\n{'='*50}")
-    print(f"🔍 AVITO — Starte Scraping...")
-    print(f"{'='*50}")
-
-    for page in range(1, max_pages + 1):
-        url = f"{base}?o={page}" if page > 1 else base
-        print(f"\n  📄 Seite {page}/{max_pages}: {url}")
-
-        resp = fetch(url, session)
-        if not resp:
-            continue
-
-        soup = BeautifulSoup(resp.text, "html.parser")
-
-        # Avito listing cards — sie nutzen verschiedene Selektoren
-        cards = soup.select("a[href*='/fr/marrakech/'][href*='appartement']")
-        if not cards:
-            cards = soup.select("div[class*='listing'] a, div[class*='item'] a, li[class*='item'] a")
-
-        # Auch JSON-LD oder Script-Tags checken (Avito lädt teils per JS)
-        scripts = soup.find_all("script", type="application/ld+json")
-        for script in scripts:
-            try:
-                data = json.loads(script.string)
-                if isinstance(data, list):
-                    for item in data:
-                        if item.get("@type") in ["Product", "Offer", "RealEstateListing"]:
-                            listing = _avito_from_jsonld(item)
-                            if listing:
-                                listings.append(listing)
-                elif isinstance(data, dict) and "itemListElement" in data:
-                    for item in data["itemListElement"]:
-                        listing = _avito_from_jsonld(item.get("item", item))
-                        if listing:
-                            listings.append(listing)
-            except (json.JSONDecodeError, TypeError):
-                pass
-
-        # Fallback: HTML parsen
-        seen_urls = {l.url for l in listings}
-        for card in cards:
-            href = card.get("href", "")
-            if not href or href in seen_urls:
-                continue
-            if not href.startswith("http"):
-                href = "https://www.avito.ma" + href
-
-            listing = Listing(source="Avito", url=href)
-
-            # Titel
-            title_el = card.select_one("p, span, h2, h3, [class*='title']")
-            if title_el:
-                listing.title = title_el.get_text(strip=True)
-            elif card.get("title"):
-                listing.title = card["title"]
-
-            # Preis
-            price_el = card.select_one("[class*='price'], [class*='Prix']")
-            if price_el:
-                listing.price_mad = parse_price(price_el.get_text())
-
-            seen_urls.add(href)
-            if listing.title:
-                listings.append(listing)
-
-        found = len([c for c in cards if c.get("href")])
-        print(f"  → {found} Karten gefunden")
-
-        if found == 0:
-            print("  → Keine weiteren Ergebnisse, stoppe.")
-            break
-
-        polite_delay()
-
-    # Detail-Seiten abrufen für vollständige Infos
-    print(f"\n  📋 {len(listings)} Listings gefunden, lade Details...")
-    for i, listing in enumerate(listings):
-        if not listing.url:
-            continue
-        print(f"  🔎 Detail {i+1}/{len(listings)}: {listing.title[:50]}...")
-        _avito_enrich(listing, session)
-        polite_delay()
-
-    print(f"\n  ✅ Avito fertig: {len(listings)} Inserate")
-    return listings
-
-
-def _avito_from_jsonld(data):
-    """Extrahiert Listing aus JSON-LD Daten."""
-    try:
-        listing = Listing(source="Avito")
-        listing.title = data.get("name", "")
-        listing.url = data.get("url", "")
-        offers = data.get("offers", {})
-        if isinstance(offers, dict):
-            listing.price_mad = parse_price(str(offers.get("price", "")))
-        listing.description = data.get("description", "")
-        return listing if listing.title else None
-    except Exception:
-        return None
-
-
-def _avito_enrich(listing, session):
-    """Lädt Detail-Seite und reichert Listing an."""
-    resp = fetch(listing.url, session)
-    if not resp:
-        return
-
-    soup = BeautifulSoup(resp.text, "html.parser")
-    text = soup.get_text(" ", strip=True).lower()
-
-    # Preis
-    if not listing.price_mad:
-        price_el = soup.select_one("[class*='price'], [data-testid*='price']")
-        if price_el:
-            listing.price_mad = parse_price(price_el.get_text())
-
-    # Attribute aus der Seite
-    params = soup.select("li[class*='param'], span[class*='param'], div[class*='info'] li, ol li")
-    for p in params:
-        pt = p.get_text(strip=True).lower()
-        if any(w in pt for w in ["pièce", "piece", "chambre"]):
-            n = parse_number(pt)
-            if n:
-                if "chambre" in pt:
-                    listing.bedrooms = n
-                else:
-                    listing.rooms = n
-        elif "m²" in pt or "m2" in pt:
-            n = parse_number(pt)
-            if n and 20 < n < 1000:
-                listing.area_sqm = n
-        elif "salle" in pt or "sdb" in pt:
-            listing.bathrooms = parse_number(pt)
-        elif "étage" in pt or "etage" in pt:
-            listing.floor = detect_floor(pt)
-
-    # Beschreibung
-    desc_el = soup.select_one("[class*='description'], [class*='body'], [class*='content'] p")
-    if desc_el:
-        listing.description = desc_el.get_text(" ", strip=True)
-
-    full_text = listing.description + " " + listing.title + " " + text
-
-    # Amenities
-    amenities = detect_amenities(full_text)
-    for k, v in amenities.items():
-        if v:
-            setattr(listing, k, v)
-
-    # Floor
-    if not listing.floor:
-        listing.floor = detect_floor(full_text)
-    listing.is_ground_floor = listing.floor == "RDC" if listing.floor else None
-
-    # Ownership
-    listing.ownership_type = detect_ownership(full_text)
-
-    # Riad check
-    listing.is_riad = any(w in full_text.lower() for w in ["riad", "riyad"])
-
-    # Neighborhood
-    if not listing.neighborhood:
-        for nb in PREFERRED_NEIGHBORHOODS:
-            if nb in full_text.lower():
-                listing.neighborhood = nb.title()
-                break
-
-    # Post-init
-    listing.__post_init__()
-
-
-# ═══════════════════════════════════════════════════════════
-# SCRAPER: MUBAWAB
-# ═══════════════════════════════════════════════════════════
+# ═══════════════════════════════════════
+# MUBAWAB
+# ═══════════════════════════════════════
 
 def scrape_mubawab(session, max_pages=MAX_PAGES):
-    """Scrapt Mubawab.ma."""
+    print(f"\n{'='*55}")
+    print(f"  MUBAWAB")
+    print(f"{'='*55}")
     listings = []
-    base = "https://www.mubawab.ma/fr/st/marrakech/appartements-a-vendre"
-
-    print(f"\n{'='*50}")
-    print(f"🔍 MUBAWAB — Starte Scraping...")
-    print(f"{'='*50}")
-
     for page in range(1, max_pages + 1):
-        url = f"{base}:p:{page}" if page > 1 else base
-        print(f"\n  📄 Seite {page}/{max_pages}: {url}")
-
+        url = f"https://www.mubawab.ma/fr/st/marrakech/appartements-a-vendre:p:{page}"
+        print(f"\n  Seite {page}/{max_pages}")
         resp = fetch(url, session)
-        if not resp:
-            continue
-
+        if not resp: continue
         soup = BeautifulSoup(resp.text, "html.parser")
-
-        # Mubawab Listing-Cards
-        cards = soup.select("li.listingBox, div.listingBox, div[class*='adItem'], a[class*='listing']")
-        if not cards:
-            # Breitere Suche
-            cards = soup.select("li[class*='List'], div[class*='result'], div[class*='annonce']")
-
+        cards = soup.select("li.listingBox") or soup.select("div[class*='listingBox']") or soup.select("div[class*='adItem']") or soup.select("a[href*='/fr/marrakech/']")
+        print(f"    {len(cards)} Karten")
         for card in cards:
-            listing = Listing(source="Mubawab")
+            try:
+                l = Listing(source="Mubawab")
+                link = card if card.name == 'a' else card.select_one("a[href]")
+                if link:
+                    href = link.get("href", "")
+                    if not href.startswith("http"): href = "https://www.mubawab.ma" + href
+                    l.url = href
+                for sel in ["h2","h3","[class*='title']","a"]:
+                    el = card.select_one(sel)
+                    if el and el.get_text(strip=True): l.title = el.get_text(strip=True); break
+                for sel in ["[class*='price']","[class*='prix']","span.priceTag"]:
+                    el = card.select_one(sel)
+                    if el: l.price_mad = parse_price(el.get_text()); break
+                apply_detected(l, detect_from_text(card.get_text(" ", strip=True)))
+                for sel in ["[class*='location']","[class*='adresse']"]:
+                    el = card.select_one(sel)
+                    if el and not l.neighborhood: l.neighborhood = el.get_text(strip=True); break
+                if l.title and len(l.title) > 3: listings.append(l)
+            except Exception as e: print(f"    Fehler: {e}")
+        if not cards: break
+        delay()
 
-            # URL
-            link = card.select_one("a[href*='/fr/']") or card if card.name == "a" else None
-            if link:
-                href = link.get("href", "")
-                if not href.startswith("http"):
-                    href = "https://www.mubawab.ma" + href
-                listing.url = href
-
-            # Titel
-            title_el = card.select_one("h2, h3, [class*='title'], [class*='titre']")
-            listing.title = title_el.get_text(strip=True) if title_el else ""
-
-            # Preis
-            price_el = card.select_one("[class*='price'], [class*='prix']")
-            if price_el:
-                listing.price_mad = parse_price(price_el.get_text())
-
-            # Quick-Infos auf der Karte
-            infos = card.select("span[class*='info'], li[class*='char'], span[class*='feat']")
-            for info in infos:
-                it = info.get_text(strip=True).lower()
-                if "m²" in it or "m2" in it:
-                    listing.area_sqm = parse_number(it)
-                elif "pièce" in it or "ch" in it:
-                    n = parse_number(it)
-                    if n:
-                        if "ch" in it:
-                            listing.bedrooms = n
-                        else:
-                            listing.rooms = n
-
-            # Location
-            loc_el = card.select_one("[class*='location'], [class*='adresse'], [class*='address']")
-            if loc_el:
-                listing.neighborhood = loc_el.get_text(strip=True)
-
-            if listing.title or listing.url:
-                listings.append(listing)
-
-        print(f"  → {len(cards)} Karten gefunden")
-        if not cards:
-            break
-        polite_delay()
-
-    # Details
-    print(f"\n  📋 {len(listings)} Listings, lade Details...")
-    for i, listing in enumerate(listings):
-        if not listing.url:
-            continue
-        print(f"  🔎 Detail {i+1}/{len(listings)}: {listing.title[:50]}...")
-        _mubawab_enrich(listing, session)
-        polite_delay()
-
-    print(f"\n  ✅ Mubawab fertig: {len(listings)} Inserate")
+    seen = set()
+    unique = [l for l in listings if l.url and l.url not in seen and not seen.add(l.url)]
+    listings = unique
+    print(f"\n  {len(listings)} unique, lade Details...")
+    for i, l in enumerate(listings):
+        if not l.url: continue
+        print(f"    {i+1}/{len(listings)}: {l.title[:50]}...")
+        _mubawab_detail(l, session)
+        delay()
+    print(f"\n  Mubawab: {len(listings)} Inserate")
     return listings
 
-
-def _mubawab_enrich(listing, session):
-    """Detail-Seite für Mubawab."""
+def _mubawab_detail(listing, session):
     resp = fetch(listing.url, session)
-    if not resp:
-        return
-
+    if not resp: return
     soup = BeautifulSoup(resp.text, "html.parser")
-    text = soup.get_text(" ", strip=True)
-
-    # Preis
+    full_text = soup.get_text(" ", strip=True)
     if not listing.price_mad:
-        price_el = soup.select_one("[class*='price'], [class*='prix']")
-        if price_el:
-            listing.price_mad = parse_price(price_el.get_text())
+        for sel in ["[class*='price']","[class*='prix']","h3[class*='price']"]:
+            el = soup.select_one(sel)
+            if el: listing.price_mad = parse_price(el.get_text()); break
+    for sel in ["[class*='description']","[class*='blockParagraph']","div.detailDesc","div[class*='more-text']"]:
+        el = soup.select_one(sel)
+        if el: listing.description = el.get_text(" ", strip=True); break
+    for el in soup.select("li, span, div, td"):
+        t = el.get_text(strip=True)
+        if not t or len(t) > 100: continue
+        tl = t.lower()
+        if "pi" in tl and "ce" in tl and not listing.rooms: listing.rooms = extract_number(t, 1, 20)
+        elif "chambre" in tl and not listing.bedrooms: listing.bedrooms = extract_number(t, 1, 10)
+        elif ("salle" in tl or "sdb" in tl) and not listing.bathrooms: listing.bathrooms = extract_number(t, 1, 10)
+        elif "m" in tl and ("2" in tl or "²" in tl) and not listing.area_sqm:
+            v = extract_number(t, 20, 1000)
+            if v: listing.area_sqm = v
+    for script in soup.find_all("script", type="application/ld+json"):
+        try:
+            data = json.loads(script.string)
+            if isinstance(data, dict):
+                listing.title = listing.title or data.get("name", "")
+                listing.description = listing.description or data.get("description", "")
+                if data.get("floorSize") and isinstance(data["floorSize"], dict):
+                    listing.area_sqm = listing.area_sqm or extract_number(str(data["floorSize"].get("value", "")), 20, 1000)
+                listing.rooms = listing.rooms or extract_number(str(data.get("numberOfRooms", "")), 1, 20)
+        except: pass
+    apply_detected(listing, detect_from_text(f"{listing.title} {listing.description} {full_text}"))
+    listing.finalize()
 
-    # Attribute
-    attrs = soup.select("div[class*='info'] li, ul[class*='char'] li, div[class*='detail'] span, table td")
-    for attr in attrs:
-        at = attr.get_text(strip=True).lower()
-        if "pièce" in at:
-            listing.rooms = listing.rooms or parse_number(at)
-        elif "chambre" in at:
-            listing.bedrooms = listing.bedrooms or parse_number(at)
-        elif "salle" in at or "sdb" in at:
-            listing.bathrooms = listing.bathrooms or parse_number(at)
-        elif "m²" in at and not listing.area_sqm:
-            n = parse_number(at)
-            if n and 20 < n < 1000:
-                listing.area_sqm = n
-        elif "étage" in at:
-            listing.floor = listing.floor or detect_floor(at)
+# ═══════════════════════════════════════
+# AVITO
+# ═══════════════════════════════════════
 
-    # Description
-    desc = soup.select_one("[class*='description'], [class*='text'], [class*='content'] p")
-    if desc:
-        listing.description = desc.get_text(" ", strip=True)
+def scrape_avito(session, max_pages=MAX_PAGES):
+    print(f"\n{'='*55}")
+    print(f"  AVITO")
+    print(f"{'='*55}")
+    listings = []
+    for page in range(1, max_pages + 1):
+        url = f"https://www.avito.ma/fr/marrakech/appartements-%C3%A0_vendre?o={page}"
+        print(f"\n  Seite {page}/{max_pages}")
+        resp = fetch(url, session)
+        if not resp: continue
+        soup = BeautifulSoup(resp.text, "html.parser")
+        for script in soup.find_all("script"):
+            text = script.string or ""
+            if '__NEXT_DATA__' in text:
+                try:
+                    m = re.search(r'__NEXT_DATA__\s*=\s*(\{.+?\})\s*;?\s*</script>', text, re.DOTALL)
+                    if m: _avito_parse_json(json.loads(m.group(1)), listings)
+                except: pass
+            if '"listingId"' in text or ('"subject"' in text and '"price"' in text):
+                try:
+                    _avito_parse_json(json.loads(re.search(r'(\{.*\})', text, re.DOTALL).group(1)), listings)
+                except: pass
+        for script in soup.find_all("script", type="application/ld+json"):
+            try:
+                data = json.loads(script.string)
+                if isinstance(data, dict) and data.get("@type") == "ItemList":
+                    for item in data.get("itemListElement", []):
+                        i = item.get("item", item)
+                        l = Listing(source="Avito", title=i.get("name",""), url=i.get("url",""))
+                        if i.get("offers"): l.price_mad = parse_price(str(i["offers"].get("price","")))
+                        if l.title: listings.append(l)
+            except: pass
+        for card in soup.select("a[href*='/fr/marrakech/']"):
+            href = card.get("href","")
+            if "appartement" not in href.lower(): continue
+            if not href.startswith("http"): href = "https://www.avito.ma" + href
+            if any(l.url == href for l in listings): continue
+            l = Listing(source="Avito", url=href)
+            el = card.select_one("p, span, h2, h3")
+            l.title = (el.get_text(strip=True) if el else card.get_text(strip=True))[:200]
+            pel = card.select_one("[class*='price']")
+            if pel: l.price_mad = parse_price(pel.get_text())
+            apply_detected(l, detect_from_text(card.get_text(" ", strip=True)))
+            if l.title and len(l.title) > 5: listings.append(l)
+        print(f"    {len(listings)} Listings bisher")
+        delay()
 
-    full = listing.description + " " + listing.title + " " + text
-    amenities = detect_amenities(full)
-    for k, v in amenities.items():
-        if v:
-            setattr(listing, k, v)
+    seen = set()
+    unique = [l for l in listings if (l.url or l.title) and (l.url or l.title) not in seen and not seen.add(l.url or l.title)]
+    listings = unique
+    print(f"\n  {len(listings)} unique, lade Details...")
+    for i, l in enumerate(listings):
+        if not l.url: continue
+        print(f"    {i+1}/{len(listings)}: {l.title[:50]}...")
+        _avito_detail(l, session)
+        delay()
+    print(f"\n  Avito: {len(listings)} Inserate")
+    return listings
 
-    if not listing.floor:
-        listing.floor = detect_floor(full)
-    listing.is_ground_floor = listing.floor == "RDC" if listing.floor else None
-    listing.ownership_type = detect_ownership(full)
-    listing.is_riad = any(w in full.lower() for w in ["riad", "riyad"])
+def _avito_parse_json(data, listings):
+    if isinstance(data, dict):
+        if data.get("subject") or (data.get("title") and data.get("price")):
+            l = Listing(source="Avito")
+            l.title = data.get("subject", data.get("title", ""))
+            l.url = data.get("url", "")
+            l.price_mad = parse_price(str(data.get("price", data.get("priceValue", ""))))
+            p = data.get("params", data.get("attributes", {}))
+            if isinstance(p, dict):
+                l.rooms = extract_number(str(p.get("rooms","")), 1, 20)
+                l.area_sqm = extract_number(str(p.get("surface", p.get("size",""))), 20, 1000)
+                l.bedrooms = extract_number(str(p.get("bedrooms","")), 1, 10)
+            loc = data.get("location")
+            if isinstance(loc, dict): l.neighborhood = loc.get("name", loc.get("label",""))
+            elif isinstance(loc, str): l.neighborhood = loc
+            if l.title: listings.append(l)
+        for v in data.values():
+            if isinstance(v, (dict, list)): _avito_parse_json(v, listings)
+    elif isinstance(data, list):
+        for item in data:
+            if isinstance(item, (dict, list)): _avito_parse_json(item, listings)
 
-    if not listing.neighborhood:
-        for nb in PREFERRED_NEIGHBORHOODS:
-            if nb in full.lower():
-                listing.neighborhood = nb.title()
-                break
+def _avito_detail(listing, session):
+    resp = fetch(listing.url, session)
+    if not resp: return
+    soup = BeautifulSoup(resp.text, "html.parser")
+    full_text = soup.get_text(" ", strip=True)
+    for script in soup.find_all("script", type="application/ld+json"):
+        try:
+            data = json.loads(script.string)
+            if isinstance(data, dict):
+                listing.title = listing.title or data.get("name","")
+                listing.description = listing.description or data.get("description","")
+                if data.get("offers"): listing.price_mad = listing.price_mad or parse_price(str(data["offers"].get("price","")))
+        except: pass
+    for script in soup.find_all("script"):
+        text = script.string or ""
+        if '"price"' in text or '"surface"' in text:
+            for m in re.findall(r'\{[^{}]*"(?:price|surface|rooms)"[^{}]*\}', text):
+                try:
+                    d = json.loads(m)
+                    listing.price_mad = listing.price_mad or parse_price(str(d.get("price","")))
+                    listing.area_sqm = listing.area_sqm or extract_number(str(d.get("surface","")), 20, 1000)
+                    listing.rooms = listing.rooms or extract_number(str(d.get("rooms","")), 1, 20)
+                except: pass
+    if not listing.price_mad:
+        for sel in ["[class*='price']","[data-testid*='price']","span[class*='amount']"]:
+            el = soup.select_one(sel)
+            if el: listing.price_mad = parse_price(el.get_text()); break
+    if not listing.description:
+        for sel in ["[class*='description']","[class*='body']"]:
+            el = soup.select_one(sel)
+            if el: listing.description = el.get_text(" ", strip=True); break
+    apply_detected(listing, detect_from_text(f"{listing.title} {listing.description} {full_text}"))
+    listing.finalize()
 
-    listing.__post_init__()
-
-
-# ═══════════════════════════════════════════════════════════
-# SCRAPER: SAROUTY
-# ═══════════════════════════════════════════════════════════
+# ═══════════════════════════════════════
+# SAROUTY
+# ═══════════════════════════════════════
 
 def scrape_sarouty(session, max_pages=MAX_PAGES):
-    """Scrapt Sarouty.ma."""
+    print(f"\n{'='*55}")
+    print(f"  SAROUTY")
+    print(f"{'='*55}")
     listings = []
-    base = "https://www.sarouty.ma/fr/immobilier/appartements/a-vendre/marrakech"
-
-    print(f"\n{'='*50}")
-    print(f"🔍 SAROUTY — Starte Scraping...")
-    print(f"{'='*50}")
-
     for page in range(1, max_pages + 1):
-        url = f"{base}?page={page}" if page > 1 else base
-        print(f"\n  📄 Seite {page}/{max_pages}: {url}")
-
-        resp = fetch(url, session)
-        if not resp:
-            continue
-
+        urls = [
+            f"https://www.sarouty.ma/fr/recherche/immobilier/appartements/a-vendre/marrakech?page={page}",
+            f"https://www.sarouty.ma/fr/immobilier/appartements/a-vendre/marrakech?page={page}",
+        ]
+        resp = None
+        for u in urls:
+            resp = fetch(u, session)
+            if resp: break
+        if not resp: continue
+        print(f"\n  Seite {page}/{max_pages}")
         soup = BeautifulSoup(resp.text, "html.parser")
-
-        cards = soup.select("div[class*='listing'], article[class*='listing'], div[class*='property'], div[class*='result']")
+        cards = (soup.select("[class*='listingCard']") or soup.select("[class*='property-card']") or
+                 soup.select("article") or soup.select("div[class*='result']") or soup.select("div[class*='card']"))
         if not cards:
-            cards = soup.select("a[href*='appartement'][href*='marrakech']")
-
+            cards = [l for l in soup.select("a[href]") if any(w in l.get('href','').lower() for w in ['appartement','vendre'])]
+        print(f"    {len(cards)} Karten")
         for card in cards:
-            listing = Listing(source="Sarouty")
+            try:
+                l = Listing(source="Sarouty")
+                link = card if card.name == 'a' else card.select_one("a[href]")
+                if link:
+                    href = link.get("href","")
+                    if not href.startswith("http"): href = "https://www.sarouty.ma" + href
+                    l.url = href
+                el = card.select_one("h2, h3, [class*='title'], a")
+                if el: l.title = el.get_text(strip=True)
+                pel = card.select_one("[class*='price']")
+                if pel: l.price_mad = parse_price(pel.get_text())
+                apply_detected(l, detect_from_text(card.get_text(" ", strip=True)))
+                loc = card.select_one("[class*='location'],[class*='address']")
+                if loc: l.neighborhood = loc.get_text(strip=True)
+                if l.title and len(l.title) > 5: listings.append(l)
+            except: pass
+        if not cards: break
+        delay()
 
-            link = card.select_one("a[href]") or (card if card.name == "a" else None)
-            if link:
-                href = link.get("href", "")
-                if not href.startswith("http"):
-                    href = "https://www.sarouty.ma" + href
-                listing.url = href
-
-            title_el = card.select_one("h2, h3, [class*='title']")
-            listing.title = title_el.get_text(strip=True) if title_el else ""
-
-            price_el = card.select_one("[class*='price'], [class*='prix']")
-            if price_el:
-                listing.price_mad = parse_price(price_el.get_text())
-
-            infos = card.select("span, li")
-            for info in infos:
-                it = info.get_text(strip=True).lower()
-                if "m²" in it:
-                    listing.area_sqm = listing.area_sqm or parse_number(it)
-                elif "pièce" in it or "chambre" in it:
-                    n = parse_number(it)
-                    if n and "chambre" in it:
-                        listing.bedrooms = n
-                    elif n:
-                        listing.rooms = n
-
-            loc_el = card.select_one("[class*='location'], [class*='address']")
-            if loc_el:
-                listing.neighborhood = loc_el.get_text(strip=True)
-
-            if listing.title or listing.url:
-                listings.append(listing)
-
-        print(f"  → {len(cards)} Karten gefunden")
-        if not cards:
-            break
-        polite_delay()
-
-    print(f"\n  📋 {len(listings)} Listings, lade Details...")
-    for i, listing in enumerate(listings):
-        if not listing.url:
-            continue
-        print(f"  🔎 Detail {i+1}/{len(listings)}: {listing.title[:50]}...")
-        _sarouty_enrich(listing, session)
-        polite_delay()
-
-    print(f"\n  ✅ Sarouty fertig: {len(listings)} Inserate")
+    seen = set()
+    unique = [l for l in listings if (l.url or l.title) and (l.url or l.title) not in seen and not seen.add(l.url or l.title)]
+    listings = unique
+    print(f"\n  {len(listings)} unique, lade Details...")
+    for i, l in enumerate(listings):
+        if not l.url: continue
+        print(f"    {i+1}/{len(listings)}: {l.title[:50]}...")
+        _sarouty_detail(l, session)
+        delay()
+    print(f"\n  Sarouty: {len(listings)} Inserate")
     return listings
 
-
-def _sarouty_enrich(listing, session):
-    """Detail-Seite für Sarouty."""
+def _sarouty_detail(listing, session):
     resp = fetch(listing.url, session)
-    if not resp:
-        return
-
+    if not resp: return
     soup = BeautifulSoup(resp.text, "html.parser")
-    text = soup.get_text(" ", strip=True)
-
+    full_text = soup.get_text(" ", strip=True)
     if not listing.price_mad:
-        price_el = soup.select_one("[class*='price']")
-        if price_el:
-            listing.price_mad = parse_price(price_el.get_text())
+        for sel in ["[class*='price']","[class*='prix']"]:
+            el = soup.select_one(sel)
+            if el: listing.price_mad = parse_price(el.get_text()); break
+    if not listing.description:
+        for sel in ["[class*='description']","[class*='text']"]:
+            el = soup.select_one(sel)
+            if el: listing.description = el.get_text(" ", strip=True); break
+    for script in soup.find_all("script", type="application/ld+json"):
+        try:
+            data = json.loads(script.string)
+            if isinstance(data, dict):
+                listing.title = listing.title or data.get("name","")
+                listing.description = listing.description or data.get("description","")
+                if data.get("floorSize") and isinstance(data["floorSize"], dict):
+                    listing.area_sqm = listing.area_sqm or extract_number(str(data["floorSize"].get("value","")), 20, 1000)
+                listing.rooms = listing.rooms or extract_number(str(data.get("numberOfRooms","")), 1, 20)
+        except: pass
+    apply_detected(listing, detect_from_text(f"{listing.title} {listing.description} {full_text}"))
+    listing.finalize()
 
-    attrs = soup.select("li, span[class*='feat'], div[class*='detail'] span")
-    for attr in attrs:
-        at = attr.get_text(strip=True).lower()
-        if "pièce" in at:
-            listing.rooms = listing.rooms or parse_number(at)
-        elif "chambre" in at:
-            listing.bedrooms = listing.bedrooms or parse_number(at)
-        elif "salle" in at:
-            listing.bathrooms = listing.bathrooms or parse_number(at)
-        elif "m²" in at and not listing.area_sqm:
-            n = parse_number(at)
-            if n and 20 < n < 1000:
-                listing.area_sqm = n
-        elif "étage" in at:
-            listing.floor = listing.floor or detect_floor(at)
-
-    desc = soup.select_one("[class*='description']")
-    if desc:
-        listing.description = desc.get_text(" ", strip=True)
-
-    full = listing.description + " " + listing.title + " " + text
-    for k, v in detect_amenities(full).items():
-        if v:
-            setattr(listing, k, v)
-
-    if not listing.floor:
-        listing.floor = detect_floor(full)
-    listing.is_ground_floor = listing.floor == "RDC" if listing.floor else None
-    listing.ownership_type = detect_ownership(full)
-    listing.is_riad = any(w in full.lower() for w in ["riad", "riyad"])
-
-    if not listing.neighborhood:
-        for nb in PREFERRED_NEIGHBORHOODS:
-            if nb in full.lower():
-                listing.neighborhood = nb.title()
-                break
-
-    listing.__post_init__()
-
-
-# ═══════════════════════════════════════════════════════════
-# FILTER-GATES
-# ═══════════════════════════════════════════════════════════
+# ═══════════════════════════════════════
+# FILTER
+# ═══════════════════════════════════════
 
 def apply_gates(listings):
-    """Harte Ausschlusskriterien. Returns (passed, rejected)."""
-    passed = []
-    rejected = []
-
+    passed, rejected = [], []
     for l in listings:
         reason = None
-
-        # Gate 1: Preis
         if l.price_mad is not None:
-            if l.price_mad < BUDGET_MIN_MAD:
-                reason = f"Preis zu niedrig: {l.price_mad:,} MAD < {BUDGET_MIN_MAD:,}"
-            elif l.price_mad > BUDGET_MAX_MAD:
-                reason = f"Preis zu hoch: {l.price_mad:,} MAD > {BUDGET_MAX_MAD:,}"
+            if l.price_mad < BUDGET_MIN_MAD: reason = f"Preis zu niedrig: {l.price_mad:,}"
+            elif l.price_mad > BUDGET_MAX_MAD: reason = f"Preis zu hoch: {l.price_mad:,}"
         else:
-            reason = "Kein Preis erkennbar"
-
-        # Gate 2: Zimmer
-        if not reason:
-            rooms_ok = (l.rooms and l.rooms >= MIN_ROOMS) or (l.bedrooms and l.bedrooms >= MIN_BEDROOMS)
-            if l.rooms and l.rooms < MIN_ROOMS and (not l.bedrooms or l.bedrooms < MIN_BEDROOMS):
-                reason = f"Zu wenig Zimmer: {l.rooms} Zi / {l.bedrooms or '?'} Schlafzi"
-
-        # Gate 3: Erdgeschoss
-        if not reason and l.is_ground_floor:
-            reason = "Erdgeschoss (RDC)"
-
-        # Gate 4: Riad
-        if not reason and l.is_riad:
-            reason = "Riad-Stil"
-
-        # Gate 5: Melkia
-        if not reason and l.ownership_type == "Melkia":
-            reason = "Melkia (unklare Eigentumslage)"
-
-        # Gate 6: No-Go Keywords
+            reason = "Kein Preis"
+        if not reason and l.rooms and l.rooms < MIN_ROOMS and (not l.bedrooms or l.bedrooms < MIN_BEDROOMS):
+            reason = f"Zu wenig Zimmer: {l.rooms}Zi/{l.bedrooms or '?'}Bed"
+        if not reason and l.is_ground_floor: reason = "Erdgeschoss"
+        if not reason and l.is_riad: reason = "Riad"
+        if not reason and l.ownership_type == "Melkia": reason = "Melkia"
         if not reason:
             full = (l.title + " " + l.description).lower()
             for kw in NO_GO_KEYWORDS:
-                if kw in full and not reason:
-                    reason = f"No-Go Keyword: {kw}"
-
-        if reason:
-            rejected.append({"title": l.title[:60], "url": l.url, "reason": reason})
-        else:
-            passed.append(l)
-
+                if kw in full: reason = f"No-Go: {kw}"; break
+        if reason: rejected.append({"title": l.title[:60], "url": l.url, "reason": reason})
+        else: passed.append(l)
     return passed, rejected
 
-
-# ═══════════════════════════════════════════════════════════
-# DEDUP
-# ═══════════════════════════════════════════════════════════
-
-def deduplicate(listings):
-    """Entfernt Duplikate basierend auf URL und Titel+Preis."""
-    seen = set()
-    unique = []
-    for l in listings:
-        # Key: URL oder Kombination aus Titel+Preis
-        key = l.url if l.url else f"{l.title}_{l.price_mad}"
-        if key not in seen:
-            seen.add(key)
-            unique.append(l)
-    return unique
-
-
-# ═══════════════════════════════════════════════════════════
-# OUTPUT
-# ═══════════════════════════════════════════════════════════
-
-def to_json(listings, rejected=None):
-    """Konvertiert zu sauberem JSON."""
-    data = {
-        "meta": {
-            "scraped_at": datetime.now().isoformat(),
-            "total_found": len(listings) + (len(rejected) if rejected else 0),
-            "passed_gates": len(listings),
-            "rejected": len(rejected) if rejected else 0,
-            "budget_range_mad": f"{BUDGET_MIN_MAD:,}–{BUDGET_MAX_MAD:,}",
-            "min_rooms": MIN_ROOMS,
-        },
-        "listings": [asdict(l) for l in listings],
-    }
-    if rejected:
-        data["rejected_log"] = rejected
-    return data
-
-
-def print_summary(passed, rejected):
-    """Gibt eine übersichtliche Zusammenfassung aus."""
-    print(f"\n{'='*60}")
-    print(f"📊 ERGEBNIS")
-    print(f"{'='*60}")
-    print(f"  ✅ Qualifiziert:  {len(passed)}")
-    print(f"  ⛔ Abgelehnt:     {len(rejected)}")
-    print(f"  {'─'*40}")
-
-    if passed:
-        print(f"\n  🏡 QUALIFIZIERTE INSERATE:")
-        for i, l in enumerate(sorted(passed, key=lambda x: x.price_mad or 0), 1):
-            price = f"{l.price_mad:>12,} MAD" if l.price_mad else "   unbekannt"
-            area = f"{l.area_sqm}m²" if l.area_sqm else "?m²"
-            rooms = f"{l.rooms}Zi" if l.rooms else "?Zi"
-            nb = l.neighborhood[:20] if l.neighborhood else "?"
-            amenities = []
-            if l.has_terrace: amenities.append("☀")
-            if l.has_pool: amenities.append("🏊")
-            if l.has_parking: amenities.append("🅿")
-            if l.has_elevator: amenities.append("🛗")
-            am_str = " ".join(amenities) if amenities else ""
-            print(f"  {i:>3}. {price} | {area:>6} | {rooms:>3} | {nb:<20} | {am_str}")
-            print(f"       {l.title[:65]}")
-            print(f"       {l.url}")
-            print()
-
-    if rejected:
-        print(f"\n  ⛔ ABGELEHNT (Top-Gründe):")
-        from collections import Counter
-        reasons = Counter(r["reason"].split(":")[0] for r in rejected)
-        for reason, count in reasons.most_common(10):
-            print(f"      {count:>3}× {reason}")
-
-
-# ═══════════════════════════════════════════════════════════
-# MAIN
-# ═══════════════════════════════════════════════════════════
-
 def main():
-    parser = argparse.ArgumentParser(description="Marrakech Immobilien-Scraper")
-    parser.add_argument("--portal", choices=["avito", "mubawab", "sarouty", "all"], default="all")
-    parser.add_argument("--output", "-o", default="marrakech_leads.json")
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--portal", choices=["avito","mubawab","sarouty","all"], default="all")
+    parser.add_argument("--output", "-o", default="data/latest_raw.json")
     parser.add_argument("--pages", type=int, default=MAX_PAGES)
-    parser.add_argument("--raw", action="store_true", help="Ohne Filter (alle Ergebnisse)")
+    parser.add_argument("--raw", action="store_true")
     args = parser.parse_args()
-
-    print(f"""
-╔══════════════════════════════════════════════════╗
-║     🏡  MARRAKECH IMMOBILIEN-SCRAPER  🏡        ║
-║                                                  ║
-║  Budget:  {BUDGET_MIN_MAD/1e6:.1f}M – {BUDGET_MAX_MAD/1e6:.1f}M MAD              ║
-║  Zimmer:  ≥{MIN_ROOMS}                                    ║
-║  Portale: {args.portal.upper():<20}                 ║
-║  Seiten:  {args.pages} pro Portal                        ║
-╚══════════════════════════════════════════════════╝
-    """)
+    print(f"\n  MARRAKECH SCRAPER v2 | {args.portal.upper()} | {args.pages} Seiten\n")
 
     session = requests.Session()
-    session.headers.update(HEADERS)
     all_listings = []
-
-    scrapers = {
-        "avito": scrape_avito,
-        "mubawab": scrape_mubawab,
-        "sarouty": scrape_sarouty,
-    }
-
+    scrapers = {"avito": scrape_avito, "mubawab": scrape_mubawab, "sarouty": scrape_sarouty}
     portals = scrapers.keys() if args.portal == "all" else [args.portal]
-
     for portal in portals:
         try:
-            results = scrapers[portal](session, args.pages)
-            all_listings.extend(results)
+            all_listings.extend(scrapers[portal](session, args.pages))
         except Exception as e:
-            print(f"\n  ❌ Fehler bei {portal}: {e}")
-            import traceback
-            traceback.print_exc()
+            print(f"\n  FEHLER {portal}: {e}")
+            import traceback; traceback.print_exc()
 
-    # Dedup
-    before_dedup = len(all_listings)
-    all_listings = deduplicate(all_listings)
-    print(f"\n🔄 Deduplizierung: {before_dedup} → {len(all_listings)}")
+    seen = set()
+    unique = []
+    for l in all_listings:
+        k = l.url or f"{l.title}_{l.price_mad}"
+        if k not in seen: seen.add(k); unique.append(l)
+    print(f"\n  Dedup: {len(all_listings)} -> {len(unique)}")
 
-    # Filter
-    if args.raw:
-        passed, rejected = all_listings, []
-        print("⚠  Raw-Modus: Keine Filter angewendet")
-    else:
-        passed, rejected = apply_gates(all_listings)
+    if args.raw: passed, rejected = unique, []
+    else: passed, rejected = apply_gates(unique)
 
-    # Summary
-    print_summary(passed, rejected)
+    print(f"\n  ERGEBNIS: {len(passed)} qualifiziert, {len(rejected)} abgelehnt")
+    for i, l in enumerate(passed[:20], 1):
+        p = f"{l.price_mad:,}" if l.price_mad else "?"
+        a = f"{l.area_sqm}m2" if l.area_sqm else "?"
+        r = f"{l.rooms}Zi" if l.rooms else "?"
+        print(f"  {i}. {p} MAD | {a} | {r} | {l.neighborhood or '?'} | {l.source}")
+        print(f"     {l.title[:70]}")
 
-    # Save
-    output = to_json(passed, rejected)
-    out_path = Path(args.output)
-    out_path.write_text(json.dumps(output, ensure_ascii=False, indent=2))
-    print(f"\n💾 Gespeichert: {out_path.absolute()}")
-    print(f"   → {len(passed)} qualifizierte Inserate")
-    print(f"   → Datei kann direkt ins Silbertablett geladen werden\n")
-
+    output = {
+        "meta": {"scraped_at": datetime.now().isoformat(), "total_found": len(passed)+len(rejected), "passed_gates": len(passed), "rejected": len(rejected)},
+        "listings": [asdict(l) for l in passed],
+        "rejected_log": rejected,
+    }
+    out = Path(args.output)
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(json.dumps(output, ensure_ascii=False, indent=2))
+    print(f"\n  Gespeichert: {out} ({len(passed)} Inserate)\n")
 
 if __name__ == "__main__":
     main()
