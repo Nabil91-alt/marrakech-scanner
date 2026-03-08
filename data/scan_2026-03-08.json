@@ -1,0 +1,899 @@
+{
+  "meta": {
+    "scraped_at": "2026-03-08T12:54:21.810583",
+    "total_found": 147,
+    "passed_gates": 6,
+    "rejected": 141,
+    "budget_range_mad": "1,000,000–2,300,000",
+    "min_rooms": 3
+  },
+  "listings": [
+    {
+      "id": "",
+      "title": "Superbe appartement à vendre à Guéliz",
+      "source": "Mubawab",
+      "url": "",
+      "price_mad": 1171000,
+      "price_eur": null,
+      "area_sqm": null,
+      "rooms": null,
+      "bedrooms": null,
+      "bathrooms": null,
+      "floor": null,
+      "neighborhood": "",
+      "city": "Marrakech",
+      "property_type": "Apartment",
+      "price_per_sqm_mad": null,
+      "has_terrace": null,
+      "has_pool": null,
+      "has_parking": null,
+      "has_elevator": null,
+      "is_ground_floor": null,
+      "is_riad": null,
+      "is_new_build": null,
+      "ownership_type": "Unbekannt",
+      "condition": "Unbekannt",
+      "description": "",
+      "images": [],
+      "scraped_at": "2026-03-08T12:54:11.382092",
+      "raw_attributes": {}
+    },
+    {
+      "id": "",
+      "title": "Le Vizir - Appartements de standing à Marrakech",
+      "source": "Mubawab",
+      "url": "",
+      "price_mad": 1515000,
+      "price_eur": null,
+      "area_sqm": null,
+      "rooms": null,
+      "bedrooms": null,
+      "bathrooms": null,
+      "floor": null,
+      "neighborhood": "",
+      "city": "Marrakech",
+      "property_type": "Apartment",
+      "price_per_sqm_mad": null,
+      "has_terrace": null,
+      "has_pool": null,
+      "has_parking": null,
+      "has_elevator": null,
+      "is_ground_floor": null,
+      "is_riad": null,
+      "is_new_build": null,
+      "ownership_type": "Unbekannt",
+      "condition": "Unbekannt",
+      "description": "",
+      "images": [],
+      "scraped_at": "2026-03-08T12:54:11.393676",
+      "raw_attributes": {}
+    },
+    {
+      "id": "",
+      "title": "Appartement à l'achat à Guéliz. Surface de 92 m²",
+      "source": "Mubawab",
+      "url": "",
+      "price_mad": 1946700,
+      "price_eur": null,
+      "area_sqm": null,
+      "rooms": null,
+      "bedrooms": null,
+      "bathrooms": null,
+      "floor": null,
+      "neighborhood": "",
+      "city": "Marrakech",
+      "property_type": "Apartment",
+      "price_per_sqm_mad": null,
+      "has_terrace": null,
+      "has_pool": null,
+      "has_parking": null,
+      "has_elevator": null,
+      "is_ground_floor": null,
+      "is_riad": null,
+      "is_new_build": null,
+      "ownership_type": "Unbekannt",
+      "condition": "Unbekannt",
+      "description": "",
+      "images": [],
+      "scraped_at": "2026-03-08T12:54:17.943260",
+      "raw_attributes": {}
+    },
+    {
+      "id": "",
+      "title": "Vente d'un bel appartement à Guéliz. 2 pièces",
+      "source": "Mubawab",
+      "url": "",
+      "price_mad": 1252000,
+      "price_eur": null,
+      "area_sqm": null,
+      "rooms": null,
+      "bedrooms": null,
+      "bathrooms": null,
+      "floor": null,
+      "neighborhood": "",
+      "city": "Marrakech",
+      "property_type": "Apartment",
+      "price_per_sqm_mad": null,
+      "has_terrace": null,
+      "has_pool": null,
+      "has_parking": null,
+      "has_elevator": null,
+      "is_ground_floor": null,
+      "is_riad": null,
+      "is_new_build": null,
+      "ownership_type": "Unbekannt",
+      "condition": "Unbekannt",
+      "description": "",
+      "images": [],
+      "scraped_at": "2026-03-08T12:54:17.962928",
+      "raw_attributes": {}
+    },
+    {
+      "id": "",
+      "title": "Appartement à vendre",
+      "source": "Mubawab",
+      "url": "",
+      "price_mad": 2100000,
+      "price_eur": null,
+      "area_sqm": null,
+      "rooms": null,
+      "bedrooms": null,
+      "bathrooms": null,
+      "floor": null,
+      "neighborhood": "",
+      "city": "Marrakech",
+      "property_type": "Apartment",
+      "price_per_sqm_mad": null,
+      "has_terrace": null,
+      "has_pool": null,
+      "has_parking": null,
+      "has_elevator": null,
+      "is_ground_floor": null,
+      "is_riad": null,
+      "is_new_build": null,
+      "ownership_type": "Unbekannt",
+      "condition": "Unbekannt",
+      "description": "",
+      "images": [],
+      "scraped_at": "2026-03-08T12:54:17.965437",
+      "raw_attributes": {}
+    },
+    {
+      "id": "",
+      "title": "Bel appartement à vendre à Guéliz. \nSurface totale 62 m². \nP...",
+      "source": "Mubawab",
+      "url": "",
+      "price_mad": 1270000,
+      "price_eur": null,
+      "area_sqm": null,
+      "rooms": null,
+      "bedrooms": null,
+      "bathrooms": null,
+      "floor": null,
+      "neighborhood": "",
+      "city": "Marrakech",
+      "property_type": "Apartment",
+      "price_per_sqm_mad": null,
+      "has_terrace": null,
+      "has_pool": null,
+      "has_parking": null,
+      "has_elevator": null,
+      "is_ground_floor": null,
+      "is_riad": null,
+      "is_new_build": null,
+      "ownership_type": "Unbekannt",
+      "condition": "Unbekannt",
+      "description": "",
+      "images": [],
+      "scraped_at": "2026-03-08T12:54:17.997020",
+      "raw_attributes": {}
+    }
+  ],
+  "rejected_log": [
+    {
+      "title": "Vente d'un bel appartement à Guéliz",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Appartement en vente à Guéliz. Superficie 77 m²",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Vend appartement à Guéliz. Surface de 47 m²",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Appartement 3 chambres avec piscine et parking à vendre à Ma",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Appartement Neuf 84 m² à Guéliz",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Superbe Appartement meublé vue piscine à Noria",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Appartement à vendre",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Ouidane Marrakech – Pavillons R+1",
+      "url": "",
+      "reason": "Preis zu niedrig: 890,000 MAD < 1,000,000"
+    },
+    {
+      "title": "Appt 2 chambres neuf cœur de Guéliz plaza",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Bel appartement à vendre à Route Casablanca. 1 belle chambre",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Bel appartement à vendre à Guéliz. Surface de 47 m²",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Superbe duplex de prestige en résidence fermée",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Appartement à l'achat à Guéliz. 2 chambres",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Appartement à l'achat à Guéliz. 1 belle chambre",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Studio à vendre à Guéliz Surface totale 38 m²",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Magnifique appartement à vendre \nGueliz",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Appartement rénové à vendre au Riad Ourika",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Studios neufs modernes à vendre \nIdéal pour Invest locatif",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Luxe App proche Carré Eden",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Prix très compétitif",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Studio ou bureau a renover",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "4 studio en 1",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Très bon affaire à nous pas rater sur Marrakech",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Nouveau Projet avec piscine à Marrakech",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Appartement studio à vendre",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Gueliz Appartement Terrasse",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Appartement à vendre à Victor Hugo 4 pièces. Ascenseur et pa",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Appartements neufs Miraya Residence",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Lot 4 studios avec jardins privés clé en main",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "A Vendre Appartement Duplex Centre Ville Gueliz",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Appartement meublé, grande terrasse à Gueliz",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Studio et duplex à L'hivernage avec piscine",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Immeuble R3 quartier Dar El Bacha",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Superbe appartement à vendre à Guéliz",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Vente d'un bel appartement à Guéliz. 1 belle chambre",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Appartement à l'achat à Guéliz. Surface totale 77 m²",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Jolie appartement à vendre",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Appartement Neuf de 154 m² à Guéliz",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Appartement à vendre 106 m², 2 chambres Guéliz Marrakech",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Vend appartement à Agdal. Surface totale 115 m². Environneme",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Vente d'un bel appartement à Route Casablanca. Superficie 42",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Vend appartement à Guéliz. Superficie 51 m²",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Vend appartement à Guéliz. 2 belles chambres",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Bel appartement à vendre à Guéliz",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Studio en vente à Guéliz. Superficie 43 m²",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Appartements neufs à vendre, Guéliz",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Élégant F2 meublé vue Atlas à Noria",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Appartement 2 chambres jnan awrade 75m2",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Superbe studio F2 meublé en plein centre",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Belle Appartement a Jnane Awerade Meublée",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Duplex à vendre sur l'Hivernage",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Appartement à l'achat à Samlalia. \n2 grandes pièces. \nParkin",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Magnifique studio à vendre au Menara garden 1",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Bel appartement à Prestigia",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Appartement à vendre à Hay Mabrouka",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Appartement à vendre agdal",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Penthouse Parc 1 Vue Montagnes à Vendre – Guéliz",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Appartement jardin – Route de Casa,\nMarrakech",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Duplex Rez de Jardin Vue Parc 2 à Vendre – Guéliz",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Palais Riad Luxe 1600m2 \nMédina Marrakech",
+      "url": "",
+      "reason": "Preis zu hoch: 5,000,000 MAD > 2,300,000"
+    },
+    {
+      "title": "Luxury apartment for sale in jardin Harti Marrakec",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Vend appartement à Majorelle. Superficie 86 m²",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Appartement à vendre à Guéliz. Superficie 83 m²",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Duplex à l'achat à Guéliz. Surface 44 m² au RDC et 30 à la M",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Appartement à vendre – Hay Charaf – Marrakech – RDC",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Appartement sur golf à vendre \nAgdal",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Super appartement à vendre – Plein Guéliz",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Appartement à vendre à Route Casablanca. 1 belle chambre",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Bel appartement à vendre à Guéliz. 2 belles chambres",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Vente d'un bel appartement à Guéliz. 2 chambres agréables",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Magnifique studio T2",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Bel appartement à vendre 3 chambres",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Bel appartement à vendre 2 chambres piscine",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "À VENDRE – Studio Neuf avec Vue Piscine – Semlaliya, Marrake",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "À VENDRE – Appartement Neuf Haut Standing Avenue Mohammed V.",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Appartement à vendre – Targa, Résidence Les Palmiers de Targ",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Appartement meublé moderne à vendre – Prestigia",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Appartement moderne à vendre – Hivernage (centre)",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Appartement en vente à Agdal. 2 belles chambres. Meublé",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Bel appartement à vendre à Guéliz. \n1 belle chambre. \nMeublé",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Vend appartement à Route Casablanca. \n3 chambres agréables",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Appartement à l'achat à Amerchich. 2 belles chambres",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Amelkis: Villa à vendre, 5 Ch, Piscine chauffée",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Amelkis 1: Villa neuve à vendre en 5 Chs, Piscine",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Superbe Duplex à vendre à Majorelle",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Appartement de 72m² en vente Dyour Al Masjid",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Spacieux appartement 3 chambres 110m²",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Jolie studio à vendre",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Appartement de 52m² en vente Dyour Al Masjid",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Vente d'un bel appartement à Bouaakkaz. Surface totale 80 m²",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Appartement à l'achat à Guéliz",
+      "url": "",
+      "reason": "Preis zu niedrig: 962,000 MAD < 1,000,000"
+    },
+    {
+      "title": "Offre exceptionnelle à Gueliz, Marrakech",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Duplex en vente GUELIZ Surface de 72 m² RDC et 35 MEZ",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Appartement à vendre à Guéliz. 1 chambre. Double vitrage et.",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Appartement en vente el Massira 1",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Vend appartement à Hivernage. 3 chambres agréables. Bien meu",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Vend appartement à Gueliz. Surface totale 57 m². Terrasse et",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Appartement en vente à Route Casablanca. Surface totale 46 m",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Vente d'un bel appartement à Guéliz. Superficie 83 m²",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Bel appartement à vendre à Guéliz. Surface de 77 m²",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Un Studio duplex au charme unique",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Bel appartement jamais habité",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Bel studio à vendre à Hivernage.\nSurface de 69 m².\nMeublé",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Appartement Neuf 83 m² à Guéliz avec Salle de Sport",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Magnifique appartement meublé en rez de jardin – Exposition.",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Vend appartement à Agdal. \nSurface totale 88 m². \nBien meubl",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Joli appartement à vendre meublé à Noria",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Un nouveau projet au cœur de quartier Géulize à Marrakech",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Un nouveau projet au cœur de quartier Géulize \na Marrakech",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Des appartements neufs a Bouaakaz Chrifia \nSUP de 67 m² a 87",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Appartement à vendre à Majorelle. Surface totale 61 m²",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Investissement sûr: T2 moderne au nouveau Guéliz",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Bel appartement à vendre à Agdal.\nSurface de 107 m².\nPlaces.",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Vente d'un bel appartement à Route Casablanca. 1 chambre",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Appartement en vente à Majorelle. Surface totale 53 m²",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Superbe appartement à vendre. 3 belles chambres",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Bel studios de 45 m² à vendre au Nouveau Guéliz",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Bel appartement à vendre à Ain mezouar Gueliz. Superficie 82",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Vend appartement à Guéliz",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Appartement en vente à Guéliz 1 belle chambre",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Affaire à saisir: Appartement 1 chambre à Guéliz",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Superbe studio a vendre a marrakech",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Nouveaux appartements à vendre au centre de Guéliz bureau de",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Appartement d'Exception à l'Hivernage \nVue Atlas",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Vente d'un bel appartement à Route Casablanca. Surface de 75",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Superbe appartement à vendre à Gueliz 83 m²",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Appartement à l'achat à Guéliz. 1 chambre",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Studio élégant au coeur de la ville",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Magnifique Appartement à Vendre à Camp El Ghoul",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Appartement à vendre – Madame Plaza, Marrakech",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Appartement 3 chambres avec vaste terrasse VE21031",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Appartement 3 ch à rénover Guéliz",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Appartement moderne à vendre à l’hivernage",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Appartement à Vendre 2 chambres à Ain Mezzouar",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Un coup de coeur ou rien",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Bel appartement à vendre avec un toit",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Studio a vendre",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Opportunité rare: T2 fonctionnel au nouveau Guéliz",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Superbe appartement à vendre 2 chambres 105 m2",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Studios neufs à vendre à Guéliz avec PISCINE ROOFTOP",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    },
+    {
+      "title": "Superbe appartement à vendre à Bouaakkaz. 2 belles chambres",
+      "url": "",
+      "reason": "Kein Preis erkennbar"
+    }
+  ]
+}
