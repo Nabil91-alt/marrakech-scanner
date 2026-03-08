@@ -380,21 +380,22 @@ def scrape_sarouty(session, max_pages=MAX_PAGES):
     print(f"{'='*55}")
     listings = []
     for page in range(1, max_pages + 1):
-        urls = [
-            f"https://www.sarouty.ma/fr/recherche/immobilier/appartements/a-vendre/marrakech?page={page}",
-            f"https://www.sarouty.ma/fr/immobilier/appartements/a-vendre/marrakech?page={page}",
-        ]
-        resp = None
-        for u in urls:
-            resp = fetch(u, session)
-            if resp: break
-        if not resp: continue
+        if page == 1:
+            url = "https://www.sarouty.ma/acheter/marrakech/appartements-a-vendre/"
+        else:
+            url = f"https://www.sarouty.ma/acheter/marrakech/appartements-a-vendre/?page={page}"
         print(f"\n  Seite {page}/{max_pages}")
+        resp = fetch(url, session)
+        if not resp:
+            # Fallback: .html Version
+            url2 = f"https://www.sarouty.ma/acheter/marrakech/appartements-a-vendre.html?page={page}"
+            resp = fetch(url2, session)
+            if not resp: continue
         soup = BeautifulSoup(resp.text, "html.parser")
         cards = (soup.select("[class*='listingCard']") or soup.select("[class*='property-card']") or
                  soup.select("article") or soup.select("div[class*='result']") or soup.select("div[class*='card']"))
         if not cards:
-            cards = [l for l in soup.select("a[href]") if any(w in l.get('href','').lower() for w in ['appartement','vendre'])]
+            cards = [l for l in soup.select("a[href]") if any(w in l.get('href','').lower() for w in ['appartement','vendre','acheter'])]
         print(f"    {len(cards)} Karten")
         for card in cards:
             try:
@@ -427,8 +428,6 @@ def scrape_sarouty(session, max_pages=MAX_PAGES):
         delay()
     print(f"\n  Sarouty: {len(listings)} Inserate")
     return listings
-
-def _sarouty_detail(listing, session):
     resp = fetch(listing.url, session)
     if not resp: return
     soup = BeautifulSoup(resp.text, "html.parser")
