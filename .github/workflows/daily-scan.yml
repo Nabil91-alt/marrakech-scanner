@@ -22,7 +22,7 @@ jobs:
       - run: pip install -r requirements.txt
 
       - name: Scraper starten
-        run: - run: python scraper.py --output data/latest_raw.json --pages 3
+        run: run: python scraper.py --output data/latest_raw.json --pages 3
 
       - name: KI-Analyse
         env:
