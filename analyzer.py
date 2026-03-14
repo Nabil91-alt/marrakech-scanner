@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 """
-MARRAKECH KI-ANALYZER v3
-Bewahrt URLs und Kontaktdaten zuverlaessig.
+MARRAKECH KI-ANALYZER v4
+- Kumulative Leads (alte bleiben, neue kommen dazu)
+- Bulletproof URL/Bild/Kontakt-Bewahrung
+- Robustes Error-Handling
 """
 
 import json, os, sys, time, argparse
@@ -11,8 +13,7 @@ from pathlib import Path
 try:
     import requests
 except ImportError:
-    print("pip install requests")
-    sys.exit(1)
+    print("pip install requests"); sys.exit(1)
 
 API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
 MODEL = "claude-sonnet-4-20250514"
@@ -21,198 +22,152 @@ MAX_TOKENS = 8000
 CHUNK_SIZE = 8
 MIN_SCORE = 60
 
-DEEP_PROMPT = """Du bist ein erfahrener Immobilien-Analyst fuer Marrakesch. Tiefenanalyse fuer vorgepruefte Angebote.
+DEEP_PROMPT = """Du bist ein erfahrener Immobilien-Analyst fuer Marrakesch.
 
 KAEUFER-PROFIL:
-- Budget sweet spot: 1.200.000-1.800.000 MAD (100.000-200.000 EUR)
-- Nutzung: Eigennutzung/Feriendomizil + Langzeit-Investment + Hauptwohnsitz
+- Budget sweet spot: 1.200.000-1.800.000 MAD
+- Eigennutzung + Investment + Hauptwohnsitz
 - Min. 3 Zimmer, ideal >= 90m2
-- Lagen: Speckguertel - Targa, Palmeraie, Route de l'Ourika, Agdal, Tamansourt, M'Hamid, Massira, Izdihar, Amerchich, Tassoultant, Route de Casablanca, Naehe Flughafen, Sidi Ghanem
+- Lagen: Targa, Palmeraie, Route de l'Ourika, Agdal, Tamansourt, M'Hamid, Massira, Izdihar, Amerchich, Tassoultant, Route de Casablanca, Sidi Ghanem
 - Must-haves: Terrasse, Pool, Parkplatz, Aufzug/Neubau
-- No-Gos: Erdgeschoss, Riad-Stil, Melkia
 
-BEWERTUNG:
+SCORING:
 BUDGET(25%): 100=1.2-1.6M, 80=1.6-1.9M/1.0-1.2M, 60=1.9-2.1M, 40=Rest
-LAGE(25%): 100=Targa/Agdal, 90=Palmeraie/Ourika, 80=Izdihar/Massira/M'Hamid, 70=Tamansourt/Route Casa, 60=Amerchich, 50=Gueliz/Hivernage, 40=Medina
-GROESSE(15%): 100=>=3Zi+>=100m2, 80=>=3Zi+>=80m2, 60=3Zi+60-80m2, 40=kleiner
+LAGE(25%): 100=Targa/Agdal, 90=Palmeraie/Ourika, 80=Izdihar/Massira/M'Hamid, 70=Tamansourt/Route Casa, 60=Amerchich, 50=Gueliz/Hivernage
+GROESSE(15%): 100=3Zi+100m2, 80=3Zi+80m2, 60=3Zi+60m2
 AUSSTATTUNG(20%): je 25 fuer Terrasse, Pool, Parkplatz, Aufzug/Neubau
-INVESTMENT(15%): m2-Preis, Entwicklung, Neubau, Qualitaet
-ABZUEGE: Eigentum Unbekannt -10, Zustand Unbekannt -5, wenig Infos -10
+INVESTMENT(15%): m2-Preis, Entwicklung, Neubau
+ABZUEGE: Eigentum unklar -10, Zustand unklar -5, wenig Infos -10
 
-Wenn ein Inserat wenig Details hat, schaetze konservativ. Gib trotzdem eine Bewertung ab.
+WICHTIG: Kopiere id, url, source, contact_phone, contact_name, image EXAKT aus dem Input.
 
-WICHTIG: Kopiere id, url, source, contact_phone und contact_name EXAKT aus dem Input. Aendere diese NICHT.
-
-Antworte NUR mit JSON-Array (keine Backticks, kein Markdown):
-[{"id":"EXAKT-WIE-INPUT","title":"Titel Deutsch","source":"EXAKT-WIE-INPUT","url":"EXAKT-WIE-INPUT","contact_phone":"EXAKT-WIE-INPUT","contact_name":"EXAKT-WIE-INPUT","price_mad":Zahl,"price_eur":Zahl,"area_sqm":Zahl,"rooms":Zahl,"bedrooms":Zahl,"bathrooms":Zahl,"floor":"Etage","neighborhood":"Viertel","property_type":"Typ","price_per_sqm_mad":Zahl,"has_terrace":bool,"has_pool":bool,"has_parking":bool,"has_elevator":bool,"is_new_build":bool,"ownership_type":"String","condition":"String","highlights":["max 4"],"concerns":["max 4"],"neighborhood_outlook":"2 Saetze","investment_potential":1-5,"livability_score":1-5,"market_price_assessment":"Unter Markt/Marktgerecht/Ueber Markt/Nicht beurteilbar","scores":{"budget_fit":0-100,"location_fit":0-100,"size_fit":0-100,"amenities_fit":0-100,"investment_fit":0-100,"info_penalty":0,"overall":0-100},"verdict":"TOP-KANDIDAT/INTERESSANT/BEDINGT GEEIGNET/NICHT GEEIGNET","verdict_reason":"2-3 Saetze","besichtigung_fragen":["5 Fragen"],"verhandlung_tipps":"1-2 Saetze"}]"""
+Antworte NUR mit JSON-Array:
+[{"id":"WIE-INPUT","title":"Deutsch","source":"WIE-INPUT","url":"WIE-INPUT","contact_phone":"WIE-INPUT","contact_name":"WIE-INPUT","image":"WIE-INPUT","price_mad":N,"price_eur":N,"area_sqm":N,"rooms":N,"bedrooms":N,"bathrooms":N,"floor":"X","neighborhood":"X","property_type":"X","price_per_sqm_mad":N,"has_terrace":B,"has_pool":B,"has_parking":B,"has_elevator":B,"is_new_build":B,"ownership_type":"X","condition":"X","highlights":["4x"],"concerns":["4x"],"neighborhood_outlook":"2 Saetze","investment_potential":1-5,"livability_score":1-5,"market_price_assessment":"Unter Markt/Marktgerecht/Ueber Markt/Nicht beurteilbar","scores":{"budget_fit":N,"location_fit":N,"size_fit":N,"amenities_fit":N,"investment_fit":N,"info_penalty":N,"overall":N},"verdict":"TOP-KANDIDAT/INTERESSANT/BEDINGT GEEIGNET/NICHT GEEIGNET","verdict_reason":"2-3 Saetze","besichtigung_fragen":["5x"],"verhandlung_tipps":"1-2 Saetze"}]"""
 
 
-def call_claude(listings_chunk, chunk_num, total_chunks):
-    if not API_KEY:
-        print("  KEIN API KEY!")
-        return []
-
-    headers = {
-        "Content-Type": "application/json",
-        "x-api-key": API_KEY,
-        "anthropic-version": "2023-06-01",
-    }
-
-    payload = {
-        "model": MODEL,
-        "max_tokens": MAX_TOKENS,
-        "system": DEEP_PROMPT,
-        "messages": [{
-            "role": "user",
-            "content": f"Analysiere diese {len(listings_chunk)} Inserate (Chunk {chunk_num}/{total_chunks}):\n\n{json.dumps(listings_chunk, ensure_ascii=False)}"
-        }]
-    }
-
+def call_claude(chunk, num, total):
+    if not API_KEY: return []
+    headers = {"Content-Type":"application/json","x-api-key":API_KEY,"anthropic-version":"2023-06-01"}
+    payload = {"model":MODEL,"max_tokens":MAX_TOKENS,"system":DEEP_PROMPT,
+        "messages":[{"role":"user","content":"Analysiere "+str(len(chunk))+" Inserate ("+str(num)+"/"+str(total)+"):\n\n"+json.dumps(chunk,ensure_ascii=False)}]}
     for attempt in range(5):
         try:
-            print(f"    API-Call (Versuch {attempt+1})...")
+            print(f"    API {attempt+1}/5...")
             resp = requests.post(API_URL, headers=headers, json=payload, timeout=120)
-
             if resp.status_code == 200:
-                data = resp.json()
-                text = "".join(b.get("text", "") for b in data.get("content", []) if b.get("type") == "text")
+                text = "".join(b.get("text","") for b in resp.json().get("content",[]) if b.get("type")=="text")
                 clean = text.strip()
-                if clean.startswith("```"): clean = clean.split("\n", 1)[1] if "\n" in clean else clean[3:]
+                if clean.startswith("```"): clean = clean.split("\n",1)[1] if "\n" in clean else clean[3:]
                 if clean.endswith("```"): clean = clean[:-3]
                 clean = clean.strip()
-                if not clean:
-                    print("    Leere Antwort, retry...")
-                    time.sleep(5)
-                    continue
-                parsed = json.loads(clean)
-                result = parsed if isinstance(parsed, list) else [parsed]
-                print(f"    OK: {len(result)} analysiert")
-                return result
-
-            elif resp.status_code == 429:
-                wait = min(60, 10 * (attempt + 1))
-                print(f"    Rate limit, warte {wait}s...")
-                time.sleep(wait)
-            elif resp.status_code == 529:
-                print(f"    API ueberlastet, warte 20s...")
-                time.sleep(20)
-            else:
-                print(f"    API Fehler {resp.status_code}: {resp.text[:200]}")
-                time.sleep(10)
-
-        except requests.RequestException as e:
-            print(f"    Request-Fehler: {e}")
-            time.sleep(10)
-        except json.JSONDecodeError as e:
-            print(f"    JSON-Fehler: {e}")
-            time.sleep(5)
-
-    print(f"    FEHLGESCHLAGEN nach 5 Versuchen")
+                if not clean: time.sleep(5); continue
+                result = json.loads(clean)
+                r = result if isinstance(result, list) else [result]
+                print(f"    OK: {len(r)} analysiert")
+                return r
+            elif resp.status_code == 429: time.sleep(min(60,10*(attempt+1)))
+            elif resp.status_code == 529: time.sleep(20)
+            else: print(f"    Fehler {resp.status_code}: {resp.text[:150]}"); time.sleep(10)
+        except requests.RequestException as ex: print(f"    {ex}"); time.sleep(10)
+        except json.JSONDecodeError: time.sleep(5)
+    print("    FEHLGESCHLAGEN")
     return []
 
 
-def restore_scraper_data(analyzed_list, raw_listings):
-    """Stellt sicher dass URLs und Kontaktdaten IMMER aus den Scraper-Daten kommen."""
-    raw_by_id = {l.get("id"): l for l in raw_listings if l.get("id")}
-
-    for a in analyzed_list:
-        raw = raw_by_id.get(a.get("id"))
+def restore_from_raw(analyzed, raw_listings):
+    """URLs, Bilder, Kontakte IMMER aus Scraper-Daten nehmen."""
+    by_id = {l.get("id"): l for l in raw_listings if l.get("id")}
+    for a in analyzed:
+        raw = by_id.get(a.get("id"))
         if raw:
-            # URL IMMER aus Scraper-Daten nehmen (KI vergisst sie oft)
-            a["url"] = raw.get("url") or a.get("url", "")
-            a["contact_phone"] = raw.get("contact_phone") or a.get("contact_phone", "")
-            a["contact_name"] = raw.get("contact_name") or a.get("contact_name", "")
-            a["source"] = raw.get("source") or a.get("source", "")
-            # Auch Bilder uebernehmen falls vorhanden
-            if raw.get("images") and not a.get("images"):
-                a["images"] = raw["images"]
+            # Diese Felder IMMER aus Rohdaten, nie der KI vertrauen
+            for field in ["url","source","contact_phone","contact_name","image","images"]:
+                raw_val = raw.get(field)
+                if raw_val:
+                    a[field] = raw_val
 
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--input", "-i", default="data/latest_raw.json")
-    parser.add_argument("--output", "-o", default="data/latest.json")
+    parser.add_argument("--input","-i",default="data/latest_raw.json")
+    parser.add_argument("--output","-o",default="data/latest.json")
     args = parser.parse_args()
+    if not API_KEY: print("KEIN API KEY!"); sys.exit(1)
 
-    if not API_KEY:
-        print("KEIN ANTHROPIC_API_KEY!")
-        sys.exit(1)
-
-    print(f"\n{'='*55}")
-    print(f"  KI-ANALYZER v3")
-    print(f"{'='*55}")
+    print(f"\n  KI-ANALYZER v4\n")
 
     with open(args.input) as f:
         data = json.load(f)
+    listings = data.get("listings",[])
+    meta = data.get("meta",{})
+    rejected_log = data.get("rejected_log",[])
 
-    listings = data.get("listings", [])
-    meta = data.get("meta", {})
-    rejected_log = data.get("rejected_log", [])
+    # Bestehende Leads laden
+    existing = []
+    existing_ids = set()
+    try:
+        with open(args.output) as f:
+            old = json.load(f)
+            existing = old.get("listings",[])
+            existing_ids = {l.get("id") for l in existing if l.get("id")}
+            print(f"  {len(existing)} bestehende Leads")
+    except:
+        print("  Keine bestehenden Leads")
 
-    print(f"  {len(listings)} Inserate zu analysieren")
+    # Nur neue analysieren
+    new_listings = [l for l in listings if l.get("id") and l["id"] not in existing_ids]
+    print(f"  {len(new_listings)} neue Inserate (von {len(listings)} gescrapt)")
 
-    if not listings:
-        result = {"meta": {**meta, "analyzed_at": datetime.now().isoformat(), "analyzed_count": 0, "qualified_count": 0, "top_count": 0, "interesting_count": 0}, "listings": [], "rejected_log": rejected_log}
-        Path(args.output).parent.mkdir(parents=True, exist_ok=True)
-        Path(args.output).write_text(json.dumps(result, ensure_ascii=False, indent=2))
-        print("  Keine Inserate.")
+    if not new_listings:
+        print("  Nichts Neues zu analysieren.")
+        result = {"meta":{**meta,"analyzed_at":datetime.now().isoformat(),"analyzed_count":0,"qualified_count":len(existing),
+            "top_count":len([a for a in existing if a.get("verdict")=="TOP-KANDIDAT"]),
+            "interesting_count":len([a for a in existing if a.get("verdict")=="INTERESSANT"])},
+            "listings":existing,"rejected_log":rejected_log}
+        Path(args.output).parent.mkdir(parents=True,exist_ok=True)
+        Path(args.output).write_text(json.dumps(result,ensure_ascii=False,indent=2))
         return
 
-    all_analyzed = []
-    total_chunks = (len(listings) + CHUNK_SIZE - 1) // CHUNK_SIZE
-
-    for i in range(0, len(listings), CHUNK_SIZE):
-        chunk = listings[i:i + CHUNK_SIZE]
-        chunk_num = i // CHUNK_SIZE + 1
-        print(f"\n  Chunk {chunk_num}/{total_chunks}: {len(chunk)} Inserate")
-
-        analyzed = call_claude(chunk, chunk_num, total_chunks)
+    new_analyzed = []
+    total = (len(new_listings)+CHUNK_SIZE-1)//CHUNK_SIZE
+    for i in range(0,len(new_listings),CHUNK_SIZE):
+        chunk = new_listings[i:i+CHUNK_SIZE]
+        num = i//CHUNK_SIZE+1
+        print(f"\n  Chunk {num}/{total}: {len(chunk)} Inserate")
+        analyzed = call_claude(chunk, num, total)
         if analyzed:
-            qualified = [a for a in analyzed if a.get("scores", {}).get("overall", 0) >= MIN_SCORE]
-            all_analyzed.extend(qualified)
-            print(f"    {len(qualified)} qualifiziert (>={MIN_SCORE})")
-        else:
-            print(f"    Keine Ergebnisse")
+            q = [a for a in analyzed if a.get("scores",{}).get("overall",0) >= MIN_SCORE]
+            new_analyzed.extend(q)
+            print(f"    {len(q)} qualifiziert")
+        if i+CHUNK_SIZE < len(new_listings): time.sleep(3)
 
-        if i + CHUNK_SIZE < len(listings):
-            time.sleep(3)
+    # URLs/Bilder aus Rohdaten zurueckfuehren
+    restore_from_raw(new_analyzed, new_listings)
 
-    # WICHTIG: URLs und Kontakte aus Scraper-Daten zurueckfuehren
-    restore_scraper_data(all_analyzed, listings)
+    # Alte + neue zusammenfuehren
+    all_leads = existing + new_analyzed
+    all_leads.sort(key=lambda x: x.get("scores",{}).get("overall",0), reverse=True)
 
-    all_analyzed.sort(key=lambda x: x.get("scores", {}).get("overall", 0), reverse=True)
+    result = {"meta":{**meta,"analyzed_at":datetime.now().isoformat(),
+        "analyzed_count":len(new_listings),
+        "qualified_count":len(all_leads),
+        "new_count":len(new_analyzed),
+        "top_count":len([a for a in all_leads if a.get("verdict")=="TOP-KANDIDAT"]),
+        "interesting_count":len([a for a in all_leads if a.get("verdict")=="INTERESSANT"])},
+        "listings":all_leads,"rejected_log":rejected_log}
 
-    result = {
-        "meta": {
-            **meta,
-            "analyzed_at": datetime.now().isoformat(),
-            "analyzed_count": len(listings),
-            "qualified_count": len(all_analyzed),
-            "top_count": len([a for a in all_analyzed if a.get("verdict") == "TOP-KANDIDAT"]),
-            "interesting_count": len([a for a in all_analyzed if a.get("verdict") == "INTERESSANT"]),
-        },
-        "listings": all_analyzed,
-        "rejected_log": rejected_log,
-    }
+    Path(args.output).parent.mkdir(parents=True,exist_ok=True)
+    Path(args.output).write_text(json.dumps(result,ensure_ascii=False,indent=2))
 
-    Path(args.output).parent.mkdir(parents=True, exist_ok=True)
-    Path(args.output).write_text(json.dumps(result, ensure_ascii=False, indent=2))
+    with_url = len([a for a in all_leads if a.get("url")])
+    with_img = len([a for a in all_leads if a.get("image")])
 
-    # Verify URLs
-    with_url = len([a for a in all_analyzed if a.get("url")])
-    with_phone = len([a for a in all_analyzed if a.get("contact_phone")])
-
-    print(f"\n{'='*55}")
-    print(f"  ERGEBNIS")
-    print(f"{'='*55}")
-    print(f"  Input:        {len(listings)}")
-    print(f"  Qualifiziert: {len(all_analyzed)}")
-    print(f"  Mit URL:      {with_url}/{len(all_analyzed)}")
-    print(f"  Mit Telefon:  {with_phone}/{len(all_analyzed)}")
-    print(f"  Top:          {result['meta']['top_count']}")
-    print(f"  Interessant:  {result['meta']['interesting_count']}")
-    print(f"  Gespeichert:  {args.output}\n")
-
+    print(f"\n  ERGEBNIS:")
+    print(f"  Gesamt:  {len(all_leads)} Leads ({len(new_analyzed)} neu)")
+    print(f"  URLs:    {with_url}/{len(all_leads)}")
+    print(f"  Bilder:  {with_img}/{len(all_leads)}")
+    print(f"  Top:     {result['meta']['top_count']}")
+    print(f"  Gespeichert: {args.output}\n")
 
 if __name__ == "__main__":
     main()
