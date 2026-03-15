@@ -14,8 +14,6 @@ h1{font-family:'Source Serif 4',Georgia,serif}
 .hd{background:#fff;border-bottom:1px solid var(--brd);padding:14px 0;position:sticky;top:0;z-index:50}
 .hd-i{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
 .hd h1{font-size:20px;font-weight:700}.hd h1 b{color:var(--ac)}
-.pip{display:flex;gap:4px;align-items:center;flex-wrap:wrap;padding:10px 0;font-size:11px}
-.pip span{background:#fff;border:1px solid var(--brd);padding:2px 8px;border-radius:20px;color:var(--t3)}
 .sb{background:#fff;border:1px solid var(--brd);border-radius:var(--r);padding:10px 14px;margin-bottom:10px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
 .btn{border:none;border-radius:8px;padding:10px 20px;font-size:13px;font-weight:600;cursor:pointer;font-family:inherit}
 .bp{background:var(--ac);color:#fff}.bp:disabled{opacity:.5}
@@ -27,7 +25,7 @@ h1{font-family:'Source Serif 4',Georgia,serif}
 .cd:hover{border-color:var(--t3)}
 .cd-h{padding:14px;cursor:pointer;display:flex;gap:12px;align-items:flex-start}
 @media(max-width:480px){.cd-h{padding:12px;gap:10px}}
-.cd-img{width:80px;height:64px;border-radius:8px;object-fit:cover;flex-shrink:0;background:var(--bg)}
+.cd-img{width:80px;height:64px;border-radius:8px;object-fit:cover;flex-shrink:0;background:var(--bg);cursor:pointer}
 @media(max-width:480px){.cd-img{width:60px;height:48px}}
 .ring{width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0}
 .ring-n{width:36px;height:36px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:700;font-family:monospace}
@@ -44,10 +42,13 @@ h1{font-family:'Source Serif 4',Georgia,serif}
 .tg-y{background:var(--gbg);color:var(--gr)}.tg-n{background:var(--rbg);color:var(--rd)}.tg-u{background:#F5F2ED;color:var(--t3)}
 .sx{background:var(--bg);border-radius:10px;padding:12px;margin-bottom:10px}
 .vb{border-radius:10px;padding:12px;margin-bottom:10px}.vb-t{background:var(--gbg);border:1px solid #C5E0CF}.vb-i{background:var(--ybg);border:1px solid #E8DCC0}.vb-b{background:#FFF4ED;border:1px solid #E8D0C0}
-.al{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
-.aln{display:inline-flex;align-items:center;gap:5px;padding:8px 16px;border-radius:8px;font-size:12px;font-weight:600;text-decoration:none;transition:all .15s}
-.aln-i{background:var(--ac);color:#fff}.aln-p{background:var(--gr);color:#fff}
-.aln-wa{background:var(--wa);color:#fff}.aln-em{background:#4A90D9;color:#fff}
+.al{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+.aln{display:inline-flex;align-items:center;gap:6px;padding:10px 20px;border-radius:10px;font-size:13px;font-weight:700;text-decoration:none;transition:all .15s}
+.aln-wa{background:var(--wa);color:#fff;box-shadow:0 2px 8px rgba(37,211,102,.25);font-size:14px;padding:12px 24px}
+.aln-wa:hover{background:#20BD5A}
+.aln-i{background:var(--ac);color:#fff;font-size:12px;padding:8px 16px;font-weight:600}
+.aln-em{background:#4A90D9;color:#fff;font-size:12px;padding:8px 16px;font-weight:600}
+.aln-p{background:var(--gr);color:#fff;font-size:12px;padding:8px 16px;font-weight:600}
 .tc{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:12px}@media(max-width:600px){.tc{grid-template-columns:1fr}}
 .dt{width:6px;height:6px;border-radius:50%;display:inline-block}.dt-on{background:var(--ac2)}.dt-off{background:#E8E0D4}
 .star{background:none;border:none;font-size:18px;cursor:pointer;flex-shrink:0}
@@ -56,7 +57,20 @@ h1{font-family:'Source Serif 4',Georgia,serif}
 .cmp table{width:100%;border-collapse:collapse;font-size:12px}.cmp th{text-align:left;padding:5px 8px;color:var(--t3);font-weight:500;border-bottom:2px solid var(--brd);font-size:11px}.cmp td{padding:6px 8px;border-bottom:1px solid var(--brd)}
 .sp{background:#fff;border:1px solid var(--ac2);border-radius:var(--r);padding:16px;margin-bottom:10px}
 .sp input{width:100%;background:var(--bg);border:1px solid var(--brd);border-radius:8px;padding:9px 12px;font-size:13px;font-family:inherit;outline:none;margin-bottom:10px;box-sizing:border-box}
-.imgs{display:flex;gap:6px;overflow-x:auto;padding:12px 0}.imgs img{width:120px;height:80px;object-fit:cover;border-radius:8px;flex-shrink:0}
+.imgs{display:flex;gap:6px;overflow-x:auto;padding:12px 0}
+.imgs img{width:120px;height:80px;object-fit:cover;border-radius:8px;flex-shrink:0;cursor:pointer;transition:transform .15s}
+.imgs img:hover{transform:scale(1.05)}
+/* Lightbox */
+.lb{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.92);z-index:100;display:flex;align-items:center;justify-content:center;padding:20px}
+.lb img{max-width:90vw;max-height:85vh;object-fit:contain;border-radius:8px}
+.lb-close{position:absolute;top:16px;right:20px;background:none;border:none;color:#fff;font-size:32px;cursor:pointer;z-index:101}
+.lb-nav{position:absolute;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.15);border:none;color:#fff;font-size:28px;cursor:pointer;padding:12px 16px;border-radius:8px}
+.lb-nav:hover{background:rgba(255,255,255,.25)}
+.lb-prev{left:16px}.lb-next{right:16px}
+.lb-count{position:absolute;bottom:20px;left:50%;transform:translateX(-50%);color:#fff;font-size:13px;opacity:.7}
+/* Contact section highlight */
+.contact-box{background:#F0FAF3;border:1px solid #C5E0CF;border-radius:12px;padding:14px;margin-top:14px}
+.contact-title{font-size:11px;font-weight:600;color:var(--gr);text-transform:uppercase;letter-spacing:.06em;margin-bottom:10px}
 </style>
 </head>
 <body>
@@ -72,38 +86,57 @@ function vc(v){return v==='TOP-KANDIDAT'?'t':v==='INTERESSANT'?'i':v==='BEDINGT 
 function fm(n,c){return n?n.toLocaleString('de-DE')+' '+(c||'MAD'):'\u2014'}
 function dots(n){return h('span',{style:{display:'inline-flex',gap:3}},Array.from({length:5},function(_,i){return h('span',{key:i,className:'dt '+(i<(n||0)?'dt-on':'dt-off')})}))}
 
-// Nachricht auf Franzoesisch + Darija generieren
-function makeMsg(d){
-  var title = d.title || 'votre bien';
-  var price = d.price_mad ? d.price_mad.toLocaleString('fr-FR') + ' MAD' : '';
-  var loc = d.neighborhood || 'Marrakech';
-  var fr = "Bonjour,\n\nJe suis int\u00e9ress\u00e9(e) par votre bien : \"" + title + "\"" + (price ? " au prix de " + price : "") + " \u00e0 " + loc + ".\n\nPourrais-je obtenir plus d'informations et organiser une visite ?\n\nCordialement";
-  var da = "\n\n---\n\u0627\u0644\u0633\u0644\u0627\u0645 \u0639\u0644\u064a\u0643\u0645,\n\n\u0643\u0646\u0647\u062a\u0645 \u0628\u0627\u0644\u0634\u0642\u0629 \u062f\u064a\u0627\u0644\u0643\u0645 \"" + title + "\"" + (price ? " \u0628 " + price : "") + " \u0641 " + loc + ".\n\n\u0648\u0627\u0634 \u0645\u0645\u0643\u0646 \u0646\u0627\u062e\u062f \u0645\u0639\u0644\u0648\u0645\u0627\u062a \u0632\u064a\u0627\u062f\u0629 \u0648 \u0646\u062f\u064a\u0631\u0648 \u0632\u064a\u0627\u0631\u0629\u061f\n\n\u0634\u0643\u0631\u0627";
-  return fr + da;
-}
-function waUrl(phone, d){
-  var p = (phone||'').replace(/[\s.\-()]/g,'');
-  if(p.startsWith('0')) p = '+212' + p.substring(1);
-  if(!p.startsWith('+')) p = '+212' + p;
-  return 'https://wa.me/' + p.replace('+','') + '?text=' + encodeURIComponent(makeMsg(d));
-}
-function mailUrl(email, d){
-  var title = d.title || 'votre bien';
-  return 'mailto:' + email + '?subject=' + encodeURIComponent('Demande - ' + title) + '&body=' + encodeURIComponent(makeMsg(d));
+// WhatsApp-Nummer ableiten
+function getWA(d){
+  if(d.contact_whatsapp) return d.contact_whatsapp;
+  if(d.contact_phone){
+    var p=d.contact_phone.replace(/[\s.\-()]/g,'');
+    if(p.startsWith('0')) p='+212'+p.substring(1);
+    if(!p.startsWith('+')) p='+212'+p;
+    return p;
+  }
+  return '';
 }
 
-function Card(p){var d=p.d,st=p.starred,os=p.onStar;
+// Nachricht auf Franzoesisch + Darija
+function makeMsg(d){
+  var t=d.title||'votre bien';
+  var p=d.price_mad?d.price_mad.toLocaleString('fr-FR')+' MAD':'';
+  var loc=d.neighborhood||'Marrakech';
+  return "Bonjour,\n\nJe suis int\u00e9ress\u00e9(e) par votre bien : \""+t+"\""+(p?" au prix de "+p:"")+" \u00e0 "+loc+".\n\nPourrais-je obtenir plus d'informations et organiser une visite ?\n\nCordialement\n\n---\n\u0627\u0644\u0633\u0644\u0627\u0645 \u0639\u0644\u064a\u0643\u0645,\n\n\u0643\u0646\u0647\u062a\u0645 \u0628\u0627\u0644\u0634\u0642\u0629 \u062f\u064a\u0627\u0644\u0643\u0645 \""+t+"\""+(p?" \u0628 "+p:"")+" \u0641 "+loc+".\n\n\u0648\u0627\u0634 \u0645\u0645\u0643\u0646 \u0646\u0627\u062e\u062f \u0645\u0639\u0644\u0648\u0645\u0627\u062a \u0632\u064a\u0627\u062f\u0629 \u0648 \u0646\u062f\u064a\u0631\u0648 \u0632\u064a\u0627\u0631\u0629\u061f\n\n\u0634\u0643\u0631\u0627";
+}
+function waUrl(wa,d){return'https://wa.me/'+wa.replace('+','')+'?text='+encodeURIComponent(makeMsg(d))}
+function mailUrl(em,d){return'mailto:'+em+'?subject='+encodeURIComponent('Demande - '+(d.title||'Appartement'))+'&body='+encodeURIComponent(makeMsg(d))}
+
+// Lightbox
+function Lightbox(p){
+  var imgs=p.images,idx=p.idx,onClose=p.onClose,onNav=p.onNav;
+  if(!imgs||!imgs.length) return null;
+  ue(function(){
+    function onKey(e){if(e.key==='Escape')onClose();if(e.key==='ArrowRight')onNav(1);if(e.key==='ArrowLeft')onNav(-1)}
+    document.addEventListener('keydown',onKey);
+    return function(){document.removeEventListener('keydown',onKey)};
+  },[]);
+  return h('div',{className:'lb',onClick:onClose},
+    h('button',{className:'lb-close',onClick:onClose},'\u2715'),
+    imgs.length>1?h('button',{className:'lb-nav lb-prev',onClick:function(e){e.stopPropagation();onNav(-1)}},'\u2039'):null,
+    h('img',{src:imgs[idx],alt:'',onClick:function(e){e.stopPropagation()}}),
+    imgs.length>1?h('button',{className:'lb-nav lb-next',onClick:function(e){e.stopPropagation();onNav(1)}},'\u203a'):null,
+    h('div',{className:'lb-count'},(idx+1)+' / '+imgs.length));
+}
+
+function Card(p){var d=p.d,st=p.starred,os=p.onStar,onImg=p.onImg;
 var _o=us(false),op=_o[0],so=_o[1];
 var s=d.scores||{};
+var wa=getWA(d);
 var tags=[['Terrasse',d.has_terrace],['Pool',d.has_pool],['Parkplatz',d.has_parking],['Aufzug',d.has_elevator],['Neubau',d.is_new_build]];
 var details=[['Typ',d.property_type],['Etage',d.floor],['Zimmer',d.rooms],['Schlafzi.',d.bedrooms],['B\u00e4der',d.bathrooms],['Zustand',d.condition],['Fl\u00e4che',d.area_sqm?d.area_sqm+' m\u00b2':null],['Eigentum',d.ownership_type]];
 var bars=[['Budget',s.budget_fit,'25%'],['Lage',s.location_fit,'25%'],['Gr\u00f6\u00dfe',s.size_fit,'15%'],['Ausstattung',s.amenities_fit,'20%'],['Investment',s.investment_fit,'15%']];
-var hasWa = d.contact_whatsapp || d.contact_phone;
-var hasEm = d.contact_email;
+var allImgs=(d.images&&d.images.length>0)?d.images:(d.image?[d.image]:[]);
 
 return h('div',{className:'cd'},
   h('div',{className:'cd-h',onClick:function(){so(!op)}},
-    d.image?h('img',{className:'cd-img',src:d.image,alt:'',loading:'lazy',onError:function(e){e.target.style.display='none'}}):null,
+    d.image?h('img',{className:'cd-img',src:d.image,alt:'',loading:'lazy',onError:function(e){e.target.style.display='none'},onClick:function(e){e.stopPropagation();if(allImgs.length)onImg(allImgs,0)}}):null,
     h('div',{className:'ring',style:{background:'conic-gradient('+sb2(s.overall||0)+' '+((s.overall||0)*3.6)+'deg, #F0EBE3 0deg)'}},h('div',{className:'ring-n',style:{color:sc(s.overall||0)}},s.overall||0)),
     h('div',{style:{flex:1,minWidth:0}},
       h('div',{style:{display:'flex',gap:5,alignItems:'center',flexWrap:'wrap',marginBottom:3}},
@@ -116,7 +149,7 @@ return h('div',{className:'cd'},
     h('button',{className:'star',onClick:function(e){e.stopPropagation();os(d.id)},style:{color:st?'var(--ac2)':'var(--brd)'}},st?'\u2605':'\u2606'),
     h('span',{className:'arr'+(op?' arr-o':'')},'\u25be')),
   op?h('div',{className:'cd-b'},
-    d.images&&d.images.length>1?h('div',{className:'imgs'},d.images.slice(0,5).map(function(img,i){return h('img',{key:i,src:img,alt:'',loading:'lazy',onError:function(e){e.target.style.display='none'}})})):null,
+    allImgs.length>1?h('div',{className:'imgs'},allImgs.slice(0,5).map(function(img,i){return h('img',{key:i,src:img,alt:'',loading:'lazy',onClick:function(){onImg(allImgs,i)},onError:function(e){e.target.style.display='none'}})})):null,
     h('div',{className:'gb'},['Scraper \u2713','Filter \u2713','KI-Analyse \u2713'].map(function(g,i){return h('span',{key:i,className:'gbi'},g)})),
     h('div',{className:'tc'},
       h('div',null,bars.map(function(b,i){return h('div',{key:i,className:'br'},h('div',{className:'br-l'},h('span',null,b[0]),h('span',{style:{fontWeight:600,color:sc(b[1]||0)}},''+(b[1]||0)+' ',h('span',{style:{color:'var(--t3)',fontSize:10}},b[2]))),h('div',{className:'br-t'},h('div',{className:'br-f',style:{width:Math.min(100,b[1]||0)+'%',background:sb2(b[1]||0)}})))}),(s.info_penalty||0)<0?h('div',{style:{fontSize:11,color:'var(--rd)',marginTop:4}},'\u26a0 Info-Abzug: '+s.info_penalty):null),
@@ -127,12 +160,22 @@ return h('div',{className:'cd'},
       h('div',null,h('div',{style:{fontSize:11,fontWeight:600,color:'var(--rd)',marginBottom:4}},'RISIKEN'),(d.concerns||[]).map(function(x,i){return h('div',{key:i,style:{fontSize:12,color:'var(--t2)',marginBottom:2}},'\u2013 '+x)}))),
     h('div',{className:'vb vb-'+vc(d.verdict)},h('div',{style:{fontSize:13,fontWeight:700,fontFamily:"'Source Serif 4',serif",marginBottom:3}},d.verdict),h('div',{style:{fontSize:13,color:'var(--t2)',lineHeight:1.6}},d.verdict_reason),d.verhandlung_tipps?h('div',{style:{fontSize:12,color:'var(--ac)',marginTop:6,fontWeight:500}},'\ud83d\udca1 '+d.verhandlung_tipps):null),
     d.besichtigung_fragen&&d.besichtigung_fragen.length>0?h('div',{className:'sx'},h('div',{style:{fontSize:11,fontWeight:600,color:'var(--t3)',marginBottom:4}},'BESICHTIGUNGS-CHECKLISTE'),d.besichtigung_fragen.map(function(q,i){return h('div',{key:i,style:{fontSize:12,padding:'3px 0'}},'\u2610 '+q)})):null,
-    h('div',{className:'al'},
-      d.url?h('a',{href:d.url,target:'_blank',rel:'noopener noreferrer',className:'aln aln-i'},'\ud83d\udd17 Inserat'):null,
-      hasWa?h('a',{href:waUrl(d.contact_whatsapp||d.contact_phone,d),target:'_blank',className:'aln aln-wa'},'\ud83d\udcac WhatsApp'):null,
-      hasEm?h('a',{href:mailUrl(d.contact_email,d),className:'aln aln-em'},'\u2709 Email'):null,
-      d.contact_phone?h('a',{href:'tel:'+d.contact_phone,className:'aln aln-p'},'\ud83d\udcde '+d.contact_phone):null,
-      d.contact_name?h('span',{style:{fontSize:12,color:'var(--t2)',padding:'8px 0'}},'\ud83d\udc64 '+d.contact_name):null)
+    // KONTAKT-BOX
+    h('div',{className:'contact-box'},
+      h('div',{className:'contact-title'},'Kontakt aufnehmen'),
+      h('div',{className:'al',style:{marginTop:0}},
+        // WhatsApp = PRIMARY BUTTON (immer wenn Telefon oder WA vorhanden)
+        wa?h('a',{href:waUrl(wa,d),target:'_blank',rel:'noopener noreferrer',className:'aln aln-wa'},'\ud83d\udcac WhatsApp Anfrage senden'):null,
+        // Inserat Link
+        d.url?h('a',{href:d.url,target:'_blank',rel:'noopener noreferrer',className:'aln aln-i'},'\ud83d\udd17 Inserat'):null,
+        // Telefon
+        d.contact_phone?h('a',{href:'tel:'+d.contact_phone,className:'aln aln-p'},'\ud83d\udcde '+d.contact_phone):null,
+        // Email
+        d.contact_email?h('a',{href:mailUrl(d.contact_email,d),className:'aln aln-em'},'\u2709 Email'):null,
+        // Name
+        d.contact_name?h('span',{style:{fontSize:12,color:'var(--t2)',padding:'8px 0'}},'\ud83d\udc64 '+d.contact_name):null,
+        // Kein Kontakt? Hinweis auf Inserat
+        !wa&&!d.contact_phone&&!d.contact_email?h('span',{style:{fontSize:12,color:'var(--t3)',fontStyle:'italic'}},'\u2192 Kontakt \u00fcber das Inserat aufnehmen'):null))
   ):null);
 }
 
@@ -141,8 +184,16 @@ var _l=us([]),ld=_l[0],sl=_l[1];var _f=us(function(){try{return new Set(JSON.par
 var _g=us(false),lg=_g[0],slg=_g[1];var _s=us(''),st=_s[0],sst=_s[1];var _i=us('all'),fi=_i[0],sfi=_i[1];
 var _m=us(null),mt=_m[0],sm=_m[1];var _r=us([]),rj=_r[0],sr=_r[1];var _x=us(false),xr=_x[0],sxr=_x[1];
 var _p=us(false),sp=_p[0],ssp=_p[1];var _u=us(au),du=_u[0],sdu=_u[1];var _v=us(au),ui=_v[0],sui=_v[1];
+// Lightbox state
+var _lb=us(null),lbImgs=_lb[0],sLbImgs=_lb[1];
+var _li=us(0),lbIdx=_li[0],sLbIdx=_li[1];
+
 ue(function(){localStorage.setItem('mf',JSON.stringify(Array.from(fv)))},[fv]);
 var tf=uc(function(id){sf(function(p){var n=new Set(p);n.has(id)?n.delete(id):n.add(id);return n})},[]);
+var openLb=uc(function(imgs,idx){sLbImgs(imgs);sLbIdx(idx||0)},[]);
+var closeLb=uc(function(){sLbImgs(null)},[]);
+var navLb=uc(function(dir){sLbIdx(function(i){var len=lbImgs?lbImgs.length:1;return(i+dir+len)%len})},[lbImgs]);
+
 var fd=uc(function(){if(!du){ssp(true);return}slg(true);sst('Lade...');fetch(du+'?t='+Date.now()).then(function(r){if(!r.ok)throw new Error('HTTP '+r.status);return r.json()}).then(function(d){sl(d.listings||[]);sm(d.meta||null);sr(d.rejected_log||[]);sst('\u2705 '+(d.listings||[]).length+' Leads'+(d.meta&&d.meta.new_count?' ('+d.meta.new_count+' neu)':''));setTimeout(function(){sst('')},4000)}).catch(function(e){sst('\u274c '+e.message)}).finally(function(){slg(false)})},[du]);
 ue(function(){if(du)fd()},[]);
 var sv=function(){var u=ui.trim();sdu(u);localStorage.setItem('mu',u);ssp(false)};
@@ -152,6 +203,9 @@ var inn=ld.filter(function(l){return l.verdict==='INTERESSANT'}).length;
 var sn=ld.filter(function(l){return fv.has(l.id)}).length;
 
 return h('div',null,
+  // Lightbox
+  lbImgs?h(Lightbox,{images:lbImgs,idx:lbIdx,onClose:closeLb,onNav:navLb}):null,
+  // Header
   h('div',{className:'hd'},h('div',{className:'ct'},h('div',{className:'hd-i'},h('div',null,h('h1',null,h('b',null,'Silbertablett'),' Marrakech'),h('div',{style:{fontSize:11,color:'var(--t3)',marginTop:2}},'Gescrapt \u00b7 Gefiltert \u00b7 KI-analysiert')),h('div',{style:{fontSize:11,color:'var(--t3)',textAlign:'right'}},mt&&mt.analyzed_at?h('div',null,new Date(mt.analyzed_at).toLocaleString('de-DE',{day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'})):null,h('div',{style:{fontWeight:600}},ld.length+' Leads \u00b7 '+tn+' Top \u00b7 '+inn+' Interessant'))))),
   h('div',{className:'ct'},
     h('div',{className:'sb'},h('div',{style:{display:'flex',alignItems:'center',gap:8}},h('span',{style:{width:8,height:8,borderRadius:'50%',background:du?'var(--gr)':'var(--rd)',display:'inline-block'}}),h('span',{style:{fontSize:12}},du?'Verbunden':'Nicht verbunden'),mt?h('span',{style:{fontSize:11,color:'var(--t3)'}},'\u00b7 '+(mt.qualified_count||0)+' Leads'+(mt.new_count?' ('+mt.new_count+' neu)':'')):null),h('button',{className:'bo',onClick:function(){ssp(!sp)}},'\u2699')),
@@ -160,7 +214,7 @@ return h('div',null,
     st?h('div',{style:{padding:'8px 12px',borderRadius:8,marginBottom:10,fontSize:12,fontWeight:500,background:st[0]==='\u2705'?'var(--gbg)':st[0]==='\u274c'?'var(--rbg)':'var(--ybg)',color:st[0]==='\u2705'?'var(--gr)':st[0]==='\u274c'?'var(--rd)':'var(--yl)'}},st):null,
     rj.length>0?h('div',{style:{marginBottom:12}},h('button',{style:{background:'none',border:'none',color:'var(--t3)',fontSize:12,cursor:'pointer',fontFamily:'inherit'},onClick:function(){sxr(!xr)}},(xr?'\u25be':'\u25b8')+' '+rj.length+' abgelehnt'),xr?h('div',{style:{background:'#fff',border:'1px solid var(--brd)',borderRadius:8,padding:10,marginTop:6,maxHeight:200,overflowY:'auto'}},rj.map(function(r,i){return h('div',{key:i,style:{fontSize:11,color:'var(--t3)',marginBottom:3}},h('span',{style:{color:'var(--rd)'}},'\u2715 '),r.title,' \u2014 ',r.reason)})):null):null,
     ld.length>0?h('div',{className:'tabs'},[{k:'all',l:'Alle ('+ld.length+')'},{k:'top',l:'\u2605 Top ('+tn+')'},{k:'starred',l:'\u2b50 Gemerkt ('+sn+')'}].map(function(t){return h('button',{key:t.k,className:'tab'+(fi===t.k?' on':''),onClick:function(){sfi(t.k)}},t.l)})):null,
-    fl.length>0?fl.map(function(l){return h(Card,{key:l.id,d:l,starred:fv.has(l.id),onStar:tf})}):ld.length>0?h('div',{style:{textAlign:'center',padding:40,color:'var(--t3)'}},'\u274c Keine Inserate in diesem Filter.'):!lg?h('div',{style:{textAlign:'center',padding:'60px 20px'}},h('div',{style:{fontSize:48,opacity:.3}},'\ud83c\udfe1'),h('div',{style:{fontSize:16,fontWeight:600,margin:'16px 0 8px'}},'Silbertablett ist bereit.'),h('div',{style:{color:'var(--t3)',fontSize:13}},du?'Klickt Aktualisieren.':'Klickt \u2699 und tragt die URL ein.')):null,
+    fl.length>0?fl.map(function(l){return h(Card,{key:l.id,d:l,starred:fv.has(l.id),onStar:tf,onImg:openLb})}):ld.length>0?h('div',{style:{textAlign:'center',padding:40,color:'var(--t3)'}},'\u274c Keine Inserate in diesem Filter.'):!lg?h('div',{style:{textAlign:'center',padding:'60px 20px'}},h('div',{style:{fontSize:48,opacity:.3}},'\ud83c\udfe1'),h('div',{style:{fontSize:16,fontWeight:600,margin:'16px 0 8px'}},'Silbertablett ist bereit.'),h('div',{style:{color:'var(--t3)',fontSize:13}},du?'Klickt Aktualisieren.':'Klickt \u2699 und tragt die URL ein.')):null,
     fl.length>=2?h('div',{className:'cmp'},h('div',{style:{fontSize:12,fontWeight:600,color:'var(--ac)',marginBottom:8,letterSpacing:'.04em'}},'VERGLEICH'),h('table',null,h('thead',null,h('tr',null,['','Objekt','Score','Preis','m\u00b2','Lage','',''].map(function(x,i){return h('th',{key:i,style:{textAlign:i>1&&i<5?'right':'left'}},x)}))),h('tbody',null,fl.map(function(l,i){return h('tr',{key:i},h('td',{style:{color:fv.has(l.id)?'var(--ac2)':'var(--brd)',fontSize:14}},fv.has(l.id)?'\u2605':'\u00b7'),h('td',{style:{maxWidth:150,overflow:'hidden',textOverflow:'ellipsis',whiteSpace:'nowrap',fontWeight:500}},l.title),h('td',{style:{textAlign:'right',fontWeight:700,color:sc((l.scores||{}).overall),fontFamily:'monospace'}},(l.scores||{}).overall),h('td',{style:{textAlign:'right'}},l.price_mad?(l.price_mad/1000).toFixed(0)+'k':'\u2014'),h('td',{style:{textAlign:'right'}},l.area_sqm||'\u2014'),h('td',null,l.neighborhood||'\u2014'),h('td',null,l.url?h('a',{href:l.url,target:'_blank',style:{color:'var(--ac)',fontSize:11}},'\ud83d\udd17'):'\u2014'),h('td',null,h('span',{className:'vd vd-'+vc(l.verdict),style:{fontSize:9}},l.verdict)))})))):null));
 }
 ReactDOM.render(h(App),document.getElementById('root'));
