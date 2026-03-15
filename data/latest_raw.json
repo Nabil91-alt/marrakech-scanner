@@ -3,15 +3,50 @@
     "scraped_at": "2026-03-15T17:55:14.006125",
     "total_found": 225,
     "passed_gates": 1,
-    "rejected": 224,
-    "analyzed_at": "2026-03-15T17:56:04.919727",
-    "analyzed_count": 1,
-    "qualified_count": 0,
-    "new_count": 0,
-    "top_count": 0,
-    "interesting_count": 0
+    "rejected": 224
   },
-  "listings": [],
+  "listings": [
+    {
+      "id": "43b89d5496db",
+      "title": "Ouidane Marrakech - lots de terrains pour villas",
+      "source": "Mubawab",
+      "url": "https://www.mubawab.ma/fr/b/9511/ouidane-marrakech-lots-de-terrains-pour-villas",
+      "price_mad": 2200000,
+      "price_eur": 203703,
+      "area_sqm": 500,
+      "rooms": null,
+      "bedrooms": 4,
+      "bathrooms": 2,
+      "floor": null,
+      "neighborhood": "",
+      "city": "Marrakech",
+      "property_type": "Apartment",
+      "price_per_sqm_mad": 4400,
+      "has_terrace": null,
+      "has_pool": null,
+      "has_parking": true,
+      "has_elevator": null,
+      "is_ground_floor": null,
+      "is_riad": null,
+      "is_new_build": true,
+      "ownership_type": "Unbekannt",
+      "condition": "Neu",
+      "description": "",
+      "contact_phone": "+212 5 22 97 71 71",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_whatsapp": "+212522977171",
+      "image": "https://www.mubawab-media.com/promotion/4/088F/pictures/h/villa-marrakech-shems-almadina_81222589.avif",
+      "images": [
+        "https://www.mubawab-media.com/promotion/4/088F/pictures/h/villa-marrakech-shems-almadina_81222589.avif",
+        "https://www.mubawab-media.com/promotion/4/088F/pictures/h/SHEMS%20MMARAKCH_81253926.avif",
+        "https://www.mubawab-media.com/ad/8/234/163F/m/villa-marrakech-shems-almadina_81222589_81223125.avif",
+        "https://www.mubawab-media.com/ad/8/234/163F/m/SHEMS%20MMARAKCH_81254506.avif",
+        "https://www.mubawab-media.com/ad/8/234/149F/m/SHEMS%20MMARAKCH_81254538.avif"
+      ],
+      "scraped_at": "2026-03-15T17:44:56.590540"
+    }
+  ],
   "rejected_log": [
     {
       "title": "Appart 120m² à vendre Rt Ouarzazate Marrakech",
