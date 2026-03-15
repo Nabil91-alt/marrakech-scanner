@@ -158,22 +158,91 @@ def apply_d(l, d):
             setattr(l, k, v)
 
 def click_phone(page):
-    """Klickt Telefon-Button und extrahiert Nummer."""
-    for sel in ["button:has-text('Afficher')","button:has-text('numéro')","button:has-text('Appeler')","button:has-text('téléphone')","[class*='phone'] button","button[class*='phone']","a:has-text('Afficher le numéro')"]:
+    """Aggressiv Telefonnummer extrahieren — mehrere Strategien."""
+    
+    # Strategy 1: Schon sichtbare tel: links
+    try:
+        for el in page.query_selector_all("a[href^='tel:']"):
+            p = (el.get_attribute("href") or "").replace("tel:","").strip()
+            if len(p) >= 8: return p
+    except: pass
+
+    # Strategy 2: Telefon aus __NEXT_DATA__ oder Script-Tags (Avito)
+    try:
+        content = page.content()
+        # Avito speichert Daten in __NEXT_DATA__
+        for pattern in [r'"phone"\s*:\s*"(\+?[\d\s.-]{8,})"', r'"phoneNumber"\s*:\s*"(\+?[\d\s.-]{8,})"', r'"seller_phone"\s*:\s*"(\+?[\d\s.-]{8,})"', r'"mobile"\s*:\s*"(\+?[\d\s.-]{8,})"']:
+            m = re.search(pattern, content)
+            if m:
+                phone = m.group(1).strip()
+                if len(phone) >= 8: return phone
+    except: pass
+    
+    # Strategy 3: Alle moeglichen Buttons klicken
+    button_texts = [
+        "Afficher le numéro", "Afficher le numero",
+        "Contacter le Vendeur", "Contacter le vendeur", "Contacter",
+        "Voir le téléphone", "Voir le telephone", "Voir le numéro",
+        "Appeler", "Téléphone", "Telephone",
+        "Show phone", "Call",
+        "numéro", "numero",
+    ]
+    
+    for txt in button_texts:
         try:
-            btn = page.query_selector(sel)
-            if btn and btn.is_visible():
-                btn.click()
+            # Versuche button und a tags
+            for tag in ["button", "a", "span", "div"]:
+                sel = tag + ":has-text('" + txt + "')"
+                btn = page.query_selector(sel)
+                if btn and btn.is_visible():
+                    btn.click()
+                    page.wait_for_timeout(2500)
+                    
+                    # Check tel: links nach dem Klick
+                    for el in page.query_selector_all("a[href^='tel:']"):
+                        p = (el.get_attribute("href") or "").replace("tel:","").strip()
+                        if len(p) >= 8: return p
+                    
+                    # Check ob Telefonnummer im sichtbaren Text erschienen ist
+                    body = page.inner_text("body")
+                    phones = re.findall(r'(?:\+212|0)[5-7][\s.-]?\d{2}[\s.-]?\d{2}[\s.-]?\d{2}[\s.-]?\d{2}', body)
+                    if phones: return phones[0].strip()
+                    
+                    # Check Modals/Popups
+                    for modal_sel in ["[class*='modal']", "[class*='popup']", "[class*='dialog']", "[role='dialog']"]:
+                        modal = page.query_selector(modal_sel)
+                        if modal and modal.is_visible():
+                            mt = modal.inner_text()
+                            mphones = re.findall(r'(?:\+212|0)[5-7][\s.-]?\d{2}[\s.-]?\d{2}[\s.-]?\d{2}[\s.-]?\d{2}', mt)
+                            if mphones: return mphones[0].strip()
+        except: pass
+    
+    # Strategy 4: Nochmal den ganzen Seitentext durchsuchen
+    try:
+        body = page.inner_text("body")
+        phones = re.findall(r'(?:\+212|0)[5-7][\s.-]?\d{2}[\s.-]?\d{2}[\s.-]?\d{2}[\s.-]?\d{2}', body)
+        if phones: return phones[0].strip()
+    except: pass
+    
+    # Strategy 5: Avito Boutique-Link folgen fuer Telefon
+    try:
+        boutique = page.query_selector("a[href*='/boutique']")
+        if boutique:
+            href = boutique.get_attribute("href") or ""
+            if href:
+                if not href.startswith("http"): href = "https://www.avito.ma" + href
+                page.goto(href, timeout=15000, wait_until="domcontentloaded")
                 page.wait_for_timeout(2000)
-                # Check tel: links
-                for el in page.query_selector_all("a[href^='tel:']"):
-                    p = (el.get_attribute("href") or "").replace("tel:","").strip()
-                    if len(p) >= 8: return p
-                # Check body text
                 body = page.inner_text("body")
                 phones = re.findall(r'(?:\+212|0)[5-7][\s.-]?\d{2}[\s.-]?\d{2}[\s.-]?\d{2}[\s.-]?\d{2}', body)
                 if phones: return phones[0].strip()
-        except: pass
+                for el in page.query_selector_all("a[href^='tel:']"):
+                    p = (el.get_attribute("href") or "").replace("tel:","").strip()
+                    if len(p) >= 8: return p
+                page.go_back()
+                page.wait_for_timeout(1000)
+    except: pass
+    
     return ""
 
 def get_contacts(page):
@@ -297,12 +366,23 @@ def scrape_avito(page, max_pages):
 
             # Telefon-Button klicken
             phone = click_phone(page)
-            if phone: l.contact_phone = phone
+            if phone:
+                l.contact_phone = phone
+                if i < 5: print(f"      Tel gefunden: {phone}")
 
             # Kontakte
             contacts = get_contacts(page)
             for k, v in contacts.items():
                 if v and not getattr(l, k, ""): setattr(l, k, v)
+
+            # Verkaeufername (Avito zeigt diesen prominent)
+            if not l.contact_name:
+                for sel in ["a[href*='/boutique'] span", "a[href*='/boutique']", "[class*='seller']", "[class*='store'] span", "[class*='author']"]:
+                    el = page.query_selector(sel)
+                    if el:
+                        name = el.inner_text().strip()
+                        if 2 < len(name) < 60 and '@' not in name and 'http' not in name:
+                            l.contact_name = name; break
 
             # Bilder
             if not l.images:
