@@ -90,9 +90,18 @@ class Listing:
 
 def parse_price(text):
     if not text: return None
-    text = re.sub(r'[MADHsDh€\s\.\,\xa0]', '', text)
-    m = re.search(r'(\d{6,8})', text)
-    return int(m.group(1)) if m and 100_000 <= int(m.group(1)) <= 50_000_000 else None
+    # Split on DH/MAD first to isolate the main price from monthly price
+    parts = re.split(r'DH|MAD|€|/', text, maxsplit=1)
+    chunk = parts[0] if parts else text
+    digits = re.sub(r'[^\d]', '', chunk)
+    if not digits: return None
+    val = int(digits)
+    if 100_000 <= val <= 50_000_000: return val
+    if len(digits) > 8:
+        for ln in [7, 6]:
+            v = int(digits[:ln])
+            if 100_000 <= v <= 50_000_000: return v
+    return None
 
 def xnum(text, mn=0, mx=9999):
     if not text: return None
@@ -364,7 +373,6 @@ def scrape_mubawab(page, max_pages):
             print(f"    Seite {pg}: Timeout"); continue
 
         # Mubawab: Links die zu Detail-Seiten fuehren
-        # Detail-URLs: /fr/marrakech/.../detail-XXX.htm oder aehnlich
         all_links = page.query_selector_all("a[href]")
         existing = {l.url for l in listings}
         count = 0
@@ -374,11 +382,16 @@ def scrape_mubawab(page, max_pages):
                 href = link.get_attribute("href") or ""
                 if not href.startswith("http"): href = "https://www.mubawab.ma" + href
 
-                # Mubawab Detail-URLs enthalten eine Nummer am Ende
+                # Mubawab Detail-URLs: /fr/marrakech/...-detail-XXXX oder /fr/XXXX
                 if "mubawab.ma" not in href: continue
-                if not re.search(r'/\d+\.htm|detail-\d+|/\d+$', href): continue
                 if href in existing: continue
-                if "/st/" in href: continue  # Listing-Seiten, nicht Details
+                # Skip listing pages and non-detail pages
+                if "/st/" in href or "/ct/" in href or "/sd/" in href or "/is/" in href: continue
+                if "/appartements-a-vendre" in href: continue
+                # Must be a detail page - contains /fr/ and has some path
+                if "/fr/" not in href: continue
+                parts = href.replace("https://www.mubawab.ma","").split("/")
+                if len(parts) < 3: continue  # Too short to be a detail URL
 
                 text = link.inner_text().strip()
                 if len(text) < 5 or len(text) > 500: continue
@@ -487,10 +500,14 @@ def scrape_sarouty(page, max_pages):
                 if not href.startswith("http"): href = "https://www.sarouty.ma" + href
 
                 if "sarouty.ma" not in href: continue
-                # Sarouty detail URLs: enthalten eine property-ID oder enden auf .html mit Zahl
-                if not re.search(r'/\d+\.html|/property/|/detail/', href.lower()): continue
                 if href in existing: continue
-                if "/acheter/marrakech/appartements-a-vendre" in href: continue  # listing page
+                if "/acheter/marrakech/appartements-a-vendre" in href and "?" not in href.split("/")[-1]: continue
+                # Must look like a detail page (not a category/filter page)
+                if href.rstrip("/") == "https://www.sarouty.ma": continue
+                path = href.replace("https://www.sarouty.ma","")
+                # Detail pages have deeper paths or contain numbers
+                if len(path) < 10: continue
+                if path.count("/") < 2 and not re.search(r'\d', path): continue
 
                 text = link.inner_text().strip()
                 if len(text) < 5 or len(text) > 500: continue
