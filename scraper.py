@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-MARRAKECH IMMOBILIEN-SCRAPER v4
-- Extrahiert Bilder/Thumbnails
-- Zuverlaessige URL-Erfassung
-- Kontaktdaten
+MARRAKECH IMMOBILIEN-SCRAPER v5
+- Robuste Bild-Filterung (keine Icons/Logos)
+- Email + WhatsApp Extraktion
+- Zuverlaessige URLs
 pip install requests beautifulsoup4
 """
 
@@ -17,31 +17,32 @@ from pathlib import Path
 
 BUDGET_MIN_MAD = 1_000_000
 BUDGET_MAX_MAD = 2_300_000
-MIN_ROOMS = 3
-MIN_BEDROOMS = 2
-
 PREFERRED_NEIGHBORHOODS = [
-    "targa", "palmeraie", "agdal", "tamansourt", "massira",
-    "m'hamid", "mhamid", "izdihar", "amerchich", "tassoultant",
-    "route de l'ourika", "route ourika", "route de fes", "route fes",
-    "route de casablanca", "route casablanca", "sidi ghanem",
-    "route d'amizmiz", "saada", "semlalia", "camp el ghoul",
-    "hay mohammadi", "marjane", "annakhil", "tamesna",
+    "targa","palmeraie","agdal","tamansourt","massira","m'hamid","mhamid",
+    "izdihar","amerchich","tassoultant","route de l'ourika","route ourika",
+    "route de fes","route fes","route de casablanca","route casablanca",
+    "sidi ghanem","route d'amizmiz","saada","semlalia","camp el ghoul",
+    "hay mohammadi","marjane","annakhil","tamesna",
 ]
-
-NO_GO_KEYWORDS = ["riad", "riyad", "rez-de-chaussee", "rez de chaussee"]
-MELKIA_KEYWORDS = ["melkia", "melk"]
-TITRE_FONCIER_KEYWORDS = ["titre foncier", "tf", "titre"]
-
+NO_GO_KEYWORDS = ["riad","riyad","rez-de-chaussee","rez de chaussee"]
+MELKIA_KEYWORDS = ["melkia","melk"]
+TITRE_FONCIER_KEYWORDS = ["titre foncier","tf","titre"]
 MIN_DELAY = 1.0
 MAX_DELAY = 2.0
 MAX_PAGES = 3
-
 HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
-    "Accept-Language": "fr-FR,fr;q=0.9,en;q=0.8",
-    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+    "Accept-Language":"fr-FR,fr;q=0.9,en;q=0.8",
+    "Accept":"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
 }
+
+# Woerter die auf Icons/Logos/Badges hinweisen
+IMG_BLACKLIST = ["logo","icon","avatar","placeholder","pixel","spacer","banner",
+    "ad-","ads/","badge","button","arrow","sprite","flag","emoji","social",
+    "facebook","twitter","instagram","youtube","google-play","app-store",
+    "appstore","googleplay","afdal","widget","star","rating","loader",
+    "spinner","check","close","menu","search","share","print","mail-icon",
+    "phone-icon","whatsapp-icon","1x1","2x2","3x3","blank","transparent"]
 
 @dataclass
 class Listing:
@@ -72,6 +73,8 @@ class Listing:
     description: str = ""
     contact_phone: str = ""
     contact_name: str = ""
+    contact_email: str = ""
+    contact_whatsapp: str = ""
     image: str = ""
     images: list = field(default_factory=list)
     scraped_at: str = ""
@@ -87,10 +90,15 @@ class Listing:
             self.price_eur = int(self.price_mad / 10.8)
         if self.images and not self.image:
             self.image = self.images[0]
+        # WhatsApp aus Telefon ableiten falls nicht vorhanden
+        if self.contact_phone and not self.contact_whatsapp:
+            phone = re.sub(r'[\s\.\-\(\)]', '', self.contact_phone)
+            if phone.startswith('0'): phone = '+212' + phone[1:]
+            if not phone.startswith('+'): phone = '+212' + phone
+            self.contact_whatsapp = phone
         return self
 
-def delay():
-    time.sleep(random.uniform(MIN_DELAY, MAX_DELAY))
+def delay(): time.sleep(random.uniform(MIN_DELAY, MAX_DELAY))
 
 def fetch(url, session):
     for attempt in range(3):
@@ -99,8 +107,7 @@ def fetch(url, session):
             if resp.status_code == 200: return resp
             if resp.status_code == 429: time.sleep(15)
             elif resp.status_code in (403, 406): return None
-        except requests.RequestException:
-            time.sleep(5)
+        except: time.sleep(5)
     return None
 
 def parse_price(text):
@@ -120,23 +127,90 @@ def extract_number(text, mn=0, mx=9999):
         return v if mn <= v <= mx else None
     return None
 
+def is_real_photo(src):
+    """Prueft ob ein Bild ein echtes Foto ist (kein Icon/Logo/Badge)."""
+    if not src: return False
+    sl = src.lower()
+    # Blacklist check
+    for b in IMG_BLACKLIST:
+        if b in sl: return False
+    # Muss eine Bild-Extension haben
+    if not any(x in sl for x in [".jpg",".jpeg",".png",".webp"]): return False
+    # Muss eine Mindest-URL-Laenge haben (Icons sind oft kurz)
+    if len(src) < 30: return False
+    # SVG und GIF sind meist Icons
+    if ".svg" in sl or ".gif" in sl: return False
+    # Data-URIs ignorieren (zu klein)
+    if sl.startswith("data:"): return False
+    return True
+
 def extract_images(soup, domain=""):
+    """Extrahiert nur echte Immobilien-Fotos."""
     imgs = []
+    # OG image zuerst (meist das beste Bild)
+    og = soup.select_one("meta[property='og:image']")
+    if og and og.get("content") and is_real_photo(og["content"]):
+        imgs.append(og["content"])
+    # Dann alle img tags
     for img in soup.select("img[src], img[data-src], img[data-lazy-src]"):
         src = img.get("data-src") or img.get("data-lazy-src") or img.get("src") or ""
-        if not src: continue
         if src.startswith("//"): src = "https:" + src
         elif src.startswith("/") and domain: src = domain + src
-        sl = src.lower()
-        if any(x in sl for x in ["logo","icon","avatar","placeholder","pixel","spacer","banner","ad-"]): continue
-        if any(x in sl for x in [".jpg",".jpeg",".png",".webp"]):
-            if len(src) > 20:
-                imgs.append(src)
-    # OG image
-    og = soup.select_one("meta[property='og:image']")
-    if og and og.get("content"):
-        imgs.insert(0, og["content"])
-    return list(dict.fromkeys(imgs))[:5]
+        if is_real_photo(src) and src not in imgs:
+            imgs.append(src)
+    return imgs[:5]
+
+def extract_contacts(soup, full_text):
+    """Extrahiert alle Kontaktdaten: Telefon, Email, WhatsApp."""
+    result = {}
+    text_lower = full_text.lower()
+
+    # Telefon
+    phones = re.findall(r'(?:\+212|00212|0)[\s.-]?[5-7][\s.-]?\d{2}[\s.-]?\d{2}[\s.-]?\d{2}[\s.-]?\d{2}', full_text)
+    if phones:
+        result['contact_phone'] = phones[0].strip()
+
+    # Auch aus tel: links
+    for el in soup.select("a[href^='tel:']"):
+        href = el.get("href","").replace("tel:","").strip()
+        if len(href) >= 8 and not result.get('contact_phone'):
+            result['contact_phone'] = href
+
+    # Email
+    emails = re.findall(r'[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}', full_text)
+    # Filter gaengige No-Reply und System-Emails
+    valid_emails = [e for e in emails if not any(x in e.lower() for x in ['noreply','no-reply','admin@','info@sarouty','info@mubawab','support@','contact@sarouty','contact@mubawab','example.com'])]
+    if valid_emails:
+        result['contact_email'] = valid_emails[0]
+
+    # Auch aus mailto: links
+    for el in soup.select("a[href^='mailto:']"):
+        href = el.get("href","").replace("mailto:","").split("?")[0].strip()
+        if "@" in href and not result.get('contact_email'):
+            if not any(x in href.lower() for x in ['noreply','no-reply','admin@','support@']):
+                result['contact_email'] = href
+
+    # WhatsApp
+    for el in soup.select("a[href*='wa.me'], a[href*='whatsapp'], a[href*='api.whatsapp']"):
+        href = el.get("href","")
+        m = re.search(r'(?:wa\.me|api\.whatsapp\.com/send\?phone=)(\+?\d+)', href)
+        if m and not result.get('contact_whatsapp'):
+            result['contact_whatsapp'] = m.group(1)
+
+    # WhatsApp aus Text-Links
+    wa_matches = re.findall(r'wa\.me/(\+?\d+)', full_text)
+    if wa_matches and not result.get('contact_whatsapp'):
+        result['contact_whatsapp'] = wa_matches[0]
+
+    # Agent/Kontakt-Name
+    for sel in ["[class*='agent']","[class*='seller']","[class*='contact-name']","[class*='broker']"]:
+        el = soup.select_one(sel)
+        if el and not result.get('contact_name'):
+            name = el.get_text(strip=True)
+            if 2 < len(name) < 50 and not re.search(r'\d{5}', name) and '@' not in name:
+                result['contact_name'] = name
+
+    return result
 
 def detect_from_text(text):
     t = text.lower()
@@ -156,21 +230,19 @@ def detect_from_text(text):
     else:
         m = re.search(r'(\d+)\s*(?:[e\u00e8]me|er|e)?\s*[e\u00e9]tage', t)
         if m: r['floor'] = m.group(1) + ". Etage"; r['is_ground_floor'] = False
-    r['has_terrace'] = any(w in t for w in ["terrasse", "balcon", "rooftop", "toit terrasse"])
-    r['has_pool'] = any(w in t for w in ["piscine", "pool"])
-    r['has_parking'] = any(w in t for w in ["parking", "garage", "sous-sol", "stationnement"])
+    r['has_terrace'] = any(w in t for w in ["terrasse","balcon","rooftop","toit terrasse"])
+    r['has_pool'] = any(w in t for w in ["piscine","pool"])
+    r['has_parking'] = any(w in t for w in ["parking","garage","sous-sol","stationnement"])
     r['has_elevator'] = any(w in t for w in ["ascenseur"])
-    r['is_new_build'] = any(w in t for w in ["neuf", "nouvelle construction", "livraison 202", "jamais habit"])
+    r['is_new_build'] = any(w in t for w in ["neuf","nouvelle construction","livraison 202","jamais habit"])
     if any(w in t for w in TITRE_FONCIER_KEYWORDS): r['ownership_type'] = "Titre Foncier"
     elif any(w in t for w in MELKIA_KEYWORDS): r['ownership_type'] = "Melkia"
-    if any(w in t for w in ["neuf", "jamais habit"]): r['condition'] = "Neu"
-    elif any(w in t for w in ["rnov", "renov", "refait"]): r['condition'] = "Renoviert"
+    if any(w in t for w in ["neuf","jamais habit"]): r['condition'] = "Neu"
+    elif any(w in t for w in ["rnov","renov","refait"]): r['condition'] = "Renoviert"
     elif "bon tat" in t: r['condition'] = "Gut"
-    r['is_riad'] = any(w in t for w in ["riad", "riyad"])
+    r['is_riad'] = any(w in t for w in ["riad","riyad"])
     for nb in PREFERRED_NEIGHBORHOODS:
         if nb in t: r['neighborhood'] = nb.title(); break
-    phones = re.findall(r'(?:\+212|0)[\s.-]?[5-7][\s.-]?\d{2}[\s.-]?\d{2}[\s.-]?\d{2}[\s.-]?\d{2}', t)
-    if phones: r['contact_phone'] = phones[0].strip()
     return r
 
 def apply_detected(listing, detected):
@@ -179,73 +251,36 @@ def apply_detected(listing, detected):
         if current is None or current == "" or current == "Unbekannt":
             setattr(listing, key, val)
 
-# ═══════════════════════════════════════
-# MUBAWAB
-# ═══════════════════════════════════════
-
-def scrape_mubawab(session, max_pages=MAX_PAGES):
-    print(f"\n  MUBAWAB")
-    listings = []
-    for page in range(1, max_pages + 1):
-        url = f"https://www.mubawab.ma/fr/st/marrakech/appartements-a-vendre:p:{page}"
-        resp = fetch(url, session)
-        if not resp: continue
-        soup = BeautifulSoup(resp.text, "html.parser")
-        cards = soup.select("li.listingBox") or soup.select("div[class*='listingBox']") or soup.select("div[class*='adItem']") or soup.select("a[href*='/fr/marrakech/']")
-        print(f"    Seite {page}: {len(cards)} Karten")
-        for card in cards:
-            try:
-                l = Listing(source="Mubawab")
-                link = card if card.name == 'a' else card.select_one("a[href]")
-                if link:
-                    href = link.get("href", "")
-                    if not href.startswith("http"): href = "https://www.mubawab.ma" + href
-                    l.url = href
-                for sel in ["h2","h3","[class*='title']","a"]:
-                    el = card.select_one(sel)
-                    if el and el.get_text(strip=True): l.title = el.get_text(strip=True); break
-                for sel in ["[class*='price']","[class*='prix']","span.priceTag"]:
-                    el = card.select_one(sel)
-                    if el: l.price_mad = parse_price(el.get_text()); break
-                img = card.select_one("img[src], img[data-src]")
-                if img:
-                    src = img.get("data-src") or img.get("src") or ""
-                    if ".jpg" in src or ".jpeg" in src or ".png" in src or ".webp" in src:
-                        l.image = src if src.startswith("http") else "https://www.mubawab.ma" + src
-                apply_detected(l, detect_from_text(card.get_text(" ", strip=True)))
-                for sel in ["[class*='location']","[class*='adresse']"]:
-                    el = card.select_one(sel)
-                    if el and not l.neighborhood: l.neighborhood = el.get_text(strip=True); break
-                if l.title and len(l.title) > 3: listings.append(l)
-            except: pass
-        if not cards: break
-        delay()
-    seen = set()
-    unique = [l for l in listings if l.url and l.url not in seen and not seen.add(l.url)]
-    listings = unique
-    print(f"    {len(listings)} unique, lade Details...")
-    for i, l in enumerate(listings):
-        if not l.url: continue
-        if i % 20 == 0: print(f"    Detail {i+1}/{len(listings)}...")
-        _mubawab_detail(l, session)
-        delay()
-    print(f"    Mubawab fertig: {len(listings)}")
-    return listings
-
-def _mubawab_detail(listing, session):
+def enrich_detail(listing, session, domain):
+    """Universelle Detail-Seiten-Anreicherung."""
     resp = fetch(listing.url, session)
     if not resp: return
     soup = BeautifulSoup(resp.text, "html.parser")
     full_text = soup.get_text(" ", strip=True)
+
+    # Preis
     if not listing.price_mad:
         for sel in ["[class*='price']","[class*='prix']","h3[class*='price']"]:
             el = soup.select_one(sel)
             if el: listing.price_mad = parse_price(el.get_text()); break
-    for sel in ["[class*='description']","[class*='blockParagraph']","div.detailDesc","div[class*='more-text']"]:
-        el = soup.select_one(sel)
-        if el: listing.description = el.get_text(" ", strip=True); break
+
+    # Beschreibung
+    if not listing.description:
+        for sel in ["[class*='description']","[class*='blockParagraph']","div.detailDesc","div[class*='more-text']","[class*='body']"]:
+            el = soup.select_one(sel)
+            if el: listing.description = el.get_text(" ", strip=True); break
+
+    # Bilder
     if not listing.images:
-        listing.images = extract_images(soup, "https://www.mubawab.ma")
+        listing.images = extract_images(soup, domain)
+
+    # Kontakte
+    contacts = extract_contacts(soup, full_text)
+    for key, val in contacts.items():
+        if val and not getattr(listing, key, ""):
+            setattr(listing, key, val)
+
+    # HTML-Elemente durchsuchen
     for el in soup.select("li, span, div, td"):
         t = el.get_text(strip=True)
         if not t or len(t) > 100: continue
@@ -256,46 +291,102 @@ def _mubawab_detail(listing, session):
         elif "m" in tl and ("2" in tl or "\u00b2" in tl) and not listing.area_sqm:
             v = extract_number(t, 20, 1000)
             if v: listing.area_sqm = v
-    for sel in ["[class*='phone']","[class*='tel']","a[href^='tel:']"]:
-        el = soup.select_one(sel)
-        if el and not listing.contact_phone:
-            href = el.get("href","")
-            if href.startswith("tel:"): listing.contact_phone = href.replace("tel:","")
-            else:
-                txt = el.get_text(strip=True)
-                if re.search(r'\d{8,}', txt.replace(" ","")): listing.contact_phone = txt
-    for sel in ["[class*='agent']","[class*='seller']"]:
-        el = soup.select_one(sel)
-        if el and not listing.contact_name:
-            name = el.get_text(strip=True)
-            if 2 < len(name) < 50 and not re.search(r'\d{5}', name): listing.contact_name = name
+
+    # JSON-LD
     for script in soup.find_all("script", type="application/ld+json"):
         try:
             data = json.loads(script.string)
             if isinstance(data, dict):
-                listing.title = listing.title or data.get("name", "")
-                listing.description = listing.description or data.get("description", "")
+                listing.title = listing.title or data.get("name","")
+                listing.description = listing.description or data.get("description","")
                 if data.get("floorSize") and isinstance(data["floorSize"], dict):
-                    listing.area_sqm = listing.area_sqm or extract_number(str(data["floorSize"].get("value", "")), 20, 1000)
-                listing.rooms = listing.rooms or extract_number(str(data.get("numberOfRooms", "")), 1, 20)
-                if data.get("image"):
-                    img_data = data["image"]
-                    if isinstance(img_data, str) and not listing.image: listing.image = img_data
-                    elif isinstance(img_data, list) and not listing.image and img_data: listing.image = img_data[0] if isinstance(img_data[0], str) else img_data[0].get("url","")
+                    listing.area_sqm = listing.area_sqm or extract_number(str(data["floorSize"].get("value","")), 20, 1000)
+                listing.rooms = listing.rooms or extract_number(str(data.get("numberOfRooms","")), 1, 20)
+                if data.get("image") and not listing.image:
+                    img = data["image"]
+                    if isinstance(img, str) and is_real_photo(img): listing.image = img
+                    elif isinstance(img, list) and img:
+                        first = img[0] if isinstance(img[0], str) else img[0].get("url","")
+                        if is_real_photo(first): listing.image = first
         except: pass
+
+    # Avito-spezifisch: JSON in Scripts
+    if listing.source == "Avito":
+        for script in soup.find_all("script"):
+            text = script.string or ""
+            if '"price"' in text or '"surface"' in text:
+                for m in re.findall(r'\{[^{}]*"(?:price|surface|rooms)"[^{}]*\}', text):
+                    try:
+                        d = json.loads(m)
+                        listing.price_mad = listing.price_mad or parse_price(str(d.get("price","")))
+                        listing.area_sqm = listing.area_sqm or extract_number(str(d.get("surface","")), 20, 1000)
+                        listing.rooms = listing.rooms or extract_number(str(d.get("rooms","")), 1, 20)
+                    except: pass
+            if '"phone"' in text:
+                for m in re.findall(r'"(?:phone|phoneNumber)"\s*:\s*"([^"]+)"', text):
+                    if not listing.contact_phone and len(m) >= 8: listing.contact_phone = m
+
     apply_detected(listing, detect_from_text(f"{listing.title} {listing.description} {full_text}"))
     listing.finalize()
 
 # ═══════════════════════════════════════
+# MUBAWAB
+# ═══════════════════════════════════════
+def scrape_mubawab(session, max_pages=MAX_PAGES):
+    print(f"\n  MUBAWAB")
+    listings = []
+    for page in range(1, max_pages + 1):
+        resp = fetch(f"https://www.mubawab.ma/fr/st/marrakech/appartements-a-vendre:p:{page}", session)
+        if not resp: continue
+        soup = BeautifulSoup(resp.text, "html.parser")
+        cards = soup.select("li.listingBox") or soup.select("div[class*='listingBox']") or soup.select("div[class*='adItem']") or soup.select("a[href*='/fr/marrakech/']")
+        print(f"    Seite {page}: {len(cards)}")
+        for card in cards:
+            try:
+                l = Listing(source="Mubawab")
+                link = card if card.name == 'a' else card.select_one("a[href]")
+                if link:
+                    href = link.get("href","")
+                    if not href.startswith("http"): href = "https://www.mubawab.ma" + href
+                    l.url = href
+                for sel in ["h2","h3","[class*='title']","a"]:
+                    el = card.select_one(sel)
+                    if el and el.get_text(strip=True): l.title = el.get_text(strip=True); break
+                for sel in ["[class*='price']","[class*='prix']"]:
+                    el = card.select_one(sel)
+                    if el: l.price_mad = parse_price(el.get_text()); break
+                img = card.select_one("img[src], img[data-src]")
+                if img:
+                    src = img.get("data-src") or img.get("src") or ""
+                    if not src.startswith("http") and src.startswith("/"): src = "https://www.mubawab.ma" + src
+                    if is_real_photo(src): l.image = src
+                apply_detected(l, detect_from_text(card.get_text(" ", strip=True)))
+                for sel in ["[class*='location']","[class*='adresse']"]:
+                    el = card.select_one(sel)
+                    if el and not l.neighborhood: l.neighborhood = el.get_text(strip=True); break
+                if l.title and len(l.title) > 3: listings.append(l)
+            except: pass
+        if not cards: break
+        delay()
+    seen = set()
+    unique = [l for l in listings if l.url and l.url not in seen and not seen.add(l.url)]
+    print(f"    {len(unique)} unique, Details...")
+    for i, l in enumerate(unique):
+        if l.url:
+            if i % 20 == 0: print(f"    {i+1}/{len(unique)}...")
+            enrich_detail(l, session, "https://www.mubawab.ma")
+            delay()
+    print(f"    Mubawab: {len(unique)}")
+    return unique
+
+# ═══════════════════════════════════════
 # AVITO
 # ═══════════════════════════════════════
-
 def scrape_avito(session, max_pages=MAX_PAGES):
     print(f"\n  AVITO")
     listings = []
     for page in range(1, max_pages + 1):
-        url = f"https://www.avito.ma/fr/marrakech/appartements-%C3%A0_vendre?o={page}"
-        resp = fetch(url, session)
+        resp = fetch(f"https://www.avito.ma/fr/marrakech/appartements-%C3%A0_vendre?o={page}", session)
         if not resp: continue
         soup = BeautifulSoup(resp.text, "html.parser")
         for script in soup.find_all("script"):
@@ -303,22 +394,21 @@ def scrape_avito(session, max_pages=MAX_PAGES):
             if '__NEXT_DATA__' in text:
                 try:
                     m = re.search(r'__NEXT_DATA__\s*=\s*(\{.+?\})\s*;?\s*</script>', text, re.DOTALL)
-                    if m: _avito_parse_json(json.loads(m.group(1)), listings)
+                    if m: _avito_json(json.loads(m.group(1)), listings)
                 except: pass
             if '"listingId"' in text or ('"subject"' in text and '"price"' in text):
-                try: _avito_parse_json(json.loads(re.search(r'(\{.*\})', text, re.DOTALL).group(1)), listings)
+                try: _avito_json(json.loads(re.search(r'(\{.*\})', text, re.DOTALL).group(1)), listings)
                 except: pass
         for script in soup.find_all("script", type="application/ld+json"):
             try:
                 data = json.loads(script.string)
                 if isinstance(data, dict) and data.get("@type") == "ItemList":
                     for item in data.get("itemListElement", []):
-                        i = item.get("item", item)
-                        l = Listing(source="Avito", title=i.get("name",""), url=i.get("url",""))
-                        if i.get("offers"): l.price_mad = parse_price(str(i["offers"].get("price","")))
-                        if i.get("image"):
-                            img = i["image"]
-                            l.image = img if isinstance(img, str) else (img[0] if isinstance(img, list) and img else "")
+                        i2 = item.get("item", item)
+                        l = Listing(source="Avito", title=i2.get("name",""), url=i2.get("url",""))
+                        if i2.get("offers"): l.price_mad = parse_price(str(i2["offers"].get("price","")))
+                        img = i2.get("image")
+                        if isinstance(img, str) and is_real_photo(img): l.image = img
                         if l.title: listings.append(l)
             except: pass
         for card in soup.select("a[href*='/fr/marrakech/']"):
@@ -334,103 +424,54 @@ def scrape_avito(session, max_pages=MAX_PAGES):
             img = card.select_one("img[src], img[data-src]")
             if img:
                 src = img.get("data-src") or img.get("src") or ""
-                if any(x in src for x in [".jpg",".jpeg",".png",".webp"]): l.image = src
+                if is_real_photo(src): l.image = src
             apply_detected(l, detect_from_text(card.get_text(" ", strip=True)))
             if l.title and len(l.title) > 5: listings.append(l)
         print(f"    Seite {page}: {len(listings)} bisher")
         delay()
     seen = set()
     unique = [l for l in listings if (l.url or l.title) and (l.url or l.title) not in seen and not seen.add(l.url or l.title)]
-    listings = unique
-    print(f"    {len(listings)} unique, lade Details...")
-    for i, l in enumerate(listings):
-        if not l.url: continue
-        if i % 20 == 0: print(f"    Detail {i+1}/{len(listings)}...")
-        _avito_detail(l, session)
-        delay()
-    print(f"    Avito fertig: {len(listings)}")
-    return listings
+    print(f"    {len(unique)} unique, Details...")
+    for i, l in enumerate(unique):
+        if l.url:
+            if i % 20 == 0: print(f"    {i+1}/{len(unique)}...")
+            enrich_detail(l, session, "https://www.avito.ma")
+            delay()
+    print(f"    Avito: {len(unique)}")
+    return unique
 
-def _avito_parse_json(data, listings):
+def _avito_json(data, listings):
     if isinstance(data, dict):
         if data.get("subject") or (data.get("title") and data.get("price")):
             l = Listing(source="Avito")
-            l.title = data.get("subject", data.get("title", ""))
-            l.url = data.get("url", "")
-            l.price_mad = parse_price(str(data.get("price", data.get("priceValue", ""))))
-            p = data.get("params", data.get("attributes", {}))
+            l.title = data.get("subject", data.get("title",""))
+            l.url = data.get("url","")
+            l.price_mad = parse_price(str(data.get("price", data.get("priceValue",""))))
+            p = data.get("params", data.get("attributes",{}))
             if isinstance(p, dict):
                 l.rooms = extract_number(str(p.get("rooms","")), 1, 20)
-                l.area_sqm = extract_number(str(p.get("surface", p.get("size",""))), 20, 1000)
+                l.area_sqm = extract_number(str(p.get("surface",p.get("size",""))), 20, 1000)
                 l.bedrooms = extract_number(str(p.get("bedrooms","")), 1, 10)
             loc = data.get("location")
-            if isinstance(loc, dict): l.neighborhood = loc.get("name", loc.get("label",""))
+            if isinstance(loc, dict): l.neighborhood = loc.get("name",loc.get("label",""))
             elif isinstance(loc, str): l.neighborhood = loc
-            phone = data.get("phone", data.get("phoneNumber", ""))
+            phone = data.get("phone",data.get("phoneNumber",""))
             if phone: l.contact_phone = str(phone)
-            imgs = data.get("images", data.get("photos", []))
+            imgs = data.get("images",data.get("photos",[]))
             if isinstance(imgs, list):
                 for im in imgs[:5]:
-                    if isinstance(im, str): l.images.append(im)
-                    elif isinstance(im, dict): l.images.append(im.get("url", im.get("src", "")))
+                    src = im if isinstance(im, str) else (im.get("url","") if isinstance(im, dict) else "")
+                    if is_real_photo(src): l.images.append(src)
             if l.title: listings.append(l)
         for v in data.values():
-            if isinstance(v, (dict, list)): _avito_parse_json(v, listings)
+            if isinstance(v, (dict, list)): _avito_json(v, listings)
     elif isinstance(data, list):
         for item in data:
-            if isinstance(item, (dict, list)): _avito_parse_json(item, listings)
-
-def _avito_detail(listing, session):
-    resp = fetch(listing.url, session)
-    if not resp: return
-    soup = BeautifulSoup(resp.text, "html.parser")
-    full_text = soup.get_text(" ", strip=True)
-    for script in soup.find_all("script", type="application/ld+json"):
-        try:
-            data = json.loads(script.string)
-            if isinstance(data, dict):
-                listing.title = listing.title or data.get("name","")
-                listing.description = listing.description or data.get("description","")
-                if data.get("offers"): listing.price_mad = listing.price_mad or parse_price(str(data["offers"].get("price","")))
-                if data.get("image") and not listing.image:
-                    img = data["image"]
-                    listing.image = img if isinstance(img, str) else ""
-        except: pass
-    for script in soup.find_all("script"):
-        text = script.string or ""
-        if '"price"' in text or '"surface"' in text:
-            for m in re.findall(r'\{[^{}]*"(?:price|surface|rooms)"[^{}]*\}', text):
-                try:
-                    d = json.loads(m)
-                    listing.price_mad = listing.price_mad or parse_price(str(d.get("price","")))
-                    listing.area_sqm = listing.area_sqm or extract_number(str(d.get("surface","")), 20, 1000)
-                    listing.rooms = listing.rooms or extract_number(str(d.get("rooms","")), 1, 20)
-                except: pass
-        if '"phone"' in text or '"phoneNumber"' in text:
-            for m in re.findall(r'"(?:phone|phoneNumber)"\s*:\s*"([^"]+)"', text):
-                if not listing.contact_phone and len(m) >= 8: listing.contact_phone = m
-    if not listing.images:
-        listing.images = extract_images(soup, "https://www.avito.ma")
-    if not listing.price_mad:
-        for sel in ["[class*='price']","[data-testid*='price']"]:
-            el = soup.select_one(sel)
-            if el: listing.price_mad = parse_price(el.get_text()); break
-    if not listing.description:
-        for sel in ["[class*='description']","[class*='body']"]:
-            el = soup.select_one(sel)
-            if el: listing.description = el.get_text(" ", strip=True); break
-    for sel in ["[class*='phone']","a[href^='tel:']","button[class*='phone']"]:
-        el = soup.select_one(sel)
-        if el and not listing.contact_phone:
-            href = el.get("href","")
-            if href.startswith("tel:"): listing.contact_phone = href.replace("tel:","")
-    apply_detected(listing, detect_from_text(f"{listing.title} {listing.description} {full_text}"))
-    listing.finalize()
+            if isinstance(item, (dict, list)): _avito_json(item, listings)
 
 # ═══════════════════════════════════════
 # SAROUTY
 # ═══════════════════════════════════════
-
 def scrape_sarouty(session, max_pages=MAX_PAGES):
     print(f"\n  SAROUTY")
     listings = []
@@ -439,10 +480,10 @@ def scrape_sarouty(session, max_pages=MAX_PAGES):
         resp = fetch(url, session)
         if not resp: continue
         soup = BeautifulSoup(resp.text, "html.parser")
-        cards = soup.select("[class*='listingCard']") or soup.select("[class*='property-card']") or soup.select("article") or soup.select("div[class*='result']") or soup.select("div[class*='card']")
+        cards = soup.select("[class*='listingCard']") or soup.select("[class*='property-card']") or soup.select("article") or soup.select("div[class*='card']")
         if not cards:
             cards = [l for l in soup.select("a[href]") if any(w in l.get('href','').lower() for w in ['appartement','vendre','acheter'])]
-        print(f"    Seite {page}: {len(cards)} Karten")
+        print(f"    Seite {page}: {len(cards)}")
         for card in cards:
             try:
                 l = Listing(source="Sarouty")
@@ -458,7 +499,8 @@ def scrape_sarouty(session, max_pages=MAX_PAGES):
                 img = card.select_one("img[src], img[data-src]")
                 if img:
                     src = img.get("data-src") or img.get("src") or ""
-                    if any(x in src for x in [".jpg",".jpeg",".png",".webp"]): l.image = src if src.startswith("http") else "https://www.sarouty.ma" + src
+                    if not src.startswith("http"): src = "https://www.sarouty.ma" + src
+                    if is_real_photo(src): l.image = src
                 apply_detected(l, detect_from_text(card.get_text(" ", strip=True)))
                 if l.title and len(l.title) > 5: listings.append(l)
             except: pass
@@ -466,55 +508,18 @@ def scrape_sarouty(session, max_pages=MAX_PAGES):
         delay()
     seen = set()
     unique = [l for l in listings if (l.url or l.title) and (l.url or l.title) not in seen and not seen.add(l.url or l.title)]
-    listings = unique
-    print(f"    {len(listings)} unique, lade Details...")
-    for i, l in enumerate(listings):
-        if not l.url: continue
-        if i % 20 == 0: print(f"    Detail {i+1}/{len(listings)}...")
-        _sarouty_detail(l, session)
-        delay()
-    print(f"    Sarouty fertig: {len(listings)}")
-    return listings
-
-def _sarouty_detail(listing, session):
-    resp = fetch(listing.url, session)
-    if not resp: return
-    soup = BeautifulSoup(resp.text, "html.parser")
-    full_text = soup.get_text(" ", strip=True)
-    if not listing.price_mad:
-        for sel in ["[class*='price']","[class*='prix']"]:
-            el = soup.select_one(sel)
-            if el: listing.price_mad = parse_price(el.get_text()); break
-    if not listing.description:
-        for sel in ["[class*='description']","[class*='text']"]:
-            el = soup.select_one(sel)
-            if el: listing.description = el.get_text(" ", strip=True); break
-    if not listing.images:
-        listing.images = extract_images(soup, "https://www.sarouty.ma")
-    for sel in ["[class*='phone']","a[href^='tel:']"]:
-        el = soup.select_one(sel)
-        if el and not listing.contact_phone:
-            href = el.get("href","")
-            if href.startswith("tel:"): listing.contact_phone = href.replace("tel:","")
-    for script in soup.find_all("script", type="application/ld+json"):
-        try:
-            data = json.loads(script.string)
-            if isinstance(data, dict):
-                listing.title = listing.title or data.get("name","")
-                listing.description = listing.description or data.get("description","")
-                if data.get("floorSize") and isinstance(data["floorSize"], dict):
-                    listing.area_sqm = listing.area_sqm or extract_number(str(data["floorSize"].get("value", "")), 20, 1000)
-                listing.rooms = listing.rooms or extract_number(str(data.get("numberOfRooms", "")), 1, 20)
-                if data.get("image") and not listing.image:
-                    listing.image = data["image"] if isinstance(data["image"], str) else ""
-        except: pass
-    apply_detected(listing, detect_from_text(f"{listing.title} {listing.description} {full_text}"))
-    listing.finalize()
+    print(f"    {len(unique)} unique, Details...")
+    for i, l in enumerate(unique):
+        if l.url:
+            if i % 20 == 0: print(f"    {i+1}/{len(unique)}...")
+            enrich_detail(l, session, "https://www.sarouty.ma")
+            delay()
+    print(f"    Sarouty: {len(unique)}")
+    return unique
 
 # ═══════════════════════════════════════
 # FILTER
 # ═══════════════════════════════════════
-
 def apply_gates(listings):
     passed, rejected = [], []
     for l in listings:
@@ -523,8 +528,8 @@ def apply_gates(listings):
             if l.price_mad < BUDGET_MIN_MAD: reason = f"Preis zu niedrig: {l.price_mad:,}"
             elif l.price_mad > BUDGET_MAX_MAD: reason = f"Preis zu hoch: {l.price_mad:,}"
         else: reason = "Kein Preis"
-        if not reason and l.rooms and l.rooms < MIN_ROOMS and (not l.bedrooms or l.bedrooms < MIN_BEDROOMS):
-            reason = f"Zu wenig Zimmer"
+        if not reason and l.rooms and l.rooms < 3 and (not l.bedrooms or l.bedrooms < 2):
+            reason = "Zu wenig Zimmer"
         if not reason and l.is_ground_floor: reason = "Erdgeschoss"
         if not reason and l.is_riad: reason = "Riad"
         if not reason and l.ownership_type == "Melkia": reason = "Melkia"
@@ -543,32 +548,28 @@ def main():
     parser.add_argument("--pages", type=int, default=MAX_PAGES)
     parser.add_argument("--raw", action="store_true")
     args = parser.parse_args()
-    print(f"\n  MARRAKECH SCRAPER v4 | {args.portal.upper()} | {args.pages} Seiten\n")
+    print(f"\n  SCRAPER v5 | {args.portal.upper()} | {args.pages} Seiten\n")
     session = requests.Session()
-    all_listings = []
+    all_l = []
     scrapers = {"avito": scrape_avito, "mubawab": scrape_mubawab, "sarouty": scrape_sarouty}
-    portals = scrapers.keys() if args.portal == "all" else [args.portal]
-    for portal in portals:
-        try: all_listings.extend(scrapers[portal](session, args.pages))
-        except Exception as ex:
-            print(f"  FEHLER {portal}: {ex}")
-            import traceback; traceback.print_exc()
+    for p in (scrapers.keys() if args.portal == "all" else [args.portal]):
+        try: all_l.extend(scrapers[p](session, args.pages))
+        except Exception as ex: print(f"  FEHLER {p}: {ex}"); import traceback; traceback.print_exc()
     seen = set()
     unique = []
-    for l in all_listings:
+    for l in all_l:
         k = l.url or f"{l.title}_{l.price_mad}"
         if k not in seen: seen.add(k); unique.append(l)
     if args.raw: passed, rejected = unique, []
     else: passed, rejected = apply_gates(unique)
-    with_url = len([l for l in passed if l.url])
-    with_img = len([l for l in passed if l.image])
+    wu = len([l for l in passed if l.url])
+    wi = len([l for l in passed if l.image])
+    wp = len([l for l in passed if l.contact_phone])
+    we = len([l for l in passed if l.contact_email])
+    ww = len([l for l in passed if l.contact_whatsapp])
     print(f"\n  ERGEBNIS: {len(passed)} qualifiziert, {len(rejected)} abgelehnt")
-    print(f"  Mit URL: {with_url}/{len(passed)} | Mit Bild: {with_img}/{len(passed)}")
-    output = {
-        "meta": {"scraped_at": datetime.now().isoformat(), "total_found": len(passed)+len(rejected), "passed_gates": len(passed), "rejected": len(rejected)},
-        "listings": [asdict(l) for l in passed],
-        "rejected_log": rejected,
-    }
+    print(f"  URLs: {wu} | Bilder: {wi} | Tel: {wp} | Email: {we} | WhatsApp: {ww}")
+    output = {"meta":{"scraped_at":datetime.now().isoformat(),"total_found":len(passed)+len(rejected),"passed_gates":len(passed),"rejected":len(rejected)},"listings":[asdict(l) for l in passed],"rejected_log":rejected}
     out = Path(args.output)
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(output, ensure_ascii=False, indent=2))
