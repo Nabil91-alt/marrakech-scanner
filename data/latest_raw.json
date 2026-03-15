@@ -3,13 +3,7 @@
     "scraped_at": "2026-03-15T15:30:21.413586",
     "total_found": 108,
     "passed_gates": 0,
-    "rejected": 108,
-    "analyzed_at": "2026-03-15T15:30:21.564950",
-    "analyzed_count": 0,
-    "qualified_count": 0,
-    "new_count": 0,
-    "top_count": 0,
-    "interesting_count": 0
+    "rejected": 108
   },
   "listings": [],
   "rejected_log": [
