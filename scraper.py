@@ -99,17 +99,24 @@ class Listing:
 
 def parse_price(text):
     if not text: return None
-    # Split on DH/MAD first to isolate the main price from monthly price
-    parts = re.split(r'DH|MAD|€|/', text, maxsplit=1)
-    chunk = parts[0] if parts else text
-    digits = re.sub(r'[^\d]', '', chunk)
-    if not digits: return None
-    val = int(digits)
-    if 100_000 <= val <= 50_000_000: return val
-    if len(digits) > 8:
-        for ln in [7, 6]:
-            v = int(digits[:ln])
-            if 100_000 <= v <= 50_000_000: return v
+    # Suche gezielt nach Preismustern: "3 100 000 DH" oder "1,800,000" oder "1800000"
+    # Pattern 1: Zahl mit Leerzeichen als Tausender-Trenner vor DH/MAD
+    m = re.search(r'(\d[\d\s]{4,10})\s*(?:DH|MAD|Dhs)', text)
+    if m:
+        digits = re.sub(r'\s', '', m.group(1))
+        val = int(digits)
+        if 100_000 <= val <= 50_000_000: return val
+    # Pattern 2: Zahl mit Punkten/Kommas als Trenner
+    m = re.search(r'(\d{1,3}[\.\,]\d{3}[\.\,]\d{3})', text)
+    if m:
+        digits = re.sub(r'[\.\,]', '', m.group(1))
+        val = int(digits)
+        if 100_000 <= val <= 50_000_000: return val
+    # Pattern 3: Durchgehende Zahl 6-8 Stellen
+    m = re.search(r'(?<!\d)(\d{6,8})(?!\d)', text)
+    if m:
+        val = int(m.group(1))
+        if 100_000 <= val <= 50_000_000: return val
     return None
 
 def xnum(text, mn=0, mx=9999):
