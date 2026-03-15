@@ -26,9 +26,18 @@ NEIGHBORHOODS = [
     "targa","palmeraie","agdal","tamansourt","massira","m'hamid","mhamid",
     "izdihar","amerchich","tassoultant","route de l'ourika","route ourika",
     "route de fes","route de casablanca","route casablanca","sidi ghanem",
-    "saada","semlalia","camp el ghoul","hay mohammadi","marjane","annakhil",
+    "saada","semlalia","hay mohammadi","marjane","annakhil",
+    "route d'amizmiz","route amizmiz","chrifia","bouaakkaz","mhamid",
+    "sidi abbad","hay charaf","mabrouka","najd",
 ]
 NO_GO = ["riad","riyad","rez-de-chaussee","rez de chaussee"]
+
+# Zentrum-Lagen die NICHT Speckgürtel sind
+NO_GO_NEIGHBORHOODS = [
+    "guéliz","gueliz","hivernage","medina","médina","centre ville",
+    "centre-ville","bab doukkala","bab doukala","kasbah","mellah",
+    "victor hugo","majorelle",
+]
 IMG_BAD = ["logo","icon","avatar","placeholder","pixel","spacer","banner","ad-",
     "badge","button","arrow","sprite","flag","emoji","social","facebook","twitter",
     "instagram","youtube","google-play","app-store","afdal","widget","star","rating",
@@ -657,19 +666,47 @@ def apply_gates(listings):
     passed, rejected = [], []
     for l in listings:
         reason = None
+        full = (l.title + " " + l.description + " " + l.neighborhood).lower()
+
+        # Preis
         if l.price_mad is not None:
             if l.price_mad < BUDGET_MIN: reason = f"Preis: {l.price_mad:,} < Min"
             elif l.price_mad > BUDGET_MAX: reason = f"Preis: {l.price_mad:,} > Max"
         else: reason = "Kein Preis"
+
+        # Zimmer
         if not reason and l.rooms and l.rooms < 3 and (not l.bedrooms or l.bedrooms < 2):
             reason = "Zu wenig Zimmer"
+
+        # Erdgeschoss
         if not reason and l.is_ground_floor: reason = "Erdgeschoss"
+
+        # Riad
         if not reason and l.is_riad: reason = "Riad"
+
+        # Melkia
         if not reason and l.ownership_type == "Melkia": reason = "Melkia"
+
+        # No-Go Keywords
         if not reason:
-            full = (l.title + " " + l.description).lower()
             for kw in NO_GO:
                 if kw in full: reason = f"No-Go: {kw}"; break
+
+        # TERRASSE/BALKON PFLICHT — abgelehnt wenn explizit False
+        # Wenn unbekannt (None), lassen wir es durch (KI bewertet dann)
+        if not reason and l.has_terrace is False:
+            reason = "Keine Terrasse/Balkon"
+
+        # SPECKGÜRTEL PFLICHT — Zentrum-Lagen ablehnen
+        if not reason:
+            nb = l.neighborhood.lower() if l.neighborhood else ""
+            # Aus URL extrahierten Stadtteil prüfen
+            url_lower = l.url.lower() if l.url else ""
+            for nogo_nb in NO_GO_NEIGHBORHOODS:
+                if nogo_nb in nb or nogo_nb in full or nogo_nb.replace("é","e").replace("è","e") in url_lower:
+                    reason = f"Zentrum-Lage: {l.neighborhood or nogo_nb}"
+                    break
+
         if reason: rejected.append({"title":l.title[:60],"url":l.url,"reason":reason})
         else: passed.append(l)
     return passed, rejected
