@@ -148,12 +148,12 @@ def detect(text):
     else:
         m = re.search(r'(?:étage|etage)\s*(\d)', t)
         if m: r['floor'] = m.group(1) + ". Etage"
-    r['has_terrace'] = any(w in t for w in ["terrasse","balcon","rooftop"])
-    r['has_pool'] = any(w in t for w in ["piscine","pool"])
-    r['has_parking'] = any(w in t for w in ["parking","garage","sous-sol"])
-    r['has_elevator'] = "ascenseur" in t
-    r['is_new_build'] = any(w in t for w in ["neuf","jamais habit","livraison 202"])
-    r['is_riad'] = any(w in t for w in ["riad","riyad"])
+    if any(w in t for w in ["terrasse","balcon","rooftop"]): r['has_terrace'] = True
+    if any(w in t for w in ["piscine","pool"]): r['has_pool'] = True
+    if any(w in t for w in ["parking","garage","sous-sol"]): r['has_parking'] = True
+    if "ascenseur" in t: r['has_elevator'] = True
+    if any(w in t for w in ["neuf","jamais habit","livraison 202"]): r['is_new_build'] = True
+    if any(w in t for w in ["riad","riyad"]): r['is_riad'] = True
     if "titre foncier" in t or " tf " in t: r['ownership_type'] = "Titre Foncier"
     elif "melkia" in t or "melk " in t: r['ownership_type'] = "Melkia"
     if any(w in t for w in ["neuf","jamais habit"]): r['condition'] = "Neu"
@@ -302,16 +302,72 @@ def get_images(page):
     return imgs[:5]
 
 # ═══════════════════════════════════════
+# FILTER AUF DER SEITE SETZEN (Playwright)
+# ═══════════════════════════════════════
+def apply_portal_filters(page, portal):
+    """Setzt Preis- und Ausstattungsfilter direkt auf der Portal-Seite."""
+    print(f"    Filter setzen...")
+    
+    # Versuche Preis-Filter
+    try:
+        # Preis Min
+        for sel in ["input[name*='price_min']", "input[placeholder*='Min']", "input[data-testid*='min']", "input[id*='priceMin']", "input[name*='min_price']"]:
+            el = page.query_selector(sel)
+            if el and el.is_visible():
+                el.fill(str(BUDGET_MIN))
+                break
+        # Preis Max
+        for sel in ["input[name*='price_max']", "input[placeholder*='Max']", "input[data-testid*='max']", "input[id*='priceMax']", "input[name*='max_price']"]:
+            el = page.query_selector(sel)
+            if el and el.is_visible():
+                el.fill(str(BUDGET_MAX))
+                break
+    except: pass
+    
+    # Versuche Balkon/Terrasse Filter anzuklicken
+    try:
+        for txt in ["Balcon", "Terrasse", "balcon", "terrasse"]:
+            for tag in ["label", "span", "div", "button", "input"]:
+                sel = tag + ":has-text('" + txt + "')"
+                el = page.query_selector(sel)
+                if el and el.is_visible():
+                    el.click()
+                    print(f"      Filter geklickt: {txt}")
+                    page.wait_for_timeout(1000)
+                    break
+    except: pass
+    
+    # Versuche "Appliquer" / "Rechercher" Button
+    try:
+        for txt in ["Appliquer", "Rechercher", "Filtrer", "Valider", "Afficher"]:
+            btn = page.query_selector("button:has-text('" + txt + "')")
+            if btn and btn.is_visible():
+                btn.click()
+                page.wait_for_timeout(3000)
+                print(f"      Filter angewendet")
+                break
+    except: pass
+
+# ═══════════════════════════════════════
 # AVITO — URLs sind /fr/{stadtteil}/appartements/{titel}_{id}.htm
 # ═══════════════════════════════════════
 def scrape_avito(page, max_pages):
     print(f"\n  AVITO")
     listings = []
+    
+    # Erste Seite mit Preis-Filter in URL (Avito unterstuetzt das)
+    base_url = "https://www.avito.ma/fr/marrakech/appartements-%C3%A0_vendre"
+    first_url = base_url + "?price_min=" + str(BUDGET_MIN) + "&price_max=" + str(BUDGET_MAX)
+    
     for pg in range(1, max_pages + 1):
-        url = f"https://www.avito.ma/fr/marrakech/appartements-%C3%A0_vendre?o={pg}"
+        url = first_url + "&o=" + str(pg) if pg > 1 else first_url
         try:
             page.goto(url, timeout=30000, wait_until="domcontentloaded")
-            page.wait_for_timeout(4000)  # Avito braucht JS-Rendering
+            page.wait_for_timeout(4000)
+            
+            # Auf erster Seite: zusaetzliche Filter per Klick setzen
+            if pg == 1:
+                apply_portal_filters(page, "avito")
         except:
             print(f"    Seite {pg}: Timeout"); continue
 
@@ -465,6 +521,8 @@ def scrape_mubawab(page, max_pages):
         try:
             page.goto(url, timeout=30000, wait_until="domcontentloaded")
             page.wait_for_timeout(4000)
+            if pg == 1:
+                apply_portal_filters(page, "mubawab")
         except:
             print(f"    Seite {pg}: Timeout"); continue
 
@@ -583,6 +641,8 @@ def scrape_sarouty(page, max_pages):
         try:
             page.goto(url, timeout=30000, wait_until="domcontentloaded")
             page.wait_for_timeout(4000)
+            if pg == 1:
+                apply_portal_filters(page, "sarouty")
         except:
             print(f"    Seite {pg}: Timeout"); continue
 
