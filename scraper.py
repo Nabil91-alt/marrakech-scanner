@@ -161,9 +161,7 @@ def detect(text):
     if any(w in t for w in ["parking","garage","sous-sol"]): r['has_parking'] = True
     if "ascenseur" in t: r['has_elevator'] = True
     if any(w in t for w in ["neuf","jamais habit","livraison 202"]): r['is_new_build'] = True
-    # Riad: nur als Immobilientyp, NICHT als Adresse (Riad Zitoun, Résidence Riad El...)
-    if re.search(r'\briad\b', t) and not re.search(r'résidence.*riad|riad\s+(zitoun|el\s|la\s|de\s|des\s|al\s|ourika|garden|noria)', t):
-        r['is_riad'] = True
+    # Riad-Erkennung DEAKTIVIERT: Wir suchen Appartements, "riad" im Text ist fast immer Adresse
     if "titre foncier" in t or " tf " in t: r['ownership_type'] = "Titre Foncier"
     elif "melkia" in t or "melk " in t: r['ownership_type'] = "Melkia"
     if any(w in t for w in ["neuf","jamais habit"]): r['condition'] = "Neu"
@@ -597,10 +595,14 @@ def scrape_mubawab(page, max_pages):
                 # Skip listing pages and non-detail pages
                 if "/st/" in href or "/ct/" in href or "/sd/" in href or "/is/" in href: continue
                 if "/appartements-a-vendre" in href: continue
+                # Skip navigation/system pages
+                if any(x in href for x in ["/login","/app-mobile","/about","/cms","/study-guide","/contact","/terms","/privacy","/faq","/help","/blog","/sitemap","/register","/forgot"]): continue
                 # Must be a detail page - contains /fr/ and has some path
                 if "/fr/" not in href: continue
+                # Must contain a number (listing ID) or /pa/ or /b/ (property paths)
+                if not re.search(r'/pa/\d|/b/\d|/\d+[/-]', href): continue
                 parts = href.replace("https://www.mubawab.ma","").split("/")
-                if len(parts) < 3: continue  # Too short to be a detail URL
+                if len(parts) < 3: continue
 
                 text = link.inner_text().strip()
                 if len(text) < 5 or len(text) > 500: continue
@@ -741,9 +743,6 @@ def apply_gates(listings):
 
         # Erdgeschoss
         if not reason and l.is_ground_floor: reason = "Erdgeschoss"
-
-        # Riad
-        if not reason and l.is_riad: reason = "Riad"
 
         # Melkia
         if not reason and l.ownership_type == "Melkia": reason = "Melkia"
