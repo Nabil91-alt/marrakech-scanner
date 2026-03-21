@@ -7,7 +7,7 @@ Fixes basierend auf echtem HTML:
 - Sarouty: Kartenextraktion gefixt
 """
 
-import json, time, re, argparse, hashlib
+import json, time, re, argparse, hashlib, random
 from datetime import datetime
 from dataclasses import dataclass, field, asdict
 from typing import Optional
@@ -30,7 +30,7 @@ NEIGHBORHOODS = [
     "route d'amizmiz","route amizmiz","chrifia","bouaakkaz","mhamid",
     "sidi abbad","hay charaf","mabrouka","najd",
 ]
-NO_GO = ["riad","riyad","rez-de-chaussee","rez de chaussee"]
+NO_GO = ["rez-de-chaussee","rez de chaussee"]
 
 # Zentrum-Lagen die NICHT Speckgürtel sind
 NO_GO_NEIGHBORHOODS = [
@@ -99,20 +99,28 @@ class Listing:
 
 def parse_price(text):
     if not text: return None
-    # Suche gezielt nach Preismustern: "3 100 000 DH" oder "1,800,000" oder "1800000"
-    # Pattern 1: Zahl mit Leerzeichen als Tausender-Trenner vor DH/MAD
-    m = re.search(r'(\d[\d\s]{4,10})\s*(?:DH|MAD|Dhs)', text)
+    # Pattern 1: Zahl vor DH/MAD/Dhs (sicherste)
+    m = re.search(r'(\d[\d\s]{4,10})\s*(?:DH|MAD|Dhs|dh|mad)', text)
     if m:
         digits = re.sub(r'\s', '', m.group(1))
         val = int(digits)
         if 100_000 <= val <= 50_000_000: return val
-    # Pattern 2: Zahl mit Punkten/Kommas als Trenner
+    # Pattern 2: Zahl mit Punkt/Komma-Trenner
     m = re.search(r'(\d{1,3}[\.\,]\d{3}[\.\,]\d{3})', text)
     if m:
         digits = re.sub(r'[\.\,]', '', m.group(1))
         val = int(digits)
         if 100_000 <= val <= 50_000_000: return val
-    # Pattern 3: Durchgehende Zahl 6-8 Stellen
+    # Pattern 3: Zahl mit Leerzeichen OHNE DH/MAD — "1 800 000" oder "876 000"
+    m = re.search(r'(?<!\d)(\d{1,2})\s(\d{3})\s(\d{3})(?!\d)', text)
+    if m:
+        val = int(m.group(1) + m.group(2) + m.group(3))
+        if 100_000 <= val <= 50_000_000: return val
+    m = re.search(r'(?<!\d)(\d{3})\s(\d{3})(?!\d)', text)
+    if m:
+        val = int(m.group(1) + m.group(2))
+        if 100_000 <= val <= 50_000_000: return val
+    # Pattern 4: Durchgehende Zahl 6-8 Stellen
     m = re.search(r'(?<!\d)(\d{6,8})(?!\d)', text)
     if m:
         val = int(m.group(1))
@@ -153,7 +161,9 @@ def detect(text):
     if any(w in t for w in ["parking","garage","sous-sol"]): r['has_parking'] = True
     if "ascenseur" in t: r['has_elevator'] = True
     if any(w in t for w in ["neuf","jamais habit","livraison 202"]): r['is_new_build'] = True
-    if any(w in t for w in ["riad","riyad"]): r['is_riad'] = True
+    # Riad: nur als Immobilientyp, NICHT als Adresse (Riad Zitoun, Résidence Riad El...)
+    if re.search(r'\briad\b', t) and not re.search(r'résidence.*riad|riad\s+(zitoun|el\s|la\s|de\s|des\s|al\s|ourika|garden|noria)', t):
+        r['is_riad'] = True
     if "titre foncier" in t or " tf " in t: r['ownership_type'] = "Titre Foncier"
     elif "melkia" in t or "melk " in t: r['ownership_type'] = "Melkia"
     if any(w in t for w in ["neuf","jamais habit"]): r['condition'] = "Neu"
@@ -301,6 +311,122 @@ def get_images(page):
     except: pass
     return imgs[:5]
 
+
+# ═══════════════════════════════════════
+# UNIVERSELLE DETAIL-SEITEN-EXTRAKTION
+# Oeffnet die Seite, liest ALLES, fertig.
+# ═══════════════════════════════════════
+def scrape_detail_page(page, listing, verbose=False):
+    """Oeffnet Detail-Seite, liest den KOMPLETTEN Seiteninhalt, extrahiert alles."""
+    try:
+        page.goto(listing.url, timeout=25000, wait_until="domcontentloaded")
+        page.wait_for_timeout(2000)
+
+        # CAPTCHA/Cloudflare Detection — warte bis zu 15s wenn Challenge erkannt
+        for _ in range(3):
+            body_text = page.inner_text("body").lower()
+            if any(x in body_text for x in ["checking your browser", "just a moment", "captcha", "ray id", "cf-browser-verification", "please wait", "vérification"]):
+                if verbose: print(f"      Cloudflare/CAPTCHA erkannt, warte...")
+                page.wait_for_timeout(5000)
+            else:
+                break
+
+        listing.url = page.url  # Echte URL nach Redirect
+
+        # 1. TELEFON — Buttons klicken
+        phone = click_phone(page)
+        if phone:
+            listing.contact_phone = phone
+            if verbose: print(f"      Tel: {phone}")
+
+        # 2. KONTAKTE aus Links
+        contacts = get_contacts(page)
+        for k, v in contacts.items():
+            if v and not getattr(listing, k, ""): setattr(listing, k, v)
+
+        # 3. BILDER — alle echten Fotos von der gerenderten Seite
+        listing.images = get_images(page)
+
+        # 4. DEN KOMPLETTEN SEITENTEXT LESEN
+        full_text = ""
+        try:
+            full_text = page.inner_text("body")
+        except: pass
+
+        # 5. TITEL — h1 ist fast immer der Titel
+        try:
+            h1 = page.query_selector("h1")
+            if h1:
+                t = h1.inner_text().strip()
+                if len(t) > 5: listing.title = t[:200]
+        except: pass
+
+        # 6. BESCHREIBUNG — den laengsten Textblock finden
+        if not listing.description:
+            listing.description = full_text[:1000]  # Erstmal alles, KI filtert
+
+        # 7. PREIS aus dem vollen Text
+        if not listing.price_mad:
+            listing.price_mad = parse_price(full_text)
+
+        # 8. ALLE strukturierten Daten aus dem Text extrahieren
+        apply_d(listing, detect(full_text))
+
+        # 9. VERKAEUFERNAME
+        if not listing.contact_name:
+            for sel in ["a[href*='/boutique']", "[class*='seller']", "[class*='agent']", "[class*='store']", "[class*='author']"]:
+                try:
+                    el = page.query_selector(sel)
+                    if el:
+                        name = el.inner_text().strip()
+                        if 2 < len(name) < 60 and '@' not in name and 'http' not in name and 'DH' not in name:
+                            listing.contact_name = name
+                            break
+                except: pass
+
+        # 10. JSON-LD und Script-Daten (strukturierte Daten der Portale)
+        try:
+            html = page.content()
+            # JSON-LD
+            from bs4 import BeautifulSoup as BS
+            soup = BS(html, "html.parser")
+            for script in soup.find_all("script", type="application/ld+json"):
+                try:
+                    data = json.loads(script.string)
+                    if isinstance(data, dict):
+                        listing.title = listing.title or data.get("name","")
+                        if data.get("offers"):
+                            listing.price_mad = listing.price_mad or parse_price(str(data["offers"].get("price","")))
+                        if data.get("floorSize") and isinstance(data["floorSize"], dict):
+                            listing.area_sqm = listing.area_sqm or xnum(str(data["floorSize"].get("value","")), 20, 1000)
+                        listing.rooms = listing.rooms or xnum(str(data.get("numberOfRooms","")), 1, 20)
+                except: pass
+
+            # Inline JSON mit Immobilien-Daten
+            for m in re.findall(r'\{[^{}]*"(?:price|surface|rooms|bedrooms|bathrooms)"[^{}]*\}', html):
+                try:
+                    d = json.loads(m)
+                    listing.price_mad = listing.price_mad or parse_price(str(d.get("price","")))
+                    listing.area_sqm = listing.area_sqm or xnum(str(d.get("surface",d.get("size",""))), 20, 1000)
+                    listing.rooms = listing.rooms or xnum(str(d.get("rooms","")), 1, 20)
+                    listing.bedrooms = listing.bedrooms or xnum(str(d.get("bedrooms","")), 1, 10)
+                    listing.bathrooms = listing.bathrooms or xnum(str(d.get("bathrooms","")), 1, 10)
+                    p = d.get("phone", d.get("phoneNumber",""))
+                    if p and not listing.contact_phone and len(str(p)) >= 8:
+                        listing.contact_phone = str(p)
+                except: pass
+        except: pass
+
+        if verbose and listing.price_mad:
+            print(f"      Preis: {listing.price_mad:,} | {listing.area_sqm or '?'}m2 | {listing.rooms or '?'}Zi")
+
+    except Exception as ex:
+        if verbose: print(f"      Fehler: {ex}")
+
+    listing.finalize()
+    # Menschliche Pause: 1-3 Sekunden randomisiert
+    time.sleep(random.uniform(1.0, 3.0))
+
 # ═══════════════════════════════════════
 # FILTER AUF DER SEITE SETZEN (Playwright)
 # ═══════════════════════════════════════
@@ -431,78 +557,7 @@ def scrape_avito(page, max_pages):
     for i, l in enumerate(listings):
         if not l.url: continue
         if i % 10 == 0: print(f"    Detail {i+1}/{len(listings)}...")
-        try:
-            page.goto(l.url, timeout=20000, wait_until="domcontentloaded")
-            page.wait_for_timeout(2500)
-            l.url = page.url  # echte URL nach Redirect
-
-            # Telefon-Button klicken
-            phone = click_phone(page)
-            if phone:
-                l.contact_phone = phone
-                if i < 5: print(f"      Tel gefunden: {phone}")
-
-            # Kontakte
-            contacts = get_contacts(page)
-            for k, v in contacts.items():
-                if v and not getattr(l, k, ""): setattr(l, k, v)
-
-            # Verkaeufername (Avito zeigt diesen prominent)
-            if not l.contact_name:
-                for sel in ["a[href*='/boutique'] span", "a[href*='/boutique']", "[class*='seller']", "[class*='store'] span", "[class*='author']"]:
-                    el = page.query_selector(sel)
-                    if el:
-                        name = el.inner_text().strip()
-                        if 2 < len(name) < 60 and '@' not in name and 'http' not in name:
-                            l.contact_name = name; break
-
-            # Bilder
-            if not l.images:
-                l.images = get_images(page)
-
-            # Preis aus Detail-Seite
-            if not l.price_mad:
-                for sel in ["[class*='price']", "[data-testid*='price']"]:
-                    el = page.query_selector(sel)
-                    if el:
-                        l.price_mad = parse_price(el.inner_text())
-                        if l.price_mad: break
-
-            # Titel von der Detail-Seite (besser)
-            for sel in ["h1", "[class*='title'] h1", "[data-testid='title']"]:
-                el = page.query_selector(sel)
-                if el:
-                    t = el.inner_text().strip()
-                    if len(t) > 5: l.title = t[:200]; break
-
-            # Beschreibung
-            for sel in ["[class*='description']", "[class*='body']", "[data-testid='description']"]:
-                el = page.query_selector(sel)
-                if el:
-                    l.description = el.inner_text().strip()[:500]
-                    break
-
-            # Aus Script-Tags
-            try:
-                content = page.content()
-                for m in re.findall(r'\{[^{}]*"(?:surface|rooms|bedrooms)"[^{}]*\}', content):
-                    try:
-                        d = json.loads(m)
-                        l.area_sqm = l.area_sqm or xnum(str(d.get("surface","")), 20, 1000)
-                        l.rooms = l.rooms or xnum(str(d.get("rooms","")), 1, 20)
-                        l.bedrooms = l.bedrooms or xnum(str(d.get("bedrooms","")), 1, 10)
-                    except: pass
-            except: pass
-
-            # Body text analyse
-            try:
-                body = page.inner_text("body")
-                apply_d(l, detect(body))
-            except: pass
-
-        except Exception as ex:
-            if i < 3: print(f"    Fehler: {ex}")
-        l.finalize()
+        scrape_detail_page(page, l, verbose=(i < 5))
         page.wait_for_timeout(1500)
 
     print(f"    Avito: {len(listings)}")
@@ -582,47 +637,7 @@ def scrape_mubawab(page, max_pages):
     for i, l in enumerate(listings):
         if not l.url: continue
         if i % 10 == 0: print(f"    Detail {i+1}/{len(listings)}...")
-        try:
-            page.goto(l.url, timeout=20000, wait_until="domcontentloaded")
-            page.wait_for_timeout(2500)
-            l.url = page.url
-
-            phone = click_phone(page)
-            if phone: l.contact_phone = phone
-
-            contacts = get_contacts(page)
-            for k, v in contacts.items():
-                if v and not getattr(l, k, ""): setattr(l, k, v)
-
-            if not l.images: l.images = get_images(page)
-
-            if not l.price_mad:
-                el = page.query_selector("[class*='price'], [class*='prix']")
-                if el: l.price_mad = parse_price(el.inner_text())
-
-            # Titel
-            el = page.query_selector("h1")
-            if el:
-                t = el.inner_text().strip()
-                if len(t) > 5: l.title = t[:200]
-
-            for sel in ["[class*='description']", "[class*='blockParagraph']"]:
-                el = page.query_selector(sel)
-                if el: l.description = el.inner_text().strip()[:500]; break
-
-            # Agent
-            for sel in ["[class*='agent']", "[class*='seller']"]:
-                el = page.query_selector(sel)
-                if el and not l.contact_name:
-                    name = el.inner_text().strip()
-                    if 2 < len(name) < 50 and '@' not in name: l.contact_name = name
-
-            body = page.inner_text("body")
-            apply_d(l, detect(body))
-
-        except Exception as ex:
-            if i < 3: print(f"    Fehler: {ex}")
-        l.finalize()
+        scrape_detail_page(page, l, verbose=(i < 3))
         page.wait_for_timeout(1500)
 
     print(f"    Mubawab: {len(listings)}")
@@ -698,28 +713,7 @@ def scrape_sarouty(page, max_pages):
     for i, l in enumerate(listings):
         if not l.url: continue
         if i % 10 == 0: print(f"    Detail {i+1}/{len(listings)}...")
-        try:
-            page.goto(l.url, timeout=20000, wait_until="domcontentloaded")
-            page.wait_for_timeout(2500)
-            l.url = page.url
-
-            phone = click_phone(page)
-            if phone: l.contact_phone = phone
-            contacts = get_contacts(page)
-            for k, v in contacts.items():
-                if v and not getattr(l, k, ""): setattr(l, k, v)
-            if not l.images: l.images = get_images(page)
-            if not l.price_mad:
-                el = page.query_selector("[class*='price']")
-                if el: l.price_mad = parse_price(el.inner_text())
-            el = page.query_selector("h1")
-            if el:
-                t = el.inner_text().strip()
-                if len(t) > 5: l.title = t[:200]
-            body = page.inner_text("body")
-            apply_d(l, detect(body))
-        except: pass
-        l.finalize()
+        scrape_detail_page(page, l, verbose=(i < 3))
         page.wait_for_timeout(1500)
 
     print(f"    Sarouty: {len(listings)}")
@@ -739,7 +733,7 @@ def apply_gates(listings):
         if l.price_mad is not None:
             if l.price_mad < BUDGET_MIN: reason = f"Preis: {l.price_mad:,} < Min"
             elif l.price_mad > BUDGET_MAX: reason = f"Preis: {l.price_mad:,} > Max"
-        else: reason = "Kein Preis"
+        # Kein Preis? Durchlassen — KI bewertet es, Portal-Filter hat vorselektiert
 
         # Zimmer
         if not reason and l.rooms and l.rooms < 3 and (not l.bedrooms or l.bedrooms < 2):
@@ -791,13 +785,40 @@ def main():
     print(f"\n  SCRAPER v7 PLAYWRIGHT | {args.portal.upper()} | {args.pages} Seiten\n")
 
     with sync_playwright() as pw:
-        browser = pw.chromium.launch(headless=True)
+        browser = pw.chromium.launch(
+            headless=True,
+            args=[
+                "--disable-blink-features=AutomationControlled",
+                "--no-sandbox",
+                "--disable-dev-shm-usage",
+            ]
+        )
         ctx = browser.new_context(
-            user_agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36",
-            locale="fr-FR", viewport={"width":1280,"height":800},
+            user_agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.94 Safari/537.36",
+            locale="fr-FR",
+            viewport={"width":1366,"height":768},
+            java_script_enabled=True,
+            extra_http_headers={
+                "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+                "Accept-Language": "fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7,ar;q=0.6",
+                "Accept-Encoding": "gzip, deflate, br",
+                "Sec-Fetch-Dest": "document",
+                "Sec-Fetch-Mode": "navigate",
+                "Sec-Fetch-Site": "none",
+                "Sec-Fetch-User": "?1",
+                "Upgrade-Insecure-Requests": "1",
+            }
         )
         page = ctx.new_page()
-        # Block images/CSS to speed up listing pages (not detail pages)
+
+        # Stealth: WebDriver-Flag entfernen + Navigator-Properties faelschen
+        page.add_init_script("""
+            Object.defineProperty(navigator, 'webdriver', {get: () => undefined});
+            Object.defineProperty(navigator, 'plugins', {get: () => [1, 2, 3]});
+            Object.defineProperty(navigator, 'languages', {get: () => ['fr-FR', 'fr', 'en']});
+            window.chrome = {runtime: {}};
+        """)
+
         all_l = []
         scrapers = {"avito":scrape_avito,"mubawab":scrape_mubawab,"sarouty":scrape_sarouty}
         for p in (scrapers.keys() if args.portal == "all" else [args.portal]):
