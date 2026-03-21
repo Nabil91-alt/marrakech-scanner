@@ -1,11 +1,11 @@
 {
   "meta": {
-    "scraped_at": "2026-03-21T08:23:55.596311",
-    "total_found": 225,
-    "passed_gates": 1,
-    "rejected": 224,
-    "analyzed_at": "2026-03-21T08:24:47.258931",
-    "analyzed_count": 1,
+    "scraped_at": "2026-03-21T16:02:42.536279",
+    "total_found": 240,
+    "passed_gates": 46,
+    "rejected": 194,
+    "analyzed_at": "2026-03-21T16:08:02.722801",
+    "analyzed_count": 46,
     "qualified_count": 0,
     "new_count": 0,
     "top_count": 0,
@@ -14,23 +14,8 @@
   "listings": [],
   "rejected_log": [
     {
-      "title": "Duplex RDC 47 m² en vente - piscine Rooftop",
-      "url": "https://www.avito.ma/fr/av_abdelkrim_el_khattabi/appartements/Duplex_RDC_47_m%C2%B2_en_vente___piscine_Rooftop_57606328.htm",
-      "reason": "Erdgeschoss"
-    },
-    {
-      "title": "Appartement à vendre 79 m² à Marrakech",
-      "url": "https://www.avito.ma/fr/gu%C3%A9liz/appartements/Appartement_%C3%A0_vendre_79_m%C2%B2_%C3%A0_Marrakech_57404271.htm",
-      "reason": "Riad"
-    },
-    {
-      "title": "Appartement à vendre 70 m² à Marrakech",
-      "url": "https://www.avito.ma/fr/victor_hugo/appartements/Appartement_%C3%A0_vendre_70_m%C2%B2_%C3%A0_Marrakech_57568071.htm",
-      "reason": "Riad"
-    },
-    {
-      "title": "Appartement à vendre 52 m² à Marrakech",
-      "url": "https://www.avito.ma/fr/gu%C3%A9liz/appartements/Appartement_%C3%A0_vendre_52_m%C2%B2_%C3%A0_Marrakech_56035043.htm",
+      "title": "Studio de Luxe Meublé à vendre",
+      "url": "https://www.avito.ma/fr/gu%C3%A9liz/appartements/Studio_de_Luxe_Meubl%C3%A9_%C3%A0_vendre_57542020.htm",
       "reason": "Riad"
     },
     {
@@ -39,323 +24,8 @@
       "reason": "Riad"
     },
     {
-      "title": "Appartement à vendre 103 m² à Marrakech",
-      "url": "https://www.avito.ma/fr/hivernage/appartements/Appartement_%C3%A0_vendre_103_m%C2%B2_%C3%A0_Marrakech_57647629.htm",
-      "reason": "Riad"
-    },
-    {
-      "title": "Appartement à vendre 58 m² à Marrakech",
-      "url": "https://www.avito.ma/fr/route_de_tahanaoute/appartements/Appartement_%C3%A0_vendre_58_m%C2%B2_%C3%A0_Marrakech_57371568.htm",
-      "reason": "Erdgeschoss"
-    },
-    {
-      "title": "Bel appartement à vendre",
-      "url": "https://www.avito.ma/fr/amelkis/appartements/Bel_appartement_%C3%A0_vendre_57659563.htm",
-      "reason": "Erdgeschoss"
-    },
-    {
-      "title": "Bel appartement non meublé à vendre à izdihar",
-      "url": "https://www.avito.ma/fr/hay_izdihar/appartements/Bel_appartement_non_meubl%C3%A9_%C3%A0_vendre_%C3%A0_izdihar_57386639.htm",
-      "reason": "Riad"
-    },
-    {
-      "title": "Studio de Luxe Meublé à vendre",
-      "url": "https://www.avito.ma/fr/gu%C3%A9liz/appartements/Studio_de_Luxe_Meubl%C3%A9_%C3%A0_vendre_57542020.htm",
-      "reason": "Riad"
-    },
-    {
-      "title": "Studio exceptionnel de 60 m² au centre Guéliz",
-      "url": "https://www.avito.ma/fr/gu%C3%A9liz/appartements/Studio_exceptionnel_de_60_m%C2%B2_au_centre_Gu%C3%A9liz_57638403.htm",
-      "reason": "Riad"
-    },
-    {
-      "title": "Appartement à vendre",
-      "url": "https://www.avito.ma/fr/mabrouka/appartements/Appartement_%C3%A0_vendre_57575206.htm",
-      "reason": "Riad"
-    },
-    {
-      "title": "Joli studio de 30 m² à vendre proche du Carré Eden",
-      "url": "https://www.avito.ma/fr/gu%C3%A9liz/appartements/Joli_studio_de_30_m%C2%B2_%C3%A0_vendre_proche_du_Carr%C3%A9_Eden_57638035.htm",
-      "reason": "Riad"
-    },
-    {
-      "title": "Appartement à vendre 60 m² à Marrakech",
-      "url": "https://www.avito.ma/fr/gu%C3%A9liz/appartements/Appartement_%C3%A0_vendre_60_m%C2%B2_%C3%A0_Marrakech_57585644.htm",
-      "reason": "Riad"
-    },
-    {
-      "title": "Bel Appartement à vendre 105 m² à Marrakech",
-      "url": "https://www.avito.ma/fr/majorelle/appartements/Bel_Appartement_%C3%A0_vendre_105_m%C2%B2_%C3%A0_Marrakech_57645110.htm",
-      "reason": "Riad"
-    },
-    {
-      "title": "Superbe Studio de 37 m² proche du Carré Eden",
-      "url": "https://www.avito.ma/fr/gu%C3%A9liz/appartements/Superbe_Studio_de_37_m%C2%B2_proche_du_Carr%C3%A9_Eden_57634732.htm",
-      "reason": "Riad"
-    },
-    {
-      "title": "Magnifique Studio de 50 m² au cœur de Guéliz",
-      "url": "https://www.avito.ma/fr/gu%C3%A9liz/appartements/Magnifique_Studio_de_50_m%C2%B2_au_c_ur_de_Gu%C3%A9liz_57634615.htm",
-      "reason": "Riad"
-    },
-    {
-      "title": "Appartement rénové et bien situé à vendre",
-      "url": "https://www.avito.ma/fr/gu%C3%A9liz/appartements/Appartement_r%C3%A9nov%C3%A9_et_bien_situ%C3%A9_%C3%A0_vendre_57577590.htm",
-      "reason": "Riad"
-    },
-    {
-      "title": "Appartement à vendre 50 m² à Marrakech",
-      "url": "https://www.avito.ma/fr/victor_hugo/appartements/Appartement_%C3%A0_vendre_50_m%C2%B2_%C3%A0_Marrakech_57584074.htm",
-      "reason": "Riad"
-    },
-    {
-      "title": "Elégant Studio à vendre 57 m² à Marrakech",
-      "url": "https://www.avito.ma/fr/gu%C3%A9liz/appartements/El%C3%A9gant_Studio_%C3%A0_vendre_57_m%C2%B2_%C3%A0_Marrakech_57638397.htm",
-      "reason": "Riad"
-    },
-    {
-      "title": "Affaire à saisir Bel appartement meublé à vendre",
-      "url": "https://www.avito.ma/fr/route_de_casablanca/appartements/Affaire_%C3%A0_saisir_Bel_appartement_meubl%C3%A9_%C3%A0_vendre_57639823.htm",
-      "reason": "Erdgeschoss"
-    },
-    {
-      "title": "🏢 Appartement à vendre",
-      "url": "https://www.avito.ma/fr/mabrouka/appartements/___Appartement_%C3%A0_vendre_57500505.htm",
-      "reason": "Erdgeschoss"
-    },
-    {
       "title": "Luxueux studio en vente a Gueliz pour AIRBNB",
       "url": "https://www.avito.ma/fr/av_abdelkrim_el_khattabi/appartements/Luxueux_studio_en_vente_a_Gueliz_pour_AIRBNB_57606267.htm",
-      "reason": "Riad"
-    },
-    {
-      "title": "🏡 Appartement à vendre",
-      "url": "https://www.avito.ma/fr/gu%C3%A9liz/appartements/___Appartement_%C3%A0_vendre_57274849.htm",
-      "reason": "Erdgeschoss"
-    },
-    {
-      "title": "Appartement à vendre 70 m² à Marrakech",
-      "url": "https://www.avito.ma/fr/victor_hugo/appartements/Appartement_%C3%A0_vendre_70_m%C2%B2_%C3%A0_Marrakech_57568168.htm",
-      "reason": "Riad"
-    },
-    {
-      "title": "Appartement à vendre 73 m² à Marrakech",
-      "url": "https://www.avito.ma/fr/gu%C3%A9liz/appartements/Appartement_%C3%A0_vendre_73_m%C2%B2_%C3%A0_Marrakech_57565220.htm",
-      "reason": "Erdgeschoss"
-    },
-    {
-      "title": "Appartement à vendre 58 m² à Marrakech",
-      "url": "https://www.avito.ma/fr/victor_hugo/appartements/Appartement_%C3%A0_vendre_58_m%C2%B2_%C3%A0_Marrakech_57606723.htm",
-      "reason": "Riad"
-    },
-    {
-      "title": "Grand Appartement Jawahir Majorelle",
-      "url": "https://www.avito.ma/fr/majorelle/appartements/Grand_Appartement_Jawahir_Majorelle_57410105.htm",
-      "reason": "Riad"
-    },
-    {
-      "title": "LUX apart a côté MACDO GUELIZ ZARA CARÉ EDEN",
-      "url": "https://www.avito.ma/fr/gu%C3%A9liz/appartements/LUX_apart_a_c%C3%B4t%C3%A9_MACDO_GUELIZ_ZARA_CAR%C3%89_EDEN_57646393.htm",
-      "reason": "Riad"
-    },
-    {
-      "title": "Appartement en vente 65m² à Gueliz-Piscine Rooftop",
-      "url": "https://www.avito.ma/fr/gu%C3%A9liz/appartements/Appartement_en_vente_65m%C2%B2_%C3%A0_Gueliz_Piscine_Rooftop_57658705.htm",
-      "reason": "Riad"
-    },
-    {
-      "title": "2ᵉ Tranche Riad Garden, Appartements de 84 à 116m²",
-      "url": "https://www.avito.ma/fr/av_mohammed_vi/appartements/2__Tranche_Riad_Garden__Appartements_de_84_%C3%A0_116m%C2%B2_54252844.htm",
-      "reason": "Erdgeschoss"
-    },
-    {
-      "title": "Appartement à vendre 60 m² à Marrakech",
-      "url": "https://www.avito.ma/fr/gu%C3%A9liz/appartements/Appartement_%C3%A0_vendre_60_m%C2%B2_%C3%A0_Marrakech_57658682.htm",
-      "reason": "Riad"
-    },
-    {
-      "title": "Appartement en vent 51m² à Gueliz-Piscine Rooftop",
-      "url": "https://www.avito.ma/fr/gu%C3%A9liz/appartements/Appartement_en_vent_51m%C2%B2_%C3%A0_Gueliz_Piscine_Rooftop_57658657.htm",
-      "reason": "Riad"
-    },
-    {
-      "title": "MEILLEURS APPARTS A CHRIFIA DE 72 A 110 M², T3-T4",
-      "url": "https://www.avito.ma/fr/route_d_amezmiz/appartements/MEILLEURS_APPARTS_A_CHRIFIA_DE_72_A_110_M%C2%B2__T3_T4_56592436.htm",
-      "reason": "Erdgeschoss"
-    },
-    {
-      "title": "Appartement neuf 2 chambres avec piscine",
-      "url": "https://www.avito.ma/fr/gu%C3%A9liz/appartements/Appartement_neuf_2_chambres_avec_piscine_57299632.htm",
-      "reason": "Riad"
-    },
-    {
-      "title": "Duplex à vendre à Marrakech",
-      "url": "https://www.avito.ma/fr/route_de_casablanca/appartements/Duplex_%C3%A0_vendre_%C3%A0_Marrakech_56318123.htm",
-      "reason": "Erdgeschoss"
-    },
-    {
-      "title": "Appartement à vendre 56 m² à Marrakech",
-      "url": "https://www.avito.ma/fr/gu%C3%A9liz/appartements/Appartement_%C3%A0_vendre_56_m%C2%B2_%C3%A0_Marrakech_57403709.htm",
-      "reason": "Riad"
-    },
-    {
-      "title": "Appartement à vendre 65 m² à Marrakech",
-      "url": "https://www.avito.ma/fr/hay_targa/appartements/Appartement_%C3%A0_vendre_65_m%C2%B2_%C3%A0_Marrakech_57585168.htm",
-      "reason": "Preis: 4,700,000 > Max"
-    },
-    {
-      "title": "Duplex à vendre dans résidence sécurisée",
-      "url": "https://www.avito.ma/fr/m_hamid/appartements/Duplex_%C3%A0_vendre_dans_r%C3%A9sidence_s%C3%A9curis%C3%A9e_57074699.htm",
-      "reason": "Preis: 2,790,000 > Max"
-    },
-    {
-      "title": "Studio à vendre avec piscine",
-      "url": "https://www.avito.ma/fr/palmeraie/appartements/Studio_%C3%A0_vendre_avec_piscine_57468855.htm",
-      "reason": "Preis: 630,000 < Min"
-    },
-    {
-      "title": "Appartement 2ème étage Azzouzziya Bab Asfi",
-      "url": "https://www.avito.ma/fr/azzouzia/appartements/Appartement_2%C3%A8me_%C3%A9tage_Azzouzziya_Bab_Asfi_57193652.htm",
-      "reason": "Preis: 2,340,000 > Max"
-    },
-    {
-      "title": "Appartement Meublée Doha les portes de Marrakech",
-      "url": "https://www.avito.ma/fr/les_portes_de_marrakech/appartements/Appartement_Meubl%C3%A9e_Doha_les_portes_de_Marrakech_57448233.htm",
-      "reason": "Riad"
-    },
-    {
-      "title": "Appartement neuf 70m",
-      "url": "https://www.avito.ma/fr/autre_secteur/appartements/Appartement_neuf_70m_56211723.htm",
-      "reason": "Preis: 560,000 < Min"
-    },
-    {
-      "title": "Appartement à vendre 44 m² à Marrakech",
-      "url": "https://www.avito.ma/fr/gu%C3%A9liz/appartements/Appartement_%C3%A0_vendre_44_m%C2%B2_%C3%A0_Marrakech_57619105.htm",
-      "reason": "Preis: 5,800,000 > Max"
-    },
-    {
-      "title": "Joli Appartement 1er Etage Mhamid 7",
-      "url": "https://www.avito.ma/fr/m_hamid/appartements/Joli_Appartement_1er_Etage_Mhamid_7_57133912.htm",
-      "reason": "Riad"
-    },
-    {
-      "title": "Appartement A vendre abwab-guillez",
-      "url": "https://www.avito.ma/fr/mabrouka/appartements/Appartement_A_vendre_abwab_guillez_57421176.htm",
-      "reason": "Preis: 690,000 < Min"
-    },
-    {
-      "title": "RAK-GU-1328 - Appartement à vendre à Massira 1",
-      "url": "https://www.avito.ma/fr/massira_1/appartements/RAK_GU_1328___Appartement_%C3%A0_vendre_%C3%A0_Massira_1_57622680.htm",
-      "reason": "Riad"
-    },
-    {
-      "title": "Appartement à vendre Saada",
-      "url": "https://www.avito.ma/fr/es_saada/appartements/Appartement_%C3%A0_vendre_Saada_55932125.htm",
-      "reason": "Preis: 2,420,000 > Max"
-    },
-    {
-      "title": "Appartement à vendre à Saada près Marjane",
-      "url": "https://www.avito.ma/fr/es_saada/appartements/Appartement_%C3%A0_vendre_%C3%A0_Saada_pr%C3%A8s_Marjane_57060522.htm",
-      "reason": "Riad"
-    },
-    {
-      "title": "Appartement à vendre 75 m² à Marrakech",
-      "url": "https://www.avito.ma/fr/hay_izdihar/appartements/Appartement_%C3%A0_vendre_75_m%C2%B2_%C3%A0_Marrakech_57658750.htm",
-      "reason": "Preis: 3,950,000 > Max"
-    },
-    {
-      "title": "Appartement à vendre 97 m² à Marrakech",
-      "url": "https://www.avito.ma/fr/gu%C3%A9liz/appartements/Appartement_%C3%A0_vendre_97_m%C2%B2_%C3%A0_Marrakech_57658733.htm",
-      "reason": "Preis: 2,330,000 > Max"
-    },
-    {
-      "title": "Appartement neuf 70 m² 5 pièces",
-      "url": "https://www.avito.ma/fr/autre_secteur/appartements/Appartement_neuf_70_m%C2%B2_5_pi%C3%A8ces_56246158.htm",
-      "reason": "Preis: 2,640,000 > Max"
-    },
-    {
-      "title": "Appartement à vendre 50 m² à Marrakech",
-      "url": "https://www.avito.ma/fr/centre_ville/appartements/Appartement_%C3%A0_vendre_50_m%C2%B2_%C3%A0_Marrakech_57601511.htm",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Appartement à vendre 64 m² à Guéliz Marrakech",
-      "url": "https://www.avito.ma/fr/gu%C3%A9liz/appartements/Appartement_%C3%A0_vendre_64_m%C2%B2_%C3%A0_Gu%C3%A9liz_Marrakech_57573813.htm",
-      "reason": "Preis: 4,680,000 > Max"
-    },
-    {
-      "title": "Appartement de 57 à 122m² à M'hamid Marrakech",
-      "url": "https://www.avito.ma/fr/m_hamid/appartements/Appartement_de_57_%C3%A0_122m%C2%B2_%C3%A0_M_hamid_Marrakech_54240863.htm",
-      "reason": "Preis: 4,505,000 > Max"
-    },
-    {
-      "title": "Appartements Haut Standing – Piscines & Parking",
-      "url": "https://www.avito.ma/fr/route_de_casablanca/appartements/Appartements_Haut_Standing___Piscines___Parking_57326766.htm",
-      "reason": "Preis: 2,778,000 > Max"
-    },
-    {
-      "title": "ATHENA 25 – Investissement Haut Standing",
-      "url": "https://www.avito.ma/fr/route_de_casablanca/appartements/ATHENA_25___Investissement_Haut_Standing_57324851.htm",
-      "reason": "Preis: 2,873,000 > Max"
-    },
-    {
-      "title": "Appartement Hamza à vendre",
-      "url": "https://www.avito.ma/fr/allal_el_fassi/appartements/Appartement_Hamza_%C3%A0_vendre_57656383.htm",
-      "reason": "Preis: 3,900,000 > Max"
-    },
-    {
-      "title": "Appartement à vendre",
-      "url": "https://www.avito.ma/fr/sanaoubar/appartements/Appartement_%C3%A0_vendre_57307412.htm",
-      "reason": "Riad"
-    },
-    {
-      "title": "Appartement d’exception, un luxe absolu",
-      "url": "https://www.avito.ma/fr/av_abdelkrim_el_khattabi/appartements/Appartement_d_exception__un_luxe_absolu_57221003.htm",
-      "reason": "Preis: 2,800,000 > Max"
-    },
-    {
-      "title": "Appartement à vendre 42 m² à Marrakech",
-      "url": "https://www.avito.ma/fr/gu%C3%A9liz/appartements/Appartement_%C3%A0_vendre_42_m%C2%B2_%C3%A0_Marrakech_57618167.htm",
-      "reason": "Riad"
-    },
-    {
-      "title": "Magnifique appartement à vendre à l'Azhar",
-      "url": "https://www.avito.ma/fr/hay_izdihar/appartements/Magnifique_appartement_%C3%A0_vendre_%C3%A0_l_Azhar_57615447.htm",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Appart 114m2 de 3 ch salon à Rouidate",
-      "url": "https://www.avito.ma/fr/rouidat/appartements/Appart_114m2_de_3_ch_salon_%C3%A0_Rouidate_57312726.htm",
-      "reason": "Preis: 4,970,000 > Max"
-    },
-    {
-      "title": "Appartement à vendre à Marrakech",
-      "url": "https://www.avito.ma/fr/hay_izdihar/appartements/Appartement_%C3%A0_vendre_%C3%A0_Marrakech_57246816.htm",
-      "reason": "Preis: 3,810,000 > Max"
-    },
-    {
-      "title": "Appartement",
-      "url": "https://www.avito.ma/fr/allal_el_fassi/appartements/Appartement_56289909.htm",
-      "reason": "Preis: 5,850,000 > Max"
-    },
-    {
-      "title": "Appartement à vendre 60 m² à Marrakech",
-      "url": "https://www.avito.ma/fr/centre_ville/appartements/Appartement_%C3%A0_vendre_60_m%C2%B2_%C3%A0_Marrakech_57599233.htm",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Magnifique duplex à avenue M6 pour la vente",
-      "url": "https://www.avito.ma/fr/av_mohammed_vi/appartements/Magnifique_duplex_%C3%A0_avenue_M6_pour_la_vente_57141827.htm",
-      "reason": "Preis: 3,650,000 > Max"
-    },
-    {
-      "title": "Appartement à vendre au jardin de Majorelle",
-      "url": "https://www.avito.ma/fr/majorelle/appartements/Appartement_%C3%A0_vendre_au_jardin_de_Majorelle_57313157.htm",
-      "reason": "Riad"
-    },
-    {
-      "title": "Appartement en vente 61m² à Gueliz-Piscine Rooftop",
-      "url": "https://www.avito.ma/fr/gu%C3%A9liz/appartements/Appartement_en_vente_61m%C2%B2_%C3%A0_Gueliz_Piscine_Rooftop_57656300.htm",
       "reason": "Riad"
     },
     {
@@ -369,19 +39,9 @@
       "reason": "Riad"
     },
     {
-      "title": "Bel appartement en rez de jardin sur résidence",
-      "url": "https://www.avito.ma/fr/agdal/appartements/Bel_appartement_en_rez_de_jardin_sur_r%C3%A9sidence_57536307.htm",
-      "reason": "Preis: 3,300,000 > Max"
-    },
-    {
       "title": "Appartement à vendre 61 m² à Marrakech",
       "url": "https://www.avito.ma/fr/gu%C3%A9liz/appartements/Appartement_%C3%A0_vendre_61_m%C2%B2_%C3%A0_Marrakech_57656693.htm",
       "reason": "Riad"
-    },
-    {
-      "title": "Magnifique Duplex à vendre 100 m² à Marrakech",
-      "url": "https://www.avito.ma/fr/gu%C3%A9liz/appartements/Magnifique_Duplex_%C3%A0_vendre_100_m%C2%B2_%C3%A0_Marrakech_57535818.htm",
-      "reason": "Kein Preis"
     },
     {
       "title": "Appartement à vendre 70 m² à Marrakech",
@@ -389,19 +49,9 @@
       "reason": "Riad"
     },
     {
-      "title": "Appartements neufs de 73m2 à 91m2 Résidence LINA",
-      "url": "https://www.avito.ma/fr/targa/appartements/Appartements_neufs_de_73m2_%C3%A0_91m2_R%C3%A9sidence_LINA_56292699.htm",
-      "reason": "Preis: 111,000 < Min"
-    },
-    {
-      "title": "Appartement à vendre Mhamid",
-      "url": "https://www.avito.ma/fr/m_hamid/appartements/Appartement_%C3%A0_vendre_Mhamid_57619596.htm",
-      "reason": "Preis: 3,430,000 > Max"
-    },
-    {
-      "title": "Vente appartement à charafe",
-      "url": "https://www.avito.ma/fr/hay_charaf/appartements/Vente_appartement_%C3%A0_charafe_56822535.htm",
-      "reason": "Preis: 115,000 < Min"
+      "title": "Appartement à vendre 79 m² à Marrakech",
+      "url": "https://www.avito.ma/fr/gu%C3%A9liz/appartements/Appartement_%C3%A0_vendre_79_m%C2%B2_%C3%A0_Marrakech_57404271.htm",
+      "reason": "Riad"
     },
     {
       "title": "Joli Studio 68 m² proche des Jardins Majorelle",
@@ -409,33 +59,18 @@
       "reason": "Riad"
     },
     {
-      "title": "Appartement à vendre 46 m² à Marrakech",
-      "url": "https://www.avito.ma/fr/gu%C3%A9liz/appartements/Appartement_%C3%A0_vendre_46_m%C2%B2_%C3%A0_Marrakech_57403547.htm",
-      "reason": "Preis: 3,874,000 > Max"
+      "title": "Joli studio de 30 m² à vendre proche du Carré Eden",
+      "url": "https://www.avito.ma/fr/gu%C3%A9liz/appartements/Joli_studio_de_30_m%C2%B2_%C3%A0_vendre_proche_du_Carr%C3%A9_Eden_57638035.htm",
+      "reason": "Riad"
     },
     {
-      "title": "Appartement neuf 90 m² à Marrakech Résidence Lina",
-      "url": "https://www.avito.ma/fr/targa/appartements/Appartement_neuf_90_m%C2%B2_%C3%A0_Marrakech_R%C3%A9sidence_Lina_56296692.htm",
-      "reason": "Preis: 211,000 < Min"
+      "title": "Appartement avec jacuzzi à vendre à Prestigia",
+      "url": "https://www.avito.ma/fr/autre_secteur/appartements/Appartement_avec_jacuzzi_%C3%A0_vendre_%C3%A0_Prestigia_57660982.htm",
+      "reason": "Riad"
     },
     {
-      "title": "Appartement à vendre 108 m² à Marrakech",
-      "url": "https://www.avito.ma/fr/gu%C3%A9liz/appartements/Appartement_%C3%A0_vendre_108_m%C2%B2_%C3%A0_Marrakech_54976963.htm",
-      "reason": "Preis: 2,500,000 > Max"
-    },
-    {
-      "title": "Studio proche bd Abdelkrim Al Khattabi (Marrakech)",
-      "url": "https://www.avito.ma/fr/gu%C3%A9liz/appartements/Studio_proche_bd_Abdelkrim_Al_Khattabi__Marrakech__55708561.htm",
-      "reason": "Preis: 2,900,000 > Max"
-    },
-    {
-      "title": "RAK-GU-1327 - Appartement à vendre à Izdihar",
-      "url": "https://www.avito.ma/fr/hay_izdihar/appartements/RAK_GU_1327___Appartement_%C3%A0_vendre_%C3%A0_Izdihar_57583488.htm",
-      "reason": "Preis: 2,780,000 > Max"
-    },
-    {
-      "title": "App kech 95 m² 1er étage 1 balcon",
-      "url": "https://www.avito.ma/fr/m_hamid/appartements/App__kech__95_m%C2%B2__1er_%C3%A9tage__1_balcon_56264521.htm",
+      "title": "Appartement rénové et bien situé à vendre",
+      "url": "https://www.avito.ma/fr/gu%C3%A9liz/appartements/Appartement_r%C3%A9nov%C3%A9_et_bien_situ%C3%A9_%C3%A0_vendre_57577590.htm",
       "reason": "Riad"
     },
     {
@@ -459,14 +94,14 @@
       "reason": "Erdgeschoss"
     },
     {
-      "title": "Appartement à vendre 90 m² à Marrakech",
-      "url": "https://www.avito.ma/fr/gu%C3%A9liz/appartements/Appartement_%C3%A0_vendre_90_m%C2%B2_%C3%A0_Marrakech_57536846.htm",
+      "title": "Vente joli appartement vide",
+      "url": "https://www.avito.ma/fr/route_de_casablanca/appartements/Vente_joli_appartement_vide_57660750.htm",
       "reason": "Riad"
     },
     {
-      "title": "Appartement de Luxe 2 Pièces à Prestigia Jade",
-      "url": "https://www.avito.ma/fr/bouaakkaz/appartements/Appartement_de_Luxe_2_Pi%C3%A8ces_%C3%A0_Prestigia_Jade_57652652.htm",
-      "reason": "Preis: 2,460,000 > Max"
+      "title": "Appartement à vendre 42 m² à Marrakech",
+      "url": "https://www.avito.ma/fr/gu%C3%A9liz/appartements/Appartement_%C3%A0_vendre_42_m%C2%B2_%C3%A0_Marrakech_57618167.htm",
+      "reason": "Riad"
     },
     {
       "title": "Magnifique Studio à vendre 55 m² à Guéliz",
@@ -474,259 +109,539 @@
       "reason": "Riad"
     },
     {
-      "title": "Nouveau Projet Au Centre Avec Piscine",
-      "url": "https://www.avito.ma/fr/route_de_casablanca/appartements/Nouveau_Projet_Au_Centre_Avec_Piscine_55850957.htm",
+      "title": "Magnifique Studio de 50 m² au cœur de Guéliz",
+      "url": "https://www.avito.ma/fr/gu%C3%A9liz/appartements/Magnifique_Studio_de_50_m%C2%B2_au_c_ur_de_Gu%C3%A9liz_57634615.htm",
       "reason": "Riad"
     },
     {
+      "title": "Elégant Studio à vendre 57 m² à Marrakech",
+      "url": "https://www.avito.ma/fr/gu%C3%A9liz/appartements/El%C3%A9gant_Studio_%C3%A0_vendre_57_m%C2%B2_%C3%A0_Marrakech_57638397.htm",
+      "reason": "Riad"
+    },
+    {
+      "title": "Duplex moderne à vendre madame Plaza",
+      "url": "https://www.avito.ma/fr/route_de_casablanca/appartements/Duplex_moderne_%C3%A0_vendre_madame_Plaza_57605986.htm",
+      "reason": "Erdgeschoss"
+    },
+    {
+      "title": "Appart à vendre meublé à Victor Hugo Marrakech",
+      "url": "https://www.avito.ma/fr/victor_hugo/appartements/Appart_%C3%A0_vendre_meubl%C3%A9_%C3%A0_Victor_Hugo_Marrakech_57524304.htm",
+      "reason": "Riad"
+    },
+    {
+      "title": "Grand appart 121m² à Najd près Mabrouka",
+      "url": "https://www.avito.ma/fr/mabrouka/appartements/Grand_appart_121m%C2%B2_%C3%A0_Najd_pr%C3%A8s_Mabrouka_57577324.htm",
+      "reason": "Riad"
+    },
+    {
+      "title": "Appart 3ch salon 126m2 et parking Semlalia",
+      "url": "https://www.avito.ma/fr/semlalia/appartements/Appart_3ch_salon_126m2_et_parking_Semlalia_57427077.htm",
+      "reason": "Riad"
+    },
+    {
+      "title": "Appartement à vendre 108 m² à Marrakech",
+      "url": "https://www.avito.ma/fr/gu%C3%A9liz/appartements/Appartement_%C3%A0_vendre_108_m%C2%B2_%C3%A0_Marrakech_57500066.htm",
+      "reason": "Riad"
+    },
+    {
+      "title": "Appartement à vendre 100 m² à Marrakech",
+      "url": "https://www.avito.ma/fr/semlalia/appartements/Appartement_%C3%A0_vendre_100_m%C2%B2_%C3%A0_Marrakech_57604838.htm",
+      "reason": "Riad"
+    },
+    {
+      "title": "Appart d exception à Agdal Marrakech pour investir",
+      "url": "https://www.avito.ma/fr/agdal/appartements/Appart_d_exception_%C3%A0_Agdal_Marrakech_pour_investir_57588128.htm",
+      "reason": "Erdgeschoss"
+    },
+    {
+      "title": "Appartement à vendre 56 m² à Marrakech",
+      "url": "https://www.avito.ma/fr/gu%C3%A9liz/appartements/Appartement_%C3%A0_vendre_56_m%C2%B2_%C3%A0_Marrakech_57403709.htm",
+      "reason": "Riad"
+    },
+    {
+      "title": "Nouveaux appart 61,68,74m² à Gueliz près Majorelle",
+      "url": "https://www.avito.ma/fr/gu%C3%A9liz/appartements/Nouveaux_appart_61_68_74m%C2%B2_%C3%A0_Gueliz_pr%C3%A8s_Majorelle_57311182.htm",
+      "reason": "Erdgeschoss"
+    },
+    {
+      "title": "2ᵉ Tranche Riad Garden, Appartements de 84 à 116m²",
+      "url": "https://www.avito.ma/fr/av_mohammed_vi/appartements/2__Tranche_Riad_Garden__Appartements_de_84_%C3%A0_116m%C2%B2_54252844.htm",
+      "reason": "Erdgeschoss"
+    },
+    {
+      "title": "Appartement à Atlas golf Resort à Marrakech",
+      "url": "https://www.avito.ma/fr/annakhil/appartements/Appartement_%C3%A0_Atlas_golf_Resort_%C3%A0_Marrakech_57615030.htm",
+      "reason": "Riad"
+    },
+    {
+      "title": "Appart 3ch salon 128m² à l’hivernage près CTM",
+      "url": "https://www.avito.ma/fr/hivernage/appartements/Appart_3ch_salon_128m%C2%B2_%C3%A0_l_hivernage_pr%C3%A8s_CTM_57314440.htm",
+      "reason": "Riad"
+    },
+    {
+      "title": "MEILLEURS APPARTS A CHRIFIA DE 72 A 110 M², T3-T4",
+      "url": "https://www.avito.ma/fr/route_d_amezmiz/appartements/MEILLEURS_APPARTS_A_CHRIFIA_DE_72_A_110_M%C2%B2__T3_T4_56592436.htm",
+      "reason": "Erdgeschoss"
+    },
+    {
+      "title": "Grand Appart T3 Targa piscine verdure tranquillité",
+      "url": "https://www.avito.ma/fr/targa/appartements/Grand_Appart_T3_Targa_piscine_verdure_tranquillit%C3%A9_55919000.htm",
+      "reason": "Riad"
+    },
+    {
+      "title": "Appartement à vendre 50 m² à Marrakech",
+      "url": "https://www.avito.ma/fr/gu%C3%A9liz/appartements/Appartement_%C3%A0_vendre_50_m%C2%B2_%C3%A0_Marrakech_57392748.htm",
+      "reason": "Riad"
+    },
+    {
+      "title": "Appart résidence piscine près Mc Do et Amoud",
+      "url": "https://www.avito.ma/fr/av_abdelkrim_el_khattabi/appartements/Appart_r%C3%A9sidence_piscine_pr%C3%A8s_Mc_Do_et_Amoud_57312273.htm",
+      "reason": "Riad"
+    },
+    {
+      "title": "Appartement à vendre 103 m² à Marrakech",
+      "url": "https://www.avito.ma/fr/hivernage/appartements/Appartement_%C3%A0_vendre_103_m%C2%B2_%C3%A0_Marrakech_57647629.htm",
+      "reason": "Riad"
+    },
+    {
+      "title": "Appartement 98 m² à vendre Allal Fassi Marrakech",
+      "url": "https://www.avito.ma/fr/allal_el_fassi/appartements/Appartement_98_m%C2%B2_%C3%A0_vendre_Allal_Fassi_Marrakech_57581707.htm",
+      "reason": "Preis: 5,950,000 > Max"
+    },
+    {
+      "title": "Appart lux 188m2 de 3ch 3sb à Gueliz",
+      "url": "https://www.avito.ma/fr/gu%C3%A9liz/appartements/Appart_lux_188m2_de_3ch_3sb_%C3%A0_Gueliz_56902202.htm",
+      "reason": "Preis: 3,100,000 > Max"
+    },
+    {
+      "title": "Studio à vendre proche centre-ville",
+      "url": "https://www.avito.ma/fr/route_de_casablanca/appartements/Studio_%C3%A0_vendre_proche_centre_ville_57652471.htm",
+      "reason": "Preis: 5,570,000 > Max"
+    },
+    {
+      "title": "Appart 3ch salon 87m2 près Sup de co",
+      "url": "https://www.avito.ma/fr/bd_moulay_abdellah/appartements/Appart_3ch_salon_87m2_pr%C3%A8s_Sup_de_co_57577173.htm",
+      "reason": "Preis: 4,920,000 > Max"
+    },
+    {
+      "title": "Appartement neuf avec terrasse😍 à vendre à Marrakech",
+      "url": "https://www.avito.ma/fr/route_de_casablanca/appartements/Appartement_neuf_avec_terrasse___%C3%A0_vendre_%C3%A0_Marrakech_57652089.htm",
+      "reason": "Preis: 5,580,000 > Max"
+    },
+    {
+      "title": "Appartement à vendre à Saada près Marjane",
+      "url": "https://www.avito.ma/fr/es_saada/appartements/Appartement_%C3%A0_vendre_%C3%A0_Saada_pr%C3%A8s_Marjane_57060522.htm",
+      "reason": "Riad"
+    },
+    {
+      "title": "Appartement à vendre Saada",
+      "url": "https://www.avito.ma/fr/es_saada/appartements/Appartement_%C3%A0_vendre_Saada_55932125.htm",
+      "reason": "Preis: 2,420,000 > Max"
+    },
+    {
+      "title": "Appartement 74m 3 chambres salon",
+      "url": "https://www.avito.ma/fr/autre_secteur/appartements/Appartement_74m_3_chambres_salon_56225293.htm",
+      "reason": "Preis: 3,580,000 > Max"
+    },
+    {
+      "title": "Nouveau Projet Haut Standing À Semlalia",
+      "url": "https://www.avito.ma/fr/semlalia/appartements/Nouveau_Projet_Haut_Standing_%C3%80_Semlalia_56794517.htm",
+      "reason": "Riad"
+    },
+    {
+      "title": "Studio à vendre 58 m² à Marrakech",
+      "url": "https://www.avito.ma/fr/majorelle/appartements/Studio_%C3%A0_vendre_58_m%C2%B2_%C3%A0_Marrakech_57292606.htm",
+      "reason": "Preis: 2,986,000 > Max"
+    },
+    {
+      "title": "Appartement 3 chambres à vendre 117 m² à Marrakech",
+      "url": "https://www.avito.ma/fr/route_de_safi/appartements/Appartement_3_chambres_%C3%A0_vendre_117_m%C2%B2_%C3%A0_Marrakech_57546872.htm",
+      "reason": "Riad"
+    },
+    {
+      "title": "Appartement de 57 à 122m² à M'hamid Marrakech",
+      "url": "https://www.avito.ma/fr/m_hamid/appartements/Appartement_de_57_%C3%A0_122m%C2%B2_%C3%A0_M_hamid_Marrakech_54240863.htm",
+      "reason": "Preis: 4,505,000 > Max"
+    },
+    {
+      "title": "Appart neuf 72,77,87m Sanaobar près Izdihar Charaf",
+      "url": "https://www.avito.ma/fr/hay_izdihar/appartements/Appart_neuf_72_77_87m_Sanaobar_pr%C3%A8s_Izdihar_Charaf_57314465.htm",
+      "reason": "Riad"
+    },
+    {
+      "title": "Appart sans vis-à-vis à Allal El Fassi près de Marjane",
+      "url": "https://www.avito.ma/fr/allal_el_fassi/appartements/Appart_sans_vis_%C3%A0_vis_%C3%A0_Allal_El_Fassi_pr%C3%A8s_de_Marjane_57312289.htm",
+      "reason": "Preis: 5,850,000 > Max"
+    },
+    {
+      "title": "Beau studio à Madame plaza entre Mc Do et Marjane",
+      "url": "https://www.avito.ma/fr/av_abdelkrim_el_khattabi/appartements/Beau_studio_%C3%A0_Madame_plaza_entre_Mc_Do_et_Marjane_57576826.htm",
+      "reason": "Riad"
+    },
+    {
+      "title": "Appartement excellent à vendre à Hay Charaf sur la rue princ",
+      "url": "https://www.avito.ma/fr/hay_charaf/appartements/Appartement_excellent_%C3%A0_vendre_%C3%A0_Hay_Charaf_sur_la_rue_principale_56046939.htm",
+      "reason": "Riad"
+    },
+    {
+      "title": "Bel Appartement à vendre 105 m² à Marrakech",
+      "url": "https://www.avito.ma/fr/majorelle/appartements/Bel_Appartement_%C3%A0_vendre_105_m%C2%B2_%C3%A0_Marrakech_57645110.htm",
+      "reason": "Riad"
+    },
+    {
+      "title": "Appartement meublé excellent à vendre à Hay Charaf près de M",
+      "url": "https://www.avito.ma/fr/hay_charaf/appartements/Appartement_meubl%C3%A9_excellent_%C3%A0_vendre_%C3%A0_Hay_Charaf_pr%C3%A8s_de_Marjane_55171784.htm",
+      "reason": "Preis: 950,000 < Min"
+    },
+    {
+      "title": "Appartement à vendre 56 m² à Marrakech",
+      "url": "https://www.avito.ma/fr/gu%C3%A9liz/appartements/Appartement_%C3%A0_vendre_56_m%C2%B2_%C3%A0_Marrakech_57462903.htm",
+      "reason": "Erdgeschoss"
+    },
+    {
+      "title": "Joli appart 85m2 près de Amoud et McDonald",
+      "url": "https://www.avito.ma/fr/av_abdelkrim_el_khattabi/appartements/Joli_appart_85m2_pr%C3%A8s_de_Amoud_et_McDonald_57387464.htm",
+      "reason": "Riad"
+    },
+    {
+      "title": "Appartement à vendre 55 m² à Marrakech",
+      "url": "https://www.avito.ma/fr/route_de_casablanca/appartements/Appartement_%C3%A0_vendre_55_m%C2%B2_%C3%A0_Marrakech_57083678.htm",
+      "reason": "Riad"
+    },
+    {
+      "title": "à vendre appartement Prestigia golf ⛳️",
+      "url": "https://www.avito.ma/fr/av_mohammed_vi/appartements/%C3%A0_vendre_appartement_Prestigia_golf____57556242.htm",
+      "reason": "Riad"
+    },
+    {
+      "title": "Appartement à vendre Résidence noria 2 chambres",
+      "url": "https://www.avito.ma/fr/autre_secteur/appartements/Appartement_%C3%A0_vendre_R%C3%A9sidence_noria_2_chambres_57372719.htm",
+      "reason": "Riad"
+    },
+    {
+      "title": "Appartement neufs à vendre, Guéliz",
+      "url": "https://www.avito.ma/fr/gu%C3%A9liz/appartements/Appartement_neufs_%C3%A0_vendre__Gu%C3%A9liz_56259751.htm",
+      "reason": "Riad"
+    },
+    {
+      "title": "Appartement à vendre 60 m² à Marrakech",
+      "url": "https://www.avito.ma/fr/centre_ville/appartements/Appartement_%C3%A0_vendre_60_m%C2%B2_%C3%A0_Marrakech_57599233.htm",
+      "reason": "Riad"
+    },
+    {
+      "title": "Appartement à vendre 119 m² à Marrakech",
+      "url": "https://www.avito.ma/fr/gu%C3%A9liz/appartements/Appartement_%C3%A0_vendre_119_m%C2%B2_%C3%A0_Marrakech_56739059.htm",
+      "reason": "Riad"
+    },
+    {
+      "title": "Rez de jardin à vendre 107 m² vue sur piscine",
+      "url": "https://www.avito.ma/fr/route_de_casablanca/appartements/Rez_de_jardin_%C3%A0_vendre_107_m%C2%B2_vue_sur_piscine_57648716.htm",
+      "reason": "Erdgeschoss"
+    },
+    {
+      "title": "Appartement avec grand terrasse à Guéliz",
+      "url": "https://www.avito.ma/fr/gu%C3%A9liz/appartements/Appartement_avec_grand_terrasse_%C3%A0_Gu%C3%A9liz_55811861.htm",
+      "reason": "Preis: 2,650,000 > Max"
+    },
+    {
+      "title": "Duplex moderne à vendre – 2 chambres Victor Hugo",
+      "url": "https://www.avito.ma/fr/victor_hugo/appartements/Duplex_moderne_%C3%A0_vendre___2_chambres__Victor_Hugo_57447780.htm",
+      "reason": "Erdgeschoss"
+    },
+    {
+      "title": "Appartement à vendre 136 m² à Marrakech",
+      "url": "https://www.avito.ma/fr/victor_hugo/appartements/Appartement_%C3%A0_vendre_136_m%C2%B2_%C3%A0_Marrakech_57568134.htm",
+      "reason": "Riad"
+    },
+    {
+      "title": "Appartements à vendre 137 m² à Marrakech",
+      "url": "https://www.avito.ma/fr/gu%C3%A9liz/appartements/Appartements_%C3%A0_vendre_137_m%C2%B2_%C3%A0_Marrakech_57274587.htm",
+      "reason": "Preis: 2,400,000 > Max"
+    },
+    {
+      "title": "2 Pièces Avec Piscine Au Coeur De Marrakech",
+      "url": "https://www.avito.ma/fr/route_de_casablanca/appartements/2_Pi%C3%A8ces_Avec_Piscine_Au_Coeur_De_Marrakech_55289517.htm",
+      "reason": "Zu wenig Zimmer"
+    },
+    {
+      "title": "😍Appartement à vendre près de Marjane",
+      "url": "https://www.avito.ma/fr/route_de_casablanca/appartements/__Appartement_%C3%A0_vendre_pr%C3%A8s_de_Marjane_57638045.htm",
+      "reason": "Preis: 3,490,000 > Max"
+    },
+    {
+      "title": "Appartement à vendre 52 m² à Marrakech",
+      "url": "https://www.avito.ma/fr/gu%C3%A9liz/appartements/Appartement_%C3%A0_vendre_52_m%C2%B2_%C3%A0_Marrakech_56035043.htm",
+      "reason": "Riad"
+    },
+    {
+      "title": "Appartement à vendre 39 m² à Marrakech",
+      "url": "https://www.avito.ma/fr/route_d_amezmiz/appartements/Appartement_%C3%A0_vendre_39_m%C2%B2_%C3%A0_Marrakech_57611206.htm",
+      "reason": "Riad"
+    },
+    {
+      "title": "Appartement à vendre 58 m² à Marrakech",
+      "url": "https://www.avito.ma/fr/route_de_tahanaoute/appartements/Appartement_%C3%A0_vendre_58_m%C2%B2_%C3%A0_Marrakech_57371568.htm",
+      "reason": "Erdgeschoss"
+    },
+    {
+      "title": "Bel appartement à vendre",
+      "url": "https://www.avito.ma/fr/amelkis/appartements/Bel_appartement_%C3%A0_vendre_57659563.htm",
+      "reason": "Erdgeschoss"
+    },
+    {
+      "title": "Appartement Rez de jardin à vendre palmeraie",
+      "url": "https://www.avito.ma/fr/palmeraie/appartements/Appartement_Rez_de_jardin_%C3%A0_vendre_palmeraie_57250824.htm",
+      "reason": "Preis: 2,500,000 > Max"
+    },
+    {
+      "title": "Appartement meublé à vendre azzouzia bon état",
+      "url": "https://www.avito.ma/fr/azzouzia/appartements/Appartement_meubl%C3%A9_%C3%A0_vendre_azzouzia_bon_%C3%A9tat_57530728.htm",
+      "reason": "Riad"
+    },
+    {
+      "title": "Appartement à vendre 140 m² à la marina casablanca",
+      "url": "https://www.avito.ma/fr/autre_secteur/appartements/Appartement_%C3%A0_vendre_140_m%C2%B2_%C3%A0_la_marina_casablanca_56472046.htm",
+      "reason": "Preis: 3,900,000 > Max"
+    },
+    {
+      "title": "Bel appartement à vendre meublé à Charaf",
+      "url": "https://www.avito.ma/fr/hay_charaf/appartements/Bel_appartement_%C3%A0_vendre_meubl%C3%A9_%C3%A0_Charaf_57422740.htm",
+      "reason": "Preis: 3,850,000 > Max"
+    },
+    {
+      "title": "Bel appartement non meublé à vendre à izdihar",
+      "url": "https://www.avito.ma/fr/hay_izdihar/appartements/Bel_appartement_non_meubl%C3%A9_%C3%A0_vendre_%C3%A0_izdihar_57386639.htm",
+      "reason": "Riad"
+    },
+    {
+      "title": "Appartement à vendre 57 m² à Marrakech",
+      "url": "https://www.avito.ma/fr/hay_massira/appartements/Appartement_%C3%A0_vendre_57_m%C2%B2_%C3%A0_Marrakech_57659496.htm",
+      "reason": "Preis: 2,410,000 > Max"
+    },
+    {
+      "title": "Studio exceptionnel de 60 m² au centre Guéliz",
+      "url": "https://www.avito.ma/fr/gu%C3%A9liz/appartements/Studio_exceptionnel_de_60_m%C2%B2_au_centre_Gu%C3%A9liz_57638403.htm",
+      "reason": "Riad"
+    },
+    {
+      "title": "Appartement à vendre",
+      "url": "https://www.avito.ma/fr/mabrouka/appartements/Appartement_%C3%A0_vendre_57575206.htm",
+      "reason": "Riad"
+    },
+    {
+      "title": "Appartement à vendre 60 m² à Marrakech",
+      "url": "https://www.avito.ma/fr/gu%C3%A9liz/appartements/Appartement_%C3%A0_vendre_60_m%C2%B2_%C3%A0_Marrakech_57585644.htm",
+      "reason": "Riad"
+    },
+    {
+      "title": "Studio à vendre",
+      "url": "https://www.avito.ma/fr/route_de_casablanca/appartements/Studio_%C3%A0_vendre_57575125.htm",
+      "reason": "Preis: 2,750,000 > Max"
+    },
+    {
+      "title": "Superbe Studio de 37 m² proche du Carré Eden",
+      "url": "https://www.avito.ma/fr/gu%C3%A9liz/appartements/Superbe_Studio_de_37_m%C2%B2_proche_du_Carr%C3%A9_Eden_57634732.htm",
+      "reason": "Riad"
+    },
+    {
+      "title": "Appartement à vendre 67 m² à Marrakech",
+      "url": "https://www.avito.ma/fr/victor_hugo/appartements/Appartement_%C3%A0_vendre_67_m%C2%B2_%C3%A0_Marrakech_57470399.htm",
+      "reason": "Preis: 2,950,000 > Max"
+    },
+    {
+      "title": "Appartement à vendre 50 m² à Marrakech",
+      "url": "https://www.avito.ma/fr/victor_hugo/appartements/Appartement_%C3%A0_vendre_50_m%C2%B2_%C3%A0_Marrakech_57584074.htm",
+      "reason": "Riad"
+    },
+    {
+      "title": "Appartement à vendre de 83 m2 près de Marjane",
+      "url": "https://www.avito.ma/fr/av_abdelkrim_el_khattabi/appartements/Appartement_%C3%A0_vendre_de_83_m2_pr%C3%A8s_de_Marjane_57583423.htm",
+      "reason": "Riad"
+    },
+    {
+      "title": "Affaire à saisir Bel appartement meublé à vendre",
+      "url": "https://www.avito.ma/fr/route_de_casablanca/appartements/Affaire_%C3%A0_saisir_Bel_appartement_meubl%C3%A9_%C3%A0_vendre_57639823.htm",
+      "reason": "Erdgeschoss"
+    },
+    {
+      "title": "Duplex RDC 47 m² en vente - piscine Rooftop",
+      "url": "https://www.avito.ma/fr/av_abdelkrim_el_khattabi/appartements/Duplex_RDC_47_m%C2%B2_en_vente___piscine_Rooftop_57606328.htm",
+      "reason": "Erdgeschoss"
+    },
+    {
+      "title": "🏢 Appartement à vendre",
+      "url": "https://www.avito.ma/fr/mabrouka/appartements/___Appartement_%C3%A0_vendre_57500505.htm",
+      "reason": "Erdgeschoss"
+    },
+    {
+      "title": "Appartement Golf Noria",
+      "url": "https://www.avito.ma/fr/route_de_tahanaoute/appartements/Appartement_Golf_Noria_57659155.htm",
+      "reason": "Preis: 2,400,000 > Max"
+    },
+    {
       "title": "ESTIMER VOTRE BIEN",
-      "url": "https://www.mubawab.ma/fr/estimate-price?t=1774080266575",
-      "reason": "Kein Preis"
+      "url": "https://www.mubawab.ma/fr/estimate-price?t=1774107479439",
+      "reason": "Riad"
     },
     {
       "title": "IMMOBILIER NEUF",
       "url": "https://www.mubawab.ma/fr/listing-promotion",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "SE CONNECTER",
-      "url": "https://www.mubawab.ma/fr/login",
-      "reason": "Kein Preis"
+      "reason": "Preis: 860,250 < Min"
     },
     {
       "title": "politique de protection des données",
       "url": "https://www.mubawab.ma/fr/privacy#anchorText",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "BAB MANSOUR",
-      "url": "https://www.mubawab.ma/fr/b/13873/bab-mansour",
-      "reason": "Preis: 960,000 < Min"
-    },
-    {
-      "title": "Studio à vendre à Guéliz Surface totale 38 m²",
-      "url": "https://www.mubawab.ma/fr/pa/8249306/studio-%C3%A0-vendre-%C3%A0-gu%C3%A9liz-surface-totale-38-m%C2%B2",
-      "reason": "Zu wenig Zimmer"
-    },
-    {
-      "title": "Studio en vente à Guéliz. Superficie 43 m²",
-      "url": "https://www.mubawab.ma/fr/pa/8249307/studio-en-vente-%C3%A0-gu%C3%A9liz-superficie-43-m%C2%B2",
-      "reason": "Zu wenig Zimmer"
-    },
-    {
-      "title": "Studio en vente à Guéliz. Superficie 45 m²",
-      "url": "https://www.mubawab.ma/fr/pa/8249308/studio-en-vente-%C3%A0-gu%C3%A9liz-superficie-45-m%C2%B2",
-      "reason": "Zu wenig Zimmer"
-    },
-    {
-      "title": "Télécharger",
-      "url": "https://www.mubawab.ma/fr/app-mobile",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Publier une annonce",
-      "url": "https://www.mubawab.ma/fr/login?redirect=https%3A%2F%2Fwww.mubawab.ma%2Ffr%2Fcms%2Fposting%3Ft%3D1774080266615",
-      "reason": "Kein Preis"
+      "reason": "Preis: 120,000 < Min"
     },
     {
       "title": "Qui êtes vous ?",
       "url": "https://www.mubawab.ma/fr/create-business",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Découvrez les prix de l'immobilier",
-      "url": "https://www.mubawab.ma/fr/study-guide",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Qui sommes nous?",
-      "url": "https://www.mubawab.ma/fr/about",
-      "reason": "Kein Preis"
+      "reason": "Preis: 100,250 < Min"
     },
     {
       "title": "Contactez-nous",
       "url": "https://www.mubawab.ma/fr/contact",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "FAQ's",
-      "url": "https://www.mubawab.ma/fr/faqs",
-      "reason": "Kein Preis"
+      "reason": "Preis: 212,520 < Min"
     },
     {
       "title": "Conditions d'utilisation",
       "url": "https://www.mubawab.ma/fr/privacy",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Cliquez ICI",
-      "url": "https://www.mubawab.ma/fr/cookies",
-      "reason": "Kein Preis"
+      "reason": "Preis: 120,000 < Min"
     },
     {
       "title": "ESTIMER VOTRE BIEN",
-      "url": "https://www.mubawab.ma/fr/estimate-price?t=1774080270292",
-      "reason": "Kein Preis"
+      "url": "https://www.mubawab.ma/fr/estimate-price?t=1774107484098",
+      "reason": "Riad"
     },
     {
       "title": "Vente d'un bel appartement à Guéliz. 1 belle chambre",
       "url": "https://www.mubawab.ma/fr/pa/8058859/vente-d-un-bel-appartement-%C3%A0-gu%C3%A9liz-1-belle-chambre",
-      "reason": "Kein Preis"
+      "reason": "Preis: 5,972,000 > Max"
     },
     {
-      "title": "Appartement à vendre à Mhamid. 3 chambres agréables",
-      "url": "https://www.mubawab.ma/fr/pa/8304905/appartement-%C3%A0-vendre-%C3%A0-mhamid-3-chambres-agr%C3%A9ables",
-      "reason": "Kein Preis"
+      "title": "Appartement à vendre à Marrakech",
+      "url": "https://www.mubawab.ma/fr/pa/8140937/appartement-%C3%A0-vendre-%C3%A0-marrakech",
+      "reason": "Preis: 41,546,000 > Max"
     },
     {
-      "title": "Super appartement à vendre – Plein Guéliz",
-      "url": "https://www.mubawab.ma/fr/a/8308053/super-appartement-%C3%A0-vendre-%E2%80%93-plein-gu%C3%A9liz",
-      "reason": "Kein Preis"
+      "title": "Appartement à vendre de 88m² à Victor Hugo",
+      "url": "https://www.mubawab.ma/fr/a/8149770/appartement-%C3%A0-vendre-de-88m%C2%B2-%C3%A0-victor-hugo",
+      "reason": "Preis: 21,500,000 > Max"
     },
     {
-      "title": "Appartement à vendre",
-      "url": "https://www.mubawab.ma/fr/a/8298865/appartement-%C3%A0-vendre",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Appartement à vendre",
-      "url": "https://www.mubawab.ma/fr/a/8298802/appartement-%C3%A0-vendre",
-      "reason": "Kein Preis"
+      "title": "Appartement de luxe 2 chambre meublè",
+      "url": "https://www.mubawab.ma/fr/a/7996118/appartement-de-luxe-2-chambre-meubl%C3%A8",
+      "reason": "Preis: 12,300,000 > Max"
     },
     {
       "title": "Appartement à vendre",
-      "url": "https://www.mubawab.ma/fr/a/8238336/appartement-%C3%A0-vendre",
-      "reason": "Kein Preis"
+      "url": "https://www.mubawab.ma/fr/a/8306893/appartement-%C3%A0-vendre",
+      "reason": "Preis: 8,400,000 > Max"
+    },
+    {
+      "title": "Amelkis 1: Villa neuve à vendre en 5 Chs, Piscine",
+      "url": "https://www.mubawab.ma/fr/a/8220823/amelkis-1-villa-neuve-%C3%A0-vendre-en-5-chs-piscine",
+      "reason": "Preis: 890,000 < Min"
     },
     {
       "title": "Lotissement Jnane El Kheir 1, 2 et 3 à Benguerir",
       "url": "https://www.mubawab.ma/fr/p/2726/lotissement-jnane-el-kheir-1-2-et-3-%C3%A0-benguerir",
-      "reason": "Kein Preis"
+      "reason": "Preis: 175,000 < Min"
     },
     {
-      "title": "Appartement Neuf de 154 m² à Guéliz",
-      "url": "https://www.mubawab.ma/fr/a/8117095/appartement-neuf-de-154-m%C2%B2-%C3%A0-gu%C3%A9liz",
-      "reason": "Kein Preis"
+      "title": "Appartement à l'achat à Mhamid. 3 chambres agréables",
+      "url": "https://www.mubawab.ma/fr/pa/8304903/appartement-%C3%A0-l-achat-%C3%A0-mhamid-3-chambres-agr%C3%A9ables",
+      "reason": "Preis: 27,510,000 > Max"
+    },
+    {
+      "title": "Vente d'un bel appartement à Route Casablanca. Superficie 42",
+      "url": "https://www.mubawab.ma/fr/pa/8242542/vente-d-un-bel-appartement-%C3%A0-route-casablanca-superficie-42-m%C2%B2",
+      "reason": "Preis: 12,903,000 > Max"
+    },
+    {
+      "title": "Joli appart 2 chambres & salon à moins de 5min du centre Gue",
+      "url": "https://www.mubawab.ma/fr/pa/8022552/joli-appart-2-chambres-salon-%C3%A0-moins-de-5min-du-centre-gueliz",
+      "reason": "Zentrum-Lage: Targa"
     },
     {
       "title": "Vente d'un bel appartement à Marrakech. Surface totale 137 m",
       "url": "https://www.mubawab.ma/fr/pa/8140935/vente-d-un-bel-appartement-%C3%A0-marrakech-surface-totale-137-m%C2%B2",
-      "reason": "Kein Preis"
+      "reason": "Preis: 41,515,000 > Max"
     },
     {
-      "title": "Bel appartement à vendre à Hay Targa 2 chambres agréables",
-      "url": "https://www.mubawab.ma/fr/pa/8276953/bel-appartement-%C3%A0-vendre-%C3%A0-hay-targa-2-chambres-agr%C3%A9ables",
-      "reason": "Kein Preis"
+      "title": "Vend appartement à Guéliz. Surface totale 95 m². Meublé",
+      "url": "https://www.mubawab.ma/fr/a/8275966/vend-appartement-%C3%A0-gu%C3%A9liz-surface-totale-95-m%C2%B2-meubl%C3%A9",
+      "reason": "Preis: 16,500,000 > Max"
     },
     {
-      "title": "Vente d'un bel appartement à Guéliz",
-      "url": "https://www.mubawab.ma/fr/pa/8257822/vente-d-un-bel-appartement-%C3%A0-gu%C3%A9liz",
-      "reason": "Kein Preis"
+      "title": "Très bel appartement Rez de jardin à vendre",
+      "url": "https://www.mubawab.ma/fr/a/8317137/tr%C3%A8s-bel-appartement-rez-de-jardin-%C3%A0-vendre",
+      "reason": "Preis: 12,800,000 > Max"
     },
     {
-      "title": "Vend appartement à El Hara. 1 belle chambre",
-      "url": "https://www.mubawab.ma/fr/pa/8109860/vend-appartement-%C3%A0-el-hara-1-belle-chambre",
-      "reason": "Kein Preis"
+      "title": "Studio 41m² Majorelle",
+      "url": "https://www.mubawab.ma/fr/a/8277121/studio-41m%C2%B2-majorelle",
+      "reason": "Preis: 2,779,000 > Max"
+    },
+    {
+      "title": "Joli appartement à vendre meublé à Noria",
+      "url": "https://www.mubawab.ma/fr/a/8308905/joli-appartement-%C3%A0-vendre-meubl%C3%A9-%C3%A0-noria",
+      "reason": "Preis: 42,250,000 > Max"
+    },
+    {
+      "title": "Vente d'un bel appartement à carré eden Guéliz. Superficie 1",
+      "url": "https://www.mubawab.ma/fr/a/8147030/vente-d-un-bel-appartement-%C3%A0-carr%C3%A9-eden-gu%C3%A9liz-superficie-150-m%C2%B2-concierge-et-climatisation",
+      "reason": "Preis: 3,200,000 > Max"
+    },
+    {
+      "title": "Appartement avec piscine à Semlalia",
+      "url": "https://www.mubawab.ma/fr/a/8315634/appartement-avec-piscine-%C3%A0-semlalia",
+      "reason": "Preis: 21,300,000 > Max"
     },
     {
       "title": "Appartement à vendre – Targa, Résidence Les Palmiers de Targ",
       "url": "https://www.mubawab.ma/fr/a/8257480/appartement-%C3%A0-vendre-%E2%80%93-targa-r%C3%A9sidence-les-palmiers-de-targa",
-      "reason": "Kein Preis"
+      "reason": "Preis: 11,200,000 > Max"
     },
     {
       "title": "Appartement moderne à vendre – Quartier Camp Elghoul / Victo",
       "url": "https://www.mubawab.ma/fr/a/8317692/appartement-moderne-%C3%A0-vendre-%E2%80%93-quartier-camp-elghoul-victor-hugo",
-      "reason": "Kein Preis"
+      "reason": "Zentrum-Lage: victor hugo"
     },
     {
-      "title": "Idéal investissement studio plein centre Marrakech",
-      "url": "https://www.mubawab.ma/fr/a/8316587/id%C3%A9al-investissement-studio-plein-centre-marrakech",
-      "reason": "Kein Preis"
+      "title": "Très bon affaire à nous pas rater sur Marrakech",
+      "url": "https://www.mubawab.ma/fr/a/8161763/tr%C3%A8s-bon-affaire-%C3%A0-nous-pas-rater-sur-marrakech",
+      "reason": "Preis: 32,300,000 > Max"
     },
     {
-      "title": "Superbe appartement luxueux 126M² à l’Hivernage",
-      "url": "https://www.mubawab.ma/fr/a/8238882/superbe-appartement-luxueux-126m%C2%B2-%C3%A0-l%E2%80%99hivernage",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Duplex de Standing à Vendre, 115 m², Targa",
-      "url": "https://www.mubawab.ma/fr/a/8132276/duplex-de-standing-%C3%A0-vendre-115-m%C2%B2-targa",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Appartement 75 m2 5eme étage sans vis à vis",
-      "url": "https://www.mubawab.ma/fr/a/8316066/appartement-75-m2-5eme-%C3%A9tage-sans-vis-%C3%A0-vis",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Jolie appartement à vendre",
-      "url": "https://www.mubawab.ma/fr/a/8294761/jolie-appartement-%C3%A0-vendre",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Bel appartement à vendre à Guéliz. 1 belle chambre. Meublé",
-      "url": "https://www.mubawab.ma/fr/a/8313132/bel-appartement-%C3%A0-vendre-%C3%A0-gu%C3%A9liz-1-belle-chambre-meubl%C3%A9",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Appartement 2 chambres neuf Noria Golf",
-      "url": "https://www.mubawab.ma/fr/a/8152461/appartement-2-chambres-neuf-noria-golf",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Bel appartement à vendre avec un toit",
-      "url": "https://www.mubawab.ma/fr/a/8313960/bel-appartement-%C3%A0-vendre-avec-un-toit",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Studio et duplex à L'hivernage avec piscine",
-      "url": "https://www.mubawab.ma/fr/a/8203192/studio-et-duplex-%C3%A0-l-hivernage-avec-piscine",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Duplex à vendre à Guéliz. Surface de 96 m²",
-      "url": "https://www.mubawab.ma/fr/pa/7915669/duplex-%C3%A0-vendre-%C3%A0-gu%C3%A9liz-surface-de-96-m%C2%B2",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Superbe appartement à vendre 2 chambres 105 m2",
-      "url": "https://www.mubawab.ma/fr/pa/8007393/superbe-appartement-%C3%A0-vendre-2-chambres-105-m2",
-      "reason": "Kein Preis"
+      "title": "Appartement en vente à Route Casablanca. Surface totale 46 m",
+      "url": "https://www.mubawab.ma/fr/pa/8242626/appartement-en-vente-%C3%A0-route-casablanca-surface-totale-46-m%C2%B2",
+      "reason": "Preis: 13,989,000 > Max"
     },
     {
       "title": "Vend appartement à Hay Targa 3 chambres",
       "url": "https://www.mubawab.ma/fr/pa/8276955/vend-appartement-%C3%A0-hay-targa-3-chambres",
-      "reason": "Kein Preis"
+      "reason": "Erdgeschoss"
     },
     {
-      "title": "Studio élégant au coeur de la ville",
-      "url": "https://www.mubawab.ma/fr/pa/8138791/studio-%C3%A9l%C3%A9gant-au-coeur-de-la-ville",
-      "reason": "Kein Preis"
+      "title": "Beau studio F2",
+      "url": "https://www.mubawab.ma/fr/pa/8022549/beau-studio-f2",
+      "reason": "Preis: 9,648,000 > Max"
     },
     {
-      "title": "Appartement à l'achat à Guéliz. Superficie 64 m²",
-      "url": "https://www.mubawab.ma/fr/pa/7915640/appartement-%C3%A0-l-achat-%C3%A0-gu%C3%A9liz-superficie-64-m%C2%B2",
-      "reason": "Kein Preis"
+      "title": "Studio à l'achat à Majorelle. 1 chambre",
+      "url": "https://www.mubawab.ma/fr/pa/8275944/studio-%C3%A0-l-achat-%C3%A0-majorelle-1-chambre",
+      "reason": "Preis: 8,760,000 > Max"
     },
     {
-      "title": "Appartement à l'achat à Guéliz",
-      "url": "https://www.mubawab.ma/fr/pa/8257828/appartement-%C3%A0-l-achat-%C3%A0-gu%C3%A9liz",
-      "reason": "Kein Preis"
+      "title": "Appartement en vente à Majorelle. Surface totale 53 m²",
+      "url": "https://www.mubawab.ma/fr/pa/8268256/appartement-en-vente-%C3%A0-majorelle-surface-totale-53-m%C2%B2",
+      "reason": "Preis: 14,954,000 > Max"
     },
     {
-      "title": "Magnifique appartement à Marrakech 2 chambres",
-      "url": "https://www.mubawab.ma/fr/pa/8181704/magnifique-appartement-%C3%A0-marrakech-2-chambres",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Appartement à l'achat à Guéliz. 2 chambres",
-      "url": "https://www.mubawab.ma/fr/pa/7915635/appartement-%C3%A0-l-achat-%C3%A0-gu%C3%A9liz-2-chambres",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Ouidane - Pavillons R+1",
-      "url": "https://www.mubawab.ma/fr/b/9308/ouidane-pavillons-r-1",
-      "reason": "Preis: 890,000 < Min"
+      "title": "Perle Rare au Coeur de L'Hivernage meublé",
+      "url": "https://www.mubawab.ma/fr/a/8319256/perle-rare-au-coeur-de-l-hivernage-meubl%C3%A9",
+      "reason": "Zentrum-Lage: hivernage"
     },
     {
       "title": "AL ANBAR - MARRAKECH",
@@ -734,14 +649,14 @@
       "reason": "Preis: 560,000 < Min"
     },
     {
+      "title": "Ouidane - Pavillons R+1",
+      "url": "https://www.mubawab.ma/fr/b/9308/ouidane-pavillons-r-1",
+      "reason": "Preis: 890,000 < Min"
+    },
+    {
       "title": "H dar services",
       "url": "https://www.mubawab.ma/fr/b/8069/h-dar-services",
       "reason": "Erdgeschoss"
-    },
-    {
-      "title": "HOLIDAYS FAMILY",
-      "url": "https://www.mubawab.ma/fr/b/8181/holidays-family",
-      "reason": "Kein Preis"
     },
     {
       "title": "Next House Marrakech",
@@ -749,389 +664,324 @@
       "reason": "Preis: 5,200,000 > Max"
     },
     {
-      "title": "Publier une annonce",
-      "url": "https://www.mubawab.ma/fr/login?redirect=https%3A%2F%2Fwww.mubawab.ma%2Ffr%2Fcms%2Fposting%3Ft%3D1774080270362",
-      "reason": "Kein Preis"
-    },
-    {
       "title": "ESTIMER VOTRE BIEN",
-      "url": "https://www.mubawab.ma/fr/estimate-price?t=1774080277592",
-      "reason": "Kein Preis"
+      "url": "https://www.mubawab.ma/fr/estimate-price?t=1774107491373",
+      "reason": "Riad"
     },
     {
-      "title": "Architecture élégante et finitions de haute qualité",
-      "url": "https://www.mubawab.ma/fr/pa/8216691/architecture-%C3%A9l%C3%A9gante-et-finitions-de-haute-qualit%C3%A9",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Magnifique Studio de 51 m² à Guéliz",
-      "url": "https://www.mubawab.ma/fr/pa/8249309/magnifique-studio-de-51-m%C2%B2-%C3%A0-gu%C3%A9liz",
-      "reason": "Kein Preis"
+      "title": "Bel appartement à vendre à Route Casablanca. Superficie 134 ",
+      "url": "https://www.mubawab.ma/fr/pa/8293051/bel-appartement-%C3%A0-vendre-%C3%A0-route-casablanca-superficie-134-m%C2%B2",
+      "reason": "Preis: 2,680,000 > Max"
     },
     {
       "title": "Appartement à vendre à Guéliz. Superficie 83 m²",
       "url": "https://www.mubawab.ma/fr/pa/8058860/appartement-%C3%A0-vendre-%C3%A0-gu%C3%A9liz-superficie-83-m%C2%B2",
-      "reason": "Kein Preis"
+      "reason": "Zentrum-Lage: guéliz"
     },
     {
-      "title": "Appartement à vendre de 88m² à Victor Hugo",
-      "url": "https://www.mubawab.ma/fr/a/8149770/appartement-%C3%A0-vendre-de-88m%C2%B2-%C3%A0-victor-hugo",
-      "reason": "Kein Preis"
+      "title": "Super appartement à vendre – Plein Guéliz",
+      "url": "https://www.mubawab.ma/fr/a/8308053/super-appartement-%C3%A0-vendre-%E2%80%93-plein-gu%C3%A9liz",
+      "reason": "Zentrum-Lage: guéliz"
+    },
+    {
+      "title": "Appartement Neuf de 154 m² à Guéliz",
+      "url": "https://www.mubawab.ma/fr/a/8117095/appartement-neuf-de-154-m%C2%B2-%C3%A0-gu%C3%A9liz",
+      "reason": "Preis: 2,610,000 > Max"
     },
     {
       "title": "Appartement 3 chambres avec piscine et parking à vendre à Ma",
       "url": "https://www.mubawab.ma/fr/a/8299589/appartement-3-chambres-avec-piscine-et-parking-%C3%A0-vendre-%C3%A0-marrakech-%E2%80%93-proche-jamaa-el-fna",
-      "reason": "Kein Preis"
+      "reason": "Preis: 3,600,000 > Max"
     },
     {
       "title": "Un magnifique appartement à Zhour Targa",
       "url": "https://www.mubawab.ma/fr/a/8317686/un-magnifique-appartement-%C3%A0-zhour-targa",
-      "reason": "Kein Preis"
+      "reason": "Preis: 7,900,000 > Max"
     },
     {
       "title": "Appartement Neuf 83 m² à Guéliz avec Salle de Sport",
       "url": "https://www.mubawab.ma/fr/a/8129785/appartement-neuf-83-m%C2%B2-%C3%A0-gu%C3%A9liz-avec-salle-de-sport",
-      "reason": "Kein Preis"
+      "reason": "Zentrum-Lage: Semlalia"
     },
     {
-      "title": "Ouidane Marrakech – Pavillons R+1",
-      "url": "https://www.mubawab.ma/fr/p/3895/ouidane-marrakech-%E2%80%93-pavillons-r-1",
-      "reason": "Kein Preis"
+      "title": "Superbe appartement à vendre à Mhamid. Surface totale 90 m²",
+      "url": "https://www.mubawab.ma/fr/pa/8304908/superbe-appartement-%C3%A0-vendre-%C3%A0-mhamid-surface-totale-90-m%C2%B2",
+      "reason": "Preis: 27,801,000 > Max"
     },
     {
-      "title": "Appartement à vendre – la Palmeraie",
-      "url": "https://www.mubawab.ma/fr/a/8314389/appartement-%C3%A0-vendre-%E2%80%93-la-palmeraie",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Appartement à vendre 75 m², 3 chambres et salon",
-      "url": "https://www.mubawab.ma/fr/pa/7864058/appartement-%C3%A0-vendre-75-m%C2%B2-3-chambres-et-salon",
-      "reason": "Kein Preis"
+      "title": "Appartement en vente à Route Casablanca. Surface de 45 m²",
+      "url": "https://www.mubawab.ma/fr/pa/8242625/appartement-en-vente-%C3%A0-route-casablanca-surface-de-45-m%C2%B2",
+      "reason": "Preis: 13,967,500 > Max"
     },
     {
       "title": "Superbe appartement à vendre à Marrakech",
       "url": "https://www.mubawab.ma/fr/pa/8140936/superbe-appartement-%C3%A0-vendre-%C3%A0-marrakech",
-      "reason": "Kein Preis"
+      "reason": "Preis: 41,567,000 > Max"
     },
     {
-      "title": "Appartement à vendre à Hay Targa. Superficie 106 m²",
-      "url": "https://www.mubawab.ma/fr/pa/8276956/appartement-%C3%A0-vendre-%C3%A0-hay-targa-superficie-106-m%C2%B2",
-      "reason": "Kein Preis"
+      "title": "Bel appartement à vendre à El Hara. 1 chambre",
+      "url": "https://www.mubawab.ma/fr/pa/8109862/bel-appartement-%C3%A0-vendre-%C3%A0-el-hara-1-chambre",
+      "reason": "Preis: 10,768,000 > Max"
     },
     {
-      "title": "Superbe appartement à vendre à Guéliz",
-      "url": "https://www.mubawab.ma/fr/pa/8257824/superbe-appartement-%C3%A0-vendre-%C3%A0-gu%C3%A9liz",
-      "reason": "Kein Preis"
+      "title": "Appartement à l'achat à Guéliz. 2 chambres",
+      "url": "https://www.mubawab.ma/fr/pa/8058857/appartement-%C3%A0-l-achat-%C3%A0-gu%C3%A9liz-2-chambres",
+      "reason": "Zentrum-Lage: guéliz"
     },
     {
-      "title": "Bel appartement à vendre à El Hara. 1 belle chambre",
-      "url": "https://www.mubawab.ma/fr/pa/8109859/bel-appartement-%C3%A0-vendre-%C3%A0-el-hara-1-belle-chambre",
-      "reason": "Kein Preis"
+      "title": "Idéal investissement studio plein centre Marrakech",
+      "url": "https://www.mubawab.ma/fr/a/8316587/id%C3%A9al-investissement-studio-plein-centre-marrakech",
+      "reason": "Preis: 2,542,000 > Max"
     },
     {
-      "title": "Superbe appartement à vendre à Route d'Agadir Essaouira. 3 p",
-      "url": "https://www.mubawab.ma/fr/a/8301428/superbe-appartement-%C3%A0-vendre-%C3%A0-route-d-agadir-essaouira-3-pi%C3%A8ces-confortables-grande-terrasse",
-      "reason": "Kein Preis"
+      "title": "Superbe appartement luxueux 126M² à l’Hivernage",
+      "url": "https://www.mubawab.ma/fr/a/8238882/superbe-appartement-luxueux-126m%C2%B2-%C3%A0-l%E2%80%99hivernage",
+      "reason": "Preis: 23,900,000 > Max"
     },
     {
-      "title": "Duplex à vendre sur l'Hivernage",
-      "url": "https://www.mubawab.ma/fr/a/8074802/duplex-%C3%A0-vendre-sur-l-hivernage",
-      "reason": "Kein Preis"
+      "title": "Duplex de Standing à Vendre, 115 m², Targa",
+      "url": "https://www.mubawab.ma/fr/a/8132276/duplex-de-standing-%C3%A0-vendre-115-m%C2%B2-targa",
+      "reason": "Preis: 41,050,000 > Max"
     },
     {
-      "title": "Appartement à vendre",
-      "url": "https://www.mubawab.ma/fr/a/8271984/appartement-%C3%A0-vendre",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Vend appartement à Agdal prestigia golf city Marrakech",
-      "url": "https://www.mubawab.ma/fr/a/8318148/vend-appartement-%C3%A0-agdal-prestigia-golf-city-marrakech",
-      "reason": "Kein Preis"
+      "title": "Bel appartement à vendre à Guéliz. 1 belle chambre. Meublé",
+      "url": "https://www.mubawab.ma/fr/a/8313132/bel-appartement-%C3%A0-vendre-%C3%A0-gu%C3%A9liz-1-belle-chambre-meubl%C3%A9",
+      "reason": "Preis: 11,280,000 > Max"
     },
     {
       "title": "Appartement Neuf 84 m² à Guéliz",
       "url": "https://www.mubawab.ma/fr/a/8116275/appartement-neuf-84-m%C2%B2-%C3%A0-gu%C3%A9liz",
-      "reason": "Kein Preis"
+      "reason": "Zentrum-Lage: Semlalia"
     },
     {
       "title": "Appartements neufs à vendre, Guéliz",
       "url": "https://www.mubawab.ma/fr/a/8116140/appartements-neufs-%C3%A0-vendre-gu%C3%A9liz",
-      "reason": "Kein Preis"
+      "reason": "Zentrum-Lage: guéliz"
     },
     {
-      "title": "Élégant F2 meublé vue Atlas à Noria",
-      "url": "https://www.mubawab.ma/fr/a/8072808/%C3%A9l%C3%A9gant-f2-meubl%C3%A9-vue-atlas-%C3%A0-noria",
-      "reason": "Kein Preis"
+      "title": "Beau T2 de 45 m² à Guéliz – Confort et praticité",
+      "url": "https://www.mubawab.ma/fr/pa/8158300/beau-t2-de-45-m%C2%B2-%C3%A0-gu%C3%A9liz-%E2%80%93-confort-et-praticit%C3%A9",
+      "reason": "Preis: 21,818,100 > Max"
     },
     {
-      "title": "Appartement 2 chambres jnan awrade 75m2",
-      "url": "https://www.mubawab.ma/fr/a/8284437/appartement-2-chambres-jnan-awrade-75m2",
-      "reason": "Kein Preis"
+      "title": "Bel appartement à vendre à Mhamid. Surface totale 87 m²",
+      "url": "https://www.mubawab.ma/fr/pa/8304909/bel-appartement-%C3%A0-vendre-%C3%A0-mhamid-surface-totale-87-m%C2%B2",
+      "reason": "Preis: 27,740,000 > Max"
     },
     {
-      "title": "Superbe studio F2 meublé en plein centre",
-      "url": "https://www.mubawab.ma/fr/a/8223786/superbe-studio-f2-meubl%C3%A9-en-plein-centre",
-      "reason": "Kein Preis"
+      "title": "Vend appartement à Ain mezouar Gueliz. Surface de 69 m²",
+      "url": "https://www.mubawab.ma/fr/pa/8154989/vend-appartement-%C3%A0-ain-mezouar-gueliz-surface-de-69-m%C2%B2",
+      "reason": "Preis: 25,889,750 > Max"
     },
     {
-      "title": "Belle Appartement a Jnane Awerade Meublée",
-      "url": "https://www.mubawab.ma/fr/a/8313773/belle-appartement-a-jnane-awerade-meubl%C3%A9e",
-      "reason": "Kein Preis"
+      "title": "Appartement 90 m2 à Vendre 2 chambres avec balcon",
+      "url": "https://www.mubawab.ma/fr/a/8319258/appartement-90-m2-%C3%A0-vendre-2-chambres-avec-balcon",
+      "reason": "Preis: 5,670,000 > Max"
     },
     {
-      "title": "Studios neufs avec piscine ROOFTOP à Guéliz",
-      "url": "https://www.mubawab.ma/fr/pa/8239967/studios-neufs-avec-piscine-rooftop-%C3%A0-gu%C3%A9liz",
-      "reason": "Kein Preis"
+      "title": "Appartement à vendre à Izdihar 70 m²",
+      "url": "https://www.mubawab.ma/fr/pa/8181703/appartement-%C3%A0-vendre-%C3%A0-izdihar-70-m%C2%B2",
+      "reason": "Preis: 7,980,000 > Max"
     },
     {
-      "title": "Opportunité à saisir: Appartement 1 chambre à Guéliz",
-      "url": "https://www.mubawab.ma/fr/pa/8068880/opportunit%C3%A9-%C3%A0-saisir-appartement-1-chambre-%C3%A0-gu%C3%A9liz",
-      "reason": "Kein Preis"
+      "title": "Opportunité rare: T2 fonctionnel au nouveau Guéliz",
+      "url": "https://www.mubawab.ma/fr/pa/8158289/opportunit%C3%A9-rare-t2-fonctionnel-au-nouveau-gu%C3%A9liz",
+      "reason": "Preis: 21,818,100 > Max"
     },
     {
-      "title": "Appartement de 52m² en vente Dyour Al Masjid",
-      "url": "https://www.mubawab.ma/fr/pa/7461638/appartement-de-52m%C2%B2-en-vente-dyour-al-masjid",
-      "reason": "Kein Preis"
+      "title": "Vend appartement à Guéliz. Surface totale 43 m²",
+      "url": "https://www.mubawab.ma/fr/pa/8239971/vend-appartement-%C3%A0-gu%C3%A9liz-surface-totale-43-m%C2%B2",
+      "reason": "Preis: 13,863,500 > Max"
     },
     {
-      "title": "Appartements à Vendre Haut Standing Targa VE25395",
-      "url": "https://www.mubawab.ma/fr/a/8266444/appartements-%C3%A0-vendre-haut-standing-targa-ve25395",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Appartement à vendre à Guéliz. 2 pièces",
-      "url": "https://www.mubawab.ma/fr/a/8312168/appartement-%C3%A0-vendre-%C3%A0-gu%C3%A9liz-2-pi%C3%A8ces",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Appartement de 72m² en vente Dyour Al Masjid",
-      "url": "https://www.mubawab.ma/fr/pa/7115909/appartement-de-72m%C2%B2-en-vente-dyour-al-masjid",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Vente d'un bel appartement à Guéliz. Superficie 83 m²",
-      "url": "https://www.mubawab.ma/fr/pa/8059957/vente-d-un-bel-appartement-%C3%A0-gu%C3%A9liz-superficie-83-m%C2%B2",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Superbe appartement à vendre à Majorelle. Surface de 47 m²",
-      "url": "https://www.mubawab.ma/fr/pa/8268255/superbe-appartement-%C3%A0-vendre-%C3%A0-majorelle-surface-de-47-m%C2%B2",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Vend appartement à Majorelle. 2 chambres",
-      "url": "https://www.mubawab.ma/fr/pa/8268249/vend-appartement-%C3%A0-majorelle-2-chambres",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Publier une annonce",
-      "url": "https://www.mubawab.ma/fr/login?redirect=https%3A%2F%2Fwww.mubawab.ma%2Ffr%2Fcms%2Fposting%3Ft%3D1774080277665",
-      "reason": "Kein Preis"
+      "title": "Appartement à vendre à Guéliz. Superficie 54 m²",
+      "url": "https://www.mubawab.ma/fr/pa/8068879/appartement-%C3%A0-vendre-%C3%A0-gu%C3%A9liz-superficie-54-m%C2%B2",
+      "reason": "Preis: 8,972,000 > Max"
     },
     {
       "title": "Appartement à vendre au Maroc",
       "url": "https://www.sarouty.ma/acheter/appartements-a-vendre/",
-      "reason": "Kein Preis"
+      "reason": "Riad"
     },
     {
       "title": "Immeubles à vendre Maroc",
       "url": "https://www.sarouty.ma/acheter/immeubles-a-vendre/",
-      "reason": "Kein Preis"
+      "reason": "Riad"
     },
     {
       "title": "Bungalows à vendre Maroc",
       "url": "https://www.sarouty.ma/acheter/bungalows-a-vendre/",
-      "reason": "Kein Preis"
+      "reason": "Riad"
     },
     {
       "title": "Duplexes à vendre Maroc",
       "url": "https://www.sarouty.ma/acheter/duplexes-a-vendre/",
-      "reason": "Kein Preis"
+      "reason": "Riad"
     },
     {
       "title": "Fermes à vendre Maroc",
       "url": "https://www.sarouty.ma/acheter/fermes-a-vendre/",
-      "reason": "Kein Preis"
+      "reason": "Riad"
     },
     {
       "title": "Maisons à vendre Maroc",
       "url": "https://www.sarouty.ma/acheter/maisons-a-vendre/",
-      "reason": "Kein Preis"
+      "reason": "Riad"
     },
     {
       "title": "Terrains à vendre Maroc",
       "url": "https://www.sarouty.ma/acheter/terrains-a-vendre/",
-      "reason": "Kein Preis"
+      "reason": "Riad"
     },
     {
       "title": "Penthouses à vendre Maroc",
       "url": "https://www.sarouty.ma/acheter/penthouses-a-vendre/",
-      "reason": "Kein Preis"
+      "reason": "Riad"
     },
     {
       "title": "Riads à vendre Maroc",
       "url": "https://www.sarouty.ma/acheter/riads-a-vendre/",
-      "reason": "Kein Preis"
+      "reason": "Riad"
     },
     {
       "title": "Appartements à louer Maroc",
       "url": "https://www.sarouty.ma/louer/appartements-a-louer/",
-      "reason": "Kein Preis"
+      "reason": "Riad"
     },
     {
       "title": "Immeubles à louer Maroc",
       "url": "https://www.sarouty.ma/louer/immeubles-a-louer/",
-      "reason": "Kein Preis"
+      "reason": "Riad"
     },
     {
       "title": "Bungalows à louer Maroc",
       "url": "https://www.sarouty.ma/louer/bungalows-a-louer/",
-      "reason": "Kein Preis"
+      "reason": "Riad"
     },
     {
       "title": "Duplexes à louer Maroc",
       "url": "https://www.sarouty.ma/louer/duplexes-a-louer/",
-      "reason": "Kein Preis"
+      "reason": "Riad"
     },
     {
       "title": "Fermes à louer Maroc",
       "url": "https://www.sarouty.ma/louer/fermes-a-louer/",
-      "reason": "Kein Preis"
+      "reason": "Riad"
     },
     {
       "title": "Maisons à louer",
       "url": "https://www.sarouty.ma/louer/maisons-a-louer/",
-      "reason": "Kein Preis"
+      "reason": "Riad"
     },
     {
       "title": "Terrains à louer Maroc",
       "url": "https://www.sarouty.ma/louer/terrains-a-louer/",
-      "reason": "Kein Preis"
+      "reason": "Riad"
     },
     {
       "title": "Penthouses à louer Maroc",
       "url": "https://www.sarouty.ma/louer/penthouses-a-louer/",
-      "reason": "Kein Preis"
+      "reason": "Riad"
     },
     {
       "title": "Riads à louer Maroc",
       "url": "https://www.sarouty.ma/louer/riads-a-louer/",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Top Real Estate Developers in Morocco",
-      "url": "https://www.sarouty.ma/immo-neuf/",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Répertoire des agences",
-      "url": "https://www.sarouty.ma/trouver-une-agence/",
-      "reason": "Kein Preis"
+      "reason": "Riad"
     },
     {
       "title": "Simulateur de prêt",
       "url": "https://www.sarouty.ma/mortgage-simulator/",
-      "reason": "Kein Preis"
+      "reason": "Preis: 300,000 < Min"
     },
     {
-      "title": "+212 5 20 50 62 62",
-      "url": "https://www.sarouty.matel:+212-5-20-50-62-62",
-      "reason": "Kein Preis"
+      "title": "Propriétés à louer à Casablanca",
+      "url": "https://www.sarouty.ma/louer/casablanca/proprietes-a-louer/",
+      "reason": "Riad"
+    },
+    {
+      "title": "Propriétés à louer à Rabat",
+      "url": "https://www.sarouty.ma/louer/rabat/proprietes-a-louer/",
+      "reason": "Riad"
+    },
+    {
+      "title": "Propriétés à louer à Marrakech",
+      "url": "https://www.sarouty.ma/louer/marrakech/proprietes-a-louer/",
+      "reason": "Riad"
+    },
+    {
+      "title": "Propriétés à louer à Tanger",
+      "url": "https://www.sarouty.ma/louer/tanger/proprietes-a-louer/",
+      "reason": "Riad"
+    },
+    {
+      "title": "Propriétés à louer à Agadir",
+      "url": "https://www.sarouty.ma/louer/agadir/proprietes-a-louer/",
+      "reason": "Riad"
+    },
+    {
+      "title": "Propriétés à louer à Kenitra",
+      "url": "https://www.sarouty.ma/louer/kenitra/proprietes-a-louer/",
+      "reason": "Riad"
     },
     {
       "title": "Immobilier à Vendre à Rabat",
       "url": "https://www.sarouty.ma/acheter/rabat/proprietes-a-vendre/",
-      "reason": "Kein Preis"
+      "reason": "Riad"
     },
     {
       "title": "Immobilier à vendre à Marrakech",
       "url": "https://www.sarouty.ma/acheter/marrakech/proprietes-a-vendre/",
-      "reason": "Kein Preis"
+      "reason": "Riad"
     },
     {
       "title": "Propriétés à vendre",
       "url": "https://www.sarouty.ma/acheter/proprietes-a-vendre/",
-      "reason": "Kein Preis"
+      "reason": "Riad"
     },
     {
       "title": "Propriétés à vendre à Agadir",
       "url": "https://www.sarouty.ma/acheter/agadir/proprietes-a-vendre/",
-      "reason": "Kein Preis"
+      "reason": "Riad"
     },
     {
       "title": "Propriétés à vendre à Kenitra",
       "url": "https://www.sarouty.ma/acheter/kenitra/proprietes-a-vendre/",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Répertoire des agences",
-      "url": "https://www.sarouty.ma/trouver-un-agent/",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Propriétés préférées",
-      "url": "https://www.sarouty.ma/proprietes-preferees/",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Recherches enregistrées",
-      "url": "https://www.sarouty.ma/recherches-enregistrees/",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Manager Login",
-      "url": "https://manager.sarouty.ma/manager/login",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Conditions générales d’utilisation",
-      "url": "https://www.sarouty.ma/conditions-generales-dutilisation/",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Charte de confidentialité",
-      "url": "https://www.sarouty.ma/charte-de-confidentialite/",
-      "reason": "Kein Preis"
-    },
-    {
-      "title": "Politique Qualité",
-      "url": "https://www.sarouty.ma/politique-qualite/",
-      "reason": "Kein Preis"
+      "reason": "Riad"
     },
     {
       "title": "Immobilier à Vendre à Marrakech",
       "url": "https://www.sarouty.ma/acheter/marrakech/",
-      "reason": "Kein Preis"
+      "reason": "Riad"
     },
     {
       "title": "Villas à vendre",
       "url": "https://www.sarouty.ma/acheter/villas-a-vendre/",
-      "reason": "Kein Preis"
+      "reason": "Riad"
     },
     {
       "title": "Chalets à vendre",
       "url": "https://www.sarouty.ma/acheter/chalets-a-vendre/",
-      "reason": "Kein Preis"
+      "reason": "Riad"
     },
     {
       "title": "Triplexes à vendre",
       "url": "https://www.sarouty.ma/acheter/triplexes-a-vendre/",
-      "reason": "Kein Preis"
+      "reason": "Riad"
     },
     {
       "title": "Studios à vendre",
       "url": "https://www.sarouty.ma/acheter/studios-a-vendre/",
-      "reason": "Kein Preis"
+      "reason": "Riad"
     },
     {
       "title": "Propriétés à vendre à Casablanca",
       "url": "https://www.sarouty.ma/acheter/casablanca/proprietes-a-vendre/",
-      "reason": "Kein Preis"
+      "reason": "Riad"
     },
     {
       "title": "Propriétés à vendre à Tanger",
       "url": "https://www.sarouty.ma/acheter/tanger/proprietes-a-vendre/",
-      "reason": "Kein Preis"
+      "reason": "Riad"
     }
   ]
 }
