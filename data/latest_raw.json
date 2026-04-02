@@ -1,29 +1,29 @@
 {
   "meta": {
-    "scraped_at": "2026-04-01T11:12:46.856704",
-    "total_found": 232,
-    "passed_gates": 95,
-    "rejected": 137
+    "scraped_at": "2026-04-02T10:48:18.747107",
+    "total_found": 230,
+    "passed_gates": 94,
+    "rejected": 136
   },
   "listings": [
     {
-      "id": "b161c8a49ed2",
-      "title": "Appartement À Vendre Coralia Les Orangers",
+      "id": "266d7200ea92",
+      "title": "Appartement à vendre 61 m² à Marrakech",
       "source": "Avito",
-      "url": "https://www.avito.ma/fr/agdal/appartements/Appartement_%C3%80_Vendre_Coralia_Les_Orangers_57405641.htm",
-      "price_mad": 1950000,
-      "price_eur": 180555,
-      "area_sqm": 92,
+      "url": "https://www.avito.ma/fr/route_de_tahanaoute/appartements/Appartement_%C3%A0_vendre_61_m%C2%B2_%C3%A0_Marrakech_57680048.htm",
+      "price_mad": 1550000,
+      "price_eur": 143518,
+      "area_sqm": 61,
       "rooms": null,
-      "bedrooms": 2,
-      "bathrooms": 2,
-      "floor": "2. Etage",
-      "neighborhood": "Agdal",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "floor": null,
+      "neighborhood": "Route De Tahanaoute",
       "city": "Marrakech",
       "property_type": "Apartment",
-      "price_per_sqm_mad": 21195,
+      "price_per_sqm_mad": 25409,
       "has_terrace": true,
-      "has_pool": true,
+      "has_pool": null,
       "has_parking": null,
       "has_elevator": null,
       "is_ground_floor": null,
@@ -31,55 +31,17 @@
       "is_new_build": true,
       "ownership_type": "Unbekannt",
       "condition": "Neu",
-      "description": "Auto Neuf\nImmo Neuf\nCrédit Immobilier\nCrédit Conso\nBoutiques\nMagazine\nSe Connecter\nPublier une annonce\nالعربية\nAccueil\nTout le Maroc\nMarrakech\nAgdal\nAvito Immobilier\nVentes Immobilières\nAppartements\nAppartement À Vendre Coralia Les Orangers\n\n1/8\n\nPartager\nFinancez votre bien\n\nÀ partir de\n\n10838 DH / mois\n\nSimuler\nAppartement À Vendre Coralia Les Orangers\nAgdal, Marrakech\nil y a 17 heures\n172 vues (dernier 7 jours)\n\n1 950 000 DH\n\nJalil Fennan\n\nContacter le Vendeur\nRéf de l'annonce : #57405641\nSignaler un abus\nIl ne faut jamais envoyer de l’argent à l’avance au vendeur par virement bancaire ou à travers une agence de transfert d’argent lors de l’achat des biens disponibles sur le site.\nCategorie\nAppartements, à vendre\n2\nChambres\n2\nSalle de bain\n92\nSurface totale\n2\nÉtage\nBon état\nCondition\nImmédiate\nDisponibilité\nVoir plus\nDescription\nVoici un appartement moderne et élégant situé au sein d’une résidence privée avec piscine, dans un emplacement stratégique et très prisé de Marrakech, à pro",
-      "contact_phone": "0641118727",
+      "description": "Auto Neuf\nImmo Neuf\nCrédit Immobilier\nCrédit Conso\nBoutiques\nMagazine\nSe Connecter\nPublier une annonce\nالعربية\nAccueil\nTout le Maroc\nMarrakech\nRoute de Tahanaoute\nAvito Immobilier\nVentes Immobilières\nAppartements\nAppartement à vendre 61 m² à Marrakech\n\n1/15\n\nPartager\nFinancez votre bien\n\nÀ partir de\n\n8615 DH / mois\n\nSimuler\nAppartement à vendre 61 m² à Marrakech\nRoute de Tahanaoute, Marrakech\nil y a 2 heures\n310 vues (dernier 7 jours)\n\n1 550 000 DH\n\nREAL ESTATE MAR GOLD\n\nVoir la boutique\nContacter le Vendeur\nRéf de l'annonce : #57680048\nSignaler un abus\nIl ne faut jamais envoyer de l’argent à l’avance au vendeur par virement bancaire ou à travers une agence de transfert d’argent lors de l’achat des biens disponibles sur le site.\nCategorie\nAppartements, à vendre\n1\nChambres\n1\nSalle de bain\n61\nSurface totale\n0\nÉtage\nNeuf\nCondition\nImmédiate\nDisponibilité\nVoir plus\nDescription\nTrès beau rez-de-jardin à vendre – Résidence Isli, Noria Golf, Marrakech\n\nSitué au sein de la prestigieuse résiden",
+      "contact_phone": "0639881624",
       "contact_name": "Boutiques",
       "contact_email": "",
-      "contact_whatsapp": "+212641118727",
-      "image": "https://content.avito.ma/classifieds/images/10144004547?t=images",
+      "contact_whatsapp": "+212639881624",
+      "image": "https://content.avito.ma/stores/81/8147c757-69e4-4e1e-ae25-ebb672f6a348.jpg",
       "images": [
-        "https://content.avito.ma/classifieds/images/10144004547?t=images",
-        "https://content.avito.ma/classifieds/images/10144004638?t=images"
+        "https://content.avito.ma/classifieds/images/10146870889?t=images",
+        "https://content.avito.ma/classifieds/images/10146870882?t=images"
       ],
-      "scraped_at": "2026-04-01T10:38:01.123910"
-    },
-    {
-      "id": "2d6e43d6950a",
-      "title": "Appart idéal pour investir habiter à côté de CTM",
-      "source": "Avito",
-      "url": "https://www.avito.ma/fr/route_de_tahanaoute/appartements/Appart_id%C3%A9al_pour_investir_habiter_%C3%A0_c%C3%B4t%C3%A9_de_CTM_57706578.htm",
-      "price_mad": 1100000,
-      "price_eur": 101851,
-      "area_sqm": 83,
-      "rooms": null,
-      "bedrooms": 2,
-      "bathrooms": 2,
-      "floor": "3. Etage",
-      "neighborhood": "Route De Tahanaoute",
-      "city": "Marrakech",
-      "property_type": "Apartment",
-      "price_per_sqm_mad": 13253,
-      "has_terrace": true,
-      "has_pool": null,
-      "has_parking": true,
-      "has_elevator": true,
-      "is_ground_floor": null,
-      "is_riad": null,
-      "is_new_build": true,
-      "ownership_type": "Unbekannt",
-      "condition": "Neu",
-      "description": "Auto Neuf\nImmo Neuf\nCrédit Immobilier\nCrédit Conso\nBoutiques\nMagazine\nSe Connecter\nPublier une annonce\nالعربية\nAccueil\nTout le Maroc\nMarrakech\nRoute de Tahanaoute\nAvito Immobilier\nVentes Immobilières\nAppartements\nAppart idéal pour investir habiter à côté de CTM\n\n1/12\n\nPartager\nFinancez votre bien\n\nÀ partir de\n\n6114 DH / mois\n\nSimuler\nAppart idéal pour investir habiter à côté de CTM\nRoute de Tahanaoute, Marrakech\nil y a 24 minutes\n7 vues (dernier 7 jours)\n\n1 100 000 DH\n\nPalette Affaires\n\nVoir la boutique\nContacter le Vendeur\nRéf de l'annonce : #57706578\nSignaler un abus\nIl ne faut jamais envoyer de l’argent à l’avance au vendeur par virement bancaire ou à travers une agence de transfert d’argent lors de l’achat des biens disponibles sur le site.\nCategorie\nAppartements, à vendre\n2\nChambres\n2\nSalle de bain\n83\nSurface totale\n3\nÉtage\nBon état\nCondition\nImmédiate\nDisponibilité\nVoir plus\nDescription\nSitué au 3ᵉ étage d’un immeuble bien entretenu sur boulevard, dans le secteur prisé du nouveau",
-      "contact_phone": "0661762000",
-      "contact_name": "Boutiques",
-      "contact_email": "",
-      "contact_whatsapp": "+212661762000",
-      "image": "https://content.avito.ma/stores/56/56950168-7d16-4b68-89fc-fd81dcbecfd7.jpg",
-      "images": [
-        "https://content.avito.ma/classifieds/images/10147101340?t=images",
-        "https://content.avito.ma/classifieds/images/10147101349?t=images",
-        "https://firebasestorage.googleapis.com/v0/b/landing-gen-dev-25ef8.appspot.com/o/1774539036584-291-avito%20expo%20fr-200x200.jpg?alt=media&token=712e29f6-acaf-4f3d-ad89-f22d249f2876"
-      ],
-      "scraped_at": "2026-04-01T10:38:35.289632"
+      "scraped_at": "2026-04-02T10:15:29.365043"
     },
     {
       "id": "c73a144cb689",
@@ -106,7 +68,7 @@
       "is_new_build": true,
       "ownership_type": "Unbekannt",
       "condition": "Neu",
-      "description": "Auto Neuf\nImmo Neuf\nCrédit Immobilier\nCrédit Conso\nBoutiques\nMagazine\nSe Connecter\nPublier une annonce\nالعربية\nAccueil\nTout le Maroc\nMarrakech\nAv Abdelkrim El Khattabi\nAvito Immobilier\nVentes Immobilières\nAppartements\nAppart résidence piscine près Mc Do et Amoud\n\n1/20\n\nPartager\nFinancez votre bien\n\nÀ partir de\n\n8337 DH / mois\n\nSimuler\nAppart résidence piscine près Mc Do et Amoud\nAv Abdelkrim El Khattabi, Marrakech\nil y a 50 minutes\n17 vues (dernier 7 jours)\n\n1 500 000 DH\n\nHaj Youssef\n\nVoir la boutique\nContacter le Vendeur\nRéf de l'annonce : #57312273\nSignaler un abus\nIl ne faut jamais envoyer de l’argent à l’avance au vendeur par virement bancaire ou à travers une agence de transfert d’argent lors de l’achat des biens disponibles sur le site.\nCategorie\nAppartements, à vendre\n2\nChambres\n1\nSalle de bain\n4\nÉtage\n1\nSalons\n85\nSurface habitable\nDescription\n📍 Au sein d’une résidence haut standing, sécurisée et parfaitement entretenue, découvrez ce magnifique appartement de 85 m², situé au 4ᵉ ",
+      "description": "Auto Neuf\nImmo Neuf\nCrédit Immobilier\nCrédit Conso\nBoutiques\nMagazine\nSe Connecter\nPublier une annonce\nالعربية\nAccueil\nTout le Maroc\nMarrakech\nAv Abdelkrim El Khattabi\nAvito Immobilier\nVentes Immobilières\nAppartements\nAppart résidence piscine près Mc Do et Amoud\n\n1/20\n\nPartager\nFinancez votre bien\n\nÀ partir de\n\n8337 DH / mois\n\nSimuler\nAppart résidence piscine près Mc Do et Amoud\nAv Abdelkrim El Khattabi, Marrakech\nil y a 27 minutes\n15 vues (dernier 7 jours)\n\n1 500 000 DH\n\nHaj Youssef\n\nVoir la boutique\nContacter le Vendeur\nRéf de l'annonce : #57312273\nSignaler un abus\nIl ne faut jamais envoyer de l’argent à l’avance au vendeur par virement bancaire ou à travers une agence de transfert d’argent lors de l’achat des biens disponibles sur le site.\nCategorie\nAppartements, à vendre\n2\nChambres\n1\nSalle de bain\n4\nÉtage\n1\nSalons\n85\nSurface habitable\nDescription\n📍 Au sein d’une résidence haut standing, sécurisée et parfaitement entretenue, découvrez ce magnifique appartement de 85 m², situé au 4ᵉ ",
       "contact_phone": "0661183736",
       "contact_name": "Boutiques",
       "contact_email": "",
@@ -116,7 +78,7 @@
         "https://content.avito.ma/classifieds/images/10146847160?t=images",
         "https://content.avito.ma/classifieds/images/10144534649?t=images"
       ],
-      "scraped_at": "2026-04-01T10:39:47.024827"
+      "scraped_at": "2026-04-02T10:16:18.380742"
     },
     {
       "id": "17ec19384307",
@@ -143,7 +105,7 @@
       "is_new_build": true,
       "ownership_type": "Unbekannt",
       "condition": "Neu",
-      "description": "Auto Neuf\nImmo Neuf\nCrédit Immobilier\nCrédit Conso\nBoutiques\nMagazine\nSe Connecter\nPublier une annonce\nالعربية\nAccueil\nTout le Maroc\nMarrakech\nPalmeraie\nAvito Immobilier\nVentes Immobilières\nAppartements\nAppartement à vendre 95 m² à Marrakech palmeraie\n\n1/16\n\nPartager\nFinancez votre bien\n\nÀ partir de\n\n8337 DH / mois\n\nSimuler\nAppartement à vendre 95 m² à Marrakech palmeraie\nPalmeraie, Marrakech\nil y a 1 heure\n219 vues (dernier 7 jours)\n\n1 500 000 DH\n\nIMMO GLOBAL BUSINESS\n\nVoir la boutique\nContacter le Vendeur\nRéf de l'annonce : #57216492\nSignaler un abus\nIl ne faut jamais envoyer de l’argent à l’avance au vendeur par virement bancaire ou à travers une agence de transfert d’argent lors de l’achat des biens disponibles sur le site.\nCategorie\nAppartements, à vendre\n2\nChambres\n2\nSalle de bain\n95\nSurface totale\n3\nÉtage\nBon état\nCondition\nImmédiate\nDisponibilité\nVoir plus\nDescription\nAppartement de Haut Standing à Vendre – Résidence Prestigieuse avec Piscine et Espaces Sportifs\n\nNous vous prop",
+      "description": "Auto Neuf\nImmo Neuf\nCrédit Immobilier\nCrédit Conso\nBoutiques\nMagazine\nSe Connecter\nPublier une annonce\nالعربية\nAccueil\nTout le Maroc\nMarrakech\nPalmeraie\nAvito Immobilier\nVentes Immobilières\nAppartements\nAppartement à vendre 95 m² à Marrakech palmeraie\n\n1/16\n\nPartager\nFinancez votre bien\n\nÀ partir de\n\n8337 DH / mois\n\nSimuler\nAppartement à vendre 95 m² à Marrakech palmeraie\nPalmeraie, Marrakech\nil y a 38 minutes\n200 vues (dernier 7 jours)\n\n1 500 000 DH\n\nIMMO GLOBAL BUSINESS\n\nVoir la boutique\nContacter le Vendeur\nRéf de l'annonce : #57216492\nSignaler un abus\nIl ne faut jamais envoyer de l’argent à l’avance au vendeur par virement bancaire ou à travers une agence de transfert d’argent lors de l’achat des biens disponibles sur le site.\nCategorie\nAppartements, à vendre\n2\nChambres\n2\nSalle de bain\n95\nSurface totale\n3\nÉtage\nBon état\nCondition\nImmédiate\nDisponibilité\nVoir plus\nDescription\nAppartement de Haut Standing à Vendre – Résidence Prestigieuse avec Piscine et Espaces Sportifs\n\nNous vous p",
       "contact_phone": "0664364860",
       "contact_name": "Boutiques",
       "contact_email": "",
@@ -153,7 +115,7 @@
         "https://content.avito.ma/classifieds/images/10146693416?t=images",
         "https://content.avito.ma/classifieds/images/10142121031?t=images"
       ],
-      "scraped_at": "2026-04-01T10:40:14.198257"
+      "scraped_at": "2026-04-02T10:16:37.092588"
     },
     {
       "id": "91da07855eeb",
@@ -180,7 +142,7 @@
       "is_new_build": true,
       "ownership_type": "Unbekannt",
       "condition": "Neu",
-      "description": "Auto Neuf\nImmo Neuf\nCrédit Immobilier\nCrédit Conso\nBoutiques\nMagazine\nSe Connecter\nPublier une annonce\nالعربية\nAccueil\nTout le Maroc\nMarrakech\nPalmeraie\nAvito Immobilier\nVentes Immobilières\nAppartements\nPalmeraie ref 097\n\n1/11\n\nPartager\nFinancez votre bien\n\nÀ partir de\n\n11116 DH / mois\n\nSimuler\nPalmeraie ref 097\nPalmeraie, Marrakech\nil y a 1 heure\n42 vues (dernier 7 jours)\n\n2 000 000 DH\n\nEximomaroc\n\nVoir la boutique\nContacter le Vendeur\nRéf de l'annonce : #57200620\nSignaler un abus\nIl ne faut jamais envoyer de l’argent à l’avance au vendeur par virement bancaire ou à travers une agence de transfert d’argent lors de l’achat des biens disponibles sur le site.\nCategorie\nAppartements, à vendre\n2\nChambres\n2\nSalle de bain\n110\nSurface totale\n1\nÉtage\nBon état\nCondition\n2\nSalons\nVoir plus\nDescription\nAppartement à la palmeraie\nÉquipements\nBalcon\nChauffage\nClimatisation\nConcierge\nCuisine équipée\nMeublé\nVoir plus\nCalculateur du prêt\nPrix du bien\nDH\nApport personnel\nDH\nDurée du prêt\n25 ans\n11 117 ",
+      "description": "Auto Neuf\nImmo Neuf\nCrédit Immobilier\nCrédit Conso\nBoutiques\nMagazine\nSe Connecter\nPublier une annonce\nالعربية\nAccueil\nTout le Maroc\nMarrakech\nPalmeraie\nAvito Immobilier\nVentes Immobilières\nAppartements\nPalmeraie ref 097\n\n1/11\n\nPartager\nFinancez votre bien\n\nÀ partir de\n\n11116 DH / mois\n\nSimuler\nPalmeraie ref 097\nPalmeraie, Marrakech\nil y a 50 minutes\n52 vues (dernier 7 jours)\n\n2 000 000 DH\n\nEximomaroc\n\nVoir la boutique\nContacter le Vendeur\nRéf de l'annonce : #57200620\nSignaler un abus\nIl ne faut jamais envoyer de l’argent à l’avance au vendeur par virement bancaire ou à travers une agence de transfert d’argent lors de l’achat des biens disponibles sur le site.\nCategorie\nAppartements, à vendre\n2\nChambres\n2\nSalle de bain\n110\nSurface totale\n1\nÉtage\nBon état\nCondition\n2\nSalons\nVoir plus\nDescription\nAppartement à la palmeraie\nÉquipements\nBalcon\nChauffage\nClimatisation\nConcierge\nCuisine équipée\nMeublé\nVoir plus\nContacter le vendeur\nCalculateur du prêt\nPrix du bien\nDH\nApport personnel\nDH\nDuré",
       "contact_phone": "0702888888",
       "contact_name": "Boutiques",
       "contact_email": "",
@@ -190,7 +152,7 @@
         "https://content.avito.ma/classifieds/images/10141956903?t=images",
         "https://content.avito.ma/classifieds/images/10141956916?t=images"
       ],
-      "scraped_at": "2026-04-01T10:40:27.461532"
+      "scraped_at": "2026-04-02T10:16:56.932783"
     },
     {
       "id": "2a6485db92b6",
@@ -217,7 +179,7 @@
       "is_new_build": true,
       "ownership_type": "Unbekannt",
       "condition": "Neu",
-      "description": "Auto Neuf\nImmo Neuf\nCrédit Immobilier\nCrédit Conso\nBoutiques\nMagazine\nSe Connecter\nPublier une annonce\nالعربية\nAccueil\nTout le Maroc\nMarrakech\nAutre secteur\nAvito Immobilier\nVentes Immobilières\nAppartements\nAppartement avec jacuzzi à vendre à Prestigia\n\n1/15\n\nPartager\nFinancez votre bien\n\nÀ partir de\n\n12784 DH / mois\n\nSimuler\nAppartement avec jacuzzi à vendre à Prestigia\nAutre secteur, Marrakech\nil y a 1 heure\n184 vues (dernier 7 jours)\n\n2 300 000 DH\n\nMohamed immo\n\nVoir la boutique\nContacter le Vendeur\nRéf de l'annonce : #57660982\nSignaler un abus\nIl ne faut jamais envoyer de l’argent à l’avance au vendeur par virement bancaire ou à travers une agence de transfert d’argent lors de l’achat des biens disponibles sur le site.\nCategorie\nAppartements, à vendre\n2\nChambres\n2\nSalle de bain\n1\nÉtage\nBon état\nCondition\nImmédiate\nDisponibilité\n1\nSalons\nVoir plus\nDescription\nAppartement de standing à vendre à Prestigia, Marrakech 🌴\n\nBel appartement de 80 m², situé dans une résidence sécurisée avec ",
+      "description": "Auto Neuf\nImmo Neuf\nCrédit Immobilier\nCrédit Conso\nBoutiques\nMagazine\nSe Connecter\nPublier une annonce\nالعربية\nAccueil\nTout le Maroc\nMarrakech\nAutre secteur\nAvito Immobilier\nVentes Immobilières\nAppartements\nAppartement avec jacuzzi à vendre à Prestigia\n\n1/15\n\nPartager\nFinancez votre bien\n\nÀ partir de\n\n12784 DH / mois\n\nSimuler\nAppartement avec jacuzzi à vendre à Prestigia\nAutre secteur, Marrakech\nil y a 49 minutes\n189 vues (dernier 7 jours)\n\n2 300 000 DH\n\nMohamed immo\n\nVoir la boutique\nContacter le Vendeur\nRéf de l'annonce : #57660982\nSignaler un abus\nIl ne faut jamais envoyer de l’argent à l’avance au vendeur par virement bancaire ou à travers une agence de transfert d’argent lors de l’achat des biens disponibles sur le site.\nCategorie\nAppartements, à vendre\n2\nChambres\n2\nSalle de bain\n1\nÉtage\nBon état\nCondition\nImmédiate\nDisponibilité\n1\nSalons\nVoir plus\nDescription\nAppartement de standing à vendre à Prestigia, Marrakech 🌴\n\nBel appartement de 80 m², situé dans une résidence sécurisée av",
       "contact_phone": "0776698837",
       "contact_name": "Boutiques",
       "contact_email": "",
@@ -225,47 +187,9 @@
       "image": "https://content.avito.ma/classifieds/images/10146694051?t=images",
       "images": [
         "https://content.avito.ma/classifieds/images/10146694051?t=images",
-        "https://content.avito.ma/classifieds/images/10146694046?t=images",
-        "https://firebasestorage.googleapis.com/v0/b/landing-gen-dev-25ef8.appspot.com/o/1774539036584-291-avito%20expo%20fr-200x200.jpg?alt=media&token=712e29f6-acaf-4f3d-ad89-f22d249f2876"
+        "https://content.avito.ma/classifieds/images/10146694046?t=images"
       ],
-      "scraped_at": "2026-04-01T10:40:34.204975"
-    },
-    {
-      "id": "bdcd26c35124",
-      "title": "Appartement meublé à vendre haut standing",
-      "source": "Avito",
-      "url": "https://www.avito.ma/fr/daoudiate/appartements/Appartement_meubl%C3%A9_%C3%A0_vendre_haut_standing_57706231.htm",
-      "price_mad": 1800000,
-      "price_eur": 166666,
-      "area_sqm": 100,
-      "rooms": null,
-      "bedrooms": 2,
-      "bathrooms": 1,
-      "floor": "4. Etage",
-      "neighborhood": "Daoudiate",
-      "city": "Marrakech",
-      "property_type": "Apartment",
-      "price_per_sqm_mad": 18000,
-      "has_terrace": true,
-      "has_pool": null,
-      "has_parking": null,
-      "has_elevator": true,
-      "is_ground_floor": null,
-      "is_riad": null,
-      "is_new_build": true,
-      "ownership_type": "Unbekannt",
-      "condition": "Neu",
-      "description": "Auto Neuf\nImmo Neuf\nCrédit Immobilier\nCrédit Conso\nBoutiques\nMagazine\nSe Connecter\nPublier une annonce\nالعربية\nAccueil\nTout le Maroc\nMarrakech\nDaoudiate\nAvito Immobilier\nVentes Immobilières\nAppartements\nAppartement meublé à vendre haut standing\n\n1/20\n\nPartager\nFinancez votre bien\n\nÀ partir de\n\n10004 DH / mois\n\nSimuler\nAppartement meublé à vendre haut standing\nDaoudiate, Marrakech\nil y a 1 heure\n6 vues (dernier 7 jours)\n\n1 800 000 DH\n\nSAMI IMMOBILIER\n\nVoir la boutique\nContacter le Vendeur\nRéf de l'annonce : #57706231\nSignaler un abus\nIl ne faut jamais envoyer de l’argent à l’avance au vendeur par virement bancaire ou à travers une agence de transfert d’argent lors de l’achat des biens disponibles sur le site.\nCategorie\nAppartements, à vendre\n2\nChambres\n1\nSalle de bain\n100\nSurface totale\n4\nÉtage\nNeuf\nCondition\nImmédiate\nDisponibilité\nVoir plus\nDescription\n🏠Appartement meublé neuf à vendre – haut standing – Quartier Daoudiyat\n4 étage avec ascenseur\n- proche centre-ville 13 min sur 🚗\nÀ ven",
-      "contact_phone": "0695252095",
-      "contact_name": "Boutiques",
-      "contact_email": "",
-      "contact_whatsapp": "+212695252095",
-      "image": "https://content.avito.ma/stores/52/523e5988-76c9-4e69-ba4d-38e9dd425912.jpg",
-      "images": [
-        "https://content.avito.ma/classifieds/images/10147096760?t=images",
-        "https://content.avito.ma/classifieds/images/10147096754?t=images"
-      ],
-      "scraped_at": "2026-04-01T10:40:41.142796"
+      "scraped_at": "2026-04-02T10:17:02.592407"
     },
     {
       "id": "6313c8c597cd",
@@ -292,7 +216,7 @@
       "is_new_build": true,
       "ownership_type": "Unbekannt",
       "condition": "Neu",
-      "description": "Auto Neuf\nImmo Neuf\nCrédit Immobilier\nCrédit Conso\nBoutiques\nMagazine\nSe Connecter\nPublier une annonce\nالعربية\nAccueil\nTout le Maroc\nMarrakech\nRoute de Safi\nAvito Immobilier\nVentes Immobilières\nAppartements\nMagnifique Appartement à vendre 73 m² à Marrakech\n\n1/20\n\nPartager\nFinancez votre bien\n\nÀ partir de\n\n6669 DH / mois\n\nSimuler\nMagnifique Appartement à vendre 73 m² à Marrakech\nRoute de Safi, Marrakech\nil y a 1 heure\n69 vues (dernier 7 jours)\n\n1 200 000 DH\n\nIMMO GLOBAL BUSINESS 1\n\nVoir la boutique\nContacter le Vendeur\nRéf de l'annonce : #57682595\nSignaler un abus\nIl ne faut jamais envoyer de l’argent à l’avance au vendeur par virement bancaire ou à travers une agence de transfert d’argent lors de l’achat des biens disponibles sur le site.\nCategorie\nAppartements, à vendre\n2\nChambres\n2\nSalle de bain\n73\nSurface totale\n3\nÉtage\nBon état\nCondition\nImmédiate\nDisponibilité\nVoir plus\nDescription\nMagnifique appartement à vendre – Résidence haut standing\n\nSitué dans une résidence de prestige, cet",
+      "description": "Auto Neuf\nImmo Neuf\nCrédit Immobilier\nCrédit Conso\nBoutiques\nMagazine\nSe Connecter\nPublier une annonce\nالعربية\nAccueil\nTout le Maroc\nMarrakech\nRoute de Safi\nAvito Immobilier\nVentes Immobilières\nAppartements\nMagnifique Appartement à vendre 73 m² à Marrakech\n\n1/20\n\nPartager\nFinancez votre bien\n\nÀ partir de\n\n6669 DH / mois\n\nSimuler\nMagnifique Appartement à vendre 73 m² à Marrakech\nRoute de Safi, Marrakech\nil y a 1 heure\n86 vues (dernier 7 jours)\n\n1 200 000 DH\n\nIMMO GLOBAL BUSINESS 1\n\nVoir la boutique\nContacter le Vendeur\nRéf de l'annonce : #57682595\nSignaler un abus\nIl ne faut jamais envoyer de l’argent à l’avance au vendeur par virement bancaire ou à travers une agence de transfert d’argent lors de l’achat des biens disponibles sur le site.\nCategorie\nAppartements, à vendre\n2\nChambres\n2\nSalle de bain\n73\nSurface totale\n3\nÉtage\nBon état\nCondition\nImmédiate\nDisponibilité\nVoir plus\nDescription\nMagnifique appartement à vendre – Résidence haut standing\n\nSitué dans une résidence de prestige, cet",
       "contact_phone": "0664781051",
       "contact_name": "Boutiques",
       "contact_email": "",
@@ -300,10 +224,46 @@
       "image": "https://content.avito.ma/stores/88/88c2fff1-35cb-43fb-af35-0fe9ba73d243.jpg",
       "images": [
         "https://content.avito.ma/classifieds/images/10146896362?t=images",
-        "https://content.avito.ma/classifieds/images/10146896354?t=images",
-        "https://firebasestorage.googleapis.com/v0/b/landing-gen-dev-25ef8.appspot.com/o/1774539036584-291-avito%20expo%20fr-200x200.jpg?alt=media&token=712e29f6-acaf-4f3d-ad89-f22d249f2876"
+        "https://content.avito.ma/classifieds/images/10146896354?t=images"
       ],
-      "scraped_at": "2026-04-01T10:40:55.428022"
+      "scraped_at": "2026-04-02T10:17:16.022331"
+    },
+    {
+      "id": "84aa014e0522",
+      "title": "Appartement 2 chambres neuf Noria Golf",
+      "source": "Avito",
+      "url": "https://www.avito.ma/fr/route_de_tahanaoute/appartements/Appartement_2_chambres_neuf_Noria_Golf_57301643.htm",
+      "price_mad": 1990000,
+      "price_eur": 184259,
+      "area_sqm": 89,
+      "rooms": null,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "floor": "2. Etage",
+      "neighborhood": "Route De Tahanaoute",
+      "city": "Marrakech",
+      "property_type": "Apartment",
+      "price_per_sqm_mad": 22359,
+      "has_terrace": true,
+      "has_pool": null,
+      "has_parking": null,
+      "has_elevator": null,
+      "is_ground_floor": null,
+      "is_riad": null,
+      "is_new_build": true,
+      "ownership_type": "Unbekannt",
+      "condition": "Neu",
+      "description": "Auto Neuf\nImmo Neuf\nCrédit Immobilier\nCrédit Conso\nBoutiques\nMagazine\nSe Connecter\nPublier une annonce\nالعربية\nAccueil\nTout le Maroc\nMarrakech\nRoute de Tahanaoute\nAvito Immobilier\nVentes Immobilières\nAppartements\nAppartement 2 chambres neuf Noria Golf\n\n1/15\n\nPartager\nFinancez votre bien\n\nÀ partir de\n\n11061 DH / mois\n\nSimuler\nAppartement 2 chambres neuf Noria Golf\nRoute de Tahanaoute, Marrakech\nil y a 1 heure\n82 vues (dernier 7 jours)\n\n1 990 000 DH\n\nMozagh Signature\n\nVoir la boutique\nContacter le Vendeur\nRéf de l'annonce : #57301643\nSignaler un abus\nIl ne faut jamais envoyer de l’argent à l’avance au vendeur par virement bancaire ou à travers une agence de transfert d’argent lors de l’achat des biens disponibles sur le site.\nCategorie\nAppartements, à vendre\n2\nChambres\n2\nSalle de bain\n89\nSurface totale\n2\nÉtage\n1\nSalons\n87\nSurface habitable\nDescription\nNous mettons a la vente un magnifique appartement neuf située au 2 éme étage d’un immeuble calme et sécurisé au sein du golf noria\n\nL'appa",
+      "contact_phone": "0607070302",
+      "contact_name": "Boutiques",
+      "contact_email": "",
+      "contact_whatsapp": "+212607070302",
+      "image": "https://content.avito.ma/stores/c9/c97005cf-ebd1-410d-bda3-e82b61f7944f.jpg",
+      "images": [
+        "https://content.avito.ma/classifieds/images/10145590529?t=images",
+        "https://content.avito.ma/classifieds/images/10145590528?t=images"
+      ],
+      "scraped_at": "2026-04-02T10:17:23.382623"
     },
     {
       "id": "6e4ba5ad1608",
@@ -330,7 +290,7 @@
       "is_new_build": true,
       "ownership_type": "Unbekannt",
       "condition": "Neu",
-      "description": "Auto Neuf\nImmo Neuf\nCrédit Immobilier\nCrédit Conso\nBoutiques\nMagazine\nSe Connecter\nPublier une annonce\nالعربية\nAccueil\nTout le Maroc\nMarrakech\nAutre secteur\nAvito Immobilier\nVentes Immobilières\nAppartements\nAppartement à vendre Résidence noria 2 chambres\n\n1/10\n\nPartager\nFinancez votre bien\n\nÀ partir de\n\n12784 DH / mois\n\nSimuler\nAppartement à vendre Résidence noria 2 chambres\nAutre secteur, Marrakech\nil y a 2 heures\n138 vues (dernier 7 jours)\n\n2 300 000 DH\n\nMohamed immo\n\nVoir la boutique\nContacter le Vendeur\nRéf de l'annonce : #57372719\nSignaler un abus\nIl ne faut jamais envoyer de l’argent à l’avance au vendeur par virement bancaire ou à travers une agence de transfert d’argent lors de l’achat des biens disponibles sur le site.\nCategorie\nAppartements, à vendre\n2\nChambres\n2\nSalle de bain\n84\nSurface totale\n2\nÉtage\nNeuf\nCondition\nImmédiate\nDisponibilité\nVoir plus\nDescription\nAppartement à vendre – noria, Marrakech\nAppartement situé au 1er étage, d’une superficie totale de 84 m² (72 m² hab",
+      "description": "Auto Neuf\nImmo Neuf\nCrédit Immobilier\nCrédit Conso\nBoutiques\nMagazine\nSe Connecter\nPublier une annonce\nالعربية\nAccueil\nTout le Maroc\nMarrakech\nAutre secteur\nAvito Immobilier\nVentes Immobilières\nAppartements\nAppartement à vendre Résidence noria 2 chambres\n\n1/10\n\nPartager\nFinancez votre bien\n\nÀ partir de\n\n12784 DH / mois\n\nSimuler\nAppartement à vendre Résidence noria 2 chambres\nAutre secteur, Marrakech\nil y a 2 heures\n152 vues (dernier 7 jours)\n\n2 300 000 DH\n\nMohamed immo\n\nVoir la boutique\nContacter le Vendeur\nRéf de l'annonce : #57372719\nSignaler un abus\nIl ne faut jamais envoyer de l’argent à l’avance au vendeur par virement bancaire ou à travers une agence de transfert d’argent lors de l’achat des biens disponibles sur le site.\nCategorie\nAppartements, à vendre\n2\nChambres\n2\nSalle de bain\n84\nSurface totale\n2\nÉtage\nNeuf\nCondition\nImmédiate\nDisponibilité\nVoir plus\nDescription\nAppartement à vendre – noria, Marrakech\nAppartement situé au 1er étage, d’une superficie totale de 84 m² (72 m² hab",
       "contact_phone": "0776698837",
       "contact_name": "Boutiques",
       "contact_email": "",
@@ -340,45 +300,44 @@
         "https://content.avito.ma/classifieds/images/10143704062?t=images",
         "https://content.avito.ma/classifieds/images/10143704095?t=images"
       ],
-      "scraped_at": "2026-04-01T10:41:08.950749"
+      "scraped_at": "2026-04-02T10:17:36.975623"
     },
     {
-      "id": "266d7200ea92",
-      "title": "Appartement à vendre 61 m² à Marrakech",
+      "id": "3180c1a678ec",
+      "title": "appartement meublé",
       "source": "Avito",
-      "url": "https://www.avito.ma/fr/route_de_tahanaoute/appartements/Appartement_%C3%A0_vendre_61_m%C2%B2_%C3%A0_Marrakech_57680048.htm",
-      "price_mad": 1550000,
-      "price_eur": 143518,
-      "area_sqm": 61,
+      "url": "https://www.avito.ma/fr/semlalia/appartements/appartement_meubl%C3%A9_57710732.htm",
+      "price_mad": 1600000,
+      "price_eur": 148148,
+      "area_sqm": 25,
       "rooms": null,
-      "bedrooms": 1,
-      "bathrooms": 1,
-      "floor": null,
-      "neighborhood": "Route De Tahanaoute",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "floor": "5. Etage",
+      "neighborhood": "Semlalia",
       "city": "Marrakech",
       "property_type": "Apartment",
-      "price_per_sqm_mad": 25409,
+      "price_per_sqm_mad": 64000,
       "has_terrace": true,
       "has_pool": null,
-      "has_parking": null,
-      "has_elevator": null,
+      "has_parking": true,
+      "has_elevator": true,
       "is_ground_floor": null,
       "is_riad": null,
       "is_new_build": true,
       "ownership_type": "Unbekannt",
       "condition": "Neu",
-      "description": "Auto Neuf\nImmo Neuf\nCrédit Immobilier\nCrédit Conso\nBoutiques\nMagazine\nSe Connecter\nPublier une annonce\nالعربية\nAccueil\nTout le Maroc\nMarrakech\nRoute de Tahanaoute\nAvito Immobilier\nVentes Immobilières\nAppartements\nAppartement à vendre 61 m² à Marrakech\n\n1/15\n\nPartager\nFinancez votre bien\n\nÀ partir de\n\n8615 DH / mois\n\nSimuler\nAppartement à vendre 61 m² à Marrakech\nRoute de Tahanaoute, Marrakech\nil y a 2 heures\n280 vues (dernier 7 jours)\n\n1 550 000 DH\n\nREAL ESTATE MAR GOLD\n\nVoir la boutique\nContacter le Vendeur\nRéf de l'annonce : #57680048\nSignaler un abus\nIl ne faut jamais envoyer de l’argent à l’avance au vendeur par virement bancaire ou à travers une agence de transfert d’argent lors de l’achat des biens disponibles sur le site.\nCategorie\nAppartements, à vendre\n1\nChambres\n1\nSalle de bain\n61\nSurface totale\n0\nÉtage\nNeuf\nCondition\nImmédiate\nDisponibilité\nVoir plus\nDescription\nTrès beau rez-de-jardin à vendre – Résidence Isli, Noria Golf, Marrakech\n\nSitué au sein de la prestigieuse résiden",
-      "contact_phone": "0639881624",
+      "description": "Auto Neuf\nImmo Neuf\nCrédit Immobilier\nCrédit Conso\nBoutiques\nMagazine\nSe Connecter\nPublier une annonce\nالعربية\nAccueil\nTout le Maroc\nMarrakech\nSemlalia\nAvito Immobilier\nVentes Immobilières\nAppartements\nappartement meublé\n\n1/8\n\nPartager\nFinancez votre bien\n\nÀ partir de\n\n8893 DH / mois\n\nSimuler\nappartement meublé\nSemlalia, Marrakech\nil y a 7 heures\n7 vues (dernier 7 jours)\n\n1 600 000 DH\n\njnan immobilier Marrakech\n\nContacter le Vendeur\nRéf de l'annonce : #57710732\nSignaler un abus\nIl ne faut jamais envoyer de l’argent à l’avance au vendeur par virement bancaire ou à travers une agence de transfert d’argent lors de l’achat des biens disponibles sur le site.\nCategorie\nAppartements, à vendre\n2\nChambres\n2\nSalle de bain\n5\nÉtage\n300\nFrais de syndic / mois\n1\nSalons\n97\nSurface habitable\nDescription\nappartement meublé très bon emplacement avec parking privé 25 m² sans vis à vis\nÉquipements\nAscenseur\nBalcon\nChauffage\nClimatisation\nConcierge\nCuisine équipée\nVoir plus\nContacter le vendeur\nCalculateur",
+      "contact_phone": "0642144536",
       "contact_name": "Boutiques",
       "contact_email": "",
-      "contact_whatsapp": "+212639881624",
-      "image": "https://content.avito.ma/stores/81/8147c757-69e4-4e1e-ae25-ebb672f6a348.jpg",
+      "contact_whatsapp": "+212642144536",
+      "image": "https://content.avito.ma/classifieds/images/10147135656?t=images",
       "images": [
-        "https://content.avito.ma/classifieds/images/10146870889?t=images",
-        "https://content.avito.ma/classifieds/images/10146870882?t=images",
-        "https://firebasestorage.googleapis.com/v0/b/landing-gen-dev-25ef8.appspot.com/o/1774539036584-291-avito%20expo%20fr-200x200.jpg?alt=media&token=712e29f6-acaf-4f3d-ad89-f22d249f2876"
+        "https://content.avito.ma/classifieds/images/10147135656?t=images",
+        "https://content.avito.ma/classifieds/images/10147135658?t=images"
       ],
-      "scraped_at": "2026-04-01T10:41:14.501684"
+      "scraped_at": "2026-04-02T10:17:49.655735"
     },
     {
       "id": "1e91bba7bec7",
@@ -405,7 +364,7 @@
       "is_new_build": true,
       "ownership_type": "Unbekannt",
       "condition": "Neu",
-      "description": "Auto Neuf\nImmo Neuf\nCrédit Immobilier\nCrédit Conso\nBoutiques\nMagazine\nSe Connecter\nPublier une annonce\nالعربية\nAccueil\nTout le Maroc\nMarrakech\nAllal El Fassi\nAvito Immobilier\nVentes Immobilières\nAppartements\nAppartement à vendre 107 m² à Marrakech\n\n1/17\n\nPartager\nFinancez votre bien\n\nÀ partir de\n\n6836 DH / mois\n\nSimuler\nAppartement à vendre 107 m² à Marrakech\nAllal El Fassi, Marrakech\nil y a 9 heures\n104 vues (dernier 7 jours)\n\n1 230 000 DH\n\nHOMES 365\n\nVoir la boutique\nContacter le Vendeur\nRéf de l'annonce : #57461304\nSignaler un abus\nIl ne faut jamais envoyer de l’argent à l’avance au vendeur par virement bancaire ou à travers une agence de transfert d’argent lors de l’achat des biens disponibles sur le site.\nCategorie\nAppartements, à vendre\n3\nChambres\n1\nSalle de bain\n2\nÉtage\nBon état\nCondition\nImmédiate\nDisponibilité\n1\nSalons\nVoir plus\nDescription\nSitué sur l’avenue Allal Al Fassi à Marrakech, cet appartement spacieux offre un cadre de vie confortable dans un secteur recherché et bie",
+      "description": "Auto Neuf\nImmo Neuf\nCrédit Immobilier\nCrédit Conso\nBoutiques\nMagazine\nSe Connecter\nPublier une annonce\nالعربية\nAccueil\nTout le Maroc\nMarrakech\nAllal El Fassi\nAvito Immobilier\nVentes Immobilières\nAppartements\nAppartement à vendre 107 m² à Marrakech\n\n1/17\n\nPartager\nFinancez votre bien\n\nÀ partir de\n\n6836 DH / mois\n\nSimuler\nAppartement à vendre 107 m² à Marrakech\nAllal El Fassi, Marrakech\nil y a 9 heures\n121 vues (dernier 7 jours)\n\n1 230 000 DH\n\nHOMES 365\n\nVoir la boutique\nContacter le Vendeur\nRéf de l'annonce : #57461304\nSignaler un abus\nIl ne faut jamais envoyer de l’argent à l’avance au vendeur par virement bancaire ou à travers une agence de transfert d’argent lors de l’achat des biens disponibles sur le site.\nCategorie\nAppartements, à vendre\n3\nChambres\n1\nSalle de bain\n2\nÉtage\nBon état\nCondition\nImmédiate\nDisponibilité\n1\nSalons\nVoir plus\nDescription\nSitué sur l’avenue Allal Al Fassi à Marrakech, cet appartement spacieux offre un cadre de vie confortable dans un secteur recherché et bie",
       "contact_phone": "0662713050",
       "contact_name": "Boutiques",
       "contact_email": "",
@@ -413,48 +372,46 @@
       "image": "https://content.avito.ma/stores/fd/fd711fb9-c380-4fa6-a6f6-25f6dc1fb4b7.jpg",
       "images": [
         "https://content.avito.ma/classifieds/images/10144563565?t=images",
-        "https://content.avito.ma/classifieds/images/10144563555?t=images",
-        "https://firebasestorage.googleapis.com/v0/b/landing-gen-dev-25ef8.appspot.com/o/1774539036584-291-avito%20expo%20fr-200x200.jpg?alt=media&token=712e29f6-acaf-4f3d-ad89-f22d249f2876"
+        "https://content.avito.ma/classifieds/images/10144563555?t=images"
       ],
-      "scraped_at": "2026-04-01T10:41:20.367289"
+      "scraped_at": "2026-04-02T10:17:55.693500"
     },
     {
-      "id": "62b57f349683",
-      "title": "Appartements économiques à vendre à Marrakech",
+      "id": "3afa7164c0f0",
+      "title": "Appartement à vendre 68 m² à Marrakech",
       "source": "Avito",
-      "url": "https://www.avito.ma/fr/m_hamid/appartements/Appartements_%C3%A9conomiques_%C3%A0_vendre_%C3%A0_Marrakech_57207961.htm",
-      "price_mad": 1400000,
-      "price_eur": 129629,
-      "area_sqm": 56,
+      "url": "https://www.avito.ma/fr/autre_secteur/appartements/Appartement_%C3%A0_vendre_68_m%C2%B2_%C3%A0_Marrakech_57710770.htm",
+      "price_mad": 1950000,
+      "price_eur": 180555,
+      "area_sqm": 68,
       "rooms": null,
       "bedrooms": 2,
       "bathrooms": 1,
       "floor": "1. Etage",
-      "neighborhood": "M'Hamid",
+      "neighborhood": "Autre Secteur",
       "city": "Marrakech",
       "property_type": "Apartment",
-      "price_per_sqm_mad": 25000,
-      "has_terrace": null,
+      "price_per_sqm_mad": 28676,
+      "has_terrace": true,
       "has_pool": null,
-      "has_parking": null,
-      "has_elevator": null,
+      "has_parking": true,
+      "has_elevator": true,
       "is_ground_floor": null,
       "is_riad": null,
       "is_new_build": true,
       "ownership_type": "Unbekannt",
       "condition": "Neu",
-      "description": "Auto Neuf\nImmo Neuf\nCrédit Immobilier\nCrédit Conso\nBoutiques\nMagazine\nSe Connecter\nPublier une annonce\nالعربية\nAccueil\nTout le Maroc\nMarrakech\nM'Hamid\nAvito Immobilier\nVentes Immobilières\nAppartements\nAppartements économiques à vendre à Marrakech\n\n1/7\n\nPartager\nFinancez votre bien\n\nÀ partir de\n\n2223 DH / mois\n\nSimuler\nAppartements économiques à vendre à Marrakech\nM'Hamid, Marrakech\nil y a 21 heures\n560 vues (dernier 7 jours)\n\n400 000 DH\n\nDamane immo\n\nVoir la boutique\nContacter le Vendeur\nRéf de l'annonce : #57207961\nSignaler un abus\nIl ne faut jamais envoyer de l’argent à l’avance au vendeur par virement bancaire ou à travers une agence de transfert d’argent lors de l’achat des biens disponibles sur le site.\nCategorie\nAppartements, à vendre\n2\nChambres\n1\nSalle de bain\n56\nSurface totale\n1\nÉtage\nNeuf\nCondition\n0\nSalons\nVoir plus\nDescription\nLe projet BASSATINE, situé à Marrakech, vous propose de neufs appartements fonctionnels à un prix très attractif, parfaits pour un premier achat ou un",
-      "contact_phone": "0663743641",
+      "description": "Auto Neuf\nImmo Neuf\nCrédit Immobilier\nCrédit Conso\nBoutiques\nMagazine\nSe Connecter\nPublier une annonce\nالعربية\nAccueil\nTout le Maroc\nMarrakech\nAutre secteur\nAvito Immobilier\nVentes Immobilières\nAppartements\nAppartement à vendre 68 m² à Marrakech\n\n1/8\n\nPartager\nFinancez votre bien\n\nÀ partir de\n\n5280 DH / mois\n\nSimuler\nAppartement à vendre 68 m² à Marrakech\nAutre secteur, Marrakech\nil y a 6 heures\n19 vues (dernier 7 jours)\n\n950 000 DH\n\nFati Fati\n\nContacter le Vendeur\nRéf de l'annonce : #57710770\nSignaler un abus\nIl ne faut jamais envoyer de l’argent à l’avance au vendeur par virement bancaire ou à travers une agence de transfert d’argent lors de l’achat des biens disponibles sur le site.\nCategorie\nAppartements, à vendre\n2\nChambres\n1\nSalle de bain\n1\nÉtage\nBon état\nCondition\nImmédiate\nDisponibilité\n1\nSalons\nVoir plus\nDescription\nAppartement Rue Assfi\n1er étage avec ascenseur\nGarage sous-sol inclus\n68m²\n54m² Cour 1\n8m² Cour 2\nVoir plus\nÉquipements\nAscenseur\nBalcon\nParking\nContacter le vende",
+      "contact_phone": "0713113460",
       "contact_name": "Boutiques",
       "contact_email": "",
-      "contact_whatsapp": "+212663743641",
-      "image": "https://content.avito.ma/stores/3c/3c9a23b2-cfbc-430b-9a73-4e79eb1cd9ea.jpg",
+      "contact_whatsapp": "+212713113460",
+      "image": "https://content.avito.ma/classifieds/images/10147136338?t=images",
       "images": [
-        "https://content.avito.ma/classifieds/images/10142036474?t=images",
-        "https://content.avito.ma/classifieds/images/10142036470?t=images",
-        "https://firebasestorage.googleapis.com/v0/b/landing-gen-dev-25ef8.appspot.com/o/1774539036584-291-avito%20expo%20fr-200x200.jpg?alt=media&token=712e29f6-acaf-4f3d-ad89-f22d249f2876"
+        "https://content.avito.ma/classifieds/images/10147136338?t=images",
+        "https://content.avito.ma/classifieds/images/10147136331?t=images"
       ],
-      "scraped_at": "2026-04-01T10:42:31.002051"
+      "scraped_at": "2026-04-02T10:19:35.596293"
     },
     {
       "id": "41cab0aa078d",
@@ -489,10 +446,46 @@
       "image": "https://content.avito.ma/classifieds/images/10146137586?t=images",
       "images": [
         "https://content.avito.ma/classifieds/images/10146137586?t=images",
-        "https://content.avito.ma/classifieds/images/10146137600?t=images",
-        "https://firebasestorage.googleapis.com/v0/b/landing-gen-dev-25ef8.appspot.com/o/1774539036584-291-avito%20expo%20fr-200x200.jpg?alt=media&token=712e29f6-acaf-4f3d-ad89-f22d249f2876"
+        "https://content.avito.ma/classifieds/images/10146137600?t=images"
       ],
-      "scraped_at": "2026-04-01T10:43:04.065290"
+      "scraped_at": "2026-04-02T10:20:24.810649"
+    },
+    {
+      "id": "194df2022a17",
+      "title": "Appartement de 68 m2 à vendre à Charaf Yasmine",
+      "source": "Avito",
+      "url": "https://www.avito.ma/fr/hay_charaf/appartements/Appartement_de_68_m2_%C3%A0_vendre_%C3%A0_Charaf_Yasmine_57710504.htm",
+      "price_mad": 1900000,
+      "price_eur": 175925,
+      "area_sqm": 68,
+      "rooms": null,
+      "bedrooms": 2,
+      "bathrooms": null,
+      "floor": "1. Etage",
+      "neighborhood": "Hay Charaf",
+      "city": "Marrakech",
+      "property_type": "Apartment",
+      "price_per_sqm_mad": 27941,
+      "has_terrace": true,
+      "has_pool": null,
+      "has_parking": true,
+      "has_elevator": true,
+      "is_ground_floor": null,
+      "is_riad": null,
+      "is_new_build": true,
+      "ownership_type": "Unbekannt",
+      "condition": "Neu",
+      "description": "Auto Neuf\nImmo Neuf\nCrédit Immobilier\nCrédit Conso\nBoutiques\nMagazine\nSe Connecter\nPublier une annonce\nالعربية\nAccueil\nTout le Maroc\nMarrakech\nHay Charaf\nAvito Immobilier\nVentes Immobilières\nAppartements\nAppartement de 68 m2 à vendre à Charaf Yasmine\n\n1/10\n\nPartager\nFinancez votre bien\n\nÀ partir de\n\n5002 DH / mois\n\nSimuler\nAppartement de 68 m2 à vendre à Charaf Yasmine\nHay Charaf, Marrakech\nil y a 11 heures\n27 vues (dernier 7 jours)\n\n900 000 DH\n\nBLACK RABBIT REAL ESTATE\n\nVoir la boutique\nContacter le Vendeur\nRéf de l'annonce : #57710504\nSignaler un abus\nIl ne faut jamais envoyer de l’argent à l’avance au vendeur par virement bancaire ou à travers une agence de transfert d’argent lors de l’achat des biens disponibles sur le site.\nCategorie\nAppartements, à vendre\n2\nChambres\n0\nSalle de bain\n1\nÉtage\n1\nSalons\nMoyen standing\nStanding\n68\nSurface habitable\nDescription\n📢 Appartement à vendre à Charaf Yasmine\n\n🏢 Situé au 1er étage avec ascenseur et garage en sous-sol à proximité de toutes les co",
+      "contact_phone": "0687833636",
+      "contact_name": "Boutiques",
+      "contact_email": "",
+      "contact_whatsapp": "+212687833636",
+      "image": "https://content.avito.ma/stores/4b/4bc9363d-10a7-4bf0-ab21-8a45425bdac8.jpg",
+      "images": [
+        "https://content.avito.ma/classifieds/images/10147131748?t=images",
+        "https://content.avito.ma/classifieds/images/10147131750?t=images"
+      ],
+      "scraped_at": "2026-04-02T10:20:38.271258"
     },
     {
       "id": "58ee7986c57a",
@@ -519,7 +512,7 @@
       "is_new_build": true,
       "ownership_type": "Unbekannt",
       "condition": "Neu",
-      "description": "Auto Neuf\nImmo Neuf\nCrédit Immobilier\nCrédit Conso\nBoutiques\nMagazine\nSe Connecter\nPublier une annonce\nالعربية\nAccueil\nTout le Maroc\nMarrakech\nAmerchich\nAvito Immobilier\nVentes Immobilières\nAppartements\nAppartement à vendre 100m² Amerchich\n\n1/7\n\nPartager\nFinancez votre bien\n\nÀ partir de\n\n5558 DH / mois\n\nSimuler\nAppartement à vendre 100m² Amerchich\nAmerchich, Marrakech\nil y a 15 heures\n112 vues (dernier 7 jours)\n\n1 000 000 DH\n\nMarrakani Immobilier\n\nVoir la boutique\nContacter le Vendeur\nRéf de l'annonce : #57673555\nSignaler un abus\nIl ne faut jamais envoyer de l’argent à l’avance au vendeur par virement bancaire ou à travers une agence de transfert d’argent lors de l’achat des biens disponibles sur le site.\nCategorie\nAppartements, à vendre\n2\nChambres\n1\nSalle de bain\n100\nSurface totale\n1\nÉtage\nBon état\nCondition\nImmédiate\nDisponibilité\nVoir plus\nDescription\nAppartement de 100m² à vendre dans un immeuble comprenant uniquement 3 appartements. Il contient un salon, deux chambres, un séjour, ",
+      "description": "Auto Neuf\nImmo Neuf\nCrédit Immobilier\nCrédit Conso\nBoutiques\nMagazine\nSe Connecter\nPublier une annonce\nالعربية\nAccueil\nTout le Maroc\nMarrakech\nAmerchich\nAvito Immobilier\nVentes Immobilières\nAppartements\nAppartement à vendre 100m² Amerchich\n\n1/7\n\nPartager\nFinancez votre bien\n\nÀ partir de\n\n5558 DH / mois\n\nSimuler\nAppartement à vendre 100m² Amerchich\nAmerchich, Marrakech\nil y a 15 heures\n116 vues (dernier 7 jours)\n\n1 000 000 DH\n\nMarrakani Immobilier\n\nVoir la boutique\nContacter le Vendeur\nRéf de l'annonce : #57673555\nSignaler un abus\nIl ne faut jamais envoyer de l’argent à l’avance au vendeur par virement bancaire ou à travers une agence de transfert d’argent lors de l’achat des biens disponibles sur le site.\nCategorie\nAppartements, à vendre\n2\nChambres\n1\nSalle de bain\n100\nSurface totale\n1\nÉtage\nBon état\nCondition\nImmédiate\nDisponibilité\nVoir plus\nDescription\nAppartement de 100m² à vendre dans un immeuble comprenant uniquement 3 appartements. Il contient un salon, deux chambres, un séjour, ",
       "contact_phone": "0658179972",
       "contact_name": "Boutiques",
       "contact_email": "",
@@ -529,43 +522,7 @@
         "https://content.avito.ma/classifieds/images/10146816079?t=images",
         "https://content.avito.ma/classifieds/images/10146816073?t=images"
       ],
-      "scraped_at": "2026-04-01T10:44:36.803823"
-    },
-    {
-      "id": "730ba702e875",
-      "title": "Résidence touristique fermée",
-      "source": "Avito",
-      "url": "https://www.avito.ma/fr/route_d_ourika/appartements/R%C3%A9sidence_touristique_ferm%C3%A9e_57704654.htm",
-      "price_mad": 1900000,
-      "price_eur": 175925,
-      "area_sqm": 100,
-      "rooms": null,
-      "bedrooms": 2,
-      "bathrooms": 2,
-      "floor": "1. Etage",
-      "neighborhood": "Route D Ourika",
-      "city": "Marrakech",
-      "property_type": "Apartment",
-      "price_per_sqm_mad": 19000,
-      "has_terrace": null,
-      "has_pool": true,
-      "has_parking": null,
-      "has_elevator": null,
-      "is_ground_floor": null,
-      "is_riad": null,
-      "is_new_build": true,
-      "ownership_type": "Unbekannt",
-      "condition": "Neu",
-      "description": "Auto Neuf\nImmo Neuf\nCrédit Immobilier\nCrédit Conso\nBoutiques\nMagazine\nSe Connecter\nPublier une annonce\nالعربية\nAccueil\nTout le Maroc\nMarrakech\nRoute d'Ourika\nAvito Immobilier\nVentes Immobilières\nAppartements\nRésidence touristique fermée\nPartager\nFinancez votre bien\n\nÀ partir de\n\n10560 DH / mois\n\nSimuler\nRésidence touristique fermée\nRoute d'Ourika, Marrakech\nil y a 15 heures\n9 vues (dernier 7 jours)\n\n1 900 000 DH\n\nles transactions de marrakech\n\nContacter le Vendeur\nRéf de l'annonce : #57704654\nSignaler un abus\nIl ne faut jamais envoyer de l’argent à l’avance au vendeur par virement bancaire ou à travers une agence de transfert d’argent lors de l’achat des biens disponibles sur le site.\nCategorie\nAppartements, à vendre\n2\nChambres\n2\nSalle de bain\n100\nSurface totale\n1\nÉtage\n1\nSalons\nHaut standing\nStanding\nVoir plus\nDescription\nAppartement au 1er étage dans une résidence touristique fermée avec golf et piscine\nCalculateur du prêt\nPrix du bien\nDH\nApport personnel\nDH\nDurée du prêt\n25 ans\n10 5",
-      "contact_phone": "0780290938",
-      "contact_name": "Boutiques",
-      "contact_email": "",
-      "contact_whatsapp": "+212780290938",
-      "image": "https://content.avito.ma/classifieds/images/10147082379?t=images",
-      "images": [
-        "https://content.avito.ma/classifieds/images/10147082379?t=images"
-      ],
-      "scraped_at": "2026-04-01T10:44:44.017516"
+      "scraped_at": "2026-04-02T10:21:29.848479"
     },
     {
       "id": "8d0173879dcb",
@@ -592,7 +549,7 @@
       "is_new_build": true,
       "ownership_type": "Unbekannt",
       "condition": "Neu",
-      "description": "Auto Neuf\nImmo Neuf\nCrédit Immobilier\nCrédit Conso\nBoutiques\nMagazine\nSe Connecter\nPublier une annonce\nالعربية\nAccueil\nTout le Maroc\nMarrakech\nLes Portes de Marrakech\nAvito Immobilier\nVentes Immobilières\nAppartements\nAppartement Meublée Doha les portes de Marrakech\n\n1/9\n\nPartager\nFinancez votre bien\n\nÀ partir de\n\n1945 DH / mois\n\nSimuler\nAppartement Meublée Doha les portes de Marrakech\nLes Portes de Marrakech, Marrakech\nil y a 16 heures\n151 vues (dernier 7 jours)\n\n350 000 DH\n\nImmoscout24\n\nVoir la boutique\nContacter le Vendeur\nRéf de l'annonce : #57448233\nSignaler un abus\nIl ne faut jamais envoyer de l’argent à l’avance au vendeur par virement bancaire ou à travers une agence de transfert d’argent lors de l’achat des biens disponibles sur le site.\nCategorie\nAppartements, à vendre\n2\nChambres\n1\nSalle de bain\n56\nSurface totale\n1\nÉtage\nBon état\nCondition\nImmédiate\nDisponibilité\nVoir plus\nDescription\nSalam on propose un joli appartement bien meublé et qui fait deux chambres salon abdouha les ",
+      "description": "Auto Neuf\nImmo Neuf\nCrédit Immobilier\nCrédit Conso\nBoutiques\nMagazine\nSe Connecter\nPublier une annonce\nالعربية\nAccueil\nTout le Maroc\nMarrakech\nLes Portes de Marrakech\nAvito Immobilier\nVentes Immobilières\nAppartements\nAppartement Meublée Doha les portes de Marrakech\n\n1/9\n\nPartager\nFinancez votre bien\n\nÀ partir de\n\n1945 DH / mois\n\nSimuler\nAppartement Meublée Doha les portes de Marrakech\nLes Portes de Marrakech, Marrakech\nil y a 15 heures\n177 vues (dernier 7 jours)\n\n350 000 DH\n\nImmoscout24\n\nVoir la boutique\nContacter le Vendeur\nRéf de l'annonce : #57448233\nSignaler un abus\nIl ne faut jamais envoyer de l’argent à l’avance au vendeur par virement bancaire ou à travers une agence de transfert d’argent lors de l’achat des biens disponibles sur le site.\nCategorie\nAppartements, à vendre\n2\nChambres\n1\nSalle de bain\n56\nSurface totale\n1\nÉtage\nBon état\nCondition\nImmédiate\nDisponibilité\nVoir plus\nDescription\nSalam on propose un joli appartement bien meublé et qui fait deux chambres salon abdouha les ",
       "contact_phone": "0662431377",
       "contact_name": "Boutiques",
       "contact_email": "",
@@ -602,83 +559,44 @@
         "https://content.avito.ma/classifieds/images/10144412038?t=images",
         "https://content.avito.ma/classifieds/images/10144412035?t=images"
       ],
-      "scraped_at": "2026-04-01T10:44:51.275049"
+      "scraped_at": "2026-04-02T10:21:43.836871"
     },
     {
-      "id": "2c3c6930501f",
-      "title": "Appartement à vendre",
+      "id": "e219ece14615",
+      "title": "Rez de jardin à vendre 107 m² vue sur piscine",
       "source": "Avito",
-      "url": "https://www.avito.ma/fr/autre_secteur/appartements/Appartement_%C3%A0_vendre_57704311.htm",
-      "price_mad": null,
-      "price_eur": null,
-      "area_sqm": 53,
+      "url": "https://www.avito.ma/fr/route_de_casablanca/appartements/Rez_de_jardin_%C3%A0_vendre_107_m%C2%B2_vue_sur_piscine_57648716.htm",
+      "price_mad": 1900000,
+      "price_eur": 175925,
+      "area_sqm": 107,
       "rooms": null,
       "bedrooms": 2,
       "bathrooms": 2,
-      "floor": "2. Etage",
-      "neighborhood": "Autre Secteur",
+      "floor": null,
+      "neighborhood": "Route De Casablanca",
       "city": "Marrakech",
       "property_type": "Apartment",
-      "price_per_sqm_mad": null,
-      "has_terrace": null,
-      "has_pool": null,
-      "has_parking": null,
-      "has_elevator": null,
-      "is_ground_floor": null,
-      "is_riad": null,
-      "is_new_build": true,
-      "ownership_type": "Unbekannt",
-      "condition": "Neu",
-      "description": "Auto Neuf\nImmo Neuf\nCrédit Immobilier\nCrédit Conso\nBoutiques\nMagazine\nSe Connecter\nPublier une annonce\nالعربية\nAccueil\nTout le Maroc\nMarrakech\nAutre secteur\nAvito Immobilier\nVentes Immobilières\nAppartements\nAppartement à vendre\n\n1/2\n\nPartager\nFinancez votre bien\nSimuler\nAppartement à vendre\nAutre secteur, Marrakech\nil y a 17 heures\n10 vues (dernier 7 jours)\n\nامين الرباط\n\nDemander le prix\nRéf de l'annonce : #57704311\nSignaler un abus\nIl ne faut jamais envoyer de l’argent à l’avance au vendeur par virement bancaire ou à travers une agence de transfert d’argent lors de l’achat des biens disponibles sur le site.\nCategorie\nAppartements, à vendre\n2\nChambres\n2\nSalle de bain\n53\nSurface totale\n2\nÉtage\nNeuf\nCondition\n100\nFrais de syndic / mois\nVoir plus\nDescription\n31/03 à 14:0 Appartement 2 chambres, cuisine américaine meublée 1er étage, salma 3. Résidence fermée\n31/03 à 14:08 59m² prix 600.000 dh\nCalculateur du prêt\nPrix du bien\nDH\nApport personnel\nDH\nDurée du prêt\n25 ans\n0 DH\n\nPar mois\n\nObten",
-      "contact_phone": "0636375415",
-      "contact_name": "Boutiques",
-      "contact_email": "",
-      "contact_whatsapp": "+212636375415",
-      "image": "https://content.avito.ma/classifieds/images/10147080002?t=images",
-      "images": [
-        "https://content.avito.ma/classifieds/images/10147080002?t=images",
-        "https://content.avito.ma/classifieds/images/10147080001?t=images",
-        "https://firebasestorage.googleapis.com/v0/b/landing-gen-dev-25ef8.appspot.com/o/1774539036584-291-avito%20expo%20fr-200x200.jpg?alt=media&token=712e29f6-acaf-4f3d-ad89-f22d249f2876"
-      ],
-      "scraped_at": "2026-04-01T10:45:12.126067"
-    },
-    {
-      "id": "136cf24edc92",
-      "title": "Appartement à vendre",
-      "source": "Avito",
-      "url": "https://www.avito.ma/fr/annakhil/appartements/Appartement_%C3%A0_vendre_57704291.htm",
-      "price_mad": null,
-      "price_eur": null,
-      "area_sqm": 108,
-      "rooms": null,
-      "bedrooms": 2,
-      "bathrooms": 2,
-      "floor": "1. Etage",
-      "neighborhood": "Annakhil",
-      "city": "Marrakech",
-      "property_type": "Apartment",
-      "price_per_sqm_mad": null,
+      "price_per_sqm_mad": 17757,
       "has_terrace": true,
-      "has_pool": null,
+      "has_pool": true,
       "has_parking": null,
-      "has_elevator": null,
+      "has_elevator": true,
       "is_ground_floor": null,
       "is_riad": null,
       "is_new_build": true,
       "ownership_type": "Unbekannt",
       "condition": "Neu",
-      "description": "Auto Neuf\nImmo Neuf\nCrédit Immobilier\nCrédit Conso\nBoutiques\nMagazine\nSe Connecter\nPublier une annonce\nالعربية\nAccueil\nTout le Maroc\nMarrakech\nAnnakhil\nAvito Immobilier\nVentes Immobilières\nAppartements\nAppartement à vendre\n\n1/3\n\nPartager\nFinancez votre bien\nSimuler\nAppartement à vendre\nAnnakhil, Marrakech\nil y a 17 heures\n10 vues (dernier 7 jours)\n\nامين الرباط\n\nDemander le prix\nRéf de l'annonce : #57704291\nSignaler un abus\nIl ne faut jamais envoyer de l’argent à l’avance au vendeur par virement bancaire ou à travers une agence de transfert d’argent lors de l’achat des biens disponibles sur le site.\nCategorie\nAppartements, à vendre\n2\nChambres\n2\nSalle de bain\n108\nSurface totale\n1\nÉtage\nNeuf\nCondition\n3\nFrais de syndic / mois\nVoir plus\nDescription\nMarrakech golf city prestigia jade, 3 chambres 2 salles de bain, 2ème étage, meublé tableaux non inclus.\nÉquipements\nBalcon\nCalculateur du prêt\nPrix du bien\nDH\nApport personnel\nDH\nDurée du prêt\n25 ans\n0 DH\n\nPar mois\n\nObtenir votre préaccord\n\nCet",
-      "contact_phone": "0636375415",
+      "description": "Auto Neuf\nImmo Neuf\nCrédit Immobilier\nCrédit Conso\nBoutiques\nMagazine\nSe Connecter\nPublier une annonce\nالعربية\nAccueil\nTout le Maroc\nMarrakech\nRoute de Casablanca\nAvito Immobilier\nVentes Immobilières\nAppartements\nRez de jardin à vendre 107 m² vue sur piscine\n\n1/6\n\nPartager\nFinancez votre bien\n\nÀ partir de\n\n10560 DH / mois\n\nSimuler\nRez de jardin à vendre 107 m² vue sur piscine\nRoute de Casablanca, Marrakech\nil y a 16 heures\n123 vues (dernier 7 jours)\n\n1 900 000 DH\n\nDARNA MARKET\n\nVoir la boutique\nContacter le Vendeur\nRéf de l'annonce : #57648716\nSignaler un abus\nIl ne faut jamais envoyer de l’argent à l’avance au vendeur par virement bancaire ou à travers une agence de transfert d’argent lors de l’achat des biens disponibles sur le site.\nCategorie\nAppartements, à vendre\n2\nChambres\n2\nSalle de bain\n107\nSurface totale\n0\nÉtage\nBon état\nCondition\nImmédiate\nDisponibilité\nVoir plus\nDescription\nRez de jardin à vendre 107 m² vue sur piscine\nÉquipements\nAscenseur\nBalcon\nChauffage\nClimatisation\nCon",
+      "contact_phone": "0774776167",
       "contact_name": "Boutiques",
       "contact_email": "",
-      "contact_whatsapp": "+212636375415",
-      "image": "https://content.avito.ma/classifieds/images/10147079917?t=images",
+      "contact_whatsapp": "+212774776167",
+      "image": "https://content.avito.ma/stores/9f/9feba36f-8f27-4a7c-a751-79b3b0b8f0b2.jpg",
       "images": [
-        "https://content.avito.ma/classifieds/images/10147079917?t=images",
-        "https://content.avito.ma/classifieds/images/10147079920?t=images",
-        "https://firebasestorage.googleapis.com/v0/b/landing-gen-dev-25ef8.appspot.com/o/1774539036584-291-avito%20expo%20fr-200x200.jpg?alt=media&token=712e29f6-acaf-4f3d-ad89-f22d249f2876"
+        "https://content.avito.ma/classifieds/images/10146559274?t=images",
+        "https://content.avito.ma/classifieds/images/10146559271?t=images"
       ],
-      "scraped_at": "2026-04-01T10:45:19.624687"
+      "scraped_at": "2026-04-02T10:21:55.786998"
     },
     {
       "id": "609ca916ede9",
@@ -705,7 +623,7 @@
       "is_new_build": true,
       "ownership_type": "Unbekannt",
       "condition": "Neu",
-      "description": "Auto Neuf\nImmo Neuf\nCrédit Immobilier\nCrédit Conso\nBoutiques\nMagazine\nSe Connecter\nPublier une annonce\nالعربية\nAccueil\nTout le Maroc\nMarrakech\nHay Charaf\nAvito Immobilier\nVentes Immobilières\nAppartements\nExcellent appartement meublé à vendre dans le quartier de Cherrat, près de Marjane\n\n1/9\n\nPartager\nFinancez votre bien\n\nÀ partir de\n\n5836 DH / mois\n\nSimuler\nExcellent appartement meublé à vendre dans le quartier de Cherrat, près de Marjane\nHay Charaf, Marrakech\nil y a 17 heures\n77 vues (dernier 7 jours)\n\n1 050 000 DH\n\nBERRADA IMMO\n\nVoir la boutique\nContacter le Vendeur\nRéf de l'annonce : #55171784\nSignaler un abus\nIl ne faut jamais envoyer de l’argent à l’avance au vendeur par virement bancaire ou à travers une agence de transfert d’argent lors de l’achat des biens disponibles sur le site.\nCategorie\nAppartements, à vendre\n2\nChambres\n2\nSalle de bain\n105\nSurface totale\n0\nÉtage\nBon état\nCondition\nImmédiate\nDisponibilité\nVoir plus\nDescription\nExcellent appartement meublé à vendre dans le qu",
+      "description": "Auto Neuf\nImmo Neuf\nCrédit Immobilier\nCrédit Conso\nBoutiques\nMagazine\nSe Connecter\nPublier une annonce\nالعربية\nAccueil\nTout le Maroc\nMarrakech\nHay Charaf\nAvito Immobilier\nVentes Immobilières\nAppartements\nExcellent appartement meublé à vendre dans le quartier de Cherrat, près de Marjane\n\n1/9\n\nPartager\nFinancez votre bien\n\nÀ partir de\n\n5836 DH / mois\n\nSimuler\nExcellent appartement meublé à vendre dans le quartier de Cherrat, près de Marjane\nHay Charaf, Marrakech\nil y a 16 heures\n98 vues (dernier 7 jours)\n\n1 050 000 DH\n\nBERRADA IMMO\n\nVoir la boutique\nContacter le Vendeur\nRéf de l'annonce : #55171784\nSignaler un abus\nIl ne faut jamais envoyer de l’argent à l’avance au vendeur par virement bancaire ou à travers une agence de transfert d’argent lors de l’achat des biens disponibles sur le site.\nCategorie\nAppartements, à vendre\n2\nChambres\n2\nSalle de bain\n105\nSurface totale\n0\nÉtage\nBon état\nCondition\nImmédiate\nDisponibilité\nVoir plus\nDescription\nExcellent appartement meublé à vendre dans le qu",
       "contact_phone": "0653851070",
       "contact_name": "Boutiques",
       "contact_email": "",
@@ -713,10 +631,46 @@
       "image": "https://content.avito.ma/stores/ad/adcc0c72-50ee-4310-9bb1-552763bc2bca.jpg",
       "images": [
         "https://content.avito.ma/classifieds/images/10146664432?t=images",
-        "https://content.avito.ma/classifieds/images/10146664440?t=images",
-        "https://firebasestorage.googleapis.com/v0/b/landing-gen-dev-25ef8.appspot.com/o/1774539036584-291-avito%20expo%20fr-200x200.jpg?alt=media&token=712e29f6-acaf-4f3d-ad89-f22d249f2876"
+        "https://content.avito.ma/classifieds/images/10146664440?t=images"
       ],
-      "scraped_at": "2026-04-01T10:45:25.539725"
+      "scraped_at": "2026-04-02T10:22:01.329891"
+    },
+    {
+      "id": "62b57f349683",
+      "title": "Appartements économiques à vendre à Marrakech",
+      "source": "Avito",
+      "url": "https://www.avito.ma/fr/m_hamid/appartements/Appartements_%C3%A9conomiques_%C3%A0_vendre_%C3%A0_Marrakech_57207961.htm",
+      "price_mad": 1400000,
+      "price_eur": 129629,
+      "area_sqm": 56,
+      "rooms": null,
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "floor": "1. Etage",
+      "neighborhood": "M'Hamid",
+      "city": "Marrakech",
+      "property_type": "Apartment",
+      "price_per_sqm_mad": 25000,
+      "has_terrace": null,
+      "has_pool": null,
+      "has_parking": null,
+      "has_elevator": null,
+      "is_ground_floor": null,
+      "is_riad": null,
+      "is_new_build": true,
+      "ownership_type": "Unbekannt",
+      "condition": "Neu",
+      "description": "Auto Neuf\nImmo Neuf\nCrédit Immobilier\nCrédit Conso\nBoutiques\nMagazine\nSe Connecter\nPublier une annonce\nالعربية\nAccueil\nTout le Maroc\nMarrakech\nM'Hamid\nAvito Immobilier\nVentes Immobilières\nAppartements\nAppartements économiques à vendre à Marrakech\n\n1/7\n\nPartager\nFinancez votre bien\n\nÀ partir de\n\n2223 DH / mois\n\nSimuler\nAppartements économiques à vendre à Marrakech\nM'Hamid, Marrakech\nil y a 21 heures\n556 vues (dernier 7 jours)\n\n400 000 DH\n\nDamane immo\n\nVoir la boutique\nContacter le Vendeur\nRéf de l'annonce : #57207961\nSignaler un abus\nIl ne faut jamais envoyer de l’argent à l’avance au vendeur par virement bancaire ou à travers une agence de transfert d’argent lors de l’achat des biens disponibles sur le site.\nCategorie\nAppartements, à vendre\n2\nChambres\n1\nSalle de bain\n56\nSurface totale\n1\nÉtage\nNeuf\nCondition\n0\nSalons\nVoir plus\nDescription\nLe projet BASSATINE, situé à Marrakech, vous propose de neufs appartements fonctionnels à un prix très attractif, parfaits pour un premier achat ou un",
+      "contact_phone": "0663743641",
+      "contact_name": "Boutiques",
+      "contact_email": "",
+      "contact_whatsapp": "+212663743641",
+      "image": "https://content.avito.ma/stores/3c/3c9a23b2-cfbc-430b-9a73-4e79eb1cd9ea.jpg",
+      "images": [
+        "https://content.avito.ma/classifieds/images/10142036474?t=images",
+        "https://content.avito.ma/classifieds/images/10142036470?t=images"
+      ],
+      "scraped_at": "2026-04-02T10:22:13.987858"
     },
     {
       "id": "5384f11a45f5",
@@ -743,7 +697,7 @@
       "is_new_build": true,
       "ownership_type": "Unbekannt",
       "condition": "Neu",
-      "description": "Auto Neuf\nImmo Neuf\nCrédit Immobilier\nCrédit Conso\nBoutiques\nMagazine\nSe Connecter\nPublier une annonce\nالعربية\nAccueil\nTout le Maroc\nMarrakech\nHay Charaf\nAvito Immobilier\nVentes Immobilières\nAppartements\nDuplex haut de gamme😍 à vendre prêt à habiter\n\n1/11\n\nPartager\nFinancez votre bien\n\nÀ partir de\n\n6392 DH / mois\n\nSimuler\nDuplex haut de gamme😍 à vendre prêt à habiter\nHay Charaf, Marrakech\nil y a 17 heures\n101 vues (dernier 7 jours)\n\n1 150 000 DH\n\nImmobilierKech عقارات المغرب مراكش\n\nVoir la boutique\nContacter le Vendeur\nRéf de l'annonce : #57522555\nSignaler un abus\nIl ne faut jamais envoyer de l’argent à l’avance au vendeur par virement bancaire ou à travers une agence de transfert d’argent lors de l’achat des biens disponibles sur le site.\nCategorie\nAppartements, à vendre\n4\nChambres\n2\nSalle de bain\n150\nSurface totale\n0\nÉtage\nBon état\nCondition\nImmédiate\nDisponibilité\nVoir plus\nDescription\n⛳ Emplacement : Quartier Asserf, Marrakech\n🏩 Superficie : 150m² (R3)\n🛏️ Composé de 4 chambres, sal",
+      "description": "Auto Neuf\nImmo Neuf\nCrédit Immobilier\nCrédit Conso\nBoutiques\nMagazine\nSe Connecter\nPublier une annonce\nالعربية\nAccueil\nTout le Maroc\nMarrakech\nHay Charaf\nAvito Immobilier\nVentes Immobilières\nAppartements\nDuplex haut de gamme😍 à vendre prêt à habiter\n\n1/11\n\nPartager\nFinancez votre bien\n\nÀ partir de\n\n6392 DH / mois\n\nSimuler\nDuplex haut de gamme😍 à vendre prêt à habiter\nHay Charaf, Marrakech\nil y a 17 heures\n142 vues (dernier 7 jours)\n\n1 150 000 DH\n\nImmobilierKech عقارات المغرب مراكش\n\nVoir la boutique\nContacter le Vendeur\nRéf de l'annonce : #57522555\nSignaler un abus\nIl ne faut jamais envoyer de l’argent à l’avance au vendeur par virement bancaire ou à travers une agence de transfert d’argent lors de l’achat des biens disponibles sur le site.\nCategorie\nAppartements, à vendre\n4\nChambres\n2\nSalle de bain\n150\nSurface totale\n0\nÉtage\nBon état\nCondition\nImmédiate\nDisponibilité\nVoir plus\nDescription\n⛳ Emplacement : Quartier Asserf, Marrakech\n🏩 Superficie : 150m² (R3)\n🛏️ Composé de 4 chambres, sal",
       "contact_phone": "0660634558",
       "contact_name": "Boutiques",
       "contact_email": "",
@@ -751,10 +705,9 @@
       "image": "https://content.avito.ma/stores/4f/4f75cf6f-07d2-4e2c-9e58-defd38216622.jpg",
       "images": [
         "https://content.avito.ma/classifieds/images/10145248229?t=images",
-        "https://content.avito.ma/classifieds/images/10145248233?t=images",
-        "https://firebasestorage.googleapis.com/v0/b/landing-gen-dev-25ef8.appspot.com/o/1774539036584-291-avito%20expo%20fr-200x200.jpg?alt=media&token=712e29f6-acaf-4f3d-ad89-f22d249f2876"
+        "https://content.avito.ma/classifieds/images/10145248233?t=images"
       ],
-      "scraped_at": "2026-04-01T10:45:44.153848"
+      "scraped_at": "2026-04-02T10:22:20.668569"
     },
     {
       "id": "266607d1d852",
@@ -781,7 +734,7 @@
       "is_new_build": true,
       "ownership_type": "Unbekannt",
       "condition": "Neu",
-      "description": "Auto Neuf\nImmo Neuf\nCrédit Immobilier\nCrédit Conso\nBoutiques\nMagazine\nSe Connecter\nPublier une annonce\nالعربية\nAccueil\nTout le Maroc\nMarrakech\nRoute de Casablanca\nAvito Immobilier\nVentes Immobilières\nAppartements\nHERMÈS 25 – 2 Chambres, Piscine & Salle Sport\n\n1/2\n\nPartager\nFinancez votre bien\n\nÀ partir de\n\n5113 DH / mois\n\nSimuler\nHERMÈS 25 – 2 Chambres, Piscine & Salle Sport\nRoute de Casablanca, Marrakech\nil y a 17 heures\n30 vues (dernier 7 jours)\n\n920 000 DH\n\nLe 25 Immobilier Gare\n\nVoir la boutique\nContacter le Vendeur\nRéf de l'annonce : #57302855\nSignaler un abus\nIl ne faut jamais envoyer de l’argent à l’avance au vendeur par virement bancaire ou à travers une agence de transfert d’argent lors de l’achat des biens disponibles sur le site.\nCategorie\nAppartements, à vendre\n2\nChambres\n1\nSalle de bain\n1\nÉtage\nNeuf\nCondition\n+4 mois\nDisponibilité\n1\nSalons\nVoir plus\nDescription\nHERMÈS 25 est un programme immobilier Haut Standing en cours de construction, pensé pour offrir un cadre de vie m",
+      "description": "Auto Neuf\nImmo Neuf\nCrédit Immobilier\nCrédit Conso\nBoutiques\nMagazine\nSe Connecter\nPublier une annonce\nالعربية\nAccueil\nTout le Maroc\nMarrakech\nRoute de Casablanca\nAvito Immobilier\nVentes Immobilières\nAppartements\nHERMÈS 25 – 2 Chambres, Piscine & Salle Sport\n\n1/2\n\nPartager\nFinancez votre bien\n\nÀ partir de\n\n5113 DH / mois\n\nSimuler\nHERMÈS 25 – 2 Chambres, Piscine & Salle Sport\nRoute de Casablanca, Marrakech\nil y a 17 heures\n38 vues (dernier 7 jours)\n\n920 000 DH\n\nLe 25 Immobilier Gare\n\nVoir la boutique\nContacter le Vendeur\nRéf de l'annonce : #57302855\nSignaler un abus\nIl ne faut jamais envoyer de l’argent à l’avance au vendeur par virement bancaire ou à travers une agence de transfert d’argent lors de l’achat des biens disponibles sur le site.\nCategorie\nAppartements, à vendre\n2\nChambres\n1\nSalle de bain\n1\nÉtage\nNeuf\nCondition\n+4 mois\nDisponibilité\n1\nSalons\nVoir plus\nDescription\nHERMÈS 25 est un programme immobilier Haut Standing en cours de construction, pensé pour offrir un cadre de vie m",
       "contact_phone": "0701251505",
       "contact_name": "Boutiques",
       "contact_email": "",
@@ -789,48 +742,46 @@
       "image": "https://content.avito.ma/stores/68/68676e5f-7444-4ab1-ab43-f6ae7f86a335.jpg",
       "images": [
         "https://content.avito.ma/classifieds/images/10143020494?t=images",
-        "https://content.avito.ma/classifieds/images/10143019731?t=images",
-        "https://firebasestorage.googleapis.com/v0/b/landing-gen-dev-25ef8.appspot.com/o/1774539036584-291-avito%20expo%20fr-200x200.jpg?alt=media&token=712e29f6-acaf-4f3d-ad89-f22d249f2876"
+        "https://content.avito.ma/classifieds/images/10143019731?t=images"
       ],
-      "scraped_at": "2026-04-01T10:46:32.262970"
+      "scraped_at": "2026-04-02T10:22:41.129392"
     },
     {
-      "id": "ce58565bca88",
-      "title": "Résidence Mabrouka avec 3 piscines T3",
+      "id": "b161c8a49ed2",
+      "title": "Appartement À Vendre Coralia Les Orangers",
       "source": "Avito",
-      "url": "https://www.avito.ma/fr/mabrouka/appartements/R%C3%A9sidence_Mabrouka_avec_3_piscines_T3_57703833.htm",
-      "price_mad": 1250000,
-      "price_eur": 115740,
-      "area_sqm": 70,
+      "url": "https://www.avito.ma/fr/agdal/appartements/Appartement_%C3%80_Vendre_Coralia_Les_Orangers_57405641.htm",
+      "price_mad": 1950000,
+      "price_eur": 180555,
+      "area_sqm": 92,
       "rooms": null,
       "bedrooms": 2,
       "bathrooms": 2,
-      "floor": "5. Etage",
-      "neighborhood": "Mabrouka",
+      "floor": "2. Etage",
+      "neighborhood": "Agdal",
       "city": "Marrakech",
       "property_type": "Apartment",
-      "price_per_sqm_mad": 17857,
+      "price_per_sqm_mad": 21195,
       "has_terrace": true,
       "has_pool": true,
-      "has_parking": true,
-      "has_elevator": true,
+      "has_parking": null,
+      "has_elevator": null,
       "is_ground_floor": null,
       "is_riad": null,
       "is_new_build": true,
       "ownership_type": "Unbekannt",
       "condition": "Neu",
-      "description": "Auto Neuf\nImmo Neuf\nCrédit Immobilier\nCrédit Conso\nBoutiques\nMagazine\nSe Connecter\nPublier une annonce\nالعربية\nAccueil\nTout le Maroc\nMarrakech\nMabrouka\nAvito Immobilier\nVentes Immobilières\nAppartements\nRésidence Mabrouka avec 3 piscines T3\n\n1/7\n\nPartager\nFinancez votre bien\n\nÀ partir de\n\n6947 DH / mois\n\nSimuler\nRésidence Mabrouka avec 3 piscines T3\nMabrouka, Marrakech\nil y a 18 heures\n18 vues (dernier 7 jours)\n\n1 250 000 DH\n\nSalima Home\n\nContacter le Vendeur\nRéf de l'annonce : #57703833\nSignaler un abus\nIl ne faut jamais envoyer de l’argent à l’avance au vendeur par virement bancaire ou à travers une agence de transfert d’argent lors de l’achat des biens disponibles sur le site.\nCategorie\nAppartements, à vendre\n2\nChambres\n2\nSalle de bain\n5\nÉtage\nBon état\nCondition\nImmédiate\nDisponibilité\n1\nSalons\nVoir plus\nDescription\nSitué dans une résidence récente de 2018, parfaitement entretenue et sécurisée, découvrez ce superbe appartement de 70 m², niché au 5ᵉ et dernier étage avec ascenseur, un",
-      "contact_phone": "0659240528",
+      "description": "Auto Neuf\nImmo Neuf\nCrédit Immobilier\nCrédit Conso\nBoutiques\nMagazine\nSe Connecter\nPublier une annonce\nالعربية\nAccueil\nTout le Maroc\nMarrakech\nAgdal\nAvito Immobilier\nVentes Immobilières\nAppartements\nAppartement À Vendre Coralia Les Orangers\n\n1/8\n\nPartager\nFinancez votre bien\n\nÀ partir de\n\n10838 DH / mois\n\nSimuler\nAppartement À Vendre Coralia Les Orangers\nAgdal, Marrakech\nil y a 17 heures\n207 vues (dernier 7 jours)\n\n1 950 000 DH\n\nJalil Fennan\n\nContacter le Vendeur\nRéf de l'annonce : #57405641\nSignaler un abus\nIl ne faut jamais envoyer de l’argent à l’avance au vendeur par virement bancaire ou à travers une agence de transfert d’argent lors de l’achat des biens disponibles sur le site.\nCategorie\nAppartements, à vendre\n2\nChambres\n2\nSalle de bain\n92\nSurface totale\n2\nÉtage\nBon état\nCondition\nImmédiate\nDisponibilité\nVoir plus\nDescription\nVoici un appartement moderne et élégant situé au sein d’une résidence privée avec piscine, dans un emplacement stratégique et très prisé de Marrakech, à pro",
+      "contact_phone": "0641118727",
       "contact_name": "Boutiques",
       "contact_email": "",
-      "contact_whatsapp": "+212659240528",
-      "image": "https://content.avito.ma/classifieds/images/10147076425?t=images",
+      "contact_whatsapp": "+212641118727",
+      "image": "https://content.avito.ma/classifieds/images/10144004547?t=images",
       "images": [
-        "https://content.avito.ma/classifieds/images/10147076425?t=images",
-        "https://content.avito.ma/classifieds/images/10147076417?t=images",
-        "https://firebasestorage.googleapis.com/v0/b/landing-gen-dev-25ef8.appspot.com/o/1774539036584-291-avito%20expo%20fr-200x200.jpg?alt=media&token=712e29f6-acaf-4f3d-ad89-f22d249f2876"
+        "https://content.avito.ma/classifieds/images/10144004547?t=images",
+        "https://content.avito.ma/classifieds/images/10144004638?t=images"
       ],
-      "scraped_at": "2026-04-01T10:49:13.904140"
+      "scraped_at": "2026-04-02T10:23:24.700661"
     },
     {
       "id": "1d0ccf6fe0f4",
@@ -857,7 +808,7 @@
       "is_new_build": true,
       "ownership_type": "Unbekannt",
       "condition": "Neu",
-      "description": "Auto Neuf\nImmo Neuf\nCrédit Immobilier\nCrédit Conso\nBoutiques\nMagazine\nSe Connecter\nPublier une annonce\nالعربية\nAccueil\nTout le Maroc\nMarrakech\nDaoudiate\nAvito Immobilier\nVentes Immobilières\nAppartements\nAppartement 81 m2 a Daoudiate\n\n1/5\n\nPartager\nFinancez votre bien\n\nÀ partir de\n\n4502 DH / mois\n\nSimuler\nAppartement 81 m2 a Daoudiate\nDaoudiate, Marrakech\nil y a 18 heures\n72 vues (dernier 7 jours)\n\n810 000 DH\n\npromozin\n\nVoir la boutique\nContacter le Vendeur\nRéf de l'annonce : #46008282\nSignaler un abus\nIl ne faut jamais envoyer de l’argent à l’avance au vendeur par virement bancaire ou à travers une agence de transfert d’argent lors de l’achat des biens disponibles sur le site.\nCategorie\nAppartements, à vendre\n3\nChambres\n1\nSalle de bain\n81\nSurface totale\n1\nÉtage\nBon état\nCondition\n1\nSalons\nVoir plus\nDescription\nAppartement 81m2 au 1ere étage a Daoudiate comprenant : 2 chambres salon cuisine salle de bain et terrasse. ( 81milion)\nÉquipements\nTerrasse\nCalculateur du prêt\nPrix du bien\nDH\nA",
+      "description": "Auto Neuf\nImmo Neuf\nCrédit Immobilier\nCrédit Conso\nBoutiques\nMagazine\nSe Connecter\nPublier une annonce\nالعربية\nAccueil\nTout le Maroc\nMarrakech\nDaoudiate\nAvito Immobilier\nVentes Immobilières\nAppartements\nAppartement 81 m2 a Daoudiate\n\n1/5\n\nPartager\nFinancez votre bien\n\nÀ partir de\n\n4502 DH / mois\n\nSimuler\nAppartement 81 m2 a Daoudiate\nDaoudiate, Marrakech\nil y a 18 heures\n79 vues (dernier 7 jours)\n\n810 000 DH\n\npromozin\n\nVoir la boutique\nContacter le Vendeur\nRéf de l'annonce : #46008282\nSignaler un abus\nIl ne faut jamais envoyer de l’argent à l’avance au vendeur par virement bancaire ou à travers une agence de transfert d’argent lors de l’achat des biens disponibles sur le site.\nCategorie\nAppartements, à vendre\n3\nChambres\n1\nSalle de bain\n81\nSurface totale\n1\nÉtage\nBon état\nCondition\n1\nSalons\nVoir plus\nDescription\nAppartement 81m2 au 1ere étage a Daoudiate comprenant : 2 chambres salon cuisine salle de bain et terrasse. ( 81milion)\nÉquipements\nTerrasse\nContacter le vendeur\nCalculateur du p",
       "contact_phone": "0661242237",
       "contact_name": "Boutiques",
       "contact_email": "",
@@ -865,170 +816,46 @@
       "image": "https://content.avito.ma/stores/logo_430_vuy.jpg",
       "images": [
         "https://content.avito.ma/classifieds/images/10131333416?t=images",
-        "https://content.avito.ma/classifieds/images/10131333425?t=images",
-        "https://firebasestorage.googleapis.com/v0/b/landing-gen-dev-25ef8.appspot.com/o/1774539036584-291-avito%20expo%20fr-200x200.jpg?alt=media&token=712e29f6-acaf-4f3d-ad89-f22d249f2876"
+        "https://content.avito.ma/classifieds/images/10131333425?t=images"
       ],
-      "scraped_at": "2026-04-01T10:49:27.464467"
+      "scraped_at": "2026-04-02T10:25:00.819474"
     },
     {
-      "id": "55fe9bde66d4",
-      "title": "Spacieux appartement 3 chambres 95m²",
-      "source": "Mubawab",
-      "url": "https://www.mubawab.ma/fr/pa/8158301/spacieux-appartement-3-chambres-95m%C2%B2",
-      "price_mad": 1615000,
-      "price_eur": 149537,
-      "area_sqm": 95,
-      "rooms": 4,
-      "bedrooms": 3,
-      "bathrooms": 2,
-      "floor": null,
-      "neighborhood": "",
-      "city": "Marrakech",
-      "property_type": "Apartment",
-      "price_per_sqm_mad": 17000,
-      "has_terrace": true,
-      "has_pool": true,
-      "has_parking": true,
-      "has_elevator": true,
-      "is_ground_floor": null,
-      "is_riad": null,
-      "is_new_build": true,
-      "ownership_type": "Unbekannt",
-      "condition": "Neu",
-      "description": "Le 1er site immobilier du Maroc\nESTIMER VOTRE BIEN\nIMMOBILIER NEUF\nFR \n SE CONNECTER\nPUBLIER UNE ANNONCE\nImmobilier Maroc  Immobilier Marrakech  Appartements Marrakech  Guéliz\n\n 21\n1 615 000 DH\nFavori\n \nPartager\n \nCatalogue PDF\n \nVidéo\nM'avertir d'une baisse de prix!\n95 m²\n4 Pièces\n3 Chambres\n2 Salles de bains\nGuéliz à Marrakech\n1 615 000 DH\n95 m²\n4 Pièces\n3 Chambres\n2 Salles de bains\nContacter\n   \n\n2 de 21\n\nVidéo promotionnelle\nSpacieux appartement 3 chambres 95m²\n\nOffrez-vous un cadre de vie idéal avec ce bel appartement de 3 chambres situé au nouveau Guéliz, l’un des quartiers les plus recherchés de Marrakech. Grâce à sa belle distribution des espaces, il allie confort, luminosité et praticité pour répondre aux besoins d’une famille ou d’un investisseur.\n3 chambres spacieuses\nSalon convivial et lumineux\nCuisine fonctionnelle\nEmplacement stratégique à proximité des commerces, restaurants et services\nQue ce soit pour y vivre ou pour réaliser un placement locatif rentable, cet appartem",
-      "contact_phone": "",
-      "contact_name": "",
-      "contact_email": "",
-      "contact_whatsapp": "",
-      "image": "https://www.mubawab-media.com/ad/8/158/301F/m/Dup04En_80443625.avif",
-      "images": [
-        "https://www.mubawab-media.com/ad/8/158/301F/h/Dup04En_80443625.avif",
-        "https://www.mubawab-media.com/ad/8/158/301F/h/Apt01En_80443619.avif",
-        "https://www.mubawab-media.com/ad/8/158/301F/h/Apt02En_80443620.avif",
-        "https://www.mubawab-media.com/ad/8/158/301F/h/Apt03En_80443621.avif",
-        "https://www.mubawab-media.com/ad/8/158/301F/h/Dup01En_80443622.avif"
-      ],
-      "scraped_at": "2026-04-01T10:50:44.487839"
-    },
-    {
-      "id": "84ceca7ba549",
-      "title": "Spacieux appartement 3 chambres 110m²",
-      "source": "Mubawab",
-      "url": "https://www.mubawab.ma/fr/pa/8158285/spacieux-appartement-3-chambres-110m%C2%B2",
-      "price_mad": 1821600,
-      "price_eur": 168666,
-      "area_sqm": 110,
-      "rooms": 4,
-      "bedrooms": 3,
-      "bathrooms": 1,
-      "floor": null,
-      "neighborhood": "",
-      "city": "Marrakech",
-      "property_type": "Apartment",
-      "price_per_sqm_mad": 16560,
-      "has_terrace": true,
-      "has_pool": true,
-      "has_parking": true,
-      "has_elevator": true,
-      "is_ground_floor": null,
-      "is_riad": null,
-      "is_new_build": true,
-      "ownership_type": "Unbekannt",
-      "condition": "Neu",
-      "description": "Le 1er site immobilier du Maroc\nESTIMER VOTRE BIEN\nIMMOBILIER NEUF\nFR \n SE CONNECTER\nPUBLIER UNE ANNONCE\nImmobilier Maroc  Immobilier Marrakech  Appartements Marrakech  Guéliz\n\n 21\n1 821 600 DH\nFavori\n \nPartager\n \nCatalogue PDF\n \nVidéo\nM'avertir d'une baisse de prix!\n110 m²\n4 Pièces\n3 Chambres\n1 Salle de bain\nGuéliz à Marrakech\n1 821 600 DH\n110 m²\n4 Pièces\n3 Chambres\n1 Salle de bain\nContacter\n   \n\n2 de 21\n\nVidéo promotionnelle\nSpacieux appartement 3 chambres 110m²\n\nOffrez-vous un cadre de vie idéal avec ce bel appartement de 3 chambres situé au nouveau Guéliz, l’un des quartiers les plus recherchés de Marrakech. Grâce à sa belle distribution des espaces, il allie confort, luminosité et praticité pour répondre aux besoins d’une famille ou d’un investisseur.\n3 chambres spacieuses\nSalon convivial et lumineux\nCuisine fonctionnelle\nEmplacement stratégique à proximité des commerces, restaurants et services\nQue ce soit pour y vivre ou pour réaliser un placement locatif rentable, cet apparteme",
-      "contact_phone": "",
-      "contact_name": "",
-      "contact_email": "",
-      "contact_whatsapp": "",
-      "image": "https://www.mubawab-media.com/ad/8/158/285F/m/R01n_80473083.avif",
-      "images": [
-        "https://www.mubawab-media.com/ad/8/158/285F/h/R01n_80473083.avif",
-        "https://www.mubawab-media.com/ad/8/158/285F/h/r05%20%282%29_80473067.avif",
-        "https://www.mubawab-media.com/ad/8/158/285F/h/r06%20%281%29_80473068.avif",
-        "https://www.mubawab-media.com/ad/8/158/285F/h/r02%20%281%29_80473069.avif",
-        "https://www.mubawab-media.com/ad/8/158/285F/h/r01%20%281%29_80473070.avif"
-      ],
-      "scraped_at": "2026-04-01T10:51:21.699221"
-    },
-    {
-      "id": "fcbca770cc2c",
-      "title": "Vente d'un bel appartement à Route Casablanca. Surface de 69 m²",
-      "source": "Mubawab",
-      "url": "https://www.mubawab.ma/fr/pa/8293049/vente-d-un-bel-appartement-%C3%A0-route-casablanca-surface-de-69-m%C2%B2",
-      "price_mad": 1242000,
-      "price_eur": 114999,
-      "area_sqm": 69,
-      "rooms": 2,
+      "id": "09aa0f88aa64",
+      "title": "Appartement beaux volumes",
+      "source": "Avito",
+      "url": "https://www.avito.ma/fr/hay_izdihar/appartements/Appartement_beaux_volumes_57446796.htm",
+      "price_mad": 1250000,
+      "price_eur": 115740,
+      "area_sqm": 85,
+      "rooms": null,
       "bedrooms": 2,
-      "bathrooms": 1,
-      "floor": null,
-      "neighborhood": "Route Casablanca",
+      "bathrooms": 2,
+      "floor": "1. Etage",
+      "neighborhood": "Izdihar",
       "city": "Marrakech",
       "property_type": "Apartment",
-      "price_per_sqm_mad": 18000,
-      "has_terrace": null,
-      "has_pool": true,
-      "has_parking": true,
+      "price_per_sqm_mad": 14705,
+      "has_terrace": true,
+      "has_pool": null,
+      "has_parking": null,
       "has_elevator": true,
       "is_ground_floor": null,
       "is_riad": null,
       "is_new_build": true,
       "ownership_type": "Unbekannt",
       "condition": "Neu",
-      "description": "Le 1er site immobilier du Maroc\nESTIMER VOTRE BIEN\nIMMOBILIER NEUF\nFR \n SE CONNECTER\nPUBLIER UNE ANNONCE\nImmobilier Maroc  Immobilier Marrakech  Appartements Marrakech  Guéliz\n\n 25\n1 242 000 DH\nFavori\n \nPartager\nM'avertir d'une baisse de prix!\n69 m²\n2 Pièces\n2 Chambres\n1 Salle de bain\nGuéliz à Marrakech\n1 242 000 DH\n69 m²\n2 Pièces\n2 Chambres\n1 Salle de bain\nContacter\n \n\n2 de 25\n\nVente d'un bel appartement à Route Casablanca. Surface de 69 m²\n\nAchetez votre appartement. Prix 1 242 000 DH. 2 chambres, 1 salle de bains, superficie 69 m².\n\nCet appartement est en vente à Route Casablanca, Marrakech.\n\nCaractéristiques générales\n\nType de bien\n\nAppartement\n\nEtat\n\nProjet neuf\n\nStanding\n\nHaut standing\n\nÉtat\n\nEn cours de construction\n\nLivraison:\n\ndécembre 2026\n\nGarage\n\nAscenseur\n\nPiscine\n\nClimatisation\n\nSécurité\n\nDouble vitrage\n\nPorte blindée\n\nSamlalia à Marrakech \n Voir la carte \n\nÉcoles\n\nHôpitaux\n\nDisponibilité des logements\n\n810 000 DH\n\n1 chambre, 45 m²\nMarrakech\n\n2 680 000 DH\n\n3 chambres, 134",
-      "contact_phone": "",
-      "contact_name": "",
+      "description": "Auto Neuf\nImmo Neuf\nCrédit Immobilier\nCrédit Conso\nBoutiques\nMagazine\nSe Connecter\nPublier une annonce\nالعربية\nAccueil\nTout le Maroc\nMarrakech\nHay Izdihar\nAvito Immobilier\nVentes Immobilières\nAppartements\nAppartement beaux volumes\n\n1/6\n\nPartager\nFinancez votre bien\n\nÀ partir de\n\n6947 DH / mois\n\nSimuler\nAppartement beaux volumes\nHay Izdihar, Marrakech\nil y a 18 heures\n74 vues (dernier 7 jours)\n\n1 250 000 DH\n\nImmo Smart Advice\n\nVoir la boutique\nContacter le Vendeur\nRéf de l'annonce : #57446796\nSignaler un abus\nIl ne faut jamais envoyer de l’argent à l’avance au vendeur par virement bancaire ou à travers une agence de transfert d’argent lors de l’achat des biens disponibles sur le site.\nCategorie\nAppartements, à vendre\n2\nChambres\n2\nSalle de bain\n1\nÉtage\n1\nSalons\n85\nSurface habitable\nDescription\nNous proposons pour la vente un appartement traversant de 85m2.\nsitué au quartier résidentiel Izdihar, proche des commodités, au niveau du 1er étage d une résidence bien entretenue avec acces ascen",
+      "contact_phone": "0649623370",
+      "contact_name": "Boutiques",
       "contact_email": "",
-      "contact_whatsapp": "",
-      "image": "https://www.mubawab-media.com/ad/8/293/049F/h/IMG-20260124-WA0039_81854090_81854115.avif",
+      "contact_whatsapp": "+212649623370",
+      "image": "https://content.avito.ma/stores/b3/b3a54611-35d0-4722-9477-f4ae1e45bde4.jpg",
       "images": [
-        "https://www.mubawab-media.com/ad/8/293/049F/h/IMG-20260124-WA0039_81854090_81854115.avif",
-        "https://www.mubawab-media.com/ad/8/293/049F/h/IMG-20260124-WA0040_81854091_81854116.avif",
-        "https://www.mubawab-media.com/ad/8/293/049F/h/IMG-20260124-WA0041_81854092_81854117.avif",
-        "https://www.mubawab-media.com/ad/8/293/049F/h/IMG-20260124-WA0042_81854093_81854118.avif",
-        "https://www.mubawab-media.com/ad/8/293/049F/h/IMG-20260124-WA0043_81854094_81854119.avif"
+        "https://content.avito.ma/classifieds/images/10144398439?t=images",
+        "https://content.avito.ma/classifieds/images/10144398444?t=images"
       ],
-      "scraped_at": "2026-04-01T10:51:58.545395"
-    },
-    {
-      "id": "fb870189cd09",
-      "title": "Amelkis: Villa à vendre, 5 Ch, Piscine chauffée",
-      "source": "Mubawab",
-      "url": "https://www.mubawab.ma/fr/a/8302773/amelkis-villa-%C3%A0-vendre-5-ch-piscine-chauff%C3%A9e",
-      "price_mad": 1515000,
-      "price_eur": 140277,
-      "area_sqm": 550,
-      "rooms": 8,
-      "bedrooms": 5,
-      "bathrooms": 4,
-      "floor": null,
-      "neighborhood": "",
-      "city": "Marrakech",
-      "property_type": "Apartment",
-      "price_per_sqm_mad": 2754,
-      "has_terrace": true,
-      "has_pool": true,
-      "has_parking": null,
-      "has_elevator": null,
-      "is_ground_floor": null,
-      "is_riad": null,
-      "is_new_build": true,
-      "ownership_type": "Unbekannt",
-      "condition": "Neu",
-      "description": "Le 1er site immobilier du Maroc\nESTIMER VOTRE BIEN\nIMMOBILIER NEUF\nFR \n SE CONNECTER\nPUBLIER UNE ANNONCE\nImmobilier Maroc  Immobilier Marrakech  Appartements Marrakech  Amelkis\n\n 28\n1 250 000 EUR\nFavori\n \nPartager\nM'avertir d'une baisse de prix!\n550 m²\n18 Pièces\n5 Chambres\n4 Salles de bains\nAmelkis à Marrakech\n1 250 000 EUR\n550 m²\n18 Pièces\n5 Chambres\n4 Salles de bains\nContacter\n \n\n2 de 28\n\nAmelkis: Villa à vendre, 5 Ch, Piscine chauffée\n\nGolf Amelkis- Belle Villa à vendre , d'une superficie habitable de 550 m² environ , Terrain de 1 200 m² une jouissance privative de 800 m² de terrain, au sein du Resort golfique d'Amelkis.\n\nLa Villa est sur deux niveaux offrant une vue sur les montagnes, elle est composée de 3 Suites chacune avec sa sdb privative et dressing, 2 grandes Chambres avec une Sdb au milieu. d'un Salon, SAM, Cuisine entièrement équipée, Terrasses, Piscine privative chauffée , Jardin végétalisé et arboré. Terrain de pétanque.\n\nPrix de Vente: 1 250 000 Euros- HFA\nFrais d'agenc",
-      "contact_phone": "",
-      "contact_name": "",
-      "contact_email": "",
-      "contact_whatsapp": "",
-      "image": "https://www.mubawab-media.com/ad/8/302/773F/h/764609829_81961458.avif",
-      "images": [
-        "https://www.mubawab-media.com/ad/8/302/773F/h/764609829_81961458.avif",
-        "https://www.mubawab-media.com/ad/8/302/773F/h/764609718_81961459.avif",
-        "https://www.mubawab-media.com/ad/8/302/773F/h/764609747_81961460.avif",
-        "https://www.mubawab-media.com/ad/8/302/773F/h/8dc6bac7-f88c-4bc6-a639-3028f439676e_81961206.avif",
-        "https://www.mubawab-media.com/ad/8/302/773F/h/5f2c7d78-1381-490f-828f-1034c429a9aa_81961208.avif"
-      ],
-      "scraped_at": "2026-04-01T10:52:23.082024"
+      "scraped_at": "2026-04-02T10:25:18.763567"
     },
     {
       "id": "bc9223d6a488",
@@ -1068,26 +895,26 @@
         "https://www.mubawab-media.com/promotion/4/159F/pictures/h/009A5189-HDR_78762885.avif",
         "https://www.mubawab-media.com/promotion/4/159F/pictures/h/009A5117-HDR_78762886.avif"
       ],
-      "scraped_at": "2026-04-01T10:52:53.659482"
+      "scraped_at": "2026-04-02T10:28:47.031725"
     },
     {
-      "id": "d79a07189ae9",
-      "title": "Vend appartement à El Hara. 1 belle chambre",
+      "id": "fb870189cd09",
+      "title": "Amelkis: Villa à vendre, 5 Ch, Piscine chauffée",
       "source": "Mubawab",
-      "url": "https://www.mubawab.ma/fr/pa/8109860/vend-appartement-%C3%A0-el-hara-1-belle-chambre",
-      "price_mad": 1975000,
-      "price_eur": 182870,
-      "area_sqm": 57,
-      "rooms": null,
-      "bedrooms": 1,
-      "bathrooms": 1,
+      "url": "https://www.mubawab.ma/fr/a/8302773/amelkis-villa-%C3%A0-vendre-5-ch-piscine-chauff%C3%A9e",
+      "price_mad": 1515000,
+      "price_eur": 140277,
+      "area_sqm": 550,
+      "rooms": 8,
+      "bedrooms": 5,
+      "bathrooms": 4,
       "floor": null,
       "neighborhood": "",
       "city": "Marrakech",
       "property_type": "Apartment",
-      "price_per_sqm_mad": 34649,
-      "has_terrace": null,
-      "has_pool": null,
+      "price_per_sqm_mad": 2754,
+      "has_terrace": true,
+      "has_pool": true,
       "has_parking": null,
       "has_elevator": null,
       "is_ground_floor": null,
@@ -1095,118 +922,78 @@
       "is_new_build": true,
       "ownership_type": "Unbekannt",
       "condition": "Neu",
-      "description": "Le 1er site immobilier du Maroc\nESTIMER VOTRE BIEN\nIMMOBILIER NEUF\nFR \n SE CONNECTER\nPUBLIER UNE ANNONCE\nImmobilier Maroc  Immobilier Marrakech  Appartements Marrakech  Guéliz\n\n 10\n1 975 000 DH\nFavori\n \nPartager\nM'avertir d'une baisse de prix!\n57 m²\n1 Chambre\n1 Salle de bain\nGuéliz à Marrakech\n1 975 000 DH\n57 m²\n1 Chambre\n1 Salle de bain\nContacter\n \n\n2 de 10\n\nVend appartement à El Hara. 1 belle chambre\n\nDécouvrez la Résidence Studios Horizon : Le Luxe Urbain au Cœur de Marrakech\n\nBienvenue à Studios Horizon, un projet haut standing situé au cœur de Marrakech, où design moderne, confort absolu et emplacement stratégique se rencontrent pour offrir une expérience de vie inédite.\n\nUn Emplacement d’Exception\nSituée dans l’un des quartiers les plus prisés de Marrakech, la Résidence Studios Horizon bénéficie d’une proximité immédiate avec les axes principaux, commerces, restaurants branchés et espaces de loisirs. Que ce soit pour un investissement locatif performant ou pour y vivre pleinement",
+      "description": "Le 1er site immobilier du Maroc\nESTIMER VOTRE BIEN\nIMMOBILIER NEUF\nFR \n SE CONNECTER\nPUBLIER UNE ANNONCE\nImmobilier Maroc  Immobilier Marrakech  Appartements Marrakech  Amelkis\n\n 28\n1 250 000 EUR\nFavori\n \nPartager\nM'avertir d'une baisse de prix!\n550 m²\n18 Pièces\n5 Chambres\n4 Salles de bains\nAmelkis à Marrakech\n1 250 000 EUR\n550 m²\n18 Pièces\n5 Chambres\n4 Salles de bains\nContacter\n \n\n2 de 28\n\nAmelkis: Villa à vendre, 5 Ch, Piscine chauffée\n\nGolf Amelkis- Belle Villa à vendre , d'une superficie habitable de 550 m² environ , Terrain de 1 200 m² une jouissance privative de 800 m² de terrain, au sein du Resort golfique d'Amelkis.\n\nLa Villa est sur deux niveaux offrant une vue sur les montagnes, elle est composée de 3 Suites chacune avec sa sdb privative et dressing, 2 grandes Chambres avec une Sdb au milieu. d'un Salon, SAM, Cuisine entièrement équipée, Terrasses, Piscine privative chauffée , Jardin végétalisé et arboré. Terrain de pétanque.\n\nPrix de Vente: 1 250 000 Euros- HFA\nFrais d'agenc",
       "contact_phone": "",
       "contact_name": "",
       "contact_email": "",
       "contact_whatsapp": "",
-      "image": "https://www.mubawab-media.com/ad/8/109/860F/h/Image%20colle%CC%81e%20%231%20982D331C_79942695_79942755.avif",
+      "image": "https://www.mubawab-media.com/ad/8/302/773F/h/764609829_81961458.avif",
       "images": [
-        "https://www.mubawab-media.com/ad/8/109/860F/h/Image%20colle%CC%81e%20%231%20982D331C_79942695_79942755.avif",
-        "https://www.mubawab-media.com/ad/8/109/860F/h/Image%20colle%CC%81e%20%232%20C4F1AE0B_79942696_79942756.avif",
-        "https://www.mubawab-media.com/ad/8/109/860F/h/T2_6%20%282%29_79942697_79942757.avif",
-        "https://www.mubawab-media.com/ad/8/109/860F/h/duplex1_79942698_79942758.avif",
-        "https://www.mubawab-media.com/ad/8/109/860F/h/duplex2_79942699_79942759.avif"
+        "https://www.mubawab-media.com/ad/8/302/773F/h/764609829_81961458.avif",
+        "https://www.mubawab-media.com/ad/8/302/773F/h/764609718_81961459.avif",
+        "https://www.mubawab-media.com/ad/8/302/773F/h/764609747_81961460.avif",
+        "https://www.mubawab-media.com/ad/8/302/773F/h/8dc6bac7-f88c-4bc6-a639-3028f439676e_81961206.avif",
+        "https://www.mubawab-media.com/ad/8/302/773F/h/5f2c7d78-1381-490f-828f-1034c429a9aa_81961208.avif"
       ],
-      "scraped_at": "2026-04-01T10:53:41.052764"
+      "scraped_at": "2026-04-02T10:28:58.758080"
     },
     {
-      "id": "e262d5d9e4ae",
-      "title": "Magnifique appartement spacieux 2 chambres",
+      "id": "248c2962586c",
+      "title": "Appartement à vendre – Jannat Zaytoun, Marrakech",
       "source": "Mubawab",
-      "url": "https://www.mubawab.ma/fr/a/8324314/magnifique-appartement-spacieux-2-chambres",
-      "price_mad": 1200000,
-      "price_eur": 111111,
-      "area_sqm": 80,
+      "url": "https://www.mubawab.ma/fr/a/8306880/appartement-%C3%A0-vendre-%E2%80%93-jannat-zaytoun-marrakech",
+      "price_mad": 1150000,
+      "price_eur": 106481,
+      "area_sqm": 87,
+      "rooms": 3,
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "floor": null,
+      "neighborhood": "Route Casablanca",
+      "city": "Marrakech",
+      "property_type": "Apartment",
+      "price_per_sqm_mad": 13218,
+      "has_terrace": null,
+      "has_pool": true,
+      "has_parking": null,
+      "has_elevator": null,
+      "is_ground_floor": null,
+      "is_riad": null,
+      "is_new_build": true,
+      "ownership_type": "Unbekannt",
+      "condition": "Neu",
+      "description": "Le 1er site immobilier du Maroc\nESTIMER VOTRE BIEN\nIMMOBILIER NEUF\nFR \n SE CONNECTER\nPUBLIER UNE ANNONCE\nImmobilier Maroc  Immobilier Marrakech  Appartements Marrakech  Route Casablanca\n\n 7\n1 150 000 DH\nFavori\n \nPartager\nM'avertir d'une baisse de prix!\n87 m²\n3 Pièces\n2 Chambres\n1 Salle de bain\nRoute Casablanca à Marrakech\n1 150 000 DH\n87 m²\n3 Pièces\n2 Chambres\n1 Salle de bain\nContacter\n \n\n2 de 7\n\nAppartement à vendre – Jannat Zaytoun, Marrakech\n\nNous vous proposons un bel appartement situé dans la résidence prisée de Jannat Zaytoun, offrant une agréable vue sur la piscine.\n\nSuperficie : 87\n\nComposition\n\n2 chambres confortables\n1 salon lumineux\n1 salle de bain moderne\n1 wc invites\nCuisine fonctionnelle\n\nRésidence calme et sécurisée, idéale pour une résidence principale ou un investissement locatif.\n\nAtout principal : vue dégagée sur la piscine, apportant luminosité et cadre de vie agréable.\n\nCaractéristiques générales\n\nType de bien\n\nAppartement\n\nEtat\n\nBon état / habitable\n\nPiscine\n\nRout",
+      "contact_phone": "",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_whatsapp": "",
+      "image": "https://www.mubawab-media.com/ad/8/306/880F/h/photo_00_82002452.avif",
+      "images": [
+        "https://www.mubawab-media.com/ad/8/306/880F/h/photo_00_82002452.avif",
+        "https://www.mubawab-media.com/ad/8/306/880F/h/photo_01_82002453.avif",
+        "https://www.mubawab-media.com/ad/8/306/880F/h/photo_02_82002454.avif",
+        "https://www.mubawab-media.com/ad/8/306/880F/h/photo_03_82002455.avif",
+        "https://www.mubawab-media.com/ad/8/306/880F/h/photo_04_82002456.avif"
+      ],
+      "scraped_at": "2026-04-02T10:30:20.112469"
+    },
+    {
+      "id": "1f835032f8f7",
+      "title": "Vend appartement à Route de l'Ourika. 2 belles chambres. Climatisation et piscine",
+      "source": "Mubawab",
+      "url": "https://www.mubawab.ma/fr/a/8325453/vend-appartement-%C3%A0-route-de-l-ourika-2-belles-chambres-climatisation-et-piscine",
+      "price_mad": 1900000,
+      "price_eur": 175925,
+      "area_sqm": 99,
       "rooms": 3,
       "bedrooms": 2,
       "bathrooms": 2,
       "floor": null,
-      "neighborhood": "",
+      "neighborhood": "Route De L'Ourika",
       "city": "Marrakech",
       "property_type": "Apartment",
-      "price_per_sqm_mad": 15000,
+      "price_per_sqm_mad": 19191,
       "has_terrace": true,
-      "has_pool": true,
-      "has_parking": true,
-      "has_elevator": true,
-      "is_ground_floor": null,
-      "is_riad": null,
-      "is_new_build": true,
-      "ownership_type": "Unbekannt",
-      "condition": "Neu",
-      "description": "Le 1er site immobilier du Maroc\nESTIMER VOTRE BIEN\nIMMOBILIER NEUF\nFR \n SE CONNECTER\nPUBLIER UNE ANNONCE\nImmobilier Maroc  Immobilier Marrakech  Appartements Marrakech  Guéliz\n\n 15\n1 200 000 DH\nFavori\n \nPartager\nM'avertir d'une baisse de prix!\n80 m²\n3 Pièces\n2 Chambres\n2 Salles de bains\nGuéliz à Marrakech\n1 200 000 DH\n80 m²\n3 Pièces\n2 Chambres\n2 Salles de bains\nContacter\n \n\n2 de 15\n\nMagnifique appartement spacieux 2 chambres\n\nAppartement 80 m² à vendre à Marrakech – 2 chambres avec terrasse – Résidence avec piscine – Assafae / Hôpital Militaire\nÀ vendre appartement de 80 m² situé au 2ème étage d’une résidence sécurisée avec piscine, dans le secteur recherché d’Assafae, à proximité immédiate de l’Hôpital Militaire et juste derrière la gare ONCF de Marrakech.\nL’appartement se compose de :\n2 chambres avec terrasse\nUn salon lumineux\nUne salle de bain\nUn WC invités\nUne cuisine fonctionnelle\nUne place de parking au sous-sol est incluse.\nPoints forts :\nEmplacement stratégique proche gare de t",
-      "contact_phone": "",
-      "contact_name": "",
-      "contact_email": "",
-      "contact_whatsapp": "",
-      "image": "https://www.mubawab-media.com/ad/8/324/314F/h/IMG-20260331-WA0120_82184538.avif",
-      "images": [
-        "https://www.mubawab-media.com/ad/8/324/314F/h/IMG-20260331-WA0120_82184538.avif",
-        "https://www.mubawab-media.com/ad/8/324/314F/h/IMG-20260331-WA0119_82184539.avif",
-        "https://www.mubawab-media.com/ad/8/324/314F/h/IMG-20260331-WA0117_82184540.avif",
-        "https://www.mubawab-media.com/ad/8/324/314F/h/IMG-20260331-WA0118_82184541.avif",
-        "https://www.mubawab-media.com/ad/8/324/314F/h/IMG-20260331-WA0116_82184542.avif"
-      ],
-      "scraped_at": "2026-04-01T10:54:54.075691"
-    },
-    {
-      "id": "07b3fe9d1c6d",
-      "title": "Belle Appartement a Jnane Awerade Meublée",
-      "source": "Mubawab",
-      "url": "https://www.mubawab.ma/fr/a/8313773/belle-appartement-a-jnane-awerade-meubl%C3%A9e",
-      "price_mad": 1500000,
-      "price_eur": 138888,
-      "area_sqm": 85,
-      "rooms": 4,
-      "bedrooms": 2,
-      "bathrooms": 2,
-      "floor": null,
-      "neighborhood": "",
-      "city": "Marrakech",
-      "property_type": "Apartment",
-      "price_per_sqm_mad": 17647,
-      "has_terrace": null,
-      "has_pool": true,
-      "has_parking": null,
-      "has_elevator": true,
-      "is_ground_floor": null,
-      "is_riad": null,
-      "is_new_build": true,
-      "ownership_type": "Unbekannt",
-      "condition": "Neu",
-      "description": "Le 1er site immobilier du Maroc\nESTIMER VOTRE BIEN\nIMMOBILIER NEUF\nFR \n SE CONNECTER\nPUBLIER UNE ANNONCE\nImmobilier Maroc  Immobilier Marrakech  Appartements Marrakech  Route de Safi\n\n 18\n1 500 000 DH\nFavori\n \nPartager\nM'avertir d'une baisse de prix!\n85 m²\n4 Pièces\n2 Chambres\n2 Salles de bains\nRoute de Safi à Marrakech\n1 500 000 DH\n85 m²\n4 Pièces\n2 Chambres\n2 Salles de bains\nContacter\n \n\n2 de 18\n\nBelle Appartement a Jnane Awerade Meublée\n\nJb Agency vous présente un bien en vente dans le quartier janane awerade\ndans une résidence avec piscine\nRésidence familiale\nl'appartement est situé au rez de chaussée deux façades\nFaçade qui donne sur la piscine vue piscine et façade rue\nune surface de 85m2\n2 chambres avec 2 salle de bains\ncuisine équipée\nle bien est titré disponible immédiatement\nLE PRIX : 1.500.000 DHS\nFRAIS D'AGENCE: 2,5%\npour plus d’infos contactez nous directement pour avoir un rendez-vous de visite .\n\nCaractéristiques générales\n\nType de bien\n\nAppartement\n\nEtat\n\nBon état / habit",
-      "contact_phone": "",
-      "contact_name": "",
-      "contact_email": "",
-      "contact_whatsapp": "",
-      "image": "https://www.mubawab-media.com/ad/8/313/773F/h/WhatsApp%20Image%202026-03-07%20at%2014.06.47%20%285%29_82077466.avif",
-      "images": [
-        "https://www.mubawab-media.com/ad/8/313/773F/h/WhatsApp%20Image%202026-03-07%20at%2014.06.47%20%285%29_82077466.avif",
-        "https://www.mubawab-media.com/ad/8/313/773F/h/WhatsApp%20Image%202026-03-07%20at%2014.06.48%20%283%29_82077467.avif",
-        "https://www.mubawab-media.com/ad/8/313/773F/h/WhatsApp%20Image%202026-03-07%20at%2014.06.46_82077468.avif",
-        "https://www.mubawab-media.com/ad/8/313/773F/h/WhatsApp%20Image%202026-03-07%20at%2014.06.46%20%281%29_82077469.avif",
-        "https://www.mubawab-media.com/ad/8/313/773F/h/WhatsApp%20Image%202026-03-07%20at%2014.06.46%20%282%29_82077470.avif"
-      ],
-      "scraped_at": "2026-04-01T10:57:05.343233"
-    },
-    {
-      "id": "5ce5c82b9c3e",
-      "title": "HOLIDAYS FAMILY",
-      "source": "Mubawab",
-      "url": "https://www.mubawab.ma/fr/b/8181/holidays-family",
-      "price_mad": 1400000,
-      "price_eur": 129629,
-      "area_sqm": 80,
-      "rooms": null,
-      "bedrooms": 2,
-      "bathrooms": null,
-      "floor": null,
-      "neighborhood": "Palmeraie",
-      "city": "Marrakech",
-      "property_type": "Apartment",
-      "price_per_sqm_mad": 17500,
-      "has_terrace": null,
       "has_pool": true,
       "has_parking": true,
       "has_elevator": null,
@@ -1215,20 +1002,20 @@
       "is_new_build": true,
       "ownership_type": "Unbekannt",
       "condition": "Neu",
-      "description": "Le 1er site immobilier du Maroc\nESTIMER VOTRE BIEN\nIMMOBILIER NEUF\nFR \n SE CONNECTER\nPUBLIER UNE ANNONCE\nHOLIDAYS FAMILY\nvilla Elyana route de lourika km 15\n\nFort d’une expérience solide dans le secteur de l’immobilier à Marrakech, Rida Bajaddy Directeur de l'Agence Holidays Family met à votre service son expertise e...\n\n Contactez-nous \n \n\n+212 6 32 75 56 37\n\n \n Visiter le site web \n Facebook \nAffiner votre recherche\n\n\n \n4 000 DH\nBel appartement en location à Marrakech...\n2 chambres, 80 m²Route de l'Ourika à Marrakech\n\nappartement meublé à louer – route de l’ourika, marrakech profitez de belles prestations avec cet appartement bien meublé, d’une superficie de 80 m², proposé à la location au prix de 4500 dh. détails du ... En savoir plus \n\nPublié il y a 1 jour\nCONTACTER\n \n14 000 DH\nSuperbe Villa Meublée à Louer – Route d’O...\n4 chambres, 1000 m²Route de l'Ourika à Marrakech\n\nnous vous proposons une magnifique villa meublée, située sur la route d’ourika, à seulement 18 km du centre-vill",
-      "contact_phone": "+212 6 32 75 56 37",
+      "description": "Le 1er site immobilier du Maroc\nESTIMER VOTRE BIEN\nIMMOBILIER NEUF\nFR \n SE CONNECTER\nPUBLIER UNE ANNONCE\nImmobilier Maroc  Immobilier Marrakech  Appartements Marrakech  Route de l'Ourika\n\n 8\n1 900 000 DH\nFavori\n \nPartager\nM'avertir d'une baisse de prix!\n99 m²\n3 Pièces\n2 Chambres\n2 Salles de bains\nRoute de l'Ourika à Marrakech\n1 900 000 DH\n99 m²\n3 Pièces\n2 Chambres\n2 Salles de bains\nContacter\n \n\n2 de 8\n\nVend appartement à Route de l'Ourika. 2 belles chambres. Climatisation et piscine\n\nOpportunité unique pour cet appartement à vendre.\nPrix 1 900 000 DH.\n2 chambres, 2 salles de bains, superficie 99 m².\n3 pièces lumineuses.\n1er étage.\nMoins de 10 ans.\nConfort et sécurité avec service de conciergerie, piscine et climatisation.\n\nCet appartement est proposé à la vente à Route de l'Ourika.\nDécoration moderne avec salon européen.\nLave-linge.\n\nSoyez le premier à visiter cet appartement en vente à Marrakech.\nTerrasse.\nVue exceptionnelle sur la montagne.\nFour encastré.\nFrais d’agence : 2,5% HT\n\nCa",
+      "contact_phone": "",
       "contact_name": "",
       "contact_email": "",
-      "contact_whatsapp": "+212632755637",
-      "image": "https://www.mubawab-media.com/business/8/181F/s/DSC00548%20copie_81347829.avif",
+      "contact_whatsapp": "",
+      "image": "https://www.mubawab-media.com/ad/8/325/453F/h/photo_00_82199624.avif",
       "images": [
-        "https://www.mubawab-media.com/business/8/181F/s/DSC00548%20copie_81347829.avif",
-        "https://www.mubawab-media.com/ad/8/298/978F/m/photo_0_82106336.avif",
-        "https://www.mubawab-media.com/ad/8/298/978F/m/photo_15_82106353.avif",
-        "https://www.mubawab-media.com/ad/8/310/744F/m/photo_0_82100241.avif",
-        "https://www.mubawab-media.com/ad/8/310/744F/m/photo_290_82100877.avif"
+        "https://www.mubawab-media.com/ad/8/325/453F/h/photo_00_82199624.avif",
+        "https://www.mubawab-media.com/ad/8/325/453F/h/photo_01_82199625.avif",
+        "https://www.mubawab-media.com/ad/8/325/453F/h/photo_02_82199626.avif",
+        "https://www.mubawab-media.com/ad/8/325/453F/h/photo_03_82199627.avif",
+        "https://www.mubawab-media.com/ad/8/325/453F/h/photo_04_82199628.avif"
       ],
-      "scraped_at": "2026-04-01T10:58:27.204735"
+      "scraped_at": "2026-04-02T10:33:32.036854"
     },
     {
       "id": "43b89d5496db",
@@ -1268,7 +1055,47 @@
         "https://www.mubawab-media.com/ad/8/234/161F/m/villa%20el%20ouidane%20%20type%201%20rdc_81222608_81223094.avif",
         "https://www.mubawab-media.com/ad/8/234/163F/m/villa-marrakech-shems-almadina_81222589_81223125.avif"
       ],
-      "scraped_at": "2026-04-01T10:58:46.261517"
+      "scraped_at": "2026-04-02T10:33:48.985838"
+    },
+    {
+      "id": "5ce5c82b9c3e",
+      "title": "HOLIDAYS FAMILY",
+      "source": "Mubawab",
+      "url": "https://www.mubawab.ma/fr/b/8181/holidays-family",
+      "price_mad": 1400000,
+      "price_eur": 129629,
+      "area_sqm": 70,
+      "rooms": null,
+      "bedrooms": 2,
+      "bathrooms": null,
+      "floor": null,
+      "neighborhood": "Palmeraie",
+      "city": "Marrakech",
+      "property_type": "Apartment",
+      "price_per_sqm_mad": 20000,
+      "has_terrace": null,
+      "has_pool": true,
+      "has_parking": true,
+      "has_elevator": null,
+      "is_ground_floor": null,
+      "is_riad": null,
+      "is_new_build": true,
+      "ownership_type": "Unbekannt",
+      "condition": "Neu",
+      "description": "Le 1er site immobilier du Maroc\nESTIMER VOTRE BIEN\nIMMOBILIER NEUF\nFR \n SE CONNECTER\nPUBLIER UNE ANNONCE\nHOLIDAYS FAMILY\nvilla Elyana route de lourika km 15\n\nFort d’une expérience solide dans le secteur de l’immobilier à Marrakech, Rida Bajaddy Directeur de l'Agence Holidays Family met à votre service son expertise e...\n\n Contactez-nous \n \n\n+212 6 32 75 56 37\n\n \n Visiter le site web \n Facebook \nAffiner votre recherche\n\n\n \n10 000 DH\nSuperbe appartement à louer – La Palmerai...\n2 chambres, 70 m²Ennakhil (Palmeraie) à Marrakech\n\nsitué au cœur du prestigieux quartier de la palmeraie, cet élégant appartement offre un cadre de vie paisible, verdoyant et sécurisé, idéal pour une location longue durée. l’appartement se distingue par ses ... En savoir plus \n\nPublié il y a 4 jours\nCONTACTER\n \n6 400 DH par jour\nLocation villa de haut standing à Route d...\n4 chambres, 4000 m²Route de Ouarzazate à Marrakech\n\nhidaya villa est un resort privé d'exception sans vis-à-vis à marrakech. elle offre 4 suite",
+      "contact_phone": "+212 6 32 75 56 37",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_whatsapp": "+212632755637",
+      "image": "https://www.mubawab-media.com/business/8/181F/s/DSC00548%20copie_81347829.avif",
+      "images": [
+        "https://www.mubawab-media.com/business/8/181F/s/DSC00548%20copie_81347829.avif",
+        "https://www.mubawab-media.com/ad/8/319/916F/m/photo_00_82146194.avif",
+        "https://www.mubawab-media.com/ad/8/319/916F/m/photo_290_82146244.avif",
+        "https://www.mubawab-media.com/ad/8/320/619F/m/photo_00_82146575.avif",
+        "https://www.mubawab-media.com/ad/8/320/619F/m/photo_209_82146639.avif"
+      ],
+      "scraped_at": "2026-04-02T10:34:03.406941"
     },
     {
       "id": "7f828bcffca0",
@@ -1308,65 +1135,105 @@
         "https://www.mubawab-media.com/ad/8/149/102F/h/WhatsApp%20Image%202026-02-11%20at%2017.50.22%20%281%29_81951066.avif",
         "https://www.mubawab-media.com/ad/8/149/102F/h/WhatsApp%20Image%202026-02-11%20at%2017.50.22%20%283%29_81951067.avif"
       ],
-      "scraped_at": "2026-04-01T10:59:54.651693"
+      "scraped_at": "2026-04-02T10:35:56.168268"
     },
     {
-      "id": "a937a4fcc175",
-      "title": "Appartement en vente el Massira 1",
+      "id": "1385405a73a1",
+      "title": "Appartement lumineux avec balcons-Route Casablanca",
       "source": "Mubawab",
-      "url": "https://www.mubawab.ma/fr/a/8226809/appartement-en-vente-el-massira-1",
-      "price_mad": 1200000,
-      "price_eur": 111111,
-      "area_sqm": 110,
-      "rooms": 5,
-      "bedrooms": 3,
-      "bathrooms": 2,
+      "url": "https://www.mubawab.ma/fr/a/8321693/appartement-lumineux-avec-balcons-route-casablanca",
+      "price_mad": 1500000,
+      "price_eur": 138888,
+      "area_sqm": 94,
+      "rooms": 3,
+      "bedrooms": 2,
+      "bathrooms": 1,
       "floor": null,
-      "neighborhood": "Massira",
+      "neighborhood": "Route Casablanca",
       "city": "Marrakech",
       "property_type": "Apartment",
-      "price_per_sqm_mad": 10909,
+      "price_per_sqm_mad": 15957,
       "has_terrace": true,
       "has_pool": null,
-      "has_parking": null,
-      "has_elevator": null,
+      "has_parking": true,
+      "has_elevator": true,
       "is_ground_floor": null,
       "is_riad": null,
       "is_new_build": true,
       "ownership_type": "Unbekannt",
       "condition": "Neu",
-      "description": "Le 1er site immobilier du Maroc\nESTIMER VOTRE BIEN\nIMMOBILIER NEUF\nFR \n SE CONNECTER\nPUBLIER UNE ANNONCE\nImmobilier Maroc  Immobilier Marrakech  Appartements Marrakech  Massira 1\n\n 17\n1 200 000 DH\nFavori\n \nPartager\nM'avertir d'une baisse de prix!\n110 m²\n5 Pièces\n3 Chambres\n2 Salles de bains\nMassira 1 à Marrakech\n1 200 000 DH\n110 m²\n5 Pièces\n3 Chambres\n2 Salles de bains\nContacter\n \n\n2 de 17\n\nAppartement en vente el Massira 1\n\nÀ vendre – Massira, Marrakech\nBel appartement de 110 m² comprenant 3 chambres, 1 salon, 2 salles de bain, une cuisine, un patio et 2 balcons.\nIdéal pour une famille ou un investissement.\n\nCaractéristiques générales\n\nType de bien\n\nAppartement\n\nEtat\n\nBon état / habitable\n\nAnnées\n\n10-20 ans\n\nOrientation\n\nSud\n\nType du sol\n\nCarrelage\n\nMassira 1 à Marrakech \n Voir la carte \n\nÉcoles\n\nHôpitaux\n\nLes utilisateurs intéréssés par cette annonce ont également consulté\n\n1 515 000 DH\n\n2 chambres, 134 m²\nMarrakech\n\n1 300 000 DH\n\n1 chambre, 65 m²\nMarrakech\n\n1 320 000 DH\n\n2 chambres,",
+      "description": "Le 1er site immobilier du Maroc\nESTIMER VOTRE BIEN\nIMMOBILIER NEUF\nFR \n SE CONNECTER\nPUBLIER UNE ANNONCE\nImmobilier Maroc  Immobilier Marrakech  Appartements Marrakech  Ouasis\n\n 10\n1 500 000 DH\nFavori\n \nPartager\nM'avertir d'une baisse de prix!\n94 m²\n3 Pièces\n2 Chambres\n1 Salle de bain\nOuasis à Marrakech\n1 500 000 DH\n94 m²\n3 Pièces\n2 Chambres\n1 Salle de bain\nContacter\n \n\n2 de 10\n\nAppartement lumineux avec balcons-Route Casablanca\n\nATLASIMMOBILIER vous propose cet appartement situé dans une résidence propre et bien entretenue sur la route de Casablanca à Marrakech. Ce bien traversant de 94 m² titrés séduit par sa luminosité naturelle, son orientation sud-est et son agencement fonctionnel. Il constitue une excellente opportunité pour une résidence principale ou un investissement immobilier à Marrakech, avec des charges de syndic maîtrisées d’environ 250 Dhs par mois.\n\nUn espace de vie agréable et bien distribué\n\nDès l’entrée, un hall accueillant avec toilettes invités dessert un séjour sp",
       "contact_phone": "",
       "contact_name": "",
       "contact_email": "",
       "contact_whatsapp": "",
-      "image": "https://www.mubawab-media.com/ad/8/226/809F/h/6ce93e40-9883-401d-a5aa-2cab73ccbca6_81562648.avif",
+      "image": "https://www.mubawab-media.com/ad/8/321/693F/h/appartement-lumineux-route-casablanca-marrakech-balcon-parking%20%288%29_82157441.avif",
       "images": [
-        "https://www.mubawab-media.com/ad/8/226/809F/h/6ce93e40-9883-401d-a5aa-2cab73ccbca6_81562648.avif",
-        "https://www.mubawab-media.com/ad/8/226/809F/h/22d812b4-151c-4136-9062-d862f3fb19e0_81562649.avif",
-        "https://www.mubawab-media.com/ad/8/226/809F/h/b6c5073e-29af-4104-aaf8-724d88ac3c4b_81562650.avif",
-        "https://www.mubawab-media.com/ad/8/226/809F/h/3b55b594-e08d-4f89-84db-898e8158c6c6_81562651.avif",
-        "https://www.mubawab-media.com/ad/8/226/809F/h/19a32e65-6b06-4018-add9-8173be9f7060_81562652.avif"
+        "https://www.mubawab-media.com/ad/8/321/693F/h/appartement-lumineux-route-casablanca-marrakech-balcon-parking%20%288%29_82157441.avif",
+        "https://www.mubawab-media.com/ad/8/321/693F/h/appartement-lumineux-route-casablanca-marrakech-balcon-parking%20%282%29_82157442.avif",
+        "https://www.mubawab-media.com/ad/8/321/693F/h/appartement-lumineux-route-casablanca-marrakech-balcon-parking%20%289%29_82157443.avif",
+        "https://www.mubawab-media.com/ad/8/321/693F/h/appartement-lumineux-route-casablanca-marrakech-balcon-parking%20%287%29_82157444.avif",
+        "https://www.mubawab-media.com/ad/8/321/693F/h/appartement-lumineux-route-casablanca-marrakech-balcon-parking%20%285%29_82157445.avif"
       ],
-      "scraped_at": "2026-04-01T11:02:40.981062"
+      "scraped_at": "2026-04-02T10:37:34.182047"
     },
     {
-      "id": "549d1acac988",
-      "title": "Prix très compétitif",
+      "id": "b27f5f35a472",
+      "title": "Jolie appartement à vendre",
       "source": "Mubawab",
-      "url": "https://www.mubawab.ma/fr/a/8313593/prix-tr%C3%A8s-comp%C3%A9titif",
-      "price_mad": 1300000,
-      "price_eur": 120370,
-      "area_sqm": 95,
+      "url": "https://www.mubawab.ma/fr/a/8294761/jolie-appartement-%C3%A0-vendre",
+      "price_mad": 1750000,
+      "price_eur": 162037,
+      "area_sqm": 93,
+      "rooms": 2,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "floor": null,
+      "neighborhood": "",
+      "city": "Marrakech",
+      "property_type": "Apartment",
+      "price_per_sqm_mad": 18817,
+      "has_terrace": true,
+      "has_pool": null,
+      "has_parking": null,
+      "has_elevator": true,
+      "is_ground_floor": null,
+      "is_riad": null,
+      "is_new_build": true,
+      "ownership_type": "Unbekannt",
+      "condition": "Neu",
+      "description": "Le 1er site immobilier du Maroc\nESTIMER VOTRE BIEN\nIMMOBILIER NEUF\nFR \n SE CONNECTER\nPUBLIER UNE ANNONCE\nImmobilier Maroc  Immobilier Marrakech  Appartements Marrakech  Guéliz\n\n 15\n1 750 000 DH\nFavori\n \nPartager\nM'avertir d'une baisse de prix!\n93 m²\n2 Pièces\n2 Chambres\n2 Salles de bains\nGuéliz à Marrakech\n1 750 000 DH\n93 m²\n2 Pièces\n2 Chambres\n2 Salles de bains\nContacter\n \n\n2 de 15\n\nJolie appartement à vendre\n\nKh immo vous propose un joli appartement à Gheliz qui se compose d'un salon avec terrasse toilette vasque invité une cuisine équipée 2 chambres à coucher avec balcon et deux salles de bain le tout entièrement climatiseux (Frais agence 2.5%)\n\nCaractéristiques générales\n\nType de bien\n\nAppartement\n\nEtat\n\nProjet neuf\n\nAnnées\n\n1-5 ans\n\nÉtage du bien\n\n2ème\n\nOrientation\n\nSud\n\nType du sol\n\nMarbre\n\nTerrasse\n\nAscenseur\n\nSalon européen\n\nClimatisation\n\nPorte blindée\n\nCuisine équipée\n\nFour\n\nGuéliz à Marrakech \n Voir la carte \n\nÉcoles\n\nHôpitaux\n\nLes utilisateurs intéréssés par cette annonce on",
+      "contact_phone": "",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_whatsapp": "",
+      "image": "https://www.mubawab-media.com/ad/8/294/761F/h/photo_00_81872882.avif",
+      "images": [
+        "https://www.mubawab-media.com/ad/8/294/761F/h/photo_00_81872882.avif",
+        "https://www.mubawab-media.com/ad/8/294/761F/h/photo_01_81872883.avif",
+        "https://www.mubawab-media.com/ad/8/294/761F/h/photo_02_81872884.avif",
+        "https://www.mubawab-media.com/ad/8/294/761F/h/photo_03_81872885.avif",
+        "https://www.mubawab-media.com/ad/8/294/761F/h/photo_04_81872886.avif"
+      ],
+      "scraped_at": "2026-04-02T10:37:59.356662"
+    },
+    {
+      "id": "e262d5d9e4ae",
+      "title": "Magnifique appartement spacieux 2 chambres",
+      "source": "Mubawab",
+      "url": "https://www.mubawab.ma/fr/a/8324314/magnifique-appartement-spacieux-2-chambres",
+      "price_mad": 1200000,
+      "price_eur": 111111,
+      "area_sqm": 80,
       "rooms": 3,
       "bedrooms": 2,
       "bathrooms": 2,
       "floor": null,
-      "neighborhood": "Route De Casablanca",
+      "neighborhood": "",
       "city": "Marrakech",
       "property_type": "Apartment",
-      "price_per_sqm_mad": 13684,
-      "has_terrace": null,
+      "price_per_sqm_mad": 15000,
+      "has_terrace": true,
       "has_pool": true,
       "has_parking": true,
       "has_elevator": true,
@@ -1375,20 +1242,100 @@
       "is_new_build": true,
       "ownership_type": "Unbekannt",
       "condition": "Neu",
-      "description": "Le 1er site immobilier du Maroc\nESTIMER VOTRE BIEN\nIMMOBILIER NEUF\nFR \n SE CONNECTER\nPUBLIER UNE ANNONCE\nImmobilier Maroc  Immobilier Marrakech  Appartements Marrakech  Route Casablanca\n\n 8\n1 300 000 DH\nFavori\n \nPartager\nM'avertir d'une baisse de prix!\n95 m²\n3 Pièces\n2 Chambres\n2 Salles de bains\nRoute Casablanca à Marrakech\n1 300 000 DH\n95 m²\n3 Pièces\n2 Chambres\n2 Salles de bains\nContacter\n \n\n2 de 8\n\nPrix très compétitif\n\nFOCH Real Estate – Marrakech est heureux de vous présenter cet appartement à la vente, idéalement situé sur la Route de Casablanca, dans une résidence agréable et bien entretenue.\n\nCet appartement lumineux se compose de deux chambres confortables, chacune offrant un bel espace de vie, ainsi que deux salles de bain modernes, dont une attenante à la chambre principale pour plus de confort et d’intimité.\n\nL’appartement dispose également d’un coin salle à manger convivial, parfait pour recevoir ou partager des moments en famille, ainsi qu’une cuisine fonctionnelle bien ag",
+      "description": "Le 1er site immobilier du Maroc\nESTIMER VOTRE BIEN\nIMMOBILIER NEUF\nFR \n SE CONNECTER\nPUBLIER UNE ANNONCE\nImmobilier Maroc  Immobilier Marrakech  Appartements Marrakech  Guéliz\n\n 15\n1 200 000 DH\nFavori\n \nPartager\nM'avertir d'une baisse de prix!\n80 m²\n3 Pièces\n2 Chambres\n2 Salles de bains\nGuéliz à Marrakech\n1 200 000 DH\n80 m²\n3 Pièces\n2 Chambres\n2 Salles de bains\nContacter\n \n\n2 de 15\n\nMagnifique appartement spacieux 2 chambres\n\nAppartement 80 m² à vendre à Marrakech – 2 chambres avec terrasse – Résidence avec piscine – Assafae / Hôpital Militaire\nÀ vendre appartement de 80 m² situé au 2ème étage d’une résidence sécurisée avec piscine, dans le secteur recherché d’Assafae, à proximité immédiate de l’Hôpital Militaire et juste derrière la gare ONCF de Marrakech.\nL’appartement se compose de :\n2 chambres avec terrasse\nUn salon lumineux\nUne salle de bain\nUn WC invités\nUne cuisine fonctionnelle\nUne place de parking au sous-sol est incluse.\nPoints forts :\nEmplacement stratégique proche gare de t",
       "contact_phone": "",
       "contact_name": "",
       "contact_email": "",
       "contact_whatsapp": "",
-      "image": "https://www.mubawab-media.com/ad/8/313/593F/h/photo_0_82075740.avif",
+      "image": "https://www.mubawab-media.com/ad/8/324/314F/h/IMG-20260331-WA0120_82184538.avif",
       "images": [
-        "https://www.mubawab-media.com/ad/8/313/593F/h/photo_0_82075740.avif",
-        "https://www.mubawab-media.com/ad/8/313/593F/h/photo_1_82075741.avif",
-        "https://www.mubawab-media.com/ad/8/313/593F/h/photo_2_82075742.avif",
-        "https://www.mubawab-media.com/ad/8/313/593F/h/photo_3_82075743.avif",
-        "https://www.mubawab-media.com/ad/8/313/593F/h/photo_4_82075744.avif"
+        "https://www.mubawab-media.com/ad/8/324/314F/h/IMG-20260331-WA0120_82184538.avif",
+        "https://www.mubawab-media.com/ad/8/324/314F/h/IMG-20260331-WA0119_82184539.avif",
+        "https://www.mubawab-media.com/ad/8/324/314F/h/IMG-20260331-WA0117_82184540.avif",
+        "https://www.mubawab-media.com/ad/8/324/314F/h/IMG-20260331-WA0118_82184541.avif",
+        "https://www.mubawab-media.com/ad/8/324/314F/h/IMG-20260331-WA0116_82184542.avif"
       ],
-      "scraped_at": "2026-04-01T11:02:52.818198"
+      "scraped_at": "2026-04-02T10:38:48.053954"
+    },
+    {
+      "id": "53c7cbd610f0",
+      "title": "Appartement à vendre",
+      "source": "Mubawab",
+      "url": "https://www.mubawab.ma/fr/a/8238336/appartement-%C3%A0-vendre",
+      "price_mad": 1900000,
+      "price_eur": 175925,
+      "area_sqm": 86,
+      "rooms": 3,
+      "bedrooms": 3,
+      "bathrooms": 1,
+      "floor": null,
+      "neighborhood": "",
+      "city": "Marrakech",
+      "property_type": "Apartment",
+      "price_per_sqm_mad": 22093,
+      "has_terrace": null,
+      "has_pool": true,
+      "has_parking": true,
+      "has_elevator": null,
+      "is_ground_floor": null,
+      "is_riad": null,
+      "is_new_build": true,
+      "ownership_type": "Unbekannt",
+      "condition": "Neu",
+      "description": "Le 1er site immobilier du Maroc\nESTIMER VOTRE BIEN\nIMMOBILIER NEUF\nFR \n SE CONNECTER\nPUBLIER UNE ANNONCE\nImmobilier Maroc  Immobilier Marrakech  Appartements Marrakech  Route de Tahanaout\n\n 10\n1 900 000 DH\nFavori\n \nPartager\nM'avertir d'une baisse de prix!\n86 m²\n3 Pièces\n3 Chambres\n1 Salle de bain\nRoute de Tahanaout à Marrakech\n1 900 000 DH\n86 m²\n3 Pièces\n3 Chambres\n1 Salle de bain\nContacter\n \n\n2 de 10\n\nAppartement à vendre\n\nAPPARTEMENT À VENDRE – ARGAN GOLF MARRAKECH\n\nDécouvrez ce bel appartement niché au sein de la résidence Argan Golf, un cadre verdoyant et sécurisé à quelques minutes du centre-ville\n\nSurface habitable : 86 m²\n3 chambres lumineuses\nSalon convivial\nCuisine équipée\n2 salles de bain modernes\nRésidence calme avec espaces verts et piscine\nPlace de parking incluse\n\nPrix de vente : 1 900 000 MAD\n\nUn bien idéal pour une résidence principale ou un investissement locatif dans un environnement paisible et verdoyant\n\nCaractéristiques générales\n\nType de bien\n\nAppartement\n\nEtat\n\nB",
+      "contact_phone": "",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_whatsapp": "",
+      "image": "https://www.mubawab-media.com/ad/8/238/336F/h/thumb_88214_property_large_81265335.avif",
+      "images": [
+        "https://www.mubawab-media.com/ad/8/238/336F/h/thumb_88214_property_large_81265335.avif",
+        "https://www.mubawab-media.com/ad/8/238/336F/h/thumb_88222_property_large_81265336.avif",
+        "https://www.mubawab-media.com/ad/8/238/336F/h/thumb_88221_property_large_81265337.avif",
+        "https://www.mubawab-media.com/ad/8/238/336F/h/thumb_88220_property_large_81265338.avif",
+        "https://www.mubawab-media.com/ad/8/238/336F/h/thumb_88219_property_large_81265339.avif"
+      ],
+      "scraped_at": "2026-04-02T10:40:10.452755"
+    },
+    {
+      "id": "ca7ed05cb51d",
+      "title": "Appartement à vendre",
+      "source": "Mubawab",
+      "url": "https://www.mubawab.ma/fr/a/8294569/appartement-%C3%A0-vendre",
+      "price_mad": 1100000,
+      "price_eur": 101851,
+      "area_sqm": 54,
+      "rooms": 2,
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "floor": null,
+      "neighborhood": "Route De Casablanca",
+      "city": "Marrakech",
+      "property_type": "Apartment",
+      "price_per_sqm_mad": 20370,
+      "has_terrace": null,
+      "has_pool": null,
+      "has_parking": null,
+      "has_elevator": null,
+      "is_ground_floor": null,
+      "is_riad": null,
+      "is_new_build": true,
+      "ownership_type": "Unbekannt",
+      "condition": "Neu",
+      "description": "Le 1er site immobilier du Maroc\nESTIMER VOTRE BIEN\nIMMOBILIER NEUF\nFR \n SE CONNECTER\nPUBLIER UNE ANNONCE\nImmobilier Maroc  Immobilier Marrakech  Appartements Marrakech  Route Casablanca\n\n 6\n1 100 000 DH\nFavori\n \nPartager\nM'avertir d'une baisse de prix!\n54 m²\n2 Pièces\n2 Chambres\n1 Salle de bain\nRoute Casablanca à Marrakech\n1 100 000 DH\n54 m²\n2 Pièces\n2 Chambres\n1 Salle de bain\nContacter\n \n\n2 de 6\n\nAppartement à vendre\n\nAppartement à vendre – Route de Casablanca\n\nBel appartement situé au 5ᵉ étage, offrant un cadre de vie agréable dans un secteur bien desservi et proche de toutes les commodités.\n\nCaractéristiques :\n\nSuperficie : 54 m²\n\n2 chambres\n\nSalon lumineux\n\nCuisine\n\nSalle de bain\n\nEmplacement : Route de Casablanca.\n\nPrix de vente : 1 100 000 DH\n\nCaractéristiques générales\n\nType de bien\n\nAppartement\n\nEtat\n\nProjet neuf\n\nRoute Casablanca à Marrakech \n Voir la carte \n\nÉcoles\n\nHôpitaux\n\nLes utilisateurs intéréssés par cette annonce ont également consulté\n\n890 000 DH\n\n84 m²\nMarrakech\n\n1 1",
+      "contact_phone": "",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_whatsapp": "",
+      "image": "https://www.mubawab-media.com/ad/8/294/569F/h/thumb_113665_property_large_81870219.avif",
+      "images": [
+        "https://www.mubawab-media.com/ad/8/294/569F/h/thumb_113665_property_large_81870219.avif",
+        "https://www.mubawab-media.com/ad/8/294/569F/h/thumb_113666_property_large_81870220.avif",
+        "https://www.mubawab-media.com/ad/8/294/569F/h/thumb_113667_property_large_81870221.avif",
+        "https://www.mubawab-media.com/ad/8/294/569F/h/thumb_113668_property_large_81870222.avif",
+        "https://www.mubawab-media.com/ad/8/294/569F/h/thumb_113669_property_large_81870223.avif"
+      ],
+      "scraped_at": "2026-04-02T10:40:34.008110"
     },
     {
       "id": "1690f74211b5",
@@ -1424,7 +1371,7 @@
       "images": [
         "https://www.sarouty.ma/wp-content/uploads/2025/02/blog-fallback-img.png"
       ],
-      "scraped_at": "2026-04-01T11:06:07.521667"
+      "scraped_at": "2026-04-02T10:41:36.405428"
     },
     {
       "id": "8a13a8043e74",
@@ -1460,7 +1407,7 @@
       "images": [
         "https://www.sarouty.ma/wp-content/uploads/2025/02/blog-fallback-img.png"
       ],
-      "scraped_at": "2026-04-01T11:06:13.788812"
+      "scraped_at": "2026-04-02T10:41:42.514662"
     },
     {
       "id": "0a55f796531d",
@@ -1496,7 +1443,7 @@
       "images": [
         "https://www.sarouty.ma/wp-content/uploads/2025/02/blog-fallback-img.png"
       ],
-      "scraped_at": "2026-04-01T11:06:21.372528"
+      "scraped_at": "2026-04-02T10:41:49.762298"
     },
     {
       "id": "508d0ad765e9",
@@ -1532,7 +1479,7 @@
       "images": [
         "https://www.sarouty.ma/wp-content/uploads/2025/02/blog-fallback-img.png"
       ],
-      "scraped_at": "2026-04-01T11:06:27.799170"
+      "scraped_at": "2026-04-02T10:41:56.342661"
     },
     {
       "id": "118777a8bdfc",
@@ -1568,7 +1515,7 @@
       "images": [
         "https://www.sarouty.ma/wp-content/uploads/2025/02/blog-fallback-img.png"
       ],
-      "scraped_at": "2026-04-01T11:06:33.979059"
+      "scraped_at": "2026-04-02T10:42:03.099177"
     },
     {
       "id": "d38a289fcbc0",
@@ -1604,7 +1551,7 @@
       "images": [
         "https://www.sarouty.ma/wp-content/uploads/2025/02/blog-fallback-img.png"
       ],
-      "scraped_at": "2026-04-01T11:06:39.995901"
+      "scraped_at": "2026-04-02T10:42:10.473678"
     },
     {
       "id": "f86226d331f7",
@@ -1640,7 +1587,7 @@
       "images": [
         "https://www.sarouty.ma/wp-content/uploads/2025/02/blog-fallback-img.png"
       ],
-      "scraped_at": "2026-04-01T11:06:47.045732"
+      "scraped_at": "2026-04-02T10:42:16.968225"
     },
     {
       "id": "8245d21cfa4e",
@@ -1676,7 +1623,7 @@
       "images": [
         "https://www.sarouty.ma/wp-content/uploads/2025/02/blog-fallback-img.png"
       ],
-      "scraped_at": "2026-04-01T11:06:53.189131"
+      "scraped_at": "2026-04-02T10:42:23.298505"
     },
     {
       "id": "a543c2435d0a",
@@ -1712,7 +1659,7 @@
       "images": [
         "https://www.sarouty.ma/wp-content/uploads/2025/02/blog-fallback-img.png"
       ],
-      "scraped_at": "2026-04-01T11:07:00.839771"
+      "scraped_at": "2026-04-02T10:42:30.466929"
     },
     {
       "id": "c6c5ee442a67",
@@ -1748,7 +1695,7 @@
       "images": [
         "https://www.sarouty.ma/wp-content/uploads/2025/02/blog-fallback-img.png"
       ],
-      "scraped_at": "2026-04-01T11:07:07.557110"
+      "scraped_at": "2026-04-02T10:42:37.906193"
     },
     {
       "id": "a8139aa3e0ed",
@@ -1784,7 +1731,7 @@
       "images": [
         "https://www.sarouty.ma/wp-content/uploads/2025/02/blog-fallback-img.png"
       ],
-      "scraped_at": "2026-04-01T11:07:13.851035"
+      "scraped_at": "2026-04-02T10:42:44.076151"
     },
     {
       "id": "338ba99fcc24",
@@ -1820,7 +1767,7 @@
       "images": [
         "https://www.sarouty.ma/wp-content/uploads/2025/02/blog-fallback-img.png"
       ],
-      "scraped_at": "2026-04-01T11:07:21.560408"
+      "scraped_at": "2026-04-02T10:42:51.478489"
     },
     {
       "id": "36eee9215681",
@@ -1856,7 +1803,7 @@
       "images": [
         "https://www.sarouty.ma/wp-content/uploads/2025/02/blog-fallback-img.png"
       ],
-      "scraped_at": "2026-04-01T11:07:28.537817"
+      "scraped_at": "2026-04-02T10:42:58.451728"
     },
     {
       "id": "5ffb92d505cc",
@@ -1892,7 +1839,7 @@
       "images": [
         "https://www.sarouty.ma/wp-content/uploads/2025/02/blog-fallback-img.png"
       ],
-      "scraped_at": "2026-04-01T11:07:35.863706"
+      "scraped_at": "2026-04-02T10:43:04.663151"
     },
     {
       "id": "723e529a9aba",
@@ -1928,7 +1875,7 @@
       "images": [
         "https://www.sarouty.ma/wp-content/uploads/2025/02/blog-fallback-img.png"
       ],
-      "scraped_at": "2026-04-01T11:07:43.996637"
+      "scraped_at": "2026-04-02T10:43:11.934020"
     },
     {
       "id": "bb973a480154",
@@ -1964,7 +1911,7 @@
       "images": [
         "https://www.sarouty.ma/wp-content/uploads/2025/02/blog-fallback-img.png"
       ],
-      "scraped_at": "2026-04-01T11:07:50.523735"
+      "scraped_at": "2026-04-02T10:43:19.773545"
     },
     {
       "id": "d9e84fc110dd",
@@ -2000,7 +1947,7 @@
       "images": [
         "https://www.sarouty.ma/wp-content/uploads/2025/02/blog-fallback-img.png"
       ],
-      "scraped_at": "2026-04-01T11:07:56.416956"
+      "scraped_at": "2026-04-02T10:43:25.560067"
     },
     {
       "id": "34d1388b8159",
@@ -2036,7 +1983,7 @@
       "images": [
         "https://www.sarouty.ma/wp-content/uploads/2025/02/blog-fallback-img.png"
       ],
-      "scraped_at": "2026-04-01T11:08:03.592980"
+      "scraped_at": "2026-04-02T10:43:31.732652"
     },
     {
       "id": "badea1509332",
@@ -2076,7 +2023,7 @@
         "https://www.sarouty.ma/wp-content/uploads/2025/12/Med-Business-Integration-Img-150x150.png",
         "https://www.sarouty.ma/wp-content/uploads/2025/12/Milkiya-Img-150x150.png"
       ],
-      "scraped_at": "2026-04-01T11:08:10.155960"
+      "scraped_at": "2026-04-02T10:43:38.161926"
     },
     {
       "id": "31f6a5224426",
@@ -2116,7 +2063,7 @@
         "https://www.sarouty.ma/wp-content/uploads/2025/12/LesMaisonsDePatricia-Img-150x150.png",
         "https://www.sarouty.ma/wp-content/uploads/2025/12/Med-Business-Integration-Img-150x150.png"
       ],
-      "scraped_at": "2026-04-01T11:08:17.514296"
+      "scraped_at": "2026-04-02T10:43:45.223213"
     },
     {
       "id": "b7d65e10087e",
@@ -2152,7 +2099,7 @@
       "images": [
         "https://www.sarouty.ma/wp-content/uploads/2025/02/blog-fallback-img.png"
       ],
-      "scraped_at": "2026-04-01T11:08:32.484251"
+      "scraped_at": "2026-04-02T10:43:57.531210"
     },
     {
       "id": "8e746685d476",
@@ -2188,7 +2135,7 @@
       "images": [
         "https://www.sarouty.ma/wp-content/uploads/2025/02/blog-fallback-img.png"
       ],
-      "scraped_at": "2026-04-01T11:08:40.019436"
+      "scraped_at": "2026-04-02T10:44:05.268272"
     },
     {
       "id": "9d4bf36ee911",
@@ -2224,7 +2171,7 @@
       "images": [
         "https://www.sarouty.ma/wp-content/uploads/2025/02/blog-fallback-img.png"
       ],
-      "scraped_at": "2026-04-01T11:08:46.720012"
+      "scraped_at": "2026-04-02T10:44:12.453239"
     },
     {
       "id": "296eaeeb0f41",
@@ -2260,7 +2207,7 @@
       "images": [
         "https://www.sarouty.ma/wp-content/uploads/2025/02/blog-fallback-img.png"
       ],
-      "scraped_at": "2026-04-01T11:08:53.090216"
+      "scraped_at": "2026-04-02T10:44:20.176487"
     },
     {
       "id": "fdb5c914e979",
@@ -2296,7 +2243,7 @@
       "images": [
         "https://www.sarouty.ma/wp-content/uploads/2025/02/blog-fallback-img.png"
       ],
-      "scraped_at": "2026-04-01T11:08:58.965566"
+      "scraped_at": "2026-04-02T10:44:26.718307"
     },
     {
       "id": "12cb664c151a",
@@ -2332,7 +2279,7 @@
       "images": [
         "https://www.sarouty.ma/wp-content/uploads/2025/02/blog-fallback-img.png"
       ],
-      "scraped_at": "2026-04-01T11:09:05.752132"
+      "scraped_at": "2026-04-02T10:44:32.720633"
     },
     {
       "id": "f0dec5c7268a",
@@ -2368,7 +2315,7 @@
       "images": [
         "https://www.sarouty.ma/wp-content/uploads/2025/02/blog-fallback-img.png"
       ],
-      "scraped_at": "2026-04-01T11:09:12.016162"
+      "scraped_at": "2026-04-02T10:44:39.231462"
     },
     {
       "id": "eecbe8f8c1fa",
@@ -2404,7 +2351,7 @@
       "images": [
         "https://www.sarouty.ma/wp-content/uploads/2025/02/blog-fallback-img.png"
       ],
-      "scraped_at": "2026-04-01T11:09:19.783819"
+      "scraped_at": "2026-04-02T10:44:46.653695"
     },
     {
       "id": "f40557856638",
@@ -2440,7 +2387,7 @@
       "images": [
         "https://www.sarouty.ma/wp-content/uploads/2025/02/blog-fallback-img.png"
       ],
-      "scraped_at": "2026-04-01T11:09:26.525489"
+      "scraped_at": "2026-04-02T10:44:53.797632"
     },
     {
       "id": "4805eb3a206b",
@@ -2476,7 +2423,7 @@
       "images": [
         "https://www.sarouty.ma/wp-content/uploads/2025/02/blog-fallback-img.png"
       ],
-      "scraped_at": "2026-04-01T11:09:33.617527"
+      "scraped_at": "2026-04-02T10:45:01.218274"
     },
     {
       "id": "59e83e703fb4",
@@ -2512,7 +2459,7 @@
       "images": [
         "https://www.sarouty.ma/wp-content/uploads/2025/02/blog-fallback-img.png"
       ],
-      "scraped_at": "2026-04-01T11:09:41.003907"
+      "scraped_at": "2026-04-02T10:45:08.857414"
     },
     {
       "id": "8be2c3647cbc",
@@ -2548,7 +2495,7 @@
       "images": [
         "https://www.sarouty.ma/wp-content/uploads/2025/02/blog-fallback-img.png"
       ],
-      "scraped_at": "2026-04-01T11:09:47.174861"
+      "scraped_at": "2026-04-02T10:45:16.171222"
     },
     {
       "id": "0d7bb5401fdb",
@@ -2584,7 +2531,7 @@
       "images": [
         "https://www.sarouty.ma/wp-content/uploads/2025/02/blog-fallback-img.png"
       ],
-      "scraped_at": "2026-04-01T11:09:54.429867"
+      "scraped_at": "2026-04-02T10:45:23.677796"
     },
     {
       "id": "10ebe7b04a5c",
@@ -2620,7 +2567,7 @@
       "images": [
         "https://www.sarouty.ma/wp-content/uploads/2025/02/blog-fallback-img.png"
       ],
-      "scraped_at": "2026-04-01T11:10:01.383561"
+      "scraped_at": "2026-04-02T10:45:30.153115"
     },
     {
       "id": "9631d7e54227",
@@ -2656,7 +2603,7 @@
       "images": [
         "https://www.sarouty.ma/wp-content/uploads/2025/02/blog-fallback-img.png"
       ],
-      "scraped_at": "2026-04-01T11:10:07.621070"
+      "scraped_at": "2026-04-02T10:45:36.513707"
     },
     {
       "id": "03747012e838",
@@ -2692,7 +2639,7 @@
       "images": [
         "https://www.sarouty.ma/wp-content/uploads/2025/02/blog-fallback-img.png"
       ],
-      "scraped_at": "2026-04-01T11:10:14.848921"
+      "scraped_at": "2026-04-02T10:45:43.110573"
     },
     {
       "id": "e24384a71e47",
@@ -2728,7 +2675,7 @@
       "images": [
         "https://www.sarouty.ma/wp-content/uploads/2025/02/blog-fallback-img.png"
       ],
-      "scraped_at": "2026-04-01T11:10:22.515195"
+      "scraped_at": "2026-04-02T10:45:49.221876"
     },
     {
       "id": "b1eedcbe1a3d",
@@ -2764,7 +2711,7 @@
       "images": [
         "https://www.sarouty.ma/wp-content/uploads/2025/02/blog-fallback-img.png"
       ],
-      "scraped_at": "2026-04-01T11:10:29.574719"
+      "scraped_at": "2026-04-02T10:45:55.884663"
     },
     {
       "id": "b5bd9c05f477",
@@ -2800,7 +2747,7 @@
       "images": [
         "https://www.sarouty.ma/wp-content/uploads/2025/02/blog-fallback-img.png"
       ],
-      "scraped_at": "2026-04-01T11:10:37.220126"
+      "scraped_at": "2026-04-02T10:46:02.807552"
     },
     {
       "id": "37df09822b77",
@@ -2834,7 +2781,7 @@
       "contact_whatsapp": "",
       "image": "",
       "images": [],
-      "scraped_at": "2026-04-01T11:10:40.342849"
+      "scraped_at": "2026-04-02T10:46:05.353876"
     },
     {
       "id": "6f34906b67d2",
@@ -2870,7 +2817,7 @@
       "images": [
         "https://www.sarouty.ma/wp-content/uploads/2025/02/blog-fallback-img.png"
       ],
-      "scraped_at": "2026-04-01T11:10:46.465385"
+      "scraped_at": "2026-04-02T10:46:12.958486"
     },
     {
       "id": "fb4fc412e3b6",
@@ -2906,7 +2853,7 @@
       "images": [
         "https://www.sarouty.ma/wp-content/uploads/2025/02/blog-fallback-img.png"
       ],
-      "scraped_at": "2026-04-01T11:10:52.451130"
+      "scraped_at": "2026-04-02T10:46:18.925968"
     },
     {
       "id": "6e10d75e6072",
@@ -2942,7 +2889,7 @@
       "images": [
         "https://www.sarouty.ma/wp-content/uploads/2025/02/blog-fallback-img.png"
       ],
-      "scraped_at": "2026-04-01T11:10:59.949835"
+      "scraped_at": "2026-04-02T10:46:25.724751"
     },
     {
       "id": "72b4793bf870",
@@ -2978,7 +2925,7 @@
       "images": [
         "https://www.sarouty.ma/wp-content/uploads/2025/02/blog-fallback-img.png"
       ],
-      "scraped_at": "2026-04-01T11:11:06.193914"
+      "scraped_at": "2026-04-02T10:46:31.777554"
     },
     {
       "id": "e8fc39655d6e",
@@ -3014,7 +2961,7 @@
       "images": [
         "https://www.sarouty.ma/wp-content/uploads/2025/02/blog-fallback-img.png"
       ],
-      "scraped_at": "2026-04-01T11:11:12.318601"
+      "scraped_at": "2026-04-02T10:46:37.682133"
     },
     {
       "id": "894a4b209686",
@@ -3054,7 +3001,7 @@
         "https://www.sarouty.ma/wp-content/uploads/2025/11/LesMaisonsDePatricia-Img-150x150.png",
         "https://www.sarouty.ma/wp-content/uploads/2025/11/Med-Business-Integration-Img-150x150.png"
       ],
-      "scraped_at": "2026-04-01T11:11:18.403748"
+      "scraped_at": "2026-04-02T10:46:43.975390"
     },
     {
       "id": "ce9946945b03",
@@ -3090,7 +3037,7 @@
       "images": [
         "https://www.sarouty.ma/wp-content/uploads/2025/02/blog-fallback-img.png"
       ],
-      "scraped_at": "2026-04-01T11:11:25.337987"
+      "scraped_at": "2026-04-02T10:46:51.271598"
     },
     {
       "id": "4c32fed2c65b",
@@ -3126,7 +3073,7 @@
       "images": [
         "https://www.sarouty.ma/wp-content/uploads/2025/02/blog-fallback-img.png"
       ],
-      "scraped_at": "2026-04-01T11:11:31.568586"
+      "scraped_at": "2026-04-02T10:46:59.019530"
     },
     {
       "id": "e4786df0ecfb",
@@ -3160,7 +3107,7 @@
       "contact_whatsapp": "",
       "image": "",
       "images": [],
-      "scraped_at": "2026-04-01T11:11:37.799690"
+      "scraped_at": "2026-04-02T10:47:05.507270"
     },
     {
       "id": "3c5a20ce19bd",
@@ -3196,7 +3143,7 @@
       "images": [
         "https://www.sarouty.ma/wp-content/uploads/2025/02/blog-fallback-img.png"
       ],
-      "scraped_at": "2026-04-01T11:11:43.983967"
+      "scraped_at": "2026-04-02T10:47:12.711644"
     },
     {
       "id": "6447e475a517",
@@ -3232,7 +3179,7 @@
       "images": [
         "https://www.sarouty.ma/wp-content/uploads/2025/02/blog-fallback-img.png"
       ],
-      "scraped_at": "2026-04-01T11:11:51.016345"
+      "scraped_at": "2026-04-02T10:47:19.820612"
     },
     {
       "id": "b29710664127",
@@ -3268,7 +3215,7 @@
       "images": [
         "https://www.sarouty.ma/wp-content/uploads/2025/02/blog-fallback-img.png"
       ],
-      "scraped_at": "2026-04-01T11:11:57.362320"
+      "scraped_at": "2026-04-02T10:47:27.547566"
     },
     {
       "id": "87553be5bebd",
@@ -3304,7 +3251,7 @@
       "images": [
         "https://www.sarouty.ma/wp-content/uploads/2025/02/blog-fallback-img.png"
       ],
-      "scraped_at": "2026-04-01T11:12:03.323341"
+      "scraped_at": "2026-04-02T10:47:33.468222"
     },
     {
       "id": "ad11c8cd4748",
@@ -3340,7 +3287,7 @@
       "images": [
         "https://www.sarouty.ma/wp-content/uploads/2025/02/blog-fallback-img.png"
       ],
-      "scraped_at": "2026-04-01T11:12:09.316660"
+      "scraped_at": "2026-04-02T10:47:39.755254"
     },
     {
       "id": "eeb66c456270",
@@ -3376,7 +3323,7 @@
       "images": [
         "https://www.sarouty.ma/wp-content/uploads/2025/02/blog-fallback-img.png"
       ],
-      "scraped_at": "2026-04-01T11:12:15.890296"
+      "scraped_at": "2026-04-02T10:47:47.231399"
     },
     {
       "id": "50ba8515cbbd",
@@ -3412,7 +3359,7 @@
       "images": [
         "https://www.sarouty.ma/wp-content/uploads/2025/02/blog-fallback-img.png"
       ],
-      "scraped_at": "2026-04-01T11:12:21.891247"
+      "scraped_at": "2026-04-02T10:47:53.289793"
     },
     {
       "id": "0921f0d3ce97",
@@ -3448,7 +3395,7 @@
       "images": [
         "https://www.sarouty.ma/wp-content/uploads/2025/02/blog-fallback-img.png"
       ],
-      "scraped_at": "2026-04-01T11:12:28.518639"
+      "scraped_at": "2026-04-02T10:48:00.350207"
     },
     {
       "id": "f5c705b0c744",
@@ -3484,7 +3431,7 @@
       "images": [
         "https://www.sarouty.ma/wp-content/uploads/2025/02/blog-fallback-img.png"
       ],
-      "scraped_at": "2026-04-01T11:12:36.004415"
+      "scraped_at": "2026-04-02T10:48:07.358759"
     },
     {
       "id": "a6f1712b524c",
@@ -3520,34 +3467,19 @@
       "images": [
         "https://www.sarouty.ma/wp-content/uploads/2025/02/blog-fallback-img.png"
       ],
-      "scraped_at": "2026-04-01T11:12:43.479801"
+      "scraped_at": "2026-04-02T10:48:14.563805"
     }
   ],
   "rejected_log": [
     {
-      "title": "Appartement à vendre 60 m² à Marrakech",
-      "url": "https://www.avito.ma/fr/centre_ville/appartements/Appartement_%C3%A0_vendre_60_m%C2%B2_%C3%A0_Marrakech_57599233.htm",
-      "reason": "Zentrum-Lage: Centre Ville"
+      "title": "Appartement à vendre 79 m² à Marrakech",
+      "url": "https://www.avito.ma/fr/gu%C3%A9liz/appartements/Appartement_%C3%A0_vendre_79_m%C2%B2_%C3%A0_Marrakech_57404271.htm",
+      "reason": "Zentrum-Lage: Guéliz"
     },
     {
       "title": "Appartement à vendre 103 m² à Marrakech",
       "url": "https://www.avito.ma/fr/hivernage/appartements/Appartement_%C3%A0_vendre_103_m%C2%B2_%C3%A0_Marrakech_57647629.htm",
       "reason": "Zentrum-Lage: Hivernage"
-    },
-    {
-      "title": "🏠 L’EXCEPTION URBAINE Duplex 66 m² à Guéliz",
-      "url": "https://www.avito.ma/fr/gu%C3%A9liz/appartements/___L_EXCEPTION_URBAINE_Duplex_66_m%C2%B2_%C3%A0_Gu%C3%A9liz_57674996.htm",
-      "reason": "Zentrum-Lage: Guéliz"
-    },
-    {
-      "title": "Duplex moderne à vendre – 2 chambres Victor Hugo",
-      "url": "https://www.avito.ma/fr/victor_hugo/appartements/Duplex_moderne_%C3%A0_vendre___2_chambres__Victor_Hugo_57447780.htm",
-      "reason": "Erdgeschoss"
-    },
-    {
-      "title": "Studio meublé à vendre avec piscine",
-      "url": "https://www.avito.ma/fr/daoudiate/appartements/Studio_meubl%C3%A9_%C3%A0_vendre_avec_piscine_57705933.htm",
-      "reason": "Erdgeschoss"
     },
     {
       "title": "Appartement duplex 85 m² avec balcon a gueliz",
@@ -3560,18 +3492,13 @@
       "reason": "Erdgeschoss"
     },
     {
-      "title": "Joli duplex 1 chambre meublé Neuf à vendre",
-      "url": "https://www.avito.ma/fr/route_de_casablanca/appartements/Joli_duplex_1_chambre_meubl%C3%A9_Neuf_%C3%A0_vendre_56213151.htm",
+      "title": "Duplex RDC 99m2 Madame Plaza près de Marjane",
+      "url": "https://www.avito.ma/fr/av_abdelkrim_el_khattabi/appartements/Duplex_RDC_99m2_Madame_Plaza_pr%C3%A8s_de_Marjane_57681378.htm",
       "reason": "Erdgeschoss"
     },
     {
-      "title": "Appartement à vendre 88m² à Victor Hugo",
-      "url": "https://www.avito.ma/fr/victor_hugo/appartements/Appartement_%C3%A0_vendre_88m%C2%B2_%C3%A0_Victor_Hugo_56477572.htm",
-      "reason": "Zentrum-Lage: Victor Hugo"
-    },
-    {
-      "title": "Duplex RDC 99m2 Madame Plaza près de Marjane",
-      "url": "https://www.avito.ma/fr/av_abdelkrim_el_khattabi/appartements/Duplex_RDC_99m2_Madame_Plaza_pr%C3%A8s_de_Marjane_57681378.htm",
+      "title": "Joli duplex 1 chambre meublé Neuf à vendre",
+      "url": "https://www.avito.ma/fr/route_de_casablanca/appartements/Joli_duplex_1_chambre_meubl%C3%A9_Neuf_%C3%A0_vendre_56213151.htm",
       "reason": "Erdgeschoss"
     },
     {
@@ -3580,24 +3507,24 @@
       "reason": "Erdgeschoss"
     },
     {
-      "title": "2ᵉ Tranche Riad Garden, Appartements de 84 à 116m²",
-      "url": "https://www.avito.ma/fr/av_mohammed_vi/appartements/2__Tranche_Riad_Garden__Appartements_de_84_%C3%A0_116m%C2%B2_54252844.htm",
-      "reason": "Erdgeschoss"
-    },
-    {
       "title": "Appartement à vendre 48m² à Gueliz - Piscine Rooftop",
       "url": "https://www.avito.ma/fr/gu%C3%A9liz/appartements/Appartement_%C3%A0_vendre_48m%C2%B2_%C3%A0_Gueliz___Piscine_Rooftop_57658624.htm",
       "reason": "Zentrum-Lage: Guéliz"
     },
     {
-      "title": "Appart 3ch salon 128m² à l’hivernage près CTM",
-      "url": "https://www.avito.ma/fr/hivernage/appartements/Appart_3ch_salon_128m%C2%B2_%C3%A0_l_hivernage_pr%C3%A8s_CTM_57314440.htm",
-      "reason": "Zentrum-Lage: Hivernage"
+      "title": "2ᵉ Tranche Riad Garden, Appartements de 84 à 116m²",
+      "url": "https://www.avito.ma/fr/av_mohammed_vi/appartements/2__Tranche_Riad_Garden__Appartements_de_84_%C3%A0_116m%C2%B2_54252844.htm",
+      "reason": "Erdgeschoss"
     },
     {
       "title": "Appartement à vendre 58 m² à Marrakech",
       "url": "https://www.avito.ma/fr/victor_hugo/appartements/Appartement_%C3%A0_vendre_58_m%C2%B2_%C3%A0_Marrakech_57606723.htm",
       "reason": "Zentrum-Lage: Victor Hugo"
+    },
+    {
+      "title": "Appart 3ch salon 128m² à l’hivernage près CTM",
+      "url": "https://www.avito.ma/fr/hivernage/appartements/Appart_3ch_salon_128m%C2%B2_%C3%A0_l_hivernage_pr%C3%A8s_CTM_57314440.htm",
+      "reason": "Zentrum-Lage: Hivernage"
     },
     {
       "title": "Appartement à vendre 136 m² à Marrakech",
@@ -3620,14 +3547,19 @@
       "reason": "Zentrum-Lage: Guéliz"
     },
     {
+      "title": "appartement a vendre",
+      "url": "https://www.avito.ma/fr/gu%C3%A9liz/appartements/appartement_a_vendre_57710759.htm",
+      "reason": "Zentrum-Lage: Guéliz"
+    },
+    {
+      "title": "RAK-GU-1332 - Appartement à vendre à Guéliz",
+      "url": "https://www.avito.ma/fr/gu%C3%A9liz/appartements/RAK_GU_1332___Appartement_%C3%A0_vendre_%C3%A0_Gu%C3%A9liz_57710547.htm",
+      "reason": "Zentrum-Lage: Guéliz"
+    },
+    {
       "title": "Appartement 78 m² à vendre Jnane awrad Marrakech",
       "url": "https://www.avito.ma/fr/hay_izdihar/appartements/Appartement_78_m%C2%B2_%C3%A0_vendre_Jnane_awrad_Marrakech_57696350.htm",
       "reason": "Erdgeschoss"
-    },
-    {
-      "title": "Appartement en bon état de 72m2 à Guéliz",
-      "url": "https://www.avito.ma/fr/gu%C3%A9liz/appartements/Appartement_en_bon_%C3%A9tat_de_72m2_%C3%A0_Gu%C3%A9liz_57705459.htm",
-      "reason": "Zentrum-Lage: Guéliz"
     },
     {
       "title": "Studio exceptionnel de 60 m² au centre Guéliz",
@@ -3655,29 +3587,49 @@
       "reason": "Zentrum-Lage: Guéliz"
     },
     {
-      "title": "Appartement à vendre 46 m² à Marrakech",
-      "url": "https://www.avito.ma/fr/gu%C3%A9liz/appartements/Appartement_%C3%A0_vendre_46_m%C2%B2_%C3%A0_Marrakech_57403547.htm",
-      "reason": "Preis: 3,874,000 > Max"
+      "title": "Appartement à vendre 50 m² à Marrakech",
+      "url": "https://www.avito.ma/fr/victor_hugo/appartements/Appartement_%C3%A0_vendre_50_m%C2%B2_%C3%A0_Marrakech_57584074.htm",
+      "reason": "Zentrum-Lage: Victor Hugo"
     },
     {
-      "title": "Appartement à vendre 132 m² Tafraoute à Marrakech",
-      "url": "https://www.avito.ma/fr/hivernage/appartements/Appartement_%C3%A0_vendre_132_m%C2%B2_Tafraoute_%C3%A0_Marrakech_57551501.htm",
-      "reason": "Preis: 2,706,000 > Max"
+      "title": "Signature Immo",
+      "url": "https://www.avito.ma/fr/guéliz/appartements/Elégant_Studio_à_vendre_57_m²_à_Marrakech_57638397.htm",
+      "reason": "Zentrum-Lage: Guéliz"
     },
     {
-      "title": "Duplex avec piscine privée",
-      "url": "https://www.avito.ma/fr/route_de_casablanca/appartements/Duplex_avec_piscine_priv%C3%A9e_57666729.htm",
-      "reason": "Preis: 2,400,000 > Max"
+      "title": "Duplex RDC 47 m² en vente - piscine Rooftop",
+      "url": "https://www.avito.ma/fr/av_abdelkrim_el_khattabi/appartements/Duplex_RDC_47_m%C2%B2_en_vente___piscine_Rooftop_57606328.htm",
+      "reason": "Erdgeschoss"
     },
     {
-      "title": "Appartement Route de Casablanca parking Titré",
-      "url": "https://www.avito.ma/fr/route_de_casablanca/appartements/Appartement_Route_de_Casablanca_parking_Titr%C3%A9_57705805.htm",
-      "reason": "Preis: 3,650,000 > Max"
+      "title": "Appartement à vendre 52 m² à Marrakech",
+      "url": "https://www.avito.ma/fr/gu%C3%A9liz/appartements/Appartement_%C3%A0_vendre_52_m%C2%B2_%C3%A0_Marrakech_56035043.htm",
+      "reason": "Zentrum-Lage: Guéliz"
+    },
+    {
+      "title": "Appartement à vendre",
+      "url": "https://www.avito.ma/fr/azzouzia/appartements/Appartement_%C3%A0_vendre_57710747.htm",
+      "reason": "Preis: 400,000 < Min"
+    },
+    {
+      "title": "Appartement meublé",
+      "url": "https://www.avito.ma/fr/m_hamid/appartements/Appartement_meubl%C3%A9_57710723.htm",
+      "reason": "Preis: 2,450,000 > Max"
+    },
+    {
+      "title": "Smartphone et Téléphone à vendre au Maroc : 26263 annonces",
+      "url": "https://www.avito.ma/fr/victor_hugo/appartements/Studio_%C3%A0_vendre_57172033.htm",
+      "reason": "Preis: 3,880,000 > Max"
     },
     {
       "title": "Appartements à vendre à M'Hamid 9 – Soutien 7 millions",
       "url": "https://www.avito.ma/fr/m_hamid/appartements/Appartements_%C3%A0_vendre_%C3%A0_M_Hamid_9___Soutien_7_millions_57688219.htm",
       "reason": "Preis: 500,000 < Min"
+    },
+    {
+      "title": "Appartement à vendre Ruidat 102 m²",
+      "url": "https://www.avito.ma/fr/rouidat/appartements/Appartement_%C3%A0_vendre_Ruidat_102_m%C2%B2_57710449.htm",
+      "reason": "Preis: 4,790,000 > Max"
     },
     {
       "title": "Studio à vendre 58 m² à Marrakech",
@@ -3695,34 +3647,9 @@
       "reason": "Preis: 2,950,000 > Max"
     },
     {
-      "title": "Appartement de luxe à vendre à Marrakech",
-      "url": "https://www.avito.ma/fr/route_de_casablanca/appartements/Appartement_de_luxe_%C3%A0_vendre_%C3%A0_Marrakech_57705100.htm",
-      "reason": "Preis: 2,450,000 > Max"
-    },
-    {
-      "title": "Appartement à vendre 50 m² à Marrakech",
-      "url": "https://www.avito.ma/fr/victor_hugo/appartements/Appartement_%C3%A0_vendre_50_m%C2%B2_%C3%A0_Marrakech_57584074.htm",
-      "reason": "Zentrum-Lage: Victor Hugo"
-    },
-    {
       "title": "Appart à vendre prestigia meublé",
       "url": "https://www.avito.ma/fr/av_mohammed_vi/appartements/Appart_%C3%A0_vendre_prestigia_meubl%C3%A9_57598817.htm",
       "reason": "Preis: 2,540,000 > Max"
-    },
-    {
-      "title": "Elégant Studio à vendre 57 m² à Marrakech",
-      "url": "https://www.avito.ma/fr/gu%C3%A9liz/appartements/El%C3%A9gant_Studio_%C3%A0_vendre_57_m%C2%B2_%C3%A0_Marrakech_57638397.htm",
-      "reason": "Zentrum-Lage: Guéliz"
-    },
-    {
-      "title": "Superbe appartement lumineux sans vis-à-vis",
-      "url": "https://www.avito.ma/fr/massira_2/appartements/Superbe_appartement_lumineux_sans_vis_%C3%A0_vis_57704920.htm",
-      "reason": "Preis: 4,800,000 > Max"
-    },
-    {
-      "title": "Duplex RDC 47 m² en vente - piscine Rooftop",
-      "url": "https://www.avito.ma/fr/av_abdelkrim_el_khattabi/appartements/Duplex_RDC_47_m%C2%B2_en_vente___piscine_Rooftop_57606328.htm",
-      "reason": "Erdgeschoss"
     },
     {
       "title": "Luxueux studio en vente a Gueliz pour AIRBNB",
@@ -3735,9 +3662,9 @@
       "reason": "Zentrum-Lage: Guéliz"
     },
     {
-      "title": "Appartement à vendre 44 m² à Marrakech",
-      "url": "https://www.avito.ma/fr/gu%C3%A9liz/appartements/Appartement_%C3%A0_vendre_44_m%C2%B2_%C3%A0_Marrakech_57619105.htm",
-      "reason": "Preis: 5,800,000 > Max"
+      "title": "Appartement Duplex à vendre – Victor Hugo Marrakech",
+      "url": "https://www.avito.ma/fr/victor_hugo/appartements/Appartement_Duplex_%C3%A0_vendre___Victor_Hugo_Marrakech_57709399.htm",
+      "reason": "Erdgeschoss"
     },
     {
       "title": "Appartement à vendre 70 m² à Marrakech",
@@ -3750,13 +3677,13 @@
       "reason": "Zentrum-Lage: Guéliz"
     },
     {
-      "title": "Appartement à vendre mabrouka",
-      "url": "https://www.avito.ma/fr/mabrouka/appartements/Appartement_%C3%A0_vendre_mabrouka_57704195.htm",
-      "reason": "Preis: 3,550,000 > Max"
-    },
-    {
       "title": "LUX apart a côté MACDO GUELIZ ZARA CARÉ EDEN",
       "url": "https://www.avito.ma/fr/gu%C3%A9liz/appartements/LUX_apart_a_c%C3%B4t%C3%A9_MACDO_GUELIZ_ZARA_CAR%C3%89_EDEN_57646393.htm",
+      "reason": "Zentrum-Lage: Guéliz"
+    },
+    {
+      "title": "Appartement Guéliz – Opportunité Rare",
+      "url": "https://www.avito.ma/fr/gu%C3%A9liz/appartements/Appartement_Gu%C3%A9liz___Opportunit%C3%A9_Rare_57551499.htm",
       "reason": "Zentrum-Lage: Guéliz"
     },
     {
@@ -3765,13 +3692,8 @@
       "reason": "Zentrum-Lage: Guéliz"
     },
     {
-      "title": "Appartement De Luxe à Prestigia",
-      "url": "https://www.avito.ma/fr/agdal/appartements/Appartement_De_Luxe_%C3%A0_Prestigia_57301273.htm",
-      "reason": "Preis: 2,500,000 > Max"
-    },
-    {
-      "title": "Appartement Guéliz – Opportunité Rare",
-      "url": "https://www.avito.ma/fr/gu%C3%A9liz/appartements/Appartement_Gu%C3%A9liz___Opportunit%C3%A9_Rare_57551499.htm",
+      "title": "ZERO VIS A VIS, à 4 minutes de Guéliz",
+      "url": "https://www.avito.ma/fr/gu%C3%A9liz/appartements/ZERO_VIS_A_VIS__%C3%A0_4_minutes_de_Gu%C3%A9liz_57149217.htm",
       "reason": "Zentrum-Lage: Guéliz"
     },
     {
@@ -3780,9 +3702,9 @@
       "reason": "Preis: 4,850,000 > Max"
     },
     {
-      "title": "ZERO VIS A VIS, à 4 minutes de Guéliz",
-      "url": "https://www.avito.ma/fr/gu%C3%A9liz/appartements/ZERO_VIS_A_VIS__%C3%A0_4_minutes_de_Gu%C3%A9liz_57149217.htm",
-      "reason": "Zentrum-Lage: Guéliz"
+      "title": "Appartement De Luxe à Prestigia",
+      "url": "https://www.avito.ma/fr/agdal/appartements/Appartement_De_Luxe_%C3%A0_Prestigia_57301273.htm",
+      "reason": "Preis: 2,500,000 > Max"
     },
     {
       "title": "Luxueux Studio sur plan à partir de 16500dh/m2",
@@ -3835,11 +3757,6 @@
       "reason": "Preis: 800,000 < Min"
     },
     {
-      "title": "Appartement REZ DE CHAUSSEE à vendre à Marrakech",
-      "url": "https://www.avito.ma/fr/es_saada/appartements/Appartement_REZ_DE_CHAUSSEE_%C3%A0_vendre_%C3%A0_Marrakech_57703980.htm",
-      "reason": "Preis: 410,000 < Min"
-    },
-    {
       "title": "Appartement en vent 51m² à Gueliz-Piscine Rooftop",
       "url": "https://www.avito.ma/fr/gu%C3%A9liz/appartements/Appartement_en_vent_51m%C2%B2_%C3%A0_Gueliz_Piscine_Rooftop_57658657.htm",
       "reason": "Zentrum-Lage: Guéliz"
@@ -3880,34 +3797,239 @@
       "reason": "Preis: 2,800,000 > Max"
     },
     {
-      "title": "RELIEF II",
-      "url": "https://www.mubawab.ma/fr/b/12586/relief-ii",
-      "reason": "Preis: 850,000 < Min"
+      "title": "Appart 114m2 de 3 ch salon à Rouidate",
+      "url": "https://www.avito.ma/fr/rouidat/appartements/Appart_114m2_de_3_ch_salon_%C3%A0_Rouidate_57312726.htm",
+      "reason": "Preis: 4,970,000 > Max"
     },
     {
-      "title": "Opportunité rare: T2 fonctionnel au nouveau Guéliz",
-      "url": "https://www.mubawab.ma/fr/pa/8158289/opportunit%C3%A9-rare-t2-fonctionnel-au-nouveau-gu%C3%A9liz",
-      "reason": "Preis: 818,100 < Min"
+      "title": "Appartement 87 m2 av Alla El Fassi",
+      "url": "https://www.avito.ma/fr/allal_el_fassi/appartements/Appartement_87_m2_av_Alla_El_Fassi_49494984.htm",
+      "reason": "Preis: 4,680,000 > Max"
     },
     {
-      "title": "Appartement 1 chambre Opportunité à saisir",
-      "url": "https://www.mubawab.ma/fr/pa/8158284/appartement-1-chambre-opportunit%C3%A9-%C3%A0-saisir",
-      "reason": "Preis: 818,100 < Min"
+      "title": "Duplex 110 m2 abwb gueliz",
+      "url": "https://www.avito.ma/fr/mabrouka/appartements/Duplex_110_m2_abwb_gueliz_31087743.htm",
+      "reason": "Zentrum-Lage: Mabrouka"
     },
     {
-      "title": "Élégant appartement T2 Confort et emplacement idéal",
-      "url": "https://www.mubawab.ma/fr/pa/8158293/%C3%A9l%C3%A9gant-appartement-t2-confort-et-emplacement-id%C3%A9al",
-      "reason": "Preis: 21,850,000 > Max"
+      "title": "Appartement à vendre 60 m² à Marrakech",
+      "url": "https://www.avito.ma/fr/centre_ville/appartements/Appartement_%C3%A0_vendre_60_m%C2%B2_%C3%A0_Marrakech_57599233.htm",
+      "reason": "Zentrum-Lage: Centre Ville"
     },
     {
-      "title": "Bel appartement à vendre à Guéliz. Surface de 47 m²",
-      "url": "https://www.mubawab.ma/fr/pa/8059938/bel-appartement-%C3%A0-vendre-%C3%A0-gu%C3%A9liz-surface-de-47-m%C2%B2",
-      "reason": "Preis: 41,128,000 > Max"
+      "title": "Appartement excellent 64 mètres avec soutien financier",
+      "url": "https://www.avito.ma/fr/autre_secteur/appartements/Appartement_excellent_64_m%C3%A8tres_avec_soutien_financier_56250121.htm",
+      "reason": "Preis: 520,000 < Min"
+    },
+    {
+      "title": "Appartement à vendre Marrakech Mahamid 9",
+      "url": "https://www.avito.ma/fr/m_hamid/appartements/Appartement_%C3%A0_vendre_Marrakech_Mahamid_9_57682768.htm",
+      "reason": "Preis: 3,350,000 > Max"
+    },
+    {
+      "title": "Guy Hoquet Immobilier Marrakech",
+      "url": "https://www.mubawab.ma/fr/b/2897/guy-hoquet-immobilier-marrakech",
+      "reason": "Preis: 5,250,000 > Max"
+    },
+    {
+      "title": "Appartement à l'achat à Hivernage. Surface de 200 m². Meublé",
+      "url": "https://www.mubawab.ma/fr/a/8322493/appartement-%C3%A0-l-achat-%C3%A0-hivernage-surface-de-200-m%C2%B2-meubl%C3%A9",
+      "reason": "Preis: 4,000,000 > Max"
+    },
+    {
+      "title": "Appartement d'Exception à l'Hivernage Vue Atlas",
+      "url": "https://www.mubawab.ma/fr/a/8304485/appartement-d-exception-%C3%A0-l-hivernage-vue-atlas",
+      "reason": "Preis: 3,900,000 > Max"
+    },
+    {
+      "title": "Appartement à – Guéliz, 300 m² Rooftop privé",
+      "url": "https://www.mubawab.ma/fr/a/8325284/appartement-%C3%A0-%E2%80%93-gu%C3%A9liz-300-m%C2%B2-rooftop-priv%C3%A9",
+      "reason": "Preis: 3,900,000 > Max"
+    },
+    {
+      "title": "Grand appartement neuf 193m² 3 chambres au centre",
+      "url": "https://www.mubawab.ma/fr/a/8278889/grand-appartement-neuf-193m%C2%B2-3-chambres-au-centre",
+      "reason": "Preis: 3,860,000 > Max"
+    },
+    {
+      "title": "Vend appartement à Guéliz. Superficie 51 m²",
+      "url": "https://www.mubawab.ma/fr/pa/8257821/vend-appartement-%C3%A0-gu%C3%A9liz-superficie-51-m%C2%B2",
+      "reason": "Preis: 9,911,000 > Max"
+    },
+    {
+      "title": "Appartement neuf à vendre à Gueliz",
+      "url": "https://www.mubawab.ma/fr/pa/7921917/appartement-neuf-%C3%A0-vendre-%C3%A0-gueliz",
+      "reason": "Preis: 8,893,000 > Max"
+    },
+    {
+      "title": "Appartement à l'achat à Guéliz. Surface totale 77 m²",
+      "url": "https://www.mubawab.ma/fr/pa/8059954/appartement-%C3%A0-l-achat-%C3%A0-gu%C3%A9liz-surface-totale-77-m%C2%B2",
+      "reason": "Preis: 41,347,500 > Max"
+    },
+    {
+      "title": "Appt 2 chambres neuf cœur de Guéliz plaza",
+      "url": "https://www.mubawab.ma/fr/a/8312588/appt-2-chambres-neuf-c%C5%93ur-de-gu%C3%A9liz-plaza",
+      "reason": "Preis: 21,320,000 > Max"
+    },
+    {
+      "title": "Appartement neuf à vendre 75 m² 2 suites vue Atlas et jardin",
+      "url": "https://www.mubawab.ma/fr/a/8319054/appartement-neuf-%C3%A0-vendre-75-m%C2%B2-2-suites-vue-atlas-et-jardin",
+      "reason": "Preis: 25,830,000 > Max"
+    },
+    {
+      "title": "Un appartement raffiné au coeur de la Palmeraie",
+      "url": "https://www.mubawab.ma/fr/a/8324192/un-appartement-raffin%C3%A9-au-coeur-de-la-palmeraie",
+      "reason": "Preis: 21,490,000 > Max"
     },
     {
       "title": "Magnifique appartement ouvert sur de grandes terrasses offra",
       "url": "https://www.mubawab.ma/fr/a/8302666/magnifique-appartement-ouvert-sur-de-grandes-terrasses-offrant-une-vue-magnifique-sur-les-jardins-d%E2%80%99une-r%C3%A9sidence-de-charme-avec-piscines-au-c%C5%93ur-de-la-palmeraie",
       "reason": "Preis: 2,690,000 > Max"
+    },
+    {
+      "title": "T2 moderne et bien situé à Guéliz, Marrakech",
+      "url": "https://www.mubawab.ma/fr/pa/8158296/t2-moderne-et-bien-situ%C3%A9-%C3%A0-gu%C3%A9liz-marrakech",
+      "reason": "Preis: 21,818,100 > Max"
+    },
+    {
+      "title": "Appartement à vendre à Guéliz. 1 belle chambre",
+      "url": "https://www.mubawab.ma/fr/pa/7921913/appartement-%C3%A0-vendre-%C3%A0-gu%C3%A9liz-1-belle-chambre",
+      "reason": "Preis: 8,874,000 > Max"
+    },
+    {
+      "title": "Vend appartement à Guéliz. Superficie 51 m²",
+      "url": "https://www.mubawab.ma/fr/pa/8059953/vend-appartement-%C3%A0-gu%C3%A9liz-superficie-51-m%C2%B2",
+      "reason": "Preis: 7,943,500 > Max"
+    },
+    {
+      "title": "Appartement à l'achat à Mhamid. 3 chambres agréables",
+      "url": "https://www.mubawab.ma/fr/pa/8304903/appartement-%C3%A0-l-achat-%C3%A0-mhamid-3-chambres-agr%C3%A9ables",
+      "reason": "Preis: 27,510,000 > Max"
+    },
+    {
+      "title": "Vente d'un bel appartement à Guéliz. 1 chambre",
+      "url": "https://www.mubawab.ma/fr/pa/7915634/vente-d-un-bel-appartement-%C3%A0-gu%C3%A9liz-1-chambre",
+      "reason": "Zu wenig Zimmer"
+    },
+    {
+      "title": "Appartement neuf à vendre à Guéliz – Résidence moderne en ph",
+      "url": "https://www.mubawab.ma/fr/a/8318550/appartement-neuf-%C3%A0-vendre-%C3%A0-gu%C3%A9liz-%E2%80%93-r%C3%A9sidence-moderne-en-phase-avanc%C3%A9e",
+      "reason": "Preis: 21,000,000 > Max"
+    },
+    {
+      "title": "A vendre – Spacieux appartement en rez de chaussée à la Palm",
+      "url": "https://www.mubawab.ma/fr/a/8312770/a-vendre-%E2%80%93-spacieux-appartement-en-rez-de-chauss%C3%A9e-%C3%A0-la-palmeraie",
+      "reason": "Preis: 42,600,000 > Max"
+    },
+    {
+      "title": "Bel Appartement Neuf à ne pas rater",
+      "url": "https://www.mubawab.ma/fr/a/8286139/bel-appartement-neuf-%C3%A0-ne-pas-rater",
+      "reason": "Zu wenig Zimmer"
+    },
+    {
+      "title": "Studio avec piscine rooftop VICTOR Hugo",
+      "url": "https://www.mubawab.ma/fr/a/8304762/studio-avec-piscine-rooftop-victor-hugo",
+      "reason": "Preis: 21,300,000 > Max"
+    },
+    {
+      "title": "A Vendre à River Palm Palmeraie sur la route de Casablanca. ",
+      "url": "https://www.mubawab.ma/fr/a/8116352/a-vendre-%C3%A0-river-palm-palmeraie-sur-la-route-de-casablanca-surface-totale-100-m%C2%B2-environ",
+      "reason": "Preis: 41,400,000 > Max"
+    },
+    {
+      "title": "Studio en RDJ à Noria – fort potentiel locatif",
+      "url": "https://www.mubawab.ma/fr/a/8324999/studio-en-rdj-%C3%A0-noria-%E2%80%93-fort-potentiel-locatif",
+      "reason": "Preis: 41,550,000 > Max"
+    },
+    {
+      "title": "Studio 41m² Majorelle",
+      "url": "https://www.mubawab.ma/fr/a/8277121/studio-41m%C2%B2-majorelle",
+      "reason": "Preis: 2,779,000 > Max"
+    },
+    {
+      "title": "Vend appartement à Agdal. Surface totale 88 m². Bien meublé",
+      "url": "https://www.mubawab.ma/fr/a/8310295/vend-appartement-%C3%A0-agdal-surface-totale-88-m%C2%B2-bien-meubl%C3%A9",
+      "reason": "Preis: 2,600,000 > Max"
+    },
+    {
+      "title": "Magnifique duplex à Guéliz. Surface de 65 m²",
+      "url": "https://www.mubawab.ma/fr/pa/8268937/magnifique-duplex-%C3%A0-gu%C3%A9liz-surface-de-65-m%C2%B2",
+      "reason": "Preis: 17,887,500 > Max"
+    },
+    {
+      "title": "Vend appartement à Majorelle. Surface totale 71 m²",
+      "url": "https://www.mubawab.ma/fr/pa/8267867/vend-appartement-%C3%A0-majorelle-surface-totale-71-m%C2%B2",
+      "reason": "Preis: 41,349,000 > Max"
+    },
+    {
+      "title": "Bel studios de 45 m² à vendre au Nouveau Guéliz",
+      "url": "https://www.mubawab.ma/fr/pa/8158298/bel-studios-de-45-m%C2%B2-%C3%A0-vendre-au-nouveau-gu%C3%A9liz",
+      "reason": "Preis: 21,818,100 > Max"
+    },
+    {
+      "title": "Bel Appartement de 106m² à Proximité Majorelle",
+      "url": "https://www.mubawab.ma/fr/a/8149779/bel-appartement-de-106m%C2%B2-%C3%A0-proximit%C3%A9-majorelle",
+      "reason": "Zentrum-Lage: majorelle"
+    },
+    {
+      "title": "Bel appartement 3 chambres salon à vendre",
+      "url": "https://www.mubawab.ma/fr/a/8273046/bel-appartement-3-chambres-salon-%C3%A0-vendre",
+      "reason": "Preis: 41,550,000 > Max"
+    },
+    {
+      "title": "Appartement meublé Marrakech",
+      "url": "https://www.mubawab.ma/fr/a/8325473/appartement-meubl%C3%A9-marrakech",
+      "reason": "Preis: 16,670,000 > Max"
+    },
+    {
+      "title": "Bel appartement à vendre à Guéliz. Surface totale 82 m²",
+      "url": "https://www.mubawab.ma/fr/pa/8034208/bel-appartement-%C3%A0-vendre-%C3%A0-gu%C3%A9liz-surface-totale-82-m%C2%B2",
+      "reason": "Preis: 41,886,000 > Max"
+    },
+    {
+      "title": "Magnifique appartement à vendre Gueliz",
+      "url": "https://www.mubawab.ma/fr/a/8310900/magnifique-appartement-%C3%A0-vendre-gueliz",
+      "reason": "Preis: 23,250,000 > Max"
+    },
+    {
+      "title": "Ouidane - Pavillons R+1",
+      "url": "https://www.mubawab.ma/fr/b/9308/ouidane-pavillons-r-1",
+      "reason": "Preis: 890,000 < Min"
+    },
+    {
+      "title": "H dar services",
+      "url": "https://www.mubawab.ma/fr/b/8069/h-dar-services",
+      "reason": "Preis: 7,900,000 > Max"
+    },
+    {
+      "title": "AL ANBAR - MARRAKECH",
+      "url": "https://www.mubawab.ma/fr/b/9583/al-anbar-marrakech",
+      "reason": "Preis: 560,000 < Min"
+    },
+    {
+      "title": "LES JARDINS DE L'ATLAS - VILLAS",
+      "url": "https://www.mubawab.ma/fr/b/15036/les-jardins-de-l-atlas-villas",
+      "reason": "Preis: 3,000,000 > Max"
+    },
+    {
+      "title": "VANEAU MAROC",
+      "url": "https://www.mubawab.ma/fr/b/9066/vaneau-maroc",
+      "reason": "Erdgeschoss"
+    },
+    {
+      "title": "Superbe appartement à vendre à Guéliz",
+      "url": "https://www.mubawab.ma/fr/pa/8257823/superbe-appartement-%C3%A0-vendre-%C3%A0-gu%C3%A9liz",
+      "reason": "Preis: 8,938,500 > Max"
+    },
+    {
+      "title": "Appartement de haut standing à vendre à Gueliz",
+      "url": "https://www.mubawab.ma/fr/pa/7921919/appartement-de-haut-standing-%C3%A0-vendre-%C3%A0-gueliz",
+      "reason": "Preis: 8,972,000 > Max"
+    },
+    {
+      "title": "Duplex à l'achat à Guéliz. Surface 44 m² au RDC et 30 à la M",
+      "url": "https://www.mubawab.ma/fr/pa/8059956/duplex-%C3%A0-l-achat-%C3%A0-gu%C3%A9liz-surface-44-m%C2%B2-au-rdc-et-30-%C3%A0-la-mez",
+      "reason": "Zu wenig Zimmer"
     },
     {
       "title": "Amelkis 1: Villa neuve à vendre en 5 Chs, Piscine",
@@ -3925,29 +4047,49 @@
       "reason": "Zentrum-Lage: Semlalia"
     },
     {
-      "title": "Vente d'un bel appartement à Guéliz",
-      "url": "https://www.mubawab.ma/fr/pa/7915632/vente-d-un-bel-appartement-%C3%A0-gu%C3%A9liz",
+      "title": "Achat vente appartement Guéliz Marrakech",
+      "url": "https://www.mubawab.ma/fr/a/8269551/achat-vente-appartement-gu%C3%A9liz-marrakech",
       "reason": "Zu wenig Zimmer"
     },
     {
-      "title": "Vente d'un bel appartement à Hay Targa 2 chambres agréables",
-      "url": "https://www.mubawab.ma/fr/pa/8276951/vente-d-un-bel-appartement-%C3%A0-hay-targa-2-chambres-agr%C3%A9ables",
+      "title": "Idéal pied à terre ou location Appartement T3 de standing",
+      "url": "https://www.mubawab.ma/fr/pa/8158297/id%C3%A9al-pied-%C3%A0-terre-ou-location-appartement-t3-de-standing",
+      "reason": "Preis: 11,170,000 > Max"
+    },
+    {
+      "title": "Appartement moderne à Gueliz",
+      "url": "https://www.mubawab.ma/fr/pa/7921914/appartement-moderne-%C3%A0-gueliz",
+      "reason": "Zu wenig Zimmer"
+    },
+    {
+      "title": "Bel appartement à vendre à Guéliz. 2 belles chambres",
+      "url": "https://www.mubawab.ma/fr/pa/8059955/bel-appartement-%C3%A0-vendre-%C3%A0-gu%C3%A9liz-2-belles-chambres",
       "reason": "Erdgeschoss"
     },
     {
-      "title": "Vend appartement à Guéliz. 2 belles chambres",
-      "url": "https://www.mubawab.ma/fr/pa/8058861/vend-appartement-%C3%A0-gu%C3%A9liz-2-belles-chambres",
-      "reason": "Zentrum-Lage: guéliz"
+      "title": "Superbe appartement à vendre à Mhamid. Surface totale 90 m²",
+      "url": "https://www.mubawab.ma/fr/pa/8304908/superbe-appartement-%C3%A0-vendre-%C3%A0-mhamid-surface-totale-90-m%C2%B2",
+      "reason": "Preis: 27,801,000 > Max"
     },
     {
-      "title": "Appartement à l'achat à Mhamid. 3 chambres agréables",
-      "url": "https://www.mubawab.ma/fr/pa/8304903/appartement-%C3%A0-l-achat-%C3%A0-mhamid-3-chambres-agr%C3%A9ables",
-      "reason": "Preis: 27,510,000 > Max"
+      "title": "Appartement à l'achat à Guéliz. 2 chambres",
+      "url": "https://www.mubawab.ma/fr/pa/7915635/appartement-%C3%A0-l-achat-%C3%A0-gu%C3%A9liz-2-chambres",
+      "reason": "Preis: 2,316,000 > Max"
     },
     {
-      "title": "Studio 41m² Majorelle",
-      "url": "https://www.mubawab.ma/fr/a/8277121/studio-41m%C2%B2-majorelle",
-      "reason": "Preis: 2,779,000 > Max"
+      "title": "Vente d'un bel appartement à Camp Al Ghoul. 2 belles chambre",
+      "url": "https://www.mubawab.ma/fr/a/8324407/vente-d-un-bel-appartement-%C3%A0-camp-al-ghoul-2-belles-chambres",
+      "reason": "Preis: 11,600,000 > Max"
+    },
+    {
+      "title": "Appartement moderne à vendre – Quartier Camp Elghoul / Victo",
+      "url": "https://www.mubawab.ma/fr/a/8317692/appartement-moderne-%C3%A0-vendre-%E2%80%93-quartier-camp-elghoul-victor-hugo",
+      "reason": "Zentrum-Lage: victor hugo"
+    },
+    {
+      "title": "Très Bel Appartement HT à Guéliz",
+      "url": "https://www.mubawab.ma/fr/a/8296126/tr%C3%A8s-bel-appartement-ht-%C3%A0-gu%C3%A9liz",
+      "reason": "Preis: 11,900,000 > Max"
     },
     {
       "title": "Appartement haut standing à vendre à Prestigia, Marrakech.",
@@ -3970,239 +4112,39 @@
       "reason": "Preis: 31,550,000 > Max"
     },
     {
-      "title": "Studio avec piscine rooftop VICTOR Hugo",
-      "url": "https://www.mubawab.ma/fr/a/8304762/studio-avec-piscine-rooftop-victor-hugo",
-      "reason": "Preis: 21,300,000 > Max"
+      "title": "Appartement à vendre",
+      "url": "https://www.mubawab.ma/fr/a/8271984/appartement-%C3%A0-vendre",
+      "reason": "Preis: 3,100,000 > Max"
     },
     {
-      "title": "Bel Appartement Neuf à ne pas rater",
-      "url": "https://www.mubawab.ma/fr/a/8286139/bel-appartement-neuf-%C3%A0-ne-pas-rater",
-      "reason": "Zu wenig Zimmer"
-    },
-    {
-      "title": "Appartement de luxe – Prestigia Opal – Rez de jardin",
-      "url": "https://www.mubawab.ma/fr/a/8320090/appartement-de-luxe-%E2%80%93-prestigia-opal-%E2%80%93-rez-de-jardin",
-      "reason": "Preis: 3,200,000 > Max"
-    },
-    {
-      "title": "A Vendre à River Palm Palmeraie sur la route de Casablanca. ",
-      "url": "https://www.mubawab.ma/fr/a/8116352/a-vendre-%C3%A0-river-palm-palmeraie-sur-la-route-de-casablanca-surface-totale-100-m%C2%B2-environ",
-      "reason": "Preis: 41,400,000 > Max"
-    },
-    {
-      "title": "Studios neufs à vendre à Guéliz avec PISCINE ROOFTOP",
-      "url": "https://www.mubawab.ma/fr/pa/8239970/studios-neufs-%C3%A0-vendre-%C3%A0-gu%C3%A9liz-avec-piscine-rooftop",
-      "reason": "Zu wenig Zimmer"
-    },
-    {
-      "title": "Appartement à vendre à Guéliz. Surface de 146 m²",
-      "url": "https://www.mubawab.ma/fr/pa/7915665/appartement-%C3%A0-vendre-%C3%A0-gu%C3%A9liz-surface-de-146-m%C2%B2",
-      "reason": "Preis: 43,116,000 > Max"
-    },
-    {
-      "title": "Superbe Appartement meublé vue piscine à Noria",
-      "url": "https://www.mubawab.ma/fr/a/8300994/superbe-appartement-meubl%C3%A9-vue-piscine-%C3%A0-noria",
-      "reason": "Preis: 18,250,000 > Max"
-    },
-    {
-      "title": "Élégant F2 meublé vue Atlas à Noria",
-      "url": "https://www.mubawab.ma/fr/a/8072808/%C3%A9l%C3%A9gant-f2-meubl%C3%A9-vue-atlas-%C3%A0-noria",
-      "reason": "Zu wenig Zimmer"
-    },
-    {
-      "title": "Superbe studio F2 meublé en plein centre",
-      "url": "https://www.mubawab.ma/fr/a/8223786/superbe-studio-f2-meubl%C3%A9-en-plein-centre",
-      "reason": "Zu wenig Zimmer"
-    },
-    {
-      "title": "Bel appartement à vendre à Agdala cote moroco mall. 2 belles",
-      "url": "https://www.mubawab.ma/fr/a/8085031/bel-appartement-%C3%A0-vendre-%C3%A0-agdala-cote-moroco-mall-2-belles-chambres-double-vitrage-et-chauffage-central",
-      "reason": "Preis: 31,100,000 > Max"
-    },
-    {
-      "title": "Superbe appartement à vendre à Guéliz. 3 pièces confortables",
-      "url": "https://www.mubawab.ma/fr/a/8264809/superbe-appartement-%C3%A0-vendre-%C3%A0-gu%C3%A9liz-3-pi%C3%A8ces-confortables-meubl%C3%A9",
-      "reason": "Preis: 2,900,000 > Max"
-    },
-    {
-      "title": "Bel appartement à vendre à Hay Targa 2 chambres agréables",
-      "url": "https://www.mubawab.ma/fr/pa/8276953/bel-appartement-%C3%A0-vendre-%C3%A0-hay-targa-2-chambres-agr%C3%A9ables",
-      "reason": "Erdgeschoss"
-    },
-    {
-      "title": "Ouidane - Pavillons R+1",
-      "url": "https://www.mubawab.ma/fr/b/9308/ouidane-pavillons-r-1",
-      "reason": "Preis: 890,000 < Min"
-    },
-    {
-      "title": "LES JARDINS DE L'ATLAS - VILLAS",
-      "url": "https://www.mubawab.ma/fr/b/15036/les-jardins-de-l-atlas-villas",
-      "reason": "Preis: 3,000,000 > Max"
-    },
-    {
-      "title": "H dar services",
-      "url": "https://www.mubawab.ma/fr/b/8069/h-dar-services",
-      "reason": "Erdgeschoss"
-    },
-    {
-      "title": "VANEAU MAROC",
-      "url": "https://www.mubawab.ma/fr/b/9066/vaneau-maroc",
-      "reason": "Preis: 4,000,000 > Max"
-    },
-    {
-      "title": "AL ANBAR - MARRAKECH",
-      "url": "https://www.mubawab.ma/fr/b/9583/al-anbar-marrakech",
-      "reason": "Preis: 560,000 < Min"
-    },
-    {
-      "title": "Appartement à l'achat à Guéliz. Surface totale 77 m²",
-      "url": "https://www.mubawab.ma/fr/pa/8059954/appartement-%C3%A0-l-achat-%C3%A0-gu%C3%A9liz-surface-totale-77-m%C2%B2",
-      "reason": "Preis: 41,347,500 > Max"
-    },
-    {
-      "title": "Bel appartement à vendre à Route Casablanca. Superficie 134 ",
-      "url": "https://www.mubawab.ma/fr/pa/8293051/bel-appartement-%C3%A0-vendre-%C3%A0-route-casablanca-superficie-134-m%C2%B2",
-      "reason": "Preis: 2,680,000 > Max"
-    },
-    {
-      "title": "Appartement en vente à Guéliz. Superficie 55 m²",
-      "url": "https://www.mubawab.ma/fr/pa/8034207/appartement-en-vente-%C3%A0-gu%C3%A9liz-superficie-55-m%C2%B2",
-      "reason": "Zu wenig Zimmer"
+      "title": "Duplex à vendre sur l'Hivernage",
+      "url": "https://www.mubawab.ma/fr/a/8074802/duplex-%C3%A0-vendre-sur-l-hivernage",
+      "reason": "Preis: 39,000,000 > Max"
     },
     {
       "title": "Appartement à vendre",
-      "url": "https://www.mubawab.ma/fr/a/8298802/appartement-%C3%A0-vendre",
-      "reason": "Zu wenig Zimmer"
+      "url": "https://www.mubawab.ma/fr/a/8132610/appartement-%C3%A0-vendre",
+      "reason": "Preis: 22,900,000 > Max"
     },
     {
-      "title": "Achat vente appartement Guéliz Marrakech",
-      "url": "https://www.mubawab.ma/fr/a/8269551/achat-vente-appartement-gu%C3%A9liz-marrakech",
-      "reason": "Zu wenig Zimmer"
+      "title": "Appartement à vendre",
+      "url": "https://www.mubawab.ma/fr/a/8307214/appartement-%C3%A0-vendre",
+      "reason": "Preis: 2,600,000 > Max"
     },
     {
-      "title": "Appartement 3 chambres avec piscine et parking à vendre à Ma",
-      "url": "https://www.mubawab.ma/fr/a/8299589/appartement-3-chambres-avec-piscine-et-parking-%C3%A0-vendre-%C3%A0-marrakech-%E2%80%93-proche-jamaa-el-fna",
-      "reason": "Preis: 3,600,000 > Max"
+      "title": "Appartement à vendre",
+      "url": "https://www.mubawab.ma/fr/a/8251899/appartement-%C3%A0-vendre",
+      "reason": "Preis: 22,100,000 > Max"
     },
     {
-      "title": "Ouidane Marrakech – Pavillons R+1",
-      "url": "https://www.mubawab.ma/fr/p/3895/ouidane-marrakech-%E2%80%93-pavillons-r-1",
-      "reason": "Preis: 890,000 < Min"
+      "title": "Appartement à vendre",
+      "url": "https://www.mubawab.ma/fr/a/8298086/appartement-%C3%A0-vendre",
+      "reason": "Preis: 21,250,000 > Max"
     },
     {
-      "title": "Appartement Neuf 84 m² à Guéliz",
-      "url": "https://www.mubawab.ma/fr/a/8129379/appartement-neuf-84-m%C2%B2-%C3%A0-gu%C3%A9liz",
-      "reason": "Zentrum-Lage: Semlalia"
-    },
-    {
-      "title": "Vente d'un bel appartement à Guéliz. 1 chambre",
-      "url": "https://www.mubawab.ma/fr/pa/7915634/vente-d-un-bel-appartement-%C3%A0-gu%C3%A9liz-1-chambre",
-      "reason": "Zu wenig Zimmer"
-    },
-    {
-      "title": "Magnifique appartement vue piscine à Targa",
-      "url": "https://www.mubawab.ma/fr/pa/8276954/magnifique-appartement-vue-piscine-%C3%A0-targa",
-      "reason": "Erdgeschoss"
-    },
-    {
-      "title": "Bel appartement à vendre à El Hara. 1 chambre",
-      "url": "https://www.mubawab.ma/fr/pa/8109862/bel-appartement-%C3%A0-vendre-%C3%A0-el-hara-1-chambre",
-      "reason": "Preis: 10,768,000 > Max"
-    },
-    {
-      "title": "Bel appartement à vendre à Guéliz. Surface de 77 m²",
-      "url": "https://www.mubawab.ma/fr/pa/8058864/bel-appartement-%C3%A0-vendre-%C3%A0-gu%C3%A9liz-surface-de-77-m%C2%B2",
-      "reason": "Zentrum-Lage: guéliz"
-    },
-    {
-      "title": "Superbe appartement à vendre à Mhamid. Surface totale 90 m²",
-      "url": "https://www.mubawab.ma/fr/pa/8304908/superbe-appartement-%C3%A0-vendre-%C3%A0-mhamid-surface-totale-90-m%C2%B2",
-      "reason": "Preis: 27,801,000 > Max"
-    },
-    {
-      "title": "Très bel apprte meublé prestigia agate à vendre",
-      "url": "https://www.mubawab.ma/fr/a/8319423/tr%C3%A8s-bel-apprte-meubl%C3%A9-prestigia-agate-%C3%A0-vendre",
-      "reason": "Preis: 2,400,000 > Max"
-    },
-    {
-      "title": "Appartement rénové divisé en 2 studios Guéliz",
-      "url": "https://www.mubawab.ma/fr/a/8323171/appartement-r%C3%A9nov%C3%A9-divis%C3%A9-en-2-studios-gu%C3%A9liz",
-      "reason": "Preis: 10,195,000 > Max"
-    },
-    {
-      "title": "Appartement d'exception vue unique sur Majorelle",
-      "url": "https://www.mubawab.ma/fr/a/8323239/appartement-d-exception-vue-unique-sur-majorelle",
-      "reason": "Preis: 648,000 < Min"
-    },
-    {
-      "title": "Apprt meublé rez de jardin à vendre Prestigia kech",
-      "url": "https://www.mubawab.ma/fr/a/7891443/apprt-meubl%C3%A9-rez-de-jardin-%C3%A0-vendre-prestigia-kech",
-      "reason": "Preis: 2,500,000 > Max"
-    },
-    {
-      "title": "Superbe duplex de prestige en résidence fermée",
-      "url": "https://www.mubawab.ma/fr/a/8252220/superbe-duplex-de-prestige-en-r%C3%A9sidence-ferm%C3%A9e",
-      "reason": "Preis: 43,750,000 > Max"
-    },
-    {
-      "title": "Duplex d'exception au coeur de la Palmeraie",
-      "url": "https://www.mubawab.ma/fr/a/8323234/duplex-d-exception-au-coeur-de-la-palmeraie",
-      "reason": "Preis: 22,700,000 > Max"
-    },
-    {
-      "title": "Appartement contemporain neuf GUELIZ",
-      "url": "https://www.mubawab.ma/fr/a/8323259/appartement-contemporain-neuf-gueliz",
-      "reason": "Zentrum-Lage: gueliz"
-    },
-    {
-      "title": "Appartement d'Exception à l'Hivernage Vue Atlas",
-      "url": "https://www.mubawab.ma/fr/a/8304485/appartement-d-exception-%C3%A0-l-hivernage-vue-atlas",
-      "reason": "Preis: 43,900,000 > Max"
-    },
-    {
-      "title": "Appartement de 72m² en vente Dyour Al Masjid",
-      "url": "https://www.mubawab.ma/fr/pa/7115910/appartement-de-72m%C2%B2-en-vente-dyour-al-masjid",
-      "reason": "Preis: 15,460,000 > Max"
-    },
-    {
-      "title": "Vend appartement à Majorelle. Superficie 86 m²",
-      "url": "https://www.mubawab.ma/fr/pa/8268251/vend-appartement-%C3%A0-majorelle-superficie-86-m%C2%B2",
-      "reason": "Preis: 41,634,000 > Max"
-    },
-    {
-      "title": "Bel Appartement de 106m² à Proximité Majorelle",
-      "url": "https://www.mubawab.ma/fr/a/8149779/bel-appartement-de-106m%C2%B2-%C3%A0-proximit%C3%A9-majorelle",
-      "reason": "Zentrum-Lage: majorelle"
-    },
-    {
-      "title": "Utopia2 Résidence Moderne au cœur de Marrakech",
-      "url": "https://www.mubawab.ma/fr/a/8308918/utopia2-r%C3%A9sidence-moderne-au-c%C5%93ur-de-marrakech",
-      "reason": "Preis: 11,324,000 > Max"
-    },
-    {
-      "title": "Studio haut standing à vendre – Guéliz, Marrakech",
-      "url": "https://www.mubawab.ma/fr/a/8324150/studio-haut-standing-%C3%A0-vendre-%E2%80%93-gu%C3%A9liz-marrakech",
-      "reason": "Zu wenig Zimmer"
-    },
-    {
-      "title": "Bel appartement à vendre à la Palmeraie 3 chambres",
-      "url": "https://www.mubawab.ma/fr/a/8251335/bel-appartement-%C3%A0-vendre-%C3%A0-la-palmeraie-3-chambres",
-      "reason": "Preis: 32,550,000 > Max"
-    },
-    {
-      "title": "Appartement cœur de la Palmeraie",
-      "url": "https://www.mubawab.ma/fr/a/8324704/appartement-c%C5%93ur-de-la-palmeraie",
-      "reason": "Preis: 400,000 < Min"
-    },
-    {
-      "title": "Appartement familial Dernier étage terrasse",
-      "url": "https://www.mubawab.ma/fr/a/8324698/appartement-familial-dernier-%C3%A9tage-terrasse",
-      "reason": "Preis: 350,000 < Min"
-    },
-    {
-      "title": "Appartement à vendre à Hay Targa 3 chambres agréables",
-      "url": "https://www.mubawab.ma/fr/pa/8276952/appartement-%C3%A0-vendre-%C3%A0-hay-targa-3-chambres-agr%C3%A9ables",
-      "reason": "Erdgeschoss"
+      "title": "Appartement à vendre",
+      "url": "https://www.mubawab.ma/fr/a/8257866/appartement-%C3%A0-vendre",
+      "reason": "Preis: 31,600,000 > Max"
     },
     {
       "title": "Simulateur de prêt",
